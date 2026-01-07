@@ -1,22 +1,5 @@
-from __future__ import annotations
+from typing import Dict
 
-import json
-import os
-import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass
-from pathlib import Path
-from typing import Dict, Tuple, Any
-
-from dotenv import load_dotenv
-from tqdm import tqdm
-from openai import OpenAI
-
-load_dotenv()
-
-# =========================
-# -------- PROMPTS --------
-# =========================
 DEPTH_PROMPT = """
 <instruction>
 Role
@@ -142,7 +125,7 @@ Required Output (JSON only; follow the schema exactly)
 <calibration_hints>
 Calibration Hints
 
-Reports like the BAC example (lists assumptions, shallow causal links, no quantified sensitivity) ⇒ Fair.
+Reports with only summary information (lists assumptions, shallow causal links, no quantified sensitivity) ⇒ Fair.
 
 Reports with explicit assumptions, benchmarks, and some causal reasoning but no scenarios ⇒ Good.
 
@@ -669,7 +652,7 @@ All or nearly all insights are copied or generic.
 No synthesis or unique thesis.
 
 Zero decision relevance.
-Example: Low-quality BAC report with recycled Reuters/Morningstar lines and standard DCF.
+Example: Low-quality report with recycled Reuters/Morningstar lines and standard DCF.
 
 Fair
 
@@ -678,7 +661,7 @@ Some company detail but mostly restated.
 At most one weak synthesis, vague or generic.
 
 Low actionability.
-Example: BAC report citing NII growth and stress tests but adding no unique angle.
+Example: Report citing NII growth and stress tests but adding no unique angle.
 
 Good
 
@@ -693,7 +676,7 @@ Excellent
 Three or more decision-relevant syntheses or multiple original theses.
 
 Explicit causal links, quantified implications, peer comparison, and monitoring signals.
-Example: Morningstar BAC report linking duration + deposit betas + macro to a unique NII/ROE trajectory.
+Example: Report linking duration + deposit betas + macro to a unique NII/ROE trajectory.
 
 Decision Rules (apply in order)
 
@@ -742,207 +725,10 @@ Reports with multiple unique theses, quantified pathways, and catalysts/peer con
 </calibration_hints>
 """
 
-# Map a short key -> (prompt_str, output_suffix)
-EVALS: Dict[str, Tuple[str, str]] = {
-    "assumptions": (ASSUMPTIONS_PROMPT, "oai_assumptions_eval.json"),
-    "coherence": (COHERENCE_PROMPT, "oai_coherence_eval.json"),
-    "comprehensiveness": (COMPREHENSIVENESS_PROMPT, "oai_comprehensiveness_eval.json"),
-    "depth": (DEPTH_PROMPT, "oai_depth_eval.json"),
-    "originality": (ORIGINALITY_PROMPT, "oai_originality_eval.json"),
+EVALS: Dict[str, str] = {
+    "assumptions": ASSUMPTIONS_PROMPT,
+    "coherence": COHERENCE_PROMPT,
+    "comprehensiveness": COMPREHENSIVENESS_PROMPT,
+    "depth": DEPTH_PROMPT,
+    "originality": ORIGINALITY_PROMPT,
 }
-
-# =========================
-# ---- CONFIG & CLIENT ----
-# =========================
-MODEL = "gpt-5"
-API_KEY = os.getenv("OPENAI_API_KEY")
-TIMEOUT_S = 3600
-MAX_WORKERS = min(8, (os.cpu_count() or 4) * 2)  # I/O-bound
-
-# Folders
-INPUT_DIR = Path(
-    "/Users/antonypapadimitriou/PycharmProjects/deepfin-benchmarking/deepfin_benchmarking/output/human_reports/2025_q2"
-)
-OUTPUT_DIR = Path(
-    "/Users/antonypapadimitriou/PycharmProjects/deepfin-benchmarking/deepfin_benchmarking/output/evaluation/evaluation_v2/morningstar"
-)
-
-# Optional: delete uploaded files from OpenAI after use to avoid clutter
-DELETE_FILES_AFTER = False
-
-client = OpenAI(api_key=API_KEY, timeout=TIMEOUT_S)
-
-
-# =========================
-# ------- UTILITIES -------
-# =========================
-def ensure_dir(p: Path) -> None:
-    p.parent.mkdir(parents=True, exist_ok=True)
-
-
-def extract_text(resp: Any) -> str:
-    """
-    Be liberal in parsing text from the Responses API return value.
-    Tries resp.output_text first, then walks output/content to collect text parts.
-    """
-    text = getattr(resp, "output_text", None)
-    if isinstance(text, str) and text.strip():
-        return text
-
-    output = getattr(resp, "output", None) or []
-    collected = []
-    for msg in output:
-        content = getattr(msg, "content", None) or []
-        for item in content:
-            t = getattr(item, "type", None) or (isinstance(item, dict) and item.get("type"))
-            if t in {"output_text", "text"}:
-                val = getattr(item, "text", None) or (isinstance(item, dict) and item.get("text"))
-                if val:
-                    collected.append(val)
-    return "\n".join(collected).strip()
-
-
-def try_json(text: str) -> tuple[bool, Any]:
-    try:
-        return True, json.loads(text)
-    except json.JSONDecodeError:
-        return False, text
-
-
-def backoff_sleep(attempt: int) -> None:
-    # exponential backoff with light jitter
-    time.sleep(min(2 ** attempt, 30) + 0.1 * attempt)
-
-
-def upload_pdf(path: Path, retries: int = 3) -> str:
-    """
-    Uploads a PDF and returns file_id. Uses purpose='user_data' as per PDF guide.
-    """
-    last_err = None
-    for attempt in range(retries + 1):
-        try:
-            with path.open("rb") as f:
-                up = client.files.create(file=f, purpose="user_data")
-            return up.id
-        except Exception as e:
-            last_err = e
-            if attempt < retries:
-                backoff_sleep(attempt + 1)
-            else:
-                raise last_err
-
-
-def call_eval_with_file(prompt: str, file_id: str, retries: int = 3) -> str:
-    """
-    Calls the model with a text prompt + attached PDF file_id using the Responses API.
-    """
-    # Per docs, pass content as parts: input_text + input_file (PDF) to the user message.
-    # https://platform.openai.com/docs/guides/pdf-files (Python, chat mode) and
-    # https://platform.openai.com/docs/api-reference/responses
-    last_err = None
-    prompt += "\n The report is in the attached PDF file."
-    for attempt in range(retries + 1):
-        try:
-            resp = client.responses.create(
-                model=MODEL,
-                input=[
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "input_text", "text": prompt},
-                            {"type": "input_file", "file_id": file_id},
-                        ],
-                    }
-                ],
-            )
-            return extract_text(resp)
-        except Exception as e:
-            last_err = e
-            if attempt < retries:
-                backoff_sleep(attempt + 1)
-            else:
-                raise last_err
-
-
-@dataclass
-class EvalTask:
-    eval_key: str
-    prompt: str
-    ticker: str
-    file_id: str
-    out_path: Path
-
-
-def run_task(task: EvalTask) -> tuple[str, Path, bool, str]:
-    """
-    Executes one evaluation; writes JSON (or raw) to disk.
-    Returns: (eval_key, out_path, is_json, error_message_if_any)
-    """
-    ensure_dir(task.out_path)
-    try:
-        raw = call_eval_with_file(task.prompt, task.file_id)
-        ok, parsed = try_json(raw)
-        if ok:
-            with task.out_path.open("w") as f:
-                json.dump(parsed, f, indent=4)
-        else:
-            with task.out_path.with_suffix(".raw.txt").open("w") as f:
-                f.write(raw)
-        return task.eval_key, task.out_path, ok, ""
-    except Exception as e:
-        err_path = task.out_path.with_suffix(".error.txt")
-        with err_path.open("w") as f:
-            f.write(str(e))
-        return task.eval_key, err_path, False, str(e)
-
-
-def build_tasks(pdf_path: Path, file_id: str) -> list[EvalTask]:
-    ticker = pdf_path.stem  # assumes <ticker>.pdf
-    tasks: list[EvalTask] = []
-    for key, (prompt, suffix) in EVALS.items():
-        out_path = OUTPUT_DIR / f"{ticker}_{suffix}"
-        tasks.append(EvalTask(eval_key=key, prompt=prompt, ticker=ticker, file_id=file_id, out_path=out_path))
-    return tasks
-
-
-def main() -> None:
-    pdfs = sorted([p for p in INPUT_DIR.glob("*Morningstar.pdf") if p.is_file()])
-    if not pdfs:
-        print(f"No PDFs found under: {INPUT_DIR}")
-        return
-
-    # 1) Upload each PDF once
-    file_ids: dict[Path, str] = {}
-    for p in tqdm(pdfs, desc="Uploading PDFs"):
-        try:
-            file_ids[p] = upload_pdf(p)
-        except Exception as e:
-            print(f"Failed to upload {p.name}: {e}")
-
-    # 2) Build all eval tasks
-    all_tasks: list[EvalTask] = []
-    for p, fid in file_ids.items():
-        all_tasks.extend(build_tasks(p, fid))
-
-    # 3) Run evaluations in parallel
-    results = []
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = [ex.submit(run_task, t) for t in all_tasks]
-        for fut in tqdm(as_completed(futures), total=len(futures), desc="Evaluating"):
-            results.append(fut.result())
-
-    ok_count = sum(1 for _, _, is_json, _ in results if is_json)
-    total = len(results)
-    print(f"\nDone. Parsed valid JSON for {ok_count}/{total} evaluations.")
-
-    # 4) Optional cleanup of uploaded files
-    if DELETE_FILES_AFTER:
-        for fid in set(fid for fid in file_ids.values()):
-            try:
-                client.files.delete(fid)
-            except Exception as e:
-                print(f"Failed to delete file {fid}: {e}")
-
-
-if __name__ == "__main__":
-    main()
