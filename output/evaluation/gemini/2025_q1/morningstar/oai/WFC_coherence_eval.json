@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded 'fair' due to several significant and unresolved internal contradictions between the narrative and the data tables, as well as within the text itself. Most notably, the 'Fair Value and Profit Drivers' section projects revenue growth at a low single-digit CAGR starting in 2024, yet the 'Financials Snapshot' table explicitly shows a year-over-year revenue decline from $125.4 billion in 2024 to $124.0 billion in 2025. This fundamental mismatch between the growth thesis and the provided model data undermines the report's core argument. Furthermore, the report provides conflicting timelines for major regulatory milestones; the 'Analyst Note' claims the bank closed 11 consent orders in 'early 2025,' whereas the 'Risk & Uncertainty' section attributes this same achievement to '2023 alone.' There is also a lack of precision regarding Net Interest Income (NII) forecasts for 2025, with the text alternating between '1\u20133%,' '2\u20133%,' and 'mid single-digit' growth across different sections. While the report maintains a professional tone and includes detailed citations, these structural and data-driven inconsistencies force the reader to assemble the logic themselves. Additionally, the Bulls and Bears sections are presented as isolated lists and are not meaningfully reconciled with the base-case valuation narrative, which fails to explain how specific bear risks like the Zelle litigation are factored into the DCF assumptions. These flaws trigger the mandatory 'fair' cap for unaddressed contradictions.",
+    "evidence": [
+        "Revenue growth projected at a low single-digit CAGR (Fair Value section) contradicts the Financials Snapshot table showing a decline from $125.4B in 2024 to $124.0B in 2025F.",
+        "The Analyst Note states 11 consent orders were closed in 'early 2025,' while the Risk & Uncertainty section claims this occurred 'in 2023 alone.'",
+        "NII 2025 growth is inconsistently cited as '1\u20133%' (Analyst Note), 'mid single-digit' (Strategy & Outlook), and '~2\u20133%' (Fair Value section)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

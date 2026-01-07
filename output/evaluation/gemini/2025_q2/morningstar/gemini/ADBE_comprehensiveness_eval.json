@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report on Adobe Inc. (ADBE) is structurally sound, containing all the expected headline sections including an executive summary, moat analysis, and risk disclosures. However, it falls short of a 'Good' rating due to significant omissions in sector-specific depth and benchmarking. While the report correctly identifies ARR and RPO as key SaaS metrics, it completely omits Net Revenue Retention (NRR) and Churn rates, which are essential for evaluating the health of a subscription-based business model. This triggers the hard cap for missing core sector KPIs. Furthermore, the peer benchmarking analysis is skeletal; Table 4 contains 'N/A' markers for the majority of financial metrics for Salesforce, ServiceNow, and Intuit, failing to provide meaningful industry context. The valuation section, while providing a DCF with explicit links to operating margins and revenue growth, lacks any scenario or sensitivity analysis to account for the 'AI uncertainty' mentioned in the risk section. Additionally, there is a high degree of redundancy; the discussion of RPO stagnation and AI as a 'moat enhancer' is repeated across the Investment Summary, Segment Deep Dive, and Moat Analysis with minimal incremental detail. These gaps in data-driven peer comparison and missing retention metrics result in a 'Fair' grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Peer Benchmarking (Data)"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "RPO",
+            "Subscription Revenue",
+            "Revenue",
+            "Non-GAAP EPS"
+        ],
+        "sector_kpis_missing": [
+            "Net Revenue Retention (NRR)",
+            "Churn Rate",
+            "Customer Acquisition Cost (CAC)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Revenue Retention (NRR)",
+            "Churn Rate"
+        ],
+        "uncited_claims": []
+    }
+}

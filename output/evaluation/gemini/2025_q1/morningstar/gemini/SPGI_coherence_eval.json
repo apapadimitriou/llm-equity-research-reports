@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of narrative integration, effectively connecting the strategic decision to spin off the Mobility segment (announced April 2025) to the broader goal of eliminating the conglomerate discount. The Analyst Note sets a clear stage, and the subsequent sections on Moat and Strategy reinforce the 'compounder' thesis with specific references to pricing power and the shift to passive investing. The reconciliation between the Bear case regarding issuance volume sensitivity and the Fair Value section's discussion of the 'maturity wall' of upcoming refinancings shows sophisticated internal cross-referencing. \n\nHowever, the report fails the consistency check due to a material contradiction in the valuation framework. In the Appendix, the 'Cost of equity' is cited as approximately 7.6%. When using the provided CAPM inputs\u2014a Risk-Free Rate of 4.25%, a Beta of 1.05, and an Equity Risk Premium of 4.12%\u2014the calculated Cost of Equity is actually 8.576%. This discrepancy is not addressed or explained, creating a disconnect between the 'Key Valuation Assumptions Table' and the underlying financial logic. Furthermore, while the WACC is stated as ~7.5%, the math required to reach that figure with the provided components is opaque. Per the grading guardrails, the presence of an unaddressed contradiction between assumptions and the appendix requires a hard cap at 'fair.' Despite this technical flaw, the report remains highly readable and temporally consistent with its December 2025 date.",
+    "evidence": [
+        "The stated 'Cost of equity (~7.6%)' in the Appendix contradicts the calculated result (8.58%) derived from the provided Risk-Free Rate (4.25%), Beta (1.05), and ERP (4.12%).",
+        "The Bear case regarding 'Sensitivity to Issuance Volumes' is reconciled in the 'Fair Value' section by citing the 'maturity wall' of corporate debt (Section 6 vs Section 8).",
+        "The 'spin-off is expected to be completed within 12 to 18 months of the April 2025 announcement' (Section 5) aligns perfectly with the 'mid-2026' execution claim."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

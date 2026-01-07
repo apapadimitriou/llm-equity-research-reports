@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions criteria primarily due to significant internal contradictions and a total lack of quantified sensitivity analysis. While key drivers such as revenue growth (10\u201312% CAGR) and operating margins (mid-30%) are explicitly stated and proximal to the valuation narrative, they are undermined by glaring numeric inconsistencies. Specifically, the report cites a Q1 2025 capex of $17B (implying a $68B annual run rate) and a management target of $85B through 2025, yet the valuation model assumes a capex of only $30\u201335B per year. This 50%+ discrepancy in a material driver is never reconciled. Furthermore, the financial snapshot table forecasts Free Cash Flow (FCF) of $120B as early as 2025, whereas the narrative states this level will only be reached 'by the end of the decade.' These contradictions between the text, the tables, and the cited historical data violate the consistency pillar. Additionally, the report offers no quantified sensitivity or scenario analysis for material levers like WACC, terminal growth, or ad-spend volatility, providing only qualitative mentions of risk. Per the grading instructions, the presence of two or more distinct contradictions, combined with the absence of quantified sensitivities, necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "2025\u201329 revenue CAGR ~10\u201312%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin ~33%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC \u22489.5%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "3"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "capital expenditures at ~$30\u201335B/year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "3"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Share count stable",
+            "location": {
+                "section": "Appendix",
+                "page": "5"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Capex assumption of $30-35B/year in valuation model conflicts with Q1 actual of $17B ($68B run rate) and stated $85B investment target.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Business Strategy & Outlook"
+                ]
+            },
+            {
+                "description": "FCF of $120B is forecasted for 2025 in the table, but the narrative claims this level is reached only by the end of the decade.",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Capex of $30-35B/year despite Q1 results showing double that intensity."
+        ]
+    }
+}

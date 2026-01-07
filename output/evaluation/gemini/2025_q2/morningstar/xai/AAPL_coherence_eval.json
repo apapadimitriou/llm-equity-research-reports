@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded as poor due to a fundamental failure in temporal logic and significant internal contradictions. Most critically, the report is dated June 9, 2025, yet it cites multiple sources (specifically [3], [5], and [8]) with dates in August 2025. This chronological impossibility suggests a failure in document control or factual integrity. Additionally, the Analyst Note contains a glaring internal contradiction regarding the investment thesis: it asserts that the $245 fair value estimate \"implies upside potential\" but concludes the same paragraph by stating the \"valuation appears stretched relative to growth prospects.\" These statements are logically inconsistent and leave the reader to resolve the actual stance of the analyst.\n\nWhile the financial data within the \"Financials Snapshot\" and the \"Fair Value and Profit Drivers\" sections are mathematically aligned\u2014such as the Q2 EPS of $1.65 supporting the FY2025 forecast of $6.50\u2014the report's flow is disrupted by structural issues. Both the \"Bulls Say / Bears Say\" and \"Appendix\" sections are presented as list-like bullet dumps without any transitional prose to integrate them into the broader argument. This triggers an automatic downgrade under the rubric. The combination of future-dated citations, contradictory valuation sentiment, and poor structural transitions results in a report that lacks professional coherence.",
+    "evidence": [
+        "Report date: 2025-06-09 vs Source [3] dated 2025-08-04 and Source [5] dated 2025-08-09 (Cover Block / Sources)",
+        "Fair value estimate of $245 implies upside potential vs valuation appears stretched relative to growth prospects (Analyst Note)",
+        "Bulls Say / Bears Say and Appendix sections are formatted as bulleted lists without narrative transitions (Bulls/Bears / Appendix)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

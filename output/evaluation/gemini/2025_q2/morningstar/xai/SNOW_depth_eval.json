@@ -1,0 +1,26 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a basic framework for analysis but is severely limited by a lack of specific data, resulting in shallow reasoning. It identifies explicit valuation assumptions, such as a 'Revenue CAGR 30.0%' and a 'WACC 10.0%', but these are not benchmarked against industry peers or adjusted for company-specific risks, with the author describing the WACC as a 'Standard tech discount'. Causal explanations are generic, attributing performance to broad 'data management and AI trends' rather than specific product advantages or market dynamics. While the report notes that 'growth rates have moderated' from 36% to 29%, it fails to explore the underlying drivers of this deceleration. Most critically, there is no quantified sensitivity analysis or scenario modeling; the report offers a single-point fair value multiple of 10x sales without testing how changes in retention or margin expansion would impact this figure. The frequent citation of 'insufficient data' results in a lack of actionable implications, as the author concludes 'valuation assessment is limited'.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Path to 20% operating margin expansion is not explained",
+            "Drivers of moderating revenue growth are not analyzed"
+        ],
+        "unsupported_assumptions": [
+            "WACC 10% used as a generic placeholder",
+            "Terminal growth 4% cited as long-term GDP proxy without context"
+        ],
+        "lack_of_sensitivity": [
+            "No analysis of how a declining net retention rate affects valuation",
+            "Fair value multiple lacks a range or bull/bear sensitivity"
+        ]
+    }
+}

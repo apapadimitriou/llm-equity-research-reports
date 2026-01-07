@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple severe internal numeric contradictions and the absence of quantified sensitivity analysis. While assumptions are explicitly stated and specific in terms of horizons and magnitudes, they fail the fundamental tests of consistency and justification. Most notably, the WACC calculation is mathematically incoherent: the report cites a 7% risk-free rate, 1.1 beta, and 6% equity risk premium, which should result in a 13.6% cost of equity, yet the model uses 8.5%. Furthermore, the EPS bridge is mathematically broken; the listed drivers (starting at $18.00 and adding/subtracting the specified amounts) sum to $21.00, yet the report concludes a FY29 EPS of $32.00 without explanation. Justification for the most material driver\u2014operating margin expansion\u2014is also weak. The report forecasts a jump from 35% to 48% (a 1,300 bps increase) based solely on 'AI efficiencies' without providing peer benchmarks or historical context for such an unprecedented margin level. Additionally, there is a direct contradiction regarding share count, with the valuation narrative citing 'share dilution' while the capital allocation section highlights 'share buybacks.' Finally, the report fails the sensitivity requirement, offering only a qualitative mention of a 20% valuation swing rather than quantified ranges for key levers like WACC or revenue growth. These cumulative failures render the model's conclusions unauditable.",
+    "assumptions_extracted": [
+        {
+            "quote": "discounted cash flow model assuming 10% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 35% in FY24 to 48% by FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 8.5%, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from FY24 estimated $18.00, adding $2.50 from revenue growth, $1.00 from margin expansion, offset by $0.50 in higher taxes and share dilution, yielding FY29 EPS of $32.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (7% Rf + 1.1 Beta * 6% ERP) mathematically equal 13.6%, but the report uses 8.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix Table"
+                ]
+            },
+            {
+                "description": "EPS bridge math is incorrect: $18.00 + $2.50 + $1.00 - $0.50 = $21.00, but the report claims it yields $32.00.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot Table"
+                ]
+            },
+            {
+                "description": "Narrative assumes 'share dilution' in the EPS bridge while the Capital Allocation section highlights 'share buybacks'.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "48% Operating Margin (unprecedented expansion from 35% without peer data)",
+            "7% Risk-free rate (significantly higher than current market yields without explanation)"
+        ]
+    }
+}

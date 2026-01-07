@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections and provides a clear valuation bridge from operating drivers to a fair value estimate. However, it is capped at 'Fair' due to significant omissions in sector-specific depth. The Financials Snapshot is generic and lacks at least two core Managed Care KPIs, specifically Medical Loss Ratio (MLR) and Membership/Enrollment counts, which are essential for evaluating an insurer's performance. While the MLR is mentioned in the Risk section, its absence from the multi-year financial table limits the report's analytical utility. Additionally, the report lacks a dedicated peer benchmarking table and detailed scenario analysis, providing only a generic percentage swing for uncertainty. Redundancy is also present; the 11% revenue growth for Evernorth is repeated across the Analyst Note, Bulls Say, and Economic Moat sections without providing new depth or granular segment data in subsequent mentions. Finally, the ESG section explicitly acknowledges a lack of direct citation for its peer comparison data, violating the requirement for consistent evidence integration.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Detailed Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "Medical Loss Ratio (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (Financials Snapshot)",
+            "Total Membership/Enrollment",
+            "Pharmacy Script Volume",
+            "Days Claims Payable (DCP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR) in Financials Snapshot",
+            "Membership/Enrollment data",
+            "Pharmacy Script Volume"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating comparison (explicitly noted as insufficient data for direct citation)"
+        ]
+    }
+}

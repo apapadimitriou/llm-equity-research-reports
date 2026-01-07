@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates high explicitness and specificity regarding its core valuation inputs. Key drivers, including revenue growth, operating margins, tax rates, and WACC components, are clearly stated and proximal to the forecasts they inform. Justification is solid, with the 2025 revenue forecast tied directly to management guidance and the tax rate anchored in historical effective rates. The report maintains strong internal consistency; the financial snapshot table perfectly reconciles with the narrative's 2025 revenue ($59B), EPS ($21.9), and the downward trend in operating margins. However, the report fails the 'Stress-tested' pillar entirely. While it identifies qualitative risks such as pricing pressure and competition in the 'Risks & Uncertainty' section, it provides no quantified sensitivity analysis or scenario modeling (e.g., Bull/Bear cases or a WACC/Terminal Growth matrix). Per the grading instructions, the total absence of quantified sensitivity analysis on material drivers triggers a hard cap, limiting the maximum possible grade to 'Fair.' Despite the clear and auditable nature of the stated assumptions, the lack of a quantified range for the fair value estimate prevents a 'Good' or 'Excellent' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is projected to grow ~32% in 2025 (midpoint of guidance) then slow to ~10\u201315% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins to remain elevated (~36\u201337% in 2025, gradually easing to mid-30%s by 2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "A tax rate of ~18% aligns with past effective rates.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "For WACC, we use \u22488% (U.S. 10-year yield ~3.5%, ERP ~6%, beta ~0.9).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is set at 2%, reflecting Lilly\u2019s long-term pipeline value",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Average diluted shares ~900M.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "high R&D and marketing spend (~23\u201325% of sales)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

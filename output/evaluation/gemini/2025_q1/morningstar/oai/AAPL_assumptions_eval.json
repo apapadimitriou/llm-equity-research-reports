@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its valuation model, including a 7% revenue CAGR through FY2029, operating margins scaling from 32% to 33%, and a 15% effective tax rate. These inputs are clearly stated and proximal to the forecasts they inform. Internal consistency is high; the narrative regarding margin expansion and revenue growth reconciles perfectly with the 'Financials Snapshot' table and the EPS targets. Justification is partial; while the revenue growth is anchored to Morningstar projections and the margin expansion is logically tied to the higher-margin Services segment, the WACC (7\u20137.5%) and terminal growth (3%) lack detailed derivation or cited market benchmarks. The primary deficiency is the total lack of quantified sensitivity or scenario analysis. Although the report qualitatively acknowledges that the fair value is sensitive to revenue growth and macro factors, it does not provide specific ranges, a sensitivity matrix, or bull/bear case valuations. Per the grading instructions, the absence of quantified sensitivity analysis for material drivers triggers a hard cap, preventing a 'Good' or 'Excellent' grade despite the report's otherwise solid explicitness and consistency.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast mid-single-digit revenue growth (\u223c7% CAGR to FY2029)",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "gradually rising operating margins (~32\u201333% as services scale)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "~15% effective tax rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Using a discount rate (WACC) of ~7\u20137.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "long-term growth ~3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "modest share-count reduction (consistent with buybacks)",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "WACC derivation (Risk-free rate, Beta, Equity Risk Premium)"
+        ],
+        "unjustified_parameters": [
+            "WACC 7-7.5% stated without source or calculation",
+            "Long-term growth 3% stated without benchmark"
+        ]
+    }
+}

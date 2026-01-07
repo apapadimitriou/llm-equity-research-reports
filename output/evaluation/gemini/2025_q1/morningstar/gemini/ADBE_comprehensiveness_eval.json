@@ -1,0 +1,53 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to the cumulative impact of missing sector-specific depth and the violation of multiple redundancy and context rules. While the report is structurally complete and exceptionally well-cited, it fails the comprehensiveness test on three critical levels. First, the Financials Snapshot omits the most vital SaaS sector KPIs\u2014Total Annual Recurring Revenue (ARR) and Net Retention Rate (NRR)\u2014providing only generic financial data. Per the rubric, missing two or more core sector KPIs mandates a 'Fair' cap. Second, the report provides no peer benchmarking or comparative industry metrics; while competitors like Canva and OpenAI are named, there is no data-driven analysis of Adobe's relative valuation or operating performance, triggering a mandatory one-level downgrade. Third, the report is excessively redundant, repeating the '$125 million AI-first ARR' and 'CXO strategy' across five separate sections (Analyst Note, Strategy, Bulls, Bears, and Risk) without adding incremental depth, which triggers a second mandatory downgrade. Finally, the valuation section lacks any sensitivity analysis or scenario modeling. Under the 'apply in order' decision rules, these analytical gaps and the reliance on repetitive talking points move the report from a potential 'Good' rating down to 'Poor,' as the document provides a superficial assessment that lacks the granular industry data and comparative rigor expected in professional equity research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Non-GAAP Operating Margin",
+            "Non-GAAP EPS",
+            "Free Cash Flow (FCF)",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Total Annual Recurring Revenue (ARR)",
+            "Net Retention Rate (NRR)",
+            "Gross Retention / Churn Rate",
+            "Customer Acquisition Cost (CAC)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Total ARR",
+            "Net Retention Rate (NRR)",
+            "Churn Rate"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are highly explicit and well-justified, yet the lack of robust sensitivity analysis limits the grade to 'Fair.' Key valuation inputs, including a WACC of 8.5% (detailed by risk-free rate, beta, and ERP) and a terminal growth rate of 2.75%, are clearly stated and proximal to the DCF model. Operational drivers, such as the $75 billion FY2025 capital expenditure guidance and the 12.7% revenue growth forecast, are specific and directly tied to management commentary and recent Q1 2025 performance. Internal consistency is a notable strength; there are no numeric contradictions between the narrative, the historical summary tables, and the DCF summary.\n\nHowever, the report fails the 'Good' criteria due to insufficient stress-testing. While it acknowledges that the valuation is sensitive to WACC and terminal growth, it only provides a single quantified sensitivity point (a 50-bps increase in WACC). It offers no quantified ranges or scenarios for other material drivers like revenue growth, operating margins, or the massive CapEx step-up, which the report itself identifies as a primary risk to free cash flow. Without quantified scenarios for at least 2\u20133 material drivers or a sensitivity matrix, the outputs remain somewhat 'black-box' regarding operational volatility. Consequently, per the instruction's hard caps on sensitivity analysis, the report cannot exceed a 'Fair' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "capital expenditures to increase to approximately $75 billion for fiscal year 2025",
+            "location": {
+                "section": "The AI Pivot: A Generational Investment Cycle",
+                "page": "2"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC) of 8.5%",
+            "location": {
+                "section": "Valuation & Price Target",
+                "page": "1"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of 2.75%",
+            "location": {
+                "section": "Valuation & Price Target",
+                "page": "1"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "revenue growing at a compound annual rate of approximately 10% over the next five years",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Shares Outstanding (M) 12,135",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Model Summary",
+                "page": "8"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "risk-free rate of 4.1%, an equity risk premium of 4.1%, and a levered beta of 1.02",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "7"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "revenue_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "operating_margin_forecast_specifics",
+            "tax_rate_assumption"
+        ],
+        "unjustified_parameters": []
+    }
+}

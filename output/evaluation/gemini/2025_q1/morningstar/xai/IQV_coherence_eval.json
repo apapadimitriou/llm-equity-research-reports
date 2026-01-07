@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is fundamentally flawed due to severe temporal inaccuracies and internal data contradictions. Most critically, the report is dated May 7, 2025, yet it cites news events and analyst upgrades from September 2025 (Sources [news2] and [news3]) as 'recent' or occurring 'later in 2025.' This chronological impossibility destroys the report's credibility. Furthermore, there is a massive, unresolved discrepancy between the narrative and the Financials Snapshot table regarding earnings. The Analyst Note and Fair Value sections cite a 2024 adjusted EPS of $11.13 and a 2025 forecast of $11.80, while the Financials Snapshot table lists 2024 EPS as $7.49 and 2025 as $7.90. This inconsistency invalidates the valuation logic; the narrative claims a 20.3x forward P/E based on the $11.80 figure, but using the table's $7.90 figure would result in a 30.4x P/E, contradicting the claim that the valuation is 'in line with peers.' Additionally, the Bulls/Bears section is not reconciled with the base-case valuation; the Bear case warns of macroeconomic slowdowns reducing revenue, yet the DCF model assumes a steady 5.5% CAGR without addressing these risks. While the report follows a standard structure, the reader is forced to choose between conflicting data points, failing the core requirement of coherence.",
+    "evidence": [
+        "Report date 2025-05-07 vs. future-dated sources from September 2025 (Sources [news2], [news3]).",
+        "2024 EPS is $11.13 in Analyst Note but $7.49 in Financials Snapshot table.",
+        "Forward P/E of 20.3x in Fair Value section is mathematically inconsistent with the $7.90 EPS forecast in the Financials table."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

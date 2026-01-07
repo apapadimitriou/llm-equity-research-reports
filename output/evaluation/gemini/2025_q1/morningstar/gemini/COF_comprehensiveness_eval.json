@@ -1,0 +1,62 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on several critical fronts regarding comprehensiveness. First, the Financials Snapshot is skeletal, lacking all five years of required forecasts and omitting essential sector-specific KPIs (NIM, Provisions, CET1, NCOs) in the data table. Second, there is a fundamental disconnect in the valuation; the Analyst Note claims the valuation is 'almost entirely dependent' on the Discover acquisition, yet the Valuation section uses an outdated Fair Value Estimate from February 2024 that explicitly excludes the deal's impact. This violates the requirement for an explicit link between operating drivers and valuation outcomes. Third, the report lacks any peer benchmarking or industry context, which triggers a mandatory downgrade. Finally, significant redundancy exists, with the same 15-basis-point NIM guidance and Discover regulatory risks repeated across four different sections without adding new depth. These cumulative failures\u2014missing data, outdated valuation logic, lack of competitive context, and repetitive content\u2014render the report superficial and incomplete. The absence of forward-looking financial data and the failure to reconcile the current strategic narrative with the quantitative valuation model are particularly egregious for a professional equity research document.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Financial Forecasts (2025-2029)"
+        ],
+        "sector_kpis_present": [
+            "CET1 (in text only)",
+            "NIM (in text only)",
+            "Provisions (in text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (in table)",
+            "Provision for Credit Losses (in table)",
+            "Net Charge-offs",
+            "Efficiency Ratio",
+            "CET1 (in table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Analyst Note states valuation is 'almost entirely dependent' on the Discover deal, but the Valuation section uses an FVE that 'does not incorporate any potential synergies' from said deal.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Provision for Credit Losses",
+            "Net Charge-offs (NCOs)",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

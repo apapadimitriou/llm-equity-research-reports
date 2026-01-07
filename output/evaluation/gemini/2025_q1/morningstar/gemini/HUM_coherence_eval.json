@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a 'fair' grade due to significant quantitative contradictions that undermine an otherwise cohesive narrative. Structurally, the report is well-organized, moving logically from the immediate 'Star Ratings' crisis to operational mitigation strategies and long-term valuation. The qualitative 'bridge to 2027' argument is clearly articulated, and the distinction between the Insurance and CenterWell segments provides helpful context for the 'flywheel' effect. However, the report fails the consistency check between its narrative assumptions and its financial data. Specifically, Section 3.3 references a 'long-term algorithm of 11-15% earnings growth,' but the Financial Snapshot in Section 10 presents a wildly different reality, forecasting EPS growth of 53.8%, 88.6%, and 56.4% for the years 2027 through 2029. This massive disconnect is never reconciled. Furthermore, a critical temporal contradiction exists regarding the company's $37 EPS target. While the narrative and table position this as a 2028 recovery goal, the cited source (Source 26) explicitly titles the target for the year 2025. Additionally, the $3 billion revenue headwind cited in the Analyst Note is insufficient to explain the $7.36 billion revenue drop projected in the 2026 table, even accounting for the brief mention of membership shedding. These unresolved tensions between the text and the data tables require the reader to assemble the actual financial logic themselves, triggering the 'fair' cap under the provided grading guardrails.",
+    "evidence": [
+        "Section 3.3 cites a 'long-term algorithm of 11-15% earnings growth,' yet the Section 10 table forecasts EPS growth of 53.8% (2027), 88.6% (2028), and 56.4% (2029).",
+        "The narrative and Section 10 table set a $37.00\u2013$37.73 EPS target for 2028, but the cited Source 26 title explicitly identifies this as a 'Target of $37 in 2025.'",
+        "Section 1 notes a '$3 billion' revenue headwind for 2026, but the Section 10 table shows a revenue decline of over $7 billion ($126.36B to $119.00B)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

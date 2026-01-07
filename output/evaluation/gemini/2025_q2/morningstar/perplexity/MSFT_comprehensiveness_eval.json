@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all required sections from the Analyst Note to ESG. However, it fails to meet the 'Good' or 'Excellent' criteria due to several specific omissions and structural weaknesses. Most notably, the Financials Snapshot table is generic; while sector-specific KPIs such as Azure growth and RPO are mentioned in the narrative text, they are absent from the multi-year forecast table, which triggers a hard cap under the evaluation rules. Additionally, the report exhibits significant redundancy, repeating the $13B AI run rate and 33% Azure growth figures across the Analyst Note, Bulls Say, and Fair Value sections without providing incremental depth or new context in each instance. The valuation section provides a fair value estimate but lacks the scenario or sensitivity analysis (e.g., bull/bear cases for AI adoption rates) necessary for a higher rating. Peer benchmarking is limited to brief mentions of AWS and Google Cloud rather than a structured comparison or data-driven benchmarking. Consequently, while the report is informative, its lack of detailed KPI forecasting and sensitivity modeling limits its comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "Azure Growth (text only)",
+            "AI Revenue Run Rate (text only)",
+            "Commercial Bookings (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Azure Growth % (Financials Table)",
+            "Remaining Performance Obligations (Financials Table)",
+            "Cloud Gross Margin"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Azure Growth % (Forecast Table)",
+            "Remaining Performance Obligations (Forecast Table)"
+        ],
+        "uncited_claims": []
+    }
+}

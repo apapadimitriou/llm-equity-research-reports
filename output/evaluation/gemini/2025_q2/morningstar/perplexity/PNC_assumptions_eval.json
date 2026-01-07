@@ -1,0 +1,86 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to the presence of multiple internal numeric contradictions and a total absence of quantified sensitivity analysis. While the report explicitly lists several key assumptions in the Appendix and Fair Value sections, it fails to maintain consistency between the narrative and the financial tables. Specifically, the text forecasts revenue growth of 3\u20134% and EPS growth of 12.7%, yet the 'Financials Snapshot' table calculates to only 2.7% revenue growth and 11.86% EPS growth for the 2025 period. Furthermore, the report lacks any quantified stress-testing or scenario analysis for material drivers such as interest rates or credit costs, providing only qualitative risk descriptions. Justification for forward-looking assumptions is weak, relying on management 'targets' (e.g., a 58% efficiency ratio) without providing historical context or peer benchmarking to prove feasibility. Critical model inputs, including the specific forward-looking credit loss magnitude (NCO ratio), tax rate, and share count, are either omitted or left opaque. Per the evaluation rules, the combination of two distinct numeric contradictions and the lack of quantified sensitivities triggers a mandatory 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth is expected to average 3-4% annually over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target efficiency ratio: 58%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Earnings per share growth of approximately 12.7% is projected for the coming year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "weighted average cost of capital of approximately 9-10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal revenue growth: 2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 3-4% average revenue growth, but the Financials Snapshot table shows only 2.7% growth for 2025E ($22.2B to $22.8B).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text projects EPS growth of 12.7% for the coming year, but the table data ($13.74 to $15.37) results in 11.86% growth.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "credit_cost (forward-looking magnitude)"
+        ],
+        "unjustified_parameters": [
+            "WACC of 9-10% provided without a CAPM build-up or cited source."
+        ]
+    }
+}

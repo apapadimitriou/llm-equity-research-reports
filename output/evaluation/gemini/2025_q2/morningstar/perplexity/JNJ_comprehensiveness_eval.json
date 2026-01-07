@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report adheres to the required structural template, covering all major sections from the Analyst Note to ESG Risk. However, it fails to meet the criteria for a higher grade due to significant gaps in technical depth and data currency. The Financials Snapshot is generic and lacks critical sector-specific KPIs for a diversified healthcare firm, such as R&D intensity (as a line item), specific blockbuster drug revenue forecasts (e.g., Darzalex or Stelara), and pipeline phase counts. Furthermore, the report violates the evidence standards by relying on several highly outdated sources\u2014specifically sources [17], [23], and [27] which date back to 2018, 2019, and 2015 respectively\u2014to support financial claims in a report dated 2025. This triggers the hard cap for outdated information. Additionally, the report exhibits high redundancy; the 'Stelara biosimilar' headwind is repeated across nearly every section without providing new analytical depth in each instance. Finally, the absence of a quantitative peer benchmarking table or scenario/sensitivity analysis further limits the comprehensiveness, as these are essential for contextualizing J&J's valuation and competitive standing in the pharmaceutical and MedTech sectors.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Sales",
+            "Blockbuster Drug Revenue Breakdowns",
+            "Pipeline Phase Counts",
+            "MedTech Procedure Volumes"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "R&D Expense (Table)",
+            "Specific Drug Sales Forecasts",
+            "Pipeline Success Rates"
+        ],
+        "uncited_claims": [
+            "ROIC of 15.9% (Source 23 is from 2019, outdated for a 2025 report)",
+            "Free cash flow of $16.4 billion (Source 17 is from 2018, outdated for a 2025 report)",
+            "Institutional Ownership data (Source 27 is from 2015)"
+        ]
+    }
+}

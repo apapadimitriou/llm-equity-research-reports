@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is professionally structured with a clear narrative arc, transitioning logically from the company's AI-centric strategy to its valuation and risk profile. The language is sophisticated, and the 'Bulls Say / Bears Say' arguments are well-integrated into the fair value discussion. However, the report suffers from significant internal contradictions between the narrative and the provided financial table, which triggers a mandatory hard cap at the 'fair' level. Specifically, the Analyst Note cites a net loss of $1.29 billion for FY2025, yet the Financials Snapshot table lists the FY2025 EPS as ($0.85). Given Snowflake's market capitalization and share count, a $1.29 billion loss would imply an EPS closer to ($3.80), making the table's figure mathematically irreconcilable with the text. Additionally, the narrative treats FY2025 as a completed period with finalized results, while the table still labels the year as 'E' (Estimated). There is also a discrepancy in revenue growth; the narrative highlights 28%\u201330% growth in recent quarters, but the table's year-over-year figures for FY2024 to FY2025 reflect only 22% growth. Finally, the Fair Value section references a TTM EPS of ($4.21) that is not supported by the historical data in the financials table. These unresolved tensions between the narrative claims and the quantitative exhibits force the reader to reconcile the data themselves.",
+    "evidence": [
+        "Narrative cites a '$1.29 billion' net loss for FY2025 (Analyst Note) while the Financials Snapshot table lists FY2025E EPS as '($0.85)'.",
+        "The Fair Value section references a TTM EPS of '($4.21)' which contradicts the FY2024A EPS of '($3.42)' shown in the Financials Snapshot.",
+        "Narrative reports 28% growth for Q4 FY2025, but the table shows annual revenue growing from $3,483M to $4,250M (~22%)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

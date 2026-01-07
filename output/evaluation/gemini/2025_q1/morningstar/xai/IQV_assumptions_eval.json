@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report earns a 'Poor' grade due to significant internal contradictions and the absence of a robust sensitivity framework. While the report explicitly states several key drivers\u2014such as a 5.5% revenue CAGR and an 8.0% WACC\u2014it fails the consistency test. Most notably, there is a massive unresolved discrepancy between the EPS figures in the narrative and the Financials Snapshot table. The text forecasts 2025 and 2029 EPS of $11.80 and $14.50, respectively, while the table lists $7.90 and $9.90 for the same periods. This ~46% variance in the terminal year makes the model unauditable. Furthermore, the report contains a logical contradiction regarding margins: the Analyst Note forecasts EBITDA margins 'expanding to around 24%,' yet the Economic Moat section claims the company already achieved 24% in FY2024.\n\nJustification is partial; while revenue growth is linked to the $31 billion backlog, other inputs like the 3.0% terminal growth rate are dismissed with generic 'industry average' labels. Specificity is generally good regarding units and horizons, but the lack of transparency regarding share count\u2014despite mentioning $1 billion in annual buybacks\u2014leaves a material driver opaque. Finally, sensitivity analysis is insufficient. The report provides a single point-estimate for WACC sensitivity (\u00b115%) and a vague revenue risk (2-3%) but lacks a comprehensive scenario table or quantified impact on the $240 fair value estimate across multiple variables.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 5.5% from 2025-2029, driven by 6% growth in TAS and 5% in R&D Solutions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding from 18.5% in 2024 to 20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.0%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2024 adjusted EPS $11.13 grows to $11.80 in 2025 (+6%) ... reaching $14.50 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "adjusted EBITDA margins expanding to around 24%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Massive EPS discrepancy: Narrative forecasts $11.80 (2025) and $14.50 (2029), while the Financials Snapshot table lists $7.90 and $9.90 for the same years.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "EBITDA Margin status: Analyst Note claims margins are 'expanding to around 24%', but Economic Moat section states they were already 24% in FY2024.",
+                "locations": [
+                    "Analyst Note",
+                    "Economic Moat"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth 3.0% cited only as 'Long-term industry average' without peer data.",
+            "WACC 8.0% components provided without sourcing for Beta or ERP."
+        ]
+    }
+}

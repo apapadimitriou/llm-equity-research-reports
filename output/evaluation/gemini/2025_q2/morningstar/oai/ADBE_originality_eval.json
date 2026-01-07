@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original insights, relying almost exclusively on paraphrasing Morningstar's research and Adobe's public earnings releases. Every 'insight' presented is either a restatement of financial results (e.g., Q2 revenue, ARR growth) or a repetition of well-documented bull/bear cases (e.g., competition from Canva, AI monetization skepticism). There is no evidence of synthesis; for instance, the report mentions AI skepticism but does not provide a quantified pathway or specific monitoring signals to evaluate AI's impact on margins or retention. The valuation section is a boilerplate DCF with standard inputs (10% growth, 7.5% WACC) that lacks any company-specific novel drivers. Because the report contains zero original theses or syntheses and relies heavily on cited external analysis, it meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Adobe\u2019s core Creative and Document software as mission-critical tools with wide switching costs",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Digital Media ARR exited Q2 at $18.09 b (up 12.1% YoY)",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Rising AI adoption and new tools (Firefly, Express) should unlock future upsell and widen the sales funnel",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "DCF-based fair value (~$430/share) is driven by robust growth and margins... 10% annual growth slowing to 5%",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Competition is intensifying from low-cost platforms (Canva), Big Tech entrants and niche tools",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on Morningstar for moat and strategy analysis",
+            "Generic DCF with no novel drivers",
+            "Recap of public earnings without interpretive value",
+            "Boilerplate 'scale & diversification' logic"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

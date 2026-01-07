@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions criteria primarily due to multiple material internal contradictions and a total lack of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue CAGR (7%), WACC (7.5%), and terminal growth (3%), these inputs are not reconciled with the provided financial tables. Specifically, the narrative claims EPS will scale to $40.00 by 2029, yet the 'Financials Snapshot' table explicitly forecasts 2029 EPS at $37.00. Furthermore, the report targets a 13\u201316% EPS growth rate, but the data in the forecast table (growing from $27.8 in 2025 to $37.0 in 2029) implies a CAGR of only approximately 7.4%, creating a massive disconnect between the strategic outlook and the model outputs. Additionally, there is no quantified sensitivity or scenario analysis for material drivers like WACC or medical loss ratios; the report merely mentions qualitative risks and a generic fair value range in the glossary. Per the grading instructions, the presence of two or more distinct numeric contradictions between the text and tables, combined with the absence of quantified sensitivities, necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 7% revenue CAGR from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 8.4% in 2025 to 9.0% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 7.5% WACC, based on a 3% risk-free rate, 6% equity risk premium, and beta of 0.8",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth at 3% post-2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "UNH aims to achieve 13-16% EPS growth via operational leverage and share repurchases",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims EPS scales to $40.00 by 2029, but the Financials Snapshot table lists 2029 EPS as $37.00.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text targets 13-16% EPS growth, but the forecast table shows EPS growing from $27.8 to $37.0, which is a ~7.4% CAGR.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "13-16% EPS growth target (unsupported by the provided revenue and margin forecasts)"
+        ]
+    }
+}

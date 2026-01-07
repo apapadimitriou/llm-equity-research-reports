@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a solid grasp of Salesforce's financial position and strategic direction, with the Financials Snapshot aligning well with the narrative guidance. However, it suffers from internal data inconsistencies and temporal inaccuracies that prevent a higher grade. Specifically, the Analyst Note cites 3,000 paid Agentforce deals based on FY25 results, while the Bulls Say section cites only 1,000 based on an older December 2024 source. This lack of reconciliation between sections forces the reader to determine which figure is current. Additionally, the Business Description characterizes the 2019 Tableau and 2021 Slack acquisitions as 'recent,' which is inaccurate for a report dated May 2025. While the valuation logic (WACC, terminal growth) is consistent across the Fair Value and Appendix sections, and the transition from FY25 performance to FY26 guidance is logical, these 'noisy' internal contradictions trigger mandatory caps under the grading rubric. The Bulls/Bears are generally reconciled with the base-case valuation, but the reliance on outdated figures in the Bull case suggests a lack of thorough cross-sectional editing and fact-checking against the report's own internal timeline.",
+    "evidence": [
+        "Analyst Note cites '\u22483,000 paid' Agentforce deals, while Bulls Say section claims '~1,000 paying Agentforce contracts' (Analyst Note / Bulls Say).",
+        "Business Description labels the 2019 Tableau and 2021 Slack acquisitions as 'recent' despite the 2025 report date (Business Description).",
+        "Financials Snapshot 2026E Revenue of $40.7B aligns with the Analyst Note's guidance range of $40.5\u201340.9B (Financials Snapshot / Analyst Note)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

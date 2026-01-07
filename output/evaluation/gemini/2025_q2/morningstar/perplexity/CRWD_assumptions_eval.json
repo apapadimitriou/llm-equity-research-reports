@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including revenue CAGR, terminal operating margins, and WACC. These are clearly presented in both the 'Fair Value and Profit Drivers' section and a dedicated Appendix. Justification is solid, utilizing a mix of the company's historical performance (22% ARR growth) and industry-wide benchmarks (12.6% cybersecurity market CAGR). The report also includes a robust, quantified sensitivity analysis through a Base/Bull/Bear scenario table that links specific input changes to Fair Value outcomes. However, the report is capped at 'Fair' due to a significant unresolved numeric contradiction regarding earnings. The narrative claims a Q1 2026 EPS of $0.73 (described as a 'beat'), yet the Financials Snapshot table projects the full-year FY2026E EPS at only $1.45. This implies that the first quarter alone accounts for over 50% of the annual total, which fundamentally contradicts the report's narrative of steady growth and margin expansion, especially given the FY2025E estimate of $0.85. Additionally, while share buybacks are mentioned as a driver, the specific magnitude or share count assumptions remain opaque.",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes annual recurring revenue growth moderates from current 22% levels to a sustainable 15-18% CAGR over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "assumes gradual margin expansion to 25-30% over time",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumes a 9% discount rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Earnings per share is projected to grow... to approximately $4.50 by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR (2025-2029) Base Case: 16.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The text reports a Q1 2026 EPS of $0.73, but the Financials Snapshot table lists the full-year FY2026E EPS as $1.45, implying an impossible front-loading of earnings for a growth company.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% stated without a specific CAPM derivation or source."
+        ]
+    }
+}

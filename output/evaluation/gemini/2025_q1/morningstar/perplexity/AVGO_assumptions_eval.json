@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails primarily on internal consistency and logical coherence, triggering the 'Hard Cap' for multiple distinct contradictions. First, there is a massive discrepancy in the Fair Value Estimate (FVE): the Cover Block lists $912.00 (Price/FVE 0.30), while the 'Fair Value and Profit Drivers' section explicitly calculates a range of $350\u2013400 based on a 25\u201330x forward multiple. Second, the 'Financials Snapshot' contains a mathematical impossibility: it projects EPS to leap from $1.60 in 2024A to $6.29 in 2025E (a 293% increase) despite revenue only growing 22% and operating margins expanding by only 1.6 percentage points. Third, the narrative is internally conflicted; the Cover Block implies the stock is a deep-value play (0.30 Price/FVE), yet the 'Bears Say' section warns that 'high valuation multiples leave little room for execution missteps.' While the report provides a quantified sensitivity table in the appendix\u2014which would normally elevate it\u2014the presence of three major numeric and narrative contradictions necessitates a 'Poor' grade under the evaluation rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "AI serviceable addressable market of $60-90 billion by fiscal 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI semiconductor margins estimated at 60-70% and infrastructure software margins approaching 90%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital estimated at 8-9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge analysis indicates potential growth from current levels of approximately $6.29 to $12-15 by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair Value Estimate in Cover Block ($912.00) conflicts with the valuation narrative ($350-400).",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "EPS growth (293%) is mathematically irreconcilable with Revenue (22%) and Margin (1.6%) growth in the same period.",
+                "locations": [
+                    "Financials Snapshot Table (2024A vs 2025E)"
+                ]
+            },
+            {
+                "description": "Narrative claims 'high valuation multiples' while data claims stock is trading at 0.30x Fair Value.",
+                "locations": [
+                    "Cover Block",
+                    "Bears Say"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "EPS 2024A of $1.60 (conflicts with actual post-split historicals)",
+            "20-25% total revenue CAGR despite non-AI segments showing cyclical weakness"
+        ]
+    }
+}

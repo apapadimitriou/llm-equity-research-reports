@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a clear set of explicit assumptions that are well-integrated with the financial forecasts. Key drivers such as revenue CAGR (8\u201310%), organic AUM growth (4\u20136%), and operating margin expansion (scaling to 49.5% by 2029) are specifically defined with clear units and time horizons. The internal consistency is high; the figures cited in the narrative (e.g., 11\u201314% EPS growth) reconcile mathematically with the multi-year 'Financials Snapshot' table, showing a logical progression from current record performance to future estimates.\n\nHowever, the quality of justification is only partial. While the report links growth to recent acquisitions (GIP, HPS) and record 2024 inflows, it provides no peer benchmarking or deep historical context to support the long-term margin expansion or the specific WACC (9.5%) and terminal growth (3.0%) inputs. Most critically, the report lacks any quantified sensitivity or scenario analysis. Although it identifies macro risks like market volatility and interest rate shifts qualitatively, it fails to model how variations in these drivers would affect the fair-value estimate of $1,175. Per the instruction's hard caps, the total absence of quantified sensitivities for material drivers\u2014combined with the 'black-box' nature of the valuation parameters\u2014limits the grade to 'Fair.'",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 8-10% driven by organic AUM growth of 4-6% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins should expand to the high-40% range... 45.5% to 49.5% by 2029",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 24-25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "EPS growth of 11-14% annually through 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "scenario modeling"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% (no CAPM components or peer context provided)",
+            "Terminal growth 3% (no economic justification provided)"
+        ]
+    }
+}

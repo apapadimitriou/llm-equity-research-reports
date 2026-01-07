@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates high quality in four of the five pillars but fails significantly on the fifth. Regarding explicitness, the key inputs for the DCF model\u2014including WACC, terminal growth, and multi-year revenue targets\u2014are clearly presented in both the 'Fair Value and Profit Drivers' section and a dedicated Appendix. Justification is solid; the analyst provides specific causal drivers for the 54% revenue growth in FY2026, citing the Blackwell architecture ramp and the $30 billion cumulative impact of the China export ban reversal. Specificity is excellent, with clearly defined units, a five-year explicit forecast horizon, and granular WACC components (beta, risk-free rate, and equity risk premium). Internal consistency is a strength, as there are zero contradictions between the narrative's margin peaks and the 'Financials Snapshot' table. However, the report lacks any quantified sensitivity or scenario analysis. While it acknowledges 'Very High Uncertainty' and lists qualitative risks like geopolitical friction and customer concentration, it does not provide a range of outcomes or quantify how changes in material drivers (e.g., a 1% change in WACC or a slowdown in AI capital expenditures) would impact the $195 fair value estimate. According to the mandatory grading instructions, the absence of quantified stress-testing on material drivers caps the final grade at 'Fair,' regardless of the strength of the other evaluative categories.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is forecast to grow 54% to $201 billion. This is driven by the full-year contribution from the new Blackwell data center platform and the restoration of sales to China",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP operating margins are forecast to peak at 64% in fiscal 2027 before moderating to 62% by the end of the forecast period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "incorporates a weighted average cost of capital (WACC) of 9.2%... driven by a cost of equity of 9.24%, which assumes a beta of 1.25, a risk-free rate of 4.1%, and an equity risk premium of 4.1%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal free cash flow growth rate of 4.0%... justified by the secular tailwinds of AI and accelerated computing.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective Tax Rate 16.5%... Based on company guidance for fiscal 2026 and assumed to remain stable through the forecast period.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "reincorporation of approximately $30 billion in cumulative revenue through fiscal 2027 into the forecast model",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "share_count"
+        ],
+        "unjustified_parameters": []
+    }
+}

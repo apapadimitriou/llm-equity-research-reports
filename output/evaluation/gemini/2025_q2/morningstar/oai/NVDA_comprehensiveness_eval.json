@@ -1,0 +1,53 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is structurally complete in terms of narrative sections and features high-quality, well-cited evidence. However, it fails several critical comprehensiveness tests mandated by the evaluation framework. First, the Financials Snapshot is generic; it omits essential semiconductor sector KPIs such as Gross Margin, R&D Expense, and a breakdown of segment-level revenue (Data Center vs. Gaming) within the multi-year forecast table. Per the hard caps, the omission of two or more core KPIs limits the maximum possible grade to 'Fair.' Second, the report lacks a dedicated peer benchmarking analysis and scenario/sensitivity modeling, which are required for higher grades. While the text mentions AMD and Intel in passing, the absence of a formal comparative framework for valuation or operating metrics triggers a further downgrade under the 'Peer context absent' rule. Finally, the report exhibits significant redundancy, repeating the 'CUDA software/4 million developers' and 'China export ban' talking points across three separate sections (Analyst Note, Bulls/Bears, and Moat/Risk) without providing incremental depth or new data. Following the decision rules in order\u2014capping at 'Fair' for KPI omissions and then downgrading for the lack of peer benchmarking and the presence of redundancy\u2014the final grade is 'Poor.' This reflects a failure to meet the specific technical requirements for a comprehensive equity research document despite the professional tone of the writing.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "R&D Expense",
+            "Segment Revenue Breakdown",
+            "Inventory Turns"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin",
+            "R&D Expense",
+            "Segment Revenue Breakdown"
+        ],
+        "uncited_claims": []
+    }
+}

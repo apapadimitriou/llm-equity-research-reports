@@ -1,0 +1,62 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to critical failures in evidence integration, sector-specific reporting, and structural redundancy. While the report appears comprehensive at a glance, a closer inspection reveals that the citations are fundamentally disconnected from the claims they support. For instance, Source 20 refers to an ESG rating for 'CVS Group plc'\u2014a UK-based veterinary services provider\u2014to support data regarding CVS Health\u2019s (the US healthcare company) PBM membership. Similarly, Sources 1\u20134 are stock price aggregators used to cite specific adjusted EPS figures and revenue growth percentages, which they do not contain. This pattern of irrelevant sourcing renders the report\u2019s material claims effectively uncited.\n\nFurthermore, the Financials Snapshot is generic and fails to include any core sector KPIs such as Medical Benefit Ratio (MBR), Medical Membership, or Pharmacy Claims Volume, which are essential for a healthcare and managed care analysis. The report also exhibits extreme redundancy, repeating the same talking points regarding the Oak Street Health and Signify Health acquisitions across five different sections (Analyst Note, Strategy, Bulls/Bears, Risk, and Capital Allocation) without adding new depth. These failures\u2014repetitive assertions, irrelevant sourcing, and the omission of critical sector KPIs\u2014meet the criteria for a 'Poor' grade, as the report lacks the technical rigor and accurate evidence integration required for professional equity research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Adjusted Operating Margin",
+            "Adjusted EPS"
+        ],
+        "sector_kpis_missing": [
+            "Medical Benefit Ratio (MBR)",
+            "Medical Membership",
+            "Pharmacy Claims Volume"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Source 20 refers to a UK veterinary company (CVS Group plc) instead of the US healthcare company (CVS Health).",
+                "locations": [
+                    "Business Description",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Medical Benefit Ratio (MBR)",
+            "Medical Membership",
+            "Pharmacy Claims Volume"
+        ],
+        "uncited_claims": [
+            "Adjusted EPS of $2.25 (Source 3 is a stock price history page)",
+            "Full-year EPS guidance of $6.00-$6.20 (Source 4 is a market cap tracker)",
+            "PBM market share loss to Express Scripts (Source 12 is a stock quote page)"
+        ]
+    }
+}

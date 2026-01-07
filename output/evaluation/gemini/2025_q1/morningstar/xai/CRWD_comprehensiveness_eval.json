@@ -1,0 +1,52 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is assigned a grade of \"Poor\" due to the strict application of the provided grading rubric, specifically regarding sector-specific KPIs, redundancy, and peer context. While the report includes all required sections and maintains consistent internal sourcing, it fails several critical comprehensiveness checks. The Financials Snapshot is generic and omits core SaaS KPIs\u2014specifically Annual Recurring Revenue (ARR) and Net Retention Rate (NRR)\u2014from the multi-year history and forecast table. Per the \"Hard Caps,\" the omission of two or more core sector KPIs in the snapshot limits the maximum grade to \"Fair.\" Furthermore, the report is highly repetitive; the July 2024 global outage is discussed in five separate sections (Analyst Note, Strategy, Bulls/Bears, Risk, and ESG) with minimal incremental depth, triggering a mandatory one-level downgrade. Additionally, the absence of a dedicated peer benchmarking analysis and a formal scenario/sensitivity matrix\u2014beyond a single percentage estimate\u2014triggers a further downgrade. While the valuation section provides a logical bridge from operating drivers to EPS, the lack of granular SaaS metrics in the financial summary and the excessive repetition of a single event result in a report that feels superficial and incomplete, meeting the criteria for a \"Poor\" grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis Matrix"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Net Retention Rate (NRR)",
+            "Customer Acquisition Cost (CAC)",
+            "LTV"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Annual Recurring Revenue) forecasts and history in Financials Snapshot table",
+            "NRR (Net Retention Rate) forecasts and history in Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its DCF model, including a WACC (8\u20139%) broken down by treasury yield and equity risk premium, a terminal growth rate (3%) tied to nominal GDP, and a stable tax rate (21%). These inputs are clearly located in the Appendix and Fair Value sections, making the model's mechanics traceable. Justification is solid for revenue, citing management\u2019s 5% organic growth target, though the financial table forecasts 2025 revenue growth at 8.3%, which pushes the 'mid-single-digit' narrative into high-single-digit territory when including acquisitions. Internal consistency is generally maintained, although the projected jump in operating margin from 39.7% in 2024 to 43.0% in 2025 is a significant 330bps expansion that is only qualitatively attributed to 'scale and technology' without a detailed expense bridge. The most significant deficiency is the total absence of quantified sensitivity or scenario analysis. While the report identifies material risks such as market volatility and regulatory pressure, it fails to provide a range of outcomes for the Fair Value Estimate or EPS based on changes in AUM growth or margin compression. Per the grading instructions, the lack of quantified sensitivities on material drivers mandates a hard cap of 'Fair,' as the valuation remains a single-point estimate without stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "Long-term Revenue CAGR: ~6% (\u22485% organic plus acquisitions)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin (adj.): ~44\u201345% (gradually expanding as scale offsets reinvestment)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: ~8\u20139% (reflecting ~3% treasury yield + 5\u20136% equity premium)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: ~3% (long-run nominal GDP proxy)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective Tax Rate: ~21% (assumed stable)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Share Count: declining modestly (assumes continued buybacks)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "FCF approximated at ~60% of net income",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative describes 'mid-single-digit' organic growth, but the 2025E revenue forecast in the table ($22.1B vs $20.4B) implies 8.3% growth.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis"
+        ],
+        "unjustified_parameters": [
+            "330bps operating margin expansion in 2025E without specific cost-saving bridge"
+        ]
+    }
+}

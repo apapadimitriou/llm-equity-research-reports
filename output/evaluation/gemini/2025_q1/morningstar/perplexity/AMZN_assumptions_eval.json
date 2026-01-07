@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' because it triggers a mandatory hard cap: the presence of a material numeric contradiction combined with the total absence of quantified sensitivity analysis. While the report is commendable for making assumptions explicit in a dedicated appendix, the data is internally incoherent. The segment-level growth assumptions provided (8% North America, 12% International, 18% AWS, and 17% Advertising) imply a 2025 total revenue of approximately $717 billion based on the 2024 baseline. However, the 'Financials Snapshot' table explicitly forecasts 2025 revenue at $685 billion (a ~7% increase), creating an unresolved $32 billion discrepancy. Furthermore, the report fails the 'Stress-tested' pillar entirely. Despite identifying significant risks such as AI infrastructure costs and regulatory pressure, it offers no quantified sensitivity tables or scenarios showing how changes in AWS margins, revenue growth, or the 9.5% WACC would impact the $250 Fair Value Estimate. Per the grading instructions, the combination of one distinct numeric contradiction and zero quantified sensitivities necessitates a 'Poor' rating, as the model's outputs function as a 'black box' that does not reconcile with its own stated inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "AWS Revenue Growth: 18% (2025E), 16% (2026E)",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AWS Operating Margin: 38% (2025E), 40% (2026E)",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9.5%",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "planned $100+ billion capital expenditure program for 2025",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Advertising Growth: 17% (2025E), 15% (2026E)",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Financials Snapshot forecasts 2025 Revenue at $685B (~7% growth), but the Appendix growth assumptions (8% NA, 12% Intl, 18% AWS, 17% Ad) imply a weighted growth of ~12% and revenue of ~$717B.",
+                "locations": [
+                    "Financials Snapshot",
+                    "Appendix - Key Valuation Assumptions"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% stated without specific build-up or source link to current market yields."
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report exhibits significant internal contradictions and temporal inaccuracies that undermine its structural coherence. Most notably, the report is dated June 29, 2025, yet it includes a citation (Source [2]) dated July 15, 2025, creating a logical impossibility. Furthermore, the Analyst Note claims the $85 fair-value estimate represents a 'modest premium to recent trading levels,' but the Cover Block explicitly states that the 'Last close' and 'Price/FVE' data are 'insufficient.' This makes the core valuation argument impossible for the reader to verify or follow logically.\n\nThe 'Fair Value and Profit Drivers' section provides specific numeric forecasts, such as a 2025 EPS of $7.50 and a 4% revenue CAGR, yet the 'Financials Snapshot' table is entirely populated with 'insufficient data' placeholders. This disconnect between the narrative's precision and the table's total lack of supporting data forces the reader to assemble the argument themselves without a factual foundation. While the language is clear, the structural coherence is broken by these gaps. The 'Business Description' and 'Strategy & Outlook' sections are brief and lack the connective tissue required for a higher rating, reading more like isolated summaries. Finally, the EPS bridge attempts to calculate a 2025 figure while admitting the 2024 base is unknown, further highlighting the internal inconsistency.",
+    "evidence": [
+        "Source [2] is dated 2025-07-15, which is after the report's publication date of 2025-06-29 (Sources/Cover Block).",
+        "Analyst Note claims a 'modest premium to recent trading levels' while the Cover Block states 'Last close insufficient data'.",
+        "The Financials Snapshot contains no data, yet the Fair Value section cites specific 2025 EPS and CAGR targets."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

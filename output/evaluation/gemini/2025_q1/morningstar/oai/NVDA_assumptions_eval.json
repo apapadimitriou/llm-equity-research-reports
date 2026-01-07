@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's quality of assumptions is graded as Poor due to significant internal contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as a 9% WACC, 70% operating margins, and specific revenue targets\u2014it fails the consistency and stress-testing pillars required for a higher grade. Specifically, there are two major numeric contradictions: first, the narrative forecasts FY2025 revenue growth of 30\u201340%, yet the 'Financials Snapshot' table models a jump from $62.5B to $120B, representing a 92% increase. Second, the 'Fair Value' section describes a 'mid-teens CAGR' for revenue, while the 'Appendix' explicitly lists a '20\u201330% CAGR' for the same period. These discrepancies suggest a lack of coordination between the model and the narrative. Furthermore, the report provides no quantified sensitivity analysis or scenario modeling for material drivers like AI adoption rates or margin compression. Per the grading instructions, the presence of two or more distinct contradictions, combined with the absence of quantified sensitivities, mandates a 'Poor' rating. Justification for the aggressive 70% operating margin is also thin, relying on 'unique scale' without benchmarking against historical semiconductor peaks or peer limits, making the outputs feel like a black box despite the specific figures provided.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast ~30\u201340% growth in FY2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins near 70%+",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "discount rate (WACC) of ~9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal EV/EBITDA multiple around 18\u201320x",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate ~18% (US statutory)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Revenue CAGR (FY25\u201329) ~20\u201330%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims 30-40% FY25 revenue growth, but the Financials Snapshot table shows 92% growth ($62.5B to $120B).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative describes revenue slowing to a 'mid-teens CAGR', while the Appendix explicitly lists a '20-30% CAGR'.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "70% operating margin sustained through 2029 without peer or historical precedent",
+            "WACC of 9% components provided but not linked to specific market data sources"
+        ]
+    }
+}

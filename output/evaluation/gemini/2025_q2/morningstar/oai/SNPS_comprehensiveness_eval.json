@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required sections and provides a clear valuation bridge from operating drivers to a fair value estimate. However, it is subject to a 'Fair' grade cap due to the omission of at least two core sector-specific KPIs (e.g., Recurring Revenue %, R&D Intensity, or Gross Margin) within the Financials Snapshot table, which remains generic. Furthermore, the report exhibits significant redundancy; the $35B Ansys acquisition and China export restrictions are repeated across seven different sections (Analyst Note, Strategy, Bulls, Bears, Moat, Risk, and Capital Allocation) with minimal incremental depth, violating the requirement for minimal redundancy. A material contradiction also exists regarding the WACC (8.5% in the Analyst Note versus 9.0% in the Valuation and Appendix sections). While peer benchmarking is present in the text, the lack of a formal scenario or sensitivity analysis further limits the comprehensiveness from reaching a 'Good' or 'Excellent' level.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Recurring Revenue %",
+            "R&D Intensity %",
+            "Gross Margin (in table)",
+            "ARR/NRR"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC assumption (8.5%) in Analyst Note is inconsistent with the 9% used in the Valuation section and Appendix.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Recurring Revenue %",
+            "R&D Intensity %",
+            "Gross Margin (in table)"
+        ],
+        "uncited_claims": []
+    }
+}

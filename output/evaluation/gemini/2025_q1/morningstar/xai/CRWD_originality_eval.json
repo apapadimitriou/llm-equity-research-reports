@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is primarily a restatement of public financial results and management commentary from the fiscal year 2025 and Q3 2025 earnings releases. It identifies key metrics such as ARR growth, module adoption, and free cash flow, but fails to provide an original interpretation beyond what is readily available in press releases and investor presentations. The analysis of the July 2024 outage and its impact on sales cycles is a well-documented public narrative rather than a unique insight. While the report includes an EPS bridge that synthesizes revenue growth, margin expansion, and buybacks into a quantified 2029 target, this is a standard mechanical output of a DCF model rather than a novel thesis. The valuation section relies on generic drivers (CAGR and margin expansion) without exploring company-specific mechanisms like unit economics or specific cohort behavior. Because the report contains more than three restated insights and lacks a strong, non-obvious original thesis, it is capped at the 'Fair' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Ending annual recurring revenue (ARR) reaching $4.24 billion, up 23% year over year, and net new ARR of $224 million.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Third-quarter net new ARR declined 31% year over year... signaling potential sales cycle elongation post a global outage.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "EPS bridges from $3.50 in FY2025 to $10.00 in FY2029 via revenue growth (+$6.00), margin expansion (+$2.00), and share buybacks (+$0.50).",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "CrowdStrike processes over 2 trillion events daily, far surpassing smaller peers.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Customers using eight or more modules rising to 27%... supported by the acquisition of Flow Security.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Secular cybersecurity spending growth, fueled by rising threats, positions CRWD for sustained 20%+ revenue CAGR.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on earnings press release data",
+            "Boilerplate moat analysis (switching costs and network effects)",
+            "Bulls/Bears section repeats standard market consensus"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

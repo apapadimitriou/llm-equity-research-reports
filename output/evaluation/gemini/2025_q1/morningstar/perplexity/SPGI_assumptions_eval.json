@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s assumptions are explicitly stated and specific in terms of magnitudes and time horizons, but they fail on the critical pillars of consistency and sensitivity. While the analyst provides a clear list of drivers\u2014including a 7% revenue CAGR, a 42% terminal operating margin, and an 8.5% WACC\u2014there are significant internal contradictions. The narrative explicitly projects a 2027 EPS of $19.50 to support the $587 fair value target, yet the 'Financials Snapshot' table lists the 2027 EPS as $18.85. Additionally, the text cites 2025 non-GAAP EPS growth guidance of 35\u201337%, but the provided financial table shows growth of only 30.3% ($12.35 to $16.10). These unresolved numeric discrepancies undermine the auditability of the model. Furthermore, the report lacks any quantified sensitivity or scenario analysis. While it qualitatively discusses risks and 'Bulls/Bears' scenarios, it fails to provide quantified ranges or valuation impacts for material drivers like interest rates or issuance volumes. Justification is also relatively weak, relying on broad mentions of management guidance without presenting the multi-year historical context or peer benchmarks necessary to validate the aggressive margin expansion and growth targets. Per the grading rubric, the combination of multiple distinct contradictions and the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth is projected at a 7% compound annual growth rate through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion from the current 39% to approximately 42% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2027 EPS estimate of $19.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Non-GAAP EPS growth is expected at 35-37%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2027 EPS forecast in text ($19.50) conflicts with the Financials Snapshot table ($18.85).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2025 EPS growth guidance cited in text (35-37%) conflicts with the growth rate implied by the table (30.3%).",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "7% Revenue CAGR without historical comparison",
+            "42% Operating Margin target without peer benchmarking"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a 'fair' grade due to significant temporal contradictions and citation misalignments that undermine its internal logic. While the narrative structure is professional and the flow between sections\u2014such as connecting the $1.5B branch expansion from the Analyst Note to the Strategy and Capital Allocation sections\u2014is 'good,' the report fails on basic temporal consistency. Specifically, the report is dated June 29, 2025, yet it cites a 'Last close' price from August 8, 2025, and references Q2 2025 earnings results as 'recent' despite the quarter not having concluded or reported by the report's date. Furthermore, the Analyst Note cites Source [1] (dated June 5, 2025) for these Q2 results, which is chronologically impossible.\n\nAdditionally, there is a disconnect in the valuation evidence. The Fair Value section posits a $200.29 target, but the supporting citations ([7] and [8]) are from 2022, making them three years out of date and irrelevant for a 2025 projection. While the 'Financials Snapshot' table is internally consistent with the narrative's EPS and revenue claims, the overarching 'recency' errors and the use of future-dated stock prices relative to the report date trigger the mandatory 'fair' cap under the guardrails. The report reads well, but the data integrity is compromised by these chronological and source-alignment flaws.",
+    "evidence": [
+        "Report date 2025-06-29 vs. Last close price from 2025-08-08 (Cover Block)",
+        "Citing Q2 2025 results as 'recent' on June 29, 2025, before the quarter concludes (Analyst Note)",
+        "Reliance on 2022 price targets (Sources [7], [8]) for a 2025 Fair Value estimate (Fair Value section)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

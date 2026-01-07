@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a professional and structured overview of Apple Inc., but it relies heavily on restating public financial data and widely discussed market narratives. While it successfully incorporates specific quantified data points\u2014such as the $900 million quarterly tariff impact and a projected 74% Services margin\u2014these are largely presented as restatements of cited external sources (e.g., Source 19 and 12) rather than original internal syntheses. The core arguments regarding Apple's 'ecosystem moat,' 'China vulnerabilities,' and 'AI implementation delays' are standard industry viewpoints that offer little non-obvious or unique perspective. The report contains at least four insights that are either generic restatements of sector trends or direct paraphrases of cited news headlines. Although the valuation section includes a specific margin trajectory, the lack of a truly original, testable thesis or a novel causal mechanism beyond what is available in the cited sources prevents the report from achieving a 'Good' grade. It meets the criteria for 'Fair' due to its company-specific detail but remains capped by the high volume of restated content.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "iPhone revenue decline as upgrade cycles lengthen and consumer AI adoption remains tepid.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Services division achieved record quarterly performance and now represents 21% of total revenue.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "U.S. tariff regimes could impose up to 83% effective rates, adding $900 million in quarterly costs.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Services margin expansion from 70% to 74% by 2029 reflects scale benefits and subscription optimization.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Apple's approach emphasizes privacy-focused AI integrated into hardware rather than standalone services.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "China market vulnerabilities and Huawei competition threaten 19% of total revenue.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'ecosystem advantages' and 'brand strength' phrasing",
+            "Heavy reliance on cited figures for primary insights",
+            "Generic DCF drivers focused on standard Services growth"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

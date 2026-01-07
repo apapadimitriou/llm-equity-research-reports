@@ -1,0 +1,97 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to the combination of a material internal contradiction and the total absence of quantified sensitivity analysis, which triggers a mandatory hard cap. While the analyst provides explicit point-estimates for key drivers\u2014including product revenue growth (28.5% for FY26), Net Revenue Retention (122-124%), and a detailed WACC calculation (8.8%)\u2014it fails to stress-test these assumptions. There are no quantified scenarios or sensitivity tables showing how the $210.00 Fair Value Estimate would change under different growth or margin assumptions, leaving the valuation as a 'black box.'\n\nCrucially, the report contains a significant numeric contradiction regarding its cash flow narrative. It repeatedly highlights 'significant operating leverage' and 'FCF margin expansion,' yet its own data (Section 11) shows that FY2025 actual FCF margins were 29.0%, while the FY2026 estimate is only 25.0%. Describing a 400-basis-point year-over-year decline as 'expansion' (Section 5 and Section 8) is logically inconsistent and undermines the credibility of the forward-looking model. Furthermore, while the analyst justifies the WACC components, the lack of a bull/bear case or a sensitivity matrix for a 'High' uncertainty asset violates the core requirements for high-quality research. The specificity of the inputs is noted, but it cannot compensate for the lack of internal coherence and the failure to provide a range of outcomes for material drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project product revenue of $4.45 billion, representing 28% year-over-year growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net Revenue Retention (NRR)... has stabilized at 124%.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We model non-GAAP product gross margins stabilizing at 75-76%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We utilize a weighted average cost of capital of 8.8%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We apply a terminal growth rate of 3.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We project FCF margins to expand from 25% in FY26 to 30% in the long term.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "With a share count of approximately 371 million (diluted).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NRR",
+            "gross_margin",
+            "operating_margin",
+            "FCF_margin",
+            "WACC",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report describes FCF margins as 'expanding' to 25% in FY26, despite the historical table showing FY25 actuals were higher at 29%.",
+                "locations": [
+                    "Section 5: Business Strategy & Outlook",
+                    "Section 11: Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "Quantified sensitivity analysis for revenue growth and WACC"
+        ],
+        "unjustified_parameters": [
+            "The 400bps contraction in FCF margin for FY26 is not explained in the context of 'operating leverage' claims."
+        ]
+    }
+}

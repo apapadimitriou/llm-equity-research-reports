@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is well-structured and utilizes clear, professional language with strong temporal accuracy, correctly referencing Q1 2025 results and recent regulatory developments. However, it suffers from multiple internal contradictions between the narrative and the provided financial data, which triggers a hard cap at the 'fair' level. Specifically, the Fair Value section claims the $620 estimate corresponds to '~36x forward EPS in 2026.' Based on the Financials Snapshot table, which lists 2026 EPS at $18.50, the actual multiple is 33.5x; the 36x figure only aligns if applied to the 2025 EPS of $17.00. Furthermore, the narrative projects EBIT margins rising 'towards ~42% (pre-spin) by 2029,' yet the table shows the company achieving 42% by 2026 and reaching 43% by 2029. There is also a discrepancy in the EPS bridge, which estimates 2026 earnings at '$17\u201318,' while the table explicitly forecasts $18.50. While the qualitative analysis regarding the wide moat and strategic spin-off of the Mobility business is coherent and well-supported by citations, these quantitative mismatches force the reader to reconcile the core valuation argument themselves. The transitions between sections are generally smooth, but the failure to align the base-case narrative with the primary financial table undermines the report's overall consistency.",
+    "evidence": [
+        "Fair Value section cites ~36x forward EPS in 2026, but $620 / $18.50 (table EPS) equals 33.5x; the 36x multiple actually matches 2025 data.",
+        "Narrative projects margins rising 'towards ~42%... by 2029' (Fair Value), but the Financials Snapshot shows 42% in 2026 and 43% by 2029.",
+        "The EPS bridge in the Fair Value section estimates ~$17\u201318 by 2026, contradicting the $18.50 figure provided in the Financials Snapshot table."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

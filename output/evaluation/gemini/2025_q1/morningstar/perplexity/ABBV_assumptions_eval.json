@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to a critical internal numeric contradiction and the complete absence of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as the $31\u201332 billion revenue target for Skyrizi and Rinvoq by 2027 and specific margin expansion targets\u2014it fails to maintain internal consistency. Specifically, the 'Cover Block' lists a Fair Value Estimate (FVE) of $184.00, whereas the 'Fair Value and Profit Drivers' section explicitly calculates and concludes a fair value of $190.00. This unresolved discrepancy undermines the auditability of the model.\n\nFurthermore, despite identifying 'High' uncertainty and material risks like pharmaceutical tariffs and pipeline setbacks (e.g., emraclidine), the report offers no quantified sensitivity or scenario analysis. There are no ranges provided for the impact of varying discount rates, terminal growth, or revenue misses on the target price. Assumptions are well-justified by historical performance and management guidance, and specificity regarding units and time horizons is high. However, the combination of a fundamental numeric contradiction and the lack of stress-testing triggers the 'Poor' grade under the defined hard caps. The report functions as a 'black box' where the final valuation does not reconcile across sections and lacks the necessary robustness to evaluate risk-adjusted outcomes.",
+    "assumptions_extracted": [
+        {
+            "quote": "Skyrizi and Rinvoq... projected to achieve combined sales exceeding $31 billion by 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins improving from current levels of approximately 35% to 38% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital (WACC) of 8.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate assumption of 3.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate: 18.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "share repurchases contributing $0.75 per share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Fair Value Estimate is stated as $184.00 in the Cover Block but as $190.00 in the Fair Value and Profit Drivers section.",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

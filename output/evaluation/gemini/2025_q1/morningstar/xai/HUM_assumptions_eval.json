@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report receives a 'Poor' grade due to multiple unresolved numeric contradictions and the absence of quantified sensitivity analysis. While the report explicitly lists key assumptions such as a 5% revenue CAGR, 8% WACC, and 3% terminal growth in an appendix, these figures are undermined by significant internal inconsistencies. The analyst note bases its valuation bridge on a 2024 adjusted EPS of $16.21, yet the 'Financials Snapshot' table reports 2024 EPS as $9.98 without explanation or reconciliation. Furthermore, the 2025 forecast EPS in the table ($15.88) conflicts with the $16.25 adjusted guidance highlighted in the narrative. Justification for margin expansion (rising to 3.8% by 2029) is weak, cited only as 'efficiency initiatives' without historical context or peer benchmarking. Crucially, the report fails the sensitivity requirement; although it qualitatively mentions that regulatory changes could swing fair value by \u00b120%, it provides no quantified sensitivity matrix or scenario analysis for material drivers like medical benefit ratios or Star Ratings. According to the decision rules, the presence of two or more distinct contradictions, combined with the lack of quantified sensitivities, mandates a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "modest revenue growth of 5% CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins stabilizing around 3.5%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of 8.0%, reflecting sector risks and a beta of 1.0",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "3"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2025 at $16.25 per guidance",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024 EPS in text ($16.21) conflicts with 2024 EPS in Financials Snapshot table ($9.98).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2025 Forecast EPS in text ($16.25) conflicts with 2025 Forecast EPS in table ($15.88).",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Operating margin described as 'stabilizing around 3.5%' in text but shown increasing to 3.8% in the table.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Operating Margin 3.8% by 2029 based only on 'efficiency improvements' without data."
+        ]
+    }
+}

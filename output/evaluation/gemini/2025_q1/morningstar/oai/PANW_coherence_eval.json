@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is characterized by severe internal contradictions and mathematical inconsistencies that undermine its core argument. The most significant failure involves the share count and valuation multiples. The Analyst Note claims a post-split share count of approximately 380 million, yet the Cover Block and Fair Value sections imply roughly 700 million shares. This discrepancy flows into the valuation metrics: the narrative states that a $190 fair value estimate represents ~15\u201316x FY2025 EPS and ~1.0x sales. However, using the report's own financial table ($6.20 EPS) and revenue projections ($9.15B), a $190 price actually results in a ~30.6x P/E and a ~14.5x Price/Sales ratio. These are not minor errors; they represent a fundamental disconnect between the data provided and the analyst's conclusions. Furthermore, the Fair Value section contains a glaring typographical fragment ('15. Hun.'), and the EPS figures in the Financials Snapshot are not reconciled for the mentioned stock split, making historical comparisons nonsensical (e.g., $7.6 in 2022 vs $4.4 in 2023). While the qualitative sections on strategy and moat are clear, the quantitative framework is so internally conflicted that the reader must essentially discard the provided analysis and re-calculate the valuation from scratch.",
+    "evidence": [
+        "Analyst Note claims ~380m shares post-split, while Fair Value section and Cover Block imply ~700m shares.",
+        "Narrative claims $190 FVE implies ~1.0x 2025 sales, but the math ($133B market cap / $9.15B revenue) results in ~14.5x (Fair Value and Profit Drivers).",
+        "Incomplete sentence/typo: 'This corresponds to an implied FY2025 P/E of ~15. Hun.' (Fair Value and Profit Drivers)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

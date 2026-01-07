@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a clear set of explicit assumptions, particularly within the 'Key Valuation Assumptions' appendix and the 'Fair Value and Profit Drivers' section. It specifies a 13% revenue CAGR through FY29 and a target operating margin of 46%, which are proximal to the forecasts they inform. Justification is solid for operational drivers like Azure growth and AI run rates, which are supported by recent quarterly history and cited sources. However, the report fails to reach a 'Good' grade due to two primary deficiencies. First, the valuation parameters\u2014specifically the 9.5% WACC and 3% terminal growth rate\u2014are stated without any supporting build-up, peer benchmarking, or cited sources. Second, and most critically, the report lacks quantified sensitivity or scenario analysis for material drivers. While it mentions a fair value range of $450\u2013$600 based on 'different growth and margin assumptions,' it does not provide the specific quantified ranges, bull/bear cases, or sensitivity matrices for the drivers themselves (e.g., Azure growth variance or AI margin impact). Per the grading instructions, the absence of quantified scenario analysis on material drivers caps the grade at 'Fair.' Internal consistency is generally maintained, though the distinction between 'net cash' and 'total cash' is not explicitly reconciled in the text.",
+    "assumptions_extracted": [
+        {
+            "quote": "five-year compound annual growth rate of approximately 13%, incorporating continued Azure expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion from current levels of approximately 45% to 46% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "strategic investments in data center infrastructure totaling $80 billion to support future AI and cloud demand",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "WACC: 9.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "AI Business Revenue Multiple: 15x",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "modest share count reduction through repurchase programs",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source or build-up",
+            "Terminal Growth 3% without peer/historical context"
+        ]
+    }
+}

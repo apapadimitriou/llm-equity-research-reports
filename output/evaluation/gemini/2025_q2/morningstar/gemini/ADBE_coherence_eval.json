@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded as fair due to significant temporal inconsistencies and data gaps in supporting tables that undermine the narrative's coherence. A primary issue is the temporal contradiction: the report is dated June 12, 2025, yet it references a stock price decline occurring on June 13, 2025, in the Investment Summary. Additionally, the 'Works Cited' section lists access dates of August 12, 2025. This suggests the report was compiled significantly after the dates it claims to be 'current,' violating internal temporal logic. Furthermore, while the narrative in Section 6.2 argues that Adobe trades at a 'notable discount' to peers like ServiceNow and Salesforce, Table 4 (Peer Valuation Comparables) fails to provide the necessary data, listing 'N/A' for the P/E and Revenue Growth of every peer except Microsoft. This lack of data forces the reader to take the analyst's claims on faith rather than seeing the evidence integrated into the report. There is also a minor unresolved tension between the DCF fair value of $535 in Section 6.1 and the final price target of $530 in Section 6.3; while close, the $5 difference is not explicitly reconciled. On a positive note, the report demonstrates good structural flow, transitioning logically from Q2 results to a moat analysis that directly addresses AI-related bear concerns. However, the 'fair' grade is capped by the hard guardrails regarding temporal inaccuracies and the failure to populate key comparative data.",
+    "evidence": [
+        "Report dated June 12, 2025, references a stock price drop on June 13, 2025, and uses source access dates from August 12, 2025 (Section 1.0 and Works Cited).",
+        "Table 4 (Peer Valuation Comparables) lists 'N/A' for Forward P/E and Revenue Growth for Salesforce, ServiceNow, and Intuit, despite narrative claims of a 'notable discount' to these peers (Section 6.2).",
+        "Section 6.1 calculates a DCF fair value of $535, while Section 6.3 sets the 12-month price target at $530 without explaining the discrepancy."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

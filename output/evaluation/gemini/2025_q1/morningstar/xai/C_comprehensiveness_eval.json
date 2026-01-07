@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required sections, but its comprehensiveness is severely undermined by technical omissions and logical inconsistencies in sourcing. While the narrative covers Citigroup's transformation strategy, it does so with significant redundancy, repeating the same talking points across the Analyst Note, Strategy, Moat, and Valuation sections without incremental depth. The Financials Snapshot is the primary failure point; it utilizes generic corporate metrics (Op-Margin, FCF, ROIC) while omitting critical bank-specific KPIs such as Net Interest Margin (NIM), Net Interest Income (NII), and Loan Loss Provisions. This omission triggers a hard cap on the grade. Furthermore, the report exhibits a major data integrity issue: it is dated April 16, 2025, yet cites multiple sources (5, 7, 8, 9, 10) dated July and September 2025. Peer benchmarking is superficial, limited to brief mentions of JPMorgan and Bank of America rather than a structured comparative analysis. Although the valuation section attempts to link drivers to the fair value estimate, the reliance on chronologically impossible sources and the lack of sensitivity analysis prevent a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "CET1 Ratio",
+            "RoTCE",
+            "FICC Revenue"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Net Charge-offs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Chronological inconsistency: Report date is 2025-04-16, but sources [5], [7], [8], [9], and [10] are dated between July and September 2025.",
+                "locations": [
+                    "Cover Block",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "RoTCE targets of 12-14% by 2026 in Strategy section",
+            "Historical RoTCE averaging 10-12% in Moat section"
+        ]
+    }
+}

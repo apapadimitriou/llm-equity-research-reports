@@ -1,0 +1,109 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report initially appears professional, providing explicit assumptions for revenue growth, margins, and valuation parameters. However, it fails the consistency test due to multiple distinct numeric contradictions between the narrative and the supporting data tables. First, the WACC calculation is internally inconsistent: the report cites a 9.0% WACC but provides components (4.0% Risk-Free Rate, 5.0% Equity Risk Premium, and 1.1 Beta) that mathematically result in 9.5% using the CAPM formula. Second, there is a significant discrepancy regarding Free Cash Flow (FCF) conversion; the text specifies a model of 30\u201332% of revenue, yet the Financials Snapshot for FY2029 shows $17.0B FCF on $50.0B revenue, representing a 34% conversion rate. Third, the operating margin forecast in the table (35.5% by FY2029) exceeds the stated range of 34\u201335% in the narrative. Furthermore, the sensitivity analysis is insufficient. While it provides a brief \"rule of thumb\" regarding the impact of a 1% change in revenue or margins, it lacks quantified ranges, scenario tables, or Bull/Bear price targets for material drivers like WACC or terminal growth. Per the grading instructions, the presence of two or more distinct contradictions necessitates a \"Poor\" grade. The lack of internal coherence suggests the model outputs and the narrative were not properly reconciled, rendering the assumptions unreliable for an auditable valuation.",
+    "assumptions_extracted": [
+        {
+            "quote": "FY26\u201329 revenue growth of ~7\u20138% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins rising to ~34\u201335% by FY26\u201329",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC ~9.0% (RF ~4.0%, ERP ~5.0%, beta ~1.1)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth ~2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "FCF conversion remains high (we model ~30\u201332% of revenue)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Shares outstanding ~1.0B",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "tax rate ~25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (4% RF + 1.1 Beta * 5% ERP) mathematically equal 9.5%, contradicting the stated 9.0% WACC.",
+                "locations": [
+                    "Appendix (Valuation Assumptions)",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "FCF conversion in the Financials Snapshot for FY2029 (34%) contradicts the stated model range of 30-32%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (Table)"
+                ]
+            },
+            {
+                "description": "Operating margin in FY2029 (35.5%) exceeds the stated forecast range of 34-35%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (Table)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% (mathematically inconsistent with provided components)",
+            "FCF conversion 30-32% (inconsistent with table data)"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a professional structure with a logical progression from high-level analyst notes to detailed financial projections. The language is clear, and the transitions between sections\u2014such as the link between the VMware integration in the Strategy section and its impact on margins in the Fair Value section\u2014are generally smooth. Temporal accuracy is maintained throughout, correctly identifying the July 2024 stock split as a past event relative to the March 2025 report date. However, the report suffers from a significant internal contradiction regarding its primary valuation conclusion. The Cover Block explicitly states a Fair-Value Estimate of $912.00 and a Price/FVE of 0.30. In stark contrast, the 'Fair Value and Profit Drivers' section concludes that the growth trajectory 'supports a fair value estimate of approximately $350-400 per share.' This discrepancy is not a minor typo but a fundamental misalignment between the summary data and the supporting narrative analysis. The Price/FVE calculation in the header is mathematically tied to the $912 figure, indicating the error is integrated into the report's quantitative summary. While the Financials Snapshot table is internally consistent with the narrative's EPS and revenue forecasts, the failure to align the headline valuation with the detailed valuation prose creates a confusing experience for the reader. Per the grading guardrails, any unaddressed contradiction between narrative and summary tables necessitates a hard cap at the 'fair' level.",
+    "evidence": [
+        "\"Fair-Value Estimate $912.00\" (Cover Block) vs \"fair value estimate of approximately $350-400 per share\" (Fair Value and Profit Drivers).",
+        "\"Price/FVE 0.30\" (Cover Block) is mathematically derived from the $912 figure ($275.18 / $912), confirming the contradiction is systemic.",
+        "Narrative EPS projections for 2027 ($12-15) in the Fair Value section align with the \"Financials Snapshot\" table ($12.45)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

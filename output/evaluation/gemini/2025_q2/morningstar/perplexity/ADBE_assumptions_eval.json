@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded 'Fair' primarily due to a significant internal numeric contradiction that triggers a mandatory hard cap under the evaluation rules. While the report is commendable for its explicitness and the inclusion of a robust, quantified sensitivity analysis in the Appendix\u2014covering six key variables across three scenarios\u2014it fails the consistency test. Specifically, the narrative in the 'Fair Value and Profit Drivers' section claims that non-GAAP operating margins are 'currently approximately 45%,' yet the 'Financials Snapshot' table reports the FY2024A (actual) operating margin as 36.5%. This 850-basis-point discrepancy is neither explained nor reconciled, and the table lacks labeling to distinguish between GAAP and non-GAAP metrics.\n\nFurthermore, the justification for key inputs is only 'partial.' Growth rates for segments like Document Cloud (15\u201318%) are stated as assumptions but lack supporting evidence from multi-year historical averages or peer benchmarks. The WACC of 8.5% is explicit but lacks a justified build-up of its constituent parts (Beta, Equity Risk Premium, or Risk-Free Rate). While the report is specific regarding time horizons (FY2025\u20132029) and units, the conflict between the narrative\u2019s 'current' state and the data table\u2019s 'actual' figures undermines the overall reliability and auditability of the valuation model.",
+    "assumptions_extracted": [
+        {
+            "quote": "Digital Media segment compound annual growth rate of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins can expand from current levels of approximately 45% to 47-48%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "AI-first direct ARR expected to exceed $250 million exiting fiscal 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Document Cloud segment growth of 15-18% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims current non-GAAP operating margins are ~45%, but the Financials Snapshot table lists FY2024A (Actual) at 36.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "WACC build-up (Beta, ERP, Risk-free rate)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source or component breakdown"
+        ]
+    }
+}

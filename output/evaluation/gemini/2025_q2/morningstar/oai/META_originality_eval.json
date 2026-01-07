@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is almost entirely derivative, functioning as a summary of recent news headlines and public earnings filings rather than an original piece of equity research. Every 'insight' provided is a restatement of publicly available information, such as the Q1 2025 earnings beat, management's updated CapEx guidance for AI infrastructure, and well-documented regulatory challenges in the EU. There is no evidence of synthesis; the author fails to link disparate data points (e.g., specific AI hardware cycles or deposit-like user data advantages) to a unique financial conclusion. The valuation section is particularly weak, utilizing a standard DCF with generic 12% growth and 45% margin assumptions that lack any novel company-specific drivers or sensitivity analysis. The 'Bulls Say / Bears Say' and 'Economic Moat' sections rely on boilerplate phrasing ('network effects,' 'scale and diversification') that could apply to any major tech platform. Because the report contains zero original theses or syntheses and relies on at least five generic or restated insights, it fails to meet the minimum threshold for a 'Fair' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Meta\u2019s first-quarter 2025 results exceeded expectations, with revenue up 16%... driven by resilient advertising demand and efficiency gains.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "The company raised its second-quarter revenue outlook... and boosted 2025 capital expenditures to $64\u2013$72 billion to accelerate AI infrastructure.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Meta\u2019s strategy centers on reinforcing engagement... emphasizing short-form Reels videos to counter TikTok\u2019s popularity.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wide moat underpinned by powerful network effects and proprietary intangible assets... high user switching costs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue to grow at a ~12% compound annual rate over 2024\u20132029... long-run operating margins stabilizing in the mid-40s.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Meta faces antitrust actions and strict privacy rules (e.g., an FTC lawsuit and EU curbs on targeted ads).",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Restating public guidance as analysis",
+            "Heavy reliance on news citations (FT, Reuters, AP) for core thesis"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

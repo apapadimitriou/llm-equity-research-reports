@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as 'Fair' due to several structural and content-related deficiencies that trigger hard caps and downgrades. While the report successfully includes all major sections and provides a clear valuation bridge linking operating drivers (revenue CAGR, margin expansion) to the fair value estimate, it fails the sector-specific KPI requirement. Specifically, the Financials Snapshot table omits multi-year forecasts for the Medical Loss Ratio (MLR) and Membership/Enrollment figures, which are the primary drivers for a Managed Care organization. Although these are mentioned in passing within the Analyst Note, their absence from the formal financial data table constitutes a major omission.\n\nFurthermore, the report exhibits significant redundancy; the Change Healthcare cyberattack is repeated across the Analyst Note, Bulls/Bears, Risk, and ESG sections without providing new analytical depth in each instance. Sourcing is also a point of concern; the author relies on social media ('Posts on X') for regulatory insights and explicitly admits to lacking a direct source for the ESG risk score. Finally, the report lacks any form of scenario or sensitivity analysis, which is expected for a 'Good' or 'Excellent' rating. The combination of missing core KPIs in the data snapshot and the repetitive nature of the narrative limits the report's utility to a 'Fair' level.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "ROIC",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR) Forecasts",
+            "Membership/Enrollment Forecasts",
+            "Days Claims Payable (DCP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR) in Financials Snapshot",
+            "Membership/Enrollment in Financials Snapshot"
+        ],
+        "uncited_claims": [
+            "ESG score 18.5 (Source 7 admitted as insufficient data)",
+            "Regulatory risk analysis based on 'Posts found on X' (Source 6)"
+        ]
+    }
+}

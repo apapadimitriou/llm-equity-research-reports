@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report adheres to the required structural framework but fails significantly on data density and sector-specific quantitative depth. While all major sections are present, the 'Financials Snapshot' is skeletal, containing 'Insufficient data' placeholders for nearly all historical metrics (2022\u20132024) and omitting core sector KPIs such as the Medical Benefit Ratio (MLR) and Membership enrollment figures from the tabular data. Although these are mentioned qualitatively in the text, their absence in the financial summary triggers a hard cap. Furthermore, the report explicitly admits to having 'insufficient data' for material claims regarding retention rates, debt ratios, and ESG scores, which undermines the evidence integration. Peer context is minimal, limited to brief mentions of UnitedHealth without a dedicated benchmarking table. The report also exhibits redundancy, repeating the Star Ratings lawsuit and membership decline across four different sections without providing additional analytical depth in each instance. Finally, the lack of a formal scenario or sensitivity analysis prevents the report from reaching a 'Good' or 'Excellent' standing.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Adjusted Benefit Ratio (text only)",
+            "Medicare Advantage Membership (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR) in table",
+            "Membership Enrollment in table",
+            "Days Claims Payable (DCP)",
+            "Star Rating Distribution"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Benefit Ratio (MLR) missing from Financials Snapshot",
+            "Membership counts missing from Financials Snapshot",
+            "Days Claims Payable (DCP) absent"
+        ],
+        "uncited_claims": [
+            "Retention rates above 85% (marked as insufficient data)",
+            "Debt levels/ratios (marked as insufficient data)",
+            "Sustainalytics score of 20 (marked as insufficient data)"
+        ]
+    }
+}

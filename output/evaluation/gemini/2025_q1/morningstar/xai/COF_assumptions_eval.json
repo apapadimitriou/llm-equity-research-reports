@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple significant internal contradictions between the narrative and the financial tables, alongside a lack of robust sensitivity analysis for core valuation drivers. The most glaring issue is the EPS forecast: the 'Fair Value and Profit Drivers' section describes an EPS bridge starting at $13.50 in 2025 and reaching $14.50 by 2029 (a net $1.00 increase), whereas the 'Financials Snapshot' table forecasts $15.50 for 2029 (a $2.00 increase). Furthermore, the components of the bridge (+$1.00 revenue, +$0.50 margin, -$0.50 provisions) do not reconcile with the linear $0.50 annual growth shown in the table. While the report explicitly states key assumptions like WACC (9%) and Revenue CAGR (5%), it fails to provide quantified sensitivity tables for these material levers, offering only a vague \u00b1$20 fair value range and a single macro scenario regarding unemployment. Additionally, the report lacks a specific share count assumption, which is a critical omission given the $35B Discover merger context and its impact on EPS. These contradictions and omissions make the model's outputs feel like a 'black box' that does not align with the provided data.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming a 5% revenue CAGR from 2025-2029, driven by 4% loan growth and 3% fee income expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins improving from 18% in 2025 to 20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is set at 9%, incorporating a 4% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 3.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "provisions potentially rising 20% if unemployment hits 5%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Dividend policy targets 40% payout, with $2.40 annual dividend, and buybacks paused",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 2029 EPS of $14.50, while the Financials Snapshot table states $15.50.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "The EPS bridge logic in the text (net +$1.00 increase from 2025-2029) contradicts the table's annual $0.50 increments (net +$2.00 increase).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "5% revenue CAGR is attributed to the merger without breaking down organic vs. inorganic contributions."
+        ]
+    }
+}

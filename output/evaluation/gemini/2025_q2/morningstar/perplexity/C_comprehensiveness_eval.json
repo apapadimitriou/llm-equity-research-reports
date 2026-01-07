@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all mandatory sections from the Analyst Note to ESG and Capital Allocation. It provides a detailed narrative regarding Citigroup's organizational transformation and the significant regulatory headwinds (consent orders and fines) currently facing the firm. However, the report is capped at 'Fair' due to several critical omissions. Most notably, the Financials Snapshot is generic and fails to include essential banking-specific KPIs such as Net Interest Margin (NIM), Net Interest Income (NII), and Loan Loss Provisions/Credit Costs within the data table. While some of these (CET1, credit costs) are mentioned sporadically in the text, their absence from the primary financial summary violates the requirement for sector-appropriate KPIs in the snapshot. Furthermore, the report lacks a dedicated peer benchmarking analysis, which is necessary to contextualize Citigroup's performance against rivals like JPMorgan or Bank of America. Finally, there is no scenario or sensitivity analysis (e.g., impact of interest rate shifts on valuation), which prevents the report from achieving a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "CET1 Ratio (text only)",
+            "Credit Costs (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Efficiency Ratio",
+            "Loan Loss Provisions (Snapshot table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Efficiency Ratio",
+            "Provisions"
+        ],
+        "uncited_claims": [
+            "Financials Snapshot table (FY 2022A-2026E) lacks specific source attribution for individual data points."
+        ]
+    }
+}

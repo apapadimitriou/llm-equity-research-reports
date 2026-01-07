@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails primarily on internal consistency and the lack of quantified sensitivity analysis. While key drivers such as a 5% revenue CAGR and margin expansion to 25% are explicitly stated and proximal to the valuation narrative, the report contains severe, unresolved numeric contradictions. Specifically, the narrative cites a 2024 adjusted EPS of $11.13 and forecasts a 2025 EPS of $11.73, whereas the 'Financials Snapshot' table lists these figures as $7.49 and $7.87, respectively. This discrepancy between the valuation bridge and the summary financial data is a critical failure in internal coherence. Furthermore, the report lacks robust, quantified sensitivity analysis for material drivers like WACC, terminal growth, or margins. It only provides a vague, qualitative mention of a '+/-20% swing' in the risk section without demonstrating how specific changes in inputs impact the $260 fair value estimate. According to the grading rubric, the combination of multiple distinct contradictions and the absence of quantified sensitivities mandates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes a 5% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 24% by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.0%, reflecting IQVIA's beta of 1.1 and cost of debt.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "yielding 2025 EPS of $11.73",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 23% in 2025... to 25% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The text cites 2024 Actual EPS of $11.13 and 2025 Forecast EPS of $11.73, while the Financials Snapshot table lists them as $7.49 and $7.87.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "The text projects operating margins expanding to 24% by 2027, but the Financials Snapshot table lists the 2027 forecast as 24.0% while the Fair Value section says 25% by 2029.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Cost of debt component of WACC is not specified.",
+            "Terminal growth rate of 3% cited as 'industry average' without source."
+        ]
+    }
+}

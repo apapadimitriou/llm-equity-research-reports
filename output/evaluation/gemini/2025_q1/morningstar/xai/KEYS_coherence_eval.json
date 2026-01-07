@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong structural coherence and logical flow between the Analyst Note, Strategy, and Fair Value sections. It successfully integrates Q1 and Q2 2025 data into a unified narrative, showing how recent earnings beats inform the long-term valuation. However, it fails the temporal accuracy guardrail. Specifically, it cites a 2021 filing (Source 3) as 'recent' for geographic revenue data in a 2025 report. More critically, Source 12 is dated September 2025, which is nearly four months after the report's publication date of May 21, 2025, creating a logical impossibility. While the financial projections in the table align well with the narrative\u2014such as the 5% revenue CAGR and the specific margin expansion path from 25% to 26%\u2014these temporal errors undermine the report's internal consistency. The Bulls/Bears are well-reconciled with the base case, and the terminology is used consistently throughout. The 'fair' grade is a mandatory cap due to the 'recent' claim inaccuracy and the impossible future citation date. Without these temporal flaws, the report would have achieved a higher rating, as the narrative transitions are smooth and the cross-referencing between the valuation model and the business segments is explicit and clear.",
+    "evidence": [
+        "Source [3] is dated 2021-11-22 but is used in the Business Description to support 'recent filings' data for a 2025 report.",
+        "Source [12] is dated 2025-09-03, which post-dates the report's publication date of 2025-05-21 (Sources section).",
+        "Operating margins are described as 'stabilizing around 25%' in the Analyst Note but projected to reach 26% by FY2027 in the Fair Value section and Financials Snapshot."
+    ],
+    "flags": {
+        "contradictions_found": false,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

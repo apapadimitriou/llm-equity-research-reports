@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all mandatory sections and provides a professional overview of JPMorgan Chase, but it is capped at 'Fair' due to significant omissions in the Financials Snapshot and the lack of peer benchmarking. Specifically, the Financials Snapshot table provides only generic corporate metrics (Revenue, EPS, ROIC) and entirely omits core banking KPIs such as Net Interest Margin (NIM), Provisions for Credit Losses, and the CET1 ratio across the forecast period. While some of these figures appear sporadically in the text or appendix, their absence from the primary financial summary violates the requirement for sector-specific depth. Furthermore, the report lacks a dedicated peer benchmarking section and scenario/sensitivity analysis, which are necessary for a 'Good' or 'Excellent' rating. The valuation section provides a basic DCF framework but lacks a granular bridge showing how specific operating drivers\u2014such as interest rate sensitivity or credit cost cycles\u2014directly result in the fair value estimate. The reliance on generic metrics for a complex global bank results in a superficial financial analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (text)",
+            "ROTCE (text)",
+            "CET1 (text)",
+            "Net Interest Margin (appendix)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (table)",
+            "Provisions for Credit Losses (table)",
+            "CET1 Ratio (table)",
+            "Efficiency Ratio",
+            "Loan Growth",
+            "Deposit Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Provisions for Credit Losses",
+            "CET1 Ratio",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

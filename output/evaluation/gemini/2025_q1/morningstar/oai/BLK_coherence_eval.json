@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report earns a poor grade due to several severe internal contradictions that undermine the fundamental valuation argument. The most significant error is a mathematical impossibility regarding the Fair-Value Estimate (FVE). The Analyst Note states the $1,200 FVE represents \"roughly 13x our 2026 EPS.\" However, the Financials Snapshot table explicitly forecasts 2026 EPS at $51.20. A 13x multiple on that figure results in an FVE of approximately $665, not $1,200. This is further confounded by the Fair Value and Profit Drivers section, which claims the $1,200 FVE implies a forward P/E of \"20-25x.\" These two narrative sections provide completely different valuation methodologies for the same target price. Additionally, there is a lack of alignment between the narrative and the data tables regarding historical performance. The Analyst Note cites a 2024 EPS of $43.61, whereas the Financials Snapshot table lists it as $42.0. While the note mentions an \"adjusted basis,\" the table does not reconcile these figures, leaving the reader to guess which data point informs the forward-looking model. Finally, the Analyst Note targets \"mid-40s\" operating margins for the 2025 update, but the table projects only 43.0% for that year. These recurring discrepancies between the text and the supporting figures suggest a failure in basic proofreading and cross-sectional integration, forcing the reader to assemble a coherent argument from conflicting parts.",
+    "evidence": [
+        "Analyst Note vs. Financials Snapshot: FVE of $1,200 described as '13x our 2026 EPS' ($51.20 in table), which mathematically equals ~$665.",
+        "Analyst Note vs. Fair Value section: The Note cites a 13x multiple for the FVE, while the Fair Value section claims the same FVE implies a '20-25x' forward P/E.",
+        "Narrative vs. Table: 2024 EPS is stated as $43.61 in the Analyst Note and $43.6 in Fair Value section, but recorded as $42.0 in the Financials Snapshot."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

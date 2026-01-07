@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to a critical internal numeric contradiction and the total absence of quantified sensitivity analysis. While the report is explicit in listing key drivers\u2014such as a 4.5% revenue CAGR, 3.0% terminal growth, and a 28% terminal operating margin\u2014these inputs lack robust justification. Most notably, there is a significant internal contradiction regarding the cost of capital: the report states a WACC of 9.5% while providing CAPM components (3% risk-free rate, 6% equity risk premium, and 1.2 beta) that mathematically result in a 10.2% cost of equity. This 70-basis-point discrepancy is unresolved and undermines the valuation's integrity. Furthermore, while the narrative emphasizes a Return on Tangible Common Equity (RoTCE) target of 12\u201314%, the financial snapshot only provides Return on Invested Capital (ROIC) figures peaking at 8.0%, leaving the primary strategic metric unmodeled in the tables. Specificity is partial; while units and horizons are clear, material drivers like credit costs and net interest margins are mentioned as risks but lack quantified forecasted assumptions. Finally, the report fails to provide any quantified sensitivity or scenario analysis for material levers, offering only a qualitative glossary definition for uncertainty. Per the decision rules, the combination of a numeric contradiction and the lack of quantified sensitivities necessitates a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "4.5% revenue CAGR from 2025-2029, driven by 5% growth in services and wealth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 25% in 2025 to 28% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "9.5% WACC, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "projected to lift RoTCE to 12-14% by 2026",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "CET1 ratio of 13.5% as of Q1 2025",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The stated WACC of 9.5% contradicts the provided CAPM components (3% Rf + 1.2 Beta * 6% ERP = 10.2%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix: Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "Narrative targets RoTCE of 12-14%, but the Financials Snapshot table only provides ROIC, which peaks at 8.0%.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% (mathematically inconsistent with components)",
+            "Revenue CAGR 4.5% (slight discrepancy with table math of ~4.3%)"
+        ]
+    }
+}

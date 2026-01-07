@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections and provides a clear valuation bridge from operating drivers (revenue growth and margin expansion) to the fair value estimate. However, it is capped at 'Fair' due to the omission of critical sector-specific KPIs from the Financials Snapshot table. While 'Next-Gen Security ARR' is mentioned in the text, the snapshot table itself is generic, lacking ARR, NRR (Net Retention Rate), and Billings/RPO, which are essential for cybersecurity/SaaS analysis. Furthermore, the report exhibits significant redundancy; the 'platformization' strategy and Gartner's 15% growth forecast are repeated across four different sections (Analyst Note, Strategy, Bulls Say, and Moat) without adding incremental depth. While competitors like Fortinet and CrowdStrike are mentioned, there is no formal peer benchmarking or comparative valuation analysis. The absence of scenario or sensitivity analysis further limits the comprehensiveness. Sourcing is consistent and well-integrated, but the repetitive narrative and lack of granular SaaS metrics in the data tables prevent a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Next-Gen Security ARR (text only)",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "ARR (from Financials Snapshot table)",
+            "Net Retention Rate (NRR)",
+            "Billings",
+            "Remaining Performance Obligations (RPO)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Next-Gen Security) omitted from Financials Snapshot table",
+            "Net Retention Rate (NRR)",
+            "Billings/RPO"
+        ],
+        "uncited_claims": []
+    }
+}

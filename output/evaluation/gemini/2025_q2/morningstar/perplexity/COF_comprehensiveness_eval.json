@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all required sections from the Analyst Note to ESG. However, it fails to meet the depth requirements for a 'Good' or 'Excellent' rating due to significant omissions in the Financials Snapshot and the lack of comparative context. Specifically, the Financials Snapshot table is generic, omitting core sector-specific KPIs such as Net Interest Margin (NIM), Net Charge-off (NCO) rates, and the CET1 ratio in the forecast grid. While some of these figures are mentioned qualitatively or as single-point assumptions in the text, their absence from the multi-year financial summary violates the requirement for sector-appropriate KPI integration. Furthermore, the report lacks a dedicated peer benchmarking section and quantitative scenario/sensitivity analysis (e.g., a table showing how a 100bps increase in unemployment affects the Fair Value Estimate). These gaps, combined with the hard cap on missing sector KPIs in the financials block, result in a 'Fair' grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Charge-off (NCO) Rate",
+            "Efficiency Ratio",
+            "CET1 Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM) missing from Financials Snapshot table",
+            "Net Charge-off (NCO) rate missing from Financials Snapshot table",
+            "CET1 Ratio missing from Financials Snapshot table",
+            "Efficiency Ratio missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

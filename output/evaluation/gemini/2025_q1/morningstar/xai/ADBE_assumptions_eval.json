@@ -1,0 +1,91 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are explicitly stated and proximal to the valuation model, particularly in the 'Fair Value and Profit Drivers' section and the Appendix. Justification is solid, with the WACC (8.5%) decomposed into its constituent parts (risk-free rate, ERP, beta) and revenue growth (11% CAGR) linked to annualized recurring revenue (ARR) trends. Specificity is high, providing clear magnitudes, units, and a five-year time horizon (FY25\u2013FY29). However, the report fails to achieve a higher grade due to two primary deficiencies. First, internal consistency is compromised by a numeric contradiction: the text forecasts a 45% operating margin for FY25, while the Financials Snapshot table lists 45.5%. Additionally, the EPS forecast for FY29 ($24.50) mentioned in the narrative is not supported in the financials table, which contains a data error or placeholder in the forecast cells. Second, sensitivity analysis is inadequate. While the report mentions a \u00b115% valuation sensitivity to revenue, it lacks quantified scenarios or a sensitivity matrix for other critical drivers such as WACC, terminal growth, or margin fluctuations. Per the grading rubric, the presence of a numeric contradiction and the lack of robust, multi-variable sensitivity analysis caps the grade at 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "assume revenue CAGR of 11% from FY25 to FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 45% in FY25 to 48% by FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 4.0% | Long-term GDP + inflation",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share buybacks (+$0.50)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "higher taxes (-$0.20)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY25 Operating Margin is stated as 45% in the text but 45.5% in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "EPS forecast for FY29 is $24.50 in text, but the table contains an error message ('insufficient data') for forecast years.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex"
+        ],
+        "unjustified_parameters": []
+    }
+}

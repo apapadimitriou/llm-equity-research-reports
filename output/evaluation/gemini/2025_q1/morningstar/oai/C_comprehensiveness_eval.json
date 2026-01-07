@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as 'Fair' primarily due to the omission of critical sector-specific KPIs in the Financials Snapshot and significant redundancy across sections. While the report includes all required headline sections and maintains consistent in-text citations, the Financials Snapshot table utilizes generic metrics (FCF, ROIC) rather than core banking KPIs such as Net Interest Margin (NIM), Loan Loss Provisions, or the Efficiency Ratio. Per the grading instructions, the absence of two or more core sector KPIs in the snapshot necessitates a 'Fair' cap. Furthermore, the report exhibits substantial redundancy. Key talking points\u2014including the 10\u201311% ROE target, the surge in Q1 2025 trading revenue, and the regulatory probe regarding a Russian billionaire\u2014are repeated across the Analyst Note, Business Strategy, Bulls/Bears, and Risk sections with minimal incremental depth. This repetition triggers a mandatory downgrade. While the valuation section attempts to link operating drivers to the fair value estimate, the analysis is relatively thin, and the sensitivity analysis is limited to a single sentence rather than a robust scenario framework. Peer benchmarking is also relegated to brief qualitative mentions in the text, lacking the structured data comparison expected in a 'Good' or 'Excellent' report. Consequently, while the report is functional, its lack of sector-specific depth and repetitive nature limits its comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Detailed Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue (Net of Interest)",
+            "EPS",
+            "CET1 Ratio (in text)",
+            "ROTCE (in text)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Net Interest Income (NII)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM) missing from Financials Snapshot",
+            "Loan Loss Provisions missing from Financials Snapshot",
+            "Efficiency Ratio missing from Financials Snapshot"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment due to a critical internal contradiction and the total absence of quantified sensitivity analysis. The most significant failure is the unresolved numeric discrepancy regarding operating margins: the 'Fair Value and Profit Drivers' section explicitly forecasts operating margins of 'roughly 25%,' yet the 'Financials Snapshot' table projects a range of 14.0% to 18.0% for the 2025\u20132029 period. This 700\u20131100 basis point gap is never reconciled, rendering the model's primary profitability driver opaque and unreliable. Furthermore, while the report identifies material risks such as drug pricing reforms, biosimilar competition, and EU tariffs, it provides zero quantified sensitivity or scenario analysis. There are no ranges provided for how changes in WACC, revenue growth, or the aforementioned margins would impact the $230 fair value estimate, violating a hard cap for a higher grade. Justification for valuation parameters is also weak; the WACC (8.0%) and terminal growth rate (2.0%) are presented as point-estimate 'black box' figures without any breakdown of the cost of equity, beta, or risk-free rate assumptions. While revenue growth assumptions are specific (5% CAGR) and proximal to the forecasts, they cannot offset the fundamental lack of internal consistency and the absence of stress-testing on material drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast operating margins roughly 25% (accounting for elevated R&D and amortization of acquired intangibles).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our model assumes AbbVie\u2019s revenue will grow mid-single digits over 2025\u201329... (2024\u201325 system revenue CAGR ~5%).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We set a WACC of 8.0% and terminal growth of 2.0%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume... a 25% tax rate.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Skyrizi and Rinvoq combined sales now on track for ~$30 B by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume continued dividend yield (~4%) and moderate share repurchases",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative claims a 25% operating margin forecast, while the Financials Snapshot table forecasts 14.0% to 18.0% for the same period.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "Quantified sensitivity analysis for all material drivers",
+            "Justification for WACC components (Beta, ERP, Cost of Debt)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% stated without source or calculation",
+            "Terminal growth 2.0% stated without economic justification"
+        ]
+    }
+}

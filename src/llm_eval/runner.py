@@ -22,7 +22,29 @@ class EvalTask:
     source_path: Path
 
 
-def find_reports(root: Path, morningstar_only: bool, human_reports: bool) -> list[Path]:
+def _ticker_from_path(p: Path, human_reports: bool) -> str:
+    if human_reports:
+        return p.stem.split("_", 1)[0]
+    return p.stem
+
+
+def _build_ticker_allowlist(root: Path, human_reports: bool) -> set[str]:
+    allowlist: set[str] = set()
+    for p in root.rglob("*"):
+        if not p.is_file():
+            continue
+        if human_reports and p.suffix.lower() != ".pdf":
+            continue
+        allowlist.add(_ticker_from_path(p, human_reports))
+    return allowlist
+
+
+def find_reports(
+    root: Path,
+    morningstar_only: bool,
+    human_reports: bool,
+    ticker_allowlist: set[str] | None,
+) -> list[Path]:
     files = []
     for p in root.rglob("*"):
         if not p.is_file():
@@ -31,6 +53,9 @@ def find_reports(root: Path, morningstar_only: bool, human_reports: bool) -> lis
             continue
         if morningstar_only and "morningstar" not in p.parts:
             continue
+        if ticker_allowlist is not None:
+            if _ticker_from_path(p, human_reports) not in ticker_allowlist:
+                continue
         files.append(p)
     return sorted(files)
 
@@ -81,11 +106,13 @@ def build_tasks(
     if human_reports:
         ticker = report_path.stem.split("_", 1)[0]
         source = _infer_source_from_filename(report_path)
-        rel_parent = rel_parent / source
+        rel_parent = rel_parent / source / "analyst"
     tasks: list[EvalTask] = []
     for key, prompt in EVALS.items():
         out_dir = output_root / provider / rel_parent
         out_path = out_dir / f"{ticker}_{key}_eval.json"
+        if out_path.exists():
+            continue
         tasks.append(
             EvalTask(
                 eval_key=key,
@@ -97,6 +124,23 @@ def build_tasks(
             )
         )
     return tasks
+
+
+def _expected_output_paths(
+    report_path: Path,
+    input_root: Path,
+    output_root: Path,
+    provider: str,
+    human_reports: bool,
+) -> list[Path]:
+    ticker = report_path.stem
+    rel_parent = report_path.parent.relative_to(input_root)
+    if human_reports:
+        ticker = report_path.stem.split("_", 1)[0]
+        source = _infer_source_from_filename(report_path)
+        rel_parent = rel_parent / source / "analyst"
+    out_dir = output_root / provider / rel_parent
+    return [out_dir / f"{ticker}_{key}_eval.json" for key in EVALS.keys()]
 
 
 async def evaluate_task(
@@ -111,8 +155,19 @@ async def evaluate_task(
         full_prompt = f"{task.prompt}\n {report_wrapped}"
         async with sem:
             raw = await client.generate(full_prompt, strict_message)
-        raw = extract_json_block(raw).strip()
-        ok, parsed = try_json(raw)
+        extracted = extract_json_block(raw).strip()
+        ok, parsed = try_json(extracted)
+        if not ok:
+            repair_prompt = (
+                f"{full_prompt}\n\n"
+                "Return ONLY valid JSON that matches the required schema. "
+                "Do not include markdown. Keep the response concise and within the "
+                "word limits specified in the prompt."
+            )
+            async with sem:
+                raw = await client.generate(repair_prompt, strict_message)
+            extracted = extract_json_block(raw).strip()
+            ok, parsed = try_json(extracted)
         if ok:
             with task.out_path.open("w") as f:
                 json.dump(parsed, f, indent=4)
@@ -128,14 +183,34 @@ async def evaluate_task(
 
 
 async def run(config: EvalConfig, client: ProviderClient) -> None:
-    files = find_reports(config.input_root, config.morningstar_only, config.human_reports)
+    ticker_allowlist = None
+    if config.ticker_allowlist_root:
+        ticker_allowlist = _build_ticker_allowlist(
+            config.ticker_allowlist_root, config.human_reports
+        )
+    files = find_reports(
+        config.input_root, config.morningstar_only, config.human_reports, ticker_allowlist
+    )
     if not files:
         scope = "Morningstar " if config.morningstar_only else ""
         print(f"No {scope}input files found under: {config.input_root}")
         return
 
     reports: Dict[Path, str] = {}
-    read_tasks = [read_report(p, config.human_reports) for p in files]
+    to_read = []
+    for p in files:
+        expected = _expected_output_paths(
+            p, config.input_root, config.output_root, config.provider, config.human_reports
+        )
+        if all(path.exists() for path in expected):
+            continue
+        to_read.append(p)
+
+    if not to_read:
+        print("All reports already evaluated. Nothing to do.")
+        return
+
+    read_tasks = [read_report(p, config.human_reports) for p in to_read]
     for coro in tqdm(asyncio.as_completed(read_tasks), total=len(read_tasks), desc="Reading reports"):
         p, txt = await coro
         if txt:

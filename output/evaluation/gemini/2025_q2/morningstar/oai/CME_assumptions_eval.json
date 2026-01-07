@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is rated Poor due to a combination of internal numeric contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in stating its primary drivers\u2014such as a 5\u20137% revenue CAGR, a 60% operating margin, and an 8.5% WACC\u2014it fails to maintain internal consistency. Specifically, the 'Business Strategy & Outlook' section forecasts 'mid-60s percentage operating margins,' which directly contradicts the 'Financials Snapshot' table and the 'Fair Value' section, both of which model margins declining from 60% to 58% through 2029. This discrepancy suggests a lack of coordination between the narrative and the underlying model. Furthermore, the report violates a hard cap by failing to provide any quantified sensitivity or scenario analysis. Although it qualitatively identifies material risks like competition from FMX and interest rate volatility, it does not provide ranges or valuation impacts for these drivers, leaving the $250 fair-value estimate as a 'black-box' output. Justification is only partial; while it cites historical fee rates ($0.682) and ROIC (14\u201315%), it provides no derivation for the 8.5% WACC or the specific 3% terminal growth rate. The presence of a material contradiction alongside the absence of quantified sensitivities necessitates a 'Poor' grade under the defined evaluation rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Looking ahead, our base-case assumes moderate growth (5\u20137% revenue CAGR through 2029)",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "consistent ~60% operating margins",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our medium-term forecast assumes low-single-digit volume growth and mid-60s percentage operating margins",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a WACC of ~8\u20139% and a terminal growth rate of ~3%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "CME reported an average fee per contract of $0.682... We assume these per-contract rates remain stable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We use a tax rate ~21%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Business Strategy section forecasts 'mid-60s' operating margins, while the Financials Snapshot table and Fair Value section model a decline from 60% to 58%.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity ranges for volume growth",
+            "quantified impact of interest rate shifts on NII/Volume"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% stated without CAPM components or peer benchmarking",
+            "Terminal growth 3% stated without economic justification"
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+[
+    {
+        "grade": "Good",
+        "summary_reasoning": "The report earns a 'Good' grade for its quality of assumptions, demonstrating a high degree of explicitness and internal consistency. Key drivers\u2014specifically revenue growth (12.5%), EPS expansion (16.2%), and Value-Added Services (VAS) growth (22\u201325%)\u2014are clearly stated and positioned near the forecasts they inform. These inputs are well-justified through a combination of multi-year historical performance (TTM operating margins of 59.16%) and cited consensus estimates for 2025\u20132026. Specificity is a strength, with the analyst providing clear magnitudes, units, and time horizons for switched transactions, cross-border volumes, and share counts.\n\nThe report maintains strong internal consistency; the narrative regarding margin expansion and the 'mechanical lift' of share buybacks reconciles with the accelerated EPS growth projections in the financial tables. Regarding sensitivity, the report avoids the 'Fair' cap by providing quantified Bull and Bear scenarios that adjust both EPS and P/E multiples to show a range of valuation outcomes ($330 to $700). However, it stops short of 'Excellent' because these scenarios are relatively high-level. It lacks a granular sensitivity matrix showing how specific operational volatility (e.g., a 100bps change in cross-border volume or specific regulatory fee compression) flows through to the bottom line. Additionally, while it uses a P/E valuation, the lack of an explicit WACC or discount rate for the 'Quality Growth' narrative leaves the cost-of-capital assumption somewhat opaque.",
+        "assumptions_extracted": [
+            {
+                "quote": "Value-Added Services (VAS) revenue grew between 22% and 25%, significantly outpacing the 10-12% growth in core payment network revenues.",
+                "location": {
+                    "section": "1. Executive Summary",
+                    "page": "1"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "consensus for 2026 EPS stands at $19.11, implying an acceleration in earnings growth to the mid-to-high teens.",
+                "location": {
+                    "section": "1. Executive Summary",
+                    "page": "1"
+                },
+                "driver_type": "other"
+            },
+            {
+                "quote": "operating margins, consistently hovering between 58% and 59%, demonstrate an exceptional ability to generate operating leverage.",
+                "location": {
+                    "section": "1. Executive Summary",
+                    "page": "1"
+                },
+                "driver_type": "margin/efficiency"
+            },
+            {
+                "quote": "Cross-border volumes grew 15% in Q1 2025. While this is a deceleration from the 19% growth seen in the prior year, it represents a stabilization.",
+                "location": {
+                    "section": "3.1 Core Payments: The Foundation",
+                    "page": "3"
+                },
+                "driver_type": "other"
+            },
+            {
+                "quote": "reduction in share count (down to ~928 million shares from over 1 billion in 2020) provides a constant mechanical lift to EPS.",
+                "location": {
+                    "section": "4.3 Capital Allocation and Cash Flow",
+                    "page": "4"
+                },
+                "driver_type": "share_count"
+            },
+            {
+                "quote": "assume Mastercard achieves the 2026 consensus EPS of $19.11 and the multiple re-rates to its historical average of 32x",
+                "location": {
+                    "section": "7.3 Implied Return Calculation (The Bull Case)",
+                    "page": "6"
+                },
+                "driver_type": "other"
+            }
+        ],
+        "checks": {
+            "explicitness": true,
+            "justification_with_evidence": "solid",
+            "specificity_units_horizon": "solid",
+            "internal_consistency": "clean",
+            "sensitivities_present": true,
+            "sensitivities_quality": "partial_quant",
+            "material_drivers_covered": [
+                "margin/efficiency",
+                "share_count",
+                "revenue_growth",
+                "cross-border_volume"
+            ]
+        },
+        "flags": {
+            "contradictions": [],
+            "missing_or_opaque_assumptions": [
+                "WACC/COE",
+                "terminal_growth"
+            ],
+            "unjustified_parameters": []
+        }
+    }
+]

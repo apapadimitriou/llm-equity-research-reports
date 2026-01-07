@@ -12,10 +12,19 @@ def _extract_text(resp: Any) -> str:
 
 
 class GeminiClient:
-    def __init__(self, api_key: str, model: str, timeout_s: int, retries: int = 3) -> None:
-        self._client = genai.Client(api_key=api_key)
+    def __init__(
+        self,
+        api_key: str,
+        model: str,
+        timeout_s: int,
+        max_output_tokens: int,
+        retries: int = 3,
+    ) -> None:
+        http_options = types.HttpOptions(async_client_args={})
+        self._client = genai.Client(api_key=api_key, http_options=http_options)
         self._model = model
         self._timeout_s = timeout_s
+        self._max_output_tokens = max_output_tokens
         self._retries = retries
 
     async def generate(self, prompt: str, strict_message: str) -> str:
@@ -25,13 +34,11 @@ class GeminiClient:
                 resp = await asyncio.wait_for(
                     self._client.aio.models.generate_content(
                         model=self._model,
-                        contents=[
-                            {"role": "user", "parts": [prompt]},
-                            {"role": "user", "parts": [strict_message]},
-                        ],
+                        contents=[prompt, strict_message],
                         config=types.GenerateContentConfig(
                             temperature=0,
-                            max_output_tokens=8192,
+                            max_output_tokens=self._max_output_tokens,
+                            response_mime_type="application/json",
                         ),
                     ),
                     timeout=self._timeout_s,

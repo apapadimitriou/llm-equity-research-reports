@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and includes all mandatory sections, providing a professional overview of Morgan Stanley\u2019s operations and strategic direction. It successfully incorporates critical sector-specific metrics such as the CET1 ratio, ROTCE, and Net New Assets (NNA) within the narrative text of the Analyst Note and Capital Allocation sections. However, the report fails to meet the 'Excellent' or 'Good' criteria due to significant omissions in data presentation and comparative analysis. Specifically, the Financials Snapshot table is overly generic, focusing on standard corporate metrics (Revenue, EPS, FCF) while omitting multi-year forecasts for core banking and wealth management KPIs like AUM, NNA, and CET1. Per the grading instructions, the absence of at least two core sector KPIs in the snapshot table triggers a hard cap of 'Fair.' Furthermore, the report lacks any specific peer benchmarking or competitive analysis, failing to name or compare MS against rivals like Goldman Sachs or JP Morgan. The absence of scenario or sensitivity analysis\u2014such as the impact of interest rate shifts on Net Interest Income or market downturns on asset-based fees\u2014further limits the depth of the risk assessment. While the valuation section provides a logical link between segment growth and the fair value estimate, these structural gaps in peer context and KPI forecasting result in a 'Fair' grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "CET1 Ratio",
+            "ROTCE",
+            "Net New Assets (NNA)",
+            "Client Assets (AUM)",
+            "Equity Trading Revenue"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Efficiency Ratio (forecasts)",
+            "AUM (forecasts in table)",
+            "NNA (forecasts in table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUM (forecast table)",
+            "NNA (forecast table)",
+            "CET1 (forecast table)",
+            "Net Interest Margin"
+        ],
+        "uncited_claims": []
+    }
+}

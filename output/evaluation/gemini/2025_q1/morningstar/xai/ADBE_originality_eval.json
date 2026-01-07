@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying entirely on restating public earnings data and generic industry narratives. The analysis of Q1 2025 results is a standard recap of revenue and EPS beats, while the 'Business Strategy' and 'Economic Moat' sections use boilerplate language regarding switching costs and digital transformation that has been applicable to Adobe for over a decade. There is no attempt to link disparate data points (e.g., specific AI adoption rates vs. customer acquisition costs) into a new conclusion. The valuation section uses a standard DCF model with generic drivers like 'scale efficiencies' and 'AI-driven cost savings' without explaining the specific mechanisms or providing novel quantified insights. Because the report lacks even a single weak synthesis and consists of at least four generic or restated insights, it meets the criteria for a 'Poor' grade under the provided decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue rising 10% year-over-year to $5.7 billion... exceeded analyst expectations by $50 million.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI integrations like Firefly contributing to user engagement and upselling opportunities.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "High switching costs arise from users' deep integration with its ecosystem... proprietary file formats and workflows.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins expand from 45% in FY25 to 48% by FY29, reflecting scale efficiencies and AI-driven cost savings.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The thesis for Adobe remains intact: the company is well-positioned to capitalize on secular shifts toward digital content creation.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'secular shifts' and 'digital transformation' phrasing",
+            "Earnings recap without deeper interpretive commentary",
+            "Standard moat analysis (switching costs/brand) with no new angle"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

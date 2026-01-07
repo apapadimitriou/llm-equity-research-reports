@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections, but fails to meet the depth required for a higher grade due to significant data gaps and missing sector-specific metrics. Most critically, the Financials Snapshot omits FY2024 actual data entirely, labeling it as 'insufficient data' despite the report being dated July 2025. Furthermore, the report lacks at least two core sector KPIs for the software/EDA industry, such as Remaining Performance Obligations (RPO), Annual Contract Value (ACV), or Renewal Rates, relying instead on generic financial metrics. While the valuation section successfully links operating drivers (10% CAGR, 32% margin) to the fair value estimate via an EPS bridge, the report lacks a formal peer benchmarking table and detailed scenario/sensitivity analysis. Redundancy is also present; the discussion of switching costs and AI-driven design tools is repeated across the Analyst Note, Business Strategy, and Economic Moat sections with minimal incremental depth, triggering a downward pressure on the final evaluation.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Formal Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Remaining Performance Obligations (RPO)",
+            "Renewal Rate",
+            "Annual Contract Value (ACV)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Remaining Performance Obligations (RPO)",
+            "Renewal Rate",
+            "ACV/ARR"
+        ],
+        "uncited_claims": [
+            "90%+ customer retention rate in core segments",
+            "Estimated FY2024 EPS of $9.50"
+        ]
+    }
+}

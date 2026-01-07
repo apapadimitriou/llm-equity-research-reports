@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to the combination of internal numeric contradictions and the total absence of quantified sensitivity analysis. While the report explicitly states key drivers such as a 15% revenue CAGR and a 9% WACC, it fails to provide any stress-testing or scenario analysis. The 'Risk & Uncertainty' section offers only a vague qualitative statement that valuation could swing 20\u201330%, without providing a sensitivity matrix or quantifying the impact of specific material levers like margin compression or interest rate changes. Furthermore, there is a distinct internal contradiction regarding operating margins: the narrative in the 'Fair Value and Profit Drivers' section forecasts an average margin of 40%, the Appendix table claims an average of 41.0%, and the 'Financials Snapshot' table presents a progression (40% to 43%) that implies a mathematical average of 41.7%. Additionally, the report provides EPS forecasts through 2029 without ever stating the underlying share count assumptions, rendering the EPS bridge opaque. Per the decision rules, one numeric contradiction combined with a lack of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "project revenue CAGR of 15% from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to average 40%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 9%, reflecting Meta's beta of 1.2 and cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "full-year 2025 guidance at $64 billion to $72 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "2025 EPS at $22... By 2029, EPS reaches $40",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin average is cited as 40% in the narrative, 41.0% in the Appendix table, and implies 41.7% based on the Financials Snapshot table values.",
+                "locations": [
+                    "Fair Value and Profit Drivers (Page 4)",
+                    "Appendix (Page 5)",
+                    "Financials Snapshot (Page 5)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% (Equity Risk Premium not specified)",
+            "Terminal growth 3% (stated as GDP proxy but lacks specific regional weighting)"
+        ]
+    }
+}

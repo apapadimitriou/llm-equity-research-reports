@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required structural sections and maintains a professional tone with consistent citations. However, it fails to meet the 'Good' or 'Excellent' criteria due to several critical omissions and structural weaknesses. Most significantly, the 'Financials Snapshot' table is generic and lacks core sector-specific KPIs for a custody bank, such as Assets Under Custody/Administration (AUC/A), Assets Under Management (AUM), and Net Interest Income (NII). While these figures are mentioned in the text, their absence from the multi-year forecast table triggers a hard cap of 'Fair' per the evaluation instructions. Additionally, the report lacks a dedicated peer benchmarking section and quantitative scenario/sensitivity analysis. There is also notable redundancy; the 'State Street Alpha' platform and the 'AUC/A' totals are repeated across the Analyst Note, Business Strategy, Bulls Say, and Economic Moat sections without providing incremental depth or new insights in each instance. While the valuation section attempts to link drivers to EPS, the lack of a comprehensive KPI bridge in the financials table limits the report's overall depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "ROIC",
+            "AUC/A (text only)",
+            "AUM (text only)"
+        ],
+        "sector_kpis_missing": [
+            "AUC/A (Financials Table)",
+            "AUM (Financials Table)",
+            "Net Interest Income (NII)",
+            "Fee Revenue Breakdown (Financials Table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUC/A and AUM forecasts missing from Financials Snapshot table",
+            "Net Interest Income (NII) missing from Financials Snapshot table",
+            "Provision for credit losses absent"
+        ],
+        "uncited_claims": [
+            "Projected EPS growth to $10.75 by 2026 in Valuation section lacks a direct source for the specific model output."
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded fair primarily due to a significant temporal contradiction and internal data inconsistencies that undermine its reliability. The report is dated July 24, 2025, yet the Analyst Note describes the 'Q2 2025 earnings release on July 29' in the past tense, claiming it 'updated guidance.' This forward-dating of a past-tense event is a major structural flaw. Furthermore, there is a lack of alignment between the narrative and the provided data tables. The Analyst Note states that 2025 guidance was updated to 'at least $14.65 per share,' but the Financials Snapshot table lists the 2025E EPS as $16.50. This $1.85 discrepancy is never reconciled, leaving the reader to guess which figure represents the actual base-case assumption.\n\nWhile the report features a clear structure and professional language, it fails to reconcile the Bear case with the valuation narrative. The Bears section highlights 'intensifying regulatory scrutiny' and the 'criminal dimension' of DOJ investigations, yet the Fair Value section assumes a smooth return to historical margin levels (8.5% by 2029) without accounting for potential legal settlements or structural compliance costs. The Bulls/Bears section also functions as a list-like dump of opposing points rather than an integrated analysis. These unresolved tensions between the narrative, the temporal claims, and the financial tables trigger the mandatory fair cap under the grading guardrails.",
+    "evidence": [
+        "Report describes the 'Q2 2025 earnings release on July 29' in the past tense despite a report date of July 24, 2025 (Analyst Note).",
+        "Narrative cites 2025 earnings of 'at least $14.65 per share' (Analyst Note) while the Financials Snapshot table forecasts $16.50.",
+        "Bear case warns of 'criminal dimension' of DOJ investigations (Bears Say), but Valuation assumes a return to 8.5% operating margins by 2029 without addressing legal costs."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

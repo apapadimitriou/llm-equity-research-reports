@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is a professional and well-structured synthesis of existing data, but it fails to reach the 'Good' threshold due to a heavy reliance on restating specific figures and narratives from the provided sources. At least four key insights are direct restatements or generic industry observations: the quantification of China tariff impacts ($400M revenue/$375M income) is pulled directly from source [14], the valuation multiple comparison (18x vs. 22x) is taken from source [4], the market share data is from source [6], and the explanation of the economic moat (FDA revalidation/switching costs) is standard industry boilerplate. While the report offers two clear syntheses\u2014specifically linking the $2B U.S. manufacturing investment to geopolitical risk mitigation and reshoring trends, and connecting the $130B-$180B biopharma R&D spend trajectory to the company's organic growth targets\u2014these are overshadowed by the volume of restated content. Per the grading instructions, the presence of three or more restated or generic insights triggers a hard cap at the 'Fair' grade. Furthermore, the valuation section lacks a novel driver, relying on standard P/E normalization and macro-driven revenue growth.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Management's $2B investment in U.S. manufacturing positions the company to capitalize on domestic reshoring and mitigate geopolitical risks.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Current valuation at 18x forward earnings represents a meaningful discount to the 10-year average of 22x.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "China tariff impacts create significant near-term headwinds with an estimated $400 million revenue reduction and $375 million operating income pressure.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "FDA requirements for process consistency mean pharmaceutical companies must revalidate entire manufacturing protocols when changing equipment suppliers.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Linking the rise in biopharma R&D spending ($130B to $180B) to a sustainable mid-single digit organic revenue growth trajectory.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'one-stop shop' and 'switching costs' phrasing",
+            "Direct restatement of specific tariff impact figures from source [14]"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

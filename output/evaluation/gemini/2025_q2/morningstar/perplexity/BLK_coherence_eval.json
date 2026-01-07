@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is capped at \"fair\" due to significant internal contradictions and temporal inaccuracies between the narrative claims and the provided source metadata. While the prose is professional and the structural flow is strong, several \"recent\" claims are time-inaccurate relative to the dates in the citations. For instance, the Analyst Note cites Source [2] (dated March 19, 2025) for Q2 2025 earnings results, which is chronologically impossible as Q2 does not conclude until June 30. Similarly, Source [6] is dated 2021 yet is used to support 2025 earnings data. Furthermore, a material contradiction exists regarding the stock price; the Cover Block and valuation narrative assume a price of $1,125, while Source [19] explicitly lists the price as \"$74 USD\" in its title. The report fails to acknowledge or resolve this discrepancy. Additionally, while the Financials Snapshot table is internally consistent, it relies on these mismatched sources, creating a \"noisy\" internal environment where the reader must overlook citation errors to follow the logic. Per the grading guardrails, the presence of unaddressed contradictions and time-inaccurate \"recent\" claims necessitates a hard cap at the \"fair\" level, despite the otherwise high quality of the writing and strategic analysis.",
+    "evidence": [
+        "Analyst Note cites Source [2] (dated March 19, 2025) for Q2 2025 results, which is temporally impossible as the quarter had not yet ended.",
+        "A contradiction exists between the $1,125 price in the Cover Block and the \"$74 USD\" price cited in the title of Source [19].",
+        "Source [6] is dated August 2, 2021, but is used to support claims regarding 2025 earnings performance in the Analyst Note."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

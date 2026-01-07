@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' because, while it includes all required headline sections, it suffers from significant internal contradictions and a lack of sector-specific depth. The Financials Snapshot is generic and omits at least two core biotechnology KPIs\u2014specifically R&D expenditure and a breakdown of product-specific revenue (e.g., Spikevax vs. pipeline)\u2014which triggers a hard cap at 'Fair.' Furthermore, the report contains blatant contradictions: the valuation narrative cites a -5% revenue CAGR and 10% post-2026 growth, yet the provided financial table shows a ~34% CAGR and annual growth rates exceeding 40%. The sourcing is also problematic, relying on 'Perplexity.ai' for financial forecasts and pipeline data rather than primary filings or reputable data providers. Proportionality is undermined by excessive redundancy; the '2028 cash breakeven' target is repeated across five different sections without incremental detail. Finally, the absence of a peer benchmarking table and detailed scenario analysis further limits the report's comprehensiveness, preventing it from achieving a 'Good' rating despite the presence of a valuation bridge and risk section.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Detailed Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D Expense (as % of Revenue)",
+            "Product-specific Revenue Breakdown",
+            "Cash Runway/Burn Rate",
+            "Pipeline Phase Counts"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated revenue CAGR of -5% (2025-2029) contradicts the financial table showing revenue growing from $2.0B to $6.5B (~34% CAGR).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative assumes 10% growth post-2026, but the table shows annual growth rates of 40%, 42%, and 30% for 2027-2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D Expense",
+            "Spikevax Sales",
+            "Cash Runway"
+        ],
+        "uncited_claims": [
+            "2024 Actuals in table are extrapolated despite Source [5] stating insufficient data for 2024.",
+            "ESG Risk Rating (25.0) is noted as based on industry benchmarks rather than a specific cited source."
+        ]
+    }
+}

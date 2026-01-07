@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions test primarily due to significant internal contradictions and a total lack of quantified sensitivity analysis. While key drivers like revenue growth (5% CAGR), operating margins (44%), and WACC (8.5%) are explicitly stated and proximal to the valuation narrative, they are undermined by mathematical incoherence. Specifically, the report claims a current P/E of 14x and a forward P/E of 17x, yet the provided price ($233.93) and EPS forecasts ($19.8 and $21.0) result in actual multiples of 11.8x and 11.1x, respectively. Furthermore, there is a discrepancy between the 2025e EPS cited in the text ($21.4) and the financials table ($21.0). Justification is only partial, relying on historical ROTCE for WACC but providing no peer benchmarking for the 3.2% NIM or 2% terminal growth. Most critically, the report offers only qualitative risk descriptions (e.g., 'rate risks are two-sided') without any quantified stress-testing or scenario analysis for material levers like interest rates or credit provisions. Per the grading rubric, the combination of multiple numeric contradictions and the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "5% p.a. revenue CAGR (2025\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins roughly stable at ~44%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assume tax rate ~21%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "DCF/WACC \u22488.5%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth 2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Net interest margin ~3.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims current price implies 17x 2025e P/E and 14x 2024 P/E, but math using $233.93 price and $21.0/$19.8 EPS yields ~11x.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2025e EPS is stated as $21.4 in the Analyst Note but $21.0 in the Financials Snapshot table.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 2% and NIM of 3.2% are stated without historical or peer context."
+        ]
+    }
+}

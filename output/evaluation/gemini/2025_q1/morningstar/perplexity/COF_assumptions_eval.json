@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple significant internal contradictions and a total absence of quantified sensitivity analysis. While the report explicitly lists key assumptions such as WACC (7.5%), Terminal Growth (2.5%), and Revenue CAGR (8.9%), these figures fail to reconcile with the provided 'Financials Snapshot' table. Specifically, the table's revenue figures ($42.5B in 2025E to $55.9B in 2029E) imply a CAGR of approximately 7.1%, directly contradicting the 8.9% stated in the Appendix and the '8-10%' range in the narrative. Furthermore, the report cites a target 'efficiency ratio in the low-40% range' while the table lists 'Op-Margin %' climbing from 43.9% to 47.2%. In banking, these are distinct metrics; if the table intended to show efficiency, the numbers are outside the 'low-40%' target, and if it intended to show margins, the implied efficiency ratio (the complement) would be in the 50s, creating a major conceptual conflict. Additionally, the valuation logic is flawed: a 14.3x P/E on $15.45 EPS yields the stated $221 price, but this does not align with the $141.67B market cap without an unexplained 68% increase in share count post-merger. Finally, the report offers only qualitative risk discussion, failing the requirement for quantified sensitivity ranges for material drivers like NIM or credit losses.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth expectations incorporate a compound annual growth rate of approximately 8-10% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "management targeting an adjusted operating efficiency ratio in the low-40% range over the next three to five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 7.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "targeting share repurchases of approximately 10% of outstanding shares annually through 2027",
+            "location": {
+                "section": "Bulls Say",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR of 8.9% in Appendix and 8-10% in text conflicts with the Financials Snapshot table which shows a 7.1% CAGR from 2025E to 2029E.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Efficiency ratio target of 'low-40%' conflicts with the table's 'Op-Margin %' of 43.9%-47.2% (which implies an efficiency ratio in the 50s if treated as a complement, or simply fails the 'low-40' threshold if treated as the same metric).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "The stated P/E of 14.3x on $15.45 EPS ($221 price) is mathematically inconsistent with the $141.67B Market Cap unless share count is ~640M, which is not reconciled with historical data.",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM specific basis point assumptions",
+            "Credit loss/Net charge-off rate path"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without risk-free rate or beta components",
+            "Terminal growth 2.5% without economic context"
+        ]
+    }
+}

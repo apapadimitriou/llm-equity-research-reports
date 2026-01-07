@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a professional structure with clear section headers and logical transitions that connect the company's AI strategy (Agentforce) to its valuation and risk profile. The narrative flow is generally smooth, particularly in the 'Business Strategy & Outlook' section, which effectively bridges current product launches with long-term market opportunities. However, the report fails the coherence test due to significant temporal inaccuracies and internal data tensions. Most notably, the report is dated May 29, 2025, yet the 'Sources' section includes citations from June 2025 (Source 11) and September 2025 (Source 8). This chronological impossibility undermines the credibility of the data and suggests a failure in source verification. Furthermore, there is a material, unresolved contradiction between the narrative and the 'Financials Snapshot' table regarding profitability. The Analyst Note and Strategy sections emphasize a 34.0% non-GAAP operating margin as a key performance indicator, but the financial table lists an 'Op Margin %' of 21.6% for the same period (FY26E) without labeling it as GAAP or reconciling it with the narrative's primary margin claim. While the Bulls/Bears sections are well-reconciled with the base-case valuation, these temporal and numerical inconsistencies require the reader to guess which data points are authoritative. Per the grading guardrails, the presence of unaddressed contradictions and time-inaccurate claims necessitates a cap at the 'fair' level.",
+    "evidence": [
+        "Source [11] is dated June 23, 2025, and Source [8] is dated September 2025, both of which occur after the report's publication date of May 29, 2025 (Sources section).",
+        "The Financials Snapshot table lists an 'Op Margin %' of 21.6% for FY26E, which conflicts with the 34.0% non-GAAP margin target highlighted in the Analyst Note (Financials Snapshot / Analyst Note).",
+        "The report cites Q1 FY26 results (ended April 30, 2025) as 'recent' but relies on valuation metrics from future-dated sources to support the current price/FVE (Cover Block / Sources)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

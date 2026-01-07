@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to severe internal contradictions and temporal inaccuracies that invalidate the core valuation argument. The most critical failure is the mathematical impossibility presented in the valuation framework: the Financials Snapshot table forecasts a negative EPS of ($2.0) for FY2026e, yet the Fair Value section explicitly claims the stock trades at 'roughly 20x our FY2026 EPS.' A positive P/E multiple cannot be calculated from negative earnings, and the Appendix further complicates this by citing a 'target P/E... of ~25x' without addressing the projected losses. Additionally, the report contains a temporal paradox; it is dated May 22, 2025, but the Sources section includes a citation (Source 13) dated May 28, 2025. This suggests a fundamental failure in factual integrity. Coherence is further eroded by conflicting claims regarding Snowflake\u2019s relative valuation. The Analyst Note and Bears Say sections describe the stock as 'expensive' and trading at '>10x sales,' whereas the Fair Value section claims the stock is 'discounted relative to peers' at '5x FY2026 revenue.' These disparate figures are never reconciled, and the 5x claim is mathematically inconsistent with the provided $40B market cap and $4.28B revenue forecast (which implies ~9.3x). While the narrative flow between the Business Description and Strategy sections is functional, the disconnect between the data tables and the narrative forces the reader to assemble the argument themselves.",
+    "evidence": [
+        "Financials Snapshot table shows FY2026e EPS of ($2.0), contradicting the Fair Value section's claim of a '20x our FY2026 EPS' valuation.",
+        "Report date of May 22, 2025, is logically inconsistent with the inclusion of Source 13, which is dated May 28, 2025.",
+        "The Fair Value section claims a '5x FY2026 revenue' multiple, which contradicts the Bears Say claim of '>10x sales' and the table's implied ~9.3x multiple."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

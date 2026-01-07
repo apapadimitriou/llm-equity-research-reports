@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including revenue CAGR, operating margins, and WACC components. These are clearly stated within the 'Fair Value and Profit Drivers' section and summarized in an appendix table, making the model's inputs traceable. Justification is solid, as the report utilizes segment-level growth expectations (EISG vs. CSG) and historical 2024 data to anchor its 2025-2029 forecasts. However, the report is capped at 'Fair' due to two primary deficiencies. First, it lacks quantified sensitivity or scenario analysis for material drivers; while it qualitatively mentions that operational risks could swing valuation by 15-20%, it provides no matrix or range showing how the $175 fair value estimate reacts to changes in WACC or growth rates. Second, there is a minor but distinct internal numeric contradiction: the narrative projects a 2025 operating margin of 24%, whereas the 'Financials Snapshot' table lists it as 24.5%. Additionally, secondary assumptions such as the effective tax rate and specific capital expenditure requirements are omitted, leaving parts of the free cash flow bridge opaque.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 5% over 2025-2029, driven by recovery in communications and expansion in AI/data center testing",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 24% in 2025 to 27% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assume a WACC of 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts at $6.00 in 2025... reaching $8.50 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "modest share repurchases",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The text states 2025 operating margin is 24%, but the Financials Snapshot table lists it as 24.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": []
+    }
+}

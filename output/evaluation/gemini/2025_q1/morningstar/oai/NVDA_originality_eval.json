@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is almost entirely a restatement of public news headlines and standard financial data from the provided sources (Reuters and AP News). It fails to provide any original synthesis or unique thesis. The analysis of Nvidia\u2019s 'Wide Moat' and 'CUDA ecosystem' is boilerplate and widely available in the public domain. The valuation section uses a standard DCF model with generic assumptions (9% WACC, 18-20x terminal multiple) and lacks any novel drivers or company-specific mechanisms beyond management's own guidance. There are no testable, non-obvious catalysts or interpretive commentaries that link data points into new conclusions. Because the report offers zero original synthesis and relies on generic sector-wide insights, it meets the criteria for a 'Poor' grade under the specified decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "NVIDIA\u2019s entrenched GPU ecosystem (roughly 80% share) and high profitability position it uniquely in AI computing.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We model multi-year revenue growth well above industry averages but assume eventual deceleration as AI capex matures.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Nvidia\u2019s high operating leverage and leading R&D pipeline support industry-leading profitability with operating margins near 70%+.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Our fair-value estimate of $650 implies a significant multiple contraction from present levels.",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            },
+            {
+                "text": "Proprietary CUDA platform creates a network effect where developers optimize for Nvidia hardware.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' and 'network effect' phrasing",
+            "Heavy reliance on Reuters/AP headlines for all 'insights'",
+            "Standard Bulls/Bears points available in any news summary"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

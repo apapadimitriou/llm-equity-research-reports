@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections and provides a professional narrative; however, it fails several comprehensiveness benchmarks for the banking sector. Most significantly, the 'Financials Snapshot' table is generic, utilizing standard corporate metrics (FCF, ROIC, Op Margin) while omitting critical sector-specific KPIs such as Net Interest Margin (NIM), Efficiency Ratio, and Loan Loss Provisions. While some of these are mentioned in the text, their absence from the multi-year forecast table triggers a hard cap. Furthermore, the report lacks any peer benchmarking or comparative analysis against other 'Big Four' banks, which is essential for sector context. The valuation section provides a high-level link to Net Interest Income (NII) and ROE but lacks a dedicated sensitivity or scenario analysis table (e.g., EPS impact of interest rate shifts). These omissions, combined with the lack of peer context, limit the report's depth to 'Fair' despite the consistent use of citations and clear business descriptions.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (text)",
+            "CET1 Ratio (text)",
+            "Net Charge-offs (text)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Efficiency Ratio",
+            "Loan Loss Provisions (in table)",
+            "Deposit Growth Rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Efficiency Ratio",
+            "Provisions for Credit Losses (forecast table)"
+        ],
+        "uncited_claims": []
+    }
+}

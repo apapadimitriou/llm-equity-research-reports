@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is rated Poor due to multiple internal contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in listing its key drivers\u2014such as revenue growth, operating margins, WACC, and terminal growth\u2014it fails to provide any stress-testing or scenario analysis, which triggers a hard cap of 'Fair'. However, the grade is further downgraded to 'Poor' because of significant numeric and narrative inconsistencies between the text and the financial tables. Specifically, the text claims a 1\u20132% revenue CAGR for the 2025\u20132029 period, yet the 'Financials Snapshot' table shows revenue declining from $60.0B in 2025 to $58.0B in 2029 (a negative CAGR). Furthermore, the narrative identifies 2025 as the 'peak' revenue year, while the table explicitly forecasts a peak in 2027 at $62.0B. Justification for valuation parameters is also weak; the WACC (8.0%), terminal growth (1.5%), and tax rate (13%) are presented as static figures without historical context, peer benchmarking, or derivation logic. These unresolved contradictions between the model's outputs and the analyst's narrative summary render the assumptions unreliable and the valuation 'black-box' in nature.",
+    "assumptions_extracted": [
+        {
+            "quote": "2025\u20132029 CAGR is roughly +1\u20132%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast adjusted operating margins around 21\u201323%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a discount rate of ~8.0% and a long-term growth (terminal) rate of ~1.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Tax rate: ~13% (effective).",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Shares outstanding: ~1.76 billion.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "By 2025 we project revenue ~ $60B (peak)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 2025-2029 revenue CAGR is +1-2%, but the Financials Snapshot table shows revenue falling from $60B to $58B in that period.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text identifies 2025 as the revenue peak ($60B), but the table shows revenue peaking in 2027 ($62B).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.0% without source or build-up",
+            "Terminal growth 1.5% without peer/economic context",
+            "Tax rate 13% without historical reconciliation"
+        ]
+    }
+}

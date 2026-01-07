@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates high levels of explicitness, specificity, and internal consistency, but it is strictly limited to a 'Fair' grade due to the total absence of quantified sensitivity or scenario analysis. On the positive side, assumptions are clearly stated and proximal to the forecasts they inform. The report provides a detailed valuation appendix covering WACC components (Risk-Free Rate, ERP, Beta), tax rates, and share counts, all of which reconcile perfectly with the narrative and the 'Financials Snapshot' table. Justification is solid, linking the 12% revenue CAGR to specific drivers like Reels monetization and AI-driven personalization, while the margin assumptions account for the tension between efficiency gains and increased AI CapEx. However, the report fails the 'Stress-tested' pillar entirely. Despite assigning a 'High' uncertainty rating and identifying material risks such as regulatory fines and cyclical ad spending, the analyst provides no quantified impact of these variables on the $400 fair value estimate. There are no bull/bear cases or sensitivity tables for the 8.5% WACC or 4% terminal growth rate (the latter being notably high without specific justification). Per the grading rubric's hard caps, the lack of quantified sensitivities on material drivers mandates a maximum grade of 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "forecast Meta\u2019s revenue to grow at a ~12% compound annual rate over 2024\u20132029, reaching roughly $290 billion by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "model long-run operating margins stabilizing in the mid-40s",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "valuation uses an 8.5% weighted average cost of capital and a 4% terminal growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "boosted 2025 capital expenditures to $64\u2013$72 billion to accelerate AI infrastructure investments",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Effective Tax Rate 20%",
+            "location": {
+                "section": "Appendix",
+                "page": "7"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Shares Outstanding (bn) ~2.6",
+            "location": {
+                "section": "Appendix",
+                "page": "7"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "7"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Terminal growth rate of 4.0% is high relative to typical long-term GDP growth and lacks specific justification in the text."
+        ]
+    }
+}

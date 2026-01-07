@@ -1,0 +1,44 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a comprehensive summary of Amazon's Q1 2025 earnings and existing market data but fails to provide any original insights or syntheses. Every significant data point\u2014including the $10 billion AI revenue projection, the 20% fulfillment cost advantage, and the 90% AWS retention rate\u2014is explicitly cited to external sources such as Investing.com, Stock Analysis, and TipRanks. The valuation section employs a standard DCF model with conventional drivers (revenue CAGR and margin expansion) that lack any novel mechanism or unique interpretive commentary. The 'Bulls Say / Bears Say' and 'Economic Moat' sections rely on boilerplate industry narratives and standard frameworks without company-specific angles that go beyond public filings. Because the report lacks at least one original thesis or synthesis and instead relies entirely on paraphrasing cited sources, it meets the criteria for a 'Poor' grade under the decision rules. While the data points themselves are specific, they provide zero original decision relevance as they are merely recycled from public transcripts and third-party analysis rather than derived through independent synthesis.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AWS AI boom potentially adding $10 billion in incremental revenue by 2027",
+                "classification": "Copied/Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fulfillment expenses per unit 20% lower than peers",
+                "classification": "Copied/Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "AWS benefits from switching costs... data showing 90% retention rates",
+                "classification": "Copied/Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins improving to 13% by 2029 via AWS scale and supply chain efficiencies",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on external citations for all data points",
+            "Boilerplate 'flywheel' and 'customer obsession' narratives"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

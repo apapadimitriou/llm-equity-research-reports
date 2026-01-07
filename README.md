@@ -45,7 +45,9 @@ Common options:
 - `--human-reports`: read PDFs from `output/human_reports` and infer source from filename
 - `--model`: override default model for the provider
 - `--strict-message`: override strict grading instruction (default is harsh)
-- `--max-concurrency`: default `8`
+- `--max-output-tokens`: max tokens for model output (default `16384`)
+- `--max-concurrency`: default `20`
+- `--ticker-allowlist-root`: only evaluate tickers present in the given folder
 
 ## Examples
 
@@ -67,6 +69,12 @@ Human PDF reports:
 python -m llm_eval --provider anthropic --human-reports
 ```
 
+Limit evaluation to tickers found in a specific folder:
+
+```
+python -m llm_eval --provider gemini --ticker-allowlist-root output/report/2025_q2/morningstar/gemini
+```
+
 ## Output Structure
 
 Evaluations are saved to:
@@ -75,7 +83,18 @@ Evaluations are saved to:
 output/evaluation/<provider>/<period>/<source>/<provider>/TICKER_<metric>_eval.json
 ```
 
-For human PDFs, `<source>` is inferred from the filename (e.g., `*_Morningstar.pdf`, `*_Argus.pdf`).
+For human PDFs, `<source>` is inferred from the filename (e.g., `*_Morningstar.pdf`, `*_Argus.pdf`) and outputs include an `analyst` layer:
+
+```
+output/evaluation/<provider>/<period>/<source>/analyst/TICKER_<metric>_eval.json
+```
+
+## Notes
+
+- The strict grading instruction is enabled by default; override with `--strict-message`.
+- If an evaluation output already exists for a provider, it is skipped.
+- If a model returns non‑JSON output, a `.raw.txt` sibling file is written with the full response.
+- Gemini async uses the faster aiohttp client via `google-genai[aiohttp]`.
 
 ## Notes
 

@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions primarily as a news aggregator rather than an original piece of equity research. Every significant analytical point\u2014from the Q1 earnings drivers to the skepticism surrounding ROTCE targets\u2014is directly attributed to external sources like Reuters, the Financial Times, or Wells Fargo. There is no evidence of the analyst performing independent synthesis; for instance, while the report mentions tariff uncertainty and trading volatility, it fails to construct a unique causal link or quantified projection of how these macro factors specifically alter Citigroup's NII or fee trajectory beyond what management has already guided. The valuation section is particularly boilerplate, utilizing standard DCF inputs (2-3% CAGR, 9% WACC) and generic margin improvement narratives ('technology upgrades') that could apply to any bank in a turnaround phase. No novel drivers or company-specific mechanisms are introduced. Furthermore, the 'Bulls Say' section explicitly relies on a 'dominant pick' thesis from Wells Fargo rather than offering a proprietary angle. Because the report lacks any original thesis or synthesis of data into new, testable conclusions, and relies heavily on paraphrasing public headlines, it fails to meet the threshold for 'Fair' and is graded as 'Poor.'",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Beats were driven by an 23% jump in equity trading and broader markets activity (revenues +12% YoY to $6.0 billion).",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wealth management posted record revenue (+24% YoY to $2.1 billion).",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Analysts doubt the 11\u201312% ROTCE target for 2026 will be met (current forecast ~>9%).",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Favorable market volatility and rising fee businesses can sustain 2025 revenue growth modestly above zero.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins improve from ~20% in 2024 to ~23% by 2029, aided by technology upgrades and branch network rationalization.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wells Fargo analysts call Citi their 'dominant pick,' forecasting shares could double over 3 years.",
+                "classification": "Copied",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on news citations (Reuters/FT) for core analysis",
+            "Boilerplate 'scale & diversification' phrasing in moat section",
+            "Valuation lacks novel drivers or company-specific mechanisms",
+            "Bulls/Bears section repeats other firms' theses"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

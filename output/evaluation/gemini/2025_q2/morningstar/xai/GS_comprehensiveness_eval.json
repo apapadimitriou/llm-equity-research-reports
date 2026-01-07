@@ -1,0 +1,66 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for comprehensiveness due to significant data omissions and excessive redundancy. While the report includes all required section headers, the content within them is superficial. The Financials Snapshot is particularly deficient, lacking all historical data (2022\u20132024) and omitting critical sector-specific KPIs for a capital markets firm, such as Net Interest Margin (NIM), CET1 ratio, and Provisions for Credit Losses. This triggers a hard cap of 'Fair.' Furthermore, the report exhibits extreme redundancy; the '71% surge in advisory fees' is repeated across five different sections (Analyst Note, Strategy, Bulls, Moat, and Fair Value) without providing additional depth or context in each instance, necessitating a one-level downgrade from the cap. Peer benchmarking is absent in the business and valuation sections, and there is no scenario or sensitivity analysis. Additionally, the report relies on outdated sourcing (Source [6] from 2018) for current moat and capital allocation assertions, and several claims regarding ESG ratings and the 2024 EPS baseline are uncited or based on 'insufficient data,' rendering the analysis incomplete.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Advisory Fees",
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "NII",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Provisions for Credit Losses"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report claims a 'wide moat' based on 2025 performance but cites a source from 2018 to support the historical BVPS CAGR.",
+                "locations": [
+                    "Economic Moat",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "CET1 Ratio",
+            "Provisions for Credit Losses",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating of 22.5 and peer ratings for JPM/MS",
+            "2024 estimated EPS of $40 used as the baseline for the valuation bridge"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report earns a 'Fair' grade. It demonstrates high explicitness and internal consistency; key model inputs such as the 10% revenue CAGR, 32% terminal operating margin, and 8.5% WACC are clearly stated in both the narrative and the appendix, and they reconcile perfectly with the provided financial snapshot and EPS bridge. Specificity is also a strength, with clearly defined time horizons (FY2025\u2013FY2029) and magnitudes. However, the report is capped at 'Fair' primarily due to the lack of robust sensitivity analysis. While it provides a single quantified point for revenue sensitivity ('\u00b120% to revenue assumptions'), it fails to provide quantified ranges, tables, or scenarios for other material drivers such as WACC, terminal growth, or margin fluctuations. Per the grading criteria, a 'Good' rating requires quantified sensitivity for at least 2\u20133 material drivers. Additionally, the justification for the significant margin expansion from 28% to 32% is relatively thin, cited as 'efficiency gains' and 'scale' without detailed causal drivers or specific peer benchmarking to support the feasibility of such a peak.",
+    "assumptions_extracted": [
+        {
+            "quote": "project revenue CAGR of 10% from FY2025 to FY2029, driven by 8% organic growth in EDA and 12% in IP",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 28% in FY2024 to 32% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 8.5%, reflecting a beta of 1.1 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%, leading to the $650 FVE.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "yielding FY2025 EPS of $11.20.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "prioritizing buybacks ($500 million authorized annually).",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Margin expansion to 32% (attributed only to 'efficiency gains')",
+            "Terminal growth of 4% (cited as 'industry average' without source)"
+        ]
+    }
+}

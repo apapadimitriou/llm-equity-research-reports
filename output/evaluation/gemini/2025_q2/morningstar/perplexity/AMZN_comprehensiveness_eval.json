@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as 'Fair' due to the omission of core sector-specific KPIs within the Financials Snapshot and significant redundancy across multiple sections. While the report includes all required headline sections and provides a professional overview of Amazon\u2019s business, the Financials Snapshot table is overly generic, presenting only high-level corporate metrics like Revenue, EPS, and FCF. It fails to include critical segment-level data such as AWS Revenue, AWS Operating Margins, or Advertising Revenue in the data table, which are essential for a comprehensive analysis of a diversified conglomerate. Furthermore, the report exhibits repetitive content; the 'multi-billion-dollar AI run rate' and the 'FTC antitrust litigation' are mentioned across four separate sections (Analyst Note, Strategy, Bulls/Bears, and Risk/ESG) with almost verbatim phrasing and no incremental depth. This redundancy, combined with the generic financial table, triggers mandatory caps and downgrades according to the evaluation rules. While the valuation section mentions growth drivers, it lacks a formal sensitivity analysis or scenario-based modeling to test the fair value estimate against different operational outcomes. Peer benchmarking is present within the prose but lacks a dedicated comparative table or structured analysis against competitors like Microsoft or Walmart.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "AWS Revenue Growth (text)",
+            "Advertising Growth (text)",
+            "Fulfillment efficiency (text)",
+            "Operating Margin (table)"
+        ],
+        "sector_kpis_missing": [
+            "AWS Operating Margin",
+            "Advertising Revenue",
+            "Gross Merchandise Volume (GMV)",
+            "Remaining Performance Obligations (RPO)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AWS Operating Margin (Financials Snapshot)",
+            "Advertising Revenue (Financials Snapshot)",
+            "GMV (Financials Snapshot)",
+            "Shipping/Fulfillment costs as % of sales"
+        ],
+        "uncited_claims": []
+    }
+}

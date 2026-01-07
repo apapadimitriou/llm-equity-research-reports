@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails primarily due to significant internal numeric contradictions and a lack of quantified sensitivity analysis. While assumptions are explicitly stated and proximal to the forecasts, they are mathematically incoherent. Specifically, the WACC is stated as 8.5%, yet the provided components (6% risk-free rate, 5% equity risk premium, and 1.0 beta) calculate to an 11% cost of equity. Given Microsoft\u2019s net cash position ($80B cash vs. $60B debt), an 8.5% WACC is irreconcilable with the stated inputs. Furthermore, the report claims a 13% revenue CAGR from 2025\u20132029, but the provided financial table (growing from $280B to $440B) results in an 11.9% CAGR; even using the 2024 base of $245.1B, the CAGR is only 12.4%. These discrepancies represent two distinct numeric contradictions between the narrative and the data tables. Additionally, the report lacks any quantified sensitivity or scenario analysis for material drivers like Azure growth or AI capex, offering only a vague qualitative statement that valuation could swing by 20\u201330%. Per the grading instructions, the presence of two or more contradictions, combined with the absence of quantified sensitivities, mandates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 13% revenue CAGR from fiscal 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins expanding from 42% in 2025 to 45% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is set at 8.5%, reflecting a 6% risk-free rate, 5% equity risk premium, and beta of 1.0",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Capital expenditures for AI infrastructure are projected at $80 billion for the fiscal year",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "offset by $0.50 in higher taxes and dilution",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (6% Rf + 1.0 Beta * 5% ERP) equal 11%, but the report uses 8.5% for the model.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "Text claims 13% Revenue CAGR (2025-2029), but the Financials Snapshot table shows growth from $280B to $440B, which is an 11.9% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% (mathematically inconsistent with stated Rf and ERP)"
+        ]
+    }
+}

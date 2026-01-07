@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a high-quality summary of the provided source material but fails the criteria for originality of insights. Every significant analytical point\u2014including the Q2 2025 earnings miss (EPS $0.48 vs $0.54), the $1.5 billion revenue impact from China export controls, and the 39.4% server market share\u2014is a direct restatement of the provided citations (Sources 6, 16, and 11 respectively). There is no evidence of synthesis where multiple data points are linked to form a new conclusion; for example, the report mentions the inventory reserves and export controls but does not project a unique margin recovery trajectory or specific catalyst timeline beyond what is explicitly stated in the news. The valuation section is entirely generic, utilizing standard DCF inputs (WACC, terminal growth) without identifying a novel company-specific driver. Because the report lacks any original thesis or synthesis and relies on restating public headlines and boilerplate descriptions of economic moats, it meets the 'Poor' classification under the mandatory decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue of $7.69 billion grew 31.7%... EPS of $0.48 fell short of the $0.54 consensus estimate.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "New U.S. export controls targeting China resulted in a $1.5 billion revenue reduction expectation for fiscal 2025.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "AMD achieved record x86 market share gains... server revenue share reaching 39.4%.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "The company's AI roadmap extends through 2027 with successive generations of Instinct accelerators (MI350, MI400).",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fair value estimate of $145 based on mid-teens CAGR through 2029 and 8.5% WACC.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "AMD possesses a narrow economic moat derived primarily from intellectual property assets and switching costs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Restating public headlines (earnings miss, export controls)",
+            "Boilerplate 'narrow moat' and 'switching costs' phrasing",
+            "Heavy reliance on cited sources for all quantitative conclusions"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

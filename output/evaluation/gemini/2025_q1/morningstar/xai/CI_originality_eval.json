@@ -1,0 +1,51 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying almost exclusively on restating public earnings releases and boilerplate industry descriptions. All identified insights are either direct paraphrases of company press releases\u2014such as the $10 billion biosimilar savings target and the 2025 EPS outlook\u2014or generic sector observations like rising medical costs and regulatory scrutiny on PBMs. The valuation section lacks any novel drivers, presenting a standard DCF model based on linear margin expansion and revenue growth without identifying specific company-specific catalysts or mechanisms. Furthermore, the report contains significant data gaps (e.g., 2023 actuals listed as N/A), suggesting a lack of independent research. Because there is zero evidence of independent synthesis or a non-obvious, testable thesis, the report triggers the hard cap for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Evernorth's pharmacy services drive high-margin growth, with biosimilar opportunities adding $10 billion in potential savings for clients by 2027.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Dividend increases and share buybacks signal strong free cash flow generation, with $8 billion returned to shareholders in FY2024.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Rising medical costs and regulatory caps on premiums could squeeze margins, as seen in FY2024's net income decline.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Cigna maintains a wide economic moat primarily from switching costs and network effects in its healthcare ecosystem.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "EPS bridge: 2024 base $12.12 + $4.00 revenue growth + $1.50 margin expansion - $0.50 higher taxes = 2025 $17.12.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Heavy reliance on company press releases for 'insights'",
+            "Missing historical data (2023 N/A)",
+            "No company-specific catalysts or timing provided beyond public guidance"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections and provides a coherent narrative regarding PNC's business strategy and market positioning. However, it is capped at 'Fair' due to several critical deficiencies. First, the Financials Snapshot table is generic and omits at least four core sector-specific KPIs (NIM, NII, Provisions, and CET1 forecasts), which are mandatory for banking equity research. While some of these are mentioned in the text, their absence from the multi-year forecast table violates the comprehensiveness requirement. Second, the report exhibits significant redundancy; the $1.5 billion branch expansion and $30 billion ESG commitment are repeated across six and three sections respectively without adding incremental depth. Third, the report relies on outdated information for its valuation section, citing price targets from 2022 ([7], [8]) for a report dated 2025. Finally, the lack of a dedicated peer benchmarking section and scenario/sensitivity analysis prevents the report from achieving a higher grade, as the minimal mention of 'peer averages' does not constitute sufficient industry context.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Efficiency Ratio (text only)",
+            "Net Charge-offs (text only)",
+            "Tier 1 Capital Ratio (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "CET1 Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM forecasts",
+            "NII forecasts",
+            "Provision for credit losses",
+            "CET1 ratio forecasts"
+        ],
+        "uncited_claims": [
+            "Outdated price targets from 2022 used for 2025 valuation context [7][8]"
+        ]
+    }
+}

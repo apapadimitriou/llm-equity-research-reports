@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report earns a 'Good' grade by providing clear causal mechanisms for financial performance, such as attributing the 6% NII decline to 'higher deposit costs and a flattening yield curve.' It moves beyond description by providing an explicit EPS bridge and quantifying key valuation assumptions, including a WACC of 9.5% and a terminal growth rate of 2.5%. These assumptions are benchmarked, with the report noting that terminal growth is 'GDP-aligned' and valuation multiples are 'aligned with historical averages.' While the report includes a quantified sensitivity measure\u2014stating a '+/-20% swing in fair value possible from rate changes'\u2014it falls short of 'Excellent' because it lacks comprehensive, multi-variable scenario analysis (e.g., specific Bull/Bear cases for EPS or NIM). The treatment of uncertainty is present but not extensive. Actionable implications are clearly defined, particularly the advice to 'monitor upcoming earnings calls for updates on the asset cap lift' as a primary catalyst. The use of data is consistent, though the link between 'efficiency gains' and the projected 4% margin expansion remains somewhat generic without specific cost-reduction benchmarks or project-level detail. Verbatim excerpts: 'NII... declined 6%... reflecting pressure from higher deposit costs'; 'Terminal growth rate of 2.5%... GDP-aligned'; 'WACC is estimated at 9.5%, incorporating a 3% risk-free rate'; '+/-20% swing in fair value possible from rate changes'; 'operating margins improving... reflecting cost controls and efficiency gains'; '3% revenue CAGR... driven by loan growth and fee income'.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "impact of asset cap lift on balance sheet capacity not quantified"
+        ],
+        "unsupported_assumptions": [
+            "4% margin expansion from efficiency gains lacks specific cost-out targets"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified impact of specific interest rate shifts on NII"
+        ]
+    }
+}

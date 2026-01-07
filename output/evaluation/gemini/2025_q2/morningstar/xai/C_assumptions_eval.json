@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report earns a 'Fair' grade due to a combination of clearly stated primary valuation inputs and significant gaps in sensitivity analysis and internal consistency. On the positive side, the report is explicit regarding its WACC (9%), terminal growth (3%), and revenue CAGR (5%), providing specific components like the risk-free rate and beta. However, the justification for these figures is thin, relying almost exclusively on Q2 2025 trends to project a five-year horizon without deep historical context or peer benchmarking.\n\nA critical weakness is the internal inconsistency regarding 2024 data; the Financials Snapshot table labels 2024 as 'insufficient data,' yet the 'Fair Value and Profit Drivers' text utilizes specific 2024 baselines ($5.50 EPS and 25% margin) to build its forecast bridge. Furthermore, while the report qualitatively mentions that net interest margin (NIM) compression or operational risks could swing the valuation by 15-20%, it fails to provide a quantified sensitivity table or scenario analysis showing how specific changes in material drivers (like interest rates or credit costs) would alter the $70 fair value estimate. Finally, for a diversified bank, the omission of explicit credit cost/provision assumptions is a notable gap in the modeling of material drivers. These factors prevent the report from achieving a 'Good' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is forecasted to grow at a 5% CAGR from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in 2024 to 30% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 estimated $5.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "interest rate cuts reducing net interest margins by 5-10%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Financials Snapshot table lists 2024 data as 'insufficient data', but the Fair Value and Profit Drivers section uses specific 2024 EPS ($5.50) and Margin (25%) figures as the baseline for its forecast.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "5% Revenue CAGR based solely on Q2 2025 growth trends without historical context."
+        ]
+    }
+}

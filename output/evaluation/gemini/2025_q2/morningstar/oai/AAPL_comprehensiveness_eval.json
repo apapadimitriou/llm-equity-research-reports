@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' due to significant omissions in sector-specific data and pervasive redundancy, which triggers multiple negative decision rules. While the report successfully includes all required headline sections\u2014from the Analyst Note to the ESG Risk assessment\u2014it fails to provide the depth required for a higher rating. Specifically, the Financials Snapshot is generic; it lacks critical sector KPIs for a hardware/services hybrid like Apple, such as Gross Margin (essential for evaluating the mix shift) and Segmental Revenue (iPhone vs. Services). Per the instruction's hard caps, the omission of two or more core sector KPIs in the Financials Snapshot limits the maximum grade to 'Fair.' \n\nFurthermore, the report exhibits substantial redundancy. The discussion regarding U.S. tariffs, the $800 million cost impact, and the production shift to India is repeated across the Analyst Note, the Bulls/Bears section, and the Risk & Uncertainty section with almost no incremental depth. This repetition triggers a one-level downgrade. Additionally, while the report mentions competitors like Huawei and Samsung in the narrative, it lacks a formal peer benchmarking table or comparative metric analysis. The valuation section is a strength, providing an explicit link between operating drivers (4% CAGR, margin expansion) and the fair value outcome, but this cannot overcome the data gaps in the financials and the total absence of scenario or sensitivity analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "Segment Revenue (iPhone/Services)",
+            "Installed Base Growth",
+            "iPhone Unit Sales"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin (Hardware vs. Services)",
+            "Segment Revenue Breakdown",
+            "Installed Base Metrics"
+        ],
+        "uncited_claims": []
+    }
+}

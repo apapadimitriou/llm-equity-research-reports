@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections and provides a clear valuation methodology with explicit links between operating drivers (NIM, revenue growth) and the DCF outcome. However, it is strictly capped at 'Fair' due to several critical omissions and structural weaknesses. First, the Financials Snapshot table is generic and fails the sector-specific KPI requirement; it omits multi-year forecasts for Net Interest Margin (NIM), Provision for Credit Losses, and CET1 ratios, which are essential for a banking equity research report. While some of these figures are mentioned in the text, their absence from the formal snapshot table violates the comprehensiveness criteria. Second, the report exhibits significant redundancy, repeating the 2025 Fed stress test results and the $3.8B technology investment across the Analyst Note, Strategy, Bulls/Bears, and Capital Allocation sections without providing additional depth in subsequent mentions. Third, peer benchmarking is virtually non-existent regarding financial performance, with comparisons limited only to ESG scores. Finally, the absence of any scenario or sensitivity analysis regarding interest rate fluctuations\u2014a primary driver for Bank of America\u2014further limits the report's depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "CET1 Ratio",
+            "Digital Active Users"
+        ],
+        "sector_kpis_missing": [
+            "Efficiency Ratio",
+            "Provision for Credit Losses (forecasted table)",
+            "Loan-to-Deposit (L/D) Ratio",
+            "Non-Performing Assets (NPA)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM (missing from Financials Snapshot table)",
+            "Provisions (missing from Financials Snapshot table)",
+            "CET1 (missing from Financials Snapshot table)",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

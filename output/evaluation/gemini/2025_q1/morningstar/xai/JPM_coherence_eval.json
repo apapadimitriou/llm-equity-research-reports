@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from catastrophic temporal incoherence and multiple unresolved internal contradictions. Although dated April 12, 2025, the document cites numerous sources from the future, including reports and earnings calls from July, August, and September 2025 (Sources 5, 6, 11, 12, 13, 14). Most egregiously, it references 'Second-Quarter 2025 Financial Results' and 'Q2 2025 Earnings Call Highlights' despite the report supposedly being written just after the Q1 2025 release. This creates an impossible timeline where the analyst is citing future events as evidence for current valuations. Furthermore, there are significant inconsistencies regarding growth projections; the 'Business Strategy & Outlook' section forecasts 4-6% revenue growth through 2027, while the 'Fair Value' section and the 'Financials Snapshot' table align with a lower 4.4-4.5% CAGR. Additionally, the Analyst Note reports Q1 2025 revenue of $46.01 billion, which annualizes to over $184 billion, yet the Financials Snapshot table forecasts a much lower full-year 2025 revenue of $178.0 billion. This implies an unexplained contraction in the remaining quarters that contradicts the 'continued profitability momentum' described in the narrative. While the narrative flow between sections is superficially smooth, the foundational data and temporal claims are logically broken, requiring the reader to assemble a coherent argument from fundamentally flawed and contradictory facts.",
+    "evidence": [
+        "The report is dated 2025-04-12, yet Sources [12], [13], and [14] reference Q2 2025 results and earnings calls from July 2025, which had not occurred yet.",
+        "The Analyst Note cites Q1 2025 revenue of $46.01B (annualizing to ~$184B), contradicting the Financials Snapshot table's 2025 forecast of $178.0B.",
+        "Business Strategy & Outlook projects 4-6% revenue growth through 2027, while the Fair Value section and Financials table assume a lower 4.5% CAGR through 2029."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

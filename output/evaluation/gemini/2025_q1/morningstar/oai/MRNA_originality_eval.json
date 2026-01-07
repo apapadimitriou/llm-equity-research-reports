@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying almost exclusively on restating publicly available data from earnings transcripts, news articles (Reuters, Motley Fool), and company filings. Every candidate insight identified is either a direct restatement of financial results (e.g., Q1 revenue declines, cash balances) or a generic sector observation (e.g., biotech growth depends on product approvals). There is no evidence of the analyst linking disparate data points to form a new conclusion; for instance, the discussion on cost controls and margin expansion simply mirrors management's stated targets without independent verification or unique causal mapping. The valuation section is boilerplate, utilizing standard DCF assumptions (15\u201320% growth, 10.5% WACC) without identifying a novel driver or company-specific mechanism. Because the report lacks even a single weak synthesis and consists entirely of generic or paraphrased content, it meets the criteria for a 'Poor' grade under the mandatory decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q1 revenue was just $108M, down 35% year/year... net loss narrowed to \u2248$1.0B.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Moderna faces a medium-term transition: traditional surges from COVID sales have subsided, so growth depends on new product approvals.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management projects $8\u2013$15B combined sales from respiratory vaccines by year-end 2027... cost cuts (~27% in 2024) have dramatically improved leverage.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Moat is narrow... sustainability hinging on continuous innovation... advantage is subject to new entrants and intense competition.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "We forecast revenue dipping to ~$2.0B in 2025... and gradually rising 15\u201320% p.a. by late decade as RSV and influenza products ramp.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on news aggregators (Motley Fool, Reuters) for core analysis",
+            "Boilerplate Bull/Bear cases",
+            "Restating management's own pipeline success rates without interpretation"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report fails the primary requirement of being a connected argument due to the pervasive use of placeholders like [insufficient data] and [hypothetical] within the narrative. This forces the reader to assemble the argument themselves or realize the analysis is incomplete. There is a significant contradiction regarding margin definitions; the Analyst Note projects EBITDA margins of 18-20%, while the Fair Value section and Financials Snapshot use the exact same 18% figure for Operating Margins by 2029. These are distinct financial metrics, and their conflation creates internal noise. Furthermore, the Financials Snapshot is missing all historical data (2022-2024), making the 2025-2029 forecasts appear arbitrary and unsupported by trend analysis. While the temporal alignment is correct\u2014reporting on Q1 2025 in April 2025\u2014the structural integrity is compromised by the list-like nature of the Bulls/Bears and Risk sections, which lack transitions to the core valuation model. The report reads more like a template than a finished professional analysis. The lack of reconciliation between the Bear case risks (e.g., 20% revenue impact from Medicare) and the base-case valuation (which assumes steady 5% growth) further degrades the coherence of the investment thesis.",
+    "evidence": [
+        "EBITDA margins to stabilize around 18-20% (Analyst Note) vs operating margins expanding... to 18% by 2029 (Fair Value/Financials Snapshot).",
+        "Pervasive use of [insufficient data] and [hypothetical] placeholders throughout the narrative and tables.",
+        "Financials Snapshot table lists Insufficient data for all historical years (2022-2024), providing no basis for the 2025-2029 forecasts."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

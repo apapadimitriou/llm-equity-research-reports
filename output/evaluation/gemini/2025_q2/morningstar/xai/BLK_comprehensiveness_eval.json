@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report maintains the required structural framework but fails significantly on depth and data integrity. While all major sections are present, the 'Financials Snapshot' is generic and omits core asset management KPIs such as Assets Under Management (AUM) and Net Flows, which are essential for this sector. Sourcing is a major weakness: the report relies on a 2023 source for a 2025 projection and incorrectly attributes an earnings miss from a related Business Development Company (BlackRock TCP) to the parent entity (BlackRock Inc.). Furthermore, the frequent use of 'insufficient data' placeholders throughout the Business Description, Strategy, and Moat sections indicates a skeletal level of research. The valuation section provides a basic link between drivers and fair value, but the absence of a peer benchmarking table and formal sensitivity analysis, coupled with repetitive mentions of the Aladdin platform across three sections without incremental detail, prevents the report from achieving a 'Good' rating. Per the grading rules, the omission of sector KPIs in the financials table and the use of outdated/incorrect evidence cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Sensitivity Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "AUM (in Financials Snapshot)",
+            "Net Inflows/Outflows (in Financials Snapshot)",
+            "Average Fee Rate (bps)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Source [2] refers to BlackRock TCP Capital Corp (TCPC), a separate entity, but is used to suggest an earnings miss for BlackRock Inc. (BLK).",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "AUM",
+            "Net Flows",
+            "Fee Yield"
+        ],
+        "uncited_claims": [
+            "Expected EPS growth to $42 in FY2025 marked as insufficient data",
+            "AUM geographic split (50/30/20) marked as insufficient data for 2025"
+        ]
+    }
+}

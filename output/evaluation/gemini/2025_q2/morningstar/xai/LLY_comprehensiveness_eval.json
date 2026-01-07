@@ -1,0 +1,54 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to significant omissions in data and context that undermine its comprehensiveness. While the report includes all required section headings and provides a structured narrative, it fails on several critical technical requirements. Most notably, the 'Financials Snapshot' is severely deficient; it contains no historical data for the years 2022\u20132024 and omits essential biopharma-specific KPIs such as R&D expenditure, pipeline progression metrics, and product-level revenue breakdowns for flagship drugs like Mounjaro and Zepbound. The cover block is also incomplete, leaving market capitalization and price-to-fair-value metrics as 'insufficient data.' \n\nFurthermore, the report lacks any formal peer benchmarking or industry context, failing to compare Eli Lilly\u2019s margins or valuation multiples against its primary competitor, Novo Nordisk. There is also no scenario or sensitivity analysis to test the robustness of the $950 fair value estimate against clinical trial outcomes or regulatory shifts. Although the valuation section successfully links operating drivers to the fair value estimate via an EPS bridge, this strength is outweighed by the lack of historical context and missing sector KPIs. According to the grading rules, the omission of multiple sector KPIs in the financials table caps the grade at 'Fair,' and the total absence of peer benchmarking triggers a mandatory downgrade to 'Poor.'",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D Expense",
+            "Pipeline/Trial Data",
+            "Drug-specific Revenue Forecasts",
+            "Patent Expiry Schedule"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "R&D Expense",
+            "Pipeline/Trial Data",
+            "Drug-specific Revenue Forecasts (Mounjaro/Zepbound)"
+        ],
+        "uncited_claims": []
+    }
+}

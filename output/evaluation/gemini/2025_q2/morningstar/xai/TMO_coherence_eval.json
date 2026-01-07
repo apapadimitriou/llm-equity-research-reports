@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from severe temporal and logical contradictions that undermine its credibility. The most glaring issue is a chronological impossibility: the report is dated July 10, 2025, yet the Sources section cites articles relative to August 10, 2025. This temporal misalignment suggests the document was not properly reviewed for consistency. Furthermore, there is a fundamental internal contradiction regarding data availability. The Analyst Note explicitly states that Thermo Fisher 'reported its Q2 2025 results,' yet the Fair Value, Capital Allocation, and Financials sections repeatedly claim 'insufficient data' exists to perform an analysis or populate tables. This creates a total breakdown in narrative coherence; the reader is told results were released but is then presented with a report that fails to incorporate any specific metrics from those results. The Capital Allocation section admits to having insufficient data for a full assessment but assigns a 'Standard' rating regardless, which is an unresolved tension. Additionally, the document is highly repetitive, citing the $2 billion investment plan in five separate sections without adding new depth or reconciling it with the 'insufficient data' claims. The Financials Snapshot and Appendix tables are entirely empty of meaningful data, forcing the reader to assemble the argument themselves from vague narrative snippets.",
+    "evidence": [
+        "Report date is 2025-07-10, but all sources are cited relative to 2025-08-10 (Cover Block/Sources).",
+        "Analyst Note states Q2 2025 results were reported, but Fair Value section claims 'insufficient data is available for a detailed valuation model' (Analyst Note/Fair Value).",
+        "Capital Allocation section assigns a 'Standard' rating while simultaneously stating 'insufficient data... limits a full assessment' (Capital Allocation)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

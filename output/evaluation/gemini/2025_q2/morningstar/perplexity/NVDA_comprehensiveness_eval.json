@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a solid structural foundation, covering all mandatory sections from the Analyst Note to ESG and Capital Allocation. However, it fails to meet the depth requirements for a 'Good' or 'Excellent' rating due to several critical omissions and structural weaknesses. Most notably, the Financials Snapshot is generic; while it includes high-level metrics like Revenue and EPS, it omits essential semiconductor-sector KPIs such as Inventory levels/turnover (critical given the $4.5B H20 charge mentioned), R&D intensity (R&D as % of Sales), and specific Market Share percentages. Furthermore, the report lacks a dedicated Peer Benchmarking table and any form of Scenario or Sensitivity Analysis, which are required for higher grades. The valuation section is primarily descriptive; it mentions drivers like Blackwell adoption and margin expansion but fails to provide an explicit mathematical bridge or sensitivity table linking these operating drivers to the $175 fair value estimate. Additionally, the report exhibits significant redundancy, repeating the specific details of the H20 inventory charge and China export restrictions across the Analyst Note, Business Strategy, and Risk sections without adding new depth in subsequent mentions. This repetition, combined with the lack of quantitative peer context, caps the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Inventory Levels/Turnover",
+            "R&D as % of Sales",
+            "Market Share %",
+            "Wafer starts/Capacity utilization"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Inventory (crucial for assessing the $4.5B H20 charge impact)",
+            "R&D Intensity",
+            "Market Share data in financial tables"
+        ],
+        "uncited_claims": []
+    }
+}

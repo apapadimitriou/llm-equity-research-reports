@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report contains significant internal contradictions and temporal errors that undermine its coherence. Most notably, the valuation logic is fundamentally broken. The Analyst Note claims the current price ($233.93) implies a 17x 2025e EPS, but using the report's own data (233.93 / 21.0 EPS from the Financials Snapshot), the actual P/E is approximately 11.1x. Similarly, the Bears section claims a 14x P/E for 2024, while the provided data indicates ~11.8x. These discrepancies are never addressed or reconciled. Furthermore, there is a glaring temporal impossibility: the report is dated April 12, 2025, yet the cover block cites a stock price and source from April 17, 2025. This suggests a failure in data integrity and fact-checking. While the narrative flow between sections like Strategy and Moat is generally logical, the 'Bears' concern regarding stretched valuation is dismissed without addressing the fact that the analyst's own target P/E (15x) is actually higher than the current market P/E, which contradicts the 'stretched' claim. Finally, the Financials Snapshot shows a declining operating margin trend (46% to 43%) that conflicts with the narrative's claim of 'stable' margins in the 'mid-40s.' Because of these unresolved tensions between the narrative, the tables, and the dates, the report fails the coherence standard.",
+    "evidence": [
+        "Analyst Note claims current price implies ~17x 2025e EPS, but using the table's 2025e EPS of $21.0 and price of $233.93, the actual P/E is ~11.1x.",
+        "The report is dated 2025-04-12, but the cover block cites a StatMuse price from 2025-04-17, a date in the future relative to the report.",
+        "Financials Snapshot shows operating margins declining from 46% in 2024 to 43% in 2029, contradicting the Strategy section's forecast of stable ~45% margins."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

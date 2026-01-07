@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions primarily as a news aggregator and summary of existing third-party research rather than providing original equity analysis. Every significant analytical point\u2014including the impact of AI delays on iPhone sales, the strategic shift of production to India to mitigate tariffs, and the specific EPS risk (2%) associated with App Store regulatory changes\u2014is directly attributed to external sources such as Reuters, the Financial Times, and Investing.com. The report lacks any independent synthesis where the author combines disparate data points to reach a novel conclusion. Instead, it relies on well-worn market narratives, such as the 'walled garden' ecosystem and the transition to high-margin services, which are presented as generic restatements. The valuation section utilizes a standard DCF model with boilerplate drivers (revenue mix shift and efficiency gains) that are common knowledge for Apple. Because the report fails to provide a unique, value-added perspective or a testable original thesis beyond what is explicitly stated in the cited news and data sources, it meets the criteria for a 'Poor' grade in originality.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "iPhone sales were pressured by delayed AI features and Chinese rivals.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "CEO Tim Cook responded by accelerating production shifts to India to mitigate new U.S. tariffs, even stockpiling inventory.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Services growth helped offset hardware softness and underscore Apple\u2019s evolving mix toward higher-margin recurring revenue.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Surveys indicate up to 28% of U.S. iPhone users might bypass Apple\u2019s in-app purchase system... which could dent EPS by ~2%.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins are forecast to remain in the low-30s... improving toward ~33% by FY2029 given efficiency gains and revenue mix shift.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on news headlines (Reuters/FT) for core analysis",
+            "Boilerplate 'walled garden' and 'ecosystem' phrasing",
+            "Generic DCF with no novel drivers",
+            "Recapping public surveys as the primary evidence for the bear case"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

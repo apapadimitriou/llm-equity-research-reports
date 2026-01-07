@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded as fair due to several significant internal contradictions that trigger the mandatory hard cap under the provided rubric. While the narrative flow is generally professional and the sections are logically sequenced, the underlying data and assumptions fail to align. The most glaring issue is the Weighted Average Cost of Capital (WACC) calculation. The report cites a 6% risk-free rate, a 1.2 beta, and a 5% equity risk premium, which mathematically results in a 12% cost of equity using standard CAPM; however, the report uses an 8.5% WACC without explaining the discrepancy or the impact of debt. \n\nFurthermore, there is a disconnect regarding Free Cash Flow (FCF). The Analyst Note highlights a strong Q1 2025 FCF of over $15 billion, yet the Financials Snapshot table projects a full-year 2025 FCF of only $45 billion. This implies a significant and unexplained deceleration in cash generation for the remainder of the year, especially given the 'continued momentum' narrative. Additionally, the operating margin for 2029 is cited as 42% in the Fair Value section but listed as 43% in the Financials Snapshot and Appendix. Finally, while the Bulls/Bears section identifies high capex as a risk to FCF, the report fails to reconcile how the massive $64-$72 billion capex guidance for 2025 allows for the projected $45 billion FCF when Q1 already consumed a large portion of the budget. These unresolved tensions require the reader to bridge gaps in the valuation logic.",
+    "evidence": [
+        "WACC is stated as 8.5% despite inputs (6% risk-free, 1.2 beta, 5% ERP) suggesting 12% (Fair Value and Profit Drivers).",
+        "Q1 FCF is cited as >$15B, but the FY 2025 projection is only $45B, implying an unexplained drop (Analyst Note vs. Financials Snapshot).",
+        "2029 operating margin is projected at 42% in the narrative but 43% in the data table (Fair Value vs. Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

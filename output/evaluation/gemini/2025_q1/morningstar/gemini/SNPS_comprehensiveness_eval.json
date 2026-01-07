@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required structural sections, including a detailed Analyst Note, Business Description, and a clear Economic Moat analysis. It successfully integrates recent geopolitical events (the BIS letter) and regulatory updates regarding the Ansys merger into the narrative. However, the report is capped at 'Fair' due to several critical omissions. The Financials Snapshot is generic and lacks at least two core sector-specific KPIs; while 'Backlog' and 'Renewal Rates' are mentioned in the text, they are absent from the multi-year financial table, and metrics like ACV/ARR or an IP vs. EDA revenue split are missing entirely. Furthermore, the report lacks a formal peer benchmarking section, offering no comparative data against competitors like Cadence or Siemens. There is also no scenario or sensitivity analysis (e.g., a DCF sensitivity matrix for WACC and terminal growth), which is a requirement for a 'Good' or 'Excellent' grade. Finally, the report exhibits significant redundancy, repeating the same details regarding the BIS letter and China export controls across the Analyst Note, Strategy, Bears, and Risk sections without providing incremental depth, which triggers a mandatory downgrade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Operating Margin (Non-GAAP)",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Backlog/RPO (in table)",
+            "ACV/ARR",
+            "Renewal Rates (in table)",
+            "IP vs. EDA Revenue Split"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ACV/ARR",
+            "Backlog/RPO (missing from Financials Snapshot table)",
+            "IP/EDA Revenue Mix"
+        ],
+        "uncited_claims": [
+            "Renewal rates consistently above 90%",
+            "Achieving 3x-10x productivity improvements with Synopsys.ai"
+        ]
+    }
+}

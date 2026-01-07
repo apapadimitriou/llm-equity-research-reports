@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for revenue growth, margins, and capital costs, which are clearly stated in both the narrative and a dedicated valuation assumptions table. However, it fails to meet the criteria for 'Good' or 'Excellent' due to two primary deficiencies. First, there is a lack of robust, quantified sensitivity or scenario analysis for material drivers. While the report qualitatively mentions that the valuation could swing by \u00b120% due to regulatory outcomes, it does not provide a sensitivity matrix or quantified ranges for key levers such as WACC, terminal growth, or revenue CAGR to show their specific impact on the fair value estimate. Second, an internal numeric contradiction exists regarding the margin trajectory: the 'Business Strategy & Outlook' section claims operating margins will improve to 32% by fiscal 2027, whereas the 'Financials Snapshot' table indicates the margin reaches only 31.5% in 2027 and hits the 32% target in 2028. Justification is partial, relying on historical ROIC and segment mix shifts, but lacks detailed peer benchmarking or cited external sources for the specific growth rates. These issues\u2014specifically the lack of quantified sensitivities and the internal inconsistency\u2014trigger hard caps that limit the grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 5% revenue CAGR from fiscal 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins expanding from 30% in 2025 to 32% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital (WACC) is 8.5%, reflecting Apple's low beta and strong balance sheet.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "reducing shares outstanding by 2% annually.",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative states operating margins reach 32% by fiscal 2027, but the Financials Snapshot table shows 31.5% in 2027 and 32.0% in 2028.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.5% is stated without a detailed build-up or source for the 1.1 beta."
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique theses, relying almost exclusively on paraphrasing public news headlines and boilerplate financial commentary. Every major 'insight' presented\u2014from the 2Q25 earnings jump to the market share implications of the Discover acquisition\u2014is a direct restatement of cited Reuters articles or SEC filings. There is no evidence of the analyst linking disparate data points (e.g., macro rate paths to specific deposit beta trajectories) to form a new conclusion. The valuation section is entirely generic, utilizing standard DCF assumptions (WACC, terminal growth) without identifying a novel company-specific driver or mechanism. The 'Bulls Say' and 'Bears Say' sections are lists of well-known facts rather than testable, decision-relevant theses. Because the report contains zero original syntheses and more than five generic or restated insights, it triggers the hard cap for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "2Q25 adjusted net income jumped to $2.77 billion... driven by a 32.5% surge in net interest income.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The Discover acquisition... making Capital One the largest U.S. card issuer... with broadened scale.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Higher interest rates have boosted NII (benefitting Capital One more than secured lenders because card rates float higher).",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The combined COF-Discover entity will control ~30% of U.S. subprime card loans, concentrating risk.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating efficiency refines modestly as integration costs normalize.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Reuters headlines for core analysis",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Standard 'integration risk' and 'regulatory headwind' bears cases"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

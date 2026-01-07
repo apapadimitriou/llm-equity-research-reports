@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a professional and structured overview of Adobe Inc., covering all required qualitative sections including a robust Analyst Note, Business Strategy, and Economic Moat analysis. However, it fails to meet the 'Good' or 'Excellent' criteria due to significant omissions in sector-specific quantitative data. Specifically, the Financials Snapshot table is generic, providing only standard accounting metrics (Revenue, EPS, FCF) while omitting core SaaS KPIs such as Annual Recurring Revenue (ARR) and Net Retention Rate (NRR) within the data block itself. While ARR is mentioned in the narrative, its absence from the multi-year forecast table triggers a hard cap under the evaluation rules. Furthermore, the report lacks a formal peer benchmarking table and a sensitivity analysis matrix, both of which are required for higher grades. The valuation section provides a narrative link to drivers but lacks the explicit bridge or scenario modeling expected in comprehensive equity research. Consequently, while the report is well-written, its quantitative depth is insufficient for a 'Good' rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Sensitivity Analysis Matrix"
+        ],
+        "sector_kpis_present": [
+            "ARR (narrative only)",
+            "Operating Margin",
+            "Revenue Growth"
+        ],
+        "sector_kpis_missing": [
+            "Net Retention Rate (NRR)",
+            "Subscription Mix %",
+            "Churn Rate",
+            "Customer Acquisition Cost (CAC)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (missing from Financials Snapshot table)",
+            "NRR/Retention metrics",
+            "Subscription vs License revenue mix"
+        ],
+        "uncited_claims": []
+    }
+}

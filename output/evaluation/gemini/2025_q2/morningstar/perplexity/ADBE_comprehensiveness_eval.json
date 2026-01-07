@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report adheres to the required structural framework, including all mandatory sections from the Analyst Note to ESG and Capital Allocation. However, it is capped at 'Fair' due to several critical deficiencies in evidence and depth. First, the Financials Snapshot table is generic; while it includes standard metrics like Revenue and EPS, it omits essential SaaS-specific KPIs such as Net Retention Rate (NRR), Churn, and CAC/LTV. While ARR is mentioned in the text, its absence from the formal financial summary table weakens the quantitative analysis. Second, the report fails the sourcing requirement: although bracketed citations are used in-text, the 'Sources' section in the Appendix is entirely empty, leaving all claims effectively uncited. Third, the report suffers from significant redundancy; the 'Firefly 16 billion assets' and 'Ethical AI' talking points are repeated across four separate sections (Analyst Note, Strategy, Bulls Say, and ESG) without providing new depth or context in each instance. Finally, the lack of a dedicated Peer Benchmarking section or comparative table further limits the comprehensiveness of the competitive analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Source List",
+            "Glossary"
+        ],
+        "sector_kpis_present": [
+            "ARR (text only)",
+            "Subscriber Count",
+            "MAU"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Retention Rate)",
+            "Churn Rate",
+            "LTV/CAC",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR",
+            "Churn Rate",
+            "Deferred Revenue/Billings"
+        ],
+        "uncited_claims": [
+            "All claims are technically uncited as the 'Sources' section contains no data to correspond with in-text brackets [1-22].",
+            "Firefly generating 16B+ images",
+            "Creative Cloud 37M subscribers"
+        ]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for high-quality assumptions due to a complete lack of quantified sensitivity analysis and multiple internal numeric contradictions. While the report is explicit in stating its primary drivers\u2014such as WACC, terminal growth, and margin expansion\u2014these inputs are presented as static point estimates without any stress-testing or scenario modeling (e.g., bull/bear cases or sensitivity tables). This omission triggers a hard cap of 'Fair'. Furthermore, the report contains at least two distinct internal contradictions: first, the timing of Net Interest Income (NII) recovery is inconsistently cited as occurring in 2025 versus 'after 2025'; second, the projected Revenue CAGR is stated as '5\u20137%' in the valuation narrative but '~5\u20136%' in the Appendix. Per the grading instructions, the combination of no quantified sensitivities and two or more distinct contradictions necessitates a 'Poor' grade. While the report provides some justification for growth based on the lifting of the asset cap and historical job cuts, the lack of auditable consistency between sections and the absence of risk-quantification renders the model a 'black box' for investors.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue rises mid\u2010single digits annually... supporting about 5\u20137% revenue CAGR (2024\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins gradually improve (from ~18% in 2024 to ~21% by 2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of ~9\u201310% (reflecting a 10% equity cost, 20% debt with 4% yield)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "management projects 1\u20133% growth in NII for 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "reducing the share count ~6\u20137% annually (2022\u201324)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "NII growth timing: Strategy section claims 1-3% growth for 2025, while Appendix claims growth resumes 'after 2025'.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Revenue CAGR range: Valuation section assumes 5-7% CAGR, while Appendix assumes ~5-6% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_credit_cost_provisions",
+            "tax_rate_forecast"
+        ],
+        "unjustified_parameters": [
+            "10% cost of equity stated without beta or risk-free rate components",
+            "2% terminal growth rate lacks peer or long-term GDP context"
+        ]
+    }
+}

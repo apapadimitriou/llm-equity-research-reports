@@ -1,0 +1,49 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report is highly comprehensive, covering nearly all required sections including a detailed Analyst Note, Business Description, and a robust Competitive Positioning analysis against Databricks. It excels in evidence integration, utilizing 17 distinct citations to support financial and strategic claims. Sector-specific KPIs for SaaS (NRR, RPO, and customer cohort growth) are clearly presented and integrated into the narrative. The valuation section provides an explicit link between the 28% revenue growth driver and the 14x EV/Revenue multiple. However, the report fails to achieve an 'Excellent' grade due to the total absence of scenario or sensitivity analysis (e.g., Bull/Bear cases or a WACC/Growth sensitivity matrix). Additionally, while the 'AI Pivot' is discussed with increasing depth, there is minor redundancy across the Executive Summary and Analyst Note. A formal glossary is also missing, though most technical terms are defined in-text.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Competitive Positioning",
+            "Valuation",
+            "Risk",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Glossary",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention (NRR)",
+            "Remaining Performance Obligations (RPO)",
+            "Product Revenue",
+            "Non-GAAP Operating Margin",
+            "Adjusted Free Cash Flow Margin",
+            "$1M+ Customer Count"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Gross Revenue Retention"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Explicit ARR breakout (though Product Revenue is used as a proxy)"
+        ],
+        "uncited_claims": []
+    }
+}

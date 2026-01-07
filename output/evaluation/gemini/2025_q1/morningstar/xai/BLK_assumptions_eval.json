@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple internal numeric contradictions that undermine the reliability of the model. Specifically, the 'Business Strategy & Outlook' section projects revenue growth of 8-10% through 2027, which directly conflicts with the 7% CAGR used in the 'Fair Value and Profit Drivers' section and the Appendix. Furthermore, a discrepancy exists regarding the 2025 operating margin, which is cited as 37% in the narrative but recorded as 37.5% in the Financials Snapshot table. While the report is explicit in stating its assumptions\u2014providing a clear WACC breakdown (8.5%) and terminal growth rate (3.0%)\u2014and includes some quantified sensitivity analysis (e.g., the impact of a 10% market drop on fees), these strengths are negated by the lack of internal consistency. The justification for the 7% revenue CAGR is only partially supported by a vague reference to AUM growth without detailed historical context or peer benchmarking. The presence of two distinct contradictions between the text and the tables triggers the mandatory 'Poor' grade under the evaluation framework, as the assumptions are not auditable or coherent across the document.",
+    "assumptions_extracted": [
+        {
+            "quote": "7% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding from 37% in 2025 to 39% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "buybacks of $1.5 billion annually",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "8% AUM growth and stable fees",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth rate is stated as 8-10% through 2027 in Strategy, but 7% CAGR through 2029 in Fair Value and Appendix.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "2025 Operating Margin is stated as 37% in the narrative but 37.5% in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "7% revenue CAGR lacks historical bridge or peer comparison."
+        ]
+    }
+}

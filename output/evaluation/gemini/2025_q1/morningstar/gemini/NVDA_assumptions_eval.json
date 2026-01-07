@@ -1,0 +1,91 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and highly specific assumptions for its valuation model, including a 10-year DCF horizon, a 9.4% WACC (justified by a 4.34% risk-free rate and 1.04 Beta), and a 4.0% terminal growth rate. Key causal drivers, such as the Blackwell architecture ramp, Sovereign AI demand, and software monetization ($4,500/GPU for NIMs), are clearly stated and proximal to the forecasts they inform. The financial figures within the text and tables are internally consistent, with FY2026 revenue growth (+50%) reconciling to the provided consensus ranges. However, the report is capped at 'Fair' due to a total lack of quantified sensitivity analysis or scenario modeling for material drivers. While it qualitatively discusses risks like China export controls and supply chain bottlenecks, it fails to provide a range of outcomes or a sensitivity matrix (e.g., WACC vs. Terminal Growth) to show how these variables impact the $150 target price. Additionally, there is a significant temporal contradiction: the report is dated April 2025, yet the 'Works Cited' section references dates in December 2025, indicating a failure in internal consistency and document integrity. Without quantified stress-testing of the primary revenue and margin levers, the outputs remain a 'black box' point estimate.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue Growth: FY2026: +50% (Reflecting Blackwell ramp).",
+            "location": {
+                "section": "9.1 DCF Model Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Modeling a long-term contraction from current ~65% levels to 55% as competition intensifies.",
+            "location": {
+                "section": "9.1 DCF Model Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We calculate a WACC of roughly 9.4% based on a 4.34% risk-free rate, 1.04 Beta, and 5% equity risk premium.",
+            "location": {
+                "section": "5.3 Cash Flow & Balance Sheet",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 4.0% (reflecting AI as a permanent utility similar to electricity).",
+            "location": {
+                "section": "9.1 DCF Model Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "To run NIMs in production, enterprises must license NVIDIA AI Enterprise, which costs roughly $4,500 per GPU per year.",
+            "location": {
+                "section": "4.2 NIMs: The New Software Business Model",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Tax Rate: 17.0%.",
+            "location": {
+                "section": "9.1 DCF Model Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Temporal contradiction: Report is dated April 16, 2025, but multiple citations reference December 8, 2025.",
+                "locations": [
+                    "Header",
+                    "Works Cited"
+                ]
+            },
+            {
+                "description": "Historical timeline error: Claims H20 generated $4.6B in Q1 FY25 (Feb-Apr 2024), which predates the product's market relevance and the report's own FY25 timeline.",
+                "locations": [
+                    "8.1 The China Question",
+                    "5.2 Quarterly Trajectory"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": []
+    }
+}

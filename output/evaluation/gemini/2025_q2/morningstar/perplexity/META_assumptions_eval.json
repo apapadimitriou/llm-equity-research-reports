@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to a fundamental internal contradiction and the absence of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue growth, operating margins, and WACC, these inputs fail to reconcile with the provided financial snapshot. Specifically, the narrative claims an advertising revenue CAGR of 14% through 2029, yet the summary table reflects a total revenue CAGR of only 12.2% over the same period ($164.5B to $292.1B). Given that advertising constitutes 97% of revenue, these figures are mathematically incompatible. Furthermore, the report violates a critical hard cap by failing to provide any quantified sensitivity or scenario analysis for material drivers like ad pricing or AI capital expenditure, offering only qualitative mentions of risk. Justification for structural valuation inputs is also weak; the WACC of 9.2% and terminal growth rate of 3.0% are presented as point estimates without supporting data or derivation from market yields. While the report is specific regarding time horizons and units, the lack of internal consistency and the 'black-box' nature of the valuation outputs undermine the reliability of the forecasts.",
+    "assumptions_extracted": [
+        {
+            "quote": "advertising revenue CAGR of 14% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion to 39% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital estimate of 9.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2025 capital expenditure guidance to $64-72 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "projected full-year 2025 EPS of $27.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims a 14% advertising revenue CAGR (2025-2029), but the Financials Snapshot table shows total revenue growing from $164.5B to $292.1B, which is a ~12.2% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_ranges"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without derivation",
+            "Terminal growth 3.0% without benchmark"
+        ]
+    }
+}

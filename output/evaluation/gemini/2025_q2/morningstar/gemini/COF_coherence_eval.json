@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a \"fair\" grade due to significant temporal contradictions that violate the internal logic of the document. The cover block establishes a \"Current Price\" and valuation date of July 2, 2025. However, the narrative in the \"Fair Value and Profit Drivers\" section explicitly discusses Q2 2025 financial results, including a specific $11.4 billion provision and an $8.8 billion allowance build. According to the report\u2019s own sources (Source 1 and 61), these results were not released until July 22, 2025. This anachronism undermines the coherence of the \"Analyst Note,\" which claims the analysis is \"anchored by the first quarter 2025 results\" as the last \"clean\" reporting period. The inclusion of post-dated data in a report supposedly finalized weeks earlier creates an unresolved tension between the stated \"current\" context and the evidence provided. Beyond the temporal issues, the report shows good structural flow. The transition from the strategic rationale of the Discover acquisition to the specific financial impacts is logical and well-supported by cross-references. The \"Bulls Say / Bears Say\" section is effectively reconciled with the base-case valuation, particularly regarding the Stress Capital Buffer reduction and integration risks. However, the \"Financials Snapshot\" is somewhat incomplete, with multiple \"insufficient data\" entries for key metrics in FY 2024, despite those figures being available in the cited 10-K. These gaps, combined with the severe temporal misalignment, necessitate a \"fair\" rating.",
+    "evidence": [
+        "Cover Block lists 'Current Price (Jul 2, 2025)' while Section 8 and Source 1 reference Q2 results and a net loss released on July 22, 2025.",
+        "The Analyst Note (Section 3) states analysis is 'anchored by the first quarter 2025 results,' yet Section 11 includes Q2 2025 GAAP EPS loss context.",
+        "The Financials Snapshot (Section 11) contains 'insufficient data' for 2024 Net Interest Income and Provisions, despite citing the 2024 10-K in Section 4."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

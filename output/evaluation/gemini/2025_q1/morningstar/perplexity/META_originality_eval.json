@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a high-quality summary of the provided source material but fails to provide original insights or unique analytical value. Every 'insight' presented is a restatement of public earnings data (Q1 2025 revenue/EPS), a recap of management's own guidance (capex raise to $64-72B), or a repetition of standard industry tropes (network effects as a moat, regulatory risks from the FTC). There is no evidence of synthesis; the report does not link disparate data points to form a new conclusion, such as modeling the specific margin impact of AI infrastructure depreciation against specific ad-pricing recovery timelines. The valuation section is entirely generic, utilizing standard DCF inputs (12% CAGR, 10.5% WACC) without identifying a novel or company-specific driver. It relies heavily on 'Bulls Say/Bears Say' and 'Economic Moat' frameworks that are boilerplate in nature. Because the report contains zero original theses or syntheses and relies exclusively on restating public headlines and management commentary, it meets the criteria for a 'Poor' grade under the strict originality rubric.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue of $42.31 billion represented a 16% year-over-year increase, comfortably exceeding Wall Street estimates.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management's decision to raise capital expenditure guidance... demonstrates unwavering commitment to AI infrastructure leadership.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Reality Labs division... showed revenue growth of 29% year-over-year... driven primarily by Ray-Ban Meta smart glasses adoption.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Medium-term growth drivers include expanding business messaging capabilities across WhatsApp and Messenger.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Meta possesses a wide economic moat derived from powerful network effects and intangible assets.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value estimate of $770 per share reflects discounted cash flow analysis incorporating revenue growth expectations.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Restating management guidance as insight",
+            "Standard 'Bulls Say/Bears Say' without unique angles"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

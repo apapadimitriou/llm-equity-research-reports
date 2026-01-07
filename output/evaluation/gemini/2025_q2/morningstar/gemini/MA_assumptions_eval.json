@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s assumptions are clearly explicit and proximal to the forecasts, appearing in both the valuation narrative and a dedicated appendix. Justification is solid, leveraging multi-year historical data (e.g., 2024 ROIC and margins) and cited external benchmarks like Kroll\u2019s equity risk premium and the 10-year Treasury yield. Specificity is also high, with clear units, time horizons (5-year DCF), and causal drivers (secular shift to digital, value-added services growth). However, the report fails on two critical 'Hard Cap' criteria. First, there is a total absence of quantified sensitivity or scenario analysis; while risks like regulatory pressure and macro cyclicality are identified, their impact on the $615 fair value estimate is never modeled. Second, the report contains multiple internal numeric contradictions. The narrative specifies a 11.5% revenue CAGR, but the year-over-year growth rates in the Financials Snapshot (12.5% down to 10.0%) result in a geometric average of 11.1%. Additionally, the text forecasts a terminal operating margin of 59.5%, which conflicts with the 59.8% figure presented in the 2029 forecast table. Per the instruction that one contradiction plus no sensitivities (or two distinct contradictions) triggers a 'Poor' grade, this report cannot be rated higher despite its strong justifications.",
+    "assumptions_extracted": [
+        {
+            "quote": "five-year revenue compound annual growth rate (CAGR) of 11.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted operating margins will expand... to approximately 59.5% by the end of the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital (WACC) of 9.8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "net share count reduction of approximately 3.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "risk-free rate of 4.35%, based on the 10-year U.S. Treasury yield",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 11.5% revenue CAGR, but the annual growth rates in the Financials Snapshot table (12.5%, 11.5%, 11.0%, 10.5%, 10.0%) calculate to a geometric average of ~11.1%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text projects operating margins reaching 59.5% by the end of the period, but the Financials Snapshot table lists 59.8% for 2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "scenario analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

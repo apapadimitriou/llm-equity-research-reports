@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit key assumptions for its valuation and financial forecasts, including a 9.5% cost of equity, a 3.0% terminal growth rate, and a 63% efficiency ratio target for 2026. These are proximal to the conclusions and use specific units and time horizons. However, the justification for the valuation parameters (WACC/COE) is weak, as they are presented as point estimates without a breakdown of components like beta or equity risk premium. While the report includes a 'Risk Factors' section that quantifies some impacts\u2014such as net charge-offs rising to 6\u20137% in a hard landing and a potential de-rating to $76\u2014it lacks a robust, systematic sensitivity analysis or scenario table for its primary valuation model. A notable internal inconsistency exists between the cited 15.7% five-year EPS growth rate and the report's own 2025\u20132026 forecast, which implies a lower growth rate of approximately 10.9%. Because the sensitivity analysis is limited to qualitative descriptions with only isolated quantified points, and because the valuation inputs lack evidence-rich justification (e.g., peer WACC comps), the report is capped at 'Fair' per the grading instructions.",
+    "assumptions_extracted": [
+        {
+            "quote": "factoring in a cost of equity of 9.5% and a long-term growth rate of 3.0%.",
+            "location": {
+                "section": "Valuation Summary",
+                "page": "1"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We model a gradual improvement to 63% by year-end 2026.",
+            "location": {
+                "section": "The Efficiency Conundrum",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We expect NII to remain under pressure through H1 2026 before stabilizing.",
+            "location": {
+                "section": "Revenue Analysis: The Shift from Spread to Fee",
+                "page": "4"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "At a $24 billion annualized pace, WFC is retiring approximately 8-9% of its market capitalization annually.",
+            "location": {
+                "section": "Share Repurchases",
+                "page": "6"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "holding a 10.8% allowance against CIB office loans",
+            "location": {
+                "section": "The Pivot to Offensive Growth",
+                "page": "1"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "We expect a dividend increase in Q3 2026, likely to $0.50/share.",
+            "location": {
+                "section": "Dividend Policy",
+                "page": "6"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report cites a 15.7% 5-year EPS growth rate from Zacks but its own financial summary table shows EPS growing from $6.24 to $6.92 (10.9%) for the 2025-2026 period.",
+                "locations": [
+                    "Section 8.4",
+                    "Section 11.1"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity of 9.5% stated without CAPM components or peer benchmarking.",
+            "Terminal growth of 3.0% stated without economic justification."
+        ]
+    }
+}

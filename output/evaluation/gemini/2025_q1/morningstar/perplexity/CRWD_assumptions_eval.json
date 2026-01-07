@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are highly explicit and proximal to the forecasts, appearing clearly in both the 'Fair Value and Profit Drivers' section and the Appendix. Specificity is a strength; the author provides precise magnitudes (22% revenue CAGR, 32% operating margin), clear time horizons (FY2029), and appropriate units. Internal consistency is excellent, with the narrative EPS bridge ($14.50) and revenue targets ($8.2B) reconciling perfectly with the 'Financials Snapshot' table and the 'Appendix' summary.\n\nHowever, the report fails the 'Stress-tested' pillar. Despite a dedicated 'Risk & Uncertainty' section, the analysis is purely qualitative. There are no quantified sensitivity tables or bull/bear scenarios showing how the $475 fair value estimate would fluctuate based on changes in the 11% WACC or the 22% revenue growth assumption. Justification is only partial; while the revenue and ARR targets are tied to management\u2019s public goals, the 11% WACC and 3% terminal growth rate are stated as 'black box' figures without supporting evidence from peer benchmarks or historical risk-free rate/beta components. Per the grading instructions, the total absence of quantified sensitivity analysis on material drivers mandates a maximum grade of 'Fair,' regardless of the report's internal consistency and clarity.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 22% through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin... progression from current mid-20% levels to approximately 32% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 11%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share count remaining relatively stable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "projected EPS of approximately $14.50 by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "scenario modeling"
+        ],
+        "unjustified_parameters": [
+            "WACC 11% without derivation or source",
+            "Terminal growth 3% without economic context"
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying entirely on restating information from the 10-Q and generic industry boilerplate. All identified insights are either restatements of public financial results or generic sector-wide observations (e.g., 'scale in data analytics,' 'competition from fintech'). There are no specific catalysts, quantified peer comparisons, or non-obvious causal links. The valuation section uses standard DCF inputs (5% CAGR, 25% margin) without identifying a novel driver or specific mechanism for margin expansion beyond 'cost management.' Per the decision rules, the absence of any synthesis or original thesis necessitates a 'Poor' grade. The report lacks any decision-relevant specificity, offering only generic 'buy' advice based on public data.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue growth was supported by higher net interest income amid elevated interest rates and increased consumer spending.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "COF benefits from scale in data analytics and a diversified portfolio that mitigates cyclical risks.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wide economic moat primarily from intangible assets, including its proprietary data analytics platform.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Regulatory changes on fees and capital requirements may constrain earnings.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value estimate of $150 incorporates a revenue CAGR of 5% over the next five years.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Recycled 10-Q headlines without interpretive commentary"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

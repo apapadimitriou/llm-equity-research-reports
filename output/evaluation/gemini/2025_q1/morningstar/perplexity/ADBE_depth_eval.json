@@ -1,0 +1,25 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by connecting operational drivers to financial outcomes. It provides clear causal reasoning, explaining that \"embedding generative capabilities directly into existing workflows... strengthens user retention\" by reducing adoption friction. Unlike purely descriptive reports, it offers explicit assumptions for valuation, including a \"WACC of 9.2%... Terminal growth rate assumptions of 3.5%.\" These are benchmarked against the broader market, noting that Adobe's \"8x price/sales... elevated relative to the sector average of 7.17x.\" The report uses quantification effectively, forecasting \"AI-related revenue contributing incremental growth of $500-750 million.\" While it mentions that \"Sensitivity analysis indicates fair value ranges from $350-490,\" it lacks a structured scenario analysis that details how specific changes in variables (like churn or margin) would impact the valuation. The actionable implications are well-defined, characterizing the stock as an \"attractive entry point\" while noting that \"near-term catalysts remain limited.\" The \"Bulls Say / Bears Say\" section addresses uncertainty regarding competition from Canva and OpenAI, though the analysis would be strengthened by quantifying the potential impact of market share loss in the bear case.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "link between R&D spend and specific AI product timelines",
+            "impact of Figma termination on long-term collaborative strategy not fully quantified"
+        ],
+        "unsupported_assumptions": [
+            "operating margin expansion to 42-44% lacks detailed cost-driver breakdown"
+        ],
+        "lack_of_sensitivity": [
+            "no quantified bear case for revenue if Canva adoption accelerates",
+            "no quantified impact of specific churn rate increases on FV"
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to a significant internal numeric contradiction and the absence of quantified sensitivity analysis for material drivers. While the report explicitly lists key inputs such as a 5% revenue CAGR, 8.5% WACC, and 3% terminal growth, the WACC calculation is internally inconsistent. The provided components\u2014a 4% risk-free rate, 1.2 beta, and 6% equity risk premium\u2014calculate to an 11.2% cost of equity using the standard CAPM formula, which contradicts the stated 8.5% WACC without any explanation of capital structure or debt costs. Furthermore, the report fails to provide quantified sensitivity analysis or scenario modeling for its primary drivers. Although it mentions a general '\u00b120% valuation swing' and a potential revenue decline in a recession, these are high-level output observations rather than stress-tests showing how specific changes in inputs (like NIM, WACC, or segment growth) impact the fair value estimate. Justifications are also relatively thin, relying on short-term quarterly beats rather than multi-year historical context or detailed peer benchmarking. This lack of mathematical coherence and the absence of driver-level sensitivities prevent the model from being auditable or robust.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming a 5% revenue CAGR from 2025-2029, driven by 6% growth in wealth management and 4% in institutional securities",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins expanding from 25% in 2024 to 28% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is set at 8.5%, incorporating a 4% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%, leading to the $120 fair value",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "yielding 2025 EPS of $8.80",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The stated WACC of 8.5% is mathematically inconsistent with its cited components (4% risk-free rate + 1.2 beta * 6% equity risk premium = 11.2%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "NII/NIM"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 3% is stated as a GDP proxy without supporting economic data or regional context."
+        ]
+    }
+}

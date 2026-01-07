@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is assigned a grade of fair due to significant internal contradictions and a temporal impossibility that undermines its structural coherence. The most prominent issue is the inconsistent reporting of 2025 capital expenditure. The Analyst Note explicitly cites a '$75 billion 2025 capital expenditure plan,' whereas the Bears Say, Capital Allocation, and Appendix sections all state the figure is '$85 billion+' or 'peaking at $85 billion.' This $10 billion discrepancy is a material contradiction regarding the company's primary investment focus. Furthermore, the report contains a temporal error: it is dated June 7, 2025, yet the Financials Snapshot and Sources section cite a GuruFocus data point from July 27, 2025. Citing a source from the future relative to the report date is a major logical failure. Additionally, there are inconsistencies regarding the Weighted Average Cost of Capital (WACC), which is described as 'around 9%' in the Fair Value section but specified as '9.6%' in the Financials Snapshot. While the narrative flow is generally smooth and the Bulls/Bears sections are successfully reconciled with the base-case valuation\u2014arguing that AI investments reinforce the moat\u2014these quantitative and temporal errors trigger the mandatory 'fair' cap under the grading guardrails. The report provides a clear structure, but the lack of precision in key financial assumptions and dates prevents a higher rating.",
+    "evidence": [
+        "'$75 billion 2025 capital expenditure plan' (Analyst Note) vs 'spend $85 billion+ on AI and cloud capex in 2025' (Bears Say)",
+        "Report date of 2025-06-07 vs Source 11 dated 'Jul 27, 2025' (Sources/Financials Snapshot)",
+        "'WACC around 9%' (Fair Value and Profit Drivers) vs '~9.6% WACC' (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

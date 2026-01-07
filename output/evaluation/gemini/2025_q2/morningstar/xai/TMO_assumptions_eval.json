@@ -1,0 +1,64 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for quality of assumptions, primarily because it explicitly declines to provide them. Key valuation drivers\u2014including revenue CAGR, operating margins, WACC, and terminal growth\u2014are all labeled as 'insufficient data' in both the Financials Snapshot and the Key Valuation Assumptions Table. While the report identifies a $2 billion investment plan, it fails to translate this into specific, quantified impacts on future revenue or earnings. There is no justification provided for future performance based on historical trends or peer benchmarks, as the historical data itself is largely missing. Furthermore, the report lacks any quantified sensitivity analysis or scenario modeling for material drivers; the mention of a '10-20%' valuation swing in the Risk section is qualitative and not tied to a specific model or base-case valuation. Because the assumptions are mostly unstated and opaque, the report falls into the 'Poor' category according to the defined hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "$2 billion investment plan over the next four years to expand its U.S. operations",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "annual revenue over $40 billion",
+            "location": {
+                "section": "Business Description",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "potential valuation swings from 10-20% based on sector recovery",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "2"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "none",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report claims to provide a 'Fair Value and Profit Drivers' section but then states 'analysis cannot proceed' due to insufficient data.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "10-20% valuation swing range provided without a base valuation or model"
+        ]
+    }
+}

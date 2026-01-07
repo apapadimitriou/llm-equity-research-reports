@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is fundamentally incoherent due to a severe temporal contradiction and a lack of substantive analysis. It is dated May 3, 2025, yet the Analyst Note and Bulls/Bears sections cite Q2 2025 financial results from August 3, 2025. This chronological impossibility undermines the entire document's credibility. Furthermore, the report exhibits a massive internal contradiction: the Analyst Note claims 'Valuation appears reasonable' and offers a 'hold recommendation,' while the Fair Value and Financials sections repeatedly state 'insufficient data' to construct a model or calculate multiples. This creates a total disconnect between the narrative conclusion and the supporting evidence. The flow is non-existent outside the Analyst Note. Most sections are mere placeholders, forcing the reader to assemble an argument from a void. The transition from the specific revenue figures in the Analyst Note to the empty 'Financials Snapshot' table is a major failure in cross-sectional consistency. Additionally, the report fails the Bulls/Bears reconciliation guardrail because there is no base-case valuation narrative to reconcile against. With at least three sections reading as bullet dumps and multiple claims being time-inaccurate relative to the report's own date, the document fails nearly every metric of professional equity research coherence.",
+    "evidence": [
+        "Report date: 2025-05-03 vs Q2 2025 revenue of $3.53 billion cited from August 2025 (Cover Block / Analyst Note)",
+        "Valuation appears reasonable vs Fair-Value Estimate insufficient data (Analyst Note / Cover Block)",
+        "Specific financial details from Q1 are not available vs specific Q2 revenue and EPS miss details provided (Analyst Note)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

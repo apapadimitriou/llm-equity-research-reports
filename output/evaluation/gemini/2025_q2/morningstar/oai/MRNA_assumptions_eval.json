@@ -1,0 +1,104 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report receives a 'Poor' grade due to multiple unresolved numeric contradictions between the narrative and the financial tables, combined with a total absence of quantified sensitivity analysis. Specifically, the text forecasts 2029 revenue of approximately $12 billion, while the Financials Snapshot table lists it as $10 billion. Similarly, the narrative projects 2029 operating margins of 15\u201320%, yet the table displays 25%. A third discrepancy exists for 2027 EPS, cited as $3 in the text but $5 in the table. These internal inconsistencies undermine the report's credibility and auditability.\n\nFurthermore, while the report identifies material risks such as vaccine uptake and regulatory setbacks, it fails to provide any quantified scenarios or sensitivity tables (e.g., varying WACC or revenue growth rates) to show the impact on the $50 fair-value estimate. This lack of stress-testing makes the valuation feel like a 'black box.' Justification for the aggressive ~50% revenue CAGR is also weak, relying on broad 'product approvals' without detailed market-sizing or pricing assumptions for the RSV and flu pipelines. While some parameters like WACC (10%) and terminal growth (3%) are explicit, they are not tied to specific benchmarks or peer data, leaving them poorly justified. The cumulative effect of these contradictions and the lack of sensitivity analysis triggers the hard cap for a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "DCF-based fair-value model uses a 10% WACC and 3% terminal growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "bridging from 2025\u2019s midpoint sales (~$1.8B) to a 2029 revenue of ~$12B implies ~50% CAGR",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins rising from large negatives... toward ~15\u201320% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "project EPS rising from \u2013$4 in 2025 to ~$3 in 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "using 390 M shares outstanding",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Capital expenditures are ~$0.3\u20130.4B/year.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2029 Revenue is stated as ~$12B in text but listed as 10.0 in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2029 Operating Margin is stated as ~15-20% in text but listed as 25.0% in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2027 EPS is projected at ~$3 in text but listed as 5.0 in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "tax_rate",
+            "specific market share/pricing for pipeline products"
+        ],
+        "unjustified_parameters": [
+            "WACC 10% without source or build-up",
+            "Terminal growth 3% without economic justification",
+            "50% Revenue CAGR without product-level volume/price drivers"
+        ]
+    }
+}

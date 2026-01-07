@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required headline sections and provides a clear narrative regarding Moderna's transition from a COVID-centric business to a broader mRNA platform. However, it fails to reach a 'Good' or 'Excellent' rating due to several structural omissions and redundancies. Specifically, the Financials Snapshot is generic; while it includes standard financial metrics, it omits critical biotech-specific KPIs such as R&D expense and pipeline progression counts (Phase 1/2/3) in the tabular data. Furthermore, the report lacks a formal peer benchmarking analysis and scenario/sensitivity analysis, which are essential for a 'High' uncertainty biotech valuation. Significant redundancy was detected: the Pfizer/BioNTech patent litigation and the 2025 revenue guidance are repeated across the Analyst Note, Bulls/Bears, Moat, and Risk sections with minimal incremental depth. While the valuation is explicitly linked to operating drivers (revenue ramp and margin improvement), the absence of sensitivity tables for WACC or terminal growth in a high-risk equity context limits the report's comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D Expense (in table)",
+            "Pipeline Phase Count (in table)",
+            "Cash Burn Rate (in table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "R&D Expense (Financials Snapshot)",
+            "Pipeline Progression/Phase Counts (Financials Snapshot)"
+        ],
+        "uncited_claims": [
+            "Management projects $8\u2013$15B combined sales from respiratory vaccines by year-end 2027 (cited as 'industry interview' without specific source link)"
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report follows the required structural framework, including all major sections from the Analyst Note to the ESG assessment. However, it fails significantly on sector-specific depth and data completeness. The Financials Snapshot is generic and utilizes metrics more appropriate for industrial firms (e.g., Free Cash Flow) while omitting critical banking KPIs such as Net Interest Margin (NIM), Net Interest Income (NII) as a line item, and Loan Loss Provisions. Per the instruction's hard caps, the omission of \u22652 core sector KPIs in the Financials Snapshot mandates a maximum grade of 'Fair'. Additionally, the report contains multiple 'insufficient data' placeholders for vital metrics like the CET1 ratio, 2025 ROE, and dividend yield, which undermines the evidence integration. While the valuation section attempts to link drivers to a fair value estimate, the lack of a dedicated peer benchmarking table and formal scenario/sensitivity analysis prevents the report from reaching a 'Good' or 'Excellent' standing.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Loan Growth (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "Provisions",
+            "CET1 Ratio"
+        ],
+        "uncited_claims": [
+            "CET1 ratio likely above 14% [insufficient data]",
+            "ROE above 15% [insufficient data for 2025]",
+            "Dividend yield of about 2% [insufficient data]"
+        ]
+    }
+}

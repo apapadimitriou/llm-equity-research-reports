@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded \"poor\" due to critical temporal impossibilities and internal data contradictions that violate the fundamental requirements of coherence. While the narrative is written with professional polish, it fails on factual and logical alignment. The most egregious error is the temporal mismatch: the report, dated July 2, 2025, cites specific Q2 2025 financial results (Revenue $3.76B, EPS $4.43) but attributes them to sources [11] and [12] dated March 19, 2025. It is physically impossible for a second-quarter earnings report to be published three months before the quarter concludes.\n\nAdditionally, the report suffers from a major contradiction between its narrative and the Financials Snapshot table. The Analyst Note highlights a strong Q2 EPS of $4.43, yet the table projects a full-year 2025 EPS of only $13.8. This implies a significant and unexplained earnings collapse in the second half of the year, which directly contradicts the \"resilient growth\" and \"sustained revenue\" thesis presented in the Strategy and Outlook sections. Furthermore, the Bulls and Bears sections are presented as isolated bulleted lists without any attempt to reconcile these scenarios with the $585 base-case valuation. These unresolved tensions, combined with the list-like nature of multiple sections, trigger mandatory downgrades under the grading rubric.",
+    "evidence": [
+        "Source [11] dated March 19, 2025, is used to support Q2 2025 results that would not be finalized until after June 30, 2025 (Sources Section).",
+        "Narrative claims a Q2 EPS of $4.43, but the Financials Snapshot table lists a full-year 2025E EPS of $13.8, implying an unaddressed H2 earnings crash (Analyst Note vs. Financials Snapshot).",
+        "Bulls and Bears sections are presented as independent lists without reconciliation to the $585 fair value estimate (Bulls Say / Bears Say)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

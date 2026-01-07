@@ -1,0 +1,25 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates a 'Good' level of analytical depth by moving beyond simple description to provide clear causal mechanisms and quantified forecasts. Causal reasoning is evident in the explanation of margin expansion, noting 'operating margins stabilizing above 55% as scale efficiencies offset R&D spending.' The analyst provides an explicit EPS bridge ('add $1.50 from revenue growth, $0.90 from margin expansion'), which ties the 2025 forecast to specific drivers. Assumptions are not only explicit but also benchmarked; for instance, the terminal growth rate of 4% is tied to 'Long-term GDP + inflation,' and the 'ROIC of over 40%' is compared against the WACC of 8.5%. The report addresses uncertainty by quantifying the potential impact of regulatory risks, stating they could 'impact 10-15% of revenue' and 'swing earnings by 15-20% in adverse scenarios.' While these quantified impacts provide a range of outcomes, the report stops short of 'Excellent' because it lacks a comprehensive sensitivity analysis (e.g., a matrix showing Fair Value sensitivity to WACC or growth rates) and provides only a single-point Fair Value estimate of $510 rather than a range or bull/bear targets. The implications are actionable, noting that the 'valuation appears full,' but the lack of extensive scenario modeling limits the depth of the decision-relevant framework.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Specific impact of fintech competition on take-rates not quantified",
+            "No explanation of how 12% revenue CAGR is derived from specific regional growth rates"
+        ],
+        "unsupported_assumptions": [
+            "Market share stability at 25% lacks competitive context or source"
+        ],
+        "lack_of_sensitivity": [
+            "Fair Value estimate is a single point ($510) without scenario-based targets",
+            "No sensitivity matrix for WACC or terminal growth variations"
+        ]
+    }
+}

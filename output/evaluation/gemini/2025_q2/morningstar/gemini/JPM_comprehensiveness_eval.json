@@ -1,0 +1,60 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to a combination of critical omissions in the Financials Snapshot and excessive redundancy that undermines its comprehensiveness. While the report includes all required headline sections and provides a valuation model explicitly linked to operating drivers (such as ROTCE and revenue growth), it fails to meet the technical standards for a higher grade. Specifically, the Financials Snapshot table is generic and omits essential banking sector KPIs, including Net Interest Margin (NIM), Net Interest Income (NII), and Credit Provisions, which triggers a hard cap of 'Fair' according to the evaluation criteria. Furthermore, the report is highly repetitive; the '15.0% CET1 ratio' and 'fortress balance sheet' talking points are recycled across six different sections (Analyst Note, Business Strategy, Bulls Say, Economic Moat, Risk, and Capital Allocation) without providing incremental depth or new context. This repetition triggers a mandatory one-level downgrade from the 'Fair' cap to 'Poor.' Additionally, the report lacks a dedicated financial peer benchmarking table and scenario/sensitivity analysis, which are expected in a comprehensive equity research document. The 'insufficient data' labels for standard metrics like ROIC in the financials table further reflect a lack of thoroughness, resulting in a report that feels superficial despite its length.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Financial Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROTCE (in text)",
+            "CET1 (in text)",
+            "Efficiency Ratio (in text)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Net Interest Income (in table)",
+            "Loan Growth (in table)",
+            "CET1 (in table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Provisions",
+            "Loan Growth",
+            "NII (Financials Snapshot table)"
+        ],
+        "uncited_claims": [
+            "Tangible book value per share growth at double the rate of peer group since 2005",
+            "Pilot of JPMD deposit token on a public blockchain"
+        ]
+    }
+}

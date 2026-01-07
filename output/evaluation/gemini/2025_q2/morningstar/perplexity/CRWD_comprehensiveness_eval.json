@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a comprehensive structural framework, covering all mandatory sections from the Analyst Note to the ESG analysis. However, it fails to meet the 'Good' or 'Excellent' criteria due to significant issues with evidence currency and sector-specific depth. Most critically, the report relies on data from 2021 and 2022 (Sources [8], [13], [15]) to support 2025 valuations and market cap figures, which is a major breach of equity research standards. This triggers the hard cap for outdated information. Additionally, while the report mentions ARR in the text, the Financials Snapshot table omits essential SaaS metrics such as Net Retention Rate (NRR) and Gross Margin, which are vital for evaluating software-as-a-service business models. This omission triggers a second hard cap. The report also suffers from excessive redundancy; the July 2024 outage is described with nearly identical phrasing in the Analyst Note, Strategy, Moat, and Risk sections, failing to provide new analytical depth in each context. While the valuation section successfully links operating drivers to a fair value estimate and the appendix includes a scenario analysis, the lack of a dedicated peer benchmarking table and the reliance on obsolete citations result in a 'Fair' grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "Revenue",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Retention Rate)",
+            "Gross Margin",
+            "Magic Number",
+            "Rule of 40"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR (Net Retention Rate)",
+            "Gross Margin"
+        ],
+        "uncited_claims": [
+            "Earnings per share is projected to grow to $4.50 by fiscal 2029 (no source for long-term projection)",
+            "Market capitalization of $105.8B is supported by a source [8] from 2021, making it effectively uncited for 2025",
+            "Price targets averaging $483.86 supported by source [13] from 2022"
+        ]
+    }
+}

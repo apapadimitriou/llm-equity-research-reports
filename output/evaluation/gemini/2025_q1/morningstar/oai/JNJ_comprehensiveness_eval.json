@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete and exceptionally well-cited, utilizing recent 2024 and 2025 data. It covers all mandatory sections, including a detailed business description and a valuation section that explicitly links operating drivers (Revenue CAGR, margins, WACC) to the fair value estimate. However, the report is capped at 'Fair' due to several critical deficiencies. First, the Financials Snapshot is generic; it omits core sector-specific KPIs such as segment-level revenue breakdowns (Innovative Medicine vs. MedTech) and R&D expenditure within the data table, despite these being central to the pharmaceutical industry. Second, the report exhibits significant redundancy, repeating the Kenvue spinoff and the size of the R&D budget across nearly every section (Analyst Note, Strategy, Bulls/Bears, Moat, and Capital Allocation) without adding new depth. Third, there is a total absence of peer benchmarking and scenario/sensitivity analysis, which are required for higher grades. Finally, while the report mentions peers in passing, it provides no specific industry context or comparative data, triggering a mandatory downgrade. Additionally, some claims, such as the 13% FCF yield, appear mathematically inconsistent with the provided market cap and FCF figures.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "GAAP EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "Patent Expiry (Stelara)",
+            "Phase 3 Trial Results (Tremfya)"
+        ],
+        "sector_kpis_missing": [
+            "Segment Revenue Breakdown (in table)",
+            "R&D as % of Sales (in table)",
+            "Pipeline Phase Counts",
+            "MedTech Procedure Volumes"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FCF yield stated as 13% is inconsistent with FCF of $20.5B and Market Cap of $370B (actual yield ~5.5%)",
+                "locations": [
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Segment-level revenue (Innovative Medicine vs MedTech) in Financials Snapshot",
+            "R&D spend in Financials Snapshot",
+            "Peer benchmarking data"
+        ],
+        "uncited_claims": [
+            "ROIC estimates (8.5%, 7.5%, 8.0%) for 2022-2024",
+            "13% FCF yield calculation"
+        ]
+    }
+}

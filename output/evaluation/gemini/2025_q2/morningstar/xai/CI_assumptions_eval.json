@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions, particularly regarding revenue CAGR (8%) and operating margins (4.5% target), which are clearly tabulated and proximal to the valuation narrative. Justification is solid, leveraging segment-level performance (10% growth in Evernorth vs. 6% in Cigna Healthcare) and historical 2024 benchmarks. Internal consistency is high; the EPS bridge ($28.29 to $29.00) and the multi-year financial snapshot reconcile perfectly with the narrative. However, the report fails to provide quantified sensitivity or scenario analysis for its material drivers. While it mentions a general 'valuation swing of \u00b120%' under the Risk & Uncertainty section, it does not demonstrate how specific fluctuations in WACC, medical loss ratios, or margin expansion would numerically impact the fair value estimate. Per the grading instructions, the absence of quantified sensitivity analysis on material drivers caps the grade at 'Fair.'",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes a 8% revenue CAGR from 2025 to 2029, driven by 10% growth in Evernorth and 6% in Cigna Healthcare",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 4.2% in 2024 to 4.5% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 7.0%, incorporating a beta of 0.9 and cost of equity of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 3% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "add $1.50 from revenue growth, $0.70 from margin expansion, offset by $0.50 in higher taxes and interest, yielding 2025 EPS of $29.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

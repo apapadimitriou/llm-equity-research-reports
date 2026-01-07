@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the originality test as it functions primarily as a high-quality summary of public earnings data and news headlines rather than providing unique, value-added analysis. Every major insight identified is a direct restatement of the provided source material or a generic industry trope. For instance, the $13 billion AI run rate and the 33% Azure growth figures are pulled directly from fiscal Q2 and Q3 2025 earnings reports without further interpretive commentary. The 'Bulls Say / Bears Say' and 'Economic Moat' sections utilize boilerplate phrasing common to the sector (e.g., 'network effects,' 'switching costs') without offering a company-specific angle that isn't already public knowledge. Most critically, the report lacks any original synthesis or a testable, non-obvious thesis. The valuation section relies on standard DCF assumptions and consensus growth rates (13-15%) without introducing a novel driver or mechanism. Per the grading instructions, the absence of original synthesis or a unique thesis necessitates a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Microsoft achieved a $13 billion AI revenue run rate, up 175% annually in fiscal Q2 2025.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Azure growth reached 33% with a 16 percentage point contribution from AI services.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI revenue is projected to exceed $50 billion by fiscal year 2027.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Integration of AI across Office and Teams creates significant upselling opportunities within the existing base.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins are expected to expand to 48-50% due to AI-driven efficiency gains.",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            },
+            {
+                "text": "Quantum computing developments via the Majorana 1 chip represent a long-term strategic investment.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'Bulls Say / Bears Say' structure",
+            "Heavy reliance on restating earnings headlines (e.g., $13B run rate)",
+            "Generic 'Wide Moat' description using standard textbook definitions"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

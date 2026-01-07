@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple significant internal numeric contradictions and the absence of quantified sensitivity analysis. First, the WACC calculation is mathematically incoherent: the report cites a 6% risk-free rate, a 5% equity risk premium, and a 1.2 beta, which calculates to a 12% cost of equity, yet the report uses 8.5% as the model input without explanation. Second, the EPS bridge is logically broken; it claims that starting from a 2025 EPS of $25.00, adding $5.00 from revenue and $2.00 from margins while subtracting $1.00 for taxes results in a 2029 EPS of $40.00, when the arithmetic sum is actually $31.00. Third, there is a discrepancy in the terminal operating margin, cited as 42% in the narrative but 43% in the Appendix table. Furthermore, the report fails the sensitivity requirement, offering only a vague qualitative mention of a '20% swing' without providing a quantified sensitivity matrix or scenario analysis for material drivers like ad pricing or AI-related capex. While assumptions are explicitly stated and specific in terms of units and horizons, the lack of internal coherence and the absence of stress-testing render the model a 'black box' that cannot be audited or trusted.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 12.0% | Ad growth and AI contributions",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 3.0% | Mature industry rate",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Margin (2029) 43.0% | Efficiency gains",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital expenditure guidance for FY 2025 was raised to $64 billion to $72 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Starting from 2025 EPS of $25.00, we add $5.00 from revenue growth, $2.00 from margin expansion, minus $1.00 from higher taxes, yielding 2029 EPS of $40.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (6% RF + 1.2 Beta * 5% ERP) mathematically equal 12%, but the report uses 8.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "EPS bridge math is incorrect: $25 + $5 + $2 - $1 = $31, not the $40 claimed in text and tables.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2029 Operating Margin is stated as 42% in the narrative but 43% in the Appendix table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% (conflicts with its own stated components)"
+        ]
+    }
+}

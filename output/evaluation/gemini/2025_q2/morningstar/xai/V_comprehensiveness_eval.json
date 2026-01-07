@@ -1,0 +1,57 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report follows the required structural framework but fails significantly on depth, data integrity, and sector-specific detail. It triggers multiple hard caps that necessitate a downgrade. First, the Financials Snapshot is generic and omits critical sector-specific KPIs for a credit services firm, such as Payment Volume, Processed Transactions, and Cross-border Volume growth; these are only mentioned in passing in the text but are absent from the multi-year forecast table. Second, the report contains at least five instances where material claims\u2014including regulatory impact estimates, debt-to-EBITDA ratios, and historical buyback totals\u2014are explicitly marked with '[insufficient data]' or '[not specified in source],' violating the requirement for consistent evidence. Furthermore, the report exhibits excessive redundancy; the same two data points (8% payment volume and 13% cross-border growth) are repeated across four different sections (Analyst Note, Bulls/Bears, Moat, and Risk) with no additional depth or context provided in subsequent mentions. Peer benchmarking is virtually absent, and the lack of a formal scenario analysis table further diminishes the report's comprehensiveness. These cumulative deficiencies in KPI reporting, sourcing, and repetitive content result in a Poor grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Payment Volume Growth",
+            "Processed Transactions",
+            "Cross-border Volume Growth",
+            "Take Rate / Yield"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Payment Volume Growth (in Snapshot)",
+            "Processed Transactions (in Snapshot)",
+            "Cross-border Volume Growth (in Snapshot)"
+        ],
+        "uncited_claims": [
+            "Global shift to digital payments projected to grow at 12% CAGR through 2030",
+            "Regulatory pressures could reduce revenues by 5-10%",
+            "Net debt at 0.5x EBITDA and cash reserves exceeding $15 billion",
+            "Buybacks totaled $12 billion in FY2024",
+            "Sustainalytics ESG Risk Rating of 15.2"
+        ]
+    }
+}

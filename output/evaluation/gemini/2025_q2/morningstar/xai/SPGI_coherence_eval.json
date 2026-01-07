@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is fundamentally flawed due to significant temporal and numerical inconsistencies. Most glaringly, the report is dated July 2, 2025, yet the Analyst Note describes Q2 2025 earnings results and stock price reactions from July 31, 2025, and August 1, 2025. This chronological impossibility undermines the entire document's credibility. Furthermore, the report contains a major internal contradiction regarding its valuation metrics: the Analyst Note claims the $550 fair value estimate implies a 30x forward P/E, whereas the Fair Value and Profit Drivers section correctly calculates the multiple as 46x based on the provided $12.00 EPS forecast ($550 / $12 = 45.8). \n\nAdditionally, the narrative fails to reconcile the 'Bears Say' risks\u2014specifically interest rate volatility and regulatory costs\u2014with the highly specific and optimistic financial forecasts in the snapshot table. The transition between the Analyst Note and the Business Description is functional, but the lack of historical data in the Financials Snapshot (marked as 'insufficient data' for 2022\u20132024) makes the projected growth rates appear unsubstantiated. These errors mean the reader must manually resolve conflicting data points, which fits the rubric's definition for a 'poor' grade. The document lacks the internal logic required for professional equity research.",
+    "evidence": [
+        "The report date is 2025-07-02, but the Analyst Note cites Q2 results from July 31, 2025, and a source from August 1, 2025 (Analyst Note / Sources).",
+        "The Analyst Note claims a forward P/E of 30x, while the Fair Value section claims 46x for the same $550 FVE and $12.00 EPS (Analyst Note / Fair Value and Profit Drivers).",
+        "The Financials Snapshot contains 'insufficient data' for all historical years (2022-2024), leaving the 8% CAGR assumption without a baseline (Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

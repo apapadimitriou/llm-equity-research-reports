@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple unresolved numeric contradictions that undermine the integrity of the model. While assumptions are explicit and specific, they fail the consistency and justification tests. The most glaring issue is the 'Fair-Value Estimate' of $366.52 on the cover, which is never mentioned or derived in the valuation section; instead, the text provides a base range of $375\u2013$432 and a conservative range of $325\u2013$378. Furthermore, the narrative cites management's 2025 EPS guidance of 'at least $14.65,' yet the 'Financials Snapshot' table forecasts $16.50 without any bridge or explanation for this 12.6% discrepancy.\n\nJustification is also weak; while the report cites historical medical care ratios (82\u201383%) and revenue growth (7\u20139%), it fails to reconcile these with the provided table. For instance, the table's 2025 revenue forecast implies 11.6% growth, contradicting the '7\u20139%' normalization claim. Although the report includes quantified sensitivity through a 'conservative scenario' and an analysis of MCR normalization impact ($3\u2013$4 billion), these scenarios do not align with the cover's price target. The lack of internal coherence across the document's primary data points violates the fundamental requirement for an auditable research product, triggering the hard cap for multiple distinct contradictions.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue growth normalizes to approximately 7-9% annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Normalized medical care ratio: 82-84%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "net earnings of at least $14.65 per share",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "applying a 15-16x forward multiple",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital: 8.5-9.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cover Fair-Value Estimate ($366.52) conflicts with the valuation ranges provided in the text ($375-432 and $325-378).",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Text cites 2025 EPS guidance of 'at least $14.65', but the Financials Snapshot table forecasts $16.50 without explanation.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative assumes revenue growth 'normalizes to 7-9%', but the table's 2025 forecast ($447B vs $400.3B) implies 11.6% growth.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "Fair-Value Estimate of $366.52 on cover has no stated derivation."
+        ]
+    }
+}

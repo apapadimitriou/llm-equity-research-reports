@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original analysis, synthesis, or unique thesis. It functions primarily as a summary of data points extracted from social media posts (X/Twitter) and earnings transcripts, without adding interpretive value. Every identified insight is a restatement of public financial results (revenue growth, customer counts, retention rates) or a generic observation about the sector (AI trends, cloud migration). The report explicitly admits to having 'insufficient data' for critical sections including the Economic Moat, Capital Allocation, and the entire Financials Snapshot. Furthermore, the valuation section is entirely boilerplate, utilizing standard placeholder assumptions (10% WACC, 4% terminal growth) and arbitrary revenue/margin targets rather than company-specific drivers. There is no evidence of the analyst linking disparate data points to form a new conclusion, resulting in zero decision relevance for an investor beyond what is available in a basic news headline.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue reached $869 million, representing 29% year-over-year growth with non-GAAP EPS of $0.18.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Net revenue retention rate declined to 127% in fiscal 2025 Q2 from 142% a year earlier.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Growth rates have moderated from 36% in fiscal 2024 Q2 to 29% in fiscal 2025 Q2.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Snowflake's competitive edge stems from its multi-cloud architecture and data-sharing capabilities.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Valuation assumes a revenue CAGR of 30% and operating margin expansion to 20% with a 10% WACC.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on social media posts (X) as primary sources",
+            "Extensive use of 'insufficient data' for core analytical sections",
+            "Boilerplate risk factors (macro, regulatory, ESG)"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

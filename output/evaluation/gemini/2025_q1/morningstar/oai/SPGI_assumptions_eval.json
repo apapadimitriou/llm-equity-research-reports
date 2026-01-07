@@ -1,0 +1,86 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for high-quality assumptions due to a critical internal contradiction and a total lack of quantified sensitivity analysis. While the report is explicit in listing its key model inputs\u2014such as a 5\u20136% revenue CAGR, 39\u201340% operating margins, and an 8% WACC\u2014these figures are only partially justified, relying heavily on management guidance without independent stress-testing. The most significant failure is a blatant numeric contradiction: the 'Fair Value and Profit Drivers' section states the DCF yields a value in the 'low-$300s,' yet the cover block and subsequent summary sentences claim a Fair-Value Estimate of '$400.' This discrepancy remains unresolved and undermines the auditability of the model. Furthermore, the report provides no quantified sensitivity or scenario analysis for material drivers like interest rate volatility or credit issuance volumes, despite identifying them as key risks. Per the grading rubric, the combination of a material contradiction and the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "we use ~5\u20136% revenue CAGR for 2025\u201329",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "assume operating margins stabilize around 39\u201340%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Using a WACC of ~8% and a 2% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "apply an effective tax rate of roughly 22%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "assume capital expenditures remain low (~1% of revenue)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Share count is expected to decline slightly (further buybacks)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report states the DCF yields an equity value in the 'low-$300s per share' but sets the Fair-Value Estimate at '$400' in the cover block and summary text.",
+                "locations": [
+                    "Fair Value and Profit Drivers (Paragraph 1)",
+                    "Cover Block / Fair Value and Profit Drivers (Paragraph 2)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_ranges"
+        ],
+        "unjustified_parameters": [
+            "WACC of 8% provided without derivation or link to market risk-free rates/beta."
+        ]
+    }
+}

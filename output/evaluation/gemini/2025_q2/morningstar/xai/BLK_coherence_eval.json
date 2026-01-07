@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report fails fundamentally on coherence due to severe temporal impossibilities and internal numerical contradictions. Most critically, the report is dated July 7, 2025, yet it cites sources from July 10, July 15, and August 7, 2025. It references 'recent news' and earnings results that, according to its own timeline, have not yet occurred, creating a logical paradox. Beyond these chronological failures, the document contains several unaddressed internal contradictions. The Analyst Note projects FY2025 EPS of $42.00, while the Fair Value section and the Financials Snapshot table both specify $41.50. Furthermore, the Business Strategy section targets an 8% annual AUM growth rate, which directly conflicts with the 5% AUM growth assumption used in the Fair Value and Profit Drivers section. The structural flow is also poor; the Bulls/Bears, Risk & Uncertainty, and Capital Allocation sections are presented as isolated bulleted lists without transitional prose or reconciliation with the base-case valuation. The Bulls/Bears arguments are never integrated into the primary thesis, and the frequent use of 'insufficient data' placeholders suggests an incomplete analysis. These unresolved tensions between the narrative, the tables, and the cited dates make the report's argument impossible to follow as a connected whole.",
+    "evidence": [
+        "Report date is 2025-07-07, but Source [2] is dated 2025-08-07 and Source [4] is dated 2025-07-15 (Sources section).",
+        "Analyst Note projects FY2025 EPS of $42, contradicting the $41.50 figure in the Fair Value section and Financials Snapshot.",
+        "Strategy section targets 8% annual AUM growth, while Fair Value and Profit Drivers assumes 5% AUM growth."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

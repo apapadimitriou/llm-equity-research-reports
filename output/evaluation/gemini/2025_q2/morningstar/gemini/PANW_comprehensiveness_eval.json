@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a high-quality strategic narrative regarding the CyberArk acquisition and Palo Alto Networks' 'platformization' strategy. However, it fails several technical requirements for comprehensiveness. Most notably, the 'Financials Snapshot' is inadequate; it provides only a single quarter of actuals and one year of guidance rather than the expected multi-year history and multi-year forecasts. Critical sector-specific KPIs for a SaaS/Cybersecurity firm, such as Net Retention Rate (NRR/DBNE) and Billings, are entirely absent. While a valuation section exists with SOTP and DCF models, the linkage between operating drivers (e.g., specific retention or margin expansion targets) and the resulting multiples/terminal value is superficial. Additionally, the report exhibits significant redundancy, repeating the strategic rationale for the CyberArk merger across the Executive Summary, Strategic Update, and Product Deep Dive sections without adding substantial new depth. These omissions of core financial data and sector KPIs, combined with repetitive content, trigger hard caps that limit the grade to 'Fair'.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning",
+            "Valuation",
+            "Risk & Uncertainty",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Multi-year Financial History",
+            "Multi-year Forecasts",
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "NGS ARR",
+            "RPO",
+            "FCF Margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Retention Rate (NRR)",
+            "Billings",
+            "Customer Acquisition Cost (CAC)",
+            "Churn Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Retention Rate (NRR)",
+            "Billings",
+            "Multi-year historical income statement",
+            "Multi-year forecasted balance sheet/cash flow"
+        ],
+        "uncited_claims": []
+    }
+}

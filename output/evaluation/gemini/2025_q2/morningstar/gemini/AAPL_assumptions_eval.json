@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates high explicitness and specificity, providing a dedicated 'Key Valuation Assumptions' table in the Appendix and clearly stating drivers within the 'Fair Value and Profit Drivers' section. Assumptions for WACC (8.23%), revenue CAGR (6.5%), and terminal growth (3.0%) are precisely defined with specific time horizons (FY25\u201329). Justification is solid, linking margin expansion to the structural shift toward the high-margin Services segment and justifying revenue growth through the 'Pro' model mix and installed base monetization. Internal consistency is clean; the narrative's 34% exit operating margin and 6.5% CAGR reconcile perfectly with the Financials Snapshot and Appendix. However, the report is capped at 'Fair' due to the lack of robust, quantified sensitivity analysis for core model drivers. While it provides a specific downside scenario for tariffs (15% net valuation impact), it fails to provide quantified ranges or sensitivity tables for primary levers such as WACC, terminal growth, or Services growth rates. Per the grading instructions, the absence of quantified sensitivities for multiple material drivers prevents a 'Good' or 'Excellent' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a five-year compound annual revenue growth rate (CAGR) of 6-7% through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast robust annual growth of over 10%, propelled by the expanding installed base of devices and increased monetization per user",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We forecast gross margins will expand from 47.1% in the second quarter of fiscal 2025 toward 50% by fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model employs a weighted average cost of capital (WACC) of 8.23%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0% ... Analyst estimate, reflecting long-term nominal GDP growth",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "board's authorization of an additional $100 billion for share repurchases in May 2025",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "potential 25% gross downside risk to our valuation if iPhones lose their tariff exemption... resulting in a net risk of approximately 15%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": []
+    }
+}

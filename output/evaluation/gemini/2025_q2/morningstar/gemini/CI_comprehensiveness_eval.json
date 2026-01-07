@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report on The Cigna Group earns a 'Fair' grade because it meets the basic structural requirements of equity research but fails to provide the quantitative depth and sector-specific granularity expected in a comprehensive analysis. While the report includes essential qualitative sections\u2014such as a clear business description, a balanced Bulls/Bears framework, and a competitive moat analysis\u2014it fails to provide a robust Financials Snapshot. Specifically, the report lacks a multi-year historical and forecasted financial table, offering only a narrow two-year EPS outlook and a single-quarter comparison. \n\nCrucially, the report triggers a hard cap for missing at least two core sector KPIs. While the Medical Care Ratio (MCR) is discussed, other vital metrics for a Managed Care and PBM entity, such as total medical membership (enrollment) and pharmacy script volumes, are absent from the data tables. The valuation section is technically sound, linking EBITDA and EPS to a Sum-of-the-Parts and DCF outcome, but it lacks the scenario or sensitivity analysis required for higher grades. Additionally, there is notable redundancy; the 'PBM regulatory overhang' is repeated across the Executive Summary, Bear Case, Segment Analysis, and Risk sections without adding incremental depth in each instance. These gaps in quantitative breadth and the repetitive narrative limit the report's overall comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Multi-year Financials Snapshot",
+            "Scenario Analysis",
+            "ESG/Controversies (Dedicated Section)",
+            "Glossary"
+        ],
+        "sector_kpis_present": [
+            "Medical Care Ratio (MCR)",
+            "Adjusted EPS",
+            "Revenue Growth"
+        ],
+        "sector_kpis_missing": [
+            "Medical Membership/Enrollment",
+            "Pharmacy Script Volume",
+            "PBM Retention Rate",
+            "Days Claims Payable"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Membership (Enrollment) data is missing from financial tables.",
+            "Pharmacy Script Volume (PBM throughput) is missing from financial tables."
+        ],
+        "uncited_claims": []
+    }
+}

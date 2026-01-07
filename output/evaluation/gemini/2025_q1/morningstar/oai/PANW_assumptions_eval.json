@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions test primarily due to multiple material internal contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in stating its key drivers (revenue, margins, WACC), it suffers from two distinct numeric conflicts. First, the 'Analyst Note' estimates the post-split share count at approximately 380 million, whereas the 'Fair Value' and 'Appendix' sections assume 700 million shares\u2014a nearly 85% discrepancy that invalidates the per-share valuation logic. Second, the narrative forecasts 'high-single-digit EPS growth,' yet the 'Financials Snapshot' table models EPS growing from $6.2 to $11.0 over four years, representing a ~15.4% CAGR, which is clearly double-digit growth. Furthermore, the report provides no quantified sensitivity or scenario analysis for material drivers like revenue growth or WACC, offering only qualitative risk descriptions. Per the grading instructions, the presence of two or more distinct contradictions, combined with the absence of quantified sensitivities, triggers a mandatory 'Poor' grade. While the justification for revenue and margins is partially supported by management guidance and industry benchmarks, the lack of internal coherence and stress-testing makes the model's outputs feel like a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "FY2025 total revenue ~$9.15B (midpoint of guidance) growing ~12\u201314% y/y, then decelerating gradually to ~8\u20139% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins expanding from ~27.5% in FY2025... toward ~30% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of ~8% (roughly 4% risk-free, 5.5% equity risk premium, beta ~1.0)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "assume annual share count ~700M (post-split)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "2\u20133% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective tax rate ~20%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Share count discrepancy: Analyst Note estimates ~380M post-split shares, while Valuation/Appendix sections assume ~700M.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "EPS growth rate conflict: Narrative claims 'high-single-digit' growth, but Financials Snapshot table shows ~15.4% CAGR.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "700M share count (conflicts with the report's own split math)"
+        ]
+    }
+}

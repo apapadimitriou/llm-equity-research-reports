@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, containing all required sections from the Analyst Note to the ESG and Appendix. It demonstrates strong evidence integration with consistent in-text citations and includes a functional scenario analysis. However, the report is strictly capped at 'Fair' due to several critical deficiencies in comprehensiveness. First, the Financials Snapshot is generic and fails the sector-specific KPI requirement; it omits essential banking metrics such as Net Interest Margin (NIM), Net Interest Income (NII), Provision for Credit Losses, and CET1 ratios, instead providing non-standard metrics like FCF and ROIC. Second, the report exhibits significant redundancy, repeating specific data points\u2014such as the 'seven consecutive quarters of deposit growth' and digital banking adoption rates\u2014across the Analyst Note, Business Strategy, and Bulls sections without adding incremental depth. Finally, while the report mentions 'peer group valuations,' it lacks any actual peer benchmarking data or comparative tables, failing to provide necessary industry context. These gaps in sector-appropriate data and the repetitive nature of the prose prevent a higher grade despite the professional formatting.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "CET1 (in text)",
+            "NIM (in text)",
+            "Provisions (in text)",
+            "Efficiency Ratio"
+        ],
+        "sector_kpis_missing": [
+            "NIM (in Snapshot)",
+            "NII (in Snapshot)",
+            "Loan Loss Provisions (in Snapshot)",
+            "CET1 (in Snapshot)",
+            "ROE/ROA (in Snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Provision for Credit Losses",
+            "CET1 Ratio",
+            "Return on Equity (ROE)"
+        ],
+        "uncited_claims": [
+            "Revenue growth of 6% year-over-year to approximately $26.6 billion (Source [3] cited but specific revenue figure not in provided snippets)",
+            "CET1 ratio of 11.9% as of March 2024 (Outdated for a report dated April 2025)"
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are highly explicit and well-justified, particularly regarding the components of the Weighted Average Cost of Capital (WACC) and the structural drivers of margin expansion. The analyst provides specific magnitudes and time horizons, such as the 5-year revenue CAGR of 11.2% and the segment-specific growth rates for AWS and Advertising. Justification is evidence-rich, utilizing current 10-year Treasury yields, January 2025 equity risk premiums, and historical segment margins to support the forecast. Internal consistency is maintained between the narrative and the financial snapshot table.\n\nHowever, the report fails to meet the criteria for a 'Good' or 'Excellent' grade due to a total absence of quantified sensitivity or scenario analysis. Despite identifying capital expenditure and macroeconomic headwinds as material risks, the analyst does not provide a range of outcomes or a 'Bulls/Bears' valuation impact for these levers. Furthermore, while capital expenditure is repeatedly cited as a critical driver of near-term guidance and long-term AI capacity, the report lacks a specific, quantified capex-to-sales or dollar-value assumption within the valuation section. Per the grading instructions, the lack of quantified sensitivities on material drivers imposes a hard cap of 'Fair.' The report is a strong example of clear input documentation but lacks the necessary stress-testing to provide a robust valuation framework.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a 5-year (2025-2029) consolidated revenue CAGR of 11.2%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "projecting an increase from 10.7% in fiscal year 2024 to approximately 14.5% by fiscal year 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "A 9.5% WACC is used in our DCF model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "A terminal free cash flow growth rate of 3.0% is assumed.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "AWS (modeled at a ~17% CAGR) and Advertising (modeled at a ~15% CAGR)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Risk-Free Rate: 4.255%. This is a proxy based on a 10-Year Treasury auction yield",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Debt: 3.95% (after-tax), based on an estimated 5.0% pre-tax cost of debt reflecting the company's AA- credit rating and a 21% tax rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": []
+    }
+}

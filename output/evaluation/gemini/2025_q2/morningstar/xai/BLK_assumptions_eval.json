@@ -1,0 +1,102 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple internal numeric contradictions and the total absence of quantified sensitivity analysis. While the report identifies key drivers such as revenue CAGR, WACC, and operating margins, these figures are inconsistent across different sections. For instance, the 2025 EPS is cited as $42.00 in the Analyst Note but $41.50 in the Fair Value section and Financials Snapshot. Similarly, the 2029 operating margin is stated as 38% in the narrative but 38.5% in the data table. A further discrepancy exists between the stated 8% AUM growth target in the strategy section and the 5% AUM growth figure used to drive the valuation model.\n\nJustification for these inputs is weak, relying on generic qualitative statements regarding 'secular trends' and 'scale' rather than multi-year historical comparisons or peer benchmarking. Most importantly, the report fails the mandatory requirement for stress-testing. Although it mentions a 'medium' uncertainty rating and a qualitative 20% valuation swing, it provides no quantified sensitivity tables or scenario analysis for material levers like interest rates, fee compression, or AUM flows. Per the grading instructions, the combination of two or more distinct contradictions and the lack of quantified sensitivities necessitates a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR is projected at 6% from 2025-2029, driven by 5% AUM growth and 1% fee expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to improve to 38% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, reflecting equity beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "targeting 8% annual AUM growth",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "expected EPS growth to $42 in FY2025",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 EPS is stated as $42 in the Analyst Note but $41.50 in the Fair Value section and Financials Snapshot.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2029 Operating Margin is stated as 38% in the Fair Value narrative but 38.5% in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "AUM growth target is 8% in Strategy section but 5% in the Fair Value driver section.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source or build-up",
+            "Terminal Growth 3.0% without economic context"
+        ]
+    }
+}

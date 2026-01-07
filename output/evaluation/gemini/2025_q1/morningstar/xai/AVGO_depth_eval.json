@@ -1,0 +1,23 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report exhibits high analytical depth by consistently linking financial outcomes to specific operational and market mechanisms. Causal reasoning is robust, particularly in the explanation of the 'wide moat' through high switching costs, where the analyst quantifies the barrier as 'redesign costs often exceeding $100 million per project.' The report provides an explicit EPS bridge that decomposes growth into revenue, margin expansion, and tax impacts, moving beyond simple generalizations. Assumptions are not only explicit but also benchmarked; for instance, the terminal growth rate is tied to 'Long-term GDP + inflation' and the exit multiple is compared to the 'peer average P/E.' Crucially, the analysis includes quantified sensitivity, stating that a '10% cut in hyperscaler budgets might shave 5% off our revenue forecast,' and provides a fair value range of \u00b120% to account for uncertainty. Actionable implications are clearly stated, framing the current price as a 'buying opportunity' due to a '10% discount to our FVE.' While the 6% risk-free rate assumption is aggressive compared to current sovereign yields, the overall integration of data, causal links, and sensitivity analysis meets the criteria for an Excellent grade. Verbatim excerpts: 'driven by scale efficiencies and pricing power'; 'redesign costs often exceeding $100 million'; '10% cut in hyperscaler budgets might shave 5% off'; 'Terminal growth is 4%, implying a 25x P/E'; 'trades at a 10% discount... presenting a buying opportunity'; 'adds $2.00 from revenue growth, $1.50 from margin expansion'.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Specific drivers of the 11% non-AI semiconductor growth segment"
+        ],
+        "unsupported_assumptions": [
+            "6% risk-free rate is significantly higher than current 10-year Treasury benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "Lacks a sensitivity matrix for WACC or terminal growth variables"
+        ]
+    }
+}

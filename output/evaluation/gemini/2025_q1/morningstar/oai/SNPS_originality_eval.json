@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying almost exclusively on company press releases, news headlines (CNBC), and third-party summaries (Beanvest). Every 'insight' presented\u2014from the TAM expansion of the Ansys deal to the margin expansion targets and the impact of China export controls\u2014is a direct restatement of publicly available management guidance or recent news reports. The valuation section uses standard DCF mechanics with inputs (125 bp margin expansion, 15% growth target) taken directly from company presentations without independent adjustment or novel drivers. The report lacks any original interpretive commentary or non-obvious conclusions. Because it provides zero synthesis of data points into new conclusions and offers no company-specific angles not already available in public filings, it triggers the hard cap for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Management expects continued double-digit growth in FY2025... driven by secular trends (AI, 5G, automotive).",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Acquisition of Ansys is projected to increase TAM ~1.5\u00d7 to ~$28 B with ~11% CAGR.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Ansys deal will add physics/CAE tools, enabling synergies and ~125 bp non-GAAP margin expansion.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "US export controls have curtailed Synopsys\u2019 China growth: FY2025 guidance was pulled.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Synopsys and Cadence effectively form an EDA duopoly with deep technical moat.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on company press releases for all forward-looking figures",
+            "Moat section is a restatement of third-party analysis (Beanvest)",
+            "Boilerplate 'scale & diversification' logic"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections and is exceptionally well-cited, but it fails to meet the standards for a 'Good' grade due to significant technical omissions and structural redundancies. The Financials Snapshot is generic, omitting critical sector-specific KPIs for a consumer finance firm, such as Net Interest Margin (NIM), Net Interest Income (NII), and Net Charge-Offs (NCO) in the summary table. Per the instruction's hard caps, the omission of \u22652 core sector KPIs in the snapshot limits the grade to 'Fair'. Furthermore, while the report mentions competitors like JPMorgan and Citigroup, it lacks a formal peer benchmarking section or comparative data table, which triggers a mandatory one-level downgrade. Redundancy is also a notable issue; the Discover merger and CFPB litigation are discussed across the Analyst Note, Bulls/Bears, Risk, and ESG sections with significant overlap and minimal incremental depth in each instance. Lastly, while the report provides qualitative mentions of upside/downside, it lacks a quantitative scenario or sensitivity analysis table, further cementing the 'Fair' classification.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Quantitative Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC",
+            "Net Interest Income (text only)",
+            "Net Charge-Offs (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (table)",
+            "Net Charge-Offs (table)",
+            "CET1 Ratio (table)",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (missing from Financials Snapshot table)",
+            "Net Charge-Offs (missing from Financials Snapshot table)",
+            "CET1 Ratio (missing from Financials Snapshot table)"
+        ],
+        "uncited_claims": []
+    }
+}

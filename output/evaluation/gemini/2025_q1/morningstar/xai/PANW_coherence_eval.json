@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a logical structure, moving from recent earnings to a long-term valuation thesis. However, it suffers from a significant internal contradiction regarding its primary valuation metric. The Analyst Note states that the $380 fair value estimate implies a forward P/E of approximately 50x FY2025 EPS. In contrast, the Fair Value and Profit Drivers section explicitly states the same $380 estimate implies a 61x P/E. This 61x figure is the one supported by the Financials Snapshot table, which forecasts FY2025 EPS at $6.20 ($380 / $6.20 = 61.3). This discrepancy between the summary narrative and the detailed analysis is a material flaw. Furthermore, the report contains a temporal inaccuracy; Source [11] is dated September 2025, which is nearly four months after the report\u2019s May 2025 publication date. While the report successfully reconciles its Bulls Say / Bears Say points with the base-case valuation\u2014noting that high multiples are justified by growth\u2014the mathematical inconsistency and the impossible source date trigger mandatory caps under the grading rubric. The transitions between sections are generally smooth, but these technical errors necessitate a fair grade.",
+    "evidence": [
+        "The Analyst Note cites a 50x forward P/E for the $380 fair value, while the Fair Value section and Financials table ($6.20 EPS) indicate a 61x multiple.",
+        "Source [11] is dated 2025-09-09, which post-dates the report's publication date of 2025-05-21.",
+        "The report relies on Source [4] from February 2024 to describe spending caution, which is dated relative to the May 2025 report date."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

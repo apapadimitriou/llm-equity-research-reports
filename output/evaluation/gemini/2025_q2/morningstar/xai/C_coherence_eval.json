@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from a critical temporal contradiction: the report is dated July 1, 2025, yet it cites Q2 earnings results and transcripts from July 15, 2025. This fundamental misalignment undermines the document's credibility. Furthermore, there are significant internal contradictions between the narrative and the provided data tables. The 'Fair Value and Profit Drivers' section explicitly cites 2024 figures (EPS of $5.50 and 25% margins) to build its 2025 forecast, yet the 'Financials Snapshot' table labels 2024 data as 'insufficient data.' The Bulls/Bears section is not reconciled with the base-case valuation. The Bull case posits a mid-teens ROTCE by 2026, whereas the 'Business Strategy & Outlook' section sets a much lower target of 11-12% for the 2025-2027 period. Given that the Analyst Note claims the bank already achieved 12% in Q2 2025, the base-case strategy appears to lack ambition or fails to explain why returns would stagnate. Additionally, the report contains list-like sections with minimal transitionary prose. These unresolved tensions and the impossible dating structure require a 'poor' grade.",
+    "evidence": [
+        "Report date: 2025-07-01 vs Citigroup reported Q2 2025 results on July 15, 2025 (Cover Block / Analyst Note)",
+        "EPS bridge starts from 2024 estimated $5.50 vs 2024 Actual: insufficient data (Fair Value / Financials Snapshot)",
+        "ROTCE targeting 11-12% as transformation completes vs Bulls Say... mid-teens levels by 2026 (Strategy / Bulls Say)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

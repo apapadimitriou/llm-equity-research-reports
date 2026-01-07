@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections, but its comprehensiveness is undermined by generic financial reporting and a lack of comparative context. While the Analyst Note and Business Strategy sections provide a clear narrative regarding AI growth and the VMware integration, the Financials Snapshot is overly generic. It omits critical semiconductor-sector KPIs such as Gross Margin and R&D intensity, as well as segment-specific revenue splits (Semiconductor Solutions vs. Infrastructure Software), which are essential for a company of Broadcom's complexity. The valuation section is logically structured with an EPS bridge and DCF assumptions, but it lacks any formal scenario or sensitivity analysis. Furthermore, peer benchmarking is almost entirely absent, with only a cursory mention of Nvidia in the ESG section, failing to provide industry context for Broadcom's 35x forward P/E. Significant redundancy is also noted, as the 46% AI revenue growth figure and VMware integration points are repeated across four different sections without providing new depth or analysis in each instance. These gaps in sector-specific data and industry context cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "AI Revenue (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "R&D as % of Sales",
+            "Segment Revenue (Semiconductor vs. Software)",
+            "Custom ASIC Market Share"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin",
+            "R&D Expense",
+            "Segment Revenue Splits"
+        ],
+        "uncited_claims": [
+            "Sustainalytics score 22.5 (noted as insufficient data for direct citation)"
+        ]
+    }
+}

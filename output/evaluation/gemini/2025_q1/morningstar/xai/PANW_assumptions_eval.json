@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including revenue growth, operating margins, and WACC components. These inputs are clearly stated and proximal to the forecasts they inform, particularly in the 'Fair Value and Profit Drivers' section and the Appendix. Justification is solid, leveraging recent quarterly performance data such as Next-Generation Security (NGS) ARR growth and RPO trends to support a 15% revenue CAGR. Internal consistency is high, with the financial snapshot table reconciling perfectly with the narrative's EPS and margin targets. However, the report fails to meet the 'Good' or 'Excellent' criteria due to a lack of quantified sensitivity analysis. While the 'Risk & Uncertainty' section qualitatively mentions that risks could 'swing valuation by 20-30%,' it does not provide a table or scenario analysis showing how specific changes in material drivers (e.g., a 1% change in WACC or a 200bps compression in margins) would impact the fair value estimate. Additionally, the assumption regarding share count is vague, citing only 'modest share dilution' without providing a specific magnitude or projected count. Per the grading instructions, the absence of quantified stress-testing on material drivers caps the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes a 15% revenue CAGR from FY2025 to FY2029, driven by NGS expansion and subscription uptake",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins expanding from 25% in FY2025 to 30% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 4.0% | Industry average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "offset by modest share dilution",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 4.0% is cited as 'industry average' without a specific source or peer comparison."
+        ]
+    }
+}

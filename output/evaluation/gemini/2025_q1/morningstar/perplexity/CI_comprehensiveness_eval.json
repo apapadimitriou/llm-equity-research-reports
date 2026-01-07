@@ -1,0 +1,54 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded \"Poor\" due to a combination of structural incompleteness, critical KPI omissions in the financial summary, and excessive redundancy. While the narrative sections are detailed, the report fails multiple \"Hard Cap\" and \"Decision Rule\" criteria. First, the Financials Snapshot table is generic and omits at least three core sector-specific KPIs\u2014Medical Care Ratio (MCR), Medical Membership, and Pharmacy Membership\u2014which are essential for evaluating a Managed Care organization. Per the instructions, missing \u22652 core KPIs in the snapshot caps the grade at \"Fair.\" Second, the report is physically incomplete, terminating mid-sentence in the ESG section and entirely omitting the Appendix and the Sources list. Although in-text citations are present (e.g., [13], [22]), the lack of a bibliography renders all claims technically uncited, triggering another \"Fair\" cap. Third, the report violates the redundancy rule by repeating the $3.3B HCSC divestiture across five separate sections (Analyst Note, Business Description, Strategy, Bulls Say, and Capital Allocation) without adding new depth. This repetition requires a one-level downgrade from the \"Fair\" cap, resulting in a final grade of \"Poor.\" While the qualitative analysis of the Evernorth platform is strong, these systemic failures in evidence integration and formatting preclude a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Appendix",
+            "Glossary",
+            "Sources"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "PBM Market Share (in-text)",
+            "Medical Care Ratio (in-text)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Care Ratio (in table)",
+            "Medical Membership (in table)",
+            "Pharmacy Membership (in table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Care Ratio (MCR)",
+            "Medical Membership",
+            "Pharmacy Membership"
+        ],
+        "uncited_claims": [
+            "All claims using [1]-[22] citations are unverifiable as the Sources list is missing.",
+            "The report terminates mid-sentence, leaving the final section and bibliography absent."
+        ]
+    }
+}

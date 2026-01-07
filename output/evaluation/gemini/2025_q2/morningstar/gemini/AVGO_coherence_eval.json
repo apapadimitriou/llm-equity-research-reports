@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report earns a poor grade due to pervasive internal contradictions and significant temporal inaccuracies that undermine its fundamental credibility. The most glaring issue is the disconnect between the narrative and the 'Quarterly Financial Summary' table. The text explicitly states Q2 FY25 revenue was $15.004 billion and EPS was $1.58, yet the table assigns these specific figures to Q1 FY25, listing Q2 FY25 revenue as $15.952 billion and EPS as $1.69. This shift makes the Q3 guidance of $15.8 billion appear as a sequential decline, directly contradicting the narrative's claim of 'accelerating' momentum and an 'optimistic' outlook. Furthermore, the report suffers from a major temporal paradox. While the document is dated June 25, 2025, the 'Works Cited' section lists dozens of sources accessed on September 10, 2025. The narrative also references Morningstar price target adjustments occurring in 'September 2025' as historical context, which is impossible for a report written in June. Logical consistency is also lacking in the valuation analysis; the text claims Broadcom trades at a 'discount to the premier AI leader, NVIDIA,' but the 'Comparable Company Analysis' table shows Broadcom at a forward P/E of 50.2x compared to NVIDIA\u2019s 48.0x. These unresolved tensions between the data presented in tables and the supporting narrative force the reader to reconstruct the argument themselves, failing the basic requirements of a coherent research report.",
+    "evidence": [
+        "Text states Q2 FY25 revenue was $15.004B and EPS was $1.58, but the Financial Summary table lists these as Q1 figures, showing Q2 revenue at $15,952M and EPS at $1.69 (Q2 FY25 Financial Performance vs. Table).",
+        "The report is dated June 25, 2025, yet the Works Cited section lists access dates of September 10, 2025, and the narrative references events in September 2025 as past occurrences (Investment Snapshot vs. Works Cited).",
+        "Narrative claims Broadcom trades at a 'discount' to NVIDIA, but the Comparable Company Analysis table shows Broadcom at 50.2x P/E and NVIDIA at 48.0x (Valuation Analysis vs. Table)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

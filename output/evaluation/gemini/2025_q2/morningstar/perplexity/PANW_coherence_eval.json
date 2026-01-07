@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a \"fair\" grade due to significant internal contradictions between the narrative analysis and the provided financial data table, which triggers a mandatory hard cap. While the prose is professional and the \"platformization\" argument is logically threaded from the Analyst Note through the Strategy and Moat sections, the quantitative data in the \"Financials Snapshot\" undermines the report's credibility. Specifically, the table projects FY2025E EPS of $6.33, a nearly 264% increase from the FY2024A level of $1.74. This massive spike is entirely unexplained by the narrative, which describes \"moderating\" revenue growth of 15% and notes that the transformative $25 billion CyberArk acquisition will not even close until the second half of fiscal 2026. Furthermore, there is a tension between the \"Bears Say\" section and the financial projections. The Bear case explicitly cites decelerating revenue growth as a primary concern, yet the table forecasts revenue growth accelerating from 15% in FY2025 to over 17% in FY2026. These unresolved discrepancies suggest the financial model and the narrative were not fully reconciled. On a positive note, the report excels in temporal accuracy, correctly positioning the July 2025 CyberArk announcement relative to the August 2025 report date, and the \"Economic Moat\" section provides a strong, connected argument regarding network effects and switching costs. However, the lack of alignment between the EPS/revenue forecasts and the strategic commentary necessitates the \"fair\" rating.",
+    "evidence": [
+        "Table shows FY25E EPS of $6.33 (up from $1.74) despite the CyberArk deal not closing until H2 FY26 (Financials Snapshot / Analyst Note).",
+        "Bear case claims growth is decelerating, but the table shows revenue growth accelerating from 15% in FY25 to 17% in FY26 (Bulls/Bears / Financials Snapshot).",
+        "Narrative cites a 27.4% operating margin, yet the table's EPS and Revenue figures imply a net margin exceeding 45% (Analyst Note / Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

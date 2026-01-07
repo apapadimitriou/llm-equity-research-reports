@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to the combination of a material internal contradiction and the total absence of quantified sensitivity analysis. The narrative repeatedly emphasizes 'significant buybacks,' 'large repurchase authorizations,' and the bank's ability to 'increase shareholder returns' following successful stress tests. However, the valuation model explicitly assumes the share count remains 'roughly flat' at 9.5B through 2029. This disconnect between the strategic thesis and the model inputs represents a fundamental failure in internal consistency. Furthermore, while the report identifies critical drivers such as Net Interest Margin (NIM) and credit provisions, it offers no quantified sensitivity analysis or scenario modeling. The 'Risk & Uncertainty' section remains purely qualitative, failing to provide the valuation impact of potential rate cuts or economic downturns. Per the rubric's hard caps, the presence of one distinct contradiction combined with no quantified sensitivities necessitates a 'Poor' grade. While the report is explicit in stating its inputs (e.g., 9% WACC, 3.3% NIM) and provides specific magnitudes and time horizons, these strengths are undermined by the lack of justification for why NIM would remain 'above historical average' and the failure to reconcile the model with the stated capital allocation strategy.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at a mid-single-digit CAGR (roughly 3\u20134%) through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "net interest margin stabilizing around ~3.3% (slightly above historical average)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "yielding ~22\u201323% operating margin over the forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assume tax rate ~18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "WACC of ~9%, reflecting a 10-year Treasury ~3.5%, equity risk premium ~5%, and beta ~1.1\u20131.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate is ~2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Shares outstanding ~9.5B (flat)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative forecasts 'significant buybacks' and 'large repurchase authorization' while the valuation model assumes a 'flat' share count of 9.5B.",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Text forecasts EPS rising from $4.0 (2025) to $4.8 (2029), while the Financials Snapshot table lists $4.1 and $4.9 for those years.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "NIM of 3.3% is described as 'slightly above historical average' without providing the historical benchmark for comparison."
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is professionally written with a clear narrative flow, but it fundamentally fails on data integrity and internal consistency, triggering multiple mandatory downgrades. The most significant issue is the pervasive temporal misalignment: the report relies on sources from 2019 (Source 9) and 2021 (Sources 5, 10, 14) to support 'current' 2025 financial data, such as market capitalization and Q2 earnings. This creates a fundamental disconnect between the narrative's 'recent' claims and the cited evidence, violating the requirement for temporal accuracy. \n\nFurthermore, the report contains a material internal contradiction regarding the status of 2025 data. The Analyst Note presents Q2 2025 results as realized 'actuals' that exceeded expectations, yet the Financials Snapshot table categorizes the entire 2025 period as '2025E' (Estimated). This lack of reconciliation between the narrative and the data tables forces the reader to assemble the argument themselves. Additionally, the Bulls/Bears section is presented as isolated arguments without any explicit reconciliation to the base-case valuation or the fair-value estimate. Per the rubric, the presence of unaddressed contradictions and time-inaccurate claims caps the grade at 'fair,' and the failure to reconcile the Bulls/Bears narrative further downgrades the report to 'poor.' The high-quality prose cannot compensate for the systemic failure to align dates, sources, and internal data points.",
+    "evidence": [
+        "Analyst Note reports Q2 2025 results as actuals, while the Financials Snapshot table labels 2025 as '2025E' (Estimated).",
+        "Source 9 (dated 2019-09-11) is cited for a 2025 Market Cap of $484.0B in the Cover Block.",
+        "Source 5 (dated 2021-08-02) is used to cite Q2 2025 earnings figures ($8.13B revenue) in the Analyst Note."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

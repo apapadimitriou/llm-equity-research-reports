@@ -1,0 +1,15 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of structural organization and narrative flow, successfully linking the recent Q1 2025 earnings results to the long-term valuation thesis. The Analyst Note provides a comprehensive summary that transitions well into the segment-specific analysis of AI semiconductors and infrastructure software. However, the report suffers from significant internal contradictions regarding its financial assumptions and mathematical outputs, which necessitates a \"fair\" grade under the provided rubric. Specifically, the valuation section cites a WACC of 8.5% while simultaneously listing a 6% risk-free rate, a 5% equity risk premium, and a beta of 1.1. Using the Capital Asset Pricing Model (CAPM), these inputs result in a cost of equity of 11.5%, creating an unresolved tension with the stated 8.5% discount rate. Furthermore, the capital allocation section describes a \"Q1 2025 payout at $5.25 per share\" with a \"3% yield.\" On a stock price of $180.50, a $5.25 quarterly payment would imply an annualized yield of approximately 11.6%, whereas a 3% yield would imply an annual dividend of roughly $5.40. This suggests a confusion between quarterly and annual figures that is never reconciled. While the qualitative analysis is \"good,\" these fundamental errors in the valuation and capital return assumptions undermine the report's internal consistency.",
+    "evidence": [
+        "We apply an 8.5% WACC, reflecting a 6% risk-free rate, 5% equity risk premium, and beta of 1.1 (Fair Value and Profit Drivers)",
+        "Q1 2025 payout at $5.25 per share, yielding 3% (Capital Allocation)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

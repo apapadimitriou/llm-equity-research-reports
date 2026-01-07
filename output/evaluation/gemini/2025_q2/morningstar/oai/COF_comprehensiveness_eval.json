@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' as it includes all required headline sections but fails to provide the depth and technical specificity expected in professional equity research. The Financials Snapshot is generic and omits critical sector-specific KPIs for a financial institution, such as Net Interest Margin (NIM), Loan Loss Provisions, and CET1 ratios, which are only mentioned sporadically in the text rather than in the data tables. Per the instruction's hard caps, the omission of \u22652 core sector KPIs in the snapshot limits the grade to 'Fair.' Furthermore, the report exhibits significant redundancy; the Discover acquisition and the $11.43 billion provision figure are repeated across the Analyst Note, Bulls/Bears, and Risk sections without providing incremental analytical depth. The presence of multiple placeholders (e.g., '<insufficient data>', '<analyst estimate>') for the most critical data points\u2014Price and Fair Value Estimate\u2014renders the valuation and cover sections skeletal. Peer benchmarking is also insufficient, providing only broad industry multiples rather than a specific peer comparison. While the report is well-cited, these gaps in data proportionality and the lack of explicit linkage between operating drivers and valuation outcomes prevent a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover block & contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary and Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROIC",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Net Charge-offs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Net Charge-offs"
+        ],
+        "uncited_claims": [
+            "Last close $<insufficient data>",
+            "Fair-Value Estimate $<analyst estimate>",
+            "Market Cap <insufficient data>",
+            "Price/FVE <analyst calc>"
+        ]
+    }
+}

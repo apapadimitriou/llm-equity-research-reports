@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' primarily due to the absence of robust, quantified sensitivity analysis for its core valuation drivers, triggering a hard cap. While the report identifies material risks\u2014such as a $900 million quarterly tariff impact and a potential 200-300 basis point margin compression\u2014it fails to provide a structured scenario analysis or sensitivity table demonstrating how fluctuations in the Weighted Average Cost of Capital (WACC), terminal growth, or revenue CAGR would impact the $237.99 Fair Value Estimate. On the positive side, the report excels in explicitness and internal consistency. Key assumptions are clearly aggregated in the Appendix and proximal to the valuation narrative. The data is highly specific, utilizing clear units (percentages, basis points, and dollar amounts) and a defined five-year forecast horizon (2025\u20132029). The financial snapshot table reconciles perfectly with the narrative's margin and EPS growth claims. However, justification remains 'Partial.' While revenue and margin assumptions are anchored in recent historical performance (e.g., 14% Services growth and 31.03% current operating margins), the 8.5% WACC and 2.5% terminal growth rate are presented as point estimates without supporting evidence from market benchmarks, peer comparisons, or macroeconomic data. This lack of evidentiary depth for critical discount rate components prevents the report from achieving a 'Good' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-29: 4.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Services revenue CAGR: 13.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin range: 30.8%-32.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share count reduction: 3.5% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "tariff rates reaching 83%... could add $900 million in quarterly costs",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.5% without breakdown of risk-free rate, beta, or equity risk premium",
+            "Terminal growth 2.5% without economic context or justification"
+        ]
+    }
+}

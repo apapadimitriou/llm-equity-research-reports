@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to multiple internal numeric contradictions and the absence of quantified sensitivity analysis. While the report is explicit and specific regarding magnitudes and time horizons (e.g., 2025\u20132029), it fails on consistency and justification. Two distinct numeric contradictions were identified: first, the WACC calculation is mathematically incorrect, as the stated components (4.0% risk-free rate, 1.2 beta, and 5.0% equity risk premium) result in a 10.0% cost of equity, yet the report uses 8.5%. Second, the 2025 EPS bridge is inconsistent; the report starts with a $3.20 base, adds $0.30 from revenue, and subtracts $0.10 for provisions, which totals $3.40, yet the report concludes and models a 2025 EPS of $3.50. Furthermore, the justification for the 400-basis-point operating margin expansion to 32% is weak, lacking historical context or peer benchmarking. Finally, the report provides no quantified sensitivity analysis for material drivers such as interest rates or credit costs, offering only a vague qualitative range for the final valuation. Per the decision rules, the combination of two contradictions and the lack of quantified sensitivities necessitates a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR of 3.5% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 28% in 2025 to 32% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, based on a beta of 1.2 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2025 full-year EPS to reach $3.50",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "subtracting $0.10 from higher provisions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (4% RFR + 1.2 Beta * 5% ERP) mathematically equal 10.0%, but the report uses 8.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "The 2025 EPS bridge ($3.20 + $0.30 - $0.10) equals $3.40, but the report states and forecasts $3.50.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Operating margin expansion to 32% by 2029 lacks historical or peer justification."
+        ]
+    }
+}

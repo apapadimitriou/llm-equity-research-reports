@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including a five-year revenue CAGR, mid-cycle operating margins, WACC, and terminal growth rates. These inputs are clearly stated in both the 'Fair Value and Profit Drivers' section and a dedicated valuation table in the Appendix, ensuring high explicitness and specificity. Justification is solid, as the report links margin expansion to a shift in sales mix toward high-margin segments (AWS and advertising) and cites historical efficiency gains. Internal consistency is high; the 'Financials Snapshot' table perfectly reconciles with the narrative's 2029 targets for revenue ($963B), EPS ($10), and operating margins (15%). However, the report fails to meet the criteria for a 'Good' or 'Excellent' grade due to a total lack of quantified sensitivity or scenario analysis. While the 'Risk & Uncertainty' section identifies material threats such as regulatory action and AWS competition, it does not quantify how changes in these drivers would impact the fair value estimate. The mention of a '5-star' price threshold is a static valuation metric rather than a dynamic stress test of model inputs. Per the grading instructions, the absence of quantified sensitivities on material drivers imposes a hard cap of 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "incorporates a revenue CAGR of roughly 9% over 2024\u20132029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "anticipate operating leverage will lift Amazon\u2019s operating margin to around 14\u201315%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of about 7% in our DCF, reflecting Amazon\u2019s low cost of debt and an equity cost around 8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "assumes a long-term nominal growth of ~3% beyond our explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective Tax Rate: ~21% (consistent with U.S. corporate rate)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "management has indicated that recent capex investments... should moderate",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "quantified_capex_forecast"
+        ],
+        "unjustified_parameters": []
+    }
+}

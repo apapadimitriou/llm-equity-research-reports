@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is structurally sound and provides a cohesive narrative linking Eli Lilly\u2019s valuation to the competitive dynamics of the GLP-1 market and operational execution risks. The transitions between the investment thesis, financial analysis, and valuation sections are generally smooth, and the language is professional. However, the report fails on fundamental consistency and temporal accuracy, triggering multiple hard caps. First, there is a significant temporal misalignment: the report is dated June 6, 2025, yet the 'Works Cited' section claims all sources were accessed on September 10, 2025, and includes a citation from August 7, 2025 (Source 9). This chronological impossibility severely undermines the report's internal logic. Second, a material contradiction exists regarding financial data. The Executive Summary and Valuation sections utilize a 2025 revenue forecast of $61.7 billion, asserting this is 'consistent with the company's own guidance.' However, the Financial Analysis section (Section IV) explicitly states that the company's 2025 revenue guidance is $58.0 billion to $61.0 billion. The model's base assumption actually exceeds the company's stated ceiling, creating an unresolved tension between the narrative and the data. While the qualitative analysis of pricing pressure and manufacturing bottlenecks is strong, these quantitative and temporal errors necessitate a downgrade to 'fair' per the grading guardrails.",
+    "evidence": [
+        "The report is dated June 6, 2025, but Source 9 is dated August 7, 2025, and all sources list an access date of September 10, 2025 (Works Cited).",
+        "The model assumes FY2025 revenue of $61.7 billion (Section II/V), which contradicts the stated company guidance range of $58.0\u2013$61.0 billion (Section IV).",
+        "The narrative claims the $61.7B revenue forecast is 'consistent with the company's own guidance' (Section II), despite the guidance range ending at $61.0B (Section IV)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

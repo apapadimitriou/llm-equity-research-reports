@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to critical internal contradictions and the absence of quantified sensitivity analysis for material drivers. The most significant issue is the discrepancy regarding operating margins: the narrative predicts 'expansion to 42-44% by FY27,' yet the financial snapshot lists the FY2024 actual margin at 46.6%, making the forecast a contraction. Furthermore, the table's FY2027 estimate of 45.2% contradicts the text's stated 42-44% range. According to the decision rules, a single contradiction combined with a lack of quantified sensitivities (the report only provides a qualitative price range) necessitates a 'Poor' grade. While the report explicitly states key inputs like WACC (9.2%) and terminal growth (3.5%), these are point estimates lacking justification through multi-year history or peer benchmarks. The 'Fair Value' section mentions a sensitivity range ($350\u2013$490) but fails to quantify the specific variances in drivers (e.g., revenue growth or margin shifts) that lead to those valuations. This lack of transparency and numeric coherence prevents the model from being auditable or robust.",
+    "assumptions_extracted": [
+        {
+            "quote": "Digital Media revenue growth of 10-11% annually through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI-related revenue contributing incremental growth of $500-750 million by FY26",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to 42-44% by FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital of 9.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate assumptions of 3.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Non-GAAP earnings per share growth of 12-15% annually through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text forecasts margin 'expansion' to 42-44%, but the table shows FY24 actual at 46.6% (a contraction) and FY27 at 45.2% (outside the text's stated range).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without CAPM components",
+            "Terminal growth 3.5% without peer or historical context"
+        ]
+    }
+}

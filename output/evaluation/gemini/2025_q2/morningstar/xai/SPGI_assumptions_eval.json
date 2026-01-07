@@ -1,0 +1,86 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions criteria primarily due to significant internal numeric contradictions and a lack of auditable historical data. While the report explicitly lists key drivers such as revenue CAGR (8%), terminal growth (4%), and target operating margins (45%), these inputs are not supported by the provided evidence. Specifically, the 'Financials Snapshot' table contains 'insufficient data' for all historical years (2022\u20132024), yet the narrative makes specific claims about 2024 performance (e.g., 42% operating margin and $10.50 EPS) that cannot be verified within the document. \n\nMost critically, the report contains a blatant internal contradiction regarding its valuation: the Analyst Note claims a $550 fair value implies a 30x forward P/E, whereas the Fair Value section correctly calculates that $550 divided by the $12.00 EPS forecast is a 46x P/E. This discrepancy, combined with a minor conflict between the text ($20B revenue by 2029) and the table ($20.2B), violates the consistency requirement. Furthermore, while the report mentions a generic \u00b120% fair value sensitivity, it lacks quantified sensitivity analysis for specific material drivers like WACC or margin fluctuations. Per the decision rules, the presence of two or more distinct contradictions and the absence of robust, driver-based sensitivity analysis necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "8% revenue CAGR through 2029, driven by secular trends in ESG data and AI integration.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 42% in FY2024 to 45% by FY2027 through cost synergies",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8%, reflecting a beta of 1.0 and cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029 leads to a fair value of $550 per share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from FY2024 estimated $10.50... yielding FY2025 EPS of $12.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Valuation P/E multiple conflict: Text claims $550 FVE is 30x P/E, but later correctly identifies it as 46x P/E based on $12 EPS.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "2029 Revenue target discrepancy: Text states $20B, while Financials Snapshot table lists $20.2B.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "FY2024 historical base figures (Margin 42%, EPS $10.50) are cited in text but listed as 'insufficient data' in the data table."
+        ]
+    }
+}

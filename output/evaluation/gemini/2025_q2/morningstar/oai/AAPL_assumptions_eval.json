@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple material internal contradictions and the absence of quantified sensitivity analysis. While the report explicitly lists key assumptions such as a 4% Revenue CAGR, 8% WACC, and 32% average operating margin in its appendix, these figures fail the consistency test. Specifically, the narrative forecasts FY2029 revenue at $480 billion, whereas the financial snapshot table lists it as $475 billion. Furthermore, the narrative repeatedly characterizes Services growth as 'double-digit' (12\u201313%), yet the valuation appendix justifies the model using 'high-single-digit' Services growth. These discrepancies suggest the narrative and the financial model are not fully reconciled. Additionally, the report fails the sensitivity requirement; it offers no quantified ranges or scenario tables (e.g., Bull/Bear cases) for material drivers like WACC or revenue growth. The only attempt at sensitivity is a qualitative mention of a potential 2% EPS impact from regulatory changes, which is insufficient for a 'Good' or 'Fair' rating under the provided rubric. Per the hard caps, the combination of two distinct numeric contradictions and the lack of systematic sensitivity analysis mandates a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (FY24\u2013FY29) ~4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating Margin (avg) ~32%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC (Discount Rate) ~8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Effective Tax Rate ~16%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "a $100 billion buyback authorized for 2025",
+            "location": {
+                "section": "Bulls Say / Bears Say",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue for FY2029 is cited as $480 billion in the narrative but $475 billion in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Services growth is described as 12-13% (double-digit) in the narrative but listed as 'high-single-digit' in the valuation assumptions table.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "FY2029 EPS is estimated at 'roughly $9' in the text but explicitly $9.20 in the table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "systematic sensitivity analysis for valuation model"
+        ],
+        "unjustified_parameters": []
+    }
+}

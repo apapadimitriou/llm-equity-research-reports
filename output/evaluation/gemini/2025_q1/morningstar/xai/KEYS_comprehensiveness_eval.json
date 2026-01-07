@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections and provides a clear valuation bridge using a DCF model. However, it is capped at 'Fair' due to several critical omissions and structural weaknesses. First, the Financials Snapshot is generic and lacks essential sector-specific KPIs for a test and measurement company, such as Order growth, Backlog, and Software/Services mix; while mentioned in the text, these are absent from the data tables. Second, there is significant redundancy; the same talking points regarding AI, 6G, and automotive electrification are repeated across the Analyst Note, Strategy, and Bulls/Bears sections without adding incremental depth. Third, the report lacks a dedicated peer benchmarking analysis, providing only vague references to competitors without comparative metrics. Finally, while a fair value estimate is provided, the report lacks any sensitivity or scenario analysis (e.g., bull/bear cases or WACC/growth matrices) to address the 'Medium' uncertainty rating. These gaps, combined with the use of an outdated 2021 source for geographic revenue splits in a 2025 report, result in a document that covers the basics but lacks the analytical depth required for a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis / Sensitivity Matrix"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Orders/Bookings",
+            "Backlog",
+            "Software/Services Revenue Mix",
+            "R&D Intensity %"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Orders/Bookings",
+            "Backlog",
+            "Software Revenue %"
+        ],
+        "uncited_claims": [
+            "Geographic revenue split (40/40/20) relies on Source [3] dated 2021, which is likely outdated for a 2025 outlook."
+        ]
+    }
+}

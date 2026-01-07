@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to the combination of material internal contradictions and the total absence of quantified sensitivity analysis. While the analyst provides explicit inputs for the DCF model\u2014including a 10.5% cost of equity, 3.0% terminal growth, and an 18.5% mid-cycle ROTCE\u2014these are undermined by numeric discrepancies. Specifically, the narrative claims a 4.0% five-year revenue CAGR, yet the financial snapshot table shows revenue growing from $177.6B in 2024 to $208.4B in 2029, which calculates to a significantly lower 3.25% CAGR. Additionally, the report forecasts an 8.3% EPS CAGR 'over the next decade,' but the provided data only spans four years (2025\u20132029), creating a temporal contradiction. Crucially, the report fails the hard cap for sensitivity analysis; despite identifying a 40% probability of a U.S. recession and highlighting risks like tariffs and interest rate volatility, it provides no quantified scenarios or stress tests showing the impact of these variables on the $235 fair-value estimate. Without these ranges, the valuation remains a 'black box,' and the lack of reconciliation between the text and the financial tables suggests a lack of internal coherence across the five pillars of assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "five-year revenue compound annual growth rate (CAGR) of approximately 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "model a mid-cycle ROTCE of 18.5% on a 13.5% CET1 capital ratio",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "discount rate is a cost of equity of 10.5%... incorporates a 5-year beta of 1.1... risk-free rate of 4.5%, and an equity risk premium of 5.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "assume a perpetual growth rate of 3.0% for terminal value calculation",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "guided for full-year 2025 net interest income (NII) excluding Markets of approximately $92 billion",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "forecast diluted EPS to grow at an 8.3% CAGR over the next decade",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims a 4.0% 5-year revenue CAGR, but the Financials Snapshot table (2024-2029) implies a 3.25% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text claims 8.3% EPS CAGR 'over the next decade', but the table only provides a 4-year forecast (2025-2029) to reach that figure.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "specific share count forecast"
+        ],
+        "unjustified_parameters": [
+            "Equity Risk Premium of 5.5% cited as 'standard' without specific market source"
+        ]
+    }
+}

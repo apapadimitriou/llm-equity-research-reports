@@ -1,0 +1,79 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report earns a 'Good' grade for its transparent and quantified approach to modeling inputs. Assumptions are explicitly stated within the narrative and consolidated in a dedicated Appendix table, making them highly traceable. The report is highly specific, providing precise magnitudes for net interest income ($95.5B), adjusted expenses ($95.5B), and credit charge-off rates (3.6%). Justification is solid for operational drivers, as the analyst directly ties forecasts to management\u2019s 2025 guidance and recent quarterly performance. However, it stops short of 'Excellent' because the valuation parameters\u2014specifically the 8.5% WACC and 3.5% terminal growth\u2014are presented as point estimates without the 'evidence-rich' support of peer benchmarking or a detailed CAPM/Gordon Growth derivation. Internal consistency is a strength; the projected 2025 EPS and revenue figures in the Financials Snapshot reconcile logically with the stated margin and expense assumptions. Most importantly, the report avoids the 'Fair' cap by providing robust quantified sensitivities in the Appendix, testing the valuation impact of changes in ROE, NIM, WACC, and terminal growth across Base, Bear, and Bull scenarios. This level of stress-testing provides the necessary transparency for the 'Good' designation.",
+    "assumptions_extracted": [
+        {
+            "quote": "full-year 2025 guidance calls for net interest income of $95.5 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "adjusted expenses of $95.5 billion, reflecting disciplined cost management",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Card Services net charge-off rates expected to reach 3.6% for full-year 2025",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal value calculations assume modest GDP-plus growth rates of 3-4% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "normalized return on tangible common equity of 18-20%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% stated without CAPM derivation or peer benchmarking",
+            "Terminal Growth 3.5% stated without explicit economic justification"
+        ]
+    }
+}

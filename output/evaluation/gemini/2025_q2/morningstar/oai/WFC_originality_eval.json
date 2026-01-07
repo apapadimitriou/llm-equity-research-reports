@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions primarily as a news aggregator rather than an original piece of equity research. Every significant analytical point\u2014including the lifting of the $1.95 trillion asset cap, the 24% jump in investment banking fees, and the $40 billion buyback program\u2014is directly cited from Reuters or other public news outlets. There is no evidence of independent data synthesis; for example, the report mentions net interest income (NII) pressure but relies entirely on management guidance and news summaries rather than providing an original analysis of deposit betas or balance sheet repricing. The valuation section is particularly weak in originality, utilizing boilerplate DCF assumptions (2% terminal growth, 9-10% WACC) and deferring to Bloomberg consensus for EPS growth rates rather than deriving a unique forecast. Because the report lacks any original thesis, quantified causal mechanisms, or interpretive commentary that goes beyond paraphrasing public sources, it fails to meet the threshold for a 'Fair' grade under the provided decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "The recent lifting of the regulator\u2019s $1.95 trillion asset cap now permits calibrated balance-sheet growth.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Net interest income (NII) fell 6% to $11.50 billion amid rate cuts and higher deposit costs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wells has cut over 55,000 jobs and restructured compliance systems, trimming expenses 12\u201315%.",
+                "classification": "Paraphrased",
+                "decision_relevant": false
+            },
+            {
+                "text": "Investment banking fees jumped 24% on strong deal flows, strengthening revenue diversification.",
+                "classification": "Paraphrased",
+                "decision_relevant": false
+            },
+            {
+                "text": "CEO Charlie Scharf cautioned that tariffs might slow U.S. growth, damping loan demand.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on Reuters links for every analytical claim",
+            "Generic DCF with standard 2% terminal growth and no novel drivers",
+            "Boilerplate 'competition from fintech' and 'scale' phrasing",
+            "Citing Bloomberg consensus for EPS growth instead of original modeling"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

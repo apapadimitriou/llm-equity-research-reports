@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a structured overview of AbbVie, covering all required headline sections and maintaining high standards for in-text citations. However, it falls short of a 'Good' rating due to several critical omissions and structural weaknesses. Most notably, the Financials Snapshot is generic and lacks essential biopharma sector KPIs; while drug-specific sales for Skyrizi and Rinvoq are mentioned in the text, they are absent from the multi-year forecast table, as is R&D intensity (R&D as a % of sales). These are core drivers for a company facing a major patent cliff. Additionally, the report lacks a dedicated peer benchmarking section or table, providing only passing qualitative comparisons. There is also significant redundancy: the Cerevel acquisition failure and the $31B immunology sales target are repeated across the Analyst Note, Strategy, Bulls/Bears, and Risk sections with almost no incremental depth or new data provided in subsequent mentions. Finally, while the valuation section identifies key drivers like Revenue CAGR and WACC, it lacks any scenario or sensitivity analysis to address the 'Medium' uncertainty rating assigned to the stock. These gaps in depth and the generic nature of the financial data cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Drug-level Revenue Forecasts (Humira/Skyrizi/Rinvoq)",
+            "R&D as % of Sales",
+            "Pipeline Phase III Count",
+            "Patent Expiration Schedule"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Drug-specific revenue splits in Financials Snapshot",
+            "R&D expenditure/intensity metrics",
+            "Pipeline trial success/failure data in tabular format"
+        ],
+        "uncited_claims": []
+    }
+}

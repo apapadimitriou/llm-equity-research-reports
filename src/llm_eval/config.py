@@ -6,7 +6,7 @@ from typing import Dict
 DEFAULT_MODELS: Dict[str, str] = {
     "openai": "gpt-5",
     "anthropic": "claude-sonnet-4.5",
-    "gemini": "gemini-2.5-pro",
+    "gemini": "gemini-3-flash-preview",
 }
 
 
@@ -20,6 +20,8 @@ class EvalConfig:
     morningstar_only: bool
     human_reports: bool
     timeout_s: int
+    max_output_tokens: int
+    ticker_allowlist_root: Path | None
     strict_message: str
 
 

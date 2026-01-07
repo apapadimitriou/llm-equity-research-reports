@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, functioning primarily as a compilation of news snippets and public data. Every major analytical point\u2014including the Q4 earnings beat, the 2025 NII guidance, and the regulatory consent order updates\u2014is directly attributed to and paraphrased from external sources like Reuters and Banking Dive. There is no evidence of the author linking disparate data points to form a new conclusion; for example, the NII trajectory is presented as a restatement of management's guidance rather than an independent analysis of deposit betas or rate paths. The valuation section is entirely boilerplate, utilizing standard DCF inputs (8.5% WACC, 2% terminal growth) without identifying any novel company-specific drivers. The 'Bulls/Bears' and 'Moat' sections repeat well-worn market narratives regarding the 2016 scandal and fintech competition without adding interpretive depth. Because the report contains zero original syntheses or theses and relies almost exclusively on paraphrased news, it meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q4 2024 results beat expectations, driven by a 59% surge in investment banking fees and cost reductions.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management forecasts NII rising 1\u20133% in 2025 as deposit costs ease and loan demand recovers.",
+                "classification": "Paraphrased",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wells Fargo is making progress on regulatory relief: in early 2025 it closed 11 consent orders.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The Fed\u2019s $1.95T asset cap still binds growth but may be lifted once compliance milestones are met.",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            },
+            {
+                "text": "Turnaround (via cost cuts, digitization and fee growth) and eventual asset-cap removal should boost profitability.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Moat is narrow due to large low-cost deposit base vs. digital and fintech competitors.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Reuters for all forward-looking guidance",
+            "Boilerplate 'competition from fintech' and 'scale economies' phrasing",
+            "Recapping news events (Zelle lawsuit, consent orders) without interpretive value"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

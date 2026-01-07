@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates 'Good' analytical depth by providing clear causal mechanisms and explicit, benchmarked assumptions. Causal reasoning is evident in the explanation of margin expansion, attributed to \"software mix and supply-chain stabilization,\" and the \"platformization approach where customers replace point products\" as a driver for switching costs. Valuation assumptions are quantified and benchmarked, specifically the WACC components: \"WACC ~9.0% (Rf~4.5%; ERP~6%; beta~1.1).\" The report also includes a high-quality inference regarding the \"deal\u2019s 1% projected ROI\" for the CyberArk acquisition. However, it fails to reach the 'Excellent' threshold because its scenario analysis is not extensive. While it provides a single sensitivity range\u2014noting that \"0.5% higher WACC... lower fair value by 5\u201310%\"\u2014it lacks multiple quantified scenarios (e.g., Bull/Bear cases) or a multi-variable sensitivity matrix. The treatment of uncertainty, while rated as 'High,' is not comprehensively explored through stress-testing of key drivers like operating margins or subscription growth. Actionable implications are present, comparing the $180 fair value to the market price, but the lack of robust scenario modeling limits the depth of the investment conclusion.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "impact of CyberArk on operating margins not quantified"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 2.5% with no industry benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity analysis for operating margins or acquisition synergies"
+        ]
+    }
+}

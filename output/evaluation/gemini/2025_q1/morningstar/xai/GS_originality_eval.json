@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying almost entirely on restating the Q1 2025 earnings press release and public company targets. Every identified insight is either a direct restatement of reported financial figures (e.g., equities trading revenue beating estimates) or a generic sector observation (e.g., regulatory pressures and competition from fintech). There is no evidence of the analyst linking disparate data points to form a new conclusion; for instance, the projection of margin expansion is attributed to vague 'cost efficiencies' rather than a specific, quantified mechanism. The valuation section is boilerplate, utilizing standard DCF assumptions (9.5% WACC, 3% terminal growth) without any novel drivers. Furthermore, the reliance on Wikipedia and social media for business descriptions and capital allocation data underscores a lack of proprietary research. Per the decision rules, the absence of any synthesis or original thesis necessitates a grade of Poor.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Goldman Sachs delivered strong Q1 2025 results, with net revenues of $15.06 billion... driven by robust equities trading revenue.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Aiming to grow assets under supervision to over $3 trillion by 2027 through organic expansion and targeted acquisitions.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins are projected to expand from 32% in 2025 to 35% by 2029, reflecting cost efficiencies and fee-based revenue mix.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Goldman Sachs possesses a Wide Economic Moat, primarily sourced from intangible assets and switching costs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Share buyback program of up to $40 billion signals confidence in undervaluation and supports EPS accretion.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Q1 2025 press release for all 'analysis'",
+            "Boilerplate moat and strategy phrasing",
+            "Use of Wikipedia and X (Twitter) as primary sources"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

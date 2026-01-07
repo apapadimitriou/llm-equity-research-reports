@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is almost entirely derivative, functioning as a compilation of existing Morningstar research and public news headlines rather than an independent analysis. Every core component of the investment thesis\u2014including the $190 Fair Value Estimate, the 'Wide' moat rating, the 12% revenue CAGR, and the 'Exemplary' capital allocation rating\u2014is explicitly attributed to or copied from Morningstar. There is no evidence of original synthesis; the report merely restates data points from sources like KGI Securities (the 1 million XPU cluster target) and Reuters (Apple's in-house chip risk) without adding interpretive commentary or new conclusions. The valuation section is a boilerplate restatement of a standard DCF model using third-party assumptions, lacking any novel drivers or proprietary mechanisms. Because the report contains zero original theses or syntheses and relies on \u22653 paraphrased/generic insights, it fails to meet the criteria for a higher grade and is capped at 'Poor' per the decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI semiconductor sales climbed 46% YoY to $4.4 billion driven by custom chips and networking gear.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Three hyperscalers plan to deploy one million Broadcom 'XPU' AI compute clusters by 2027.",
+                "classification": "Paraphrased",
+                "decision_relevant": false
+            },
+            {
+                "text": "VMware integration is on track to approach pre-acquisition margin profile by end of FY2024.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Apple's plan to use in-house wireless chips by 2025 could phase out Broadcom components.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value estimate of $190 based on 12% CAGR and 8.5% WACC.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Broadcom benefits from switching costs in software and intangible assets in chip design (Wide Moat).",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Fair Value Estimate copied directly from Morningstar",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Bulls/Bears sections repeat standard news headlines"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

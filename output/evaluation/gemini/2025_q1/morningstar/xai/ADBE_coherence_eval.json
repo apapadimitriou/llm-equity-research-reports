@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report earns a 'poor' grade due to significant internal contradictions, temporal impossibilities, and the use of severely outdated sources that undermine the valuation's credibility. Structurally, the report follows a standard template, but the data integrity fails upon closer inspection. A primary issue is the temporal inaccuracy found in Source [3], which is dated September 2025, six months after the report\u2019s March 2025 publication date. Furthermore, the report relies on Source [7] from 2015 to justify a 2025 WACC and Beta; this decade-long gap renders the cost of capital assumptions irrelevant for a high-growth technology firm. \n\nInternal consistency is also lacking between the narrative and the provided tables. The 'Fair Value and Profit Drivers' section explicitly forecasts an operating margin of 45% for FY25, yet the 'Financials Snapshot' table lists the FY25 forecast at 45.5%. More critically, the narrative constructs an EPS bridge to a $24.50 target in FY29, but the Financials Snapshot table fails to provide any EPS data for FY27 through FY29, even including a note about 'insufficient data' within the cell. Additionally, the table note claims insufficient data for FY22-24 actuals despite those specific figures being present in the table. These unresolved tensions between the text and the data tables, combined with the impossible source dating, result in a failure of fundamental coherence.",
+    "evidence": [
+        "Source [3] is dated 2025-09-09, which post-dates the report's 2025-03-13 publication date (Sources).",
+        "The Fair Value section projects 45% FY25 operating margins, contradicting the 45.5% figure in the Financials Snapshot table.",
+        "The Financials Snapshot table lacks EPS forecasts for FY27-FY29, leaving the narrative's $24.50 FY29 EPS bridge unsupported."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

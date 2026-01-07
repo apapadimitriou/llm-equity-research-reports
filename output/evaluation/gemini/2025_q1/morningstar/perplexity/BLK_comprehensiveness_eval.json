@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all required sections from the Analyst Note to ESG and Capital Allocation. However, it fails to meet the technical depth required for a 'Good' or 'Excellent' rating due to two primary omissions. First, the Financials Snapshot table is generic; while it includes standard financial metrics like Revenue and EPS, it omits the two most critical sector-specific KPIs for an asset manager: Assets Under Management (AUM) and Net Inflows. Per the grading instructions, the absence of \u22652 core sector KPIs in the snapshot (AUM and Net Inflows) triggers a hard cap at 'Fair.' Second, the report lacks any specific peer benchmarking or scenario/sensitivity analysis. While the text mentions market trends and strategic acquisitions (GIP, HPS), it does not provide a comparative analysis against direct competitors like State Street or Vanguard. The valuation section provides a high-level link between AUM growth and fair value but lacks the explicit bridge or sensitivity tables expected in professional-grade research. Consequently, despite the consistent sourcing and clear writing, the report remains at a 'Fair' level.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Operating Margin",
+            "Technology Services Revenue (Aladdin)"
+        ],
+        "sector_kpis_missing": [
+            "AUM (in Financials Snapshot table)",
+            "Net Inflows (in Financials Snapshot table)",
+            "Average Fee Rate (bps)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUM (forecasts)",
+            "Net Inflows (forecasts)",
+            "Fee Rate (bps)"
+        ],
+        "uncited_claims": []
+    }
+}

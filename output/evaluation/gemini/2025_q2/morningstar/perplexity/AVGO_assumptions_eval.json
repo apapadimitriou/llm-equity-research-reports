@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple internal numeric contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in listing key assumptions\u2014such as an 85% AI revenue CAGR, a 65% terminal operating margin, and an 8.5% WACC\u2014it fails on the pillars of consistency and stress-testing. Specifically, the introductory text claims record revenues of $57 billion, which directly contradicts the 'Financials Snapshot' table listing FY 2024A revenue as $51.6 billion. Furthermore, the 'Business Description' states the Semiconductor Solutions segment contributes approximately 53% of total revenue, yet the 'Bulls Say' section identifies Infrastructure Software revenue as $21.5 billion for FY 2024; against the table's $51.6 billion total, this implies a semiconductor share of 58.3%, creating a second distinct contradiction. Justification is only partial, as it relies heavily on management's $60\u201390 billion AI revenue target without peer benchmarking or independent verification of the non-AI business trajectory. Most critically, the report offers no quantified sensitivity tables or scenario modeling to demonstrate how the $415 Fair Value Estimate would fluctuate under different growth or discount rate assumptions. Per the mandatory grading caps, the combination of unresolved numeric contradictions and the absence of quantified sensitivities necessitates a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "AI Revenue CAGR 2024-2027: 85%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Operating Margin: 65%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "AI revenue could reach $60-90 billion by fiscal 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Infrastructure software revenue of $21.5 billion in fiscal 2024",
+            "location": {
+                "section": "Bulls Say / Bears Say",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Intro claims $57B revenue for the platform, while the Financials Snapshot table lists FY 2024A revenue as $51.6B.",
+                "locations": [
+                    "Analyst Note / Intro",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text claims Semiconductor segment is 53% of revenue, but the combination of Software revenue ($21.5B) and Total revenue ($51.6B) implies a 58.3% share.",
+                "locations": [
+                    "Business Description",
+                    "Bulls Say / Bears Say"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% stated without derivation of risk-free rate or beta."
+        ]
+    }
+}

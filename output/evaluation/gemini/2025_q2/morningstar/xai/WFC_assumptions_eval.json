@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to a combination of a major internal numeric contradiction and the absence of quantified sensitivity analysis. Specifically, the 'Fair Value and Profit Drivers' section presents an EPS bridge that is mathematically incoherent: it starts with a 2024 base of $5.61 and applies adjustments (+$0.50, +$0.30, -$0.20) that sum to $6.21, yet the report concludes this yields a 2029 EPS of $7.50. This $1.29 discrepancy represents a fundamental failure of internal consistency. Additionally, while the report identifies key drivers such as revenue CAGR (4.0%) and operating margins (28%), it offers no quantified sensitivity or scenario analysis. The 'Risk & Uncertainty' section merely provides a vague qualitative statement that risks could 'swing valuation by 20-30%' without providing the necessary ranges or impact tables for material levers like interest rates or credit costs. Furthermore, the justification for these assumptions is undermined by the 'Financials Snapshot,' which contains 'insufficient data' for all historical periods (2022\u20132024), making it impossible to verify if the forecasts are supported by multi-year history or peer benchmarks. These flaws violate the hard caps regarding internal contradictions and the lack of stress-testing, necessitating the lowest grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% from 2025-2029, driven by fee income growth and lending expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve to 28% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating banking sector risks.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 base of $5.61, adding $0.50 from revenue growth, $0.30 from margin expansion, minus $0.20 from higher provisions, yielding 2029 EPS of $7.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal Growth | 2.5% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The EPS bridge math is incorrect: $5.61 + $0.50 + $0.30 - $0.20 equals $6.21, but the text claims it yields $7.50.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (2029 Forecast)"
+                ]
+            },
+            {
+                "description": "Revenue CAGR is cited as '4-5%' in the Analyst Note but strictly '4.0%' in the Fair Value section and Appendix table.",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% lacks specific calculation or peer benchmarking",
+            "Revenue CAGR 4.0% lacks historical context due to 'insufficient data' in snapshot"
+        ]
+    }
+}

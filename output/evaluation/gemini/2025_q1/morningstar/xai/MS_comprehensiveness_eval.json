@@ -1,0 +1,65 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report follows a professional structure but fails significantly on technical depth and evidentiary integrity. While all headline sections are present, the report is capped at 'Fair' due to two critical failures: the omission of at least three core sector KPIs (Net Interest Margin, Provisions for Credit Losses, and CET1 ratio) in the Financials Snapshot, and the explicit admission of using 'insufficient' or 'estimated' data for the valuation model and ESG scores (Sources 11 and 13). Furthermore, the report relies on a source from 2015 (Source 6) for a 2025 analysis, violating the requirement for current data. The grade is further downgraded to 'Poor' due to pervasive redundancy and the absence of peer benchmarking. Specifically, the E*TRADE acquisition and efficiency ratio improvements are repeated across four separate sections (Analyst Note, Strategy, Bulls Say, and Capital Allocation) without providing incremental depth. Additionally, the lack of a dedicated peer benchmarking table or comparative industry analysis triggers a mandatory downgrade. While the valuation section successfully links operating drivers to the fair value estimate, this single strength cannot overcome the systemic issues with sourcing, sector-specific metrics, and repetitive content.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Efficiency Ratio",
+            "Assets Under Management (AUM) Growth",
+            "Operating Margin",
+            "Return on Invested Capital (ROIC)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Provisions for Credit Losses",
+            "Common Equity Tier 1 (CET1) Ratio",
+            "Net Interest Income (NII)",
+            "Advisory Fee Breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report is dated 2025 but relies on a source from 2015 for 'News & Analysis'.",
+                "locations": [
+                    "Cover Block",
+                    "Sources [6]"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Provisions for Credit Losses",
+            "CET1 Ratio"
+        ],
+        "uncited_claims": [
+            "Valuation model assumptions (WACC, Beta) explicitly cited as having 'insufficient data' for a direct source.",
+            "Sustainalytics ESG score explicitly cited as 'estimated' due to insufficient data.",
+            "2022-2024 actuals in the Financials Snapshot are 'extrapolated' rather than sourced from official filings."
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to significant internal contradictions and the total absence of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue growth, WACC, and margin expansion, it fails to maintain mathematical and temporal consistency. Specifically, the WACC is stated as 7.5%, yet the provided components (4.0% risk-free rate, 0.8 beta, and 5.0% equity risk premium) calculate to 8.0% using the standard CAPM framework. This unresolved numeric discrepancy undermines the integrity of the discounted cash flow model. Furthermore, there is a temporal contradiction regarding operating margins; the narrative claims a 28% margin base in 2024, whereas the financial snapshot table applies that same 28% to the 2025 forecast, suggesting a stagnation not aligned with the 'expansion' thesis. Justification for key inputs is weak, often relying on generic 'industry averages' or 'efficiency gains' without citing specific historical benchmarks or peer comparisons to validate the feasibility of a 400-basis-point margin improvement. Most critically, the report lacks any quantified sensitivity or scenario analysis. While it defines 'Medium Uncertainty' as a price range in the glossary, it provides no data or tables showing how the fair value estimate would react to fluctuations in Keytruda's growth or changes in the discount rate. Per the decision rules, the combination of a material numeric contradiction and the lack of sensitivities necessitates a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "5-year revenue CAGR of 5%, driven by 8% growth in oncology offset by flat vaccine sales",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins expanding from 28% in 2024 to 32% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.5%, incorporating a beta of 0.8 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 2.5% | Long-term industry average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2024 base EPS of $8.50 grows to $9.00 in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (4.0% Rf + 0.8 Beta * 5.0% ERP) mathematically equal 8.0%, but the report states and uses 7.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Text claims 28% margin in 2024 base; Financials Snapshot table lists 28% as the 2025 forecast, implying no expansion in the first year.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 2.5% cited only as 'industry average' without peer data.",
+            "Margin expansion of 400bps attributed to 'efficiency gains' without specific cost-cutting programs."
+        ]
+    }
+}

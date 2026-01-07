@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is professionally written with a clear narrative arc and sophisticated cross-referencing, particularly between the Analyst Note and the Moat/Risk sections. However, it suffers from significant internal contradictions and temporal inaccuracies that necessitate a 'fair' grade under the rubric's hard caps. The most glaring issue is the discrepancy in the Financials Snapshot: the table labels the 2025 fiscal year as an 'Estimate' (2025E), yet the narrative and the table's own footnotes explicitly state that FY2025 ended in January 2025 with reported revenue of $130.5 billion. This creates a fundamental conflict between the data's status as historical versus projected. Additionally, the report contains a temporal misalignment regarding fiscal periods; it references 'Fiscal first-quarter 2025' results reported in May 2025, but given the January 2025 fiscal year-end, these results would actually belong to Q1 FY2026. While the qualitative analysis is strong\u2014specifically the reconciliation of China-related geopolitical risks in the Analyst Note with the Bear case\u2014the quantitative framework is internally inconsistent. The Fair Value section also claims a 5-year CAGR through 2029, but the provided table only allows for a 4-year growth calculation from the 2025 base. These unresolved tensions between the narrative claims and the tabular data prevent the report from achieving a higher coherence rating.",
+    "evidence": [
+        "Financials Snapshot table labels 2025 as '2025E' despite the footer stating FY2025 ended Jan 26, 2025, and reported $130.5 billion (Financials Snapshot).",
+        "Analyst Note refers to 'Fiscal first-quarter 2025 results' reported in May 2025, which contradicts the Jan 2025 fiscal year-end (Analyst Note).",
+        "The Fair Value section projects a 5-year CAGR through 2029 starting from a 2025 base, but the table only provides four years of growth data (Fair Value/Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is professionally structured and covers all 12 required sections, including a detailed Analyst Note, Economic Moat analysis, and a scenario analysis in the Appendix. However, it is strictly capped at 'Fair' due to two primary deficiencies. First, it triggers the hard cap for sector-specific KPIs: for a SaaS-focused equity research report, the Financials Snapshot table is unacceptably generic, omitting core metrics such as Annual Recurring Revenue (ARR), Net Retention Rate (NRR), and billings. While some of these (cRPO, retention) are mentioned in the narrative text, their absence from the multi-year history and forecast table violates the comprehensiveness requirement for the Financials Snapshot. Second, the report lacks a formal peer benchmarking section or table. While competitors like Microsoft and Salesforce are mentioned in the 'Bulls/Bears' and 'Risk' sections, there is no comparative data on valuation multiples or operating performance relative to the industry. This lack of quantitative industry context necessitates a downgrade. Finally, while the valuation section lists assumptions, it lacks a granular bridge or explicit sensitivity linkage between specific operating drivers and the final fair value outcome.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Industry Comparative Data"
+        ],
+        "sector_kpis_present": [
+            "Subscription Revenue",
+            "cRPO (text only)",
+            "Retention Rate (text only)"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "Customer Acquisition Cost (CAC)",
+            "cRPO (from Financials Snapshot table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "cRPO (missing from the multi-year Financials Snapshot table)"
+        ],
+        "uncited_claims": []
+    }
+}

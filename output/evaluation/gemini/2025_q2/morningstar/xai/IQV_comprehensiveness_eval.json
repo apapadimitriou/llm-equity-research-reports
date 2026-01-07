@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' because while it populates the required sections, the depth of quantitative evidence and comparative analysis is insufficient for a higher rating. The report successfully identifies key qualitative drivers, such as the wide economic moat derived from proprietary data and the $31.5 billion R&D backlog. However, it fails several comprehensiveness benchmarks. Most notably, the Financials Snapshot is skeletal; it contains 'Insufficient data' for almost all historical line items (2022\u20132024) except for Revenue and EPS, and it omits critical sector-specific KPIs like Book-to-Bill and Backlog from the tabular data, despite their mention in the text. Furthermore, the report lacks a dedicated peer benchmarking section, offering only a cursory mention of one competitor (ICON plc) without any side-by-side metric comparison. The valuation section, while logically linked to operating drivers (5% CAGR, margin expansion), lacks a formal sensitivity or scenario analysis, providing only a single fair-value estimate. Redundancy is also a factor, as the same data points regarding backlog and growth rates are repeated across the Analyst Note, Strategy, and Moat sections without additional granularity. These gaps in historical data, peer context, and sensitivity modeling prevent the report from reaching a 'Good' or 'Excellent' standing.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "R&D Backlog",
+            "Book-to-bill ratio",
+            "TAS Revenue Growth"
+        ],
+        "sector_kpis_missing": [
+            "Net Burn Rate",
+            "Segment-level Operating Margins",
+            "Cancellations"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Backlog (historical/forecast table)",
+            "Book-to-Bill (historical/forecast table)",
+            "Historical FCF and ROIC data"
+        ],
+        "uncited_claims": [
+            "Market Cap insufficient data",
+            "Price/FVE insufficient data"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report receives a 'Poor' grade due to significant internal contradictions and a total lack of quantified sensitivity analysis. While the report explicitly lists four key valuation assumptions (Revenue CAGR, Operating Margin, WACC, and Terminal Growth) in an appendix table, these figures are directly contradicted by the 'Financials Snapshot' table, which labels all corresponding data points for FY 2025\u20132029 as 'insufficient.' This unresolved numeric conflict between the narrative's model inputs and the formal financial summary is a critical failure in consistency. Furthermore, the justification for these assumptions is exceptionally weak; the operating margin is described as an 'assumed expansion' despite 'insufficient data for actual,' and the WACC is dismissed as a 'standard for tech' without any company-specific risk assessment or link to current market yields. Most importantly, the report fails to provide any quantified sensitivity or scenario analysis for material drivers like revenue growth or margins, which triggers a hard cap on the grade. The lack of specific drivers for the 20% margin target and the absence of share count or tax rate assumptions render the valuation 'black-box' in nature, despite the appearance of a structured table.",
+    "assumptions_extracted": [
+        {
+            "quote": "Assuming a revenue CAGR of 30% over 2025-2029 (based on recent 29-36% growth rates)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion to 20% (insufficient data for actual)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of 10.0% | Standard tech discount",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 4.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "full-year fiscal 2025 product revenue guidance to $3.356 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Key Valuation Assumptions Table and Fair Value section provide specific 30% CAGR and 20% margin forecasts for FY2025-2029, while the Financials Snapshot table lists all metrics for those years as 'insufficient'.",
+                "locations": [
+                    "Financials Snapshot",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Operating margin of 20% stated as 'assumed' with no historical basis provided.",
+            "WACC of 10% cited only as 'standard for tech'."
+        ]
+    }
+}

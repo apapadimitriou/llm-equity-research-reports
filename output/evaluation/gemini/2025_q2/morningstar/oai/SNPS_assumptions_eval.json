@@ -1,0 +1,101 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for the 'Quality of Assumptions' due to multiple internal contradictions and a total absence of quantified sensitivity analysis. While the analyst explicitly lists key drivers such as revenue CAGR, tax rates, and terminal growth, these inputs are not internally coherent. Specifically, the report contains two distinct numeric contradictions: first, the WACC is cited as 8.5% in the Investment Thesis but changed to 9% in the Fair Value section and Appendix without explanation. Second, and more critically, the narrative identifies 'non-GAAP operating margins ~50\u201355%' as a primary driver for the $520 fair value estimate, yet the 'Financials Snapshot' table forecasts operating margins between 23.0% and 25.0% for the same period. This massive discrepancy between the text and the supporting data table remains unresolved and suggests a fundamental breakdown in model transparency. Furthermore, despite identifying significant geopolitical risks\u2014such as the total halt of China sales\u2014the report offers no quantified sensitivity analysis or scenario modeling to demonstrate how these material drivers impact the valuation. Per the grading instructions, the combination of two or more distinct contradictions and the lack of quantified stress-testing mandates a 'Poor' grade, as the outputs function as a 'black box' that does not reconcile with the report's own data.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR ~12% (2025\u201329)",
+            "location": {
+                "section": "Investment Thesis",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins ~50\u201355%",
+            "location": {
+                "section": "Investment Thesis",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "DCF at 8.5% WACC",
+            "location": {
+                "section": "Investment Thesis",
+                "page": "1"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "assume non-GAAP tax ~18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "share count ~160M (diluted)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "terminal FCF growth 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2026 revenue ~$8.8B (including $2.0B from Ansys products)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC is stated as 8.5% in the Thesis but 9% in the Fair Value section and Appendix.",
+                "locations": [
+                    "Investment Thesis (Page 1)",
+                    "Fair Value and Profit Drivers (Page 2)"
+                ]
+            },
+            {
+                "description": "Narrative assumes 50-55% non-GAAP operating margins, but the Financials Snapshot table shows 23-25% operating margins for the forecast period.",
+                "locations": [
+                    "Investment Thesis (Page 1)",
+                    "Financials Snapshot (Page 3)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_ranges"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% lacks a detailed build-up or source beyond 'coherent with tech growth profiles'."
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required sections and is well-supported by citations; however, it fails to meet the technical depth required for a 'Good' or 'Excellent' rating due to significant sector-specific omissions and redundancy. The most critical deficiency is the Financials Snapshot, which utilizes generic corporate metrics (ROIC, FCF) that are largely irrelevant for a money center bank, while omitting core sector KPIs such as Net Interest Margin (NIM), Loan Loss Provisions, and the Efficiency Ratio within the data table. Although some of these figures appear in the text, their absence from the primary financial summary triggers a hard cap of 'Fair'. Additionally, the report exhibits substantial redundancy, repeating the same data points regarding branch expansion and checking account origination across the Business Description, Strategy, and Moat sections without adding new depth. Peer benchmarking is skeletal, limited to brief mentions of JPMorgan and Citi without comparative data tables or valuation multiples. Finally, the absence of any scenario or sensitivity analysis (e.g., interest rate sensitivity or credit stress scenarios) further limits the comprehensiveness of the valuation and risk sections.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income",
+            "ROTCE",
+            "CET1"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

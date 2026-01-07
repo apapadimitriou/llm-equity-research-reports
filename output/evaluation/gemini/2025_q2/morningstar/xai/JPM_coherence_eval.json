@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report fails fundamentally on temporal coherence and internal consistency. Most glaringly, the report is dated July 8, 2025, yet it cites news articles and earnings results from July 15, 2025. This impossible chronology suggests the document was assembled without regard for factual timelines. Furthermore, there is a direct contradiction between the narrative and the provided data tables. The Analyst Note claims 'sustained lending margins' and a 'raised NII forecast' for 2025, yet the Financials Snapshot shows the operating margin actually declining from 36% in 2024 to 35% in 2025. This 100-basis-point compression is never reconciled with the bullish commentary. Additionally, the Bulls/Bears section is poorly integrated; the Bear case highlights 'flat deposits and loans' as a sign of weakness, which directly conflicts with the Strategy section's assumption of 3-5% annual loan growth used to justify the fair value estimate. The report also frequently cites 'insufficient data' for critical metrics like ROE and CET1 ratios, yet proceeds to make definitive claims about JPM's 'strong capital position' and 'outperforming industry averages.' These gaps force the reader to bridge logical leaps that the text itself fails to support, resulting in a fragmented and contradictory argument.",
+    "evidence": [
+        "Report date of 2025-07-08 (Cover Block) contradicts Sources 1 and 2 which are dated 2025-07-15 (Sources).",
+        "Narrative claims 'sustained lending margins' (Analyst Note) while the Financials Snapshot table shows Op-Margin dropping from 36% in 2024 to 35% in 2025.",
+        "The Bear case of 'flat deposits and loans' (Bulls/Bears) is never reconciled with the 3-5% loan growth forecast used for valuation (Strategy/Outlook)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

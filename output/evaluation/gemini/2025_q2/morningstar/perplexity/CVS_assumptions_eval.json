@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for several key drivers, including a WACC of 7.5%, a terminal growth rate of 2.5%, and a revenue CAGR of 5.2%. These figures are clearly presented in a dedicated 'Key Valuation Assumptions' appendix and within the 'Fair Value and Profit Drivers' section, ensuring high explicitness and specificity regarding units and time horizons. However, the report fails to meet the criteria for a 'Good' grade due to the complete absence of quantified sensitivity analysis or scenario modeling. While the 'Risk & Uncertainty' section qualitatively describes potential headwinds such as regulatory changes and medical cost inflation, it does not calculate the specific impact these variables would have on the $78.00 fair value estimate. Justifications for the assumptions are present but relatively thin; for instance, the WACC is attributed generally to an 'investment-grade credit profile' without providing the underlying beta, risk-free rate, or equity risk premium. Internal consistency is generally maintained, although there is a minor range discrepancy between the narrative's '5-7%' revenue growth and the appendix's '5.2%' CAGR. Per the mandatory grading instructions, the lack of quantified sensitivities on material drivers like the Medical Loss Ratio (MLR) or discount rates necessitates a hard cap at 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2027: 5.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The weighted average cost of capital estimate of 7.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "medical loss ratio targeted to stabilize in the 86-88% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Store closure impact: -$200M annual revenue",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "full-year adjusted EPS raised to $6.00-$6.20",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth rate of 2.5% is stated without economic justification or historical context.",
+            "WACC of 7.5% lacks a breakdown of cost of equity, cost of debt, or capital structure weights."
+        ]
+    }
+}

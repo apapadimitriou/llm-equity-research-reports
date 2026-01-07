@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a high-quality summary of public information and management guidance rather than an original piece of equity research. It fails to provide any unique synthesis or original theses, relying instead on restating figures and narratives directly from the provided source materials. For example, the projections for FARAPULSE market share, the 60\u201380% PFA adoption rate, and the 50\u201375 basis point margin expansion are all direct restatements of management's own Investor Day targets and guidance. The valuation section lacks any novel drivers, utilizing standard DCF mechanics and repeating the company's provided growth rates as inputs. While the report is well-structured and specific regarding units and catalysts (e.g., the $200M tariff impact), these are all publicly available data points from recent earnings calls and news releases. There is no evidence of the analyst linking disparate data points to reach a non-obvious conclusion. Per the decision rules, the absence of any clear synthesis or original thesis necessitates a grade of 'Poor'.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "FARAPULSE positioned to capture substantial market share in the approximately $8 billion global atrial fibrillation ablation market.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management projects that pulsed field ablation could represent 60-80% of AF procedures by 2028.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Adjusted operating margin expansion of 50-75 basis points annually through 2027, driven by manufacturing efficiency.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Anticipated $200 million tariff impact in 2025 demonstrates vulnerability to macroeconomic and trade policy changes.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Category leadership strategy designed to establish dominant positions in high-growth medical technology segments.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on management's own Investor Day projections",
+            "Boilerplate 'category leadership' and 'operational excellence' phrasing",
+            "Recapping public FDA approval news as a primary insight"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

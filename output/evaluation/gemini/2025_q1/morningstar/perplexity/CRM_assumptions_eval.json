@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for key valuation drivers, including revenue growth, operating margins, WACC, and terminal growth, primarily located in the 'Fair Value and Profit Drivers' and 'Appendix' sections. Specificity is a strength, with clear magnitudes (e.g., 12% growth, 35-36% peak margins) and time horizons (FY27-FY28). However, justification is only partial; while the report links growth to 'Agentforce adoption,' it lacks rigorous multi-year historical benchmarking or peer comparisons to support the 12% growth forecast, which notably exceeds current management guidance of 8-9%. Internal consistency is mostly maintained, but a numeric contradiction exists: the financial snapshot table calculates to 11.04% revenue growth for FY29, which conflicts with the narrative's claim that growth moderates to '8-10% thereafter' (post-FY27). Most critically, the report fails to provide any quantified sensitivity or scenario analysis for material drivers like WACC or margin expansion, offering only qualitative risk descriptions. Per the instruction's hard caps, the absence of quantified sensitivities and the presence of a numeric inconsistency between the text and tables limit the grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "normalized revenue growth of 12% through FY27, moderating to 8-10% thereafter.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins expanding to 35-36%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 3% aligns with long-term GDP expectations.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Data Cloud and AI solutions expanding from $1 billion to $5+ billion in annual recurring revenue by FY28",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "average contract value increases of 15-20% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Financials Snapshot table implies FY29 revenue growth of 11.04% ($57.3B vs $51.6B), contradicting the text claim that growth moderates to 8-10% after FY27.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC of 9.5% provided without a CAPM build-up or peer comparison."
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a high level of explicitness and specificity regarding its base-case assumptions. Key drivers, including a 7.5% five-year revenue CAGR, a 45-46% terminal operating margin, and a detailed WACC buildup (7.8%), are clearly stated and proximal to the forecasts they inform. Justification is solid, leveraging management guidance, Q1 2025 performance, and specific product-level targets (e.g., $31 billion for Skyrizi and Rinvoq by 2027). Internal consistency is high; the financial snapshot table reconciles with the narrative's CAGR and margin expansion claims. However, the report fails the 'Stress-tested' pillar. While it identifies material risks such as biosimilar competition and M&A integration in the 'Risk & Uncertainty' section, it offers no quantified sensitivity analysis or scenario modeling. There are no ranges provided for how fluctuations in revenue growth, WACC, or margin would impact the $195 fair value estimate. Per the grading instructions, the total absence of quantified sensitivity analysis on material drivers necessitates a hard cap at 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 7.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Skyrizi and Rinvoq will reach combined sales of over $31 billion by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "forecast the adjusted operating margin to expand from 42.3% in Q1 2025 to approximately 45-46% by the end of our explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model discounts these future free cash flows using a weighted average cost of capital (WACC) of 7.8%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a terminal growth rate of 2.5% to our final-year cash flow",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "estimated 22% statutory tax rate",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "10-year explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis",
+            "explicit_share_count_forecast"
+        ],
+        "unjustified_parameters": []
+    }
+}

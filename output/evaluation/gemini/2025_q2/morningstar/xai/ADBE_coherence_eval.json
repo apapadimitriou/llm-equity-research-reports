@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to critical failures in temporal consistency and mathematical logic. The most egregious issue is the chronological impossibility: the report is dated June 13, 2025, yet the Analyst Note and Bears Say sections cite stock price declines and investor activity from 'mid-August 2025.' Multiple sources (Source [2] and [7]) are dated nearly two months after the report was purportedly written. This suggests a fundamental failure in document control or the use of future-dated templates that were not reconciled with the publication date.\n\nAdditionally, the valuation section contains a major internal contradiction. It explicitly states a WACC of 8.5% but lists components\u2014a 7% risk-free rate, 6% equity risk premium, and a 1.1 beta\u2014that calculate to a 13.6% cost of equity using the standard CAPM formula. This 510-basis-point discrepancy between the stated rate and its underlying assumptions indicates the narrative and the model are completely decoupled. While the Financials Snapshot table correctly reflects the EPS and margin expansion targets described in the text, these alignments cannot salvage a report that relies on 'future' facts and broken financial formulas. The reader is forced to disregard the primary valuation thesis due to these unresolved tensions.",
+    "evidence": [
+        "Report date: 2025-06-13 vs. 'declining 36.93%... as of mid-August 2025' in Analyst Note.",
+        "WACC of 8.5% vs. components (7% RF, 6% ERP, 1.1 Beta) totaling 13.6% in Fair Value section.",
+        "Source [7] dated 2025-08-10 cited in a report dated 2025-06-13."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

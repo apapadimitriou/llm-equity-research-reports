@@ -1,0 +1,25 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by moving beyond description to provide causal mechanisms for its forecasts. It explicitly links investment banking revenue to deal activity and attributes margin expansion to scale benefits and cost controls. The valuation is supported by a detailed EPS bridge and explicit DCF assumptions, including WACC and terminal growth. Crucially, the report includes a quantified sensitivity analysis, noting that a '100bps cut potentially reducing earnings by 5-10%,' which satisfies the requirement for stress-testing. It also benchmarks the forward P/E against historical averages. However, it falls short of an 'Excellent' grade because the scenario analysis is limited to a single variable (interest rates) rather than a comprehensive multi-scenario valuation (e.g., Bull/Bear cases). Additionally, several sections cite 'insufficient data' for key metrics like ROE and CET1, which prevents a fully benchmarked comparison against peers. Verbatim evidence: 'investment banking fees likely boosted by increased deal activity'; '100bps cut potentially reducing earnings by 5-10%'; 'operating margins expanding... reflecting cost controls and scale benefits'; 'P/E of 12.4x... in line with historical averages'; 'WACC is estimated at 9.0%'.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "deposit beta impact on NII not quantified",
+            "specific impact of First Republic integration on wealth management margins"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3% lacks specific long-term GDP or industry context"
+        ],
+        "lack_of_sensitivity": [
+            "no Fair Value sensitivity to WACC or terminal growth changes",
+            "lack of credit loss sensitivity in a recession scenario"
+        ]
+    }
+}

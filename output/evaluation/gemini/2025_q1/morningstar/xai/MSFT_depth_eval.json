@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report exhibits strong analytical depth by providing clear causal mechanisms for financial performance and explicit, benchmarked valuation assumptions. It moves beyond description to explain margin compression through 'higher cloud infrastructure costs' and projects future expansion 'aided by scale efficiencies.' The inclusion of a quantified EPS bridge\u2014breaking down growth into revenue, margin, and tax components\u2014demonstrates high inference quality. Assumptions like the 4% terminal growth rate are benchmarked against 'Long-term GDP + inflation,' and the WACC is transparently calculated. While the report identifies risks and provides a broad uncertainty range ('swing valuation by 20-30%'), it lacks a granular, quantified sensitivity analysis or specific 'if-then' scenarios for its primary drivers, such as Azure growth rates or AI capital expenditure levels. Verbatim excerpts illustrating this depth include: 'gross margins dipped... pressured by higher cloud infrastructure costs', 'Operating margins expanding... aided by scale efficiencies', 'Terminal growth of 4%... Long-term GDP + inflation', and 'EPS bridge starts at $11.80... adding $2.50 from revenue growth'. The presence of benchmarked assumptions and causal links satisfies the 'Good' criteria, but the absence of rigorous stress-testing prevents an 'Excellent' rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI monetization success mentioned as a dependency but lacks unit economic breakdown"
+        ],
+        "unsupported_assumptions": [
+            "Azure 20-25% growth projection lacks specific market share or TAM benchmarking"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity matrix for Fair Value relative to WACC or terminal growth adjustments"
+        ]
+    }
+}

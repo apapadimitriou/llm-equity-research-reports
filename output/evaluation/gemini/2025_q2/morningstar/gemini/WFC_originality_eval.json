@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is primarily a reaction to a singular, high-impact event: the removal of the Federal Reserve\u2019s asset cap. While the analyst correctly identifies the mechanical benefits of this event\u2014such as the ability to recapture operational deposits and expand the CIB trading book\u2014these conclusions are largely derivative of the news itself rather than original theses. The report contains at least four insights that are classified as generic restatements or paraphrased public data, including the $40 billion buyback authorization, the standard 'operating leverage' argument, and the 'governance discount' narrative. These elements trigger the hard cap for a 'Fair' grade. There are instances of synthesis, specifically the argument that Wells Fargo is better positioned for Basel III Endgame capital hikes because it has already been forced to maintain high buffers, and the interpretation of the 7.9% CRE reserve as a signal of conservative positioning. However, the valuation methodology is entirely standard, relying on a basic DDM and a P/TBV vs. ROTCE regression without introducing any novel company-specific drivers or unique mechanisms. The report provides good company detail but lacks the 'non-obvious' or 'interpretive commentary' required for a higher grade, as it mostly follows the consensus narrative surrounding a post-cap Wells Fargo.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Asset cap removal allows WFC to recapture 'operational deposits' and expand trading inventory/repo books.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating leverage via 'Jaws' effect: revenue growth on a fixed cost base optimized by efficiency programs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The Board has authorized a massive $40 billion share repurchase program following DFAST results.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "WFC is better prepared for Basel III Endgame capital hikes than peers because it already carries elevated capital due to regulatory issues.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "The removal of the asset cap invalidates the 'governance discount' historically applied by the market.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "CRE Office ACL of 7.9% is a conservative coverage ratio suggesting the worst of the stress is contained.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Valuation derived from a standard DDM and a P/TBV vs. ROTCE regression against peers.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF/DDM with no novel drivers",
+            "Recapping stress-test results without deeper angle",
+            "Boilerplate 'operating leverage' and 'governance discount' phrasing"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 4,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is fundamentally incomplete and fails to meet the basic requirements for a comprehensive equity research document. While it includes several qualitative sections such as the Business Description, Economic Moat, and Bulls/Bears analysis, it suffers from critical structural failures. Most notably, the 'Financials Snapshot' and 'Capital Allocation' sections are entirely absent from the body of the text despite being listed in the Table of Contents. This omission means there is no multi-year historical data, no forward-looking financial table, and no structured presentation of sector-specific KPIs like inventory turns or ASPs. Furthermore, the 'Fair Value and Profit Drivers' section is skeletal and abruptly cuts off mid-sentence, failing to provide any explicit linkage or bridge between operating drivers and the stated fair value estimate of $212.23. The lack of peer benchmarking and scenario/sensitivity analysis further limits the depth and utility of the report. Because multiple core sections are missing and the document is physically truncated, it does not meet the threshold for a professional grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Risk & Uncertainty",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Financials Snapshot",
+            "Capital Allocation",
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Gross Margin",
+            "Data Center Revenue"
+        ],
+        "sector_kpis_missing": [
+            "Inventory Levels",
+            "Average Selling Prices (ASPs)",
+            "R&D as % of Sales",
+            "Free Cash Flow",
+            "Multi-year Forecasts"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Table of Contents lists Financials Snapshot and Capital Allocation, but these sections do not exist in the report body.",
+                "locations": [
+                    "Contents",
+                    "Body"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Inventory turnover",
+            "Capital Expenditure forecasts",
+            "Free Cash Flow yield",
+            "Unit volume growth"
+        ],
+        "uncited_claims": [
+            "Fair-Value Estimate of $212.23 is stated in the cover block without a source or supporting calculation."
+        ]
+    }
+}

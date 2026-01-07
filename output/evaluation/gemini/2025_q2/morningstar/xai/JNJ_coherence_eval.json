@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded 'fair' due to significant internal contradictions and temporal inaccuracies that violate the grading guardrails. Most notably, the report is dated May 12, 2025, but it cites Source [3] with a date of August 3, 2025. This chronological error suggests a failure in data validation. Additionally, a material contradiction exists between the narrative and the financial models: the Analyst Note correctly identifies J&J\u2019s 2025 EPS guidance as $10.50\u2013$10.70, yet the Fair Value and Profit Drivers section and the Financials Snapshot table both utilize a 2025 EPS forecast of $10.80. Furthermore, the Analyst Note itself mentions a projected EPS of $10.86 in its third paragraph, creating a three-way discrepancy between the guidance, the narrative forecast, and the table. While the report maintains a professional tone and the narrative flow between the Business Strategy and Economic Moat sections is logical, these data misalignments force the reader to question the underlying assumptions. The Bulls and Bears are generally reconciled within the Risk and Fair Value sections, but the fundamental tension between the cited guidance and the projected financials remains unresolved. Consequently, while the document is structurally sound, it fails the consistency checks required for a higher grade.",
+    "evidence": [
+        "Management guidance of 'adjusted EPS of $10.50-$10.70' contradicts the model's '2025 EPS of $10.80' (Analyst Note vs Financials Snapshot).",
+        "The report date is '2025-05-12' but Source [3] is dated '2025-08-03', creating a temporal impossibility (Cover Block vs Sources).",
+        "The Analyst Note projects 'EPS growth to $10.86' while the Fair Value section and Financials table use '$10.80' (Analyst Note vs Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

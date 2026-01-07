@@ -17,10 +17,18 @@ def _extract_text(resp: Any) -> str:
 
 
 class AnthropicClient:
-    def __init__(self, api_key: str, model: str, timeout_s: int, retries: int = 3) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str,
+        timeout_s: int,
+        max_output_tokens: int,
+        retries: int = 3,
+    ) -> None:
         self._client = AsyncAnthropic(api_key=api_key, timeout=timeout_s)
         self._model = model
         self._timeout_s = timeout_s
+        self._max_output_tokens = max_output_tokens
         self._retries = retries
 
     async def generate(self, prompt: str, strict_message: str) -> str:
@@ -30,7 +38,7 @@ class AnthropicClient:
                 resp = await asyncio.wait_for(
                     self._client.messages.create(
                         model=self._model,
-                        max_tokens=8192,
+                        max_tokens=self._max_output_tokens,
                         temperature=0,
                         messages=[
                             {"role": "user", "content": prompt},

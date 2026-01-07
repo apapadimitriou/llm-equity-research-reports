@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a professional structure with clear language and logical transitions between segments like the Analyst Note and Strategy. However, it suffers from a critical internal contradiction regarding its primary valuation output. The 'Fair Value and Profit Drivers' section explicitly forecasts a 2029 diluted EPS of approximately $24 to justify the DCF-based fair value. In stark contrast, the 'Financials Snapshot' table projects a 2029 EPS of only $5.10. This nearly five-fold discrepancy is an unaddressed material error that invalidates the connection between the narrative assumptions and the quantitative model. Additionally, the 'Financials Snapshot' table contains internal labeling conflicts; the header identifies FY2024 as 'Actual,' yet the corresponding data cell marks the revenue as an 'est.' (estimate), despite the report date being May 2025 and the source list citing the 2024 10-K. While the report successfully integrates various external sources and maintains a consistent tone, these quantitative misalignments trigger a hard cap at the 'fair' level. The Business Description also relies on stale 2022 segment data, which feels disconnected from the 2025 reporting context. These issues force the reader to reconcile the fundamental math of the argument themselves, preventing a higher grade despite the otherwise smooth narrative flow.",
+    "evidence": [
+        "Amazon\u2019s 2029 diluted EPS of ~$24 (Fair Value section) vs. $5.10 (Financials Snapshot table).",
+        "FY2024 Actual header vs. 637,959 (est.) cell entry in the Financials Snapshot table.",
+        "Reliance on 2022 segment data in the Business Description despite the report date of May 2025 and the availability of 2024 figures."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

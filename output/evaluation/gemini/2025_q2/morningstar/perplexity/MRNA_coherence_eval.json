@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of structural organization and professional tone, effectively mimicking the Morningstar format. However, it suffers from a significant temporal logical error: it is dated July 1, 2025, yet cites finalized Q2 2025 earnings results (Revenue $142M, EPS -$2.13). In reality, Q2 ends on June 30, and audited results are never available on the first day of the following month. This 'recency' claim is time-inaccurate relative to the report's own date. Furthermore, there is a citation misalignment in the Sources section; Source [4] is dated August 2, 2021, yet is used to support 2025 earnings data. While the narrative flow between sections like 'Strategy & Outlook' and 'Fair Value' is smooth, the underlying data consistency is undermined by these temporal issues. The financial table aligns with the narrative's 2025 guidance ($2.0B estimate vs $1.5-2.5B range), but the reliance on H2 for the bulk of revenue is a heavy assumption not fully reconciled with the very low H1 performance cited. The Bulls/Bears sections are well-integrated into the valuation narrative, but the 'fair' cap is triggered by the temporal and citation discrepancies.",
+    "evidence": [
+        "Q2 2025 results showed revenue of $142 million... EPS loss of $(2.13) (Analyst Note) - Impossible for a report dated July 1, 2025.",
+        "Source [4] MarketBeat... August 2, 2021 (Sources) - Cited for 2025 earnings data, creating a chronological mismatch.",
+        "FY 2025E Revenue: 2.0B (Financials Snapshot) vs. H1 actuals of ~$250M implies a massive H2 ramp that is noted but lacks detailed bridge analysis."
+    ],
+    "flags": {
+        "contradictions_found": false,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

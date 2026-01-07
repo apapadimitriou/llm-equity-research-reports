@@ -1,0 +1,75 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including revenue CAGR, AI-specific growth rates, and operating margin expansion. These inputs are clearly stated in the 'Fair Value and Profit Drivers' section and summarized in a dedicated valuation table. The assumptions are justified using recent fiscal Q2 2025 results and management guidance, and they are internally consistent; the EPS bridge, revenue forecasts, and margin targets reconcile perfectly between the narrative and the financial snapshot table. However, the report fails to meet the criteria for a 'Good' or 'Excellent' grade due to the lack of quantified sensitivity or scenario analysis. While it mentions that 'valuation swings of \u00b120% possible' in the Risk section, this is a qualitative statement regarding the output rather than a quantified stress test of material drivers (e.g., how the fair value estimate would change if AI growth slowed to 15% or if WACC increased). Per the instruction's hard caps, the absence of quantified sensitivity analysis on material drivers limits the maximum possible grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 15% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI segment growth at 30% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 35% in 2025 to 38% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 9.5%, incorporating a 3% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "yielding 2025 EPS of $6.20",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "3% terminal growth rate",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

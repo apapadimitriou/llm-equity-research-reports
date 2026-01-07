@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to multiple material contradictions, temporal inaccuracies, and structural failures that trigger several mandatory downgrades. While the prose is clear, the internal logic fails on several fronts. First, the Financials Snapshot contains a massive, unaddressed contradiction: it lists 2024 Free Cash Flow as negative $42.0 billion despite the Analyst Note celebrating record net income of $58.5 billion and a 'fortress balance sheet.' No narrative explanation is provided for this $100 billion discrepancy. Second, the mathematical consistency is poor; the Fair Value section claims an 8% revenue CAGR for 2022\u20132029, yet the table data ($128.7B to $250.0B) results in a CAGR of approximately 10%. Temporal accuracy is also compromised, as the report is dated July 8, 2025, but cites a Reuters article from July 15, 2025, which is a logical impossibility. Furthermore, the report fails to reconcile the Bear case\u2014which warns of NII peaking and declining in late 2025\u2014with the Financials Snapshot that shows uninterrupted revenue and EPS growth through 2029. Finally, the Bulls/Bears and Appendix sections function as bullet dumps lacking local transitions. Per the rubric, the presence of unaddressed contradictions and time-inaccurate claims caps the grade at fair, and the failure to reconcile the Bear case with the base-case valuation further reduces the grade to poor.",
+    "evidence": [
+        "Financials Snapshot lists 2024 FCF at -$42.0B, contradicting the record $58.5B net income and 'fortress balance sheet' claims in the narrative.",
+        "The report is dated 2025-07-08 but cites a Reuters source from 2025-07-15, a logical impossibility.",
+        "The Bear case warning of NII peaking in 2025 is not reconciled with the Financials table showing steady growth through 2029."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

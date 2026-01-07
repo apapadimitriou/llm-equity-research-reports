@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report exhibits zero originality, functioning entirely as a compilation of external research and public news. It fails to provide any independent synthesis or original thesis, instead explicitly citing and adopting the conclusions of Morningstar and Reuters for every critical component of the analysis. Specifically, the report adopts Morningstar's 7% revenue CAGR, its 'Wide Moat' rating, and its exact $200 fair value estimate without modification or additional interpretive commentary. The 'Bulls Say / Bears Say' and 'Risk' sections are restatements of widely reported headlines regarding Chinese competition, AI delays (Siri 2026), and production shifts to India. There are no unique data links, such as connecting specific hardware margins to service attach rates or quantifying the impact of 'Apple Intelligence' beyond repeating cited delays. Because the valuation section lacks any novel drivers and the report relies on at least six copied or generic insights, it triggers the hard caps for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Growth was driven by strong Services sales (up ~14% to $26.34 b) which hit an all-time high.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We forecast mid-single-digit revenue growth (\u223c7% CAGR to FY2029) as iPhone upgrades are offset by saturation.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Apple\u2019s competitive edge rests on its vertically integrated ecosystem... expertise in hardware, software, and now semiconductor design.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Apple is diversifying production into India to hedge U.S.\u2013China trade tensions.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Delayed AI features (key Siri improvements pushed to 2026) undermine near-term growth.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We derive a fair value \u2248$200/share... Morningstar notes the same multiples... at a $200 fair value.",
+                "classification": "Copied",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Directly adopts external analyst price target and CAGR",
+            "Boilerplate 'ecosystem and switching costs' phrasing",
+            "Restatement of public earnings and news headlines"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

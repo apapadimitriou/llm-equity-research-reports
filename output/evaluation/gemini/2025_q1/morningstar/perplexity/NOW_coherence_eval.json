@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong structural organization and excellent temporal alignment, successfully integrating Q1 2025 financial results released on the same day as the report (April 24, 2025). The narrative flow is generally professional, with clear transitions between the strategic analysis of the 'Xanadu' platform and the broader market outlook. However, the report suffers from significant internal contradictions regarding valuation metrics that trigger a mandatory downgrade. Specifically, the 'Bears Say' section asserts a forward P/E ratio of 148.90, yet the 'Financials Snapshot' table provides a 2025 EPS forecast of $15.20. When calculated against the provided share price of $944.74, the actual forward P/E is 62.15\u2014a massive discrepancy that is never reconciled in the text. Additionally, the 'Fair Value and Profit Drivers' section claims an 'implied forward price-to-earnings multiple of approximately 25\u201330x' at the fair value estimate of $1,085.71. This math only aligns with the 2028 or 2029 EPS forecasts ($31.20\u2013$38.40) in the table; using the standard one-year 'forward' 2025 EPS results in a P/E of 71x. These unresolved tensions between the narrative's valuation claims and the data presented in the financial tables represent a failure of internal consistency, necessitating a 'fair' grade per the rubric's hard caps.",
+    "evidence": [
+        "Contradiction: Bears Say (Section 4) claims a forward P/E of 148.90, while the Financials Snapshot (Section 9) EPS of $15.20 and price of $944.74 result in a P/E of 62.15.",
+        "Inconsistency: Fair Value section (Section 6) cites an 'implied forward P/E of 25\u201330x,' which only aligns with 2028/2029 forecasts, not the 2025 'forward' period.",
+        "Strength: Excellent temporal consistency, correctly identifying Q1 2025 results as 'recent' relative to the April 24, 2025 report date (Analyst Note)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

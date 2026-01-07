@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for quality of assumptions due to a critical internal contradiction and the total absence of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as revenue growth (decelerating to 15% by FY2029), non-GAAP operating margins (mid-20s%), and WACC (8.5%)\u2014these inputs are not stress-tested. Per the hard caps, the lack of quantified scenarios for material drivers limits the grade to 'Fair' at best. However, a major numeric contradiction exists between the valuation narrative and the financial snapshot: the analyst claims a $180 fair value implies a 'P/E ~25x,' yet the provided financial table shows GAAP EPS of $0.00 for FY2026 and only $0.80 for FY2029. At a $180 price, the FY2029 P/E would be 225x, making the '25x' claim mathematically impossible within the report's own data set. According to the decision rules, the combination of one distinct contradiction and no quantified sensitivities necessitates a 'Poor' grade. Furthermore, the justification for the 8.5% WACC is opaque, lacking any breakdown of the cost of equity or debt components.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue growth decelerating from ~29% (FY24\u201325) to ~15% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins rising into the mid-20% range (from ~21% in FY2025)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of ~8.5% and a 3\u20134% terminal growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "FY2026 guidance uses 256 M shares",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Gross margin should hold ~80%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report claims a $180 Fair Value implies a P/E of ~25x, but the Financials Snapshot shows FY2029 EPS of $0.80, which results in a P/E of 225x.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC of 8.5% stated without risk-free rate, beta, or equity risk premium citations."
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded \"poor\" due to significant internal contradictions and temporal impossibilities that undermine its coherence. Most critically, the report is dated April 16, 2025, yet it cites multiple sources from the future, specifically May 13, 2025 (Source 5) and November 5, 2025 (cited in the Business Description). This chronological failure suggests a lack of attention to detail or a fabrication of data points. Furthermore, there are material contradictions regarding valuation and performance: the Cover Block claims 'insufficient data' for the Fair-Value Estimate, yet the Fair Value section explicitly provides a 'mid-$40s' estimate. Additionally, the Analyst Note reports a 2024 net income of ~$27.1 billion, while the Fair Value and Profit Drivers section cites ~$25.5 billion for the same period. Structurally, the report suffers from 'bullet dumps' in the Bulls/Bears and Risk & Uncertainty sections, which lack the connective transitions required for a 'good' rating. The Bulls/Bears section is also not adequately reconciled with the base-case valuation; for instance, the Bull case relies on rising interest rates while the Bear case warns of a flattening yield curve, yet the Valuation section simply assumes a steady 3% NII growth without addressing these conflicting macro scenarios. While the narrative flow within the Analyst Note is relatively smooth, these fundamental errors in data consistency and temporal alignment force a 'poor' grade.",
+    "evidence": [
+        "Temporal Impossibility: The report (dated April 16, 2025) cites Reuters articles from May 13, 2025, and November 5, 2025 (Source 5 and Business Description).",
+        "Valuation Contradictions: The Cover Block states 'insufficient data' for Fair-Value, contradicting the 'mid-$40s' estimate provided in the Fair Value and Profit Drivers section.",
+        "Data Inconsistency: 2024 net income is reported as ~$27.1 billion in the Analyst Note but ~$25.5 billion in the Fair Value section."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required sections but is capped at 'Fair' due to the use of outdated evidence and the omission of core sector KPIs in the financial forecast table. While the Analyst Note mentions ARR and RPO, these critical SaaS metrics are absent from the Financials Snapshot table, which provides only generic financial data. More critically, the report relies on significantly outdated sources for material claims: the WACC and Beta assumptions are cited to a 2015 source (Source [7]), and the ESG risk score is cited to a 2017 source (Source [8]), both of which are obsolete for a 2025 valuation. Additionally, the report exhibits high redundancy; the 'Firefly' AI integration is repeated across the Analyst Note, Business Strategy, Bulls Say, and Economic Moat sections with no new depth or incremental data provided in subsequent mentions. The lack of peer benchmarking and scenario/sensitivity analysis further limits the report's comprehensiveness, failing to provide the industry context required for a 'Good' or 'Excellent' rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (text only)",
+            "RPO (text only)"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Retention Rate)",
+            "Churn Rate",
+            "ARR (forecast table)",
+            "RPO (forecast table)",
+            "CAC/LTV"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR",
+            "Churn Rate",
+            "ARR and RPO missing from multi-year forecast table"
+        ],
+        "uncited_claims": [
+            "WACC/Beta based on 2015 data (Source [7])",
+            "ESG score based on 2017 data (Source [8])",
+            "Firefly user engagement metrics lack specific data points"
+        ]
+    }
+}

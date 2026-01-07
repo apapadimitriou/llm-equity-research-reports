@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a summary of existing public information and third-party analysis rather than providing original insights. It relies heavily on external sources (Morningstar for moat/uncertainty, TipRanks for capital allocation, and SEC filings for financials) without synthesizing these data points into a new or unique conclusion. Every 'insight' identified is either a restatement of earnings results, a repetition of company marketing regarding multi-cloud benefits, or a generic projection of operating leverage common to the SaaS sector. There is no original thesis or specific, testable mechanism presented that isn't already a standard part of the market consensus. The valuation section uses a standard DCF with boilerplate drivers (revenue growth and margin expansion) and lacks any novel driver or company-specific catalyst. Consequently, the report fails to meet the minimum threshold for 'Fair' due to the total absence of synthesis or original thesis.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue grew 27% to $986.8M... Net revenue retention remains strong at ~126%.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Snowflake\u2019s strategy is to cement its multi-cloud data platform... competitive edge lies in interoperable deployment... avoiding cloud lock-in.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We expect operating leverage as the business scales... operating efficiency initiatives have lifted non-GAAP operating margin to ~8%.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Capital allocation is controversial: the company just issued $2B debt to buy back stock... raising concerns about overpaying.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair Value \u2248 $300/share... driven by cross-cloud adoption and new AI feature upsells.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Morningstar for moat and uncertainty ratings",
+            "Directly repeats TipRanks/Nasdaq critique of capital allocation",
+            "Boilerplate 'scale & diversification' and 'competition' phrasing"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

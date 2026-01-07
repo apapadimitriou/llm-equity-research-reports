@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as Fair due to significant omissions in sector-specific data and excessive redundancy. While the report includes all required structural sections, it fails to meet the depth required for a 'Good' or 'Excellent' rating. The Financials Snapshot is generic and omits critical internet-sector KPIs such as Average Revenue Per Person (ARPP), Ad Impression growth, and a breakdown of Reality Labs' operating losses; per the rubric, the absence of \u22652 core sector KPIs in the financials table mandates a 'Fair' cap. Furthermore, the report exhibits high redundancy, repeating the same Q1 2025 metrics (3.43 billion DAP and 16% revenue growth) across the Analyst Note, Business Strategy, Bulls Say, and Economic Moat sections without adding new depth. This repetition, combined with the lack of a dedicated peer benchmarking table and the absence of scenario or sensitivity analysis, further limits the report's comprehensiveness. While the valuation section provides an EPS bridge, the linkage between operating drivers and the fair value estimate is high-level. Finally, the report explicitly acknowledges 'insufficient data' for material claims regarding competition and capital allocation, violating the requirement for consistent evidence. These factors align with the calibration hint for a 'Fair' grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARPP (Average Revenue Per Person)",
+            "Ad Impression Growth",
+            "Average Price per Ad",
+            "Reality Labs Operating Loss",
+            "DAP (missing from Financials table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARPP",
+            "Ad Impression Growth",
+            "Reality Labs Operating Loss",
+            "DAP (Financials Table)"
+        ],
+        "uncited_claims": [
+            "Competition from platforms like TikTok (noted as insufficient data)",
+            "2025 share buyback specifics (noted as insufficient data)"
+        ]
+    }
+}

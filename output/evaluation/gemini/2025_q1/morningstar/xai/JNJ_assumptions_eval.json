@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for revenue growth, operating margins, and WACC, which are proximal to the valuation narrative. Justification is solid, citing segment-specific growth rates (5% for Innovative Medicine, 4% for MedTech) and historical ROIC (20%). The specificity is high, with clear units, magnitudes, and a defined 2025\u20132029 time horizon. However, the report fails to provide any quantified sensitivity analysis or scenario modeling for its material drivers. While it mentions a 'potential valuation swing of \u00b120%' in the risk section, this is a qualitative statement of uncertainty rather than a quantified stress test of the DCF model's inputs (e.g., varying WACC or terminal growth). Per the instruction's hard caps, the absence of quantified sensitivities on material drivers limits the grade to 'Fair.' Furthermore, there is a minor but unresolved numeric contradiction: the text claims a 4.5% revenue CAGR, whereas the financial snapshot table implies a 4.37% CAGR from 2025 to 2029. Finally, several material drivers necessary for a transparent DCF, such as the effective tax rate and share count, remain opaque or unstated, further supporting the 'Fair' designation.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4.5% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding from 28% in 2025 to 30% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 7.5%, incorporating a 2.5% risk-free rate, 6% equity risk premium, and beta of 0.6",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Innovative Medicine growing at 5% and MedTech at 4%",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "R&D investment, averaging 15% of sales annually",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The text claims a 4.5% revenue CAGR (2025-2029), but the financial snapshot table shows revenue growing from $91.0B to $108.0B, which calculates to a 4.37% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 3.0% is stated without specific peer benchmarking or historical context beyond general demand."
+        ]
+    }
+}

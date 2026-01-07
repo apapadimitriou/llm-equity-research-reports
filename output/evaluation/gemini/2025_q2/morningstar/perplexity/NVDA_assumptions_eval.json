@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment due to multiple severe internal contradictions and a total absence of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue growth, margins, and WACC, these figures are not internally coherent. For instance, the narrative forecasts annual revenue growth of 25\u201330% through FY27, yet the provided financial table calculates to only 20% growth for that year ($210B vs $175B). More critically, the text targets margins of 72\u201375%, while the 'Financials Snapshot' table lists operating margins significantly lower, ranging from 55\u201359%, with no reconciliation between gross and operating figures. The historical data in the table is also factually erroneous and contradicts the report's own narrative; it lists FY23 revenue at $60.9B and FY24 at $22.1B (a 63% decline), which conflicts with the stated 'exceptional growth trajectory' and actual market history. Furthermore, the report lacks any quantified sensitivity or scenario analysis, failing to provide ranges for material drivers like AI chip demand or the impact of China export restrictions. These unresolved numeric conflicts between the text and tables, combined with the lack of stress-testing, trigger the 'Poor' grade under the mandatory hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "annual growth moderating from current 70%+ levels to approximately 25-30% through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target margins of 72-75% incorporate mix shifts toward higher-value data center products",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 12.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "incorporates share count stability following recent buyback authorizations",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text forecasts 25-30% revenue growth through FY27, but the table shows $175B to $210B, which is exactly 20%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text targets margins of 72-75%, but the table shows Operating Margins of 55-59% without explaining the gap.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Table shows a massive revenue collapse from FY23 ($60.9B) to FY24 ($22.1B), contradicting the narrative of 'continued dominance'.",
+                "locations": [
+                    "Financials Snapshot",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 12.5% provided in Appendix without derivation or market benchmarks.",
+            "Terminal growth 3.0% provided without justification relative to long-term GDP."
+        ]
+    }
+}

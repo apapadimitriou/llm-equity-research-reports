@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to significant structural failures and temporal contradictions. Most notably, the report is dated July 15, 2025, yet it cites sources (5 and 6) from August 8, 2025, creating a logical impossibility. Furthermore, the document suffers from a massive internal contradiction: it repeatedly claims 'insufficient data' for its financial model, economic moat, and capital allocation, yet it asserts a highly specific Fair Value Estimate of $227.95. This valuation is not derived from the provided analysis but is instead outsourced to 'analyst predictions,' leaving the reader to bridge the gap between the narrative and the conclusion. The flow is severely disrupted by multiple sections (Economic Moat, Capital Allocation, ESG Risk, and the Financials Snapshot) that function as empty placeholders or bulleted lists of 'insufficient data' rather than connected arguments. While the Analyst Note provides some specific figures, these are often attributed to 'X posts,' which contradicts the professional tone expected in equity research and clashes with the 'insufficient data' labels in the tables. The Bulls and Bears sections are not reconciled with the base-case valuation; the Bears' point regarding margin compression is presented as a significant risk but is never factored into the static price target.",
+    "evidence": [
+        "Report date: 2025-07-15 vs Source 6 dated 2025-08-08 (Cover Block / Sources)",
+        "Fair-Value Estimate $227.95 vs 'Due to insufficient data for a detailed model, we omit specific revenue CAGR' (Cover Block / Fair Value and Profit Drivers)",
+        "Economic Moat, Capital Allocation, and ESG Risk sections consist entirely of 'Insufficient data' placeholders (Multiple Sections)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 4,
+        "auto_downgrade_applied": true
+    }
+}

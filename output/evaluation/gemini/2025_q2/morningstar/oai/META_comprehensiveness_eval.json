@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections and maintains a consistent citation structure throughout. However, it fails to meet the criteria for a higher grade due to several critical omissions and structural issues. Most significantly, the Financials Snapshot is generic and lacks at least two core sector-specific KPIs (MAU and ARPU), which are essential for evaluating an interactive media company like Meta; only high-level financial metrics like Revenue and EPS are forecasted. This triggers a hard cap of 'Fair'. \n\nFurthermore, the report exhibits significant redundancy. The losses associated with Reality Labs and the regulatory pressures in Europe are repeated across five different sections (Business Description, Strategy, Bulls/Bears, Risk, and Capital Allocation) with minimal incremental depth or new data in each instance. The report also lacks a dedicated peer benchmarking table and a formal scenario or sensitivity analysis, which are necessary to move beyond a 'Fair' assessment. While the valuation section successfully links operating drivers to the fair value estimate, the overall depth is undermined by the repetitive qualitative content and the absence of granular operational forecasts.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Daily Active Users (DAU)",
+            "Revenue",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Monthly Active Users (MAU)",
+            "Average Revenue Per User (ARPU)",
+            "Ad Impressions",
+            "Average Price per Ad"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "MAU (Monthly Active Users) missing from Financials Snapshot",
+            "ARPU (Average Revenue Per User) missing from Financials Snapshot"
+        ],
+        "uncited_claims": []
+    }
+}

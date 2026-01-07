@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' because it fulfills the structural requirements of equity research but fails significantly on data depth and evidentiary standards. While all headline sections are present, including a functional valuation model and risk assessment, the report is subject to multiple hard caps. First, the Financials Snapshot is generic and omits at least three critical sector-specific KPIs for a software/SaaS company: Annual Recurring Revenue (ARR), Net Retention Rate (NRR), and Remaining Performance Obligations (RPO). Although some figures are mentioned in the Analyst Note, their absence from the multi-year financial table triggers a 'Fair' cap. \n\nSecond, the report contains at least three material claims that are explicitly uncited or based on 'insufficient data' as admitted in the sources section (market share, industry growth rates, and ESG scores). This lack of consistent evidence integration further caps the grade at 'Fair'. Additionally, the report exhibits notable redundancy; the ARR and RPO growth statistics are repeated across the Analyst Note, Bulls Say, and Economic Moat sections with no additional depth or context. Finally, while the valuation links operating drivers to the fair value estimate, the absence of a peer benchmarking table and scenario/sensitivity analysis prevents the report from reaching a 'Good' or 'Excellent' rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Annual Recurring Revenue)",
+            "NRR (Net Retention Rate)",
+            "RPO (Remaining Performance Obligations)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Annual Recurring Revenue)",
+            "NRR (Net Retention Rate)",
+            "RPO (Remaining Performance Obligations)"
+        ],
+        "uncited_claims": [
+            "Adobe holds over 50% share in professional creative software (Source 5 admits insufficient data)",
+            "Demand for digital experiences projected to grow at 15% annually (Source 6 admits omitted source)",
+            "Sustainalytics ESG risk score of 15.2 (Source 9 admits insufficient data)"
+        ]
+    }
+}

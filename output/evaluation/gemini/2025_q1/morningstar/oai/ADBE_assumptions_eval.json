@@ -1,0 +1,102 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails significantly on the pillars of internal consistency and sensitivity analysis. There are multiple, irreconcilable numeric contradictions between the narrative and the financial tables. Specifically, the 'Fair Value and Profit Drivers' section projects revenue growth decelerating to mid-single digits by 2029, and the Appendix specifies 6%; however, the 'Financials Snapshot' table shows 2029 revenue growth of approximately 9.3% ($30.0B to $32.8B), indicating an accelerating or sustained high-growth trend that contradicts the text. Furthermore, EPS figures are wildly inconsistent: the narrative forecasts EPS growing from $15 to $26, while the table lists $16.4 to $30.1 for the same period. Operating margin assumptions also fluctuate across three different values (40\u201343% in text, 42\u201344% in Appendix, and 43\u201344.5% in the table). \n\nBeyond these contradictions, the report provides zero quantified sensitivity or scenario analysis for material drivers like AI monetization or WACC, which is a mandatory requirement for a higher grade. Justifications for key inputs like the 8.5% WACC and 16% tax rate are stated without supporting evidence or peer benchmarking. Because the report contains more than two distinct numeric contradictions and lacks any quantified stress-testing, it triggers the 'Poor' hard cap under the evaluation rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at roughly 9\u201310% in fiscal 2025... gradually decelerates to mid-single-digit growth by FY2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins rising slightly from ~40% to ~43% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is assumed at ~8.5% and terminal growth at 3%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "driving EPS growth from roughly $15 (2024) to ~$26 (2029).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "model taxes at ~16% effective.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "share count drifts modestly upward due to stock comp (our bridge starts at 515M fully diluted).",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth trend: Text/Appendix claim deceleration to 6%, but Table shows ~9.3% growth in 2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "EPS Values: Text claims $15 (2024) to $26 (2029), while Table shows $16.4 (2024) to $30.1 (2029).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Operating Margins: Narrative (40-43%), Appendix (42-44%), and Table (43-44.5%) all provide different ranges.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without risk-free rate or beta source",
+            "Terminal growth 3-5% range in Appendix vs 3% in text"
+        ]
+    }
+}

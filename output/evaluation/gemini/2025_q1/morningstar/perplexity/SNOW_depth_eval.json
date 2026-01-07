@@ -1,0 +1,25 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates a 'Fair' level of analytical depth by providing a clear business description and identifying key causal mechanisms, such as how the \"consumption-based pricing model... aligns costs with actual consumption.\" It explicitly quantifies several core valuation assumptions, including a \"WACC of 10.5%\" and a \"terminal growth rate of 3%.\" The report also attempts to benchmark the valuation, noting the \"11.2x forward price-to-sales compared to the industry average of 4.86x.\" However, it fails to reach a higher grade because the core operating assumptions are not benchmarked against specific industry peers or historical norms. For example, the claim that \"25% product revenue growth... appears conservative\" is not supported by a comparison to the growth rates of competitors like Databricks. Most critically, the report lacks any quantified sensitivity or scenario analysis. While it identifies risks in the 'Bears Say' section, it does not explore how these risks would impact the financial model. It concludes that the data \"yield a fair value estimate of $225 per share\" as a single point estimate without providing a valuation range or a sensitivity table for variables like net revenue retention or interest rates. Consequently, the implications for investors are not conditional, providing a static target rather than a decision-relevant framework for different market environments.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI workload growth to credit consumption correlation not quantified"
+        ],
+        "unsupported_assumptions": [
+            "15% terminal operating margin lacks industry peer benchmarking",
+            "23% CAGR not benchmarked against cloud data peers"
+        ],
+        "lack_of_sensitivity": [
+            "No valuation range provided for varying growth scenarios",
+            "Fair value $225 lacks WACC or NRR sensitivity analysis"
+        ]
+    }
+}

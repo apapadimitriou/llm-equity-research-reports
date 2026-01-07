@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is exceptionally well-cited, utilizing recent data from 2024 and 2025 to support its claims. It covers all mandatory sections, including a detailed ESG risk assessment and a clear business strategy. However, it is capped at 'Fair' due to several structural and content-related omissions. Most significantly, the Financials Snapshot table is generic; it omits core sector-specific KPIs such as Assets Under Management (AUM) and Net Flows, which are essential for an asset management firm. While these figures appear in the text, their absence from the multi-year forecast table violates the requirement for sector-appropriate KPIs in the snapshot. Additionally, the report lacks a formal peer benchmarking table and any form of scenario or sensitivity analysis. There is also notable redundancy, as specific Q2 2025 data points (AUM records, tech revenue growth, and performance fee declines) are repeated across the Analyst Note, Business Strategy, and Bulls/Bears sections without adding new depth, which triggers a downgrade according to the instruction rules.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "AUM (text only)",
+            "Net Flows (text only)",
+            "Technology Revenue",
+            "Performance Fees",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "AUM (Financials Snapshot)",
+            "Net Flows (Financials Snapshot)",
+            "Average Fee Rate",
+            "Revenue by Asset Class"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUM (missing from Financials Snapshot table)",
+            "Net Flows (missing from Financials Snapshot table)",
+            "Fee Rate"
+        ],
+        "uncited_claims": []
+    }
+}

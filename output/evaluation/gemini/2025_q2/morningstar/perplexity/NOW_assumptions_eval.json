@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple distinct internal contradictions between the narrative and the financial tables, which violates the core requirement for internal consistency. First, there is a significant discrepancy in the revenue growth forecast: the narrative explicitly projects subscription revenue growth of 20\u201322% annually for the 'next three years' (2025\u20132027), yet the 'Financials Snapshot' table models 2027 growth at only 17.7%, which the text describes as the later 'moderating' phase. Second, the report contains a mathematical inconsistency regarding R&D intensity; it states that 2023 R&D spending was $1.84 billion, representing 22.3% of revenue, but the table lists 2023 revenue as $9.0 billion, which results in an R&D margin of only 20.4%. Furthermore, while the report identifies a specific WACC of 9.5%, it provides no justification or component breakdown (such as cost of equity, beta, or risk-free rate), rendering the discount rate opaque. Although the report includes a robust quantified sensitivity analysis in the appendix\u2014a feature typically associated with higher grades\u2014the presence of two clear numeric contradictions triggers the mandatory 'Poor' rating under the evaluation framework's hard caps. The lack of specific projected share counts also contributes to the overall lack of auditability in the valuation drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "assume ServiceNow maintains subscription revenue growth rates of approximately 20-22% annually over the next three years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins have expanded from 15.2% in 2022 to an estimated 18.5% in 2024",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital of approximately 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "R&D spending of $1.84 billion in 2023 represents 22.3% of revenue",
+            "location": {
+                "section": "Economic Moat",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "assume free cash flow margins stabilize around 35-38% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth timing: Text claims 20-22% for 2025-2027; Table shows 17.7% for 2027.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "R&D Math: Text claims $1.84B is 22.3% of revenue; Table shows $9.0B revenue (making it 20.4%).",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without component breakdown (Beta, Rf, ERP)"
+        ]
+    }
+}

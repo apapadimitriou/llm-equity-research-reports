@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a 'fair' grade due to significant internal contradictions and temporal inaccuracies that violate the 'excellent' and 'good' criteria. While the narrative is structurally sound and provides a clear 'triple-barreled' catalyst thesis, it fails on technical consistency. The most glaring issue is the contradiction regarding the Stress Capital Buffer (SCB). The Analyst Note and Appendix A base their capital return math on a 3.7% SCB, yet the 'Works Cited' (Source 11) explicitly states the bank expects the SCB to decrease to 2.5%. This discrepancy is never addressed, creating a major tension in the $40 billion buyback valuation logic and the excess capital bridge calculation.\n\nFurthermore, the report suffers from a severe temporal logic failure. It is dated June 29, 2025, yet every entry in the 'Works Cited' section lists an access date of December 15, 2025. This makes the report's claims about 'recent' events and 'preliminary' Q2 2025 data suspect, as the citations imply the author had access to end-of-year data while writing in mid-year. Additionally, there is a minor inconsistency regarding the efficiency ratio target; the Analyst Note claims a sub-60% ratio is achievable by 2026, while the Financial Analysis section models this milestone for 2027. These unresolved tensions between the narrative, the cited sources, and the temporal framing trigger the 'fair' hard cap under the provided grading guardrails.",
+    "evidence": [
+        "WFC\u2019s Stress Capital Buffer (SCB) was finalized at roughly 3.7% (Analyst Note) vs. Wells Fargo Expects SCB to Decrease to 2.5% from 3.8% (Source 11).",
+        "Report is dated June 29, 2025, but all 23 citations are listed as accessed December 15, 2025, creating a temporal impossibility.",
+        "The bank is targeting a sub-60% efficiency ratio... achievable by 2026 (Analyst Note) vs. model it declining from ~64% in 2025 to ~59% in 2027 (Financial Analysis)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

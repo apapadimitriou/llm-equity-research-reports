@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates a professional structure but is heavily reliant on restating data points from the provided sources, triggering the 'Fair' grade cap. Specifically, it repeats the $125 million AI ARR figure, the 42% market share statistic, and the ethical training narrative of Firefly directly from the source text. While the report attempts synthesis by interpreting management's focus on engagement as 'strategic patience' and extrapolating AI revenue to $500\u2013750 million by FY2026, these insights are relatively thin. The valuation section provides a specific price target ($420) and a quantified AI driver, but the broader 'Economic Moat' and 'Bulls/Bears' sections rely on boilerplate industry tropes regarding 'switching costs' and 'brand strength' that are not uniquely derived. Because more than three key insights are paraphrased from the provided search results and the valuation mechanism is a standard DCF extrapolation of public guidance, the report cannot exceed a 'Fair' rating.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Management's decision to prioritize user engagement over immediate AI monetization reflects strategic patience but also highlights competitive pressures.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "AI-related revenue contributing incremental growth of $500-750 million by FY2026 driven by pricing optimization and AI-powered feature adoption.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Firefly utilizes commercially safe training data from Adobe Stock... addressing enterprise concerns about copyright and intellectual property risks.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Adobe dominates with 42% market share in creative software... Creative Cloud serves over 700 million monthly active users.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Figma's collaborative features and web-based architecture have become the standard for UI/UX design teams, forcing Adobe to play catch-up.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'scale & diversification' and 'switching cost' phrasing in the Moat section",
+            "Heavy reliance on the $125M AI ARR figure from source [10]",
+            "Generic DCF assumptions with standard terminal growth rates"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": true,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

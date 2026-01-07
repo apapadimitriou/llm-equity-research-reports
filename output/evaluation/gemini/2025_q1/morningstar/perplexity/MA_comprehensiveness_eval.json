@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally sound and covers all mandatory sections, including a detailed business description, strategy outlook, and capital allocation analysis. It successfully incorporates sector-specific data such as cross-border volume growth and switched transaction metrics within the narrative text. However, the report fails to reach a 'Good' or 'Excellent' rating due to two critical deficiencies. First, the Valuation section lacks an explicit, proprietary linkage between the operating drivers (e.g., 12% revenue growth) and the fair value outcome; instead, it relies on 'analyst consensus fair value estimates,' which violates the requirement for an explicit link from drivers to valuation assumptions. Second, the Financials Snapshot table is generic and omits core sector KPIs such as Gross Dollar Volume (GDV) and Switched Transactions, which are only mentioned in the text. Per the instruction's hard caps, the absence of these KPIs in the snapshot and the lack of a direct valuation bridge mandate a maximum grade of 'Fair.' Additionally, the report lacks a formal peer benchmarking table and sensitivity analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario/Sensitivity Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Cross-border volume growth",
+            "Switched transactions",
+            "Gross Dollar Volume (GDV)",
+            "Value-added services revenue %"
+        ],
+        "sector_kpis_missing": [
+            "Rebates and Incentives (as % of Gross Revenue)",
+            "Net Revenue Yield",
+            "GDV (in Financials Snapshot table)",
+            "Switched Transactions (in Financials Snapshot table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Dollar Volume (GDV) in the Financials Snapshot table",
+            "Switched Transactions in the Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

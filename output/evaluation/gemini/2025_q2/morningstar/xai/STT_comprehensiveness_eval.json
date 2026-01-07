@@ -1,0 +1,58 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the fundamental requirement of equity research by providing zero actual financial data. While the structural headers are present, the 'Financials Snapshot' is entirely comprised of 'insufficient data' placeholders for every single metric (Revenue, EPS, ROIC, etc.) across all historical and forecast years. This is particularly egregious given the report date of June 2025 and the Analyst Note's acknowledgment that Q1 2025 results were released in April. \n\nFurthermore, the report lacks essential sector-specific KPIs for a custody bank, such as Assets under Custody and Administration (AuCA), Net Interest Margin (NIM), and CET1 capital ratios, which are mentioned conceptually in the text but never quantified. The valuation section attempts to bridge to a $7.50 EPS and $85 fair value, but since the starting 2024 EPS is listed as 'insufficient data,' the linkage is logically broken and opaque. The absence of peer benchmarking and scenario analysis, combined with repetitive qualitative statements about fee pressure and market volatility, results in a skeletal and superficial document that does not meet the minimum standards for comprehensive research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Detailed Financials Snapshot"
+        ],
+        "sector_kpis_present": [],
+        "sector_kpis_missing": [
+            "AuCA",
+            "AUM",
+            "NIM",
+            "CET1 Ratio",
+            "Fee Revenue Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report claims to incorporate Q1 2025 results in the Analyst Note but lists all 2025 data as 'insufficient' in the Financials Snapshot.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "AuCA (Assets under Custody and Administration)",
+            "NIM (Net Interest Margin)",
+            "CET1 (Common Equity Tier 1)",
+            "AUM (Assets under Management)"
+        ],
+        "uncited_claims": [
+            "Fair-Value Estimate $85.00 (No data provided to support the DCF inputs)",
+            "2025 EPS of approximately $7.50 (Derived from 'insufficient' base data)"
+        ]
+    }
+}

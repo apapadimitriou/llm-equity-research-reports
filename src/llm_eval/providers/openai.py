@@ -24,10 +24,18 @@ def _extract_text(resp: Any) -> str:
 
 
 class OpenAIClient:
-    def __init__(self, api_key: str, model: str, timeout_s: int, retries: int = 3) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str,
+        timeout_s: int,
+        max_output_tokens: int,
+        retries: int = 3,
+    ) -> None:
         self._client = AsyncOpenAI(api_key=api_key, timeout=timeout_s)
         self._model = model
         self._timeout_s = timeout_s
+        self._max_output_tokens = max_output_tokens
         self._retries = retries
 
     async def generate(self, prompt: str, strict_message: str) -> str:
@@ -42,6 +50,8 @@ class OpenAIClient:
                             {"role": "user", "content": strict_message},
                         ],
                         temperature=0,
+                        response_format={"type": "json_object"},
+                        max_output_tokens=self._max_output_tokens,
                     ),
                     timeout=self._timeout_s,
                 )

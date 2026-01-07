@@ -15,9 +15,15 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", default=None)
     parser.add_argument("--input-root", default="output/report")
     parser.add_argument("--output-root", default="output/evaluation")
-    parser.add_argument("--max-concurrency", type=int, default=8)
+    parser.add_argument("--max-concurrency", type=int, default=20)
+    parser.add_argument("--max-output-tokens", type=int, default=16384)
     parser.add_argument("--timeout-s", type=int, default=3600)
     parser.add_argument("--all-sources", action="store_true")
+    parser.add_argument(
+        "--ticker-allowlist-root",
+        default=None,
+        help="Path to a report folder used to define the ticker allowlist.",
+    )
     parser.add_argument(
         "--human-reports",
         action="store_true",
@@ -31,22 +37,28 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _build_client(provider: str, model: str, timeout_s: int):
+def _build_client(provider: str, model: str, timeout_s: int, max_output_tokens: int):
     if provider == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY is not set.")
-        return OpenAIClient(api_key=api_key, model=model, timeout_s=timeout_s)
+        return OpenAIClient(
+            api_key=api_key, model=model, timeout_s=timeout_s, max_output_tokens=max_output_tokens
+        )
     if provider == "anthropic":
         api_key = os.getenv("ANTHROPIC_API_KEY")
         if not api_key:
             raise RuntimeError("ANTHROPIC_API_KEY is not set.")
-        return AnthropicClient(api_key=api_key, model=model, timeout_s=timeout_s)
+        return AnthropicClient(
+            api_key=api_key, model=model, timeout_s=timeout_s, max_output_tokens=max_output_tokens
+        )
     if provider == "gemini":
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
             raise RuntimeError("GEMINI_API_KEY is not set.")
-        return GeminiClient(api_key=api_key, model=model, timeout_s=timeout_s)
+        return GeminiClient(
+            api_key=api_key, model=model, timeout_s=timeout_s, max_output_tokens=max_output_tokens
+        )
     raise ValueError(f"Unknown provider: {provider}")
 
 
@@ -66,9 +78,13 @@ def main() -> None:
         morningstar_only=morningstar_only,
         human_reports=args.human_reports,
         timeout_s=args.timeout_s,
+        max_output_tokens=args.max_output_tokens,
+        ticker_allowlist_root=Path(args.ticker_allowlist_root)
+        if args.ticker_allowlist_root
+        else None,
         strict_message=args.strict_message,
     )
-    client = _build_client(args.provider, model, args.timeout_s)
+    client = _build_client(args.provider, model, args.timeout_s, args.max_output_tokens)
     import asyncio
 
     asyncio.run(run(config, client))

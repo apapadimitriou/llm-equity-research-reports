@@ -1,0 +1,101 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to multiple internal contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in listing its key drivers\u2014such as WACC (8.5%), terminal growth (3.0%), and revenue CAGRs (11.2%)\u2014and provides specific units and time horizons, it fails the consistency and stress-testing pillars. Specifically, two distinct numeric contradictions exist between the narrative and the financial tables. First, the narrative claims 'Earnings per share growth of 15\u201318% annually through 2027,' yet the report\u2019s own financial snapshot models 2025 EPS growth at only 8.8% and a three-year CAGR (2024\u20132027) of 13.6%. Second, the text sets a 'Target operating margin in the high-50% range,' while the accompanying table and appendix explicitly forecast margins starting at 60.1% and rising to 61.7%. Furthermore, the report fails the stress-testing requirement. Although it identifies 'Key valuation sensitivities' like payment volumes and regulatory impacts, it offers no quantified ranges, bull/bear scenarios, or sensitivity tables showing the impact of these variables on the $640 fair value estimate. Per the grading rubric, the combination of multiple internal contradictions and the absence of quantified sensitivities necessitates a 'Poor' grade, as the outputs function as a 'black box' that does not reconcile with the stated narrative logic.",
+    "assumptions_extracted": [
+        {
+            "quote": "Full-year 2025 revenue guidance of $31.92 billion represents 13% growth from 2024 levels",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Earnings per share growth of 15-18% annually through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Target operating margins in the high-50% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Discount Rate (WACC): 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "continued share repurchase activity reducing diluted share count by 2-3% per year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "gross dollar volume growth averaging 8-12% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims 15-18% annual EPS growth, but table shows 8.8% for 2025 and a 13.6% CAGR through 2027.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative targets margins in the 'high-50% range', but table and appendix model 60.1% to 61.7%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "Terminal Growth Rate of 3.0% provided without economic justification or source."
+        ]
+    }
+}

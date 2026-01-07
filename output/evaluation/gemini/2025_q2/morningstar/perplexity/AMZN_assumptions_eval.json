@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions criteria primarily due to a significant internal numeric contradiction and a total lack of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as AWS revenue CAGR (16.2%), North America retail CAGR (9.1%), and a terminal growth rate (3.0%)\u2014these figures are mathematically inconsistent with the provided financial table. Specifically, the consolidated revenue forecast in the 'Financials Snapshot' implies a total CAGR of only 8.8% from 2024 to 2029. It is mathematically impossible for the total revenue growth to be lower than the growth rates of its two largest constituent segments (9.1% and 16.2%). \n\nFurthermore, the report violates a hard cap by failing to provide any quantified sensitivity or scenario analysis. While it includes a qualitative 'Bulls Say / Bears Say' section, it does not model how changes in material drivers (like WACC, AWS margins, or retail growth) would impact the Fair Value Estimate or EPS. Although the assumptions are specific and proximal to the narrative, the lack of stress-testing and the presence of a fundamental calculation error between the text and the tables necessitate a 'Poor' grade under the defined decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "AWS revenue CAGR 2025-2029: 16.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "North America retail revenue CAGR: 9.1%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to 12.3% by 2029",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "over $100 billion in planned 2025 capital expenditures",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The consolidated revenue CAGR in the Financials Snapshot table (8.8%) is mathematically lower than the assumed growth rates for the individual segments (9.1% for NA Retail and 16.2% for AWS) stated in the Appendix.",
+                "locations": [
+                    "Appendix - Key Valuation Assumptions",
+                    "Financials Snapshot - Revenue ($B) row"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without specific build-up or source",
+            "Terminal growth 3.0% without peer/economic context"
+        ]
+    }
+}

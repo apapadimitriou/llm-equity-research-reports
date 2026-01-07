@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions almost entirely as a summary of public news headlines and SEC filings, failing to provide any original synthesis or unique thesis. Every candidate insight identified is a direct restatement of information from cited sources, primarily Reuters and SEC EDGAR. For instance, the discussion on cross-border volume growth, the Recorded Future acquisition, and the UK interchange fee ruling merely repeats reported facts without adding interpretive commentary or linking these events to a specific, testable financial trajectory. The valuation section is particularly generic, utilizing a standard DCF model with boilerplate drivers such as 'Gross Dollar Volume' and 'revenue CAGR' without introducing any novel mechanisms or company-specific angles. There is no evidence of the analyst synthesizing multiple data points into a new conclusion; instead, the report relies on 'scale and diversification' boilerplate. Because there are zero original theses or syntheses and more than three insights are restated or generic, the report meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Revenue jumped 17% to $7.25B, cross-border volumes climbed 15%, and non-interchange services grew 18%.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Acquisition of Recorded Future for $2.65B strengthens its AI-driven fraud/threat intelligence.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "UK tribunal in June 2025 ruled Mastercard\u2019s default interchange fees violate competition law.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Mastercard\u2019s moat is wide on account of its global payment network and brand... network effects create high barriers.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "DCF model centers on a 2024\u201329 revenue CAGR of ~13%... assuming stable operating margins (~55\u201356%).",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Heavy reliance on Reuters for all 'analysis' points",
+            "Recapping regulatory rulings without unique angle"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

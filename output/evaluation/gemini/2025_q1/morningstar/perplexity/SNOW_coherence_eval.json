@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a fair grade due to a significant internal contradiction and a lack of synthesis between competing arguments. Specifically, the Analyst Note highlights non-GAAP operating margins reaching 9% in Q4 2025 as evidence of efficient scaling, yet the Financials Snapshot table projects a full-year FY 2025E operating margin of only 1.2%. This creates an unresolved tension regarding the company's actual profitability trajectory that the narrative fails to address. Additionally, the Bulls Say / Bears Say section identifies critical threats\u2014such as Databricks' competitive pricing and the risk of multiple compression\u2014that are not reconciled in the Fair Value narrative, which simply asserts that an 18x forward revenue multiple is reasonable without countering the bear case. Structurally, the Risk & Uncertainty and Bulls/Bears sections function as bullet dumps, where paragraphs list distinct points without logical transitions or connective tissue. While the report is temporally accurate relative to its May 2025 date and maintains consistent terminology (e.g., NRR, RPO), the failure to align the narrative's margin claims with the provided data table necessitates a downgrade per the rubric's guardrails.",
+    "evidence": [
+        "Analyst Note claims non-GAAP operating margins reached 9% in Q4 2025, but the Financials Snapshot table lists FY 2025E Op Margin at 1.2%.",
+        "The Bear case regarding Databricks being more cost-effective and the risk of multiple compression is not reconciled with the Wide moat rating or the $225 Fair Value Estimate.",
+        "The Risk & Uncertainty section consists of five separate paragraphs (Macro, Competitive, Technology, Regulatory, Operational) that read as a list of points without transitions."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

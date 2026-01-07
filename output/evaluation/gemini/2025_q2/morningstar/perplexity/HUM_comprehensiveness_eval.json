@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete and well-cited, but it fails to meet the depth requirements for a 'Good' or 'Excellent' rating due to significant omissions in the Financials Snapshot and high redundancy. While the report identifies the core challenges facing Humana\u2014specifically the Medicare Advantage star ratings decline and membership losses\u2014it repeats these specific data points (94% to 25% star rating drop and 550,000 member loss) across the Analyst Note, Bulls/Bears, Risk, and Strategy sections without adding incremental depth, triggering a mandatory downgrade. Most critically, the Financials Snapshot table omits essential sector-specific KPIs for Managed Care, such as the Medical Loss Ratio (MLR/Benefit Ratio) and Membership enrollment forecasts, which are only mentioned qualitatively in the text. This omission of \u22652 core sector KPIs in the data grid triggers a hard cap of 'Fair'. Furthermore, the report lacks a dedicated peer benchmarking table and a formal sensitivity/scenario analysis matrix, providing only a brief mention of a price range.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis Matrix"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Benefit Ratio (text only)",
+            "Membership counts (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR) Forecasts",
+            "Membership Enrollment Forecasts",
+            "Days Claims Payable (DCP)",
+            "PMPM (Per Member Per Month) Trends"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR) missing from Financials Snapshot table",
+            "Membership enrollment forecasts missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

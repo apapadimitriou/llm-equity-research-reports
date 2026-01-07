@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report primarily functions as a summary of Adobe's Q2 2025 earnings results and a restatement of well-known market narratives. It relies heavily on public data points, such as revenue beats, ARR growth, and the impact of the Firefly AI tool, which are directly attributed to external sources like App Economy Insights. The majority of the insights\u2014including the discussion of the 'wide moat' based on switching costs and the 'bulls vs. bears' section\u2014utilize boilerplate phrasing common to the software sector. There is one attempt at synthesis: the projection that operating margins will expand significantly from 35% to 48% by FY29 due to 'AI efficiencies.' While this provides a specific numerical target, the underlying mechanism is not deeply explored or quantified, making it a weak synthesis. The valuation section uses a standard DCF model with conventional drivers (WACC, terminal growth) and lacks a truly novel or company-specific angle that isn't already public knowledge. Because the report contains more than three restated or generic insights and only one weak synthesis, it fails to reach the 'Good' threshold and is capped at 'Fair' per the decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q2 2025 revenue of $5.9 billion and EPS of $5.06 exceeded expectations by $70 million and $0.09 respectively.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI integrations like Firefly are boosting user engagement and subscription uptake, supporting mid-teens growth.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins are forecasted to expand from 35% in FY24 to 48% by FY29, benefiting from scale and AI efficiencies.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Adobe possesses a wide economic moat from intangible assets and switching costs in Photoshop and Acrobat.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Shares trading at 20x forward EPS versus historical averages of 30x represent an attractive valuation.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'switching costs' and 'network effects' phrasing",
+            "Heavy reliance on a single earnings summary source [1]"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its forward-looking model, including revenue, expenses, and credit provisions for 2025E and 2026E. These inputs are generally well-justified by referencing management guidance, consensus estimates, and historical performance from 2023\u20132024. The internal consistency is high; the figures presented in the 'Financial Summary & Forecasts' table reconcile with the narrative regarding EPS growth, TBVPS, and the $20 billion share repurchase program. However, the report fails to meet the 'Good' or 'Excellent' criteria due to a total lack of quantified sensitivity or scenario analysis. While the author identifies material risks\u2014such as interest rate sensitivity (NII), credit quality deterioration in the card portfolio, and macroeconomic shifts\u2014these are discussed only qualitatively. There are no quantified ranges or 'what-if' scenarios showing how a 50bps change in rates or a 1% increase in unemployment would impact the $95.00 price target or the 10-11% RoTCE goal. Per the grading instructions, the absence of quantified sensitivity analysis on material drivers imposes a hard cap of 'Fair'. Additionally, while the Cost of Equity is stated as 9-10%, it lacks a specific build-up or source, further reinforcing the 'Fair' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "The forecast for fiscal year 2025 revenue is $83.95 billion, which aligns with the current market consensus and management's guidance",
+            "location": {
+                "section": "Forward-Looking Model (2025E - 2026E)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The efficiency ratio is projected to improve, moving from the mid-60s toward the low 60s as productivity initiatives take hold",
+            "location": {
+                "section": "Forward-Looking Model (2025E - 2026E)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Provision for Credit Losses... 2025E: $14.5 | 2026E: $15.0",
+            "location": {
+                "section": "Financial Summary & Forecasts",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "continuation of its multi-year $20 billion share repurchase program.",
+            "location": {
+                "section": "Investment Thesis",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "applying a target P/TBV multiple of approximately 1.0x to our forward 12-month TBVPS estimate of ~$95.",
+            "location": {
+                "section": "Price Target Derivation",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "financial institution capable of sustainably earning its cost of equity\u2014typically estimated in the 9-10% range",
+            "location": {
+                "section": "Price Target Derivation",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "credit_cost",
+            "share_count",
+            "WACC/COE"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_ranges"
+        ],
+        "unjustified_parameters": [
+            "Cost of Equity 9-10% stated as typical without specific calculation"
+        ]
+    }
+}

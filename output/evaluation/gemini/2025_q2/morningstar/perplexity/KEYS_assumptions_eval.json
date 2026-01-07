@@ -1,0 +1,86 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple internal contradictions and the total absence of quantified sensitivity analysis. While the report lists several key assumptions (WACC, terminal growth, revenue CAGR), it fails to provide any quantified ranges or scenarios for these material drivers, which triggers a 'Fair' cap under the rubric. However, the report falls further to 'Poor' because of significant numeric contradictions between the text, tables, and cited sources. Specifically, the 'Financials Snapshot' table lists FY2024 EPS as $4.26, which directly conflicts with the cited Source 10 that reports FY2024 Non-GAAP EPS of $6.33. Similarly, the table's FY2023 EPS of $6.42 conflicts with the actual figure of $8.33. Furthermore, the narrative claims the valuation assumes revenue growth at the 'midpoint of management's 5-7% target' (6%), yet the table's projected growth for FY2025 is only 4.7% ($5,108M to $5,350M). Justification for the 8.5% WACC is non-existent, and critical inputs like the tax rate and share count are omitted from the explicit assumptions list. These discrepancies between the narrative, the tables, and the cited historical data render the model's outputs opaque and unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "weighted average cost of capital of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal value calculations use a 3% perpetual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Software and services expansion from 36% to 45% of total revenue over the next three years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "modest capital expenditure requirements of 3-4% of revenue",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Table FY24 EPS ($4.26) conflicts with cited Source 10 ($6.33) and Source 10's FY23 figure ($8.33 vs table's $6.42).",
+                "locations": [
+                    "Financials Snapshot",
+                    "Source 10"
+                ]
+            },
+            {
+                "description": "Narrative claims revenue growth at 6% midpoint, but table shows 4.7% growth for FY25 ($5,108M to $5,350M).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% stated without risk-free rate or beta components."
+        ]
+    }
+}

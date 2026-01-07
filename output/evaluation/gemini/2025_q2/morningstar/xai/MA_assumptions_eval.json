@@ -1,0 +1,85 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment primarily due to significant internal contradictions and a lack of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue CAGR (12%), operating margins (57.8% average), and WACC (8.5%), these inputs are undermined by conflicting data points. Specifically, the Analyst Note cites a 2026 EPS forecast of $15.90, whereas the Financials Snapshot table explicitly lists 2026 EPS as $17.20. Furthermore, the Fair Value section claims the $510 estimate reflects a 33x forward P/E on 2026 estimates, which mathematically implies an EPS of $15.45, creating a three-way discrepancy. \n\nRegarding justification and specificity, the report provides market-based inputs for WACC (risk-free rate, ERP, beta) and aligns terminal growth with GDP expectations, which is a strength. However, it fails the 'Stress-tested' pillar. While the Risk section qualitatively mentions that earnings could swing by 15-20% due to regulatory or macro factors, there is no quantified sensitivity table or scenario analysis demonstrating how changes in material drivers (like WACC, terminal growth, or margin compression) would impact the $510 Fair Value Estimate. Per the grading instructions, the combination of a material numeric contradiction and the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 12% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 56% in 2024 to 58% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.0",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 4%, implying a 2029 exit multiple of 25x.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "subtract $0.50 for higher taxes and expenses",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2026 EPS forecast is stated as $15.90 in the Analyst Note but listed as $17.20 in the Financials Snapshot table.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "The Fair Value section claims $510 FVE is 33x 2026 EPS (implying $15.45), which conflicts with both the $15.90 and $17.20 figures provided elsewhere.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "2029 exit multiple of 25x stated without peer comparison or historical context."
+        ]
+    }
+}

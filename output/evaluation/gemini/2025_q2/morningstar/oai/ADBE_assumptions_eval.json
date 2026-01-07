@@ -1,0 +1,96 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to multiple internal numeric contradictions and a total absence of quantified sensitivity analysis. While the report explicitly lists key model inputs such as revenue growth, non-GAAP operating margins, and WACC, these figures fail to reconcile across different sections of the document. Specifically, the 'Fair Value and Profit Drivers' section projects FY2029 free cash flow at approximately $10.8 billion, whereas the 'Financials Snapshot' table forecasts $11.5 billion for the same period. Furthermore, the Appendix explicitly states a revenue CAGR of '~8% thereafter' (following FY2025), which directly conflicts with the 'Fair Value' narrative of growth 'slowing to ~5% by 2029' and the table's implied CAGR of approximately 5.4%. Justification for the 7.5% WACC is weak, provided only as a 'premium for software risk' without a formal build-up or peer benchmarking. Most critically, the report fails the mandatory stress-testing requirement; although it qualitatively identifies risks such as AI adoption timelines and FX headwinds, it provides no quantified ranges, bull/bear cases, or scenario-based impacts on the $430 fair value estimate. Per the grading instructions, the combination of two distinct numeric contradictions and the lack of quantified sensitivities necessitates a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "FY25 revenue \u2248$23.6 b (mid-guidance), ~10% annual growth slowing to ~5% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "steady non-GAAP operating margin \u224846\u201347%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Using a WACC ~7.5% (reflecting a premium for software risk) and 2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "non-GAAP tax ~18.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "FCF rising from ~$8.7 b (FY25) to ~$10.8 b (FY29)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "CAGR ~8% thereafter",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2029 Free Cash Flow estimate in text ($10.8B) conflicts with the Financials Snapshot table ($11.5B).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Post-2025 Revenue CAGR in Appendix (~8%) conflicts with Fair Value text (~5%) and Table implied growth (~5.4%).",
+                "locations": [
+                    "Appendix",
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% stated without source or CAPM build-up"
+        ]
+    }
+}

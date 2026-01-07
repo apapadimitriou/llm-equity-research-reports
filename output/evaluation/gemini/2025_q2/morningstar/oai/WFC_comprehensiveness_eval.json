@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all required sections from the Analyst Note to ESG and Capital Allocation. It provides exceptional regulatory context, specifically regarding the lifting of the $1.95 trillion asset cap, and is meticulously cited with high-quality sources. However, the report fails the 'Hard Cap' criteria regarding sector-specific KPIs. The Financials Snapshot is generic, providing only high-level metrics like Revenue and EPS while omitting critical banking KPIs such as Net Interest Margin (NIM), CET1 ratios, Efficiency Ratios, and Loan Loss Provisions. While these are mentioned qualitatively in the text, their absence from the multi-year forecast table limits the depth of the financial analysis. Additionally, the report exhibits significant redundancy; the asset cap removal and the CEO's turnaround strategy are repeated across the Analyst Note, Strategy, Bulls/Bears, and Moat sections with minimal new information. The valuation section links operating drivers to the fair value estimate but lacks a formal scenario or sensitivity analysis. Per the instruction's decision rules, the omission of \u22652 core sector KPIs in the Financials Snapshot mandates a maximum grade of Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (text only)",
+            "Tier 1 Ratios (text only)",
+            "Provisions (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Loan Loss Provisions (table)",
+            "Non-Performing Assets (NPA)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Loan Loss Provisions"
+        ],
+        "uncited_claims": []
+    }
+}

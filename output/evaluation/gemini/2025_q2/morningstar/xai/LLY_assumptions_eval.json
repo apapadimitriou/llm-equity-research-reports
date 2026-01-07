@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple significant internal numeric contradictions and a lack of quantified sensitivity analysis for material drivers. First, the WACC is stated as 7.0%, but the provided components (4% risk-free rate, 0.8 beta, and 5% equity risk premium) calculate to 8.0%, creating an unresolved discrepancy in the discount rate. Second, the EPS bridge is mathematically incoherent: the narrative claims that starting from a 2025 EPS of $13.75 and applying specific adjustments (+$2.50, +$1.00, -$0.75) yields a 2029 EPS of $28.00, whereas the actual sum is $16.50. These errors demonstrate a failure in internal consistency and auditability across the narrative and tables. Furthermore, the report lacks robust stress-testing. While it mentions a potential 30% variance in fair value, this is a qualitative statement regarding the final output rather than a quantified sensitivity analysis of material drivers (e.g., a matrix showing the impact of varying revenue growth or margins). Although assumptions are explicitly stated, the presence of two distinct numeric contradictions and the absence of driver-level sensitivities trigger a 'Poor' grade under the mandatory decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "15% revenue CAGR from 2025 to 2029, driven by 25% growth in endocrinology segment",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand to 35% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 7.0%, incorporating a beta of 0.8 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "model assumes a terminal growth rate of 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Starting from 2025 estimated EPS of $13.75... add $2.50 from revenue growth, $1.00 from margin expansion, subtract $0.75 for R&D investments, yielding 2029 EPS of $28",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components (4% Rf + 0.8 Beta * 5% ERP) equal 8.0%, but the report states 7.0%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix: Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "EPS bridge math (13.75 + 2.50 + 1.00 - 0.75) equals 16.50, but the text claims it yields 28.00.",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% (mathematically inconsistent with stated inputs)"
+        ]
+    }
+}

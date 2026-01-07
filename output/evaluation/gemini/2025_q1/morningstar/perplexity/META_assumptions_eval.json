@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions test primarily due to a material internal contradiction and a total lack of quantified sensitivity analysis. While the report explicitly states key drivers such as WACC (10.5%), terminal growth (2.5%), and 2025 capex ($64\u201372B), these figures are presented as static points without ranges or scenario-based impacts on the $770 fair value estimate. Crucially, there is a significant numeric discrepancy: the narrative explicitly forecasts a 12% revenue CAGR over the next five years, yet the provided 'Financials Snapshot' table reflects a CAGR of only approximately 9.7% when calculating the growth from 2024 ($156.8B) to 2029 ($249.7B). Justification for these inputs is limited to recent quarterly performance and management guidance, lacking the multi-year historical context or peer benchmarking required for a higher grade. Per the grading rubric, the combination of a numeric contradiction and the absence of quantified sensitivities for material drivers (such as AI capex or ad pricing) mandates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "project revenue compound annual growth rate of 12% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "weighted average cost of capital of 10.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "capital expenditure guidance to $64-72 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "operating margins stabilize around 40-42%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "authorization for additional $80 billion in buybacks",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative claims a 12% revenue CAGR over five years, but the Financials Snapshot table shows revenue growing from $156.8B (2024A) to $249.7B (2029E), which is a ~9.7% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC of 10.5% is stated without a CAPM build-up, beta assumption, or peer comparison.",
+            "Terminal growth of 2.5% lacks justification relative to long-term GDP or industry expectations."
+        ]
+    }
+}

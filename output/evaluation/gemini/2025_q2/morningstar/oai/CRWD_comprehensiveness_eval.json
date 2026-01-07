@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as Fair due to a combination of structural omissions and excessive redundancy. While the report successfully includes all mandatory headline sections and maintains a high standard of in-text sourcing, it fails the Good threshold on two primary counts. First, the Financials Snapshot table is generic; it omits critical SaaS-specific KPIs such as Annual Recurring Revenue (ARR) and Net/Gross Retention Rates (NRR/GRR) for the forecast years, despite these being the primary drivers of the business. Per the instruction's hard caps, the absence of two or more core sector KPIs in the snapshot limits the grade to Fair. Second, the report suffers from significant repetition. Key data points\u2014specifically the July 2024 sensor outage, the 97% retention rate, and the $10B ARR target\u2014are recycled across the Analyst Note, Business Strategy, Bulls/Bears, Risk, and ESG sections with minimal added insight in each instance. This redundancy triggers a mandatory one-level downgrade. Furthermore, while the valuation section identifies operating drivers, it lacks the depth of a full bridge or sensitivity analysis. The absence of a dedicated peer benchmarking table and scenario analysis further confirms that the report, while broad in scope, remains thin in its analytical execution.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "ARR (text only)",
+            "Retention Rate (text only)",
+            "Subscription Gross Margin"
+        ],
+        "sector_kpis_missing": [
+            "ARR Forecasts (Snapshot)",
+            "NRR/GRR Forecasts (Snapshot)",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Annual Recurring Revenue) missing from Financials Snapshot table",
+            "NRR/GRR (Retention Rates) missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

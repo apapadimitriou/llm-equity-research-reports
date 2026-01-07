@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report follows the required structure but fails significantly on technical depth and sourcing integrity. While all major sections are present, the Financials Snapshot is generic and omits critical sector-specific KPIs for a consumer finance/banking entity, such as Net Interest Margin (NIM), Net Charge-Offs (NCOs), and Provision for Credit Losses in the multi-year forecast table. Although some of these are mentioned in the Analyst Note, their absence from the financial model view violates the core requirements for comprehensiveness. Furthermore, the report relies on severely outdated sources; specifically, Source [5] is dated 2020 but is used to support claims regarding the 2024 Discover merger, and Source [3] from 2023 is used for 2025 institutional activity. The report also lacks a dedicated peer benchmarking table and formal scenario/sensitivity analysis. Redundancy is a notable issue, as the Discover merger synergies are repeated across the Analyst Note, Strategy, Bulls/Bears, and Valuation sections without providing incremental depth, triggering a mandatory downgrade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM) in table",
+            "Net Charge-Offs (NCO) in table",
+            "Provision for Credit Losses in table",
+            "CET1 Ratio in table"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Source [5] dated 2020 is used to cite the Discover merger which was announced in 2024.",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net Charge-Offs",
+            "Provisions for Credit Losses",
+            "CET1 Ratio"
+        ],
+        "uncited_claims": [
+            "Institutional activity in Q1 2025 cited using a 2023 source [3]",
+            "Retention rates above 90% cited using source [4] which is a general news link"
+        ]
+    }
+}

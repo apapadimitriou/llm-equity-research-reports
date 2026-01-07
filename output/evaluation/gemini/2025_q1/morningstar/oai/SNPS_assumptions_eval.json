@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor primarily due to a significant internal contradiction and the total absence of quantified sensitivity analysis. While the report is explicit in stating its key model inputs\u2014including a 10\u201312% revenue CAGR, an 8% WACC, and a 2\u20133% terminal growth rate\u2014it fails the consistency and stress-testing pillars. The most glaring issue is a numeric contradiction regarding profitability: the narrative in the 'Business Strategy' and 'Fair Value' sections forecasts non-GAAP operating margins expanding to the 'high 30s' or '~40%' by 2029, yet the 'Financials Snapshot' table explicitly lists the 2029 operating margin at 24.0%. This 1,600-basis-point discrepancy between the text and the model table is unresolved and undermines the report's credibility. Furthermore, despite identifying material risks such as a 10% revenue exposure to China and geopolitical export controls that led to a guidance withdrawal, the report offers no quantified sensitivity or scenario analysis. There are no ranges provided for how changes in revenue growth, margin realization, or discount rates would impact the $400 fair value estimate. Per the instruction's hard caps, the combination of a major numeric contradiction and the lack of quantified sensitivities for material drivers necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "forecast ~10\u201312% CAGR for 2025\u201329",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins should expand... toward ~40% by FY2029",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC \u22488%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "2\u20133% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "fully diluted shares ~156M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "projected to boost margins ~125 bp in 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The text forecasts operating margins reaching ~40% by 2029, but the Financials Snapshot table lists the 2029 operating margin as 24.0%.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity ranges for China revenue loss",
+            "quantified impact of Ansys integration delays"
+        ],
+        "unjustified_parameters": [
+            "WACC of 8% is stated without a derivation or peer benchmark."
+        ]
+    }
+}

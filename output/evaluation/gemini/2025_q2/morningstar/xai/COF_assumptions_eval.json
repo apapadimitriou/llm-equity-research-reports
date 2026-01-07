@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment due to a critical internal numeric contradiction and the absence of quantified sensitivity analysis. While key drivers such as revenue CAGR (5%), terminal growth (3%), and WACC (9%) are explicitly stated, they lack robust justification, often relying on vague citations of historical filings to support forward-looking projections. The most significant failure is a blatant mathematical contradiction in the 'Fair Value and Profit Drivers' section: the report provides an EPS bridge starting at $12.00, adding $2.00 from revenue and subtracting $0.50 for provisions, yet concludes this yields a 2029 EPS of $18.00 (the math results in $13.50). This $4.50 discrepancy is unresolved and conflicts with the Financials Snapshot table. Furthermore, the report offers no quantified sensitivity analysis or scenario modeling for material levers like net interest margins or credit loss rates, providing only a qualitative mention of potential valuation swings. Per the grading instructions, the combination of a material numeric contradiction and the lack of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 5% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "margin expansion to 25%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9%, reflecting equity beta of 1.2 and cost of debt at 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 3.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "3"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2024 base EPS $12.00, plus $2.00 from revenue growth, minus $0.50 from higher provisions, yielding 2029 EPS of $18.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "share buybacks total $2B annually",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "2"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The EPS bridge math ($12.00 + $2.00 - $0.50) equals $13.50, but the text and table claim a 2029 EPS of $18.00.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "specific credit loss ratios"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% (risk-free rate source and equity risk premium missing)",
+            "Margin expansion to 25% (specific cost-cutting drivers not quantified)"
+        ]
+    }
+}

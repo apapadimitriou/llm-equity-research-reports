@@ -1,0 +1,105 @@
+[
+    {
+        "grade": "Poor",
+        "summary_reasoning": "The report fails to meet the minimum standards for high-quality assumptions due to two critical 'Hard Cap' violations. First, there is a significant internal numeric contradiction regarding the Weighted Average Cost of Capital (WACC). In the 'Fair Value and Profit Drivers' section and the Appendix, the WACC is stated as 6.77% (derived from a 7.81% cost of equity). However, in the 'Bears Say' and 'Economic Moat' sections, the report explicitly states the WACC is 4.76% to support the argument that the company's 4.15% ROIC is value-destructive. This unresolved discrepancy between the valuation model and the narrative conclusion is a major consistency failure. Second, the report lacks any quantified sensitivity or scenario analysis for its material drivers. While it qualitatively discusses risks such as PBM regulatory reform and Medicare Advantage rate pressures, it provides no quantified ranges or 'what-if' scenarios showing how changes in margins, terminal growth, or discount rates would impact the $86.00 Fair Value Estimate. Assumptions for revenue growth and terminal value are largely justified by 'analyst consensus' or 'management guidance' rather than independent historical benchmarking or peer comparison. The combination of a material numeric contradiction and the total absence of quantified stress-testing necessitates a 'Poor' grade.",
+        "assumptions_extracted": [
+            {
+                "quote": "Our DCF analysis uses a Weighted Average Cost of Capital (WACC) of 6.77%",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "unknown"
+                },
+                "driver_type": "WACC/COE"
+            },
+            {
+                "quote": "ROIC (4.15%) has fallen below its WACC (4.76%)",
+                "location": {
+                    "section": "Economic Moat",
+                    "page": "unknown"
+                },
+                "driver_type": "WACC/COE"
+            },
+            {
+                "quote": "We model 4.5% revenue growth in 2025, consistent with analyst consensus",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "unknown"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "Terminal Growth Rate: 2.5% ... Analyst estimate, reflecting long-term inflation and GDP growth.",
+                "location": {
+                    "section": "Appendix",
+                    "page": "unknown"
+                },
+                "driver_type": "terminal_growth"
+            },
+            {
+                "quote": "Assumed Tax Rate: 25.5% ... Management guidance for 2025.",
+                "location": {
+                    "section": "Appendix",
+                    "page": "unknown"
+                },
+                "driver_type": "tax_rate"
+            },
+            {
+                "quote": "projecting adjusted EPS of $5.75 to $6.00",
+                "location": {
+                    "section": "Analyst Note",
+                    "page": "unknown"
+                },
+                "driver_type": "other"
+            },
+            {
+                "quote": "benefit redesigns that could drive significant membership losses, potentially as high as 10%",
+                "location": {
+                    "section": "Risk & Uncertainty",
+                    "page": "unknown"
+                },
+                "driver_type": "other"
+            },
+            {
+                "quote": "project free cash flow (FCF) as low as $4.0 billion for the year",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "unknown"
+                },
+                "driver_type": "other"
+            }
+        ],
+        "checks": {
+            "explicitness": true,
+            "justification_with_evidence": "weak",
+            "specificity_units_horizon": "solid",
+            "internal_consistency": "contradiction_found",
+            "sensitivities_present": false,
+            "sensitivities_quality": "none",
+            "material_drivers_covered": [
+                "revenue_growth",
+                "tax_rate",
+                "WACC/COE",
+                "terminal_growth"
+            ]
+        },
+        "flags": {
+            "contradictions": [
+                {
+                    "description": "The WACC is cited as 6.77% in the valuation section/appendix but cited as 4.76% in the Moat and Bears Say sections.",
+                    "locations": [
+                        "Fair Value and Profit Drivers",
+                        "Economic Moat"
+                    ]
+                }
+            ],
+            "missing_or_opaque_assumptions": [
+                "quantified sensitivity analysis",
+                "share_count"
+            ],
+            "unjustified_parameters": [
+                "WACC 6.77% cited only as 'analyst consensus'",
+                "Terminal growth 2.5% cited as 'analyst estimate'"
+            ]
+        }
+    }
+]

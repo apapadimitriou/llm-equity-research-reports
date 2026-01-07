@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is assigned a grade of 'Poor' due to a material internal contradiction and the total absence of quantified sensitivity analysis, violating multiple 'Hard Cap' evaluation rules. The narrative explicitly defines a 'revenue compound annual growth rate of 23% through fiscal 2029' as a key profit driver; however, the 'Financials Snapshot' table models a consistent 25.0% year-over-year growth rate from FY2025E ($3,654M) to FY2029E ($8,922M), resulting in a 4-year CAGR of 25% (or a 5-year CAGR of 26% from the FY2024A base). This 200-300 basis point discrepancy between the text and the model is an unresolved numeric contradiction. Furthermore, the report fails to provide any quantified sensitivity or scenario analysis (e.g., bull/bear cases or valuation sensitivity to WACC/growth) for a high-growth technology company where the fair value estimate is highly sensitive to small input changes. While the report lists several key assumptions like WACC (10.5%) and terminal growth (3%), these are presented as point estimates without justification, build-up, or peer benchmarking. The justification for the operating margin expansion\u2014climbing from a -18.9% GAAP loss in FY2024 to a 15.2% profit in FY2029\u2014is purely qualitative and lacks a specific bridge to support such a rapid turnaround. These failures in consistency and stress-testing render the underlying model non-auditable.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 23% through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "expanding non-GAAP operating margins to 15% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of 10.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal value calculations apply a 3% perpetual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "net revenue retention rate of 124%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative assumes a 23% Revenue CAGR through FY2029, but the Financials Snapshot table models a consistent 25% YoY growth rate, resulting in a significantly higher terminal revenue figure than the stated CAGR would imply.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% stated without risk-free rate or beta components",
+            "Terminal growth 3% stated without economic context",
+            "Operating margin bridge from -18.9% to 15.2%"
+        ]
+    }
+}

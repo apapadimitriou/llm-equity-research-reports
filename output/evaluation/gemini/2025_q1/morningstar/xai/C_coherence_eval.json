@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is fundamentally incoherent due to a severe temporal paradox. It is dated April 16, 2025, yet it incorporates data and citations from July and September 2025 (Sources [5], [7], [8], [9], and [10]). This creates an impossible narrative where the analyst claims to be reporting on Q1 2025 results while simultaneously referencing a Q2 2025 earnings call and a stock price peak that has not yet occurred relative to the report date. Specifically, Source [9] notes a 52-week high of $97.50 in September 2025, which directly contradicts the cover block's 'Last close' of $67.60 and the Fair Value Estimate of $75.00.\n\nBeyond these temporal failures, the report lacks internal reconciliation. The Bulls/Bears section is a series of bullet points that are never integrated into the valuation narrative; for instance, the 'regulatory fines' bear case is mentioned but not reflected in the WACC or the optimistic margin expansion projections in the Appendix. While the financial table is internally consistent with the narrative's 4.5% CAGR, the reliance on future-dated sources renders the entire analysis invalid. The transitions between sections are functional, but they cannot overcome the structural failure of the timeline. Consequently, the reader is forced to disregard the logic of the argument entirely.",
+    "evidence": [
+        "Report date is 2025-04-16, but Sources [7] and [10] reference a Q2 2025 earnings call from 2025-07-15.",
+        "Source [9] cites a $97.50 stock price in September 2025, contradicting the April 2025 'Last close' of $67.60 (Cover Block).",
+        "Bulls/Bears section is not reconciled with the base-case valuation or the 9.5% WACC assumption (Bulls Say / Bears Say)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

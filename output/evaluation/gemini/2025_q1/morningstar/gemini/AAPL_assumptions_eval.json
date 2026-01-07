@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit, specific, and internally consistent assumptions for revenue growth, margins, and valuation parameters such as WACC and terminal growth. These inputs are clearly presented in both the narrative and a dedicated valuation table in the appendix. However, the report fails to meet the criteria for a higher grade due to a total lack of quantified sensitivity analysis or scenario modeling. While the analyst identifies significant 'existential' risks\u2014including EU regulatory fines, U.S. anti-steering injunctions, and geopolitical tariffs\u2014the report does not quantify how these material drivers would impact the Fair Value Estimate (FVE) under different conditions. The 'Risk & Uncertainty' section remains purely qualitative regarding valuation impact. Furthermore, the justification for key inputs is relatively thin, relying heavily on 'analyst consensus' for the revenue CAGR and WACC rather than providing a robust independent analysis of historical trends or peer benchmarks. Per the grading instructions, the absence of quantified sensitivities on material drivers acts as a hard cap, limiting the grade to 'Fair.' While the internal consistency between the text and the financial snapshot is excellent, the lack of stress-testing prevents the model from being truly auditable or transparent regarding its outputs under stress.",
+    "assumptions_extracted": [
+        {
+            "quote": "The model assumes a 5-year (FY2025-2029) revenue Compound Annual Growth Rate (CAGR) of 6.8%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecast to remain relatively stable, expanding only slightly from the fiscal 2024 level of approximately 31.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "A Weighted Average Cost of Capital (WACC) of 7.98% is used to discount future cash flows.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 2.5% Rationale / Source: Long-term inflation and global GDP growth expectations",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Board of Directors announced a new $100 billion share repurchase authorization",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "fiscal 2025 EPS forecast of $7.41",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.98% cited only as consensus",
+            "Revenue CAGR 6.8% cited only as consensus"
+        ]
+    }
+}

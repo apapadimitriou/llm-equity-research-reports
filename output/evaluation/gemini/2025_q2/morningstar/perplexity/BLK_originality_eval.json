@@ -1,0 +1,44 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a comprehensive summary of BlackRock's current strategic position but relies heavily on restating information provided in the source text. It identifies the HPS Investment Partners acquisition and Aladdin's market share as key drivers, but these are presented as restatements of news and public data rather than original analytical theses. The report contains one weak synthesis: linking the shift toward private credit and technology revenue to a specific margin expansion target (47-48% by 2029). However, the mechanism for this expansion is described using boilerplate language like 'scale efficiencies' and 'operational leverage.' The valuation section follows a standard DCF framework with generic drivers (AUM growth and market appreciation) and lacks a novel mechanism or unique catalyst. Because more than three insights are direct restatements of the provided sources and the valuation lacks a novel driver, the grade is capped at Fair.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "HPS acquisition establishes BlackRock as a leader in private credit, adding $148 billion in assets.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Aladdin platform maintains a 98% retention rate and captures 11% of the addressable market.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Antitrust litigation regarding ESG and coal ownership creates operational and reputational risk.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins projected to expand to 47-48% by 2029 driven by higher-margin technology revenue and private credit mix.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Restating news headlines (HPS deal) as core thesis"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

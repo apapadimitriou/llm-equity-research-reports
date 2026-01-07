@@ -1,0 +1,102 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is Poor due to multiple unresolved internal contradictions and a total lack of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as NII growth, revenue CAGR, and operating margins\u2014these figures frequently conflict between the narrative sections and the 'Financials Snapshot' table. Specifically, the narrative projects a 2029 EPS of $4.50 and steady 22% margins, while the table forecasts $4.70 and margins rising to 23%. Similarly, revenue CAGR is inconsistently cited as 2-4% and 3-5% in different sections. Justification is partial; while management guidance is cited for near-term NII, long-term drivers like the 8.5% WACC and 2% terminal growth rate are presented as 'black-box' inputs without supporting build-ups or peer benchmarking. Most critically, the report fails the hard cap for sensitivity analysis. Despite identifying significant macro and interest rate risks, it offers no quantified scenarios or ranges (e.g., the impact of a 100bps rate shift on NII or valuation). This lack of stress-testing, combined with at least three distinct numeric discrepancies between text and tables, necessitates a 'Poor' grade under the evaluation framework. The assumptions are traceable but lack the internal coherence and robust testing required for a higher rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "management forecasts record NII in 2025 (6\u20137% growth from 2024 levels)",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "assume roughly 2\u20134% revenue CAGR, with tax-equivalent operating margins steady around 21\u201323%",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project revenue ~3%\u20135% CAGR through 2029... Operating (tax-equivalent) margins are held at ~22%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "3"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assume a WACC around 8.5% (cost of equity ~10%, cost of debt ~4%), and a perpetual growth rate ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "3"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "share count declines ~2%/yr via buybacks",
+            "location": {
+                "section": "Appendix",
+                "page": "5"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "effective tax rate ~18%",
+            "location": {
+                "section": "Appendix",
+                "page": "5"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR cited as 2-4% in Strategy section but 3-5% in Fair Value section.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "2029 EPS projected at $4.50 in narrative vs. $4.70 in Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Operating margins described as 'held at ~22%' in narrative but shown scaling from 22.3% to 23.0% in the table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified credit_cost/provisioning ranges",
+            "WACC component justification"
+        ],
+        "unjustified_parameters": [
+            "Perpetual growth rate of 2% stated without economic context.",
+            "WACC of 8.5% lacks a risk-free rate or beta source."
+        ]
+    }
+}
