@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report provides a comprehensive analysis of Amgen's portfolio, particularly the obesity pipeline (maritide). However, it suffers from several internal contradictions between the narrative and the data tables. Specifically, the 'Capital Allocation' section claims the net debt/EBITDA ratio is below 4, but the 'Financial Leverage' table shows it at 4.2 for 2024. Similarly, the 'Fair Value and Profit Drivers' section assumes a 16% long-term tax rate, while the 'Key Valuation Drivers' table explicitly lists 17.0%. There is also a slight discrepancy in maritide's probability-adjusted sales figures ($8 billion vs. $9 billion) within sections dated the same day (Feb 5, 2025). While the flow between the recent June 2025 Analyst Note and the older core sections is generally good, these data mismatches require the reader to reconcile the numbers themselves. The 'Bulls Say/Bears Say' sections are well-integrated into the valuation narrative, particularly regarding the 2025 patent cliffs for Prolia/Xgeva. The temporal alignment is mostly accurate, though the narrative's claim that free cash flow remains 'above 30% of sales' glosses over the significant negative outlier in 2023 shown in the financials. Overall, the report is understandable but internally noisy due to these unresolved tensions between text and data.",
+    "evidence": [
+        "\"Amgen holds a net debt/EBITDA ratio below 4\" (Capital Allocation, p. 7) vs. 2024 Net Debt/EBITDA of 4.2 (Financial Leverage table, p. 14).",
+        "\"We assume a 16% tax rate for Amgen beyond 2024\" (Fair Value, p. 6) vs. \"Long-Run Tax Rate % 17.0\" (Key Valuation Drivers table, p. 14).",
+        "\"probability-adjusted sales of $8 billion in 2033\" (Fair Value, p. 5) vs. \"probability-weighted peak sales around $9 billion\" (Archive Note, p. 8)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

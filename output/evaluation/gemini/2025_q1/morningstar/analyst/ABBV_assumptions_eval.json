@@ -1,0 +1,90 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report\u2019s assumptions are explicit and well-integrated into the valuation narrative. Key drivers, particularly the transition from Humira to the next-generation immunology drugs Skyrizi and Rinvoq, are clearly stated with specific magnitudes. The analyst provides a detailed revenue bridge, citing a $31 billion combined sales target for Skyrizi and Rinvoq by 2027, justified by a 20% CAGR and management guidance. Specificity is high, with units (USD), time horizons (2027, 2029), and causal drivers (biosimilar competition and pricing erosion) explicitly defined. Internal consistency is strong; the WACC (7.0%), cost of equity (7.5%), and long-run tax rate (21%) stated in the text reconcile with the detailed valuation tables. While the report lacks a standard sensitivity matrix for valuation inputs like WACC, it provides a robust, quantified scenario analysis for a material macro risk: pharmaceutical tariffs. The analyst calculates a specific 2-percentage-point operating margin headwind and a 6% hit to operating profits in a worst-case scenario, demonstrating a commitment to stress-testing material drivers. Justification is evidence-rich, utilizing multi-year historical growth rates for newer drugs and peer-benchmarked legal cost assumptions (1.5% of net income). The forecast for stable operating margins is internally coherent when viewed as a recovery from the 2024 transition trough, with the 2025-2029 period showing a tight range of 34.7% to 37.6%.",
+    "assumptions_extracted": [
+        {
+            "quote": "new 2027 guidance for combined sales of immunology drug Skyrizi and Rinvoq of $31 billion (up from prior guidance of $27 billion).",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "biosimilar versions of the drug led to price erosion beginning in 2023... we expect double-digit declines over our forecast.",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect fairly stable operating margins as new immunology drugs carry strong enough margins to offset the lost sales on high-margin Humira.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "For the weighted average cost of capital, we use a 7.5% cost of equity and market rates for the cost of debt.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a 25% tariff would only amount to a 2-percentage-point operating margin headwind in the worst case, or a 6% headwind to operating profits",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "model base case annual legal costs at 1.5% of non-GAAP net income",
+            "location": {
+                "section": "Risk and Uncertainty",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "incorporate roughly 5% average annual top-line growth into our model through 2029",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

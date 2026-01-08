@@ -1,0 +1,96 @@
+[
+    {
+        "grade": "Fair",
+        "summary_reasoning": "The report earns a 'Fair' grade. While it explicitly states key drivers such as a 3% average annual revenue growth rate and a 7.5% cost of equity, it fails to meet the higher standards for consistency and sensitivity analysis. A primary deficiency is the lack of quantified sensitivity or scenario analysis for material drivers like trading volume or average rate per contract; the report discusses these risks qualitatively but provides no valuation impact ranges. Furthermore, a distinct internal contradiction exists regarding the operating margin: the narrative forecasts an increase to 63.2% by 2028, whereas the 'Margins & Returns' table explicitly models 64.2% for that same year. Justification for assumptions is partial, relying on historical volatility trends and the 2020-2022 retail surge, but lacks rigorous peer benchmarking or cited external sources for the specific growth magnitudes. Specificity is generally solid, with clear units and a five-year time horizon (2024-2029) for most inputs. However, the combination of a numeric discrepancy and the absence of quantified stress-testing triggers the 'Fair' hard cap. The model remains somewhat of a 'black box' regarding how specific shifts in market volatility would alter the $245 fair value estimate.",
+        "assumptions_extracted": [
+            {
+                "quote": "We project that CME's revenue will grow at an average annual rate of around 3% from a cyclically strong 2024 to 2029.",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "5"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "We anticipate operating margin to increase to about 63.2% by 2028 from 61.6% in 2023.",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "6"
+                },
+                "driver_type": "margin/efficiency"
+            },
+            {
+                "quote": "We use a 7.5% cost of equity.",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "5"
+                },
+                "driver_type": "WACC/COE"
+            },
+            {
+                "quote": "We also project that CME will be able to increase its data revenue by midsingle digits per year for the next five years",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "6"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "Long-Run Tax Rate % 23.0",
+                "location": {
+                    "section": "Key Valuation Drivers",
+                    "page": "15"
+                },
+                "driver_type": "tax_rate"
+            },
+            {
+                "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 360",
+                "location": {
+                    "section": "Morningstar Valuation Model Summary",
+                    "page": "14"
+                },
+                "driver_type": "share_count"
+            },
+            {
+                "quote": "expect CME's transactional revenue to increase at an average rate of just under 2.5% over the next five years",
+                "location": {
+                    "section": "Fair Value and Profit Drivers",
+                    "page": "6"
+                },
+                "driver_type": "revenue_growth"
+            }
+        ],
+        "checks": {
+            "explicitness": true,
+            "justification_with_evidence": "partial",
+            "specificity_units_horizon": "solid",
+            "internal_consistency": "contradiction_found",
+            "sensitivities_present": false,
+            "sensitivities_quality": "qualitative_only",
+            "material_drivers_covered": [
+                "revenue_growth",
+                "margin/efficiency",
+                "WACC/COE",
+                "tax_rate",
+                "share_count"
+            ]
+        },
+        "flags": {
+            "contradictions": [
+                {
+                    "description": "The text forecasts a 2028 operating margin of 63.2%, but the 'Margins & Returns' table forecasts 64.2% for the same year.",
+                    "locations": [
+                        "Fair Value and Profit Drivers, Page 6",
+                        "Margins & Returns table, Page 14"
+                    ]
+                }
+            ],
+            "missing_or_opaque_assumptions": [
+                "terminal_growth"
+            ],
+            "unjustified_parameters": [
+                "Cost of equity of 7.5% is stated without a build-up or link to current risk-free rates/beta in the narrative."
+            ]
+        }
+    }
+]

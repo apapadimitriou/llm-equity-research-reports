@@ -1,0 +1,21 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report demonstrates high analytical depth by moving beyond descriptive financial reporting to provide robust causal mechanisms and quantified scenarios. The analyst explicitly links Wells Fargo's net interest margin (NIM) compression to its 'asset-sensitive' balance sheet in a declining rate environment. Causal reasoning is further evidenced in the discussion of the efficiency ratio, which is explained through the lens of 'business mix' and 'regulatory operating losses.' The report provides explicit, benchmarked assumptions, such as a 9% cost of equity and a 14.3% mid-cycle ROTE, comparing the bank's deposit franchise and balance sheet growth directly against peers like JPMorgan. Crucially, the report includes quantified sensitivity and scenario analysis, specifically estimating a 'midteens percentage fair value estimate decrease' in a bear-case tariff scenario and a '40 to 65 basis points' decline in stress capital buffers following Fed results. Actionable implications are clear, with a conditional warning that share repurchases at current prices effectively involve buying '$1 worth of shares for $1.25.' Verbatim excerpts: 1. 'NIM to compress... as the bank remains asset-sensitive' 2. 'mid-cycle return on tangible equity of around 14.3%' 3. 'midteens percentage fair value estimate decrease in a bear-case' 4. 'stress capital buffers decline by about 40 basis points' 5. 'efficiency ratio... negatively impacted by its business mix.'",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [],
+        "unsupported_assumptions": [
+            "Terminal efficiency ratio of 61% lacks specific cost-bucket breakdown"
+        ],
+        "lack_of_sensitivity": [
+            "Main DCF model summary lacks a standard WACC/Growth sensitivity matrix"
+        ]
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor primarily due to multiple significant internal contradictions between the narrative claims and the financial data tables, violating the consistency pillar. The analyst explicitly states a forecast for 'annual margin expansion' and 'solid but decelerating growth' over the next five years. However, the 'Morningstar Valuation Model Summary' table contradicts these claims: it shows a 290-basis-point contraction in operating margin for 2025 (34.3% to 31.4%) and a revenue growth acceleration in 2025 (10.8%) compared to 2024 (10.2%). Furthermore, there is a massive, unresolved discrepancy between the 'non-GAAP operating margin' of 47% cited in the text for 2024 and the 'Adjusted EBITDA Margin' of 35.3% provided in the table for the same period. While the report is explicit regarding key valuation inputs such as WACC (8.8%), the long-run tax rate (11.0%), and specific AI revenue targets ($250 million ARR), the lack of reconciliation between the narrative and the model summary renders the assumptions unreliable. Sensitivity analysis is also insufficient, limited to a single-point scenario regarding the revenue growth reduction required to justify the current market price, rather than providing robust quantified ranges for multiple material drivers. These failures to maintain internal coherence and provide comprehensive stress-testing trigger the hard caps for a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year revenue compound annual growth rate of approximately 10%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model non-GAAP operating margin, which was 47% in fiscal 2024, to expand modestly on an annual basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "firm noted it remains on pace to top $250 million in AI annual recurring revenue exiting the year.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 11.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Narayen has shrunk the share count and is likely to continue to do so",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "8"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 'annual margin expansion' but table shows 2025 operating margin dropping to 31.4% from 34.3% in 2024.",
+                "locations": [
+                    "Analyst Note, Page 2",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            },
+            {
+                "description": "Text claims 'decelerating growth' over five years, but table shows 2025 growth (10.8%) accelerating from 2024 (10.2%).",
+                "locations": [
+                    "Analyst Note, Page 2",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            },
+            {
+                "description": "Text cites 47% non-GAAP operating margin for 2024, while the table shows 35.3% Adjusted EBITDA margin for the same period.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 6",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "Lowering growth assumptions by exactly 30 basis points without specific causal driver for that magnitude."
+        ]
+    }
+}

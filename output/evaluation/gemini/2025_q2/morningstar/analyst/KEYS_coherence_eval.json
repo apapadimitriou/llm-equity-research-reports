@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to multiple, severe unresolved contradictions between the narrative and the financial data, which fundamentally break the coherence of the investment argument. The most critical failure is the disconnect regarding Free Cash Flow (FCF). The 'Bulls Say' section (dated Nov 2024) claims the firm will generate over $1 billion in FCF annually throughout the forecast. Conversely, the 'Valuation Model Summary' table (dated Feb 2025) shows actual 2024 FCF of negative $121 million and a 2025 forecast of negative $586 million, with the $1 billion mark not reached until 2029. This is not a minor discrepancy but a total reversal of the stated bull thesis. Similarly, the 'Fair Value and Profit Drivers' section predicts operating margins expanding from a 'below-normal 26% in fiscal 2024' to 30% by 2029. However, the valuation table reports the actual 2024 operating margin as 16.5% and forecasts a 2029 margin of only 23.8%. These contradictions are never addressed or reconciled in the 'Analyst Note' or 'Strategy' sections. Furthermore, the 'Bulls Say' and 'Bears Say' sections are not reconciled with the base-case valuation; for instance, the bear concern regarding M&A risk is listed as a threat, while the base-case strategy explicitly relies on M&A for growth without discussing how these risks are mitigated. These systemic misalignments between the text and the supporting data require the reader to assemble a coherent argument themselves.",
+    "evidence": [
+        "Bulls Say (p. 3) predicts >$1B annual FCF, while the Valuation Table (p. 15) shows negative FCF for 2024 (-$121M) and 2025 (-$586M).",
+        "Fair Value and Profit Drivers (p. 7) cites a 26% operating margin for 2024, but the Valuation Table (p. 15) lists the actual margin as 16.5%.",
+        "The report fails to reconcile the Bear case's M&A risk (p. 3) with the Business Strategy's (p. 2) explicit reliance on inorganic investment to expand the software portfolio."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

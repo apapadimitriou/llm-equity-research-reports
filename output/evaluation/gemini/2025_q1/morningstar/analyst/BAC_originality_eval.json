@@ -1,0 +1,48 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report provides a distinct, decision-relevant thesis regarding Bank of America's net interest income (NII) trajectory. Specifically, it synthesizes the bank's unique balance sheet positioning\u2014characterized by a higher concentration of long-duration securities and mortgages\u2014with a macro outlook of declining interest rates. The analyst argues this will lead to NII outperformance relative to more asset-sensitive peers like JPMorgan, who benefited more during the hiking cycle. This peer-specific contrast is a strong original thesis with a clear mechanism and catalyst. Additionally, the report quantifies the bank's internal funding advantage, detailing how the consumer segment's low-cost deposits (0.64% vs. 4.33% Fed funds rate) subsidize the higher-cost global banking and wealth segments. While the report includes some boilerplate language regarding 'scale and scope' and generic technology budgets, it provides specific, testable drivers for its $43 fair value estimate, including a 2.5% expense CAGR and a 59% terminal efficiency ratio target. The analysis of duration risk management as a specific capital allocation critique further adds to the report's originality.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "BAC's outsized exposure to long-duration securities and mortgages means NII will hold up relatively better than peers as interest rates are cut.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "The consumer banking division supports other segments, providing $950 billion in deposits at a 0.64% cost to fund segments with costs of 2.75%-2.97%.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "The relative performance of BAC vs JPM is positioned to reverse as interest rates decline due to BAC's excessive duration risk taken in 2020-2021.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Projected expense CAGR of 2.5% leading to a 59% efficiency ratio over the 10-year forecast period.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Scale and scope advantages are increasingly important as the role of technology in banking grows.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'scale & scope' phrasing",
+            "Generic discussion of technology budgets and mobile adoption"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": true,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 2
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

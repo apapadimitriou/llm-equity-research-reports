@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded Fair primarily due to the generic nature of the Financials Snapshot and the absence of explicit scenario analysis. While the report provides exhaustive qualitative coverage in sections like Economic Moat and Business Strategy & Outlook, and successfully links valuation to key operating drivers such as Azure growth and AI adoption, it fails to meet the Good or Excellent criteria due to specific structural omissions. The Financials Snapshot (Pages 16-17) provides standard consolidated financial statements but lacks a dedicated table for core sector-specific KPIs. For a diversified software and cloud leader like Microsoft, the absence of tabular data for Azure revenue, Cloud-specific margins, or SaaS metrics like Net Retention Rate (NRR) constitutes a significant gap. Although some of these figures, such as Azure growth of 35% and RPO of $315 billion, are mentioned within the Analyst Note text, the hard cap for missing >=2 core sector KPIs in the Financials Snapshot limits the grade. Furthermore, while the report includes peer benchmarking in the ESG and competitor summary sections, it lacks a formal scenario or sensitivity analysis table within the document, referring users to external platforms instead. The evidence integration is consistent, and the analyst provides a clear bridge from segment performance to the fair value estimate, but the lack of granular financial data and scenario modeling results in a Fair assessment.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation and Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk Rating Assessment",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis Table",
+            "Sensitivity Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Azure Growth %",
+            "Commercial Bookings Growth",
+            "Remaining Performance Obligations (RPO)",
+            "Azure AI Contribution"
+        ],
+        "sector_kpis_missing": [
+            "Azure Segment Revenue",
+            "Cloud Operating Margin",
+            "Net Retention Rate (NRR)",
+            "Office 365 Seat Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Azure Segment Revenue (in Snapshot)",
+            "Cloud Operating Margin (in Snapshot)",
+            "Net Retention Rate (NRR)"
+        ],
+        "uncited_claims": []
+    }
+}

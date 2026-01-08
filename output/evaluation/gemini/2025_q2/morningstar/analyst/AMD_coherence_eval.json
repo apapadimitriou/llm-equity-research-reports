@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a 'fair' grade due to significant internal contradictions between the narrative and the financial tables, despite a strong and timely core argument. The primary narrative (Analyst Note, 15 Jul 2025) successfully connects the US policy reversal on AI chips to a fair value increase from $120 to $140, which is perfectly mirrored in the Forecast Revisions table. Furthermore, the temporal claims are exceptionally precise; the analyst notes the China ban occurred 90 days prior to July 15, which aligns exactly with the April 16 archive entry. However, the report falters on numerical consistency. The 'Fair Value and Profit Drivers' section claims the 2025 revenue growth forecast was raised to 33% from a 'prior estimate of 12%.' This directly contradicts the 'Forecast Revisions' table, which lists the prior 2025 revenue as $33,111 million\u2014a figure representing 28.4% growth over 2024 actuals ($25,785 million). Additionally, the narrative regarding AI GPU revenue is muddled. The analyst mentions 're-inserting' $1.2 billion into the 2025 estimate (which was $6.5 billion in the April note), yet the Fair Value section explicitly targets $8.2 billion for 2025 AI GPU revenue, leaving an unexplained $500 million gap. While the strategic logic and Bulls/Bears reconciliation are 'good,' these unresolved tensions between the text and the data tables trigger the 'fair' hard cap under the coherence rubric.",
+    "evidence": [
+        "\"We model 33% growth in 2025, up from our prior estimate of 12%\" (Fair Value section) contradicts the Forecast Revisions table (Page 15) where the prior revenue of $33,111M implies 28.4% growth.",
+        "The Analyst Note (15 Jul 2025) claims to \"re-insert\" $1.2 billion to the 2025 AI GPU estimate (previously $6.5 billion), but the Fair Value section (15 Jul 2025) cites a target of $8.2 billion.",
+        "Temporal claims are precise: \"Sales of the MI308X were banned 90 days ago\" (Analyst Note, 15 Jul 2025) matches the 16 Apr 2025 archive date exactly."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

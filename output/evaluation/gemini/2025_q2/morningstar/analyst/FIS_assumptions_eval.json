@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple unresolved numeric contradictions between the narrative and the financial tables, compounded by a total lack of quantified sensitivity analysis. While the analyst explicitly states key assumptions\u2014such as a 4% five-year revenue CAGR and 40 basis points of annual adjusted EBITDA margin expansion\u2014these figures fail to reconcile with the provided valuation model. Specifically, the model table reports a 4.3% five-year revenue CAGR, and the projected margin expansion from 2024 (40.2%) to 2029 (42.0%) averages only 36 basis points per year. These discrepancies undermine the internal consistency and auditability of the report. Furthermore, although the report identifies material risks including banking sector volatility and technological disruption, it offers no quantified scenarios or sensitivity ranges to demonstrate how changes in these drivers would impact the $88 fair value estimate. Justification for inputs is primarily qualitative, relying on the company's strategic pivot toward stable bank technology, but lacks robust multi-year historical or peer benchmarking to support the specific magnitudes chosen. While the report is transparent about its terminal growth (4%) and cost of equity (7.5%) inputs, the failure to maintain internal coherence and provide stress-testing for material levers triggers the hard caps for a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "project only a 4% revenue CAGR over the next five years for the company as a whole",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "expect adjusted EBITDA margins to improve at an average annual rate of 40 basis points through our projection period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 7.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "remains committed to repurchasing $4 billion this year",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "8"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative projects a 4% revenue CAGR, but the valuation table explicitly lists a 4.3% 5-year CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers (Page 4)",
+                    "Growth & Ratios Table (Page 12)"
+                ]
+            },
+            {
+                "description": "Narrative expects 40 bps annual margin improvement, but the table shows an average of 36 bps (40.2% in 2024 to 42.0% in 2029).",
+                "locations": [
+                    "Fair Value and Profit Drivers (Page 4)",
+                    "Margins & Returns Table (Page 12)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_scenarios"
+        ],
+        "unjustified_parameters": [
+            "WACC of 7.1% lacks component breakdown (Beta, Risk-free rate) in the text."
+        ]
+    }
+}

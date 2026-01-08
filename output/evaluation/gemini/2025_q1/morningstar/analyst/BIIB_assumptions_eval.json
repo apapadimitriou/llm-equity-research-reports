@@ -1,0 +1,83 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid explicitness and specificity regarding its core valuation assumptions. Key revenue drivers, such as peak sales for Leqembi ($3 billion), Skyclarys ($1 billion), and Ocrevus royalties ($9 billion), are clearly stated within the 'Fair Value and Profit Drivers' section. These assumptions are well-justified through detailed discussions of the competitive landscape, including specific threats from Novartis and Roche, and regulatory headwinds like the Inflation Reduction Act and Medicare Part D redesign. Internal consistency is high; the narrative's description of the MS franchise's decline and the slow Leqembi launch is accurately reflected in the multi-year financial forecast table and the significant downward revision of the Fair Value Estimate from $303 to $220. The report also provides specific parameters for the DCF model, including a 7.1% WACC and an 18% long-run tax rate. However, the report fails to provide any quantified sensitivity or scenario analysis for its most material drivers. While the analyst qualitatively acknowledges 'considerable uncertainty' and a 'wide range of outcomes' for Leqembi's sales ramp, there are no tables or figures illustrating how different sales trajectories or changes in the discount rate would impact the final valuation. Per the grading instructions, the absence of quantified sensitivities on material drivers necessitates a hard cap, resulting in a 'Fair' grade despite the otherwise high quality and transparency of the stated inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We now assume $3 billion in global peak sales of Biogen and Eisai's Leqembi.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect sales of Reata's newly approved drug Skyclarys will eventually exceed $1 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We think combined global sales of Avonex and Plegridy will continue to fall, with low-double-digit declines annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our assumption on Ocrevus royalties are based on peak sales of $9 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a weighted average cost of capital of 7.1%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 18.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 2024: 144 ... 2028: 135",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_ranges"
+        ],
+        "unjustified_parameters": []
+    }
+}

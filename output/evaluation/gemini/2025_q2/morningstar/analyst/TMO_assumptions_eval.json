@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates high explicitness and specificity regarding its core valuation assumptions. Key drivers, including organic revenue growth (5%-6%), inorganic contribution (100 bps), and long-term operating margin expansion, are clearly stated in the narrative and supported by detailed multi-year forecast tables. Justification is solid, leveraging a decade of historical data (e.g., $4.7 billion average annual acquisition spend) and peer benchmarks to support the 'one-stop shop' strategy and wallet share gains. Internal consistency is excellent; narrative targets for margin improvement and tax rates reconcile perfectly with the 'Morningstar Valuation Model Summary' and 'Key Valuation Drivers' tables. However, the report fails to provide any quantified sensitivity or scenario analysis. While the 'Risk and Uncertainty' section qualitatively describes potential headwinds from China demand, tariffs, and biopharma spending, it does not model the specific impact of these variables on the $630 Fair Value Estimate. Per the grading instructions, the total absence of quantified sensitivity analysis for material drivers\u2014despite the otherwise high quality of the stated inputs\u2014necessitates a hard cap at 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast Thermo Fisher's sales will increase approximately 5%-6% per year organically",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect approximately 100 basis points of top-line benefit coming inorganically",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We use a 7% cost of capital in our assumptions.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "adjusted operating margin will steadily improve over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4-5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 16.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "From 2010 the firm has spent on average $4.7 billion on acquisitions per year, and we expect this to continue.",
+            "location": {
+                "section": "Economic Moat",
+                "page": "2"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 7.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and highly specific assumptions for key drivers, including Net Interest Margin (NIM), expense growth, and Return on Tangible Equity (ROTE). These inputs are well-justified through a combination of 10-year historical averages, peer benchmarking (particularly regarding deposit market share), and management's own long-term guidance. The internal consistency is excellent; the detailed narrative in the 'Fair Value and Profit Drivers' section reconciles accurately with the 'Morningstar Valuation Model Summary' table, with only minor rounding differences in the display. However, the report fails to provide any quantified sensitivity or scenario analysis for its material drivers within the text. While it qualitatively discusses risks such as interest rate cycles, regulatory changes, and technological disruption, it does not model the specific valuation impact of variations in these levers (e.g., a bull/bear case or a rate sensitivity table). Per the grading instructions, the absence of quantified sensitivity analysis on material drivers necessitates a hard cap of 'Fair,' despite the high quality of the stated inputs and justifications.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast through-the-cycle returns on tangible equity to be roughly 17%, in line with management's long-term profitability goal.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We expect net interest margin to remain strong and project it to be around 2.58% in 2025 from 2.63% in 2024... Lower interest rates result in NIM of 2.52% in 2026 and 2.46% in 2027.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Based on management guidance, we expect expense growth of around 4.3% in 2025 compared with the expense base from the prior year.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Overall, we project a 2.8% core noninterest revenue compound annual growth rate for the next 10 years from already elevated levels in 2024.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assign the bank a 9.5% cost of common equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "21"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "we have modeled a midcycle common equity Tier 1 ratio of 14.0%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

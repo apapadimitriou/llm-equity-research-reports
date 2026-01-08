@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a high level of qualitative detail, particularly in the 'Economic Moat' and 'Business Strategy' sections, which offer a deep dive into Salesforce's product ecosystem and competitive advantages. It successfully includes all mandatory structural components, such as the Analyst Note, Bulls/Bears, and a detailed Capital Allocation assessment. The valuation section provides a clear link between operating drivers\u2014specifically an 8% revenue CAGR and margin expansion into the upper 30% range\u2014and the fair value estimate of $325. Peer benchmarking is also present, comparing valuation multiples and ESG risks against major competitors like Microsoft and Oracle.\n\nHowever, the report is subject to a hard cap of 'Fair' due to significant omissions in the 'Financials Snapshot' and the absence of explicit scenario analysis. While the text mentions a 92% retention rate and $100 million in ARR for Agentforce, these core SaaS KPIs are missing from the formal multi-year financial data table on page 15. Specifically, the table lacks Current Remaining Performance Obligations (cRPO) and Net Retention Rate (NRR), which are essential for evaluating SaaS business health. Furthermore, although the methodology section describes scenario analysis, the report itself does not include a sensitivity matrix or bull/bear valuation cases. The reliance on a generic financial template without integrating these critical sector-specific metrics into the data summary prevents the report from achieving a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis Table",
+            "Sensitivity Analysis Matrix"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Operating Margin",
+            "Retention (text only)",
+            "ARR (text only)",
+            "Multi-cloud deals (text only)"
+        ],
+        "sector_kpis_missing": [
+            "cRPO (Current Remaining Performance Obligations)",
+            "NRR (Net Retention Rate)",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "cRPO (Current Remaining Performance Obligations) missing from Financials Snapshot table",
+            "NRR (Net Retention Rate) missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

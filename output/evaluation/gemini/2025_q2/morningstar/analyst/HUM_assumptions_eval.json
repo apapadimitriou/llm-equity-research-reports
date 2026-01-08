@@ -1,0 +1,82 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report's assumptions are rated Good due to high levels of explicitness, internal consistency, and quantified scenario analysis. Key drivers, including revenue growth (9% CAGR) and adjusted EPS growth (midteens), are clearly stated in the narrative and reconcile perfectly with the detailed 'Morningstar Valuation Model Summary' table. Justification is solid, leveraging management's Analyst Day targets and OIG estimates for regulatory clawbacks. Specificity is high, with the report providing exact magnitudes for the long-run tax rate (25%), WACC (8.2%), and terminal growth (4%). Consistency is a major strength; for instance, the $9 billion clawback mentioned in the text is explicitly modeled as a 2027 GAAP loss, reconciling the gap between reported and adjusted figures. Sensitivity analysis is present and quantified through a 'bull-case scenario' ($550 FVE vs. $323 base) and a discussion of the growth required to justify current market prices. While the report lacks a multi-variable sensitivity matrix, the quantification of the primary regulatory risk and the bull-case upside provides sufficient transparency for the 'Very High' uncertainty rating. The assumptions are proximal to the forecasts they drive, and the use of a multi-stage DCF model with explicit Stage II parameters (4% growth, 30% investment rate) ensures the valuation is auditable and traceable.",
+    "assumptions_extracted": [
+        {
+            "quote": "Specifically from a weak 2024 base through 2029, we expect high-single-digit revenue growth and midteens adjusted EPS growth on a compound annual basis in our base-case scenario.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Humana could face the clawback of overpayments from Medicare to the tune of $9 billion if the Office of Inspector General's estimates of Humana's overpayments in 2023 ($1.7 billion) are accurate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "management expects at least $3.3 billion in pretax profit growth by 2028... which could boost adjusted EPS to roughly $40 per share",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.2",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 25.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 121",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all mandatory sections, including a detailed Analyst Note, Business Description, and a robust Peer Analysis. It provides a strong qualitative assessment of IQVIA's economic moat, specifically focusing on intangible assets and switching costs. However, the report is capped at 'Fair' due to several structural deficiencies. First, the 'Financials Snapshot' table is generic and omits core sector-specific KPIs such as Backlog and Book-to-bill ratios; while these are mentioned in the text, their absence from the multi-year forecast table violates the requirement for sector-appropriate KPIs in the financials section. Second, significant core sections\u2014specifically 'Bulls/Bears' and 'Fair Value and Profit Drivers'\u2014are dated July 2024, making them nearly ten months old relative to the May 2025 report date. This reliance on outdated primary analysis sections is a major gap. Third, there is notable redundancy; the Analyst Note repeats backlog figures and macroeconomic commentary found verbatim in the Analyst Notes Archive without providing additional depth. Finally, the report lacks a quantified scenario or sensitivity analysis, which is expected for higher grades. These factors combined\u2014missing KPIs in the financial summary, outdated core sections, and redundancy\u2014limit the evaluation to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Peer Analysis",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Glossary"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Operating Margin",
+            "ROIC",
+            "Adjusted EBITDA"
+        ],
+        "sector_kpis_missing": [
+            "Backlog (in Financials Snapshot table)",
+            "Book-to-bill ratio (in Financials Snapshot table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Backlog (Forecast Table)",
+            "Book-to-bill (Forecast Table)"
+        ],
+        "uncited_claims": [
+            "Bulls/Bears and Fair Value sections are based on data from July 2024, which is outdated for a May 2025 report."
+        ]
+    }
+}

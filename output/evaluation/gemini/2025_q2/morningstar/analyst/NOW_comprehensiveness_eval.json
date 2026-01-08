@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates a high level of qualitative depth, particularly in the 'Economic Moat' and 'Business Strategy' sections, which provide a thorough analysis of ServiceNow\u2019s switching costs and its 'land-and-expand' execution. All mandatory sections, including ESG risk assessments and capital allocation, are present. However, the report is capped at a 'Fair' grade due to several structural omissions and redundancies. Most critically, the 'Financials Snapshot' table on page 15 is generic; it lacks core SaaS-specific KPIs such as Annual Recurring Revenue (ARR), Net Retention Rate (NRR), or a clear multi-year breakdown of Subscription vs. Professional Services revenue, which are essential for evaluating a software-as-a-service business. While these metrics are mentioned sporadically in the text, their absence from the multi-year forecast table limits the report's quantitative comprehensiveness. Furthermore, the report lacks actual scenario or sensitivity analysis tables\u2014such as a bull/bear case valuation or a WACC/growth sensitivity matrix\u2014despite the appendix describing the methodology for such analyses. Finally, there is significant redundancy between the primary 'Analyst Note' and the 'Analyst Notes Archive,' where the same quarterly results and AI commentary are repeated verbatim without providing additional layers of insight. These gaps in the financial presentation and the lack of sensitivity data prevent the report from achieving a higher rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Subscription Revenue (text only)",
+            "Customer Retention (text only)",
+            "Net Retention (text only)",
+            "ACV (text only)"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Financials Snapshot)",
+            "NRR (Financials Snapshot)",
+            "Billings",
+            "Subscription Revenue (as line item in Snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Calculated Billings",
+            "Subscription Revenue breakdown in forecast table"
+        ],
+        "uncited_claims": []
+    }
+}

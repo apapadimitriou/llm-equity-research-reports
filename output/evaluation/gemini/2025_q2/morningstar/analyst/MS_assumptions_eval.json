@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report provides explicit and specific assumptions for revenue, AUM, and NII growth, often justified by historical performance or regulatory changes. However, it fails the consistency and sensitivity requirements. There are two distinct internal contradictions: first, the text models a 26% operating margin while the financial table's efficiency ratios imply a ~30% margin; second, the narrative emphasizes share repurchases as a primary capital return tool, yet the model assumes a static share count through 2029. Furthermore, the report lacks any quantified sensitivity or scenario analysis for material drivers specific to Morgan Stanley (e.g., market volatility or interest rate shifts), providing only a high-level sector bear case related to tariffs. Per the grading instructions, the combination of multiple contradictions and the absence of quantified sensitivities necessitates a 'Poor' grade. While the report is evidence-rich regarding the company's business strategy and historical moat sources, the disconnect between the narrative and the valuation model summary creates a 'black-box' feel for the final fair value estimate. The lack of stress-testing on key levers like the cost of equity or net interest margin further limits the auditability of the conclusions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a net revenue compound annual growth rate of over 2.5% during the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast assets under management growing at a 6%-8% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We have net interest income growing at a 8% compound annualized growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We model across-a-cycle operating margins of around 26%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we use a cost of equity of 9% in our discounted cash flow model.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 1,611",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text models a 26% operating margin, but the financial table shows efficiency ratios of ~70-71%, which implies a ~29-30% margin.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 8",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            },
+            {
+                "description": "Narrative emphasizes share repurchases as a primary capital return strategy, but the model forecasts a perfectly flat share count of 1,611M through 2029.",
+                "locations": [
+                    "Capital Allocation, Page 9",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity of 9% is stated without a specific build-up or link to current risk-free rates."
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of narrative coherence, with the Analyst Note from May 2025 effectively integrating the updated Q1 results into the long-term thesis established in February 2025. The transition from the travel-recovery tailwind to a 'normalized' growth environment is handled smoothly across sections. However, the report suffers from several material internal contradictions between the narrative and the supporting financial tables. The text explicitly states that 2024 operating margins were 58% on a net revenue basis, while the Valuation Model Summary table shows a 36.1% margin. Although the analyst distinguishes between net and gross revenue margins in the text, the table itself is internally inconsistent; dividing the 2024 Operating Income of $16,262 million by the Revenue of $45,796 million yields a 35.5% margin, contradicting the 36.1% figure printed in the same table. Additionally, the Forecast Revisions table on Page 13 lists the 2025 Net Income as $14,422 million, which matches the 'Adjusted Net Income' on Page 12 but conflicts with the $14,101 million 'Net Income' figure provided in the primary financials table. Finally, while the narrative forecasts margin expansion from 58% to 61% through 2029, the table shows a sharp margin contraction in 2025 (to 34.8%) and only a return to 2024 levels by the end of the forecast period. These unresolved discrepancies between the analyst's stated assumptions and the provided data tables trigger a hard cap of 'fair.'",
+    "evidence": [
+        "\"Operating margins (using net revenue) in 2024 were 58%\" (Economic Moat, Page 4) vs. \"Operating Margin % ... 36.1\" (Financials Table, Page 12).",
+        "2024 Operating Income ($16,262) / Revenue ($45,796) = 35.5%, but the table displays 36.1% (Financials Table, Page 12).",
+        "2025 Net Income is listed as $14,101 (Valuation Model Summary, Page 12) but $14,422 in the Forecast Revisions (Page 13)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

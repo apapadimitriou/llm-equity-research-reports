@@ -1,0 +1,102 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple internal contradictions and a total lack of quantified sensitivity analysis. Most critically, there is a direct numeric conflict regarding 2025 revenue growth: the Analyst Note (Page 1) forecasts 'about 5%' growth, while the Valuation Model Summary table (Page 15) explicitly lists 2.8%. This discrepancy is further complicated by an archived note (Page 8) citing 3.6%. Additionally, a narrative contradiction exists regarding share count; the report highlights 'heavy share buybacks' as a key capital allocation strategy (Page 7), yet the financial model (Page 15) projects a perfectly static share count of 181 million from 2025 through 2029. While some assumptions like midcycle capex (3% of sales) and WACC (8.1%) are explicitly stated, they lack robust justification against historical benchmarks or peer data within the text. The 'Risk and Uncertainty' section is entirely qualitative, failing to provide quantified ranges or scenarios for material drivers such as R&D spending volatility or the margin impact of AI investments. This 'black-box' approach to valuation, combined with unresolved discrepancies between the narrative and the financial tables, fails to meet the standards for a higher grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast 2025 revenue will grow about 5% year over year",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Longer term, we anticipate 5-year compound annual growth about 7%.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume midcycle capital expenditures will be about 3% of sales.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Management continues to utilize debt to fund heavy share buybacks",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "7"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "As IQVIA continues to expand and scale its AI capabilities, we anticipate that it will lead to operating margin expansion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "2"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 Revenue Growth forecast in text (5%) conflicts with the Valuation Model Summary table (2.8%).",
+                "locations": [
+                    "Analyst Note, Page 1",
+                    "Valuation Model Summary, Page 15"
+                ]
+            },
+            {
+                "description": "Narrative claims 'heavy share buybacks' but the model shows a flat share count of 181m for five consecutive years.",
+                "locations": [
+                    "Capital Allocation, Page 7",
+                    "Valuation Model Summary, Page 15"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.1% lacks cited market components in text",
+            "7% long-term revenue CAGR lacks historical context"
+        ]
+    }
+}

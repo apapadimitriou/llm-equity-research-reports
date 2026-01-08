@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a fair grade due to significant internal contradictions between the summary data, the narrative notes, and the valuation tables. Most notably, the report header on Page 1 identifies the Fair Value Estimate (FVE) of $630.00 as being set on 1 May 2024. However, the Forecast Revisions table on Page 14 indicates that the FVE was $640.20 as of 31 October 2024, before being updated to $630.00 on 14 March 2025. This discrepancy makes the temporal accuracy of the valuation unclear. Furthermore, the Analyst Note dated 23 April 2025 states that tariffs caused a 5% earnings reduction to the full-year guidance, yet the Forecast Revisions table shows the current 2025 EPS estimate of $19.26 is substantially higher than the prior estimate of $15.24 from October 2024. While the narrative flow within sections like the Economic Moat and Business Strategy is strong\u2014clearly linking the company's one-stop shop strategy to its competitive advantage\u2014the lack of alignment between the latest analyst updates and the provided financial tables creates significant noise. The Bulls and Bears are generally reconciled with the base case, but the temporal inaccuracies regarding when the FVE was established and the conflicting direction of earnings revisions necessitate a downgrade to fair under the provided guardrails.",
+    "evidence": [
+        "The Page 1 header lists the $630 FVE date as 1 May 2024, but the Page 14 Forecast Revisions table shows a Prior FVE of $640.20 on 31 Oct 2024.",
+        "The 23 Apr 2025 Analyst Note cites a 5% earnings reduction to guidance, but the Page 14 table shows 2025 EPS increasing from $15.24 (Prior) to $19.26 (Current).",
+        "The Economic Moat section (Page 3) refers to the recent ultralow interest rate environment in a report dated May 2024, despite the federal funds rate being at a 20-year high at that time."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

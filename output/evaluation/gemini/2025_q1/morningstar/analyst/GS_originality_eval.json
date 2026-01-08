@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as 'Fair' primarily due to the application of the hard cap regarding generic and restated content. While the analyst provides three distinct and decision-relevant syntheses\u2014specifically linking tariff-driven market volatility to FICC/Equities outperformance, and modeling a declining NII trajectory based on the combination of rate normalization and intentional balance sheet shrinkage\u2014these are overshadowed by a high volume of boilerplate and restated public information. Large portions of the 'Business Strategy' and 'Economic Moat' sections rely on well-known narratives, such as the firm's retreat from consumer banking (Marcus) and generic industry observations regarding brand equity and the non-cyclical nature of asset management fees. The report identifies at least four insights that are classified as either generic restatements or paraphrased public strategy, which triggers the 'Fair' cap regardless of the quality of the financial modeling. Although the valuation section includes specific quantified drivers (e.g., 7% AUS growth and a 32% midcycle compensation ratio), the reliance on standard 'scale and diversification' phrasing and historical recaps of divestitures limits the overall originality of the perspective.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Heightened volatility from tariff policies produced exceptional trading revenue, masking the tepid deal-making environment.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Developments in tariff policies spiked market volatility, enabling FICC and equities to generate historic revenues as clients repositioned portfolios.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Asset and wealth management fees exhibit less cyclicality than investment banking fees, favoring the consolidated entity.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Goldman is paring down consumer ambitions and acquisitions to revert to being valued primarily as an investment bank.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "NII is forecast to decline based on the dual impact of rate normalization and a strategic decision to decrease the size of the balance sheet.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Asset management revenue growth is modeled on 7% AUS growth offset by modest revenue yield compression.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Economic moat is derived from brand recognition, global reach, and scale for large cross-border deals.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'scale & diversification' phrasing in moat analysis",
+            "Restatement of well-known consumer banking pivot (Marcus)",
+            "Generic description of asset management switching costs"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

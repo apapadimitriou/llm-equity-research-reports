@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary revenue drivers, particularly the Farapulse and Watchman franchises. The analyst justifies the 11% average annual revenue growth through 2029 by citing strong Q1 performance, competitive dynamics (such as Johnson & Johnson's launch pause), and specific product adoption rates. Margin assumptions are also specific, with a projected peak of 27% in 2029, and the report explicitly accounts for a $200 million tariff headwind. Internal consistency is high; the narrative figures for growth and margins reconcile closely with the detailed 'Morningstar Valuation Model Summary' table. However, the report fails to meet the 'Good' or 'Excellent' criteria due to a total lack of quantified sensitivity analysis. While it identifies risks qualitatively (e.g., competition from J&J, product recalls), it does not provide ranges or scenarios showing how changes in key inputs would impact the $93 fair value estimate. Furthermore, while valuation parameters like the 8.6% WACC and 10.5% Stage II growth rate are stated in the tables, they lack explicit justification or linkage to market benchmarks within the text. Per the hard caps, the absence of quantified sensitivities on material drivers limits the grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "11% average annual top-line growth through 2029, fueled primarily by interventional cardiology, electrophysiology, urology, and endoscopy",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin to peak at 27% in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "full-year impact of tariffs will be roughly $200 million, primarily driven by the approximately 7% of consolidated revenue derived from China",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.6",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 10.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "WACC justification",
+            "Stage II growth justification"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.6% without cited market source",
+            "Stage II EBI Growth 10.5% without historical context"
+        ]
+    }
+}

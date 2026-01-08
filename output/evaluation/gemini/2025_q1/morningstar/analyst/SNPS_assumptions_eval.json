@@ -1,0 +1,75 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report provides explicit and proximal assumptions for all material drivers, including segment-specific revenue CAGRs (10% for EDA, 11-12% for IP), long-term operating margin targets (31% by 2034), and a specific 7.5% cost of equity. Justification is solid, linking forecasts to secular trends such as AI-driven design starts, multi-die architectures, and the strategic Ansys acquisition. Specificity is high, with clearly defined time horizons (5 and 10-year CAGRs) and units. Internal consistency is maintained across the narrative and the valuation model summary; for instance, the decline in China revenue is reflected in both the analyst notes and the 2025 revenue growth forecast (4.9% vs. historical 15%+). Sensitivity analysis is present and quantified for the most material immediate driver\u2014the potential China sales ban\u2014providing a clear impact on the Fair Value Estimate ($550 to $510). However, the report lacks a broader, multi-variable sensitivity matrix for other key levers like WACC or terminal growth, which prevents an 'Excellent' rating. Overall, the assumptions are traceable, auditable, and well-supported by industry context and historical performance.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our fair value estimate assumes that sales to China drop to $0 by the end of the year and that China is roughly margin neutral.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Over the next five (10) years, we forecast Synopsys\u2019 EDA segment revenue to grow at a 10% (10%) CAGR and the IP segment at an 11% (12%) CAGR.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect operating margins to continually increase, from 22% in 2024 to 31% by 2034.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assigning a 7.5% cost of equity, the lowest discount rate we use when analyzing companies.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.7",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": []
+    }
+}

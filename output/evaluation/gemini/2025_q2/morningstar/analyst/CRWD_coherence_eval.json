@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report maintains a cohesive narrative arc, transitioning effectively from the immediate impact of the July 19, 2024, IT outage to the long-term \"land-and-expand\" strategy. The Analyst Note (June 2025) provides a timely update on fiscal 2026 results, successfully linking the 20% sales growth and margin contraction to the \"Flex\" bundling discounts and ongoing recovery efforts. This narrative is well-integrated with the Economic Moat section, which emphasizes switching costs and the network effect of the Falcon platform. However, the report is held to a 'fair' grade due to material contradictions within the financial tables. The \"Forecast Revisions\" table on page 15 labels its 2026 projection of 1,027 as \"Net Income,\" whereas the \"Valuation Model Summary\" on page 14 clarifies that 1,027 is \"Adjusted Net Income\" and that the actual GAAP Net Income is a loss of $72 million. Furthermore, the \"Prior\" data column in the Forecast Revisions table appears to use fiscal 2025 estimates (e.g., revenue of 3,939) as the baseline for fiscal 2026, creating a temporal mismatch in the comparison. These errors are significant because the narrative in the Risk and Fair Value sections specifically discusses the timing and consistency of GAAP profitability. While the Analyst Note correctly identifies the temporal distance of the July outage, the failure to reconcile terminology and data alignment between the summary tables creates internal noise that requires the reader to re-assemble the financial argument.",
+    "evidence": [
+        "The Forecast Revisions table (p. 15) mislabels 'Adjusted Net Income' as 'Net Income' (1,027 for 2026), contradicting the main Financials table (p. 14) where GAAP Net Income is -72.",
+        "The 'Prior' data for 2026 Revenue in the Forecast Revisions table (3,939) matches the fiscal 2025 forecast from the Nov 2024 Analyst Note (p. 8), indicating a year-over-year alignment error.",
+        "The Analyst Note (p. 1) correctly identifies the July 19 outage as 'almost a year old' relative to the June 4, 2025 report date, maintaining temporal consistency."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

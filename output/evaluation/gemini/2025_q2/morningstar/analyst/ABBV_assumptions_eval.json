@@ -1,0 +1,92 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "AbbVie\u2019s assumptions are graded Good due to their high degree of explicitness and strong justification using both historical performance and management guidance. Key revenue drivers, such as the $31 billion 2027 sales target for Skyrizi and Rinvoq, are clearly stated and proximal to the valuation narrative. The report provides specific magnitudes for top-line growth (5% CAGR), tax rates (19%), and capital costs (7.5% COE). Internal consistency is solid; while GAAP operating margins show expansion, the analyst\u2019s claim of 'stable margins' reconciles with the Adjusted EBITDA and Adjusted Net Margin forecasts in the summary table. Justification is evidence-rich, citing specific growth rates (e.g., 51% for Skyrizi) and competitive dynamics (Humira biosimilars). Sensitivity analysis is present through quantified 'worst-case' scenarios regarding US drug pricing policy (24% hit to US drug revenue) and potential pharmaceutical tariffs (2-percentage-point operating margin headwind). However, the report stops short of an Excellent grade because it lacks a comprehensive sensitivity matrix or bull/bear valuation table that maps these scenarios directly to changes in the $184 Fair Value Estimate for all material levers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We incorporate roughly 5% average annual top-line growth into our model through 2029",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "new 2027 guidance for combined sales of immunology drug Skyrizi and Rinvoq of $31 billion",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect double-digit declines over our forecast [for Humira]",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we use a 7.5% cost of equity and market rates for the cost of debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "model base case annual legal costs at 1.5% of non-GAAP net income",
+            "location": {
+                "section": "Risk and Uncertainty",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) [2029 forecast] 1,720",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 7.0% stated without detailed build-up of market rates for debt"
+        ]
+    }
+}

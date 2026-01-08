@@ -1,0 +1,48 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally comprehensive, including all required sections such as the Analyst Note, Business Description, Economic Moat, and a detailed ESG breakdown. The qualitative analysis is high-quality, particularly the 'Economic Moat' section, which provides specific data points like the $20 dollar content in iPhones to support its claims. The valuation section also provides a clear link between operating drivers\u2014specifically the 40% CAGR in AI chip revenue\u2014and the Fair Value Estimate (FVE) increase. Peer benchmarking is present both in the valuation summary and the ESG analysis, providing necessary industry context.\n\nHowever, the report is capped at 'Fair' due to significant omissions in the Financials Snapshot. According to the grading instructions, if two or more core sector KPIs are missing from the Financials Snapshot, the grade cannot exceed 'Fair.' While the text discusses AI revenue and segment growth, the actual Financials Snapshot table on page 14 is entirely generic. It lacks a breakout of Semiconductor vs. Software revenue, explicit AI revenue forecast lines, and R&D intensity ratios, all of which are core KPIs for a semiconductor/software hybrid like Broadcom. Additionally, the report lacks a formal scenario or sensitivity analysis table. While it provides 1-star and 5-star prices, it does not quantitatively demonstrate how specific changes in AI adoption or customer concentration would impact the valuation, which is a requirement for a 'Good' or 'Excellent' rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk Rating Assessment",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "AI Revenue (in text)",
+            "FBAR content per device (in text)",
+            "R&D Budget (in text)"
+        ],
+        "sector_kpis_missing": [
+            "Segment Revenue Breakout (Semis vs. Software)",
+            "AI Revenue Forecast Line Item",
+            "R&D as % of Sales"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Segment Revenue (Semiconductor vs. Infrastructure Software) missing from Financials Snapshot table",
+            "AI-specific revenue forecasts missing from Financials Snapshot table",
+            "R&D intensity ratios missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

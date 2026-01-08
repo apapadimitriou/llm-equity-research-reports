@@ -1,0 +1,109 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple significant internal contradictions and a total lack of quantified sensitivity analysis. First, regarding consistency, the narrative explicitly states a 12% revenue growth forecast for 2025 (Page 6), yet the 'Growth & Ratios' table on Page 14 displays a 25.5% growth rate for the same period. Furthermore, the 'Forecast Revisions' table on Page 15 indicates that the 2025 revenue estimate was revised upward to $32,371 million from $28,973 million, directly contradicting the text's claim that the forecast was lowered to 12% from 28%. Second, the text cites a 24% adjusted operating margin for 2024 (Page 7), while the financial summary table reports a 7.9% GAAP operating margin and a 19.3% adjusted EBITDA margin, leaving the 24% figure unreconciled and opaque. Third, while the report identifies material risks such as US restrictions on AI chip sales to China and potential tariffs, it fails to provide any quantified sensitivity or scenario analysis. There are no bull/bear cases or valuation ranges tied to these drivers, which is particularly problematic given the 'Very High' Uncertainty Rating. Although assumptions for revenue CAGRs and margin targets are explicit, their justification is only partial, relying on management's long-term targets without detailed historical bridges. The combination of at least two distinct numeric contradictions and the absence of quantified stress-testing triggers the 'Poor' grade under the established hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model 12% growth in 2025, down from our prior estimate of 28%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "model 15% average annual growth from 2026 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "model AMD\u2019s AI GPU revenue reaching $6.5 billion in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted gross margin... should reach management\u2019s long-term target of 57% as soon as 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "operating margin expansion to 34% in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 15.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 12% revenue growth for 2025 and a downward revision; Table shows 25.5% growth and an upward revision.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 6",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            },
+            {
+                "description": "Text cites 24% adjusted operating margin for 2024; Table shows 7.9% GAAP operating margin and 19.3% adjusted EBITDA margin.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 7",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% stated without risk-free rate or beta components."
+        ]
+    }
+}

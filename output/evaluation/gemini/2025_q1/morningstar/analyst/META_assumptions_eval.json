@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are highly explicit and generally well-justified, though they are limited by narrow sensitivity analysis and minor internal discrepancies. Key valuation inputs, such as the 12% five-year revenue CAGR and the 43% terminal operating margin, are clearly stated in the 'Fair Value and Profit Drivers' section. These are supported by qualitative discussions of Meta\u2019s AI-driven competitive advantages and historical margin recovery. Specificity is high, with the report providing precise figures for WACC (8.9%), the long-run tax rate (19%), and the projected share count (2,599 million).\n\nHowever, the report is capped at a 'Fair' grade for two reasons. First, quantified sensitivity analysis is insufficient; while the analyst provides a specific scenario for a TikTok ban (estimating a 20% FVE increase), there is no broader sensitivity matrix for core variables like WACC or terminal growth. Second, minor numeric inconsistencies exist between the narrative and the tables; the text claims a 12% revenue CAGR and 43% margins, while the 'Morningstar Valuation Model Summary' table calculates an 11.5% CAGR and a 42.5% terminal margin. While these are likely rounding differences, they represent unresolved discrepancies between the model and the text. Furthermore, the justification for the 8.9% WACC lacks a detailed breakdown of its underlying components. Consequently, while the report is transparent, it lacks the robust stress-testing and absolute reconciliation required for a higher grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Meta's sales growing at a 12% compound annual growth rate for the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins rising to 43% over our explicit five-year forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Projected Diluted Shares 2,599",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "If ByteDance... does not come to an agreement... resulting in a TikTok ban, we'd expect... an additional 20% fair value increase.",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "10"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Numeric discrepancies between narrative and tables: 12% revenue CAGR (text) vs 11.5% (table) and 43% operating margin (text) vs 42.5% (table).",
+                "locations": [
+                    "Page 6, Fair Value and Profit Drivers",
+                    "Page 15, Growth & Ratios / Margins & Returns"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.9% (components like beta or equity risk premium are not cited or derived)"
+        ]
+    }
+}

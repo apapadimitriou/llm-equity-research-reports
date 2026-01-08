@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong narrative flow and thematic consistency, particularly in its treatment of Azure and AI. The analyst notes are timely, referencing specific 2025 events like 'DOGE' and 'tariffs,' and the quarterly data cited in the notes aggregates perfectly to the 2025 revenue forecast. However, significant internal contradictions exist within the 'Morningstar Valuation Model Summary' table and between the table and the narrative. Specifically, the 'Operating Margin %' row in the table does not match the result of dividing 'Operating Income' by 'Revenue' for the same years, nor does it align with the '45% in fiscal 2024' figure cited in the Fair Value and Profit Drivers section. Furthermore, the 'Free Cash Flow To The Firm Margin %' row is mathematically misaligned, appearing to display the previous year's calculated margin (e.g., the 1.8% margin for 2024 is displayed in the 2025 column). While the qualitative analysis is excellent, these quantitative discrepancies and table errors trigger a hard cap at 'fair' per the instructions regarding unaddressed contradictions between narrative and tables.",
+    "evidence": [
+        "Discrepancy in 2024 margins: Narrative cites '45% in fiscal 2024 (actual)' (Page 8), while the Valuation Model table row lists '41.8%' and the table's own Income/Revenue data calculates to 44.6% (Page 16).",
+        "Mathematical misalignment in table: The 'Free Cash Flow To The Firm Margin %' row is lagged; the 2025 forecast of 1.8% actually corresponds to the 2024 calculated margin (4,405 / 245,122), while the 2024 row value of 25.6% corresponds to 2023 (Page 16).",
+        "Strong temporal alignment in narrative: The May 2025 Analyst Note correctly incorporates current macro factors, stating 'The firm notes no change in customer behavior based on tariffs or DOGE' (Page 2)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

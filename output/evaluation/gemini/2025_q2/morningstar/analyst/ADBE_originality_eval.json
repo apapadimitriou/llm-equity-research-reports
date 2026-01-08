@@ -1,0 +1,48 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report provides several high-quality syntheses that move beyond simple data restatement. Most notably, the analyst quantifies the 'AI bear case' by calculating that a 300-basis-point annual revenue growth reduction would be required to justify the current market price, providing a specific, testable threshold for investors. The report also synthesizes company disclosures to estimate current AI-driven Annual Recurring Revenue (ARR) at $160 million, with a clear monitoring signal of a $250 million exit rate for the year. Another strong synthesis identifies a $200 million currency tailwind that has eased since the initial outlook but remains unreflected in management's guidance, suggesting a specific margin of safety or potential for future upside. While the 'Economic Moat' and 'Business Strategy' sections rely on standard boilerplate regarding switching costs and industry standardization, the active 'Analyst Note' and 'Fair Value' sections provide actionable, quantified insights specific to Adobe's current AI transition and valuation disconnect.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "We estimate Adobe has in excess of $160 million in annual recurring revenue from AI, while the firm noted it remains on pace to top $250 million in AI annual recurring revenue exiting the year.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "In order to support the current stock price we would need to lower our revenue growth by 300 basis points annually throughout our entire forecast, which we do not think is reasonable.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "The original 2025 outlook included a $200 million currency headwind, which has since eased but there has been no associated increase in guidance.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Adobe\u2019s strategy of creating a broad demand funnel at the top with Express and driving AI usage to convert users seems to be resonating.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Creative Cloud is so pervasive in the creative world that replacing it would be an insurmountable barrier... industry has generally standardized around it.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'switching costs' and 'industry standard' moat descriptions",
+            "Generic DCF drivers citing 'increased scale' for margin expansion"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": true,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 2
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

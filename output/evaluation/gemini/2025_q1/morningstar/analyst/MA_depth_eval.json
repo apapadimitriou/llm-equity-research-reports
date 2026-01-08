@@ -1,0 +1,24 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates strong analytical depth by providing clear causal mechanisms for Mastercard's profitability, specifically citing the 'highly scalable nature of payment processing' which 'leads to sizable cost advantages.' The analyst provides explicit, quantified forecasts, such as the 'project net revenue to grow at a 12% compound annual growth rate' and the expectation that 'operating margins... improve from 58% in 2024 to 61% by 2029.' Inference quality is high, as the report benchmarks Mastercard against its primary competitor, noting 'Mastercard historically has outperformed Visa in terms of growth.' While the report identifies significant counterpoints and uncertainties, such as how 'tariffs create significant near-term uncertainty' and that 'a downturn in the economy would slow overall growth,' it lacks quantified sensitivity analysis or specific scenario-based valuation ranges (e.g., a bear-case fair value). The implications are actionable, clearly stating the stock is 'modestly overvalued' with a $500 fair value estimate. Because it provides explicit assumptions and causal reasoning but lacks quantified sensitivity/scenario analysis, it meets the criteria for a 'Good' grade.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Specific impact of tariff-driven trade reduction on cross-border fees"
+        ],
+        "unsupported_assumptions": [
+            "12% revenue CAGR assumes international growth without specific regional targets"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified valuation range for economic downturn scenarios",
+            "Fair value estimate is a single point without sensitivity to WACC"
+        ]
+    }
+}

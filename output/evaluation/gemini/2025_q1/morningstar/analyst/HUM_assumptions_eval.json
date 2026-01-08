@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are graded Poor due to multiple significant internal contradictions and a lack of quantified sensitivity analysis. While the report explicitly states key drivers such as revenue growth, EPS targets, and WACC, the data is internally inconsistent. Specifically, there is a glaring contradiction within the 'Morningstar Valuation Model Summary' table: the Operating Income (USD Mil) is projected to increase from $2,562 in 2024 to $3,312 in 2025, yet the 'Operating Income Growth %' row for 2025 reports a 36.2% decline. Similar misalignments exist for revenue growth figures, where the growth percentages appear shifted or incorrectly calculated relative to the absolute dollar values. \n\nFurthermore, the narrative describes profit prospects as 'roughly stagnant through 2026,' which directly conflicts with the model's forecast of a ~36% drop in adjusted net income for that year ($1,960M in 2024 to $1,287M in 2026). While justification is provided through discussions of Medicare Advantage utilization and star ratings, the lack of internal consistency makes the model unauditable. Finally, the report fails to provide any quantified sensitivity analysis or scenario ranges for material levers like medical loss ratios or MA margins, offering only a qualitative mention of 'low-single-digit' risks for the PBM segment. Per the instruction's hard caps, the presence of two or more distinct contradictions necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "we expect high-single-digit revenue growth and mid-teens adjusted EPS growth on a compound annual basis.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect operating margins to return to more normal levels by the end of its five-year forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.2",
+            "location": {
+                "section": "Key Valuation Drivers as of 30 Apr 2025",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 25.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 30 Apr 2025",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 108 [by 2029]",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "lower star ratings... could put its bonus payments at risk in 2026, if its current legal challenge... is unsuccessful as we currently model in our base case.",
+            "location": {
+                "section": "Economic Moat",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 30 Apr 2025",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Table Operating Income USD values increase in 2025 ($2,562 to $3,312), but the Growth % row shows a 36.2% decline for the same period.",
+                "locations": [
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            },
+            {
+                "description": "Narrative claims profits will be 'roughly stagnant through 2026,' but the table shows Adjusted Net Income dropping ~34% from 2024 to 2026.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 6",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity ranges for Fair Value"
+        ],
+        "unjustified_parameters": []
+    }
+}

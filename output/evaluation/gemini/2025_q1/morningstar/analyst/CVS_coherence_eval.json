@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of structural coherence and narrative flow, particularly in its integration of recent political events (May 11-12 regulatory moves) with long-term strategic analysis. The analyst note effectively bridges current news with the existing valuation framework. However, a material internal contradiction exists between the narrative and the valuation tables regarding growth assumptions. The 'Fair Value and Profit Drivers' section explicitly forecasts adjusted EPS growth of 'about 10% compounded annually during the next five years,' which aligns with the 10.2% Operating Income CAGR in the summary table. Yet, the same table lists the '5 Year CAGR' for Adjusted Earnings Per Share at 16.2%, an unexplained 600-basis-point discrepancy that undermines the quantitative consistency of the base-case argument. Additionally, the report contains minor temporal inaccuracies, such as labeling 2023 acquisitions (Oak Street, Signify) as 'recent' in an April 2025 update. While the Bulls/Bears are well-reconciled with the base case and the deleveraging narrative is supported by the share count and debt tables, the quantitative mismatch in EPS growth triggers a hard cap at the 'fair' grade per the instruction guardrails regarding unaddressed contradictions between narrative and tables.",
+    "evidence": [
+        "Narrative forecasts 'adjusted EPS should grow about 10% compounded annually' (Fair Value and Profit Drivers, Page 7), while the summary table lists 'Adjusted Earnings Per Share Growth % 5 Year CAGR' at 16.2% (Valuation Model Summary, Page 15).",
+        "The report labels the 2023 acquisitions of Oak Street and Signify as 'recent' in a section dated April 7, 2025 (Economic Moat, Page 4).",
+        "The May 12 Analyst Note claims FVE is 'intact' despite the 'Forecast Revisions' table showing 2025 EPS estimates were raised from 4.50 to 4.84 between April 7 and May 1 (Analyst Note, Page 1; Forecast Revisions, Page 16)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including a 4% revenue CAGR and a 40-basis-point annual expansion in adjusted EBITDA margins. These inputs are clearly stated in the 'Fair Value and Profit Drivers' section and are supported by the company's strategic pivot toward stable bank technology following the divestiture of a majority stake in Worldpay. Justification is solid, referencing segment-specific performance (e.g., 2% growth in banking vs. 9% in capital markets) and management's cost-reduction plans. Internal consistency is high, as the narrative projections for revenue, margins, and capital allocation (specifically the $4 billion share repurchase commitment) reconcile closely with the detailed 'Valuation Model Summary' table. However, the report fails to provide any quantified sensitivity analysis or scenario modeling for its material drivers. While the 'Risk and Uncertainty' section qualitatively discusses potential headwinds like banking sector weakness and data security, it does not quantify how changes in growth or margin assumptions would impact the $88 fair value estimate. Per the instruction's hard caps, the lack of quantified sensitivities for material drivers limits the grade to 'Fair,' despite the otherwise high quality of explicitness and justification.",
+    "assumptions_extracted": [
+        {
+            "quote": "we still project only a 4% revenue CAGR over the next five years for the company as a whole.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect adjusted EBITDA margins to improve at an average annual rate of 40 basis points through our projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 7.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.1",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 20.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Fidelity repurchased $1.1 billion in shares in the quarter and remains committed to repurchasing $4 billion this year.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "7"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

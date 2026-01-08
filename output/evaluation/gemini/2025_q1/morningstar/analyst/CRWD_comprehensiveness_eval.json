@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded as 'Fair' primarily due to the omission of core sector-specific KPIs within the structured Financials Snapshot table, triggering a hard cap. While the qualitative sections\u2014including the Business Strategy, Economic Moat, and Risk sections\u2014provide a thorough analysis of CrowdStrike\u2019s market position and the impact of the July 19 outage, the Financials Snapshot (Page 14) remains generic. It provides standard accounting metrics like Revenue and EPS but fails to include multi-year forecasts for SaaS-critical KPIs such as Annual Recurring Revenue (ARR) or Net Retention Rate (NRR) in the grid, although these are mentioned sporadically in the text. The valuation section successfully links operating drivers, such as revenue CAGR and gross margin expansion, to the fair value estimate. However, the report lacks a dedicated scenario or sensitivity analysis table, which is expected for a higher rating. Furthermore, there is noticeable redundancy; the discussion of the July outage and the 'land-and-expand' strategy is repeated across the Analyst Note, Business Strategy, and Economic Moat sections without providing significant new depth in each instance. Peer benchmarking is well-represented through the Competitors and ESG Peer Analysis tables. Despite the strong qualitative coverage and clear evidence integration regarding the firm's 'Narrow Moat' and 'Exemplary' capital allocation, the lack of structured sector-specific financial forecasts and scenario analysis limits the report's comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation and Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis Table",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Net Retention Rate (in text)",
+            "Annual Recurring Revenue (in text)",
+            "Gross Margin Expansion"
+        ],
+        "sector_kpis_missing": [
+            "ARR Forecast (in Financials table)",
+            "NRR Forecast (in Financials table)",
+            "Module Adoption Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Annual Recurring Revenue (ARR) Forecasts",
+            "Net Retention Rate (NRR) Forecasts"
+        ],
+        "uncited_claims": []
+    }
+}

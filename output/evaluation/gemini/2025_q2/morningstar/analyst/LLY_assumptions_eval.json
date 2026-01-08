@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' due to a direct numeric contradiction between the narrative and the financial tables, alongside limited quantified sensitivity analysis. In the 'Fair Value and Profit Drivers' section, the analyst explicitly projects a 34% top-line growth rate for 2025; however, the 'Morningstar Valuation Model Summary' table on page 13 forecasts 32.0% for the same period. This unresolved discrepancy between text and data triggers a hard cap on the grade.\n\nRegarding the five pillars, the report excels in explicitness and specificity. It provides granular, multi-year assumptions for the GLP-1 market, including a $200 billion total addressable market by 2031, Lilly\u2019s expected $80 billion share, and a specific pricing trajectory where US net prices are expected to fall from $7,000 to $3,000 annually over a decade. Justification is solid, citing historical R&D intensity (low-to-mid 20s percentage of sales) and specific clinical trial results (Achieve-1) to support pipeline potential. \n\nHowever, the report fails to meet the 'Good' threshold for sensitivity. While it quantifies a 'worst-case' policy scenario (a 24% hit to US drug revenue), it lacks quantified sensitivity ranges for core model inputs such as WACC, terminal growth, or GLP-1 market penetration. The absence of a sensitivity matrix or alternative fair value outcomes for these material levers, combined with the internal numeric inconsistency, necessitates a 'Fair' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a 34% top-line growth rate in 2025, with double-digit growth possible until the end of the decade.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our assumptions for overall biopharma GLP-1 sales in 2031 surpass $200 billion... with Lilly capturing $80 billion of the market.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "average net prices falling from roughly $7,000 annually to $3,000 in 10 years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "non-GAAP performance margin... could only improve another 400 basis points... from 42.6% in the quarter to 46.7% by 2030.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We estimate a weighted cost of capital for Lilly at 7.3%, in line with the peer group.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a 5% EBI growth rate between our 10-year explicit forecast and the perpetuity stage of our model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The company tends to spend a low- to mid-20s percentage of its sales on financing the development efforts of new drugs",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "model base case annual legal costs at 3% of non-GAAP net income",
+            "location": {
+                "section": "Risk and Uncertainty",
+                "page": "5"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative explicitly projects a 34% revenue growth rate for 2025, while the Valuation Model Summary table forecasts 32.0% for the same period.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 4",
+                    "Morningstar Valuation Model Summary, Page 13"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 7.3% cited as 'in line with peer group' without specific component breakdown."
+        ]
+    }
+}

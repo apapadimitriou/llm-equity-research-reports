@@ -1,0 +1,107 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are explicit and specific regarding revenue (2.5% CAGR), NII (8% CAGR), and cost of equity (9%), but it fails significantly on consistency and sensitivity. Most critically, the report contains multiple distinct contradictions between its narrative and the valuation model. While the analyst rates capital allocation as 'Exemplary' and highlights a history of share repurchases and dividend growth supported by 'billions in excess capital,' the model assumes a perfectly static share count (1,611 million) and flat dividends ($3.70) through 2029. This 'flat share count' contradiction is explicitly cited in the grading rubric as a hallmark of 'Poor' quality. Additionally, the narrative notes the company has 'increased its dividend payout over time,' yet the model forecasts zero growth for five years. Furthermore, the report lacks any quantified sensitivity analysis or scenario modeling for Morgan Stanley's specific material drivers (e.g., NIM, AUM growth, or credit costs) and their impact on the $101 fair value estimate, relying instead on qualitative 'Bulls/Bears' commentary and a general sector-level note regarding tariffs. Per the decision rules, the combination of at least one distinct contradiction and the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a net revenue compound annual growth rate of over 2.5% during the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast assets under management growing at a 6%-8% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We have net interest income growing at a 8% compound annualized growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We model across-a-cycle operating margins of around 26%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we use a cost of equity of 9% in our discounted cash flow model.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 1,611 [for 2025-2029]",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "17"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "management's target for an expense ratio (or bank efficiency ratio) of less than 70%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative describes 'Exemplary' capital allocation with a history of repurchases and 'billions in excess capital,' but the model assumes a flat share count of 1,611 million through 2029.",
+                "locations": [
+                    "Capital Allocation (Page 9)",
+                    "Morningstar Valuation Model Summary (Page 16)"
+                ]
+            },
+            {
+                "description": "Narrative notes the company has 'increased its dividend payout over time,' but the model forecasts a flat dividend of $3.70 for five years.",
+                "locations": [
+                    "Capital Allocation (Page 9)",
+                    "Morningstar Valuation Model Summary (Page 16)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "Quantified sensitivity analysis for material drivers (NIM, AUM growth, credit costs)"
+        ],
+        "unjustified_parameters": []
+    }
+}

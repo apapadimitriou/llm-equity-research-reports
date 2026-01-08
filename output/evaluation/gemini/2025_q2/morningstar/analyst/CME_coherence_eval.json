@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report exhibits strong narrative coherence and logical flow across its qualitative sections. The analyst provides a clear connective argument linking current market volatility to CME's countercyclical revenue model, effectively using the 'Analyst Note' to bridge recent Q1 2025 performance with the long-term 'Business Strategy & Outlook.' Transitions are smooth, and the Bulls/Bears sections are well-reconciled with the base-case valuation, particularly regarding the normalization of interest-rate futures and the impact of the NEX acquisition. However, the report's structural integrity is severely compromised by significant internal contradictions within the 'Morningstar Valuation Model Summary' table on page 14. Specifically, the table reports an EBITDA margin of 2.8% for 2022, which is mathematically impossible alongside a reported Net Margin of 55.8% and an Operating Margin of 75.6%. Furthermore, the forecast for 2025 includes a catastrophic ROIC of -78.2%, which directly contradicts the narrative's claims of 'midsingle digit earnings growth,' 'Exemplary' capital allocation, and a 'Wide' economic moat. These figures appear to be unaddressed data errors. Additionally, the narrative describes operating margins as 'historically around 60%,' yet the table shows a 75.6% margin for 2022 without explanation. Per the grading guardrails, the presence of these unaddressed contradictions between the narrative and the tables necessitates a hard cap at the 'fair' level, despite the high quality of the prose.",
+    "evidence": [
+        "The 'Valuation Model Summary' table lists a 2025 ROIC of -78.2% (Page 14), which contradicts the 'Exemplary' Capital Allocation rating and the narrative of stable earnings growth.",
+        "The 2022 'EBITDA Margin %' is listed as 2.8% (Page 14), an impossible figure given the 75.6% Operating Margin and 55.8% Net Margin reported for the same period.",
+        "The narrative states operating margins have 'historically been around 60%' (Page 4), yet the financials table reports a 75.6% margin for 2022 (Page 14)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

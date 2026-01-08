@@ -1,0 +1,109 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple unresolved numeric contradictions between the narrative and the financial tables, alongside a total absence of quantified sensitivity analysis. While the analyst provides explicit assumptions for key drivers\u2014such as a 4% revenue growth target through 2029 and specific segment growth rates\u2014the model data fails to reconcile with the text. Specifically, the narrative forecasts operating margins peaking at 21% in fiscal 2029, but the 'Morningstar Valuation Model Summary' table reports a 19.8% operating margin for that year. Additionally, an analyst note from February 2025 estimates an adjusted operating margin of 22.6% for fiscal 2025, a figure that is not reflected in the provided financial summary.\n\nJustification for assumptions is solid, leveraging historical context regarding the Covidien acquisition and specific product cycles like pulsed field ablation. Specificity is also strong, with clearly defined units and time horizons. However, the report fails the mandatory requirement for quantified sensitivity analysis. Although it discusses qualitative risks (e.g., Medicare reimbursement and product recalls) and assigns a 'Medium' uncertainty rating, it lacks any quantified scenarios or valuation ranges for material levers. Per the decision rules, the presence of multiple distinct contradictions between text and tables, combined with the lack of quantified sensitivities, triggers a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "estimated 4% top-line growth through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin would peak at 21% in fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "4% average annual revenue growth from the cardiovascular group",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 18.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,286",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 6.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "adjusted operating margin will run 22.6% for fiscal 2025",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "9"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text forecasts 2029 operating margin peaking at 21%, but the valuation table lists it as 19.8%.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 6",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            },
+            {
+                "description": "Analyst note estimates 22.6% adjusted operating margin for fiscal 2025, which does not reconcile with the 18.5% operating margin or 28.0% adjusted EBITDA margin in the table.",
+                "locations": [
+                    "Analyst Notes Archive, Page 9",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC components (COE 7.5%, Debt 5.8%) stated without specific benchmark citations"
+        ]
+    }
+}

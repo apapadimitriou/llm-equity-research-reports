@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is generally high-quality and well-structured, but it contains a significant internal contradiction in the 'Forecast Revisions' table on Page 14 that triggers a mandatory downgrade. Specifically, the table lists a 'Current' 2025 Net Income of $4,284 million alongside a 'Current' 2025 Diluted EPS of $1.82. Cross-referencing the 'Valuation Model Summary' on Page 13 reveals that $4,284 million is actually the Adjusted Net Income, while $1.82 is the GAAP Diluted EPS. Mathematically, a $4,284 million income across the projected 1,486 million shares should result in an EPS of $2.88. This mixing of GAAP and Adjusted figures within the same revision block creates an unresolved tension. Aside from this data misalignment, the narrative is strong. The 'Fair Value and Profit Drivers' section successfully integrates Bull/Bear arguments, specifically acknowledging TAVR headwinds while projecting growth from Farapulse. The 11% revenue growth and 27% margin targets mentioned in the text align well with the 10.9% CAGR and 27.2% terminal margin in the financial summary. The 'Analyst Notes Archive' also provides excellent connective tissue, explaining the valuation's upward trajectory over time. However, the quantitative discrepancy in the revision table violates the requirement for perfect alignment between tables and narrative, necessitating a 'fair' grade per the instruction's guardrails.",
+    "evidence": [
+        "The 'Forecast Revisions' table (Page 14) contains a mathematical contradiction, pairing a $4,284 million Net Income with a $1.82 Diluted EPS for 2025; the EPS should be $2.88 based on the 1,486 million share count.",
+        "Projected '11% average annual top-line growth through 2029' and 'operating margin to peak at 27% in 2029' (Page 5) align with the 10.9% 5-year CAGR and 27.2% 2029 margin in the model summary (Page 13).",
+        "The report explicitly reconciles the Bear case regarding TAVR: 'We have also baked in cautious expectations for the Acurate Neo TAVR device, considering the substantial headwinds Boston faces' (Fair Value and Profit Drivers, Page 5)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

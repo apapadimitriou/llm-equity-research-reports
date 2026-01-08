@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple internal numeric contradictions and a total absence of quantified sensitivity analysis. While the report explicitly states its key valuation drivers, there are significant discrepancies between the narrative and the provided financial tables. Specifically, the text forecasts a 6% revenue CAGR over five years, whereas the 'Morningstar Valuation Model Summary' table explicitly calculates and displays a 5.5% CAGR for the same period. Furthermore, the narrative assumes a 'modest' operating margin improvement of 20 basis points annually, yet the model table shows margins expanding from 18.1% in 2024 to 19.8% in 2029, implying a much higher average annual expansion of approximately 34 basis points. These contradictions suggest a lack of internal coherence between the analyst's qualitative outlook and the quantitative model. Additionally, despite the 'High' uncertainty rating, the report fails to provide any quantified sensitivity analysis or scenario modeling (e.g., bull/bear cases or impact of interest rate changes on Fair Value). Per the grading instructions, the presence of two or more distinct contradictions, combined with the lack of quantified sensitivities, mandates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our projections result in a 6% revenue CAGR over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project operating margins... will improve at an average annual rate of about 20 basis points over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Braintree volume growth declined to 2% in the quarter as management continues to cull unprofitable volume.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.6",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR is stated as 6% in text but 5.5% in the model summary table.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 5",
+                    "Morningstar Valuation Model Summary, Page 13"
+                ]
+            },
+            {
+                "description": "Operating margin expansion is stated as 20 bps/year in text, but the table shows ~34 bps/year (18.1% to 19.8% over 5 years).",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 5",
+                    "Morningstar Valuation Model Summary, Page 13"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "20 basis point margin improvement is described as 'modest' without historical or peer benchmarking."
+        ]
+    }
+}

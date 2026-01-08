@@ -1,0 +1,49 @@
+[
+    {
+        "grade": "Fair",
+        "summary_reasoning": "The report is a comprehensive document that includes all required sections, including a detailed Analyst Note, Business Strategy, Economic Moat analysis, and Capital Allocation assessment. It excels in qualitative depth, particularly regarding the competitive landscape of the x86 architecture and the software barriers (CUDA) in the AI GPU market. However, the report is subject to a hard cap of 'Fair' due to two primary deficiencies. First, the 'Financials Snapshot' (Pages 14-15) utilizes a generic Morningstar template that omits critical semiconductor-specific KPIs. Specifically, the tabular data lacks Gross Margin\u2014the most vital profitability metric for the sector\u2014and a breakdown of Segment Revenue (Data Center, Client, Gaming, Embedded), which are only partially addressed in the text. Second, the report exhibits significant redundancy; the specific impact of US export restrictions on AI chips to China (including the $800 million write-off and $700 million revenue shortfall) is repeated across the Analyst Note, Business Strategy, and Valuation sections with minimal additional depth. While the valuation is explicitly linked to operating drivers like AI GPU revenue growth and segment CAGRs, the structural omission of core KPIs in the primary data tables and the repetitive narrative prevent a higher grade. Peer benchmarking and scenario-based price targets (1-star and 5-star prices) are present, but they do not override the impact of the generic financial presentation.",
+        "content_checks": {
+            "sections_present": [
+                "Analyst Note",
+                "Business Description",
+                "Business Strategy & Outlook",
+                "Bulls / Bears",
+                "Economic Moat",
+                "Valuation & Profit Drivers",
+                "Risk & Uncertainty",
+                "Capital Allocation",
+                "Financials Snapshot",
+                "ESG",
+                "Appendix"
+            ],
+            "sections_missing": [],
+            "sector_kpis_present": [
+                "AI GPU Revenue (text only)",
+                "Server CPU Market Share (text only)",
+                "Operating Margin",
+                "ROIC"
+            ],
+            "sector_kpis_missing": [
+                "Gross Margin (Table)",
+                "Segment Revenue Breakdown (Table)",
+                "Inventory Days/Turns",
+                "R&D as % of Sales"
+            ]
+        },
+        "checks": {
+            "evidence_citations_consistent": true,
+            "valuation_linked_to_drivers": true,
+            "peer_context_present": true,
+            "redundancy_detected": true,
+            "scenario_analysis_present": true
+        },
+        "flags": {
+            "contradictions": [],
+            "missing_kpis": [
+                "Gross Margin (missing from Financials Snapshot table)",
+                "Segment Revenue (missing from Financials Snapshot table)"
+            ],
+            "uncited_claims": []
+        }
+    }
+]

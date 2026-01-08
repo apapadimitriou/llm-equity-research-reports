@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report exhibits a \"Good\" level of analytical depth by providing clear causal mechanisms and explicit, quantified assumptions. The analyst links future profitability to a specific driver: \"declining research and development intensity as generative AI matures,\" which supports the forecast of \"non-GAAP operating margin expansion over the next five years.\" Data use is strong, citing that \"1,500 of its 22,000 enterprise customers pay for five or more\" products to validate cross-selling inferences. Valuation is grounded in explicit inputs, such as a \"Weighted Average Cost of Capital % 8.8\" and a \"five-year revenue compound annual growth rate of approximately 10%.\" The report addresses uncertainty by identifying that \"integration missteps could cause delays in new contract signings\" and assigning a \"High\" uncertainty rating. While the report includes a standardized valuation range (1-star to 5-star prices), it lacks bespoke, quantified sensitivity tables or multi-variable scenario analysis (e.g., modeling specific impacts of varying AI adoption rates on the Fair Value Estimate). Actionable implications are clearly stated, noting that \"shares remain attractive\" due to the significant discount to the $590 fair value estimate.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Specific revenue impact of the 'Orchestrator' announcement is not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Stage II EBI Growth Rate of 9.7% lacks peer benchmarking"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity analysis showing how FVE changes with WACC variations"
+        ]
+    }
+}

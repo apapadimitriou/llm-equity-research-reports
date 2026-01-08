@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple unresolved numeric contradictions between the narrative and the financial tables, combined with a total lack of quantified sensitivity analysis for the bank's material drivers. Specifically, the 'Fair Value and Profit Drivers' section projects 2025 Net Interest Income (NII) growth of 1.2%, whereas the 'Morningstar Valuation Model Summary' table explicitly lists 2025 NII growth as -9.0%. Furthermore, the text assumes a 2024 Net Interest Margin (NIM) of 2.73%, while the table reports 3.1% for the same period. These discrepancies undermine the internal consistency and auditability of the model. While the report is explicit regarding its qualitative drivers\u2014such as the 2026 removal of the asset cap and a terminal ROTE of 14%\u2014these inputs are not stress-tested. There are no quantified scenarios or sensitivity tables showing how changes in interest rates, credit costs, or the timing of regulatory relief would impact the $65 fair value estimate. Although the analyst note mentions a 'bear-case' for the broader banking sector regarding tariffs, it lacks specific valuation impact ranges for Wells Fargo. The justification for assumptions relies heavily on management guidance and historical context, but the failure to reconcile core financial data across the document violates the fundamental requirement for a consistent and auditable research framework.",
+    "assumptions_extracted": [
+        {
+            "quote": "expect net interest margin, or NIM, to compress slightly to around 2.70% in 2025 from 2.73% in 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "project Wells Fargo breaking the asset cap barrier by 2026.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "bank will eventually bring its efficiency ratio back down to roughly 62%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "estimate the mid-cycle return on tangible equity of around 14% for the bank compared with the cost of equity of around 9.0%.",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "project a 2.5% noninterest revenue compounded annual growth rate in the next 10 years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project the federal-funds rate to reach 2.50% by the end of 2027.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text projects 2025 NII growth of 1.2%, but the Valuation Model Summary table lists it as -9.0%.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 11",
+                    "Morningstar Valuation Model Summary, Page 21"
+                ]
+            },
+            {
+                "description": "Text cites 2024 NIM of 2.73%, while the table reports 3.1%.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 11",
+                    "Morningstar Valuation Model Summary, Page 21"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal ROTE of 14% is stated as a projection but lacks a detailed build-up relative to the 15% management target."
+        ]
+    }
+}

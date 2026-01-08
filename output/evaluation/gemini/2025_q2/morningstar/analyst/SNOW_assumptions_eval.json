@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report provides explicit, specific long-term assumptions for revenue growth (23% 5-year CAGR) and margin expansion (80% gross margin by 2035), which are clearly stated in the valuation section. However, the quality of these assumptions is severely compromised by multiple major internal contradictions and a total lack of quantified sensitivity analysis. Most notably, there is a massive numeric discrepancy in the financial tables: the historical summary reports a fiscal 2024 net loss of $836 million, whereas the analyst forecast summary\u2014starting with the same year\u2014claims a net profit of $353 million. Furthermore, the narrative explicitly describes the company as 'unprofitable on a GAAP basis,' yet the forecast table projects positive net income for every year through 2028 without clarifying if these figures are non-GAAP. A third contradiction exists between the text's mention of an 8% non-GAAP operating margin for fiscal 2026 and the table's projected -31.9% operating margin. While the report assigns a 'Very High' uncertainty rating, it offers only qualitative risk discussion rather than quantified scenarios or sensitivity tables for key drivers like AI adoption or competitive pricing. The justification for the aggressive terminal margin targets is also weak, lacking peer benchmarks or historical context for such a significant leap from current levels. These unresolved conflicts and the absence of stress-testing render the model's outputs opaque and unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "We expect Snowflake will achieve a compound annual growth rate for revenues of 23% (20%) over the next five (10) years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast that gross margins will expand from 67% in fiscal 2025 to 80% in fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We expect GAAP operating margins to increase from negative 40% in fiscal 2025 to 26% by fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "uses heavy amounts of stock-based compensation (expected to be roughly 37% of revenue in fiscal 2026)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "expecting product revenue growth of 24% and non-GAAP operating margin of 8%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our valuation implies forward fiscal-year enterprise value/ sales of 13 times.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Historical FY2024 Net Income of -$836M conflicts with Forecast FY2024 Net Income of +$353M.",
+                "locations": [
+                    "Morningstar Historical Summary, p. 12",
+                    "Morningstar Analyst Historical/Forecast Summary, p. 12"
+                ]
+            },
+            {
+                "description": "Narrative states firm is 'unprofitable on a GAAP basis' while Forecast Table shows positive Net Income for all years.",
+                "locations": [
+                    "Capital Allocation, p. 5",
+                    "Morningstar Analyst Historical/Forecast Summary, p. 12"
+                ]
+            },
+            {
+                "description": "Narrative cites 8% non-GAAP operating margin for FY2026 while Forecast Table shows -31.9% operating margin.",
+                "locations": [
+                    "Analyst Note, p. 1",
+                    "Morningstar Analyst Historical/Forecast Summary, p. 12"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "80% terminal gross margin target"
+        ]
+    }
+}

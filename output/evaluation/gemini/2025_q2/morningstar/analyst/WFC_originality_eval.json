@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a mix of company-specific data points and generic sector analysis. It contains three notable syntheses: a quantified estimate of the stress capital buffer (SCB) decline (1.2 percentage points) following Fed stress tests, a segment-level breakdown of efficiency ratios (contrasting the 83% wealth management ratio against the 49% commercial ratio to explain consolidated performance), and a peer comparison of deposit funding mix (80% for Wells Fargo vs. 65% for rivals). These provide some decision-relevant specificity. However, the report is heavily anchored in restating public headlines, most notably the lifting of the asset cap in June 2025, which is treated as a primary but obvious catalyst. Much of the commentary regarding technology budgets, 'scale and diversification,' and asset sensitivity is generic to the large-cap banking sector. Furthermore, the valuation section lacks novel drivers, citing standard adjustments such as the 'time value of money' and 'pull-forward in cost savings.' Because more than three insights are classified as restated or generic, and the valuation mechanism is standard, the grade is capped at Fair per the instruction's hard caps.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Wells Fargo... will see their stress capital buffers fall by... 1.2 percentage points, respectively, in October.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "The bank finally had positive news on the regulatory front as its asset cap was lifted in June 2025.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Wealth management business reported a much higher average efficiency ratio of 83%... consolidated efficiency ratio is negatively impacted by its business mix.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Wells Fargo funded more than 80% of its liabilities with deposits... compared with around 65% at larger rivals like JPMorgan and Bank of America.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fair value was lifted due to the time value of money, pull-forward in cost savings, and slightly higher 2025 growth.",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            },
+            {
+                "text": "Expect net interest margin, or NIM, to compress slightly to around 2.70% in 2025... as interest rates head lower and the bank remains asset-sensitive.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "We believe this scale and the bank's existing mix of franchises should provide the right foundation.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers (citing 'time value of money')",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Heavy reliance on the public 'asset cap removal' headline"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 6,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

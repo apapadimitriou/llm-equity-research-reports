@@ -1,0 +1,115 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple distinct numeric contradictions and the total absence of quantified sensitivity analysis. While the analyst provides explicit and specific assumptions regarding revenue growth (3% CAGR), transactional revenue (2.5%), and operating expenses ($1.65B for 2025), these are undermined by significant internal inconsistencies. Specifically, the narrative forecasts an operating margin of 63.2% by 2028, whereas the summary valuation table lists 64.2% for the same period. More egregiously, the 'Margins & Returns' table contains nonsensical averages; it claims a 3-year average operating margin of 75.6% despite annual figures ranging from 60.1% to 64.1%, and a 5-year average EBITDA margin of 8.8% against forecasts exceeding 81%. Furthermore, the report fails the sensitivity requirement. Although it identifies risks such as interest rate normalization and new competition (FMX), it offers no quantified scenarios or sensitivity tables showing how changes in trading volume or rates would impact the fair value estimate. The valuation relies on a 'black-box' DCF where the Stage II and III parameters are stated but not stress-tested. These unresolved contradictions and the lack of quantified risk modeling violate the core requirements for a higher grade, triggering the hard cap for Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "project that CME's revenue will grow at an average annual rate of around 3% from a cyclically strong 2024 to 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "anticipate operating margin to increase to about 63.2% by 2028 from 61.6% in 2023.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 7.5% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "expect CME's transactional revenue to increase at an average rate of just under 2.5% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project that CME will be able to increase its data revenue by midsingle digits per year for the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "CME expects 2025 adjusted operating expenses, excluding licensing fees, to come in at $1.65 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "total capital expenditure to be $90 million.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "8"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 23.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative forecasts 63.2% operating margin by 2028, while the valuation table shows 64.2%.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 6",
+                    "Margins & Returns Table, Page 14"
+                ]
+            },
+            {
+                "description": "Table '3 Year Avg' for Operating Margin (75.6%) is mathematically impossible given the annual data points (60.1%, 61.6%, 64.1%).",
+                "locations": [
+                    "Margins & Returns Table, Page 14"
+                ]
+            },
+            {
+                "description": "Table '5 Year Avg' for EBITDA Margin (8.8%) contradicts the forecast annual figures which all exceed 81%.",
+                "locations": [
+                    "Margins & Returns Table, Page 14"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity 7.5% without risk-free rate or beta components",
+            "Long-run tax rate 23.0% without historical context"
+        ]
+    }
+}

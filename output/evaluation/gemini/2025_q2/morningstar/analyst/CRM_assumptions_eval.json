@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded \"Poor\" due to the application of strict hard caps regarding internal consistency and sensitivity analysis. While the report is highly explicit in stating its key assumptions\u2014such as an 8% revenue CAGR through 2030 and a 92% historical retention rate\u2014it contains a significant unresolved numeric contradiction between the narrative and the financial tables. Specifically, the narrative cites a 31% \"actual\" non-GAAP operating margin for fiscal 2024 and targets an expansion to the \"upper 30% area\" by 2030. In contrast, the primary \"Morningstar Valuation Model Summary\" table reports a 14.4% operating margin for 2024 and forecasts a 26.2% margin for 2030. This ~1,600 basis point discrepancy is never reconciled with a GAAP-to-non-GAAP bridge, creating a direct conflict between the \"actual\" figures presented in different parts of the report. Furthermore, the report provides no quantified sensitivity analysis or scenario modeling (e.g., Bull/Bear cases) for material drivers like revenue growth or margin expansion, offering only qualitative risk discussion. Per the grading instructions, the presence of a distinct numeric contradiction combined with the absence of quantified sensitivities necessitates a \"Poor\" grade, as the model's core margin driver remains a \"black box\" relative to the narrative's claims.",
+    "assumptions_extracted": [
+        {
+            "quote": "model a five-year compound annual growth rate, or CAGR, for total revenue of 8% through fiscal 2030",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "forecast non-GAAP operating margin expanding from 31% in fiscal 2024 (actual) to the upper 30% area in fiscal 2030",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "customer retention has been improving gradually over the last 20 years and now sits at approximately 92% annually",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "model several hundred million dollars in bolt-on acquisitions annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "total addressable market will grow to $248 billion in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 975",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative cites a 31% 'actual' non-GAAP operating margin for FY2024 and targets 'upper 30% area' by 2030, while the Valuation Model Summary table reports a 14.4% actual and 26.2% forecast for the same periods without reconciliation.",
+                "locations": [
+                    "Fair Value and Profit Drivers (Page 7)",
+                    "Morningstar Valuation Model Summary (Page 15)"
+                ]
+            },
+            {
+                "description": "Narrative models a 5-year revenue CAGR of 8% through 2030, while the Valuation Model Summary table calculates a 5-year CAGR of 8.3%.",
+                "locations": [
+                    "Fair Value and Profit Drivers (Page 7)",
+                    "Morningstar Valuation Model Summary (Page 15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "GAAP to Non-GAAP reconciliation"
+        ],
+        "unjustified_parameters": []
+    }
+}

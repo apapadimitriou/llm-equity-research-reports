@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for major value drivers, including revenue growth, EPS targets, and segment-specific performance. Assumptions are generally proximal to the forecasts they inform, particularly in the 'Fair Value and Profit Drivers' section. The analyst justifies the 5% revenue CAGR and 10% EPS CAGR by citing the divestiture of the Medicare Advantage business and the expansion of the high-margin specialty pharmacy segment. However, the report is capped at a 'Fair' grade due to two primary deficiencies. First, there is a significant internal numeric contradiction: the 'Growth & Ratios' table on page 14 claims a 23.1% 5-year CAGR for Adjusted EPS, which is mathematically inconsistent with the annual growth rates provided in the same table (8.7%\u201311.2%) and the 10% CAGR stated in the narrative. Second, while the report mentions a 'bear-case scenario' regarding PBM regulatory risks and assigns a 'Medium' uncertainty rating, it fails to provide quantified sensitivity analysis. There are no tables or charts illustrating how changes in key variables\u2014such as medical utilization rates, WACC, or terminal growth\u2014would specifically impact the Fair Value Estimate. Without these quantified ranges, the valuation remains somewhat of a 'black box' regarding its resilience to stress. Justification for the 8.1% WACC is also absent from the narrative, appearing only as a point input in the valuation summary table.",
+    "assumptions_extracted": [
+        {
+            "quote": "During the next five years, we assume revenue grows 5% compounded annually through 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect Cigna's earnings per share to grow about 10% compounded annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "PBM-related risks for Cigna create a mid-single-digit headwind to operating profits, which we include in our bear-case scenario",
+            "location": {
+                "section": "Economic Moat",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 2029: 201",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The 'Growth & Ratios' table lists a '5 Year CAGR' for Adjusted EPS of 23.1%, which contradicts the narrative's 10% assumption and the table's own annual growth forecasts (8.7%\u201311.2%).",
+                "locations": [
+                    "Financials - Growth & Ratios table, page 14",
+                    "Fair Value and Profit Drivers, page 6"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE components justification",
+            "Terminal growth rate justification"
+        ],
+        "unjustified_parameters": [
+            "8.1% WACC provided without component breakdown or source in text"
+        ]
+    }
+}
