@@ -1,0 +1,28 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal links and explicit, quantified assumptions, but lacks formal sensitivity or scenario analysis. Causality is articulated between business mix and profitability (e.g., \u201cimproved margins from operational efficiency\u201d and \u201cfocus on high-margin software and services\u201d), and between end-market trends and segment forecasts. Inference quality is decent: revenue and margin trajectories are tied to segment drivers and mix, and the EPS bridge is quantified. Key valuation inputs are explicit and partly benchmarked: \u201cWe project revenue CAGR of 5%,\u201d \u201cOperating margins expand from 24% to 27%,\u201d \u201cWACC of 8.5%,\u201d and \u201cTerminal growth is 3%,\u201d with multiples \u201caligned with historical averages.\u201d Use of data is robust (segment growth rates, R&D >15% of revenue, gross margins >60%, ROIC vs. WACC), though some rationales are generic. Counterpoints are identified (cyclical communications, macro, competition) and uncertainty is acknowledged with a quantified range (\u201ccould swing valuation by 15-20%\u201d), but these are not tied to model sensitivities (e.g., no WACC/terminal growth or segment downside cases). Actionable implications are present via fair value, drivers, and moat durability, yet conditional triggers and scenario-based decision guidance are limited. Selected excerpts: \u201cimproved margins from operational efficiency\u201d; \u201cfocus on high-margin software and services\u201d; \u201cWe project revenue CAGR of 5%\u201d; \u201cOperating margins expand from 24% to 27%\u201d; \u201cWACC of 8.5%\u201d; \u201ccould swing valuation by 15-20%.\u201d",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Software mix \u2192 margin uplift not quantified by product mix",
+            "AI/6G demand \u2192 orders/backlog assumptions not evidenced",
+            "Communications recovery driver not supported by market data"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 3% with generic 'industry average' rationale",
+            "Exit multiple 18x 'peer comparable' without comps shown"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/terminal growth sensitivity table",
+            "No segment growth downside/upsides or EPS range",
+            "No FX/export control scenarios for APAC 35% exposure"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are largely explicit and proximate to forecasts, with clear numerical inputs for revenue CAGR, FY26 revenue, margin trajectory, WACC, terminal growth, and FCF conversion. Specificity is solid: magnitudes, units, and horizons are provided (e.g., FY2026 revenue $41.3B; WACC 8.7%; terminal growth 3.5%; target margin 24%), and a multi-year financials table reinforces the model\u2019s path. Justification is partial: FY26 revenue ties to management guidance, but key valuation parameters (WACC, terminal growth, FCF conversion) lack cited support from sources, peer benchmarks, or historical reconciliation. Internal consistency is mostly clean, with minor ambiguity between the narrative\u2019s non-GAAP operating margin (32.9%) and the table\u2019s annual \u201cOp Margin %\u201d figures (likely GAAP), not explicitly reconciled. Critically, there is no quantified sensitivity/scenario analysis for material drivers (revenue growth, margins, WACC/terminal assumptions), triggering the hard cap to Fair. Coverage misses share count, tax rate, and capex assumptions, which are important for per-share valuation and cash flow modeling. Overall, the assumptions are explicit and specific but only partly justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "The revenue compound annual growth rate projection of approximately 10-12% over the medium term reflects management's guidance of $41.3 billion for fiscal 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Salesforce revised its fiscal 2026 revenue forecast to $41.3 billion",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 8.7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Target Operating Margin: 24%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "FCF Conversion: 32%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Op Margin %|2.1|10.5|14.4|19.8|21.2|22.5|23.2|23.8",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "FCF_conversion"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.7% without source",
+            "Terminal Growth 3.5% without source",
+            "FCF Conversion 32% without source"
+        ]
+    }
+}

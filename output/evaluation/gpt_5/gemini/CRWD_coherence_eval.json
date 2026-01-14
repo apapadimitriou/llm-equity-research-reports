@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure (Executive Summary \u2192 Bull/Bear \u2192 Earnings \u2192 Moat/Competition \u2192 Valuation \u2192 Risks \u2192 ESG \u2192 Company Profile) and generally uses consistent terminology (ARR, net new ARR, GAAP vs non-GAAP, EV/S vs P/S) with cross-references that tie decelerating ARR and GAAP losses to the valuation stance (HOLD). Transitions across sections are mostly smooth, and the base-case valuation coherently aligns with the risk discussion and guidance (FY26 revenue midpoint $4.78B, non-GAAP EPS $3.60\u2013$3.72, and ~21% non-GAAP operating margin). However, a material internal contradiction appears in the WACC discussion: the text states CAPM \u201cmay understate the perceived risks\u201d yet applies a downward adjustment to the WACC (from 9.87% to 8.9%), which is logically inconsistent and unaddressed. There is also mild inconsistency in the use of relative valuation metrics for peers (PANW cited at P/S ~14\u201315x in the Bear Case vs EV/FY26E Sales ~10x in the Peer Comparison) without an explicit reconciliation, which adds noise. Finally, an ESG citation appears misaligned (Sustainalytics source labeled for MicroStrategy while asserting CrowdStrike\u2019s score), weakening source coherence. These issues trigger the contradictions guardrail, capping the grade at fair despite otherwise solid narrative flow.",
+    "evidence": [
+        "DCF/WACC: \u201cCAPM may understate the perceived risks\u2026 Therefore, we apply a modest downward adjustment\u2026 arriving at 8.9%\u201d (Financial Model & Valuation), contradicting the stated rationale.",
+        "Peer valuation metrics: PANW at P/S ~14\u201315x (Bear Case) vs EV/FY26E Sales ~10x (Peer Comparison) without explaining the metric shift.",
+        "ESG citation misalignment: CrowdStrike\u2019s Sustainalytics score (18.6) attributed to source 30 labeled \u201cMicroStrategy, Inc. ESG Risk Rating.\u201d"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are mostly explicit and proximate to the forecasts: revenue CAGR (5\u20137%), WACC (8.5%), terminal growth (2.5\u20133.0%), tax rate (25%), FCF conversion (75% of EBIT), and a margin path (>17% by 2029). Specificity is solid: ranges, units (% and $), and horizons (next five years, terminal) are provided, and tables give multi-year revenue, margin, EPS, and FCF trajectories. Justification is partial: revenue growth references management guidance; margin expansion cites operational efficiency; FCF conversion notes historical performance, but WACC, terminal growth, and tax rate lack source-backed evidence or peer/market benchmarks. Internal consistency has one numeric contradiction: 2029 FCF is stated as \u201c~$1.6B\u201d in text while the table shows $1.76B. Sensitivity analysis is limited; while a valuation range ($275\u2013$295) is given, drivers (growth, margins, discount rate) are not quantified in scenarios, triggering the hard cap at Fair. Some material drivers (share count, capex) remain opaque. Overall, assumptions are clearly stated and specific, but justification and scenario rigor are insufficient and the FCF discrepancy reduces consistency.",
+    "assumptions_extracted": [
+        {
+            "quote": "Long-term revenue growth: 5-7% CAGR",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted average cost of capital: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5-3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Free cash flow conversion: 75% of EBIT",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "The base case scenario assumes a compound annual growth rate of approximately 5% to 7% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The improvement from 14.2% in 2022 to projected levels above 17% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Sensitivity analysis indicates that fair value estimates range from approximately $275 to $295 per share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 2029 FCF \u2248 $1.6B; table shows 2029E FCF $1.76B",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source-backed derivation",
+            "Terminal growth 2.5\u20133.0% without justification",
+            "Tax rate 25% without support"
+        ]
+    }
+}

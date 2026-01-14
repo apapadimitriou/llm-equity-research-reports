@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are reasonably explicit and numerically specified: a 5% revenue CAGR (2025\u20132029), margin expansion to 28% by 2027, WACC of 9% (beta 1.2, risk-free 4.0%), and terminal growth of 3%. These appear near the forecast table and the DCF discussion, and the revenue/margin path reconciles with the Financials Snapshot. However, justification is weak: the revenue growth rationale relies largely on generic statements and a non-primary source; WACC and terminal growth lack sourced evidence or peer/market benchmarks, and there is no segment-level history or cost program detail to support margin expansion. Specificity is solid for the items stated, but critical drivers like tax rate, share count/buybacks within the model, credit costs/NII, and capex are missing or opaque. Consistency is impaired by a numeric contradiction on 2025 EPS (\u201c$7.50\u201d vs \u201c$7.30\u201d in narrative/table). Sensitivity analysis is absent; while risks mention potential recession reducing deal activity 20\u201330%, there is no quantified scenario linking drivers (revenue, margins, WACC) to valuation or earnings ranges. Under the decision rules, the lack of sensitivities and the EPS contradiction cap the report at Fair despite the presence of some explicit assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our fair value estimate of $135 assumes a 5% revenue CAGR through 2029, with operating margins expanding to 28% by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast revenue CAGR of 5% from 2025-2029, driven by 6% growth in wealth management and 4% in institutional securities",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to expand from 25% in 2024 to 28% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 9%, reflecting beta of 1.2 and cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 3.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue CAGR  | 5.0%    | Based on segment growth trends [1]",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "EPS bridge: 2024 base $6.50, plus $1.00 from revenue growth, minus $0.20 from higher expenses, yielding 2025 EPS of $7.30.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 EPS stated as $7.50 in narrative vs $7.30 in model/table",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "credit_cost",
+            "NII/NIM",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without detailed source/inputs",
+            "Beta 1.2 without citation",
+            "Terminal growth 3% without supporting evidence"
+        ]
+    }
+}

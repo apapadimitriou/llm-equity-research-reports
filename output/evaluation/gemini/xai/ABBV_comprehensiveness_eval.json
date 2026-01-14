@@ -1,0 +1,61 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to significant structural deficiencies and a failure to meet core comprehensiveness standards. Most critically, the Financials Snapshot is skeletal, omitting all historical data (2022\u20132024) as 'Insufficient data,' which prevents any meaningful trend analysis. While the report identifies sector-specific drivers like Skyrizi and Rinvoq in the text, these core sector KPIs are absent from the Financials Snapshot table, which is limited to generic financial metrics. Furthermore, the report suffers from high redundancy; the narrative regarding Humira's erosion and the growth of immunology replacements is repeated across the Analyst Note, Strategy, Bulls/Bears, and Moat sections with no additional depth, triggering a mandatory downgrade. Peer benchmarking is entirely absent, and scenario analysis is mentioned only as a vague percentage rather than a detailed sensitivity model. Finally, a major temporal contradiction exists: the report is dated May 2025, yet it cites sources from August 2025, suggesting a failure in evidence integration and factual consistency. These gaps render the report superficial and incomplete.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis Table",
+            "Historical Financials"
+        ],
+        "sector_kpis_present": [
+            "Skyrizi/Rinvoq peak sales projections (text only)"
+        ],
+        "sector_kpis_missing": [
+            "R&D Expense as % of Sales",
+            "Humira Sales Erosion Data",
+            "Product-level Revenue Breakdown in Financials Table",
+            "Pipeline Phase III Program Counts"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-05-12) is inconsistent with sources cited from August 2025.",
+                "locations": [
+                    "Cover Block",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D Spend",
+            "Specific Drug Revenue Lines in Table",
+            "Patent Expiry Schedule"
+        ],
+        "uncited_claims": [
+            "H1 2025 revenue estimated at $29.0 billion",
+            "Skyrizi projected to reach peak sales of $10 billion"
+        ]
+    }
+}

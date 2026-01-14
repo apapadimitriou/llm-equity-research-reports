@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. The valuation section is reasonably explicit and links operating drivers (segment growth rates and margin expansion) to a DCF-derived fair value, including a simple EPS bridge. Risks and capital allocation are addressed with adequate breadth. However, comprehensiveness is constrained by the Financials Snapshot lacking core semiconductor KPIs: no gross margin, segment revenue mix, capex, or unit/ASP metrics, and FY2024 actuals are left as \u201cinsufficient data,\u201d undermining the financial grounding. Peer benchmarking is absent beyond qualitative mentions and an ESG-only comparison, and there is no scenario/sensitivity analysis. Evidence integration is mixed: most claims are cited, but the ESG rating is explicitly uncited and certain balance sheet assertions lack sourcing. Minor inconsistencies (e.g., an EPS \u201cbeat\u201d despite the figure being below the estimate; using a 2024 EPS base while omitting 2024 actuals in the table) detract from cohesion. Redundancy is limited. Given missing sector KPIs in the snapshot (\u22652) and gaps in peer/scenario depth, the report caps at Fair for comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Detailed Segment Financials/KPIs",
+            "Valuation Sensitivity"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "Segment Revenue Mix (Data Center/Client/Gaming/Embedded)",
+            "Capex",
+            "Unit Shipments/ASPs",
+            "Inventory Days/Turns"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims Q1 2025 EPS beat despite EPS of $0.479 vs estimate of $0.48 (slight miss).",
+                "locations": [
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Uses 2024 base EPS ($1.20) in valuation while FY2024 actuals are marked 'insufficient data' in the Financials Snapshot.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Margin",
+            "Segment revenue mix",
+            "Capex",
+            "Unit/ASP metrics",
+            "Inventory days"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating of 15.2 (low) lacks direct citation",
+            "Net debt under 10% of market cap has no source cited"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails fundamental assumption quality standards through multiple critical flaws. Key assumptions are scattered and poorly justified\u2014revenue CAGR of 12% lacks proper support beyond vague 'transaction growth trends,' while the 8.5% WACC appears arbitrary with no derivation shown. A major contradiction exists between claimed 'mid-teens revenue growth through 2029' in text versus 12% CAGR in tables. The EPS bridge contains unexplained figures ($1.50 from revenue growth, $0.90 from margin expansion) without methodology. Operating margin forecasts (56% to 58.5%) lack peer benchmarking or historical justification. Most damaging is the complete absence of sensitivity analysis\u2014no quantified scenarios for any material drivers despite claims of 'medium uncertainty.' The terminal growth rate of 4% and beta of 1.0 are stated without support. While some assumptions are explicit, the combination of internal contradictions, weak justification, and zero stress-testing renders the model unauditable and unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 12% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.0",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 56% in 2024 to 58% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal growth rate is 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Starting from 2024 EPS of $13.50, we add $1.50 from revenue growth, $0.90 from margin expansion, subtract $0.50 for higher taxes and expenses, yielding 2025 EPS of $15.40",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text claims 'sustained mid-teens revenue growth through 2029' while tables show 12% CAGR",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% components not derived",
+            "Terminal growth 4% without justification",
+            "EPS bridge components unexplained",
+            "Beta 1.0 without support"
+        ]
+    }
+}

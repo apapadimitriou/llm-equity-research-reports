@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. Critical banking sector KPIs are entirely absent from the Financials Snapshot (no NIM, loan loss provisions, CET1 ratio, or loan growth metrics). Multiple material claims lack proper citations, with excessive reliance on vague '[assumed]' notations and insufficient data disclaimers. The valuation section provides basic DCF assumptions but fails to explicitly bridge operating drivers to fair value outcomes. Peer benchmarking is completely missing despite brief mentions. The report demonstrates significant redundancy, repeating charge-off rates and data analytics advantages across multiple sections without adding depth. Sources are generic and lack specific data points, undermining credibility. While structural sections are present, the thin analytical depth, missing sector-specific metrics, and poor evidence integration render this report fundamentally incomplete for institutional equity research standards.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Loan Growth",
+            "Net Charge-off Rate",
+            "Efficiency Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "ESG Risk Rating claimed as 18.2 but immediately noted as 'insufficient data for exact'",
+                "locations": [
+                    "ESG Risk"
+                ]
+            },
+            {
+                "description": "CET1 ratio stated as 'above 12%' but marked as 'insufficient data for exact'",
+                "locations": [
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Net Charge-off Rate",
+            "Efficiency Ratio",
+            "Loan Growth",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ],
+        "uncited_claims": [
+            "Revenue CAGR of 5% assumption",
+            "Margin expansion to 25% projection",
+            "WACC of 9% calculation",
+            "Share buybacks total $2B annually",
+            "10% increase in card loan balances",
+            "Return on equity improved to 12%"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency issues that fundamentally undermine its coherence. Multiple critical contradictions exist between narrative claims and data: the Analyst Note states margins will expand to 25% while the financials table shows flat 25% margins from 2028-2029, contradicting the expansion claim. The report repeatedly cites data as coming from sources dated after the report date (2025-08-03 source for a 2025-07-03 report), creating impossible temporal relationships. The fair value derivation contains mathematical errors - claiming 2029 EPS of $18 yields P/E of 8.3x at $150 fair value, when it actually equals 8.3x. Sections read like disconnected bullet points with minimal transitions, particularly Bulls/Bears and Risk sections. The narrative jumps abruptly between topics without logical flow, and key claims lack proper support from the cited sources. Bulls/Bears positions are never reconciled with the base case assumptions, leaving fundamental tensions unresolved. The report requires readers to independently construct the analytical argument due to poor connective tissue between sections.",
+    "evidence": [
+        "Analyst Note claims 'margin expansion to 25%' while financials table shows margins flat at 25.0% for 2028-2029, contradicting expansion narrative",
+        "Source [1] dated 2025-08-03 cited for Q2 data in report dated 2025-07-03, creating impossible temporal sequence",
+        "Fair value math error: '$18 EPS yielding P/E of 8.3x at $150' actually equals 8.3x, not the implied higher multiple needed for valuation support"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

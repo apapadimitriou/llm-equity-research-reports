@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key model drivers are stated clearly and proximate to the forecasts they inform. The report explicitly quantifies: FY26 guidance (product revenue growth and non-GAAP margin), multi-year revenue CAGRs, long-term gross margin and GAAP operating margin trajectories, and a forecast path for diluted shares and revenues. Specificity is solid: magnitudes, units, and time horizons are provided (e.g., margins from FY25 to FY35; 5- and 10-year revenue CAGRs; multi-year share count). However, justification is limited. The narrative cites AI demand, cloud migrations, and scale leverage, but does not tie the long-run margin targets or revenue CAGRs to multi-year company history, peer benchmarks, or sourced evidence; WACC/COE, terminal growth, tax rate, and capex/working-capital assumptions are omitted. Internal consistency between text and tables appears largely clean, with negative GAAP operating margins in the near term aligning with the long-run margin path; no clear numeric contradictions are evident. Critically, there is no quantified sensitivity or scenario analysis on material drivers (e.g., revenue growth bands, margin progression, SBC intensity, valuation impact), so assumptions are not stress-tested. Given explicitness and specificity but weak justification and no sensitivities, the appropriate cap applies, resulting in a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "expecting product revenue growth of 24% and non-GAAP operating margin of 8%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "a compound annual growth rate for revenues of 23% (20%) over the next five (10) years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "gross margins will expand from 67% in fiscal 2025 to 80% in fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "GAAP operating margins to increase from negative 40% in fiscal 2025 to 26% by fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Diluted Shares Outstanding (Mil) 328 333 374 387 400",
+            "location": {
+                "section": "Morningstar Analyst Historical/Forecast Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Revenue (USD Mil) 2,806 3,626 4,464 5,532 6,885",
+            "location": {
+                "section": "Morningstar Analyst Historical/Forecast Summary",
+                "page": "12"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "stock-based compensation (expected to be roughly 37% of revenue in fiscal 2026)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "5"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "Revenue CAGR 23% (5y) / 20% (10y) without peer/history support",
+            "Gross margin expansion to 80% by FY2035 without evidence",
+            "GAAP operating margin to 26% by FY2035 without benchmarking",
+            "SBC ~37% of revenue in FY2026 without source or reconciliation",
+            "No disclosure of WACC/terminal assumptions; EV/S implication not derived"
+        ]
+    }
+}

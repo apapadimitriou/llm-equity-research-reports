@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report contains extensive content but suffers from pervasive copying and paraphrasing from cited sources with minimal original analysis. Most insights are generic restatements of public information (AI boom, China restrictions, CUDA ecosystem) without company-specific synthesis. While the report mentions some quantified projections (15% CAGR, $125 fair value), these appear to be largely borrowed from Morningstar rather than original analysis. The valuation section lacks novel drivers beyond standard DCF assumptions. The few potential syntheses (linking geopolitical risk to supply chain diversification, margin normalization timeline) are weakly developed and lack specific mechanisms or catalysts. The report reads more like a comprehensive summary of public sources than original equity research with actionable insights.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Data center segment contributed about $39 billion in Q1 (nearly 90% of sales)",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Nvidia's CUDA platform has over 4 million developers creating high switching costs",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We project revenue CAGR in mid-teens through fiscal 2029 with operating margins in 50%+ range",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fair value of $125 per share using 9% WACC and 4% terminal growth",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "U.S.-China export restrictions cost $4.5 billion inventory write-down",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Competition from AMD, Google, Amazon developing in-house chips",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Extensive copying from Reuters and AP sources",
+            "Fair value estimate directly cited from Morningstar",
+            "Generic 'wide moat' and 'switching costs' boilerplate",
+            "Standard DCF with no novel mechanisms"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

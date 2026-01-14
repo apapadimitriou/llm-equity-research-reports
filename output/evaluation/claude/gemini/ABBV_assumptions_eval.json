@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails multiple critical tests for assumption quality. Key DCF assumptions are stated but poorly justified: WACC of 7.8% lacks proper derivation (claims 83%/17% equity/debt structure contradicting the $70B debt burden), cost of equity components appear fabricated (4.3% risk-free rate, 0.50 beta, 8.6% equity risk premium without sources), and terminal growth of 2.5% is unsupported. Revenue growth assumptions reference management guidance but lack specific quantification or sensitivity analysis. Most critically, there are no quantified sensitivities or scenarios despite acknowledging 'High Uncertainty' and 'wide range of potential valuation outcomes.' The report mentions risks extensively but provides zero stress-testing of key drivers like competition timing, pipeline failures, or pricing pressure - a fatal flaw for a pharma company post-patent cliff. While some assumptions are explicit, the combination of weak justification, missing sensitivities, and internal inconsistencies around capital structure renders this analysis unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 7.5%, which aligns with management's guidance for high single-digit growth through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we forecast the adjusted operating margin to expand from 42.3% in Q1 2025 to approximately 45-46% by the end of our explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model discounts these future free cash flows using a weighted average cost of capital (WACC) of 7.8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a terminal growth rate of 2.5% to our final-year cash flow, which represents a conservative estimate for long-term nominal global GDP growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The weights are based on a capital structure of approximately 83% equity and 17% debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 17% debt weighting in WACC calculation while acknowledging $70B debt burden and leverage concerns throughout",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Capital Allocation section discussing high debt-to-equity ratio"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.8% components lack sources",
+            "4.3% risk-free rate without citation",
+            "0.50 beta unsourced",
+            "8.6% equity risk premium unsourced",
+            "Terminal growth 2.5% without justification"
+        ]
+    }
+}

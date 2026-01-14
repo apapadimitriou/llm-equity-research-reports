@@ -1,0 +1,27 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report exhibits solid analytical depth with clear causal mechanisms and explicit, quantified assumptions. It links performance to drivers (\u201cled by strong momentum in cardiac ablation solutions\u201d) and explains strategic actions (\u201cconcentrate resources on higher-margin segments\u201d). The valuation section provides detailed inputs (\u201cOperating margin expansion of 50-100 basis points,\u201d \u201cWACC: 8.5%,\u201d \u201cimplied forward price-to-earnings multiples of 18\u201320x\u201d) and uses ample data across revenue, margins, EPS, and FCF. Some benchmarking is present (peer-consistent multiples and R&D intensity), and risks are noted with quantification (\u201ctariff exposure of approximately $200-350 million\u201d). However, the analysis stops short of quantified scenario/sensitivity work: no ranges or EPS/valuation impacts under tariff shocks, regulatory delays, or alternative WACC/terminal growth assumptions. The diabetes separation\u2019s value effects are described but not modeled with scenarios. Counterpoints and uncertainty are discussed qualitatively, but not stress-tested. Actionable elements include a fair value estimate and decision-relevant implications of portfolio focus, yet investors lack sensitivity tables or downside/upsides quantified. Overall, mechanisms and assumptions are strong, but the absence of quantified scenario analysis caps the grade at Good.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Tariff cost impact not linked to EPS/valuation",
+            "Diabetes separation value creation not modeled"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 2.5% with no industry benchmark",
+            "Margin expansion targets not corroborated with historical benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC or terminal growth ranges",
+            "No EPS/FCF impact for $200\u2013350M tariffs",
+            "No scenario for Hugo FDA delay on revenue"
+        ]
+    }
+}

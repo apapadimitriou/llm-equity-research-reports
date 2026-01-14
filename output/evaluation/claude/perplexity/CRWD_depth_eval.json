@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it presents extensive data about CrowdStrike, it lacks causal mechanisms explaining business performance drivers. The July 2024 outage is mentioned repeatedly but without quantified impact analysis or recovery mechanisms. Financial projections like \"Revenue CAGR 16.5%\" and \"Terminal Op Margin 25.5%\" appear without supporting assumptions or benchmarks. The report states \"Q1 2026 results showed resilience\" and \"ARR growing 22%\" but provides no causal explanation for these outcomes. Valuation assumptions include \"WACC 9%\" and \"Fair Value $485\" without sensitivity analysis or ranges. The analysis mentions \"Charlotte AI was included in over 100 customer deals\" but fails to link this to revenue impact or competitive advantage mechanisms. Most critically, there are no quantified scenarios testing key assumptions like competitive pressure, economic downturn impact, or outage-related customer churn rates.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "ARR growth \u2192 underlying business drivers not explained",
+            "outage impact \u2192 recovery mechanisms not quantified",
+            "competitive positioning \u2192 differentiation drivers unclear"
+        ],
+        "unsupported_assumptions": [
+            "WACC 9% with no benchmark justification",
+            "Terminal margin 25.5% without industry comparison",
+            "Revenue CAGR 16.5% lacks supporting analysis"
+        ],
+        "lack_of_sensitivity": [
+            "Fair value $485 with no scenario analysis",
+            "No quantified outage impact ranges",
+            "Competition effects not stress-tested"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet basic standards for assumption quality. While it states some key assumptions like 13% revenue CAGR through 2029 and 8% WACC, these are largely unjustified and lack specificity. The revenue growth assumption provides no breakdown by segment or causal drivers. The 8% WACC is mentioned only as reflecting AAA credit rating without any calculation or components. Operating margin assumptions (44-46%) lack justification for the projected recovery. Most critically, there are no quantified sensitivities or scenarios for any material drivers, automatically capping the grade at Fair. Additionally, several assumptions are opaque or missing entirely, including terminal growth rate specifics, tax rate assumptions, and detailed capex projections. The EPS forecasts appear inconsistent with stated margin assumptions when cross-checked against revenue projections. The combination of weak justification, missing sensitivities, and internal inconsistencies results in a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "5-year revenue CAGR of ~13% (FY2024\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "weighted average cost of capital around 8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "operating margin was ~45% in FY2024... expect a temporary dip in FY2025 margins... foresee margins recovering and reaching ~46% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "2.5% terminal growth rate",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "~$20 billion per year of share buybacks, reducing shares outstanding by ~1% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS projections appear inconsistent with stated margin and revenue assumptions when cross-calculated",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex_detailed",
+            "segment_growth_breakdown"
+        ],
+        "unjustified_parameters": [
+            "8% WACC without calculation components",
+            "13% revenue CAGR without segment justification",
+            "46% terminal margin without competitive analysis"
+        ]
+    }
+}

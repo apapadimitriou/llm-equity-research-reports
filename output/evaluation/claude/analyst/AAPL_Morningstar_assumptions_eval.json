@@ -1,0 +1,90 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates good quality assumptions across most dimensions. Key assumptions are explicit and well-justified with multi-year history and peer context. The analyst provides specific forecasts with clear units and time horizons (7% compound annual revenue growth through fiscal 2029, iPhone revenue growth of 6%, services growth of 10%, wearables growth of 13%). Gross margins are projected to rise from 46% to 49% by fiscal 2029, with operating margins reaching 35%. The DCF model includes detailed Stage II parameters (8% EBI growth rate, 2% investment rate) and valuation drivers (9% cost of equity, 8.9% WACC). However, the report lacks quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Good despite otherwise strong assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project 7% compound annual revenue growth for Apple through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project 6% growth for iPhone revenue over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast gross margins to rise to 49% in fiscal 2029, up from 46% in fiscal 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating margins rise almost exclusively due to gross margin expansion in our forecast, reaching 35% in fiscal 2029 from 32% in fiscal 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 15",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

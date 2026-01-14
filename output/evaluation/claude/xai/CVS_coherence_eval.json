@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report exhibits severe structural and consistency problems that undermine coherence. Multiple temporal inaccuracies plague the analysis, with sources dated in the future (2025-08-09 for a 2025-05-12 report) and impossible quarterly reporting dates (Q1 2025 results on May 1, 2025). The narrative contains fundamental contradictions: cash flow projections drop from $9.1B actual in 2024 to $7.0B forecast in 2025 without explanation, while simultaneously claiming improved guidance. The Bulls/Bears section fails to reconcile with base-case assumptions - bears cite elevated medical costs as ongoing pressure while the valuation assumes margin expansion. Sections read like disconnected bullet points with minimal transitions, particularly the Risk section and ESG discussion. Critical terms like 'medical loss ratio' appear without definition, and the fair value methodology lacks clear connection to stated assumptions. The report requires readers to independently construct logical connections between disparate claims.",
+    "evidence": [
+        "Source [4] dated 2025-08-09 cited in report dated 2025-05-12 - impossible temporal sequence in Sources section",
+        "FCF drops from $9.1B (2024) to $7.0B (2025) in Financials table while Analyst Note claims 'raised guidance' and 'improving visibility'",
+        "Bears cite 'elevated medical costs continue to pressure profitability' while Fair Value section assumes operating margins expanding from 4.5% to 5.2% without reconciliation"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover/contents, analyst note, business description, strategy & outlook, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, and appendix with sources. Valuation assumptions are explicit and linked to operating drivers (growth, margins, WACC, asset-level contribution), and a base/bull/bear assumption table provides light scenario context. However, the Financials Snapshot is generic and lacks core biopharma KPIs (product-level revenue tables, R&D as % of sales, LOE/patent timelines, clinical milestone schedule), triggering the KPI hard cap. Peer benchmarking is absent. Evidence is generally cited, but at least two material items rely on outdated or questionable sourcing (e.g., Q2 2025 EPS/revenue tied to a 2021 link; very old P/E source) and several headline facts (price, market cap) are uncited. There is some redundancy around Horizon acquisition and MariTide across multiple sections without additional depth. Capital allocation and risk coverage are reasonably detailed. Overall, breadth is good, but missing sector KPIs in the snapshot and inconsistent sourcing cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking"
+        ],
+        "sector_kpis_present": [
+            "Pipeline/Trial Status (MariTide Phase 3)",
+            "Select Product Sales References (TEPEZZA 2024, IMDELLTRA Q1 2025)",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Product-level revenue breakdown table",
+            "R&D as % of sales",
+            "Patent LOE timeline",
+            "Clinical milestones/schedule",
+            "Gross margin"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Analyst Note cites Q2 2025 results despite report date (2025-07-02) likely preceding Q2 reporting cadence.",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Q2 2025 EPS ($6.02) and revenue ($9.18B) are attributed to a 2021 MarketBeat link (outdated source).",
+                "locations": [
+                    "Analyst Note",
+                    "Sources [5]"
+                ]
+            },
+            {
+                "description": "Fair value stated as $315 in Cover Block but described as a $315\u2013$330 range in Valuation.",
+                "locations": [
+                    "Cover Block",
+                    "Valuation & Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level revenue breakdown",
+            "R&D as % of sales",
+            "Patent LOE timeline",
+            "Clinical milestones timetable",
+            "Gross margin"
+        ],
+        "uncited_claims": [
+            "Last Close $288.23 not sourced",
+            "Market Cap $155.2B not sourced"
+        ]
+    }
+}

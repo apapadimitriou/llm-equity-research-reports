@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a clear structure and generally smooth transitions, particularly in the Analyst Note and Strategy sections. However, it suffers from material internal contradictions that trigger a hard cap at fair. Specifically, the narrative heavily emphasizes significant buybacks and large repurchase authorizations following the 2025 stress tests, yet the Fair Value assumptions and Appendix explicitly state that the share count will remain roughly flat through 2029. This disconnect undermines the DCF's integrity. Additionally, there are numerical discrepancies between the narrative and the Financials Snapshot; the text forecasts 2025 and 2029 EPS at $4.0 and $4.8, while the table shows $4.1 and $4.9. While the report correctly aligns its temporal claims\u2014referencing June 2025 events in a July 2025 report\u2014the failure to fully reconcile the steadily rising NII base case with the rate-cut sensitivity noted in the Bears section creates unresolved tension. The Bears cite a 3% NII drop in 2024 due to rate sensitivity, yet the valuation model assumes uninterrupted growth without explaining the shift in sensitivity. The Wide Moat upgrade is well-supported by references to scale and switching costs, but the technical execution of the valuation narrative versus the data table is inconsistent, requiring the reader to adjudicate which set of assumptions is primary.",
+    "evidence": [
+        "Capital expenditure and share count remain roughly flat (Fair Value) vs analysts expect significant buybacks (Analyst Note).",
+        "EPS from roughly $4.0 in 2025 to ~$4.8 by 2029 (Fair Value) vs Table showing $4.1 and $4.9 for those years.",
+        "NII projected steadily rising (Fair Value) vs Bears note that Q3 2024 NII fell ~3% as deposit yields stayed higher."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

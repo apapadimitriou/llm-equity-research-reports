@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to a fundamental and pervasive temporal contradiction that undermines the entire narrative's integrity. While the document is structured professionally and uses clear language, it suffers from a future-citation paradox. The report is explicitly dated June 16, 2025, and contains a Q2 2025 Preview section that treats the second-quarter results as upcoming events. However, the Works Cited section includes multiple sources dated September 2025, including the actual Meta Reports Second Quarter 2025 Results (Source 1) and news articles from September 8, 2025 (Source 6). This means the analyst is forecasting data that had already been publicly released for months by the time the citations were gathered, yet the text maintains the persona of a pre-earnings preview. Furthermore, there is a quantitative tension regarding capital expenditures. The narrative states that 2026 will see another year of similarly significant capital expenditures dollar growth as 2025. Since 2025 CapEx is modeled to grow by approximately $33 billion over 2024 levels ($37B to $70B), a similarly significant growth in 2026 should result in a figure exceeding $100 billion. However, the Detailed Financial Projections table only models $90 billion for 2026, a $20 billion increase. This discrepancy between the verbal hyper-intensive investment narrative and the numerical model creates an unresolved internal contradiction. These systemic issues force the reader to manually reconcile the timeline and the math, failing the core requirement of a coherent, connected argument.",
+    "evidence": [
+        "Report date is June 16, 2025, but Source 1 in Works Cited is 'Meta Reports Second Quarter 2025 Results' accessed September 11, 2025.",
+        "The 'Q2 2025 Preview' section forecasts Q2 revenue at $45.1B, despite the bibliography citing the actual results release (Source 1).",
+        "Narrative predicts 2026 CapEx growth similar to 2025 (+$33B), but the Financial Projections table models a smaller $20B increase (Section: Financial Model & Forecasts)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

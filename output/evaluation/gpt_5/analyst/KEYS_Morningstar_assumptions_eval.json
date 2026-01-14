@@ -1,0 +1,113 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are fairly explicit and proximal to the forecasts and valuation: the report provides concrete multi-year revenue projections, margin trajectories, and DCF parameters (WACC, COE, tax rate, Stage II growth/investment, share count). Specificity is solid for most drivers, with magnitudes, units, and horizons stated (e.g., segment midcycle growth rates; non-GAAP gross/operating margins; WACC 8.7%; long-run tax 15%). Justification is partial: margin expansion is linked to mix shift toward software/services and some end-market commentary, and tariff mitigation is attributed to management, but key valuation parameters (WACC, tax rate, Stage II growth) lack cited sources or peer/history benchmarks. Internal consistency appears clean; narrative growth views reconcile with the model table, and non-GAAP metrics are distinguished from GAAP in tables. However, the report contains no quantified sensitivity/scenario analysis for material drivers (e.g., revenue growth, margin, WACC), triggering a hard cap at Fair. Overall, explicitness and specificity are decent, justification is uneven, consistency is acceptable, and stress-testing is absent.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast 6% growth for the commercial communications market at midcycle, 4% growth for the aerospace, defense, and government market, and high-single-digit growth for the electronic industrial segment at midcycle.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect a mix tilting toward software and services to expand non-GAAP gross margins from 65% in fiscal 2024 up to 66% in fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we predict non-GAAP operating margins to expand from a below-normal 26% in fiscal 2024 to 30% in fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "gross tariff impact at about $100 million annually\u2026 expects to fully mitigate this cost by the end of fiscal 2025.",
+            "location": {
+                "section": "Analyst Note (21 May 2025)",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.7",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Key Valuation Drivers)",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Key Valuation Drivers)",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 15.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Key Valuation Drivers)",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 10.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Key Valuation Drivers)",
+                "page": "16"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Projected Diluted Shares 171",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (DCF Valuation)",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Revenue (USD Mil) 4,979 5,265 5,649 6,063 6,399 6,755",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Financials \u2013 Actual/Forecast)",
+                "page": "15"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Weighted Average Cost of Capital % 8.7 without source",
+            "Long-Run Tax Rate % 15.0 without source",
+            "Stage II EBI Growth Rate % 10.0 without source"
+        ]
+    }
+}

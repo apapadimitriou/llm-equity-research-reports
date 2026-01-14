@@ -1,0 +1,61 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with solid proportionality: a clear Analyst Note, robust Business Description and Strategy, Bulls/Bears, Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials, ESG, Appendix, and Sources. Competitive context is discussed across Moat and Risk. Valuation includes explicit assumptions (revenue CAGR, margins, WACC) and links operating drivers (NRR, large-customer expansion, consumption model) to the fair value, albeit without a formal bridge chart. Evidence is partly well-cited to company press releases, but several material elements rely on weaker or outdated sources and some claims (ESG rating, large forecast table) lack citations. Critically, the Financials Snapshot omits key SaaS KPIs (ARR, NRR/DBNRR, RPO, $1M+ customer count, product gross margin), triggering a hard cap. There is minor redundancy, with AI positioning repeated across Analyst Note and Strategy/Moat. Peer benchmarking and scenario/sensitivity detail are absent. Overall, headline coverage is strong, but missing sector KPIs in the financials and inconsistent sourcing constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "NRR (126%) mentioned in-text",
+            "RPO ($6.9B) mentioned in-text",
+            ">$1M customers (580) mentioned in-text"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR in Financials Snapshot",
+            "RPO in Financials Snapshot",
+            "$1M+ customer count in Financials Snapshot",
+            "Product gross margin in Financials Snapshot"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR/DBNRR",
+            "RPO",
+            ">$1M customers",
+            "Product gross margin"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk rating stated as medium with no source",
+            "Financials Snapshot historical and forecast figures lack citations",
+            "Repurchased $400M of stock in Q2 reference via YouTube stream without corroborating document",
+            "Convertible senior notes balance ($2.3B) not clearly sourced"
+        ]
+    }
+}

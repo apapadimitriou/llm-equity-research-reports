@@ -1,0 +1,19 @@
+```json
+{
+  "grade": "Poor",
+  "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it presents extensive data and recent developments, it lacks meaningful causal mechanisms and rigorous quantitative analysis. The valuation section mentions \"~2–3% revenue CAGR over 2024–2029\" and \"operating margins improve from ~20% in 2024 to ~23% by 2029\" but provides no explanation of the drivers behind these assumptions. The WACC calculation states \"~9% WACC\" and \"terminal growth is 2%\" without benchmarking or sensitivity analysis. Most content consists of factual reporting (\"23% jump in equity trading\", \"record revenue (+24% YoY to $2.1 billion)\") rather than analytical reasoning. Risk factors are listed but not quantified or stress-tested. The fair value estimate of $85 lacks supporting scenario analysis or ranges, representing unsupported projections rather than rigorous valuation work.",
+  "checks": {
+    "causal_explanation_present": false,
+    "assumptions_explicit": true,
+    "assumptions_benchmarked": false,
+    "quantification_used": true,
+    "sensitivity_or_scenarios": false,
+    "actionable_implications_present": false
+  },
+  "flags": {
+    "missing_mechanisms": ["Revenue growth assumptions lack causal drivers", "Margin improvement path unexplained", "No link between restructuring and specific financial outcomes"],
+    "unsupported_assumptions": ["terminal growth is 2%" with no benchmark", "~9% WACC without peer comparison", "operating margins improve from ~20% to ~23%" without justification"],
+    "lack_of_sensitivity": ["Fair value ~$85 with no range or scenarios", "No stress testing of key assumptions", "ROTCE targets mentioned but not modeled with alternatives"]
+  }
+}
+```

@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates clear causal reasoning and explicit, quantified assumptions. It links near-term margin pressure to a specific driver\u2014\u201cdue to the continued impact of the July 19 outage\u201d\u2014and ties demand strength to structural dynamics like consolidation (\u201cbuyers are increasingly turning to vendor consolidation\u201d). Forecasts are grounded in explicit inputs: \u201crevenue growing at a 22% compound annual growth rate,\u201d \u201cGAAP gross margins to expand to the mid-80s range,\u201d and valuation drivers such as \u201cWeighted Average Cost of Capital % 8.9\u201d and \u201cfair value estimate for CrowdStrike is $330.\u201d Inference quality is supported by a detailed multi-year model with revenue, margins, FCF, and an implied \u201centerprise value to sales multiple of 16 times.\u201d Assumptions are loosely benchmarked to software coverage norms (scale-driven margins) and contextualized with peer data elsewhere in the report, though not stress-tested. Counterpoints are discussed (competition from hyperscalers and platform peers) and uncertainty flagged (\u201cWe assign CrowdStrike a high uncertainty rating\u201d), but there are no quantified sensitivities or scenario ranges. Actionable implications are present via a clear valuation anchor and margin trajectory (\u201c2030 adjusted margins closing in on 30%\u201d). Strongest elements: causal attribution of margins, quantified DCF inputs, and explicit profit drivers. Weakest: absence of sensitivity/scenario analysis and limited benchmarking of key assumptions to external market data.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Discounting strategy \u2192 long-term ARR/margin trade-off not modeled",
+            "Gross margin climb drivers not decomposed (mix, COGS, cloud)",
+            "Consolidation tailwind vs peer displacement not quantified"
+        ],
+        "unsupported_assumptions": [
+            "22% revenue CAGR lacks external market benchmark",
+            "mid-80s GAAP gross margin not peer-benchmarked",
+            "Stage II EBI growth 14.3% not justified"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/tax/margin sensitivity",
+            "No scenario for slower vendor consolidation",
+            "No quantified outage downside scenario"
+        ]
+    }
+}

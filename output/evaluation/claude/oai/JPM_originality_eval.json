@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates extensive research but suffers from pervasive copying and paraphrasing of source material with minimal original synthesis. While it presents comprehensive coverage of JPMorgan's business segments and financial performance, most insights are directly restated from earnings releases and third-party sources. The report contains one weak synthesis linking NII guidance to rate environment assumptions, but lacks quantified mechanisms or specific catalysts. The valuation section employs standard DCF methodology without novel drivers or company-specific factors. Key red flags include boilerplate phrasing about 'scale and diversification,' generic banking analysis applicable to any large bank, and extensive verbatim citations. The analysis provides limited decision-relevant insights beyond what's available in public filings.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "most of JPMorgan's 2025 revenue gains hinge on sustained high rates",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "scale, diversification, and technology investment",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "fortress balance sheet \u2013 high capital ratios and ample liquidity",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Leading industry positions with #1 global investment banking rankings",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "wide moat meaning it can sustain above-average returns for many years",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue CAGR ~8% driven by loan and fee growth as rates stay mildly elevated",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Extensive verbatim copying from sources",
+            "Standard banking analysis applicable to any large bank"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s core modeling assumptions are largely explicit and concentrated in the Fair Value and Profit Drivers section, the Financials Snapshot table, and the Appendix. Specificity is solid: it provides concrete magnitudes, units, and timeframes for product peak sales (Keytruda, Winrevair, Ohtuvayre), a quantified patent erosion path (35%/50%), margin trajectory, WACC (8.5%), and terminal growth (3%). However, justification is weak: the report does not tie these key inputs to multi-year history, peer benchmarks, or cited sources (e.g., WACC, LTG, peak sales, and erosion rates lack evidentiary backing). Internal consistency shows minor issues: the narrative states \u201cpatent cliff impact beginning 2028,\u201d while the table/footnote indicate growth \u201cthrough 2028\u201d with the drop evident in 2029, and Keytruda peaking in 2028 \u201cbefore biosimilar erosion.\u201d Sensitivity analysis is absent; there are no quantified scenario ranges for major drivers (revenue growth/erosion rates, WACC/LTG, margin path), triggering a hard cap at Fair. Several material inputs are missing or opaque (tax rate, share count/dilution path, capex/working capital underlying FCF), limiting auditability. Overall, the assumptions are explicit and specific but weakly justified, with minor consistency issues and no sensitivities.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue assumptions include mid-single-digit growth through 2027 driven by Keytruda lifecycle management and Winrevair ramp, followed by patent cliff impact beginning 2028.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Key revenue drivers include Keytruda's trajectory toward peak sales of approximately $41 billion in 2028 before biosimilar erosion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op Margin (%) | 30.3 | 3.9 | 31.0 | 32.1 | 32.8 | 33.2 | 33.5 | 31.2",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Revenue ($B) | 59.3 | 60.1 | 64.2 | 64.9 | 67.2 | 69.8 | 72.1 | 68.5",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-term growth rate: 3%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Patent cliff erosion: 35% Year 1, 50% Year 2",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Winrevair peak sales: $4B (2030-2032) | Ohtuvayre peak sales: $2B (2029-2031)",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Timing of patent cliff impact: narrative says 'beginning 2028' while table and footnote imply growth through 2028 with decline in 2029; also Keytruda 'peak in 2028 before erosion' suggests erosion post-2028.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (footnote: 'through 2028, followed by patent cliff impact')",
+                    "Appendix \u2013 Key Valuation Assumptions"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Long-term growth rate 3% without source",
+            "Keytruda peak sales $41B without justification",
+            "Patent cliff erosion 35%/50% without justification",
+            "Winrevair peak $4B and Ohtuvayre $2B without justification"
+        ]
+    }
+}

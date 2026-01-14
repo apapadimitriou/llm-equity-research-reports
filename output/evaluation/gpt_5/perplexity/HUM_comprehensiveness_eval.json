@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is broadly structured and covers nearly all expected sections: cover block/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. It integrates sector context and regulatory dynamics (MA star ratings, RADV) and provides a DCF-based valuation with explicit assumptions (growth, margins, WACC) linked to operating drivers (demographics, CenterWell growth, star rating stabilization). However, the Financials Snapshot lacks sector-specific KPI tables (e.g., multi-year MLR, MA membership, PMPM, admin expense ratio, star ratings mix), triggering the hard cap to Fair. Peer benchmarking is absent and scenario/sensitivity analysis is only cursory (a single range, no structured scenarios). Sourcing is generally consistent with in-text citations, but several material numeric claims are not cited (e.g., ESG risk score, employee count, number of new centers, valuation multiples), further reinforcing the Fair ceiling. There is minor redundancy (star ratings decline and CenterWell 39% OI growth repeated across sections) without added depth. Overall, strong breadth and linkage, but gaps in KPI tables, peer context, and rigorous scenarios limit comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis (dedicated)",
+            "Detailed Sector KPI Tables in Financials Snapshot"
+        ],
+        "sector_kpis_present": [
+            "Medicare Advantage star ratings share (25% in 4+ star)",
+            "Medical loss/benefit ratio (87.4% noted for Q1 2025)",
+            "MA membership dynamics (planned -550k)"
+        ],
+        "sector_kpis_missing": [
+            "Multi-year MLR trend in snapshot",
+            "MA membership levels (history/forecast) in snapshot",
+            "PMPM premium/claims trend",
+            "Administrative expense ratio (SG&A ratio)",
+            "Star ratings distribution table (multi-year)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Multi-year MLR",
+            "MA membership history/forecast",
+            "PMPM trends",
+            "Admin expense ratio",
+            "Star ratings mix table"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating of 23.5 (no citation)",
+            "Employee count of 65,680 (no citation)",
+            "Acquisition/opening of 30 new primary care centers (no citation)",
+            "Implied EV/EBITDA (~12x) and P/B (~2.8x) (no citation)",
+            "Dividend growth from $1.12 (2015) to $3.54 (most recent) (no citation)"
+        ]
+    }
+}

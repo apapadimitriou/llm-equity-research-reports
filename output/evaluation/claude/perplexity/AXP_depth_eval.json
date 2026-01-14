@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains some quantitative data, it lacks causal mechanisms explaining why forecasted results will occur. The report states \"earnings per share are projected to grow 13-15% annually\" and \"operating leverage should drive 50-100 basis points of annual margin expansion\" without explaining the underlying drivers or assumptions. The DCF mentions \"9.5% weighted average cost of capital and 2.5% terminal growth rate\" but provides no benchmarking or sensitivity analysis around these critical inputs. Revenue projections show \"6-8% annual growth in billed business\" without connecting this to specific customer acquisition rates, spending patterns, or competitive positioning. Most statements are generic assertions like \"digital transformation initiatives drive operational leverage\" without quantifying impacts or testing alternative scenarios. The sensitivity factors mention \"credit normalization timing\" and \"interest rate trajectory\" but never model different outcomes or ranges.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth \u2192 customer acquisition drivers unexplained",
+            "margin expansion \u2192 cost reduction specifics missing",
+            "credit normalization \u2192 timing/magnitude not modeled"
+        ],
+        "unsupported_assumptions": [
+            "WACC 9.5% with no peer benchmarking",
+            "terminal growth 2.5% without industry justification",
+            "19x P/E multiple without valuation comparison"
+        ],
+        "lack_of_sensitivity": [
+            "no interest rate scenarios despite NIM concerns",
+            "credit loss ranges not quantified",
+            "competitive impact from Discover/Capital One merger unmodeled"
+        ]
+    }
+}

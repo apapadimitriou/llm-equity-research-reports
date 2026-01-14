@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The assumptions are largely opaque and poorly justified. While some key drivers are stated (5% revenue CAGR, 30% operating margins by 2029, 9% WACC), they lack proper justification beyond vague references to 'Q2 2025 trends' and 'transformation efficiencies.' The report contains multiple contradictions: operating margins show 28% in 2022, drop to 24% in 2023, yet are projected to reach 30% by 2029 without clear explanation; EPS drops from $7.00 to $4.00 between 2022-2023 but is forecast to reach $10.00 by 2029 with insufficient bridging logic. The WACC assumption of 9% uses a beta of 1.2 and 3% risk-free rate without current market justification. Revenue growth projections of 5% CAGR lack segment-specific support despite mentioning 7% services growth and 4% markets growth. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers, making the $70 fair value estimate appear as a black box. The margin expansion assumption of +5 percentage points relies solely on unspecified 'transformation efficiencies' without historical precedent or peer benchmarking.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is forecasted to grow at a 5% CAGR from 2025 to 2029, driven by 7% growth in services and 4% in markets, based on Q2 2025 trends",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in 2024 to 30% by 2029, reflecting cost savings from transformation (e.g., headcount reductions)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 3%, leading to fair value of $70",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 estimated $5.50, adding $1.00 from revenue growth, $0.50 from margin expansion, minus $0.30 from higher expenses, yielding 2025 EPS of $6.70",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margins show 28% in 2022, 24% in 2023, but text states expanding from 25% in 2024 to 30% by 2029",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value and Profit Drivers section"
+                ]
+            },
+            {
+                "description": "EPS bridge starts from 2024 estimated $5.50 but Financials table shows EPS dropping from $7.00 (2022) to $4.00 (2023) with 2024 as 'insufficient data'",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "5% revenue CAGR based only on 'Q2 2025 trends'",
+            "30% target operating margin without peer benchmarking",
+            "9% WACC with outdated risk-free rate assumption"
+        ]
+    }
+}

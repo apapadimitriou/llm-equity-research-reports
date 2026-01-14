@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains numerous data points and projections, it lacks causal mechanisms explaining why outcomes occur. Key weaknesses include: unsupported forecasts like \"EPS progression from $3.21 in 2024 to projected $3.70 in 2025\" with no explanation of drivers; assumptions without benchmarking such as \"normalized return on tangible common equity of 14-15%\" with no industry comparison; generic statements like \"net interest income expansion\" without explaining deposit beta or rate sensitivity mechanics. The report provides extensive financial projections through 2029 but fails to explain the causal relationships driving these numbers. Valuation assumptions like \"Cost of Equity: 9.2%\" and \"Terminal Growth Rate: 2.0%\" are stated without justification or sensitivity analysis. No scenario modeling exists despite banking sector volatility.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "rate sensitivity \u2192 NII impact not explained",
+            "credit normalization \u2192 earnings impact unclear",
+            "fee income growth drivers not specified"
+        ],
+        "unsupported_assumptions": [
+            "normalized ROE 14-15% with no benchmark",
+            "cost of equity 9.2% without derivation",
+            "terminal growth 2.0% not justified"
+        ],
+        "lack_of_sensitivity": [
+            "no rate scenarios despite guidance dependency",
+            "no credit loss stress testing",
+            "valuation range absent"
+        ]
+    }
+}

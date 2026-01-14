@@ -1,0 +1,74 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections, including cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Narrative depth is reasonable in strategy, moat, and risk, and the valuation includes explicit assumptions (revenue CAGR, margins, WACC, terminal growth) and an EPS bridge. However, the Financials Snapshot is thin: historical actuals are omitted (\u201cinsufficient data\u201d) and multiple core sector KPIs for a ratings/data provider are missing (ratings issuance volumes, segment revenue breakdown, index-linked AUM, ARR/NRR). Peer benchmarking is largely absent beyond a brief ESG comparison, and scenario/sensitivity analysis is not provided beyond a high-level \u00b120% note. Evidence integration is inconsistent, relying on a social media source, and includes uncited claims (Sustainalytics score, \u201ctrillions of dollars\u201d tied to S&P 500). There are internal contradictions (fair value implies 30x vs 46x P/E; report date precedes the cited results). Redundancy appears with macro/transaction-volume risk repeated across multiple sections. These gaps and inconsistencies cap comprehensiveness at Fair despite broad structural coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Subscription revenue mix (80%)"
+        ],
+        "sector_kpis_missing": [
+            "Debt issuance volumes",
+            "Index-linked AUM",
+            "ARR/NRR",
+            "Segment revenue breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value implies forward P/E of 30x (Analyst Note) vs 46x (Fair Value and Profit Drivers)",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Report date (2025-07-02) conflicts with analysis of Q2 results reported on July 31, 2025",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Debt issuance volumes",
+            "Index-linked AUM",
+            "ARR/NRR",
+            "Segment revenue breakdown",
+            "Retention/churn metrics"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating score 15.2 lacks direct citation",
+            "S&P 500 used in trillions of dollars of assets not sourced"
+        ]
+    }
+}

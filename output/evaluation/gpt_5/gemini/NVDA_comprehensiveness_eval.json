@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and covers most expected sections: a clear cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation (DCF with WACC and terminal growth), Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation assumptions are explicit and linked to operating drivers (Blackwell ramp, China H20 ban reversal, hyperscaler capex), and capital allocation and risk discussions are proportionate. However, the Financials Snapshot omits multiple core semiconductor KPIs (e.g., segment revenue breakdown, gross margin, capex, inventory metrics, ASP/units), relying mainly on generic metrics (revenue, operating margin, EPS, FCF, ROIC). Peer benchmarking is limited (ESG-only) rather than comprehensive on competitive positioning or financial comparatives. There is no scenario or sensitivity analysis. Evidence sourcing is broad but not consistently tied in-text to claims, leaving several material assertions without direct citations. Some repetition of the H20 export ban reversal and Blackwell ramp appears across Analyst Note, Strategy, and Risk with modest incremental depth. These gaps cap comprehensiveness at Fair per decision rules.",
+    "content_checks": {
+        "sections_present": [
+            "Cover block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking (financial/operational)",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue (multi-year)",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC",
+            "Management guidance references (Q3 FY26 revenue, GM mid-70s)"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin (multi-year in snapshot)",
+            "Segment Revenue Breakdown (Data Center, Gaming)",
+            "Capex",
+            "Inventory days/turns",
+            "Units/ASP",
+            "Order backlog/bookings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin",
+            "Segment Revenue Breakdown",
+            "Capex",
+            "Inventory metrics",
+            "Units/ASP",
+            "Order backlog"
+        ],
+        "uncited_claims": [
+            "Over 80% market share in data center AI accelerators",
+            "Compute & Networking was 88% of total revenue in fiscal 2025",
+            "5.9 million developers in the CUDA ecosystem",
+            "Cash and investments of over $57B vs. $8.5B long-term debt as of July 2025",
+            "Returned $24.3B to shareholders in H1 FY26",
+            "U.S. reversal of H20 export ban to China on July 15, 2025"
+        ]
+    }
+}

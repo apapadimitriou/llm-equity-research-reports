@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report shows solid analytical depth by linking results to plausible mechanisms and embedding explicit, quantified assumptions tied to valuation. It explains near-term performance and outlook causally (\u201cdriven by robust advertising demand\u201d; \u201csupported by improved operating margins of 41%\u201d; \u201ccould enhance ad targeting and user retention\u201d), and it quantifies key drivers in the DCF (\u201c15% revenue CAGR through 2029\u201d; \u201cWACC of 9%\u201d; \u201cterminal growth of 3%\u201d). Assumptions are partially benchmarked to observable anchors (Q1 margins, beta and risk-free rate, GDP proxy), and the model includes a multi-year forecast table. However, inference quality is diluted by weakly supported inputs (e.g., \u201cassuming $18 based on historical trends\u201d) and unsubstantiated peer alignment claims. Use of data is primarily point estimates without sanity checks against industry share or peer margins; references to market growth lack citations. Counterpoints are identified (capex burden, regulatory/macro risks), and uncertainty is acknowledged with a broad range (\u201cvaluation by 20-30%\u201d), but there are no quantified sensitivities or scenarios linking specific shocks (e.g., ad price, capex, or WACC changes) to EPS/valuation. Actionable elements exist (undervaluation vs $600 FVE; monitor elevated capex), yet implications are not framed conditionally (no trigger thresholds). Overall, the presence of mechanisms and explicit, partly benchmarked assumptions warrants a Good rating, but the absence of scenario/sensitivity analysis caps the depth.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI spend \u2192 revenue uplift not quantified",
+            "Capex \u2192 FCF bridge not modeled",
+            "Reality Labs losses \u2192 margin impact not linked"
+        ],
+        "unsupported_assumptions": [
+            "2024 EPS 'assuming $18 based on historical trends'",
+            "10x EV/sales 'aligned with peers' without comps",
+            "Digital ads 10\u201312% growth without citation"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/terminal growth sensitivity",
+            "Capex $64\u201372B has no FCF range",
+            "No revenue growth or margin ranges"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency issues that render it largely incoherent. Multiple temporal contradictions undermine credibility: the report dated July 2025 references \"recent\" events from 2024 as if current, cites Q2 2025 results while claiming a July 2025 report date, and mixes historical data with impossible future citations. Critical contradictions appear throughout: Bulls emphasize \"steadily rising NII\" while Bears warn of \"NII decline in late 2025,\" yet the base case assumes continued growth without reconciling this tension. The narrative jumps abruptly between topics with minimal transitions, reading more like disconnected bullet points than a cohesive argument. Financial projections show impossible precision (FCF growing exactly $5B annually) while the table shows 2024 EPS as 19.8 but text claims 19.75. Sources are misaligned with claims, and key terms like efficiency ratios are used inconsistently. The report requires readers to construct the investment thesis themselves rather than presenting a clear, connected argument.",
+    "evidence": [
+        "Report dated 2025-07-08 references 'Q2 2025 trading revenue rose 15%' as historical fact, creating temporal impossibility (Analyst Note)",
+        "Bulls claim 'High net interest income in current rate cycle' while Bears warn 'NII may peak in 2025... expects a decline in late 2025' with no reconciliation in base case (Bulls/Bears section)",
+        "Financials table shows 2024 EPS as 19.8 while text repeatedly states 19.75, and FCF projections increase by exactly $5B annually suggesting fabricated precision (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

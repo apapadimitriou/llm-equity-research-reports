@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it presents numerous financial projections and assumptions, it lacks causal mechanisms explaining how strategic initiatives will drive results. Key examples include: \"net revenue grew 14% year-over-year\" (purely descriptive), \"value-added services...grew 16% in the first quarter\" (no explanation of sustainability), and \"We project a five-year revenue CAGR of 11.5%\" (unsupported forecast). The DCF model lists assumptions like \"WACC of 9.8%\" and \"terminal growth rate of 4.0%\" but provides no benchmarking, sensitivity analysis, or ranges. Revenue drivers are mentioned generically without quantified relationships between inputs and outputs. The report states \"secular shift to digital payments\" as a driver but fails to quantify the impact or provide scenarios. No stress testing, alternative outcomes, or decision trees are presented despite claiming \"Medium\" uncertainty.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "How value-added services growth translates to margins",
+            "Connection between digital payment shift and volume growth rates",
+            "Cross-border normalization impact on revenue mix"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth rate 4.0% with no GDP benchmark",
+            "Operating margin expansion to 59.5% without cost structure analysis",
+            "Five-year revenue CAGR 11.5% lacks driver quantification"
+        ],
+        "lack_of_sensitivity": [
+            "WACC 9.8% with no range testing",
+            "No scenario analysis despite Medium uncertainty rating",
+            "EPS forecasts lack stress testing for economic downturn"
+        ]
+    }
+}

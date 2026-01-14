@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: a cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risks, Capital Allocation, ESG, Financials Snapshot, Appendix/Glossary, and Sources. Depth is generally proportional across qualitative sections, with coherent discussions of MS erosion, rare-disease growth, and Alzheimer\u2019s competition. The valuation section does link explicit operating drivers (MS decline, SKYCLARYS/salanersen peak sales, Leqembi collaboration revenue, margin expansion, WACC) to the fair value narrative. However, the Financials Snapshot is generic; it omits core biopharma KPIs (e.g., product-level revenue tables, pipeline timelines/PoS, patient counts or share), triggering a hard cap to Fair. Evidence integration is inconsistent: many material claims are tied to outdated or ambiguous sources (e.g., 2022 intrinsic value/WACC; a 2021-dated MarketBeat item for 2025 earnings; a 2018 MacroTrends link labeled 2010\u20132025), which further caps the grade at Fair. Peer context is limited to qualitative mentions (no benchmarking tables). There is some redundancy (repeated salanersen peak-sales point across multiple sections) without added depth. Scenario/sensitivity analysis is absent. Overall, while the structure is comprehensive and linkages are present, missing sector KPIs in the snapshot and reliance on dated citations prevent a Good grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Product sales examples (Leqembi, SKYCLARYS)",
+            "R&D expense (~20% of revenue)",
+            "Pipeline stage/milestones (e.g., salanersen Phase 3)",
+            "Peak sales estimates for key assets"
+        ],
+        "sector_kpis_missing": [
+            "Product-level revenue table across key drugs/franchises",
+            "Clinical timelines and probability-of-success assumptions",
+            "Patient counts/market share and pricing/reimbursement assumptions"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Product-level revenue breakdown table",
+            "Pipeline probability-of-success and milestone timelines",
+            "Patient counts/market share metrics"
+        ],
+        "uncited_claims": [
+            "Financials Snapshot (2022A\u20132029E) figures and forecasts lack sourcing in-text",
+            "Fair value and WACC rely on a 2022 source for 2025 analysis (effectively outdated)",
+            "Q2 2025 EPS/consensus figures cite a 2021-dated source; effectively uncited/outdated for 2025"
+        ]
+    }
+}

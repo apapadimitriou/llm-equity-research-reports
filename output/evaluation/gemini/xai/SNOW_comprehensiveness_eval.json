@@ -1,0 +1,56 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is fundamentally incomplete, failing to meet the basic requirements for comprehensiveness. While the document includes the necessary headers, the majority of the core sections\u2014including Economic Moat, Capital Allocation, ESG Risk, and the Financials Snapshot\u2014contain no substantive analysis, instead repeatedly citing 'insufficient data.' The Financials Snapshot is entirely empty of historical and forecasted data, which is a critical failure for equity research. Although some sector-specific KPIs like Net Revenue Retention (NRR) and customer counts are mentioned in the Analyst Note, they are absent from the structured financial tables. The valuation section is skeletal, relying on 'standard' assumptions (e.g., 10% WACC) rather than deriving a fair value from specific operating drivers or historical performance. Furthermore, the report lacks any peer benchmarking, scenario analysis, or segment-level detail. The reliance on social media posts (X) as primary sources for financial data, rather than official SEC filings or investor relations materials, results in a superficial analysis that does not provide a professional-grade assessment of the company's financial health or competitive position.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Segment Breakdown"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention Rate",
+            "Total Customers",
+            "Customers >$1M Revenue",
+            "Product Revenue Guidance"
+        ],
+        "sector_kpis_missing": [
+            "Remaining Performance Obligations (RPO)",
+            "Gross Margin",
+            "Customer Acquisition Cost (CAC)",
+            "GAAP Operating Margin",
+            "Free Cash Flow Margin"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "RPO",
+            "Gross Margin",
+            "Free Cash Flow",
+            "Operating Cash Flow",
+            "GAAP Net Income"
+        ],
+        "uncited_claims": []
+    }
+}

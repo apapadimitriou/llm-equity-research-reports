@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates clear causal reasoning linking product adoption and competitive dynamics to financial outcomes. It explains why results occur (e.g., Farapulse\u2019s appeal due to \u201cease of use, shorter procedure times, and safety profile\u201d and tariff-driven margin pressure). Inference quality is solid: forecasts are explicitly tied to drivers, such as \u201c11% average annual top-line growth through 2029\u201d fueled by specific segments, and \u201coperating margin to peak at 27% in 2029\u201d due to efficiency gains. Data use is robust, with quantified assumptions in the DCF (\u201cCost of Equity % 9.0\u201d and \u201cWeighted Average Cost of Capital % 8.6\u201d), detailed revenue/margin trajectories, and concrete impacts like the \u201cfull-year impact of tariffs will be roughly $200 million,\u201d alongside mitigation plans (\u201coffset roughly half the tariff impact\u201d). Counterpoints and uncertainty are acknowledged\u2014competition in PFA, recalls, and reimbursement hurdles\u2014but the analysis lacks quantified scenario/sensitivity ranges for key variables (e.g., PFA adoption, tariffs). Actionable implications are present via a Fair Value, overvaluation stance, and segment-specific growth drivers. Overall, mechanism-rich narrative and explicit, quantified assumptions warrant a Good grade, constrained by the absence of quantified sensitivity analysis.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Tariff pressure \u2192 margin path not decomposed",
+            "PFA adoption \u2192 penetration rate not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.6% not benchmarked to peers",
+            "Stage II EBI growth 10.5% without external benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "No ranges for Watchman/Farapulse adoption",
+            "No WACC or margin sensitivity analysis"
+        ]
+    }
+}

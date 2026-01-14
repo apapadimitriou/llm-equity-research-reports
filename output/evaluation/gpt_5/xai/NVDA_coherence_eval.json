@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report has a recognizable structure and repeats key metrics (e.g., revenue up 69% YoY; Data Center at $39.1 billion), but coherence is undermined by inconsistent terminology, temporal mismatches, and thin integration across sections. The Financials Snapshot table labels an \u201cOp-Margin %\u201d row yet populates it with \u201c~61 adj GM,\u201d conflicting with the Analyst Note\u2019s gross margin reference and misusing margin terminology. Valuation is presented as a fair value equal to an external analyst price target ($227.95) without a model, and the Bulls/Bears section isn\u2019t reconciled with the base-case valuation beyond restating the same target; risks are noted generically but not explicitly tied to assumptions or valuation sensitivity. Temporal alignment is problematic: the report date is 2025-07-15, yet it cites sources dated 2025-08-08 for the earnings date and analyst price targets, creating a time-inaccurate reliance on future information. Additionally, several sections default to \u201cinsufficient data,\u201d leaving the reader to bridge gaps between narrative and tables, and some citations rely on \u201cX posts\u201d for hard numbers, which are flagged as sentiment, weakening source alignment. Overall, the reader must assemble the argument, and unresolved contradictions and timing issues trigger an auto-downgrade.",
+    "evidence": [
+        "Financials Snapshot: \u201cOp-Margin % \u2026 Insufficient data (Q1: ~61 adj GM)\u201d conflicts with margin definitions and the Analyst Note\u2019s \u201cadjusted gross margin at 61%.\u201d",
+        "Analyst Note/Fair Value: Uses a 2025 price target and earnings date sourced on 2025-08-08, after the report date (2025-07-15), creating temporal mismatch.",
+        "Bulls/Bears list risks and positives but do not tie back to the fair value narrative, which itself admits \u201cinsufficient data\u201d for key drivers."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

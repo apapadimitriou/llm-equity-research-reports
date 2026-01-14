@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are explicit and proximal to the valuation: the report states net revenue CAGR (12%), margin trajectory (58% to 61% by 2029 on net revenue), gross margin expectations due to client incentives, and financing assumptions (COE 9%, WACC 8.6%, long-run tax 20%). Specificity is solid, with magnitudes, units, and horizons clearly quantified, and tables provide multi-year forecasts for revenue, margins, EPS, and share count that reconcile with the narrative (net vs gross revenue margin treatment is clarified). Justification is partial: the author references normalization post-pandemic, scalability, secular shift to electronic payments, and historical margin trends, but offers limited peer benchmarks or cited sources for parameters like WACC/COE and the revenue CAGR. Sensitivity/stress testing is absent; material levers (growth, margins, incentives, discount rates, tax, share count) lack quantified ranges or scenario impacts on fair value. Internal consistency appears clean between the narrative and tables (e.g., flat gross-margin expectation aligns with rising client incentives in commentary and forecast patterns). Overall, explicit and specific assumptions are present, but limited evidentiary support and no quantified sensitivity analysis cap the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project net revenue to grow at a 12% compound annual growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins (based on net revenue) to improve from 58% in 2024 to 61% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "On a gross revenue basis, we expect increasing client incentives to result in basically flat margins over the projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.6",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 971 946 927 906 882 860 836 812",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "11"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex",
+            "sensitivity ranges"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity 9% without source",
+            "WACC 8.6% without source"
+        ]
+    }
+}

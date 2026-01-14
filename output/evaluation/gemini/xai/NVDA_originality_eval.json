@@ -1,0 +1,45 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum threshold for originality, as it contains zero instances of synthesis or original thesis development. The content is primarily composed of restated financial results from the Q1 fiscal 2026 earnings release and generic industry commentary regarding AI demand. Crucially, the author explicitly admits to having 'insufficient data' for nearly every value-added section, including the Economic Moat, Capital Allocation, and Financials Snapshot. The valuation is not derived from an original model or unique drivers but is instead a restatement of an external 'analyst consensus' price target. Furthermore, the report relies on social media sentiment (X posts) to fill analytical gaps rather than providing professional interpretive commentary. Because there are no specific, testable, or company-distinct theses provided, the report lacks decision relevance and is classified as Poor under the mandatory decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Data Center revenue reached $39.1 billion, representing a 69% increase from the year-ago period.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Adjusted gross margin at 61% versus estimates of 71%... signaling potential pricing pressure.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Nvidia maintains a strong position in GPU technology, driven by its leadership in AI accelerators like Hopper and Blackwell.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value estimate of $227.95 based on available analyst predictions.",
+                "classification": "Copied",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Explicit admission of 'insufficient data' for moat and valuation",
+            "Reliance on social media sentiment for core financial metrics",
+            "Valuation is a restatement of consensus rather than an independent model"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

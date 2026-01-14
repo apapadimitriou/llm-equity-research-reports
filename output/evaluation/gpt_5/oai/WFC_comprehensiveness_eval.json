@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: a clear cover block and contents, an Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Evidence integration is generally strong, with most factual statements tied to recent Reuters/FT/Sustainalytics citations, and the valuation section links operating drivers (deposit costs/NII, fee growth, expense efficiency) to explicit DCF inputs (revenue growth, margins, WACC, terminal growth) and a resulting fair value. However, proportional depth is weakened by a generic Financials Snapshot that omits core bank KPIs (e.g., NIM, efficiency ratio, provisions/charge-offs, CET1, loans/deposits growth, NII breakdown). This triggers the hard cap to Fair. Peer context exists anecdotally (JPM/BoA references, ESG score comparisons) but there is no formal peer benchmarking table. No scenario/sensitivity analysis is provided, and there are a couple of uncited, specific claims (e.g., share count reduction, \u201cwell-capitalized\u201d without CET1/LCR). Redundancy is minimal; repeated mentions of the asset cap add new angles by section. Overall, strong breadth and sourcing, but missing sector KPIs and lack of scenarios/peer benchmarking limit comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Efficiency Ratio",
+            "Loan Loss Provisions / Net Charge-offs",
+            "Common Equity Tier 1 (CET1) Ratio",
+            "Loans/Deposits Growth",
+            "Net Interest Income (NII) Breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Efficiency Ratio",
+            "Provisions/Charge-offs",
+            "CET1"
+        ],
+        "uncited_claims": [
+            "Share count reduced ~6\u20137% annually during 2022\u201324 with no source provided",
+            "Claim of being well-capitalized with strong Tier 1 ratios without providing CET1/LCR figures or citation"
+        ]
+    }
+}

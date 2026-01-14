@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded as fair due to significant temporal inaccuracies and internal contradictions that violate the requirements for a higher rating. Most notably, the report is dated July 10, 2025, yet the Analyst Note discusses Q2 2025 earnings results ($7.20 EPS) which, according to the internal metadata provided in the report's own thought process, were not released until July 31, 2025. This creates a logical impossibility where the analyst is reporting on future events as if they have already occurred. Furthermore, there is a quantitative contradiction between the narrative and the provided data table. The 'Fair Value and Profit Drivers' section assumes a 'revenue compound annual growth rate of 8-10%,' but the 'Financials Snapshot' table shows revenue growing from $247.1B to $265.0B (7.2%) and then to $285.0B (7.5%), failing to meet the stated 8% floor. Additionally, while the report utilizes a dense citation system (e.g., [1] through [20]), the 'Sources' section is merely a generic disclaimer and fails to provide the actual references, leaving the citations unanchored. While the structural flow is professional and the transition between the Medicare divestiture and the Evernorth growth strategy is logically sound, these fundamental errors in dating and mathematical consistency necessitate a downgrade per the rubric's hard caps.",
+    "evidence": [
+        "Report date: 2025-07-10 vs 'The Cigna Group delivered strong second quarter 2025 results' (Analyst Note)",
+        "Revenue CAGR of 8-10% (Fair Value) vs Table showing 7.2% growth for FY 2025E and 7.5% for FY 2026E",
+        "Citations [1]-[20] are used throughout the narrative, but the 'Sources' section contains no bibliographic data (Sources)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

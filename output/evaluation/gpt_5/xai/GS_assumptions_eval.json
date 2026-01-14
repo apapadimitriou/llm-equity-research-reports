@@ -1,0 +1,106 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness: The report states several key modeling inputs near the valuation (revenue CAGR, margin, WACC, terminal growth, and share count) and provides a financial forecast table. Specificity: Many inputs include magnitudes and horizons (e.g., \u201c2025\u20132029\u201d CAGR, 30\u201331% margins, WACC 9%, terminal growth 3%), but some remain vague (no tax rate, only a -$1 EPS effect). Justification: Rationale is weak/partial\u2014assumptions are loosely tied to Q1/Q2 2025 trends and a beta/risk-free rate mention, with no peer benchmarking or multi-year historical analysis; several sources are cited but not used to substantiate the actual parameter values. Consistency: There are at least two numeric contradictions: (1) margin \u201caveraging 30%\u201d vs the appendix \u201cAvg. Op. Margin 30.5%,\u201d and (2) the EPS bridge math (40 + 8 + 3 - 1) totals 50, not the stated 48. These unresolved conflicts undermine internal coherence. Sensitivity: No quantitative sensitivity/scenario analyses are provided for material drivers (revenue/trading, margins, WACC, terminal growth, buybacks), beyond a generic \u00b120% uncertainty. Given multiple contradictions and absence of quantified sensitivities, the assumptions do not meet the bar for Good and fall to Poor per the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "a 5-year revenue CAGR of 4%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "driven by 5% growth in Global Banking & Markets and 3% in Asset Management",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Avg. Op. Margin | 30.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 9.0% | Beta 1.2, risk-free rate 4%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth| 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Shares Outstanding | 320M | Approximate from profit figures [1]",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "add $8 from revenue growth, $3 from margin expansion, subtract $1 from higher taxes, yielding 2026 EPS of $48",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin average stated as 30% vs 30.5% in key assumptions.",
+                "locations": [
+                    "Analyst Note: \u201coperating margins averaging 30%\u201d",
+                    "Appendix \u2014 Key Valuation Assumptions: \u201cAvg. Op. Margin | 30.5%\u201d"
+                ]
+            },
+            {
+                "description": "EPS bridge arithmetic (40 + 8 + 3 - 1) equals 50, not the stated 48.",
+                "locations": [
+                    "Fair Value and Profit Drivers: EPS bridge sentence"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "NII/NIM"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without full capital structure/cost inputs",
+            "Terminal growth 3% without source beyond GDP proxy",
+            "Shares outstanding 320M noted as approximate",
+            "Operating margin path lacks peer/history support"
+        ]
+    }
+}

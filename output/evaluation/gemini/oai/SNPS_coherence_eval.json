@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report exhibits significant internal contradictions between the narrative and the financial data, specifically regarding operating margins. The 'Fair Value and Profit Drivers' section explicitly models non-GAAP operating margins expanding from 50% to 54%, yet the 'Financials Snapshot' table lists operating margins for the same period between 22.1% and 25.0%. While this might be a GAAP vs. non-GAAP distinction, the report fails to reconcile or label them clearly, leaving the reader to guess which figures drive the DCF. Additionally, there is a temporal disconnect regarding the Ansys acquisition; the report is dated July 8, 2025, yet the Analyst Note and Strategy sections state management expects the deal to close by 'H1 2025' (a period already concluded), while the Bulls Say section pushes this to 'H2 2025.' Furthermore, the narrative highlights a total halt of China sales (historically 20% of revenue) in May 2025, yet the 2025 revenue forecast remains at $6.8B (11% growth), creating an unresolved tension between the geopolitical risks and the valuation assumptions. The flow between sections is generally good, but these structural and data-driven inconsistencies undermine the overall coherence.",
+    "evidence": [
+        "Non-GAAP operating margin is modeled expanding modestly from ~50%... to ~54% by 2029 (Fair Value) vs. table showing 22.1% to 25.0% (Financials Snapshot).",
+        "Management expects this deal to close by H1 2025 (Analyst Note) in a report dated July 8, 2025.",
+        "Synopsys halted all China orders (Bears Say) vs. 2025... $6.8B revenue (+11% YoY) (Fair Value)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

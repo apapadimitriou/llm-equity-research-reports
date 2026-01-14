@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with some key assumptions scattered throughout but lacks proximity to forecasts. Justification is weak, relying primarily on general industry trends and qualitative statements rather than quantified benchmarks or multi-year historical analysis. Specificity is partial - revenue growth rates and margin expansion expectations are mentioned but lack precise drivers, timeframes, and quantitative ranges. Internal consistency appears clean with no major contradictions between narrative and financial tables. However, the report completely lacks quantified sensitivity analysis or scenario testing for material drivers like revenue growth, margin expansion, or WACC assumptions. While the DCF model shows specific parameters (WACC 8.1%, terminal growth 4.0%), these critical valuation inputs receive minimal justification in the narrative text.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast 2025 revenue will grow about 5% year over year",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Longer term, we anticipate 5-year compound annual growth about 7%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast reduced costs in the long term, resulting in a steadily increasing gross margin over the next several years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume midcycle capital expenditures will be about 3% of sales",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 181",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.1% without detailed source",
+            "Terminal growth 4.0% without justification",
+            "Cost of Equity 9.0% without derivation"
+        ]
+    }
+}

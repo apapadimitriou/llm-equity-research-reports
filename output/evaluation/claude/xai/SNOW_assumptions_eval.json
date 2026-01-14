@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on all five pillars of assumption quality. Explicitness: Key assumptions are buried in an appendix table with no connection to forecasts. Justification: Critical parameters like 20% operating margin and 10% WACC are completely unjustified\u2014described as 'assumed expansion' and 'standard tech discount' without any evidence. Specificity: The revenue CAGR claim of 30% contradicts the report's own growth data (29-36% range doesn't support a point estimate). Consistency: Multiple contradictions exist, including claiming insufficient data throughout while simultaneously providing specific forecasts. Sensitivity: Zero quantified scenarios or stress-testing despite material uncertainty. The assumptions appear disconnected from any actual financial model, making outputs feel entirely black-box.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 30.0% Based on recent growth",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op-Margin 20.0% Assumed expansion",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC 10.0% Standard tech discount",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 4.0% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "implies a fair value multiple of 10x sales",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims insufficient data throughout report while providing specific forecasts and assumptions",
+                "locations": [
+                    "Financials Snapshot shows all metrics as 'insufficient'",
+                    "Appendix provides specific numerical assumptions"
+                ]
+            },
+            {
+                "description": "Revenue CAGR of 30% doesn't align with stated growth range of 29-36%",
+                "locations": [
+                    "Appendix assumes 30% CAGR",
+                    "Text shows growth rates from 29% to 36%"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "credit_cost",
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 10% without source",
+            "Op-Margin 20% assumed expansion",
+            "Revenue CAGR 30% poorly justified"
+        ]
+    }
+}

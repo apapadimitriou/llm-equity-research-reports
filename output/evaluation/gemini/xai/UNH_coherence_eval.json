@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report earns a poor grade due to significant internal contradictions and a critical temporal impossibility that undermines its logical coherence. While the narrative flow is generally professional, the data integrity is severely compromised. Specifically, the 'Fair Value and Profit Drivers' section forecasts a 2029 EPS of $40.00, whereas the 'Financials Snapshot' table explicitly lists the 2029 EPS as $37.0. This $3.00 discrepancy is material to the valuation thesis and remains unresolved. Furthermore, the 'Financials Snapshot' table projects 2025 revenue at $420 billion, which contradicts the 'Analyst Note' stating that the company's own upwardly revised guidance is only $400-$405 billion; the report fails to explain why its forecast sits $15 billion above the top end of management's range.\n\nMost egregiously, the report contains a major temporal error: it is dated July 24, 2025, but cites a source (Source [4]) dated August 8, 2025. This inclusion of 'future' data suggests a failure in document control or fact-checking. Additionally, while the 'Bulls Say / Bears Say' section identifies key risks like Medicare rate cuts, the 'Fair Value' narrative only vaguely incorporates 'margin pressures' without a clear reconciliation of the specific 2-3% compression mentioned in the Bear case. These cumulative errors force the reader to reconcile conflicting data points independently, failing the primary requirement of a coherent research product.",
+    "evidence": [
+        "EPS bridge: ... scaling to $40.00 by 2029 (Fair Value section) vs $37.0 (Financials Snapshot)",
+        "Report date 2025-07-24 vs Source [4] citation date 2025-08-08 (Appendix/Sources)",
+        "Projecting revenues of $400-405 billion (Analyst Note) vs $420.0 (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

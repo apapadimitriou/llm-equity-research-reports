@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe coherence issues that undermine its credibility. Multiple temporal contradictions plague the analysis, with the report dated July 24, 2025 claiming Q2 2025 earnings were reported on July 23, 2025\u2014impossible future dates that violate basic logical consistency. The narrative contains significant contradictions: the analyst claims ServiceNow has a 'wide moat' with 98% renewal rates and high switching costs, yet simultaneously warns that competition from Microsoft and Salesforce 'could erode market share.' The valuation section states operating margins will expand from 9.3% in FY2023 to 30% by 2029, but the financials table shows 2023 operating margin at 9.3% while projecting 20% for 2025E\u2014creating internal inconsistency about the baseline. The Bulls/Bears section presents unreconciled tensions with the base case, particularly around AI revenue projections (30% by 2027) versus competitive threats. Source citations are problematic, with multiple '[insufficient data]' notations and speculative estimates undermining factual claims. The report reads like disconnected sections rather than a cohesive argument, with abrupt transitions between topics and inconsistent terminology usage throughout.",
+    "evidence": [
+        "Report dated 2025-07-24 claims 'ServiceNow reported strong Q2 2025 results on July 23, 2025'\u2014impossible future dates (Analyst Note)",
+        "Contradicts wide moat thesis by stating 'Intense competition from Microsoft Dynamics and Salesforce could erode market share' without reconciliation (Bears Say vs Economic Moat)",
+        "Source [4] states 'Insufficient data for exact RPO figure; estimate based on prior trends' yet cites specific 25% growth figure as fact (Sources)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

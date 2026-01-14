@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is reasonably strong: the report states core valuation inputs (revenue CAGR, operating margin path, WACC with components, terminal growth) and provides an EPS bridge; an appendix table lists key assumptions. Specificity is solid with clear magnitudes, units, and horizons (e.g., \u201c2025\u20132029\u201d CAGR; margins \u201cto 22% by 2029\u201d; WACC 8.5% with 4% Rf, 6% ERP, beta 1.2). Justification is partial: several inputs are tied to Q1 2025 trends, \u201chistorical averages,\u201d or GDP alignment, but there is little multi-year benchmarking, peer evidence, or cited empirical support for margin expansion, terminal growth, or the chosen WACC/ERP beyond generic references. Consistency has a notable issue: the report claims the $280 FVE \u201cimplies a 20x multiple on 2026 EPS\u201d in one section, but elsewhere cites \u201c20x 2025 EPS,\u201d which better matches the math; this unresolved contradiction caps the grade at Fair. Sensitivity work is limited: there is a quantified credit-loss scenario (+50 bps delinquencies \u21d2 ~15% valuation swing), but no quantified ranges for other material drivers (revenue growth, margins, WACC, terminal growth), and no scenario table. Several important assumptions (tax rate, share count trajectory, baseline credit cost path) are missing or opaque.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 8% from 2025-2029, driven by 7% billed business growth and 10% in card fees",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand to 22% by 2029 from 21% in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, incorporating a 4% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%, aligned with global GDP.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: 2025 EPS $13.75 starts from 2024's $12.50, adds $1.00 from revenue growth, $0.50 from margins, offset by $0.25 higher taxes. This yields 2026 EPS of $15.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "delinquencies potentially rising 50 basis points in a recession, swinging valuation by 15%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FVE multiple basis conflicts: claims 20x 2026 EPS vs 20x 2025 EPS and math fits only 2025 EPS.",
+                "locations": [
+                    "Analyst Note: \u201cThis implies a 20x multiple on 2026 EPS\u201d",
+                    "Fair Value and Profit Drivers: \u201cImplied multiples: 20x 2025 EPS and 3.5x sales\u201d",
+                    "Financials Snapshot: 2026E EPS $15.0 vs FVE $280 \u21d2 ~18.7x"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "credit_cost (baseline/path)",
+            "capex/FCF drivers",
+            "merchant discount/take rate assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without market structure evidence",
+            "Terminal growth 4% with minimal support",
+            "Operating margin expansion to 22% with limited evidence"
+        ]
+    }
+}

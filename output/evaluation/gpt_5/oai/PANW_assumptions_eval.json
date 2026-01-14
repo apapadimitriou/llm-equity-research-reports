@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are mostly explicit and proximate to the forecasts (revenue, margins, WACC, terminal growth) with clear magnitudes, ranges, and horizons. Specificity is solid: the report quantifies revenue growth paths, margin levels, cost of capital parameters, terminal growth, tax rate, and share count. Justification is partial: FY2025 revenue growth ties to company guidance and gross margin to historical SEC figures, but the multi-year slowing growth, operating margin expansion to 15%, WACC/COE inputs, terminal growth, and share count lack peer/industry or sourced support. Internal consistency has a notable contradiction: WACC/COE/beta are inconsistent between sections (beta ~1.2 vs ~1.1; COE ~10% vs implied ~11.1% from Rf/ERP; WACC 9% despite \u201cno debt\u201d), triggering a cap at Fair. Stress-testing is limited: only a single quantified sensitivity on WACC (+0.5%) with a broad 5\u201310% FVE impact and an unquantified \u201cslower growth\u201d case; no scenarios for revenue, margins, or subscription mix. Overall, the assumptions are explicit and specific but weakly justified and inconsistently documented for cost of capital, with minimal sensitivity analysis.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our valuation model assumes revenue grows at ~15% in FY2025 (middle of guidance), gradually slowing to ~7\u20138% by FY2029 as the company becomes larger. We forecast 2024\u20132029 CAGR of ~10%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Gross margin holds around 74\u201375%, as services mix rises.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We posit operating margin (non-GAAP) climbing to ~15% by 2029 (from ~8.5% in FY2024) as fixed costs scale and R&D investments moderate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "For our DCF, we assume WACC \u22489% (cost of equity ~10% with ~1.2 beta, no debt)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth at 2.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC ~9.0% (Rf~4.5%; ERP~6%; beta~1.1), corporate tax 21%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "corporate tax 21%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Projected shares ~700\u2013710M.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of capital inputs are inconsistent: beta ~1.2 vs ~1.1; COE ~10% vs implied ~11.1% from Rf 4.5% and ERP 6%; WACC 9% despite \u2018no debt\u2019.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC ~9% without source",
+            "terminal growth 2.5% without source",
+            "operating margin to ~15% by 2029 without peer/history support",
+            "projected shares ~700\u2013710M without dilution path"
+        ]
+    }
+}

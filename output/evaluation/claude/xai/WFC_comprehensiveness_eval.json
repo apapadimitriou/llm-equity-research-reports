@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails basic comprehensiveness standards with critical deficiencies across multiple areas. The Financials Snapshot is severely inadequate, showing only 'insufficient data' for all historical periods and lacking essential banking KPIs like NIM, loan loss provisions, CET1 ratios, and loan growth metrics. The valuation section provides no explicit linkage between operating drivers and the $65 fair value estimate, merely stating assumptions without showing calculations or bridges. Peer benchmarking is completely absent despite this being fundamental for bank analysis. Multiple claims lack proper citations, including the specific Q2 revenue figures and EPS projections. The report contains internal inconsistencies, such as discussing Q2 2025 results while showing a June 2025 report date, and references insufficient data throughout while making definitive projections. These fundamental gaps make the report incomplete and unreliable for investment analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Loan Growth",
+            "Deposit Growth",
+            "Efficiency Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated June 2025 discussing Q2 2025 results as historical",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Claims robust Q2 performance but provides no specific figures",
+                "locations": [
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Loan Growth",
+            "Deposit Growth",
+            "Efficiency Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ],
+        "uncited_claims": [
+            "Revenue CAGR of 4-5% projection with no supporting calculation",
+            "Fair value of $65 per share with no valuation model shown",
+            "2029 EPS of $7.50 with insufficient bridge methodology",
+            "Operating margin improvement to 28% with no benchmarking"
+        ]
+    }
+}

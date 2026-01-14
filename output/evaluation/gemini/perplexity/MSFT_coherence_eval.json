@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to multiple fundamental contradictions between the narrative, the valuation assumptions, and the provided financial data, which force the reader to reconstruct the investment case. While the prose is professional and the structural flow is logically organized, the quantitative core of the report is incoherent. The Analyst Note and 'Bears Say' sections repeatedly claim a forward P/E of 39x, yet the 'Financials Snapshot' table and 'Last Close' price ($446.20 / $13.33 EPS) result in a current P/E of 33.5x. This 550-basis-point discrepancy is never addressed. Furthermore, the 'Fair Value' section asserts that a 32-35x multiple is 'justified,' but the assigned Fair Value Estimate of $490.00 actually implies a 36.7x multiple based on the report's own EPS forecast. These errors lead to a total breakdown in the valuation logic: the Bear case warns of a 39x premium as a primary risk, while the summary table simultaneously labels the stock as undervalued with a 0.91 Price/FVE ratio. Because the base-case valuation narrative fails to reconcile these conflicting figures or explain why the justified multiple exceeds the stated 'justified' range, the report fails the basic requirement of internal consistency. The structural polish cannot mask the fact that the underlying financial argument is mathematically unsound.",
+    "evidence": [
+        "Narrative cites 'approximately 39x' forward P/E (Analyst Note) while the Financials Snapshot and Price imply 33.5x ($446.20 / $13.33).",
+        "Fair Value section claims 32-35x P/E is 'justified,' but the $490 FVE implies a 36.7x multiple based on the provided EPS table.",
+        "Bears Say warns of a 39x premium valuation, which is never reconciled with the Cover Block's 0.91 Price/FVE (undervalued) rating."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit assumptions with specific numerical values and timeframes, particularly in the Fair Value section and Appendix table. However, the justification is weak - most assumptions rely on vague references to 'Q2 2025 trends' without detailed historical analysis or peer benchmarking. The WACC of 8.5% is labeled as 'sector average' without supporting data. While assumptions are internally consistent across tables and narrative, there are no quantified sensitivities or scenario analyses for any material drivers, which caps the grade at Fair per the hard cap rules. The report mentions risks could 'swing valuation by 20-30%' but provides no quantified sensitivity ranges for key inputs like revenue growth, margins, or WACC changes.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is projected at a 5% CAGR from $10.4B in FY2025 to $12.9B in FY2029, based on Q2 2025 growth trends",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 18% in 2025 to 20% by 2029, driven by cost efficiencies and AI integrations",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, reflecting sector betas and debt costs",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 3% yields a DCF-based fair value of $85",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: 2025 EPS $4.90, growing to $6.50 by 2029 via margin gains and share buybacks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.5% without detailed source",
+            "5% revenue CAGR based only on single quarter trend",
+            "20% terminal margin target without peer comparison"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure and generally coherent narrative arc: FY2025 results lead into strategy (Falcon, module cross-sell), then valuation anchored on FY2026 guidance, with risks (July 2024 outage) and capital allocation reinforcing the base case. Cross-references are effective; for instance, management\u2019s $10B ARR target and 97% retention appear in Analyst Note, Strategy, Bulls, and Valuation, and the Financials Snapshot aligns with stated revenue and EPS figures. However, there is a material internal contradiction in Fair Value: the stated P/S of ~95\u00d7 for FY2026 conflicts with the report\u2019s own revenue and market cap figures (Revenue \u2248 $4.77B, Market Cap \u2248 $116.6B imply P/S \u2248 24\u00d7), undermining internal consistency. Citation alignment is also spotty: the \u201cPalo Alto Networks trades at ~120\u00d7 P/E\u201d assertion references a CrowdStrike MacroTrends page and does not substantively support the claim; the mention of acquiring Blumira lacks a corresponding source. Despite mostly smooth transitions and consistent terminology, these inconsistencies force the reader to reconcile key valuation points themselves. The Bulls/Bears section is reasonably reconciled with the base-case valuation (rich multiples, execution risk vs. growth assumptions), but the valuation multiple error triggers the hard cap to fair per the guardrails.",
+    "evidence": [
+        "Fair Value: \u201cP/E ~132\u00d7 and P/S ~95\u00d7\u201d vs. Financials Snapshot and Cover (Revenue 2026F \u2248 $4.77B; Market Cap \u2248 $116.6B) imply P/S \u2248 24\u00d7, not 95\u00d7.",
+        "Fair Value: \u201cFor context, Palo Alto Networks trades at ~120\u00d7 P/E\u201d cites a CrowdStrike MacroTrends link, not a PANW source, weakening citation alignment.",
+        "Business Strategy: \u201crecently acquiring Blumira and Adaptive Shield (~$300M)\u201d provides a source for Adaptive Shield only; Blumira claim is unsupported."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

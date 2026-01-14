@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains some causal statements like \"earnings surpassing analyst estimates driven by robust revenue\" and \"profit slipped compared to the prior year due to the absence of a one-time accounting gain,\" these lack mechanistic explanation. The DCF model is superficial, with key assumptions like \"WACC is estimated at 9.0%\" and \"Terminal growth is 3%\" appearing without benchmarking or justification. The sensitivity analysis is extremely weak, offering only vague ranges like \"100bps cut potentially reducing earnings by 5-10%\" without supporting calculations. Critical assumptions such as \"Operating margins are forecasted to improve from 35% in 2025 to 38% by 2029\" lack causal mechanisms explaining how scale benefits will drive this improvement. The report repeatedly notes \"insufficient data\" for key metrics, undermining analytical rigor. Counterpoint analysis exists in Bulls/Bears format but remains superficial without quantified scenarios. The revenue projections show \"revenue CAGR of 4% from 2025-2029\" but fail to explain the underlying drivers or provide sensitivity ranges around this forecast.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "margin expansion \u2192 scale benefits not explained",
+            "NII growth \u2192 rate/volume dynamics unclear",
+            "fee income growth \u2192 market share assumptions missing"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth is 3% with no benchmark",
+            "WACC is estimated at 9.0% without justification",
+            "Operating margins improve to 38% by 2029 unexplained"
+        ],
+        "lack_of_sensitivity": [
+            "100bps cut potentially reducing earnings by 5-10% unsupported",
+            "fair value $220 with no range provided",
+            "revenue CAGR 4% with no scenarios"
+        ]
+    }
+}

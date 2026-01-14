@@ -1,0 +1,75 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation is reasonably linked to operating drivers (revenue CAGR, segment growth, margin expansion, WACC, terminal growth) and includes an EPS bridge. However, comprehensiveness is undermined by a thin Financials Snapshot: historical years are marked \u201cinsufficient data,\u201d and core biopharma KPIs are absent (product-level sales, pipeline/trial milestones, LOE timeline, R&D as a % of sales, scripts/capacity). ESG coverage is cursory. Peer context is limited to mentions (e.g., Novo Nordisk) without benchmarking. No scenario/sensitivity analysis is provided. Evidence integration is mixed: while many claims are cited, there is a timeline inconsistency (report dated 2025-06-07 cites Q2 2025 results and articles dated 2025-08-07) and several material capital allocation claims lack citations (debt metrics, dividend yield, buybacks). Redundancy is limited. Given the hard cap for missing sector KPIs and citation/timing inconsistencies, the report reaches a Fair grade despite solid section coverage and explicit valuation linkages.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Product-level Financial Breakdown",
+            "Pipeline/Trial Data Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Product sales by therapy (e.g., Mounjaro/Zepbound/Verzenio)",
+            "Pipeline/trial milestones and probabilities",
+            "R&D as % of sales",
+            "Patent/LOE timeline",
+            "Prescription/script or capacity metrics",
+            "Gross margin history/detail"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-06-07) predates cited Q2 2025 results/articles (dated 2025-08-07), creating a timing inconsistency.",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level sales",
+            "Pipeline/trial milestones",
+            "R&D as % of sales",
+            "Patent/LOE schedule",
+            "Scripts/capacity metrics",
+            "Gross margin detail (in Financials Snapshot)"
+        ],
+        "uncited_claims": [
+            "Low debt-to-equity and ample cash reserves in Capital Allocation without source",
+            "Dividend yield ~0.6% without source",
+            "Opportunistic share buybacks without source"
+        ]
+    }
+}

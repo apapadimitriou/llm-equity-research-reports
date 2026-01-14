@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly justified. While some key drivers are mentioned (15% FY2025 revenue growth, 7-8% terminal growth, 74-75% gross margin), they lack proper justification with historical data or peer comparisons. The WACC assumption of 9% appears in the appendix without clear derivation or sourcing. Critical assumptions like share count projections (700-710M), operating margin progression (8.5% to 15%), and terminal growth (2.5%) are stated without supporting evidence. The revenue growth assumptions contradict the company's own guidance ranges, and there are no quantified sensitivities or scenario analyses for any material drivers. The forecasted operating margins show dramatic improvement without adequate justification for such operational leverage. Most assumptions are scattered across sections rather than being explicit near the forecasts they drive.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at ~15% in FY2025 (middle of guidance), gradually slowing to ~7\u20138% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Gross margin holds around 74\u201375%, as services mix rises",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "operating margin (non-GAAP) climbing to ~15% by 2029 (from ~8.5% in FY2024)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC \u22489% (cost of equity ~10% with ~1.2 beta, no debt)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth at 2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected shares ~700\u2013710M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth assumption of 15% FY2025 conflicts with management guidance of $9.14-9.19B which implies ~14% growth from FY2024 base of $8.03B",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source derivation",
+            "Terminal growth 2.5% without justification",
+            "Operating margin improvement to 15% without supporting analysis",
+            "Share count 700-710M without basis"
+        ]
+    }
+}

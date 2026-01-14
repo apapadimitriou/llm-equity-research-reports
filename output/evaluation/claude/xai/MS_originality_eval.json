@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some company-specific detail but falls short of meaningful synthesis. While it provides specific numbers (Q1 EPS $2.60 vs $2.20 estimate, 40% wealth management revenue contribution), most insights are generic restatements applicable to any investment bank. The transformation thesis around E*Trade/Eaton Vance acquisitions and wealth management diversification is a weak synthesis but lacks novel mechanisms or catalysts. The valuation section uses standard DCF assumptions without unique drivers. Red flags include boilerplate phrasing ('scale & diversification,' 'competition from fintech disruptors') and generic insights about investment banking recovery that could apply sector-wide. The report copies language from Reuters sources and presents standard margin expansion assumptions. Only 1-2 insights show weak synthesis, with most being generic restatements, capping the grade at Fair per the hard caps.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "transformation into a more stable, wealth management-focused institution post acquisitions",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Wealth management contributed over 40% of revenue providing buffer against volatile cycles",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Strong recovery in investment banking with profit doubling from dealmaking",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "competition from fintech disruptors and geopolitical uncertainties",
+                "classification": "Generic",
+                "decision_relevant": false
+            },
+            {
+                "text": "switching costs and intangible assets provide wide economic moat",
+                "classification": "Generic",
+                "decision_relevant": false
+            },
+            {
+                "text": "client retention rates above 95% in wealth management",
+                "classification": "Restated",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'scale & diversification' phrasing",
+            "Generic 'competition from fintech' language",
+            "Standard DCF with margin expansion assumptions",
+            "Copied phrases from Reuters sources"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

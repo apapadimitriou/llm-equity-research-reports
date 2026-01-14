@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are explicit and proximate to the forecasts: revenue CAGR (~5% 2025\u201329), operating margin trajectory (22% to 30%), WACC (8.5% with Rf ~4% and ERP ~5%), terminal growth (2.0%), and tax rate (~25%). Specificity is generally solid, with magnitudes, units, and timelines stated and reflected in the Financials Snapshot. However, justification is partial: while macro/segment context and a multi-year table are provided, core parameters (WACC, terminal growth, tax rate) lack evidence ties to peers or sources beyond brief heuristics. Internal consistency has at least one contradiction: the narrative forecasts \u201cmid-to-high single-digit revenue CAGRs\u201d versus the model\u2019s \u201c~5%\u201d CAGR. Sensitivities are limited: one quantitative range for equities revenue (20\u201330% around peak) is not linked to financials or valuation impact, and other material levers (e.g., credit costs, share count/dilution) lack quantified scenarios. Given the thin evidence for discount rate/terminal growth and the absence of robust scenario analysis across major drivers, the assumptions quality is capped at Fair under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our valuation model assumes Goldman generates mid-single-digit revenue growth (CAGR ~5% through 2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins rising from mid-20% toward 30% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply an 8.5% WACC (\u2248risk-free + equity risk premium)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth ~2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate ~25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "2025\u201329 revenue CAGR ~5%, operating margin rising from ~22% (2025) to ~30% (2029).",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "equities LTM revenue can ebb and flow 20\u201330% around its cyclical peak",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as 'mid-to-high single-digit' vs '~5%'",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Appendix/Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "credit_cost",
+            "segment mix assumptions by IB/Trading/AWM",
+            "capex (given FCF is presented)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without detailed capital structure/source",
+            "Terminal growth 2.0% without industry/long-run evidence",
+            "Tax rate 25% without cited basis"
+        ]
+    }
+}

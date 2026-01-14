@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides several explicit assumptions with clear units and timeframes, including revenue growth expectations (7% annually 2025-2028), specific drug sales forecasts (Keytruda peak $40+ billion, Gardasil $7 billion by 2030), and valuation parameters (7.2% WACC, 3.5% terminal growth). Key assumptions are generally well-justified with historical context and industry benchmarks. However, the report completely lacks quantified sensitivity analysis or scenario testing for any material drivers, which caps the grade at Fair per the hard cap rule. While assumptions are mostly consistent internally, the absence of stress-testing through quantified ranges or alternative scenarios represents a significant methodological gap for a pharmaceutical company facing major patent cliffs and regulatory uncertainties.",
+    "assumptions_extracted": [
+        {
+            "quote": "we expect close to 7% annual top-line growth between 2025-2028",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect it will be a leader in the immuno-oncology market. We expect the drug to reach peak sales of over $40 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we now assume 2030 sales for Gardasil around $7 billion globally",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.2",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 2,510",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "we expect improving margins over the near term as overall sales are represented by more specialty-oriented drugs",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

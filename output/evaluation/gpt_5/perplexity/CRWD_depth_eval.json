@@ -1,0 +1,28 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report exhibits meaningful analytical depth with clear mechanisms, explicit assumptions, and quantified scenarios. It explains competitive advantages via switching costs and data network effects, e.g., \u201cOnce deployed, the platform becomes mission-critical\u201d and \u201cNetwork effects strengthen CrowdStrike\u2019s competitive position.\u201d Forecasts are tied to drivers: growth is anchored to platform expansion and efficiency gains, with explicit assumptions like \u201c15-18% CAGR over the next five years\u201d and \u201cassumes a 9% discount rate.\u201d Data use is robust (ARR growth, SIEM ARR, cash balance), and valuation incorporates ranges via a scenario table culminating in \u201cFair Value per Share | $485 | $575 | $350,\u201d which is decision-relevant. Counterpoints are covered (outage risks, competition), and scenarios provide a valuation range. However, benchmarking is limited: claims such as \u201cmultiples align with historical trading ranges\u201d lack concrete peer or historical evidence. Sensitivity is high-level; the analysis does not quantify how specific operational drivers (churn, attach rates, pricing) or outage-related litigation would affect margins/EPS or fair value. Actionable implications are present, but not strongly conditional on key metrics. Overall, solid mechanisms and quantified scenarios earn a Good, with room to improve benchmarking and driver-level sensitivities.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Bridge from ARR growth to EPS $4.50 not shown",
+            "Outage litigation impact on margins/EPS not modeled",
+            "Driver link: Charlotte AI adoption \u2192 ARR uplift unspecified"
+        ],
+        "unsupported_assumptions": [
+            "9% WACC without peer or rate benchmark",
+            "25\u201330% margin target lacks peer benchmarking",
+            "35\u201340x earnings multiples 'align' without evidence"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity to churn/NRR or pricing pressure",
+            "No litigation cost or outage churn scenarios"
+        ]
+    }
+}

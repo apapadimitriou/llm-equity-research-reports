@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated near the forecasts (revenue CAGR, margin trajectory, WACC, terminal growth) with clear magnitudes, units, and horizons, and the financials table reconciles with the narrative for revenue and operating margin paths. However, justification is weak-to-partial: several inputs reference guidance or generic rationales (e.g., \u201cindustry average\u201d terminal growth) without multi-year history, peer benchmarks, or detailed sourcing; WACC lacks capital structure and cost of debt support. Specificity is solid for core drivers (percentages and years provided), but important assumptions are missing or opaque (share count/dilution, tax rate, capex, cost of debt). Internal consistency has at least one numeric contradiction: the EPS bridge\u2019s additive components do not arithmetically sum to the 2029 EPS stated, triggering a cap at Fair. Sensitivity analysis on material drivers is absent; the report offers only a broad \u00b130% fair value band without tying outcomes to specific variables (e.g., revenue growth, margins, WACC), failing stress-testing standards. Overall, while the main inputs are explicit and specific, limited evidence, missing drivers, lack of scenarios, and an EPS inconsistency constrain the quality to Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Base-case assumptions include a 15% revenue CAGR from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "driven by 25% growth in endocrinology segment from Mounjaro/Zepbound expansion and 10% in oncology",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand to 35% by 2027 from current levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating Margin (2029) | 36%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 7.0%, incorporating a beta of 0.8 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "WACC                | 7.0%   | Beta 0.8, risk-free rate 4%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The model assumes a terminal growth rate of 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Starting from 2025 estimated EPS of $13.75 ... add $2.50 from revenue growth, $1.00 from margin expansion, subtract $0.75 for R&D investments, yielding 2029 EPS of $28.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge additive components ($13.75 + $2.50 + $1.00 - $0.75) do not reconcile to stated 2029 EPS of $28",
+                "locations": [
+                    "Fair Value and Profit Drivers (EPS bridge)",
+                    "Financials Snapshot (EPS 2026\u20132029)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "cost_of_debt/leverage",
+            "working_capital assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% without capital structure or cost of debt detail",
+            "Terminal Growth Rate 3.0% justified only as 'industry average'",
+            "Revenue CAGR 15% lacks peer/industry benchmark support"
+        ]
+    }
+}

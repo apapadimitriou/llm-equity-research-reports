@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from severely opaque assumptions and multiple internal contradictions. Key assumptions are scattered without clear justification - the 4% revenue CAGR relies on vague 'growth post-asset cap' without quantification, while the 9% WACC lacks any supporting calculation or market data. The EPS bridge contains a fundamental mathematical error: starting from $5.61 and adding net $0.60 cannot yield $7.50. Historical data is almost entirely missing ('insufficient data' throughout financials table), making peer/historical justification impossible. The 28% operating margin target has no benchmark support. Most critically, there are zero sensitivity analyses on any material drivers - no scenarios for rate changes, credit losses, or economic conditions despite acknowledging these as key risks. The assumptions appear more like placeholder estimates than rigorous financial modeling.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% from 2025-2029, driven by fee income growth and lending expansion post-asset cap removal",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve to 28% by 2029 from historical levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating banking sector risks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 base of $5.61, adding $0.50 from revenue growth, $0.30 from margin expansion, minus $0.20 from higher provisions, yielding 2029 EPS of $7.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal Growth | 2.5% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge math error: $5.61 + $0.50 + $0.30 - $0.20 = $6.21, not $7.50 as claimed",
+                "locations": [
+                    "Fair Value and Profit Drivers EPS bridge",
+                    "Financials Snapshot 2029 EPS $7.5"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count",
+            "tax_rate",
+            "NII/NIM"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "28% margin target without benchmark",
+            "4% revenue CAGR without quantified drivers"
+        ]
+    }
+}

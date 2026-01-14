@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, sources), with reasonable depth on transformation, regulatory context, and capital position. However, the Financials Snapshot is generic and omits multiple bank-specific KPIs (NIM/NII, provisions, capital ratios, efficiency), triggering a hard cap at Fair. Valuation includes assumptions (revenue CAGR, cost savings, WACC) and cites a fair value, but the linkage from operating drivers to valuation is only partial and lacks a detailed bridge. Peer benchmarking and scenario/sensitivity analysis are absent, reducing industry context and robustness. Evidence integration is mixed: several claims have bracketed citations, but key table figures and some capital return metrics are not sourced, and at least one source date appears inconsistent (Q2 earnings cited in March). There is some repetition of the transformation/global footprint talking points across sections without added depth. Overall, while structurally comprehensive, missing sector KPIs in the snapshot, limited valuation linkage, absent peer/scenario analysis, and inconsistent sourcing constrain the report\u2019s comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "CET1 (mentioned in text)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "Nonperforming Loans/Net Charge-offs",
+            "Efficiency Ratio",
+            "CET1 (absent from snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 2025 earnings source dated March 19, 2025 appears inconsistent with typical Q2 reporting timing.",
+                "locations": [
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net Interest Income",
+            "Loan Loss Provisions",
+            "CET1 (in Financials Snapshot)"
+        ],
+        "uncited_claims": [
+            "Financials Snapshot multi-year figures (2025E\u20132026E) lack in-text citations.",
+            "Shareholder returns of $2.8B and 74% payout ratio in Q1 2025 not clearly sourced."
+        ]
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured with all major sections present: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Evidence is consistently cited (AP, Reuters, Morningstar, Sustainalytics), and peer/regulatory context appears in Bulls/Bears and ESG. Valuation assumptions are explicit (revenue CAGR, margin trajectory, WACC, terminal growth, buybacks) and reasonably linked to operating drivers discussed (Azure growth, Office ARPU). However, the Financials Snapshot is generic and omits multiple core sector KPIs for software/cloud (ARR/NRR, segment revenue breakdown, commercial cloud metrics, Office seats/ARPU trend, RPO/bookings detail, Game Pass subscribers). Given the hard cap for missing \u22652 core sector KPIs in the snapshot, the maximum grade is Fair. The report lacks scenario/sensitivity analysis and a dedicated peer benchmarking table, though some qualitative peer references exist. Redundancy is limited; repeated Azure growth figures add context rather than rehash. Overall, strong coverage and sourcing but constrained by KPI omissions in the financials and absence of scenarios.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Azure revenue growth (+33% Q3)",
+            "Commercial bookings growth (+18%)",
+            "Office 365 ARPU (qualitative upsell)",
+            "CapEx for AI infrastructure"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Segment revenue breakdown (Intelligent Cloud/Productivity/MPC)",
+            "Commercial Cloud revenue/gross margin",
+            "Office 365 seats/MAU trends",
+            "Game Pass subscribers",
+            "RPO/bookings detail in tables"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Segment revenue breakdown",
+            "Commercial Cloud gross margin",
+            "Office 365 seats/MAU",
+            "Game Pass subscribers",
+            "RPO/bookings detail"
+        ],
+        "uncited_claims": []
+    }
+}

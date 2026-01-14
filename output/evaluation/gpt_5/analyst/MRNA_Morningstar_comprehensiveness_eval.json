@@ -1,0 +1,58 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "This report is broadly comprehensive across the expected equity research sections. It includes a clear cover block and contents, timely Analyst Notes (serving as an executive summary), detailed Business Description, Strategy & Outlook, Bulls/Bears, Competitive Positioning/Economic Moat, Valuation & Profit Drivers with explicit operating assumptions, Risk & Uncertainty, Capital Allocation, a robust multi-year Financials Snapshot with forecasts, ESG coverage, peer benchmarking, and an appendix/methodology. Depth is generally proportional to materiality for a biotech: it provides pipeline status, trial readouts, launch timing, probability-of-success by asset, and product-level sales assumptions that flow into the revenue build. The valuation section links drivers (program probabilities, sales trajectories, margin evolution, WACC) to the fair value, and the Financials Snapshot is extensive. Evidence integration relies on internal analysis but is consistent across sections; redundancy is minimal despite multiple Analyst Notes. Key gaps are the lack of an explicit scenario/sensitivity analysis and an at-a-glance valuation bridge; product-level KPIs are mostly described in-text rather than tabulated. These omissions limit full exhaustiveness, but given the strong coverage of peers, regulatory context, and explicit driver-to-valuation linkage, overall comprehensiveness is solid.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Valuation Bridge"
+        ],
+        "sector_kpis_present": [
+            "Pipeline size (program count)",
+            "Trial phases and efficacy readouts",
+            "Probability of success by asset",
+            "Launch timelines",
+            "Product-level sales assumptions",
+            "Cash balance/runway"
+        ],
+        "sector_kpis_missing": [
+            "Tabular product-level KPI table"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Capital Allocation states 'no debt' while valuation summary shows Debt of $747 million",
+                "locations": [
+                    "Capital Allocation",
+                    "Key Valuation Drivers/DCF Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Tabular product-level KPI table"
+        ],
+        "uncited_claims": []
+    }
+}

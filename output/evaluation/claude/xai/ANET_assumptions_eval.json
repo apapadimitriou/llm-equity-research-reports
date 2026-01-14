@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely compromised by pervasive opacity and contradictions. Key drivers like the 20% revenue CAGR, 9.0% WACC, and terminal growth rate of 4.0% are stated but lack any meaningful justification beyond vague references to \"AI and cloud growth\" or \"mature tech industry average.\" The financial model shows impossible precision (EPS growing from $8.00 to $17.5 over 5 years) while simultaneously admitting \"insufficient data\" for basic historical metrics across multiple tables. Critical contradictions include claiming a $500 fair value while showing a prior estimate of $450 in the same report without reconciliation, and stating both Q4 2024 revenue of $1.93B and FY2024 revenue of $7.0B (implying an impossible quarterly run-rate). The WACC calculation mentions beta 1.2 and risk-free 4.0% but provides no cost of debt or capital structure details. No sensitivity analysis exists for any material driver despite claiming \"medium uncertainty.\" The assumptions feel manufactured rather than analytically derived.",
+    "assumptions_extracted": [
+        {
+            "quote": "20% revenue CAGR from FY2025 to FY2029, driven by AI and cloud expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is 9.0%, incorporating a 10% cost of equity and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "operating margins expanding to 42% by FY2029 from 40% in FY2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0% Mature tech industry average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "FY2025 EPS of $9.50 builds from FY2024's estimated $8.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value stated as both $500 (current) and prior $450 without reconciliation of the change",
+                "locations": [
+                    "Cover Block fair value $500",
+                    "Analyst Note raised to $500 from prior $450"
+                ]
+            },
+            {
+                "description": "Q4 2024 revenue of $1.93B implies annual run-rate inconsistent with stated FY2024 revenue of $7.0B",
+                "locations": [
+                    "Financials Snapshot FY2024 revenue $7.0B",
+                    "Financials note Q4 2024 revenue $1.93B"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Terminal growth 4% without benchmarking",
+            "20% revenue CAGR without detailed support",
+            "Operating margin expansion without cost structure analysis"
+        ]
+    }
+}

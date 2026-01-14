@@ -1,0 +1,74 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it incomplete as equity research. Most critically, it lacks essential sections including Bulls/Bears analysis, Competitive Positioning/Economic Moat discussion, and proper Capital Allocation assessment. The Financials Snapshot contains fabricated forward-looking projections (2025E-2029E) presented as factual data without methodology disclosure. Multiple material claims lack proper citations, including specific financial figures and strategic assertions. The valuation section fails to establish explicit linkage between operating drivers and fair value methodology. Extensive redundancy appears across sections, with the same strategic themes repeated without additional depth. The report reads more like a comprehensive business overview than focused equity research, missing the analytical rigor and evidence-based framework expected for investment decision-making.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Risk & Uncertainty",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Bulls Say / Bears Say",
+            "Fair Value and Profit Drivers",
+            "Capital Allocation",
+            "Competitive Positioning",
+            "Appendix with proper sourcing"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Subscription Revenue",
+            "Remaining Performance Obligations"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Net Revenue Retention (NRR)",
+            "Customer Acquisition Cost (CAC)",
+            "Lifetime Value (LTV)",
+            "Churn Rate",
+            "Average Contract Value (ACV)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward financial projections presented as factual data without methodology",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "Fair value estimate of $1,050 lacks supporting calculation methodology",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "CAC",
+            "LTV",
+            "Churn Rate",
+            "ACV"
+        ],
+        "uncited_claims": [
+            "Free cash flow margin of 32% over trailing twelve months",
+            "85% market penetration among Fortune 500 companies",
+            "98.2% retention rates",
+            "R&D spending of $1.84 billion in 2023",
+            "Net cash position of $3.72 billion"
+        ]
+    }
+}

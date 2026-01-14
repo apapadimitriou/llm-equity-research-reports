@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report explicitly states several key assumptions but provides limited justification and no quantified sensitivity analysis. Assumptions are moderately specific with clear units and time horizons, including 9.5% cost of equity, 3.5% annual revenue growth, and specific efficiency ratio targets. However, justification relies heavily on management targets rather than independent analysis or peer benchmarks. The report shows good internal consistency between narrative and tables. The critical weakness is the complete absence of quantified sensitivity analysis on material drivers like cost of equity, growth rates, or margin assumptions, which caps the grade at Fair despite otherwise solid assumption disclosure.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a 9.5% cost of equity in our valuation, which corresponds with a 1.7 times price/book ratio",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our expectations contemplate long-term growth in investment banking and trading of 3% annually, 4.7% annual growth in asset and wealth management, and slightly softer 2.9% annual growth in net interest income",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Taken together, those forecasts result in 3.5% annual growth in post-provision net revenue over the decade to come",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we view the firm's long-term targets for a 30% compensation ratio (compensation over post-provision revenue) and a 60% efficiency ratio (noninterest expenses over post-provision revenue) as achievable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we expect the firm to modestly increase its leverage over the decade to come, with our estimates calling for just north of 15 times leverage by the end of the decade, up from roughly 14 times at the end of 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "9"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Projected Diluted Shares 334",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC/COE 9.5% without detailed derivation",
+            "specific growth rates without peer comparison"
+        ]
+    }
+}

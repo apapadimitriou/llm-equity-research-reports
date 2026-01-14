@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections with good structure: cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, and Sources. Evidence is consistently cited in-text, and the valuation section links operating drivers (NII guidance, NIM stabilization, efficiency ratio, credit normalization, CET1, payout) to the fair value outcome, with assumptions summarized in an appendix. However, the Financials Snapshot is generic and omits core bank KPIs (NII/NIM history, provisions, net charge-offs, loan/deposit growth, CET1, efficiency ratio), triggering a hard cap. Peer benchmarking is absent beyond anecdotal ESG comparison, and there is no formal scenario/sensitivity analysis presented, limiting comprehensiveness. Some talking points (asset cap removal) are repeated across multiple sections with modest incremental depth. Capital allocation is addressed with specifics (dividends, buybacks, CET1, allowances), and risks are appropriately detailed (CRE, rate, operational, regulatory). Overall, breadth is strong, but missing sector-specific KPI tables and lack of peer/scenario context downgrade the report to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Formal Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Income",
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "Net Charge-Offs",
+            "Loans & Deposits Growth",
+            "CET1",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Income",
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "Net Charge-Offs",
+            "Loans & Deposits Growth",
+            "CET1",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Last Close: $77.85 (no source provided)",
+            "Market Cap: $249.4B (no source provided)"
+        ]
+    }
+}

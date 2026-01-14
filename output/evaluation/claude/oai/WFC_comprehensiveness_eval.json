@@ -1,0 +1,59 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it presents a complete table of contents and covers most expected sections, critical sector-specific KPIs are entirely absent from the Financials Snapshot. For a major bank like Wells Fargo, essential banking metrics such as Net Interest Margin (NIM), Return on Assets (ROA), Return on Equity (ROE), Tier 1 Capital Ratio, loan loss provisions, and efficiency ratio are completely missing. The financial table only shows generic metrics (Revenue, Op-Margin, EPS, FCF, ROIC) that could apply to any industry. The valuation section lacks explicit linkage between operating drivers and fair value calculation, providing only high-level assumptions without showing how they translate to the $85 target price. Additionally, there is no peer benchmarking or competitive analysis with other major banks, and no scenario or sensitivity analysis is provided. The report also contains significant redundancy, with the asset cap removal story repeated across multiple sections without adding new depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin",
+            "Return on Assets",
+            "Return on Equity",
+            "Tier 1 Capital Ratio",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Book Value",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin",
+            "Return on Assets",
+            "Return on Equity",
+            "Tier 1 Capital Ratio",
+            "Loan Loss Provisions",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

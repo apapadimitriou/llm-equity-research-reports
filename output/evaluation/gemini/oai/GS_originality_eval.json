@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions primarily as a news aggregator rather than an original equity research piece. Every significant 'insight'\u2014including the Q1 earnings performance, the strategic pivot to private credit via the 'Capital Solutions' unit, the Asia-Pacific reorganization, and the exit from consumer credit card partnerships\u2014is a direct paraphrase of cited Reuters or Financial Times articles. There is no evidence of synthesis where disparate data points are linked to form a new, non-obvious conclusion. For example, while the report mentions the $2T private credit market, it fails to provide an independent analysis of how Goldman's specific competitive advantages will translate into market share or quantified margin impact beyond generic growth assumptions. The valuation section is entirely boilerplate, utilizing standard DCF inputs (5% CAGR, 8.5% WACC) and generic drivers like 'efficiency initiatives' without any novel company-specific mechanisms. Because the report lacks any original thesis or synthesis and relies almost exclusively on public headlines and restated boilerplate, it fails to meet the threshold for a higher grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Goldman\u2019s IB and trading franchises remain best-in-class... project mid-single-digit revenue growth and modest margin improvement.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "New Capital Solutions franchise will target large-deal financing in the ~$2T private-credit market.",
+                "classification": "Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "Consolidated Asian investment banking into a single Asia-Pacific platform, which already shows rising ECM and M&A activity.",
+                "classification": "Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "Consumer finance setbacks (Apple/GM credit card losses) have already trimmed ROE by ~75-100bp.",
+                "classification": "Paraphrased",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins rising from mid-20% toward 30% by 2029 as fixed costs are leveraged.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on news headlines (Reuters/FT) for all strategic points",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Lack of independent quantitative modeling for new business units"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

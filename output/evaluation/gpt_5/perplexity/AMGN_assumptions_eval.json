@@ -1,0 +1,91 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report\u2019s core valuation inputs are explicit and clustered in the Appendix and Financials Snapshot near the forecasts they inform. Specificity is solid: key magnitudes include a 2025\u20132029 revenue CAGR, terminal margin, WACC, and terminal growth rate, all with units and clear horizons, plus annual revenue and margin paths. Sensitivity analysis is present and quantified across multiple material drivers (CAGR, WACC, terminal growth, terminal margin, and peak MariTide sales) via base/bull/bear scenarios, though it does not map scenario changes to valuation impact. Justification is partial: narrative links assumptions to historical performance (e.g., ~47% non-GAAP margin, ~$34B revenue base), portfolio drivers, and pipeline (MariTide), and references external sources, but peer/industry benchmarks and sourced parameters for WACC/terminal growth are limited. Internal consistency is largely clean; minor tension exists between the narrative stating \u201cpeak sales potential exceeding $5B\u201d for MariTide and a $4.5B base-case peak in the Appendix, but this is explainable as conservative base vs. upside potential. Material omissions include tax rate, capex, and share count, which weakens completeness. Overall, assumptions are explicit and specific with quantified scenarios, but justification depth and coverage gaps keep the grade at Good.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029) | 6.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin (Terminal) | 43.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate | 2.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC | 8.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Peak MariTide Sales ($B) | 4.5",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Op Margin % | FY 2025E 45.5 \u2026 FY 2029E 43.5",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Revenue ($B) | FY 2025E 35.5 \u2026 FY 2029E 45.6",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth 2.5% without source",
+            "WACC 8.5% without source",
+            "Beta 0.6\u20130.8 without source",
+            "Peak MariTide base $4.5B with limited sourcing"
+        ]
+    }
+}

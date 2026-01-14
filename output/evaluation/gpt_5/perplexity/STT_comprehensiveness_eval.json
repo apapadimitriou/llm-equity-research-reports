@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections: cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation & profit drivers, risk, capital allocation, financials snapshot, ESG, and sources. Depth is reasonable across narrative sections, and the valuation section articulates explicit assumptions (fee growth, expense growth, margin expansion, WACC) and an EPS bridge linking operating drivers to value. However, the Financials Snapshot omits core custody-bank KPIs (NIM/NII, CET1, provisions, AUC/A and AUM time series), providing only generic metrics (revenue, EPS, FCF, ROIC). Several material claims rely on outdated or mismatched sources (e.g., Q2 2025 EPS/revenue cited to a 2021 page; dividend metrics sourced to 2022) and the fair value appears tied to an analyst average while described as DCF-derived, undermining citation consistency. Peer benchmarking and scenario/sensitivity analysis are absent. There is some repetition of the Alpha platform and scale/AUC themes across Analyst Note, Bulls/Bears, Strategy, and Moat with limited incremental detail. These gaps, especially KPI omissions and citation issues, cap the comprehensiveness at Fair despite otherwise broad section coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "CET1 capital ratio",
+            "Provision for credit losses",
+            "Assets under custody/administration (AUC/A)",
+            "Assets under management (AUM)",
+            "Fee revenue by segment"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair-value estimate ($108.42) is described as DCF-derived yet matches/appears sourced to an analyst average target",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "CET1",
+            "Provisions",
+            "AUC/A",
+            "AUM"
+        ],
+        "uncited_claims": [
+            "Q2 2025 EPS ($2.53) and revenue ($3.47B) cited to a 2021 source [7]",
+            "Dividend yield (3.02%) and payout ratio (34.16% in 2025) sourced to a 2022 page [14]"
+        ]
+    }
+}

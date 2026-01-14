@@ -1,0 +1,126 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is mixed: the report does state several core drivers in a \u201cModeling Assumptions (FY25\u2013FY29)\u201d section and outlines valuation inputs (SOTP multiples, DCF WACC/terminal growth, relative P/E). Specificity is partial: margins have a numeric range (3.0\u20133.5%), EPS CAGR is quantified (11\u201312%), and WACC (7.1%) and terminal growth (2.5%) are explicit, but revenue growth is described in broad bands (\u201cmid-/high-/low-single-digit\u201d) rather than precise rates and lacks segment margin paths or share-count assumptions. Justification is weak-to-partial: revenue growth references consensus (~4.7%) and EPS CAGR aligns with management targets, but WACC, terminal growth, and valuation multiples lack evidence-based support or peer benchmarking tie-outs. Consistency is poor: there are multiple unresolved numeric contradictions (e.g., 2026 forward P/E cited as ~10.4x vs a table showing 9.31x; a 16.7x P/E elsewhere; and a \u201cRelative Valuation (Yields ~$340)\u201d that computes to ~$347). Sensitivity/stress testing is absent: no quantified scenarios for key drivers (medical cost/MCR, Evernorth margins/PBM economics, WACC/terminal growth, valuation multiples, or buyback pace). Given multiple contradictions and no sensitivities, the assumptions quality falls to Poor under the stated decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue: Mid-single-digit revenue growth is projected, a moderation from the elevated growth of recent years.",
+            "location": {
+                "section": "Financial Forecast & Valuation \u2013 Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Margins: The consolidated operating margin is expected to remain relatively stable in a 3.0% to 3.5% range.",
+            "location": {
+                "section": "Financial Forecast & Valuation \u2013 Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "EPS: Adjusted EPS is forecast to grow at a compound annual growth rate (CAGR) of 11-12%.",
+            "location": {
+                "section": "Financial Forecast & Valuation \u2013 Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Free cash flow (FCF) is projected to grow in line with net income.",
+            "location": {
+                "section": "Financial Forecast & Valuation \u2013 Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "FCF"
+        },
+        {
+            "quote": "Projecting unlevered free cash flows through 2030 with a 2.5% terminal growth rate and discounting them back using a Weighted Average Cost of Capital (WACC) of 7.1%.",
+            "location": {
+                "section": "Valuation Methodology \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Projecting unlevered free cash flows through 2030 with a 2.5% terminal growth rate",
+            "location": {
+                "section": "Valuation Methodology \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We value Evernorth at a 10.0x multiple on our 2026E EBITDA estimate... The Cigna Healthcare segment is valued at a 7.5x multiple on 2026E EBITDA",
+            "location": {
+                "section": "Valuation Methodology \u2013 Sum-of-the-Parts (SOTP) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "valuation_multiples"
+        },
+        {
+            "quote": "Applying a forward P/E multiple of 10.5x to our 2026E Adjusted EPS of $33.10",
+            "location": {
+                "section": "Valuation Methodology \u2013 Relative Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "valuation_multiples"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "EPS_growth",
+            "FCF",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiples"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward P/E on 2026E stated as ~10.4x vs table showing 9.31x.",
+                "locations": [
+                    "Executive Summary & Investment Recommendation: \"forward price-to-earnings (P/E) multiple of approximately 10.4x our 2026 earnings per share (EPS) estimate\"",
+                    "Recommendation & Valuation Summary: \"P/E on FY 2026E 9.31x\""
+                ]
+            },
+            {
+                "description": "P/E cited as ~16.7x elsewhere vs forward P/E ~9.9x in peer table.",
+                "locations": [
+                    "Peer Benchmarking: \"The stock trades at a P/E ratio of approximately 16.7x\"",
+                    "Peer Group Multiples Comparison: \"The Cigna Group ... Fwd P/E 9.9x\""
+                ]
+            },
+            {
+                "description": "Relative valuation subheader says \"Yields ~$340\" but calculation 10.5x \u00d7 $33.10 implies ~$347.",
+                "locations": [
+                    "Valuation Methodology \u2013 Relative Valuation: \"Relative Valuation (Yields ~$340): Applying a forward P/E multiple of 10.5x to our 2026E Adjusted EPS of $33.10 yields a price of approximately $347.\""
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count/buyback magnitude & timing",
+            "tax_rate",
+            "capex and working capital drivers",
+            "segment-level margin paths (Evernorth, Cigna Healthcare)",
+            "explicit MCR trajectory/medical cost trend assumptions",
+            "DCF cash flow build (revenue/margin/FCF line items)",
+            "no quantified regulatory/PBM margin scenarios"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.1% without source-linked build",
+            "terminal growth 2.5% without support",
+            "SOTP multiples (10.0x/7.5x EBITDA) without peer rationale",
+            "relative P/E 10.5x without quantified peer-based justification"
+        ]
+    }
+}

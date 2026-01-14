@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal links and explicit, quantified assumptions tied to valuation. It explains mechanisms such as scaling-driven operating leverage and subscription-model cash conversion (e.g., \u201cOperating leverage remains strong as the platform scales\u201d; \u201cconvert revenue growth into cash generation efficiently\u201d). Forecasts are anchored in drivers like platform expansion and CRM entry, and valuation includes quantified inputs (\u201cWeighted average cost of capital of approximately 9.5%\u201d). It uses data extensively (growth rates, margins, RPO), and offers a structured scenario analysis with ranges (\u201cRevenue CAGR (2025-2029) | 18.5% | 22.0% | 15.0%\u201d; \u201cFair Value per Share | $1,050 | $1,280 | $840\u201d). Actionable implications are present via a fair value, Price/FVE, and base/bull/bear outcomes. However, assumptions are generally not benchmarked against peers or historical norms (e.g., \u201cImplied forward price-to-sales multiples of 10-11 times\u201d lacks peer comparison), and sensitivity analysis focuses on headline scenario knobs without tying operational levers (pricing, R&D intensity, CRM adoption) to EPS/FCF impacts. Counterpoints are raised (competition, macro), but uncertainty is not quantified with probabilities or parameter sensitivities. Overall, mechanisms and quantified scenarios are strong, yet the lack of benchmarking and granular sensitivities prevents an Excellent rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "CRM expansion \u2192 revenue uplift mechanism not quantified",
+            "AI agents \u2192 margin impact not modeled",
+            "RPO conversion \u2192 revenue timing not articulated"
+        ],
+        "unsupported_assumptions": [
+            "WACC 9.5% without peer benchmark",
+            "Terminal growth 4\u20135% not justified",
+            "FCF margin 35\u201338% lacks external benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "No EPS sensitivity to growth or WACC",
+            "No margin sensitivity to CRM adoption rates",
+            "No FCF sensitivity to R&D intensity"
+        ]
+    }
+}

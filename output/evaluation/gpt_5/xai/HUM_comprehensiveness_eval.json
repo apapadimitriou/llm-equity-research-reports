@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections: cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation/profit drivers, risk, capital allocation, financials snapshot, ESG, appendix, and sources. The depth is generally reasonable, with explicit DCF assumptions and an EPS bridge linking operating drivers (revenue growth, margin expansion, share changes) to valuation. However, the Financials Snapshot omits core sector KPIs for managed care (e.g., medical loss ratio, Medicare Advantage membership, star ratings, PMPM), limiting comprehensiveness; this triggers a hard cap at Fair. Evidence is mixed: many claims are sourced, but several material assertions are model-derived or marked \u201cinsufficient data,\u201d weakening citation consistency. Peer context is limited to brief mentions without benchmarking. Redundancy appears where Q2 beats and guidance are repeated in both the Analyst Note and Bulls/Bears, and regulatory risks recur without incremental analysis. Overall, the report has solid structure and reasonable linkage in valuation, but KPI omissions, uneven sourcing, and sparse peer analysis reduce its comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "Medicare Advantage Membership",
+            "Star Ratings (MA quality)",
+            "Premium per Member per Month (PMPM)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Medicare Advantage Membership",
+            "Star Ratings (MA quality)",
+            "Premium per Member per Month (PMPM)"
+        ],
+        "uncited_claims": [
+            "MLR stabilization at 88\u201389% [5] marked as insufficient data/model-derived",
+            "ESG risk score of 22.5 attributed to Sustainalytics without direct link [11]",
+            "Debt-to-capital ~40% and cash ~$5B noted with insufficient data for 2025 figures",
+            "Membership retention rates above 90% stated as model-derived without citation",
+            "ROIC exceeding WACC by 4\u20135 points stated as model-derived without citation"
+        ]
+    }
+}

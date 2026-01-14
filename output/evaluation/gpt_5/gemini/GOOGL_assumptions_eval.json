@@ -1,0 +1,119 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: Several core valuation/forecast inputs are clearly stated, including WACC (with components), terminal growth, revenue growth (FY25/26 and a 5\u2011yr ~10% CAGR), a 2025 capex level, and the share count used in the DCF. However, key operating assumptions (tax rate, consolidated margin path, Cloud margin path, buyback impact on share count) are not explicitly quantified. Justification: Capex is anchored to company guidance; terminal growth is tied to long-term GDP/inflation; WACC components are listed. Yet revenue growth and margin assumptions lack robust support from multi-year history/peer benchmarks or cited sources, and the risk parameters (ERP/beta) have no sourcing. Specificity: Inputs carry units and horizons where provided (WACC, capex, TGR, revenue), but operating margins are only qualitatively described and tax rate is absent. Consistency: A numeric discrepancy exists between the DCF narrative (~$215 per share) and the DCF table ($213 per share). Sensitivity: Only a single quantified sensitivity (WACC +50 bps \u21d2 ~$198) is provided; no scenario ranges for revenue/margins/capex/regulatory outcomes. Given the limited quant sensitivities and the internal discrepancy, the assumptions quality merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Weighted Average Cost of Capital (WACC) of 8.5% and a terminal growth rate of 2.75%.",
+            "location": {
+                "section": "I. Investment Summary \u2013 Valuation & Price Target",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We calculate a Weighted Average Cost of Capital (WACC) of 8.5%. This is based on a risk-free rate of 4.1%, an equity risk premium of 4.1%, and a levered beta of 1.02",
+            "location": {
+                "section": "VI. Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Value: We assume a perpetual growth rate of 2.75% beyond the explicit forecast period",
+            "location": {
+                "section": "VI. Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model revenue growing at a compound annual rate of approximately 10% over the next five years",
+            "location": {
+                "section": "VI. Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "For the full fiscal year 2025, we anticipate total revenue growth of approximately 12.7% to $394.3 billion.",
+            "location": {
+                "section": "IV. Financial Analysis & Forecast \u2013 Forward-Looking Financial Projections",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The company has guided for capital expenditures to increase to approximately $75 billion for the full fiscal year 2025",
+            "location": {
+                "section": "II. The AI Pivot: A Generational Investment Cycle",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Operating margins are expected to contract from the Q1 high as the full impact of the $75 billion capital expenditure plan flows through the income statement in the form of higher depreciation expenses.",
+            "location": {
+                "section": "IV. Financial Analysis & Forecast \u2013 Forward-Looking Financial Projections",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Shares Outstanding (M) 12,135",
+            "location": {
+                "section": "VI. Valuation \u2013 DCF Model Summary",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "a 50-basis-point increase in the WACC to 9.0% would lower the intrinsic value to approximately $198 per share.",
+            "location": {
+                "section": "VI. Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "capex",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "DCF narrative intrinsic value \"approximately $215\" vs DCF table \"Implied Value Per Share $213\".",
+                "locations": [
+                    "VI. Valuation \u2013 DCF Analysis",
+                    "VI. Valuation \u2013 DCF Model Summary"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "margin/efficiency (quantified path)",
+            "capex trajectory beyond 2025",
+            "share_count (buyback impact)",
+            "regulatory impact scenarios"
+        ],
+        "unjustified_parameters": [
+            "Equity risk premium 4.1% without source",
+            "Levered beta 1.02 without source",
+            "Revenue CAGR ~10% without benchmarking",
+            "Terminal growth 2.75% lightly justified (no source)",
+            "Operating margin contraction not quantified/validated"
+        ]
+    }
+}

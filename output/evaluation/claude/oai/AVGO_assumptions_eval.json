@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails catastrophically on assumptions quality. Key model inputs are either completely missing or vague: no explicit WACC methodology, no justification for the 3% terminal growth rate, no explanation for tax rate assumptions (\"around 10%\"), and operating margin forecasts lack supporting rationale. The revenue growth assumption of \"~12% CAGR\" is stated without detailed justification or breakdown by segment. Most critically, there are zero quantified sensitivities or scenario analyses for any material drivers\u2014violating the hard cap for Fair grade. Internal contradictions exist between claimed \"disciplined\" capex at 3% of revenue versus the company's massive acquisition strategy requiring substantial integration investments. The assumptions extracted are largely aspirational statements rather than specific, auditable model inputs with clear units, timeframes, and evidence-based support.",
+    "assumptions_extracted": [
+        {
+            "quote": "robust ~12% compound annual revenue growth from FY2024 through FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted operating margins (EBIT) in the mid-30s as a percentage of sales",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of approximately 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "3% long-term growth rate in the terminal stage",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate is assumed to normalize around 10%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Capital expenditures are modeled at ~3% of revenue",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims capex at 3% of revenue as 'disciplined' while simultaneously pursuing massive M&A requiring substantial integration investments",
+                "locations": [
+                    "Appendix capex assumption",
+                    "Business Strategy discussing aggressive M&A"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "detailed_segment_growth",
+            "WACC_components"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without methodology",
+            "Terminal growth 3% without justification",
+            "Tax rate 10% without support",
+            "Operating margin progression without rationale"
+        ]
+    }
+}

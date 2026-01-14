@@ -1,0 +1,15 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a high level of structural coherence and professional tone, effectively linking the strategic impact of the Ansys acquisition and AI tool adoption across multiple sections. The narrative flow is generally smooth, with the Analyst Note setting a clear stage for the detailed analysis in the Strategy and Risk sections. However, the report suffers from a significant internal contradiction regarding its primary valuation inputs. In the 'Fair Value and Profit Drivers' section, the analyst explicitly bases the valuation on a 28x multiple of 'fiscal 2026 estimated earnings per share of $24.50.' Conversely, the 'Financials Snapshot' table lists the FY 2026E EPS as $18.75, assigning the $24.50 figure to FY 2027E instead. This misalignment between the narrative's valuation methodology and the supporting data table is a material error that forces the reader to reconcile the argument themselves. Additionally, there is a minor inconsistency regarding the impact of China export curbs; the Analyst Note and Risk sections cite a 16% revenue decline, whereas the Appendix lists a 15% decline in the valuation assumptions. While the report is otherwise well-cited and logically organized, these quantitative discrepancies violate the requirement for internal consistency between text and tables. Per the grading guardrails, the presence of an unaddressed contradiction between assumptions, tables, and the narrative necessitates a hard cap at the 'fair' level.",
+    "evidence": [
+        "Valuation methodology applies 28x forward... to fiscal 2026 estimated earnings per share of $24.50 (Fair Value section) vs. table showing $18.75 for FY2026 and $24.50 for FY2027 (Financials Snapshot).",
+        "China revenue expected to decline 16% year-over-year (Analyst Note) vs. Normalized China revenue decline: 15% in FY2025 (Appendix)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

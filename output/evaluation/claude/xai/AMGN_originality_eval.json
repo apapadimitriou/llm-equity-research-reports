@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains mostly restated information from earnings announcements and lacks meaningful synthesis. While it identifies some company-specific details like the 9% Q2 revenue growth and raised guidance, these are primarily copied from sources rather than analyzed for deeper implications. The valuation section uses standard DCF methodology without novel drivers or mechanisms. Most insights are generic to biotechnology companies (patent protection, R&D pipeline, biosimilar competition) rather than uniquely applicable to Amgen. The report shows one weak synthesis attempt linking Q2 performance to pipeline potential, but fails to provide quantified pathways, specific catalysts, or actionable investment theses. Red flags include boilerplate phrasing about 'diversified portfolio' and 'competitive landscape' without substantive analysis.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "9% revenue growth highlights resilience in core segments like oncology and inflammation",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Focus on rare diseases and biosimilars as key drivers for medium-term growth",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Strong Q2 revenue growth and EPS beat signal robust demand and pipeline potential",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Wide economic moat from intangible assets, including patents and regulatory exclusivity",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue CAGR of 6% projected based on Q2 growth and raised guidance",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'diversified portfolio' and 'competitive landscape' phrasing",
+            "Standard biotechnology sector analysis without Amgen-specific angles"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

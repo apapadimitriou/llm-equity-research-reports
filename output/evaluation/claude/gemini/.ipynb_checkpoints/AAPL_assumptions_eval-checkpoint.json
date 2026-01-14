@@ -1,0 +1,88 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains several key assumptions that drive its valuation model, but they exhibit mixed quality. While assumptions are generally explicit and proximal to the forecasts they inform (e.g., revenue growth rates, margin expansion, discount rate), their justification is often partial or limited. The report provides specific magnitudes for most assumptions (e.g., 6-7% revenue CAGR, 8.23% WACC), but some lack robust supporting evidence beyond brief mentions of historical trends or strategic shifts. Internal consistency is generally maintained, though the report lacks quantified sensitivity analysis for key drivers like regulatory impacts on Services growth. The absence of robust scenario analysis for material drivers like regulatory headwinds and tariff impacts (despite mentioning a 15% potential valuation impact) caps the overall grade at Fair, as these represent significant uncertainties that warrant more thorough stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a five-year compound annual revenue growth rate (CAGR) of 6-7% through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model 5-6% annual growth, driven less by significant unit growth and more by a continued consumer preference shift toward higher-priced \"Pro\" models and modest average selling price (ASP) increases",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast robust annual growth of over 10%, propelled by the expanding installed base of devices and increased monetization per user through subscriptions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast gross margins will expand from 47.1% in the second quarter of fiscal 2025 toward 50% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model employs a weighted average cost of capital (WACC) of 8.23%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "In May 2025, the board authorized an additional $100 billion for share repurchases, its largest-ever authorization",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.23% with limited explanation",
+            "Terminal growth rate of 3.0% with minimal justification"
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states key modeling inputs close to the forecasts they drive, especially in Fair Value and Profit Drivers and in the DCF key drivers (e.g., quarterly DC revenue, annual DC CAGRs, gross/operating margins, WACC, tax rate, Stage II parameters, share count). Specificity: Assumptions include magnitudes, units, and time horizons (e.g., $49.4B/$53.9B DC quarters; 35%/15% DC growth; GM 71%/74%; WACC 9%; long-run tax 15%; Stage II EBI growth 11%, investment rate 34.3). Consistency: Figures reconcile across narrative and the valuation/tables; numbers for DC revenue and margins tie to the model summary. Minor dated tensions exist across sections, but the core financial assumptions align with the presented tables. Justification: The narrative cites recent guidance, supply constraints, China H20 policy reversal, historical DC growth, and hyperscaler capex trends to motivate revenue growth and margin durability. However, several valuation parameters (WACC 9%, Stage II 11% EBI growth, 34.3% investment rate) lack explicit sourcing or peer/market benchmarks, and long-term growth paths are not cross-checked with external data. Sensitivity: There is no quantified sensitivity/scenario analysis for material drivers (e.g., DC growth, margins, China scenarios, WACC), limiting stress-testing. Overall, assumptions are explicit and specific with partial justification, but the absence of quantified sensitivities caps the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We are reinserting $5 billion of revenue to the October and January quarters",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We then model a $10 billion boost in quarterly revenue in the October 2025 quarter\u2026 estimates of $49.4 billion in the October quarter and $53.9 billion in the January 2026 quarter",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "fiscal 2026 DC revenue estimate to $182 billion\u2026 we model 35% growth to $246 billion in fiscal 2027, and 15% growth to $281 billion in fiscal 2028\u2026 only 2% growth in fiscal 2029\u2026 average annual DC growth of 10%-12% thereafter",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6-7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model a near-term dip in GAAP gross margin to 71% in fiscal 2026\u2026 74% GAAP gross margin in fiscal 2027 and lower it only to the low-70% range a decade from now.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We anticipate that GAAP operating margins will be 61% in fiscal 2026 and stay in the low-60% range thereafter.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model $17 billion of revenue in fiscal 2026 [gaming]\u2026 boost\u2026 to $22 billion [fiscal 2027]. We model 10% average annual revenue growth in gaming thereafter",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cost of Equity % 9.0\u2026 Weighted Average Cost of Capital % 9.0\u2026 Long-Run Tax Rate % 15.0",
+            "location": {
+                "section": "Key Valuation Drivers / DCF Valuation",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 11.0\u2026 Stage II Investment Rate % 34.3\u2026 Projected Diluted Shares 24",
+            "location": {
+                "section": "Key Valuation Drivers / DCF Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC/Cost of Equity 9.0% without market/source tie-out",
+            "Stage II EBI Growth Rate 11.0% without source",
+            "Stage II Investment Rate 34.3% without source"
+        ]
+    }
+}

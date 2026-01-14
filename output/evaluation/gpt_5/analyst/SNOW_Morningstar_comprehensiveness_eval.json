@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This Morningstar report is broadly structured and covers most expected sections: a clear cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, multi-year Financials, ESG, and peer benchmarking. Depth is generally proportional for a software/SaaS name: the outlook discusses cloud migration and AI, competitive dynamics are addressed, and the valuation section ties fair value to explicit operating drivers (revenue CAGR and margin trajectories). Evidence integration is decent, with specific quarterly figures (product revenue growth, NRR, RPO) and dated fair value inputs; ESG sourcing via Sustainalytics is explicit. However, the Financials Snapshot omits core SaaS KPIs in tabular form (ARR, churn, large-customer count), and there is no scenario or sensitivity analysis. Minor overlap exists between Business Description and Moat, but repetition is limited. One inconsistency appears around GAAP profitability versus the forecast table. Overall, comprehensiveness is solid, but per the hard caps, missing \u22652 sector KPIs in the snapshot and lack of scenarios constrain the grade to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note/Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis",
+            "Explicit valuation bridge table",
+            "In-text source citations"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention (NRR)",
+            "Remaining Performance Obligations (RPO)",
+            "Customer count",
+            "Product revenue growth",
+            "Gross margin",
+            "Operating margin"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Churn",
+            "$1M+ customer count"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Capital Allocation section states the firm is unprofitable on a GAAP basis, while the Forecasts table shows positive GAAP net income and EPS from 2024 onward.",
+                "locations": [
+                    "Capital Allocation",
+                    "Analyst Historical/Forecast Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Annual Recurring Revenue (ARR)",
+            "Churn",
+            "$1M+ customer count"
+        ],
+        "uncited_claims": []
+    }
+}

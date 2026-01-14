@@ -1,0 +1,57 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report is highly comprehensive across the expected equity research sections: clear cover and contents, an Analyst Note that functions as an executive summary, business description, strategy/outlook, bulls/bears, competitive positioning (economic moat), valuation and profit drivers, risks, capital allocation, financials (with multi-year history and forecasts), ESG, and an appendix/methodology. Depth is sector-appropriate for a diversified bank, with detailed KPI coverage (NII, NIM, provisions, efficiency ratio, ROE/ROTE, ROA) and explicit narrative on CET1, loan growth, and deposit share. Evidence is generally integrated with in-text references (FDIC, Dealogic, Coalition Greenwich, Cerulli) and peer context including competitor pages and ESG peer analysis. The valuation section links operating drivers (NIM path, fee trends, credit costs, expense growth, midcycle ROTE, CET1, cost of equity) to the DCF fair value and is supported by a forecast table. Redundancy is limited; similar themes recur but typically add incremental detail in each section. Key gaps: no explicit scenario/sensitivity analysis and CET1 is not tabulated in the Financials Snapshot. There is a minor numerical inconsistency (cost of equity 9.5% vs 9.0% in the model summary). These issues modestly constrain the grade but do not detract materially from overall comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "ROE/ROTE",
+            "ROA"
+        ],
+        "sector_kpis_missing": [
+            "CET1"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of equity stated as 9.5% in Fair Value section but shown as 9.0% in Key Valuation Drivers",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Morningstar Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "CET1"
+        ],
+        "uncited_claims": []
+    }
+}

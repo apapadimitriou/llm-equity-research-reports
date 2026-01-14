@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes most expected sections structurally, the content is severely lacking in depth and accuracy. The Financials Snapshot is completely inadequate for a bank, missing all critical sector KPIs (NIM, loan loss provisions, CET1 ratios, book value, ROE, efficiency ratio). The valuation section lacks explicit linkage between operating drivers and fair value calculations, providing only superficial assumptions without proper DCF mechanics. Multiple material claims are completely uncited, including specific financial figures and forecasts. The report demonstrates fundamental misunderstanding of banking metrics, treating Morgan Stanley generically rather than as a financial institution requiring specialized analysis. Peer benchmarking and scenario analysis are entirely absent. The sourcing is inconsistent and unprofessional, citing social media posts and articles with questionable dates. Critical regulatory and competitive context specific to investment banking is missing.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Book Value",
+            "ROE",
+            "Efficiency Ratio",
+            "Trading Revenue Breakdown",
+            "AUM",
+            "Fee Income Ratios"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "CET1 ratio cited as 15% in Capital Allocation but missing from Financials Snapshot",
+                "locations": [
+                    "Capital Allocation",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "EPS forecast inconsistency between $7.50 and $7.30",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Book Value",
+            "ROE",
+            "Efficiency Ratio",
+            "AUM",
+            "Trading Revenue",
+            "Fee Income"
+        ],
+        "uncited_claims": [
+            "Q1 2025 EPS of $2.60",
+            "Revenue of $17.7 billion",
+            "40% revenue from wealth management",
+            "95% client retention rates",
+            "$5 billion in buybacks",
+            "WACC assumptions",
+            "Beta of 1.2"
+        ]
+    }
+}

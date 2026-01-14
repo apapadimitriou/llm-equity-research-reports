@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all mandatory sections from the Analyst Note to the ESG analysis. It demonstrates strong evidence integration, utilizing dense and specific in-text citations for financial and strategic claims. However, the report is capped at 'Fair' due to several critical omissions and structural weaknesses. First, the Financials Snapshot is generic and fails the hard cap for sector-specific depth; it omits core SaaS KPIs such as Net Retention Rate (NRR) and Churn, which are vital for assessing subscription health. While RPO and ARR are mentioned in the text, they are absent from the multi-year data table. Second, the report lacks formal peer benchmarking; although it identifies competitors like Microsoft and Oracle, it provides no comparative data on valuation multiples or relative performance metrics, triggering a mandatory downgrade. Third, the valuation section, while linking drivers to the fair value estimate, lacks a robust scenario analysis, offering only a skeletal sensitivity sentence instead of distinct Bull/Bear price targets. Finally, significant redundancy is present, as the same data points regarding Agentforce deals and Data Cloud growth are repeated across three different sections without providing new depth or context in each instance.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (Data Cloud)",
+            "RPO (Remaining Performance Obligation)",
+            "Agentforce Deal Counts"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Retention Rate)",
+            "Churn Rate",
+            "CAC (Customer Acquisition Cost)",
+            "Gross Retention Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR (Net Retention Rate)",
+            "Churn Rate",
+            "RPO (missing from Financials Snapshot table)",
+            "ARR (missing from Financials Snapshot table)"
+        ],
+        "uncited_claims": []
+    }
+}

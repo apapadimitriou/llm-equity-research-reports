@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a generally coherent arc from recent performance to strategy, moat, valuation assumptions, and risks. Language is clear and sections often reference each other: the Business Strategy & Outlook cites mid-teens revenue growth and 40\u201342% operating margins that align with the Financials Snapshot and Appendix, and Risks echo customer concentration flagged in Bears. However, important coherence breaks undermine the argument. The valuation is not concretely anchored: both the cover and Fair Value and Profit Drivers rely on placeholders (e.g., $X, Y, Z), preventing reconciliation of Bulls/Bears with the base-case valuation or a clear conclusion about upside/downside relative to the last close. The Financials Snapshot introduces a unit inconsistency; free cash flow values listed as \u201cUSD Millions\u201d (e.g., 3.7 in 2024) are implausibly small relative to revenue and cash balances, suggesting a scale mismatch that contradicts the narrative on strong cash generation. Minor issues, such as an undefined term in the Appendix (\u201cYMNA network spending\u201d), further add noise. While most dates and cited facts appear internally consistent and transitions are adequate, the unaddressed valuation placeholders and the FCF unit mismatch necessitate a downgrade per the guardrails. Overall, understandable with effort but internally noisy.",
+    "evidence": [
+        "Cover Block and Fair Value sections use placeholders: \u201cFair-Value Estimate $X.X | Price/FVE Y.Y\u201d and \u201cfair-value estimate around $X per share\u2026 Y\u00d7 2025 EPS and Z\u00d7 2026 EPS.\u201d",
+        "Financials Snapshot: Free Cash Flow listed as 3.7 in 2024 under \u201cUSD Millions,\u201d inconsistent with the narrative\u2019s strong cash position (~$8.15B) and scale of operations.",
+        "Appendix includes undefined/typo term: \u201csteady YMNA network spending,\u201d reducing clarity of assumptions."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

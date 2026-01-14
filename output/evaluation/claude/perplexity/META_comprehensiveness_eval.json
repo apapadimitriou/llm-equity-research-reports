@@ -1,0 +1,67 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it contains all major section headers, the content lacks essential sector-specific KPIs for social media companies (MAU/DAU growth rates, ARPU by geography, engagement metrics). The financials snapshot omits critical metrics like revenue per user, advertising yield, and cost per impression. Multiple material claims are completely uncited (e.g., specific revenue figures, user counts, competitor data). The valuation section provides assumptions but fails to explicitly bridge operating drivers to the $770 fair value conclusion. Significant redundancy exists across sections, with Q1 2025 results repeated in Analyst Note, Strategy, and Bulls/Bears sections without new depth. The report reads more like a general business overview than rigorous equity research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning details"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "ARPU",
+            "DAU Growth Rate",
+            "MAU by Geography",
+            "Ad Load",
+            "Cost per Impression",
+            "Revenue per User"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q1 2025 revenue cited as both $42.31B and different figures without reconciliation",
+                "locations": [
+                    "Analyst Note",
+                    "Business Description"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARPU",
+            "DAU Growth Rate",
+            "MAU by Geography",
+            "Ad Load",
+            "Cost per Impression"
+        ],
+        "uncited_claims": [
+            "Revenue of $42.31 billion with no source reference",
+            "3.43 billion daily active users with no source",
+            "Reality Labs $5.0 billion losses with no source",
+            "AI creative tools growing 30% with no source"
+        ]
+    }
+}

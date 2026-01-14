@@ -1,0 +1,73 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides key assumptions with some explicitness, listing revenue CAGR (25%), terminal growth (10%), WACC (10%), and margin expansion targets. However, justification is weak - the 25% CAGR relies primarily on recent guidance rather than multi-year historical analysis, and the 10% WACC lacks proper component breakdown despite claiming specific risk-free rate and beta figures. Specificity is partial, with clear units and timeframes but limited causal drivers. Internal consistency shows minor issues with some figures not fully reconciling. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers, capping the grade at Fair. The assumptions table in the appendix helps with explicitness but the rationales are brief and not well-supported by comprehensive evidence.",
+    "assumptions_extracted": [
+        {
+            "quote": "25% revenue CAGR through FY2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in FY2026 to 30% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 10% WACC, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "tapering to 10% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue CAGR (FY2026-29) 25.0% Based on ARR trends and guidance",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "10% terminal growth without peer comparison",
+            "25% revenue CAGR based primarily on recent guidance",
+            "30% margin target without detailed efficiency analysis"
+        ]
+    }
+}

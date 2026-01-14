@@ -1,0 +1,53 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is fundamentally incomplete and fails to meet the basic structural requirements for equity research. Most critically, it entirely omits the 'Financials Snapshot' section; there is no multi-year historical or forecasted data table, which is a core requirement. Furthermore, the report terminates abruptly mid-sentence in the 'Fair Value and Profit Drivers' section, leaving the valuation analysis unfinished. While the text mentions specific drug revenues (Skyrizi, Rinvoq), it lacks structured sector-specific KPIs such as a clinical pipeline status table, trial dates, or a patent expiration schedule. Although in-text citations are present (e.g., [6], [14]), the 'Sources' and 'Appendix' sections are missing entirely, making the evidence unverifiable. The absence of peer benchmarking and scenario/sensitivity analysis further contributes to a lack of depth. Because the report is physically truncated and missing the mandatory financial exhibits, it is classified as Poor.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Financials Snapshot",
+            "Appendix",
+            "Sources",
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Skyrizi/Rinvoq Revenue",
+            "R&D Investment",
+            "Adjusted EPS"
+        ],
+        "sector_kpis_missing": [
+            "Clinical Pipeline Table",
+            "Patent Expiry Timeline",
+            "Multi-year Financial Forecast Table",
+            "Net Debt/EBITDA Forecast"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Financials Snapshot table (History + Forecasts)",
+            "Pipeline/Trial data status",
+            "Patent cliff schedule"
+        ],
+        "uncited_claims": [
+            "All claims referencing sources [1] through [22] are technically uncited as the source list is missing from the report."
+        ]
+    }
+}

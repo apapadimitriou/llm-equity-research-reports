@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report exhibits fundamental flaws in assumption quality that render it unsuitable for investment decision-making. Assumptions are largely implicit and scattered throughout without clear connection to forecasts. The financial projections table contains aggressive growth assumptions (12% revenue CAGR, 31.8% peak margins) without any supporting justification or historical context. Critical valuation inputs like WACC (8.5%), terminal growth (3.5%), and tax rates (14%) are relegated to an appendix with minimal rationale. No sensitivity analysis is provided for any material drivers despite the high-growth, volatile nature of the pharmaceutical sector. Internal contradictions exist between optimistic growth projections and acknowledged competitive/regulatory risks. The report reads more like a marketing document than rigorous financial analysis, with assumptions that appear cherry-picked to support a predetermined bullish conclusion rather than being transparently derived from evidence.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue compound annual growth rate assumptions of 12-15% through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project sustained net margins in the 28-32% range through our forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.5% Long-term GDP growth",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate 14.0% International optimization, R&D credits",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Bullish growth assumptions contradict acknowledged intense competition and pricing pressures",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Risk & Uncertainty section"
+                ]
+            },
+            {
+                "description": "28-32% sustained margins assumption conflicts with competitive dynamics described in Bears Say section",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Bulls Say / Bears Say"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without detailed calculation",
+            "12-15% revenue CAGR without historical comparison",
+            "28-32% margin range without peer benchmarking"
+        ]
+    }
+}

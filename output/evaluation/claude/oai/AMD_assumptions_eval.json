@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly justified. While the DCF model mentions key parameters like 10% revenue CAGR, mid-40s gross margins, and 8-9% WACC, these critical assumptions lack proper justification or supporting evidence. The terminal growth assumption of 3% appears only in the appendix without rationale. Operating margin progression from 7% to 16% over five years is stated but not defended with peer comparisons or historical analysis. The 15% tax rate assumption is mentioned but unexplained. Most problematically, there are no quantified sensitivities or scenario analyses for any material drivers, despite acknowledging high uncertainty from China export restrictions, competition, and cyclical demand. The brief mention that 'each extra $1B in annual sales adds ~10-15\u00a2 EPS' and '10% shift in WACC or terminal growth changes value by \u00b115%' represents minimal sensitivity analysis. Internal consistency appears maintained, but the combination of weak justification and absence of robust sensitivities severely undermines the model's credibility.",
+    "assumptions_extracted": [
+        {
+            "quote": "~10% average annual revenue growth (boosted by AI/data-center expansion)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "mid-40s gross margin (stabilizing near 49% post-curbs)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "target operating margin in the mid-teens as the business scales",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "15% tax rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "weighted average cost of capital of ~8\u20139%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth ~3% (inflation+long-term GDP)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Diluted share count ~1.62B (as of Jan 2025)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "10% revenue CAGR without peer comparison",
+            "Operating margin progression to 16% without historical analysis",
+            "15% tax rate without explanation",
+            "WACC 8-9% without detailed calculation",
+            "3% terminal growth without justification"
+        ]
+    }
+}

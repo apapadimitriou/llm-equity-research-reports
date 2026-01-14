@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with strong breadth: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Evidence integration is generally solid with frequent inline citations tied to specific claims (e.g., Q2 FY2025 metrics, buybacks, and product initiatives). Valuation assumptions are explicitly linked to operating drivers (growth in commercial/value-added services, margins, WACC), demonstrating proportional depth. However, the Financials Snapshot is generic and omits core sector KPIs in table form (e.g., TPV, cross-border volumes, transactions, take rate), triggering the hard cap to Fair. Peer benchmarking is absent, and there is no scenario/sensitivity analysis beyond a brief range mention without detail. Minor repetition appears (Network of Networks and value-added services referenced in multiple sections but mostly with additional context). A notable contradiction exists between the ROIC figures in the Economic Moat narrative versus the Financials Snapshot. Overall, while the narrative is comprehensive and well-sourced, missing KPI tables and lack of peer/scenario analysis limit comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Payment Volume Growth",
+            "Cross-Border Volume Growth",
+            "Processed Transactions",
+            "Value-Added Services Growth"
+        ],
+        "sector_kpis_missing": [
+            "Total Payment Volume (TPV) time series",
+            "Cross-Border Volume time series",
+            "Processed Transactions time series",
+            "Take Rate/Net Revenue Yield"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "ROIC stated as averaging 87% (2017\u20132022) in Economic Moat conflicts with Financials Snapshot ROIC range of ~28.5%\u201333.8%",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Total Payment Volume (TPV)",
+            "Cross-Border Volume",
+            "Processed Transactions"
+        ],
+        "uncited_claims": []
+    }
+}

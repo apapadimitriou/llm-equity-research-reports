@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximate to the forecasts: the report states a 2024\u20132029 revenue CAGR, an operating margin path to mid-teens, WACC/COE, terminal growth, and an effective tax rate. Specificity is solid, with magnitudes, units, and time horizons tied to tables (e.g., revenue rising to ~$950B by 2029, operating margin 14\u201315%), and these reconcile cleanly with the Financials Snapshot (2029 revenue $963B, margin 15%, EPS ~$10). Justification is partial: operating margin expansion is linked to mix shift and efficiency, and the revenue CAGR is attributed to AWS/ads growth; there are references to historical performance and a Morningstar margin revision. However, key valuation parameters (WACC ~7%, COE ~8%, terminal growth 3%, tax 21%) lack empirical support (e.g., market-implied betas, capital structure, peer/market return benchmarks), and there is little segment/peer benchmarking behind the growth and margin trajectory. Crucially, there is no quantified sensitivity or scenario analysis for any material drivers (revenue growth, margin, WACC, terminal growth), which triggers the hard cap. Internal consistency appears clean with no obvious contradictions between narrative and tables. Overall, the inputs are explicit and specific but thinly justified and not stress-tested, warranting a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "a revenue CAGR of roughly 9% over 2024\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project Amazon\u2019s top line to approach $950 billion by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we forecast margins rising to the mid-teens within five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "operating margin to around 14\u201315%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a weighted average cost of capital of about 7%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "an equity cost around 8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "long-term nominal growth of ~3% beyond our explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective Tax Rate ~21% (consistent with U.S. corporate rate)",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex/drivers of FCF",
+            "segment growth splits (AWS vs. retail/ads)",
+            "working capital assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC ~7% without market-derived support",
+            "Cost of Equity ~8% without beta/risk premium evidence",
+            "Terminal Growth 3% without macro/industry backing",
+            "Effective Tax Rate ~21% without jurisdictional mix detail"
+        ]
+    }
+}

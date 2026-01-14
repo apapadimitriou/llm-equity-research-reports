@@ -1,0 +1,74 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid assumption quality across most key pillars. Assumptions are explicitly stated throughout with clear specificity - revenue growth projections (34% in 2025), operating margin expansion (low-30s to mid-40s), terminal growth (5%), and WACC (7.3%). Justification is robust, incorporating multi-year history, peer benchmarks, and industry-specific insights like GLP-1 market projections reaching $200 billion by 2031. The financial tables show strong internal consistency with narrative forecasts. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers beyond qualitative risk discussions, which prevents an Excellent rating despite the otherwise comprehensive treatment of assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a 34% top-line growth rate in 2025, with double-digit growth possible until the end of the decade",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect operating margins to increase from the low-s to the mid-s over the next few years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 5% EBI growth rate between our 10-year explicit forecast and the perpetuity stage of our model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We estimate a weighted cost of capital for Lilly at 7.3%, in line with the peer group",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Projected Diluted Shares 898",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Our assumptions for overall biopharma GLP-1 sales in 2031 surpass $200 billion across diabetes, obesity, and overweight patients with Lilly capturing $80 billion of the market",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

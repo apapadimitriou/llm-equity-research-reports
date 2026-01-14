@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most core sections expected in an equity research note: an executive summary with rating/PT, business description and strategy, bull/bear drivers, competitive positioning, valuation (DCF with key assumptions), risks (including regulatory IRA context and talc litigation), capital allocation, catalysts, and an appendix with multi-year financials and sources. Evidence is generally cited with in-text footnotes and a works-cited list; regulatory, litigation, and quarterly performance data reference external documents. The financial model provides multi-year income statement, balance sheet, and cash flow forecasts, and the valuation assumptions tie back to operating drivers (Stelara LOE, pipeline execution, segment growth). Scenario analysis is included. However, the Financials Snapshot lacks sector-specific biopharma KPIs (e.g., product-level sales, pipeline trial phase/status/readout cadence, asset-level peak sales estimates), triggering the KPI cap. Peer benchmarking is minimal (brief P/E comparisons) without a structured peer table. One internal inconsistency exists between margin guidance (25\u201326%) and the appendix\u2019s steady 27.5% adjusted operating margin. Overall, breadth across sections is strong, but the thin sector KPI coverage in the snapshot and limited peer detail constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note / Investment Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot (Appendix)",
+            "ESG/Controversies",
+            "Catalysts",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Detailed Peer Benchmarking",
+            "Glossary",
+            "ESG Metrics"
+        ],
+        "sector_kpis_present": [
+            "Segment operational growth (Innovative Medicine, MedTech)",
+            "R&D spend",
+            "LOE timing for Stelara",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Product-level sales breakdown (e.g., Darzalex, Tremfya, Carvykti)",
+            "Pipeline trial phases/status and readout timelines",
+            "Asset-level peak sales estimates with probabilities",
+            "Regulatory milestones cadence"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Margin guidance text forecasts 25\u201326% adjusted operating margin, while Appendix Table 4 shows a steady 27.5% adjusted operating margin throughout the forecast.",
+                "locations": [
+                    "Margin and Free Cash Flow Analysis",
+                    "Appendix: Financial Model Summary (Operating Margin %)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level sales breakdown",
+            "Pipeline trial phases/status/readout timelines",
+            "Asset-level peak sales estimates with probabilities",
+            "Regulatory milestones cadence"
+        ],
+        "uncited_claims": []
+    }
+}

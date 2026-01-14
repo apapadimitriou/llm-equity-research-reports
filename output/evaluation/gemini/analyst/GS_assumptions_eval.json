@@ -1,0 +1,109 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple unresolved numeric contradictions between the narrative and the financial tables, combined with a total absence of quantified sensitivity analysis. Specifically, the narrative explicitly forecasts a decline in Net Interest Income (NII) due to rate normalization and balance sheet shrinkage, yet the valuation summary table projects NII growing by over 32% from $8,056 million in 2024 to $10,660 million by 2027. Furthermore, the analyst stipulates a long-run operating margin of 34%, but the provided efficiency ratios in the model summary (ranging from 61.6% to 63.6%) imply significantly higher operating margins of 36.4% to 38.4%. While the report provides specific compound annual growth rates (CAGRs) for revenue (2.0%) and investment banking (3.2%), these inputs are undermined by the lack of internal consistency. Justification is only partial, often relying on qualitative assessments of 'market mania' or 'elevated levels' without detailed peer benchmarking or historical data reconciliation. Finally, the report fails the requirement for quantified stress-testing; while it identifies macroeconomic risks like tariffs, it provides no company-specific sensitivity tables or scenario ranges showing the impact of material drivers on the $490 fair value estimate, rendering the output a 'black box.'",
+    "assumptions_extracted": [
+        {
+            "quote": "Over the next five years, we project net revenue to grow at a 2.0% compound annual growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast less than 1% annual growth in trading income, as recent trading levels are arguably elevated.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We also forecast net interest income to decline on the back of rate normalization and the assumption that Goldman Sachs will slow down the growth of or even decrease the size of its balance sheet",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "we forecast investment banking revenue growing at around a 3.2% compound annual growth rate from the 2024 level of $7.7 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "annual growth in assets under supervision of slightly over 7%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "In the long run, we project... operating margins of 34%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 334",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative forecasts NII to decline, but the valuation table shows NII increasing from $8,056M in 2024 to $10,660M in 2027.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 7",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            },
+            {
+                "description": "Narrative projects long-run operating margins of 34%, but the Efficiency Ratio in the table (61.6%-63.6%) implies margins of 36.4%-38.4%.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 7",
+                    "Morningstar Valuation Model Summary, Page 15"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "9.0% Cost of Equity provided without specific build-up or source."
+        ]
+    }
+}

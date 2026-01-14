@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report primarily relies on a single public event\u2014the April 2025 announcement of the Mobility division spin-off\u2014as its central thesis. While the report correctly identifies the strategic rationale for this move (portfolio simplification and margin expansion), these points largely paraphrase the company's own investor communications rather than providing original analysis. The report contains one clear synthesis: linking the 2026\u20132028 'maturity wall' to a floor in Ratings revenue despite high interest rates. However, the remaining insights regarding the shift to passive investing, AI integration via Kensho, and the 'Big Three' oligopoly are generic sector-wide narratives applicable to any major credit rating agency or index provider. The valuation section lacks a truly novel driver, as the projected margin expansion is a mathematical byproduct of removing the lower-margin Mobility segment rather than an analyst-derived operational insight. Because more than three insights are restatements of public news or generic sector trends, the grade is capped at Fair.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Separation of Mobility division decouples cyclical assets to warrant a valuation re-rating.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "The 'maturity wall' of 2026\u20132028 debt refinancing provides a floor for Ratings revenue regardless of interest rate levels.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Using proprietary data via Kensho to train AI builds a defensive wall against commoditized LLMs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The shift from active to passive investing acts as a structural tailwind for the Indices segment.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Removing the Mobility business mathematically lifts consolidated operating margins from 46% to 49%.",
+                "classification": "Restated",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on the April 29, 2025, press release for core thesis",
+            "Generic 'moat' descriptions (network effects, brand trust) common to all SPGI/MCO coverage",
+            "Valuation drivers are largely mathematical adjustments to announced corporate actions"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

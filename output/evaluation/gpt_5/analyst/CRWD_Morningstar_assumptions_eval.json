@@ -1,0 +1,95 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key modeling inputs are largely explicit and proximal to the forecasts they inform. The report states a five-year revenue CAGR (22%), margin trajectory (gross margins toward mid-80s; adjusted margins near 30% by 2030), WACC (8.9%), tax rate (21%), Stage II parameters, and projected share count (247), with values tied to the DCF summary and forward tables. Specificity is solid: magnitudes, units, and time horizons are provided, and the fair value cross-check via 2026 EV/sales (16x) reconciles to the DCF. Internal consistency appears clean between narrative and tables (e.g., adjusted margin \u201cclosing in on 30%\u201d aligns with ~28% adjusted net margin by 2030). However, justification is only partial\u2014assumptions are motivated qualitatively (vendor consolidation, \u201cland-and-expand,\u201d secular tailwinds), but lack rigorous evidence such as multi-year peer benchmarks for margins, sources for WACC/COE, or explicit support for Stage II growth/investment rates. Critically, there is no quantified sensitivity/scenario analysis on material drivers (revenue growth, margins, WACC, terminal assumptions, share count), triggering a hard cap at Fair. Overall, assumptions are explicit and specific with reasonable internal coherence, but limited empirical substantiation and no stress-testing prevent a higher grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast CrowdStrike\u2019s revenue growing at a 22% compound annual growth rate over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we are modeling GAAP gross margins to expand to the mid-80s range over our 10-year explicit forecast.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "2030 adjusted margins closing in on 30%.",
+            "location": {
+                "section": "Analyst Note (4 Jun 2025)",
+                "page": "2"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers (DCF)",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers (DCF)",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 14.3",
+            "location": {
+                "section": "Key Valuation Drivers (DCF)",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 247",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "implying a fiscal 2026 enterprise value to sales multiple of 16 times.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.9% without source",
+            "Stage II EBI Growth Rate 14.3% without source"
+        ]
+    }
+}

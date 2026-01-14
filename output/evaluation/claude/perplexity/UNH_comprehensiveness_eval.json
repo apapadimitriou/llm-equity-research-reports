@@ -1,0 +1,60 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes most expected sections structurally, the content is severely deficient in critical areas. The Financials Snapshot completely lacks sector-specific KPIs essential for healthcare/insurance analysis (medical loss ratios, membership metrics, premium yields, etc.), containing only generic metrics like revenue and EPS. The valuation section provides no explicit mathematical linkage from operating drivers to the stated fair value estimates of $375-432 per share, offering only vague ranges without clear methodologies. Most critically, the report contains numerous uncited claims throughout, with source citations that appear fabricated or inaccessible, undermining the entire analysis. The Bulls/Bears section lacks peer context, and there is no meaningful competitive benchmarking. Significant redundancy exists across sections, particularly regarding Medicare Advantage challenges and leadership transitions, adding no incremental depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio",
+            "Membership Growth",
+            "Premium Yield",
+            "Days Claims Outstanding",
+            "Medical Costs Per Member",
+            "Administrative Cost Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio",
+            "Membership Growth",
+            "Premium Yield",
+            "Days Claims Outstanding",
+            "Medical Costs Per Member",
+            "Administrative Cost Ratio"
+        ],
+        "uncited_claims": [
+            "Forward P/E ratio of 13.7 represents a 40% discount to its 10-year historical average of 21.98",
+            "Serving approximately 50 million insurance members",
+            "Cash flows from operations of $24.2 billion in 2024",
+            "Fair value estimates range from $375-432 per share"
+        ]
+    }
+}

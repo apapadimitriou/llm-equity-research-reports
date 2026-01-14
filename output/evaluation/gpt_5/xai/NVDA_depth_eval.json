@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides limited causal explanation and sparse, unbenchmarked assumptions. It notes mechanisms such as \u201cmargin pressure amid rising competition\u201d and links growth to hyperscaler capex and supply constraints, e.g., \u201crevenue growth may moderate if supply constraints intensify.\u201d However, inference quality is weak: the fair value is a single point \u201cfair value estimate of $227.95\u201d sourced from analyst predictions, with \u201cwe omit specific revenue CAGR, margins, WACC.\u201d Data use is largely descriptive (revenue, EPS, margin prints) and not tied to explicit drivers (pricing, mix, cost structure) or validated via benchmarks. Counterpoints are acknowledged\u2014\u201cguidance may fall short of buy-side hopes\u201d and \u201ccould swing valuation by 20-30%\u201d\u2014but lack quantified sensitivities, scenarios, or methodological support. There are no ranges for margins or revenue under different competition/supply conditions, and no valuation framework (WACC, terminal growth) to translate risks into outcomes. Actionable implications are generic (\u201cpotential upside if AI adoption accelerates\u201d), without thresholds or decision-relevant triggers. Overall, the presence of some causal statements and explicit assumptions elevates it above Poor, but the absence of benchmarking and quantified sensitivity caps it at Fair.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Gross margin drivers (price, mix, costs) not decomposed",
+            "Data center demand tied to hyperscaler capex not quantified",
+            "Fair value lacks revenue growth, WACC, terminal growth linkage"
+        ],
+        "unsupported_assumptions": [
+            "Fair value $227.95 based on analyst predictions",
+            "Valuation could swing by 20\u201330% without methodology"
+        ],
+        "lack_of_sensitivity": [
+            "No margin or revenue sensitivity to competition or supply",
+            "No scenario analysis for China export restrictions or ASIC competition",
+            "Single-point price target without range"
+        ]
+    }
+}

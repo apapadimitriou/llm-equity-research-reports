@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials, ESG, Appendix, Sources) with reasonable sector context and multiple in-text citations. Valuation includes an explicit EPS bridge and DCF parameters, linking revenue growth and margin expansion to fair value. However, the Financials Snapshot is generic and omits core CRO/data analytics KPIs that are expected in tables (multi-year bookings, backlog, book-to-bill history, segment mix, cancellation/pass-through metrics), triggering the KPI hard cap. Peer benchmarking is minimal (one competitor mention, no comparative tables or sourced multiples), and there is no scenario or sensitivity analysis. Some claims lack citations (peer multiple alignment, beta, capital returns/FCF), and there is an inconsistency between adjusted EPS used in valuation and GAAP-like EPS shown in the Financials table without clarifying basis. Minor redundancy appears (backlog/book-to-bill repeated across sections with limited added depth). These gaps reduce comprehensiveness despite otherwise solid structure and linkage in valuation.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Peer Valuation Comparison"
+        ],
+        "sector_kpis_present": [
+            "Bookings ($2.1B)",
+            "Book-to-Bill (1.14x)",
+            "R&D Backlog ($31.5B)",
+            "Segment Growth (TAS +6.4% YoY)"
+        ],
+        "sector_kpis_missing": [
+            "Multi-year bookings/book-to-bill table",
+            "Backlog conversion rate",
+            "Segment revenue mix history/forecast",
+            "Cancellation rate",
+            "Pass-through revenue %"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS basis inconsistent: valuation uses 2024 adjusted EPS ($11.13) while Financials Snapshot shows 2024 EPS $7.49 without clarification",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value & Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Operating margin projections referenced from adjusted EBITDA margin, conflating margin definitions",
+                "locations": [
+                    "Fair Value & Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Multi-year bookings/book-to-bill in Financials Snapshot",
+            "Backlog conversion rate",
+            "Segment mix and pass-through revenue",
+            "Cancellation rates"
+        ],
+        "uncited_claims": [
+            "EV/EBITDA of 15x aligned with peer averages",
+            "Beta of 1.1 used in WACC",
+            "Dividend policy absent with capital returned via buybacks",
+            "2024 FCF supported debt reduction post acquisitions",
+            "No major controversies noted"
+        ]
+    }
+}

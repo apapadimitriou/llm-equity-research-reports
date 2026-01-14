@@ -1,0 +1,90 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid assumption quality across most dimensions. Key assumptions are explicitly stated with specific units and timeframes: retail revenue growth at 8% CAGR, AWS growth at 16% CAGR, advertising growth at 17% CAGR, total company growth at 10% CAGR through 2028, and operating margins expanding from 11% (2024) to 13% (2029). The DCF model includes detailed valuation drivers with WACC at 8.7%, cost of equity at 9.0%, and Stage II EBI growth at 8.8%. Assumptions are well-justified through historical performance context and peer comparisons. The financial tables are internally consistent with the narrative forecasts. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Good rather than Excellent despite otherwise strong assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model total retail-related revenue growing at an 8% compound annual growth rate (CAGR) over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Over the next five years, we project AWS revenue growing at a 16% CAGR and advertising revenue growing at a 17% CAGR.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In total, Amazon should grow at an 10% CAGR through 2028.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model GAAP operating margin expanding from 11% (actual) in 2024 to approximately 13% in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.7",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 11",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

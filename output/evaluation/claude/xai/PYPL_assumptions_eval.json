@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly justified. Key drivers like the 7% revenue CAGR and 20% terminal operating margin are stated without proper historical or peer support. The WACC of 9.5% is mentioned only in passing with minimal justification. Multiple internal contradictions exist: the report claims 5-year gross margins of 49% but forecasts operating margins reaching 20% without reconciliation, and EPS projections don't align with stated revenue/margin assumptions. The financial table mixes actual and extrapolated data without clear distinction. No quantitative sensitivity analysis is provided for any material drivers. While some assumptions are explicitly stated, they lack the evidence-based justification and specificity required for credible forecasting.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 7% from 2025-2029, driven by TPV growth of 8-10% and modest account expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve from 16% in 2024 to 20% by 2029 through cost efficiencies and higher-margin products",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 9.5%, reflecting fintech sector betas and a 3% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "3% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "buybacks (+$0.75, assuming $15 billion program reduces shares by 10%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 5-year gross margins of 49% but projects operating margins reaching 20% without reconciliation of the relationship",
+                "locations": [
+                    "Economic Moat section",
+                    "Fair Value and Profit Drivers section"
+                ]
+            },
+            {
+                "description": "Financial table mixes actual and extrapolated data without clear distinction, undermining reliability",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Table footnote"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% with minimal support",
+            "20% terminal operating margin without peer comparison",
+            "7% revenue CAGR without detailed historical analysis"
+        ]
+    }
+}

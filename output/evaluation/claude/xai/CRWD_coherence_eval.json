@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe temporal inaccuracies and multiple contradictions that undermine its coherence. Most critically, the report claims to be dated June 4, 2025, yet cites future sources from August 2025, creating impossible temporal relationships. The narrative contains unresolved contradictions between bullish statements about ARR growth (21.6% described as 'strong') and bearish concerns about the same metric representing 'deceleration.' The valuation section presents inconsistent assumptions, claiming both 10.4x and 10x forward revenue multiples for the same $500 fair value. Financial projections show internal inconsistencies, with EPS growth rates that don't align with the stated revenue CAGR assumptions. The sources section is problematic, mixing legitimate-looking investor relations URLs with vague references to 'Posts found on X.' Several sections read as bullet-point lists without meaningful transitions, particularly the Bulls/Bears section. While the overall structure exists and some technical analysis appears sound, these fundamental flaws in temporal accuracy, internal consistency, and source reliability severely compromise the report's credibility and coherence.",
+    "evidence": [
+        "Report dated 2025-06-04 cites source [2] from 2025-08-05, creating impossible temporal sequence (Sources section)",
+        "ARR growth of 21.6% simultaneously described as 'strong' (Analyst Note) and 'deceleration...indicating possible market saturation' (Bears Say)",
+        "Fair value calculation claims both '10.4x FY2026 revenue' and '10x forward revenue' for same $500 target (Fair Value section)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

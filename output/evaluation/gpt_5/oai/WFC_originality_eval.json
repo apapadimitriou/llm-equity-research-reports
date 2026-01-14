@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is rich in company detail but leans heavily on Reuters citations and standard banking tropes. Most \u201cinsights\u201d restate public facts: asset-cap removal as a growth catalyst, NII headwinds from higher deposit costs, cost-cutting progress, and a $40B buyback. The valuation relies on boilerplate DCF inputs (9\u201310% WACC, 2% terminal growth) and consensus EPS CAGR, without introducing novel drivers (e.g., deposit beta trajectory, securities book duration, or balance-sheet remix post-cap) that would change the narrative or valuation. There is one weak synthesis\u2014arguing NII stabilization as deposit costs normalize while fee businesses offset muted loan growth\u2014but it remains generic and unquantified. Decision-relevant elements (cap lift, buybacks, fair value target) are present, yet they mirror public headlines and do not add unique, company-specific mechanisms, catalysts, or timelines beyond what\u2019s widely reported. Peer comparisons are mentioned (JPM/BofA growth during cap period; ESG score differences), but without interpretive depth. Given \u22653 restated/generic insights and a valuation section lacking a novel driver, the assessment is capped at Fair despite some company specificity.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Fed lifted the $1.95T asset cap, enabling growth in cards, wealth, commercial banking, and dealmaking; analysts see ~20% EPS CAGR in 2026\u201328.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "NII pressure from rate cuts and higher deposit costs; management guided up to a 9% NII decline in 2024.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Our model: mid-single-digit revenue growth, operating margin improving from ~18% (2024) to ~21% (2029), yielding ~$85 FVE at 9\u201310% discount rate.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Medium-term NII should stabilize as deposit costs normalize while fee businesses (IB, wealth) offset flat consumer loans.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Capital returns are a priority: $40B buyback and gradual dividend increases; share count cut ~6\u20137% annually (2022\u201324).",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Wells trades at modest P/B and P/E vs large peers; fair value equates to ~12\u201313x 2026 EPS, in line with long-term averages.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Regulatory recap (asset cap, enforcement) without deeper company-specific mechanism"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 4,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

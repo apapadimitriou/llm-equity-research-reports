@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are explicit and proximal to the valuation, with specific magnitudes and time horizons provided for revenue growth (4\u20136%), operating margins (scaling to 2.1%), and tax rates (21%). These inputs are internally consistent; the 'Financials Snapshot' table aligns perfectly with the narrative's forecasts. Justification is present but limited, relying on broad qualitative drivers like Medicare Advantage enrollment and cost-control measures without providing deep historical context or peer benchmarking to support the projected margin expansion. The primary factor limiting the grade is the absence of quantified sensitivity analysis. While the report identifies material risks\u2014such as opioid litigation and regulatory drug-pricing pressures\u2014it fails to provide quantified ranges, 'what-if' scenarios, or a sensitivity matrix showing how changes in these drivers would impact the $86 fair value estimate. Per the mandatory grading caps, the lack of quantified stress-testing for material levers necessitates a 'Fair' grade, as the valuation remains a 'black-box' regarding its resilience to downside risks. Additionally, the share count assumption is opaque, despite the report's reliance on EPS forecasts.",
+    "assumptions_extracted": [
+        {
+            "quote": "approximately 4\u20136% annual revenue growth (driven by drug volume and MA enrollments)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "gradual rise in adjusted operating margin from ~1.4% in FY2024 to ~2% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of about 7.0\u20137.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "normalized tax rate (~21%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "capital expenditure of ~$3\u20134 B/year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0-7.5% stated without derivation or market source",
+            "Terminal growth 2% stated without economic justification",
+            "Tax rate 21% stated without historical or statutory context"
+        ]
+    }
+}

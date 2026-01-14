@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including a 4% revenue CAGR through fiscal 2029 and a 200-basis-point operating margin expansion. These are justified qualitatively through the discussion of new product cycles such as renal denervation and pulsed field ablation. The report also clearly defines its cost of capital (WACC 7.1%) and long-run tax rate (18%) within a dedicated valuation table. However, the report fails to meet the criteria for a 'Good' or 'Excellent' grade due to a total lack of quantified sensitivity analysis or scenario modeling for its material drivers. While the methodology section describes the use of scenario analysis, the report itself provides only a single-point fair value estimate without demonstrating how variations in growth or margin would impact the $112 valuation. Furthermore, there is a minor internal numeric inconsistency: the narrative explicitly forecasts operating margins peaking at 21% in fiscal 2029, whereas the 'Morningstar Valuation Model Summary' table lists the 2029 operating margin at 20.5%. This contradiction, combined with the absence of quantified sensitivities, triggers the hard cap for a 'Fair' rating. The justification for the margin expansion is also somewhat hand-wavy, relying on the 'shedding of legacy businesses' without providing a detailed bridge or historical peer comparison to support the specific 200-basis-point magnitude.",
+    "assumptions_extracted": [
+        {
+            "quote": "We anticipate that the adoption of renal denervation, extravascular cardiac rhythm devices, and pulsed field ablation should support estimated 4% top-line growth through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our estimated 200 basis point improvement in operating margin would peak at 21% in fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We estimate 4% average annual revenue growth from the cardiovascular group through fiscal 2029, and 5% annualized growth in the neuroscience unit",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6-7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 18.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 1,284 [for 2027-2029]",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims operating margin will peak at 21% in fiscal 2029, but the valuation model table forecasts 20.5% for the same period.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 7",
+                    "Morningstar Valuation Model Summary, Page 14"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "200 basis point improvement in operating margin is stated without a detailed cost-savings or mix-shift bridge."
+        ]
+    }
+}

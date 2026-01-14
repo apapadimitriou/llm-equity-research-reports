@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains some causal statements like \"net income $8.1B ($1.96 per share) on revenues of $21.7B\" and \"credit costs increased 15% to $2.7 billion due to higher losses,\" these lack meaningful mechanism explanation. The report presents assumptions such as \"revenue compound annual growth rate of 3-5%\" and \"WACC assumption of approximately 9-10%\" but provides no benchmarking, sensitivity analysis, or stress testing. Key projections like \"ROE: 10-11% by 2026\" appear without supporting calculations or range scenarios. The fair value estimate of \"$135.54 per share\" lacks transparency in methodology. Most content consists of factual summaries rather than analytical reasoning about causation, risk quantification, or decision-relevant implications with proper uncertainty treatment.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "transformation program \u2192 cost savings linkage not explained",
+            "regulatory fines \u2192 operational impact mechanism absent",
+            "credit normalization \u2192 earnings impact pathway unclear"
+        ],
+        "unsupported_assumptions": [
+            "revenue growth 3-5% CAGR with no industry benchmark",
+            "WACC 9-10% without peer comparison",
+            "terminal growth 2.5% unjustified"
+        ],
+        "lack_of_sensitivity": [
+            "fair value $135.54 with no range or scenarios",
+            "ROE targets with no stress testing",
+            "no quantified regulatory risk impact"
+        ]
+    }
+}

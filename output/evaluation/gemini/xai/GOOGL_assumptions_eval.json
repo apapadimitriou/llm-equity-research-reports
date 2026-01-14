@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions criteria due to multiple severe internal contradictions and a lack of quantified sensitivity analysis. While key drivers like revenue growth (12% CAGR) and operating margins (33% by 2029) are explicitly stated, they are undermined by fundamental errors. First, there is a massive numeric contradiction in the 'Financials Snapshot' table, which lists 2024A revenue as $3,580 billion\u2014a figure ten times larger than the surrounding years and clearly a typo that invalidates the table's integrity. Second, the WACC calculation is mathematically incoherent: the report cites an 8.5% WACC based on a 6% risk-free rate, a 5% equity risk premium, and a 1.1 beta. Using the Capital Asset Pricing Model (CAPM), these inputs should result in an 11.5% cost of equity/WACC, making the 8.5% figure an unjustified and contradictory plug. Furthermore, the report lacks any quantified sensitivity or scenario analysis for material drivers such as interest rates, margin compression, or revenue growth, offering only a vague qualitative mention of valuation swings related to regulatory risk. These two distinct numeric contradictions, combined with the absence of robust stress-testing, trigger a 'Poor' grade under the mandatory decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "discounted cash flow model assuming 12% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 32% by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of 8.5%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "capital expenditure outlook to $85 billion for 2025",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "EPS growth from $7.50 in FY 2025 to $12.00 in FY 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The WACC components (6% Rf + 1.1 Beta * 5% ERP) mathematically equal 11.5%, but the report uses 8.5%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix - Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "The Financials Snapshot table lists 2024A Revenue as $3580.0B, which is a massive outlier/typo compared to 2023A ($307.4B) and 2025E ($400.0B).",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% (mathematically inconsistent with stated components)",
+            "2024A Revenue estimate"
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely deficient across all quality dimensions. Key financial projections lack any justification - revenue jumping from $27.4B to $42.8B with no explanation, EPS forecasts with no methodology, and a $245 fair value estimate with no supporting calculations despite claiming DCF analysis. Critical valuation inputs like 9.5% WACC and 2.5% terminal growth are stated without sources or derivation. The report contains multiple contradictions: claims normalized earnings recovery by 2026 while projecting $2.15 EPS, states 7.0-7.3% NIM targets but provides no current baseline, and mentions $1.2B synergies without quantification methodology. No sensitivity analysis exists for any material drivers. Most assumptions appear in an appendix without connection to the forecasts they supposedly drive. The analysis reads more like a business overview than a rigorous financial model with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 9.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Credit card revenue CAGR 2025-2027: 3.1%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target efficiency ratio: 52-55%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Revenue growth projections incorporate several key drivers. Credit card revenues are expected to increase at a 3.1% compound annual growth rate through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The model assumes margins stabilize around 7.0-7.3% through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims normalized earnings recovery by 2026 but projects EPS of only $2.15 for 2025E with recovery to $12.85 in 2026E without explaining this dramatic swing",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "States fair value estimate reflects comprehensive DCF analysis but provides no actual DCF calculations, discount factors, or cash flow projections",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Cover Block"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without derivation",
+            "Terminal growth 2.5% without justification",
+            "Revenue CAGR 3.1% without support",
+            "NIM 7.0-7.3% without current baseline"
+        ]
+    }
+}

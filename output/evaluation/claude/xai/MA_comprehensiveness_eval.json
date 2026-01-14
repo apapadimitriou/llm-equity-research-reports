@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a clear structure, but suffers from significant deficiencies that prevent a higher grade. While all major sections are present, the Financials Snapshot lacks critical sector-specific KPIs for financial services (NIM, ROE, Tier 1 capital ratios, loan loss provisions) despite Mastercard being categorized in the Financials sector. The valuation section provides some linkage between drivers and fair value but lacks detailed sensitivity analysis or scenario modeling. Several claims lack proper citations, particularly the Sustainalytics ESG rating which explicitly states 'Insufficient data for specific source.' The report demonstrates good coverage of competitive positioning and capital allocation, but the absence of peer benchmarking tables and quantitative comparisons weakens the analysis. Some redundancy exists across sections, particularly regarding transaction growth statistics.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Tables",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ROE",
+            "ROA",
+            "Net Interest Margin",
+            "Tier 1 Capital Ratio",
+            "Loan Loss Provisions"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ROE",
+            "ROA",
+            "Net Interest Margin",
+            "Tier 1 Capital Ratio"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG rating explicitly states insufficient data for source",
+            "Market share at 25% globally referenced without citation",
+            "Terminal growth rate assumptions lack supporting data"
+        ]
+    }
+}

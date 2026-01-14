@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear connection to forecasts. While some financial projections appear in the Financials Snapshot table, the underlying assumptions driving these numbers are not explicitly stated or justified. Key drivers like WACC (11.5%), terminal growth (3.0%), and pipeline success rates (25% oncology, 60% respiratory) are buried in the appendix without supporting rationale or sources. Revenue projections assume $2.0B for 2025 and growth to $8.3B by 2029, but the specific assumptions about market share, pricing, and competitive dynamics lack justification. The report contains internal contradictions, such as claiming 'very high uncertainty' while providing precise EPS forecasts through 2029. No sensitivity analysis is provided for any material drivers, and most assumptions lack historical benchmarking or peer comparisons. The DCF methodology is mentioned but key inputs remain unjustified black-box parameters.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue projections assume 2025 sales of $2.0 billion at the midpoint of management guidance, with growth resuming in 2026 as new products launch",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our WACC assumption of 11.5% reflects the company's current capital structure and biotechnology sector risk profile",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Current GAAP operating expenses of approximately $5.5 billion are targeted for reduction to $4.0-4.3 billion by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Pipeline success rate: 25% for oncology, 60% for respiratory",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report claims 'very high uncertainty' in uncertainty rating but provides precise EPS forecasts through 2029 without ranges or scenarios",
+                "locations": [
+                    "Cover Block uncertainty rating",
+                    "Financials Snapshot EPS projections"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 11.5% without source or calculation",
+            "Terminal growth 3.0% without justification",
+            "Pipeline success rates without historical benchmarks",
+            "Revenue growth assumptions without market sizing"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid assumption quality across most pillars. Key assumptions are explicitly stated and proximal to forecasts, including specific growth rates (net revenue CAGR >2.5%, AUM growth 6%-8%, investment banking 2.5% CAGR, NII 8% CAGR), operating margins (~26%), leverage ratios (12-13x), and cost of equity (9%). Most assumptions are well-justified with historical context, peer comparisons, and management targets. The report provides comprehensive specificity with clear units, timeframes, and drivers. Internal consistency is maintained throughout with no contradictions identified. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Good despite otherwise strong assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a net revenue compound annual growth rate of over 2.5% during the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast assets under management growing at a 6%-8% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We expect investment banking revenue to grow at a 2.5% compound annual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We have net interest income growing at a 8% compound annualized growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We model across-a-cycle operating margins of around 26%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We calculate Morgan Stanley earning about a 18% return on average tangible common equity and having a long-term gross leverage ratio of 12-13 times",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Last, we use a cost of equity of 9% in our discounted cash flow model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "revenue_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

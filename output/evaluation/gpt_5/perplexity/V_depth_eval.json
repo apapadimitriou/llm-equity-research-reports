@@ -1,0 +1,27 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates meaningful causal reasoning and explicit, quantified assumptions but lacks benchmarking and robust sensitivity analysis. Causality is articulated (e.g., \u201cdriven by recovering cross-border travel and e-commerce growth\u201d) and mechanisms like network effects, scale, and value-added services are used to explain margins and growth. Forecasts are tied to drivers with quantification (\u201cRevenue growth is projected at a 9-12%\u201d), and key valuation inputs are made explicit (\u201cWACC: 8.5%\u201d and \u201cTerminal growth rate: 3.0%\u201d). The model projects margins (\u201cOperating margins are expected to remain in the 65-68% range\u201d) and offers a fair value range (\u201cfair value ranges from $350-$420\u201d), plus quantified regulatory risk (\u201ccould reduce revenue by 1-2%\u201d). However, assumptions are not benchmarked against peers or history, and the fair value range isn\u2019t decomposed into driver-specific scenarios. There is no sensitivity tying changes in cross-border volumes, interchange caps, or value-added services adoption to EPS or valuation, and no scenario tables or ranges for key inputs (e.g., WACC, terminal growth). Actionable elements are present (Price/FVE, fair value), but decision-relevant implications remain high-level rather than conditional. Overall, strong mechanisms and quantification elevate the analysis beyond description, yet the absence of benchmarking and detailed sensitivities caps the depth at Fair.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "FV range not linked to specific driver changes",
+            "No EPS sensitivity to cross-border volume changes",
+            "Value-added services margin uplift not quantified by unit economics"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.5% without peer or historical benchmark",
+            "Terminal growth 3.0% without industry validation"
+        ],
+        "lack_of_sensitivity": [
+            "No valuation sensitivity to interchange fee caps",
+            "No ranges provided for WACC, margins, or volume growth"
+        ]
+    }
+}

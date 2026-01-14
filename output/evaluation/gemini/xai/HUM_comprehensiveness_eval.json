@@ -1,0 +1,56 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections, but fails to meet the depth and evidence standards required for a higher grade. Most significantly, the Financials Snapshot is generic and lacks critical sector-specific KPIs for Managed Care, such as Medical Loss Ratio (MLR) and Membership enrollment figures in the tabular data. While MLR is mentioned in the text, its absence from the multi-year forecast table constitutes a major omission. Furthermore, the report explicitly admits to 'insufficient data' for several material claims, including CenterWell expansion specifics, MLR differentials versus peers, and direct ESG sourcing, which violates the requirement for consistent evidence and citations. The valuation section provides a basic link from drivers to fair value but lacks the necessary scenario or sensitivity analysis to address the 'High' uncertainty rating. Peer context is also minimal, with no formal benchmarking table or comparative analysis against industry leaders like UnitedHealth or CVS. These deficiencies, combined with redundancy regarding Q2 earnings across the Analyst Note and Bulls/Bears sections, trigger hard caps that limit the grade to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR) in table",
+            "Membership Enrollment (MA/Commercial)",
+            "PMPM (Per Member Per Month) Trends",
+            "Days Claims Payable (DCP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR) in Financials Snapshot",
+            "Medicare Advantage Membership counts",
+            "PMPM metrics"
+        ],
+        "uncited_claims": [
+            "MLRs 2-3 points below smaller competitors [insufficient data]",
+            "CenterWell expansion specifics for 2025 [insufficient data]",
+            "Sustainalytics ESG risk score [insufficient data for direct link]"
+        ]
+    }
+}

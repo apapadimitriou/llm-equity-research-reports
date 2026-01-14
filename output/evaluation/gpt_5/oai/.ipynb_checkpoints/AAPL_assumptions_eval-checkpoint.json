@@ -1,0 +1,92 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Material valuation drivers are explicitly laid out near the forecasts (revenue CAGR, margin path, WACC/COE, terminal growth, tax rate), and numeric specificity is solid: magnitudes, units, and horizons are stated (e.g., FY2024\u20132029, %, $ billions). Some justification is provided\u2014e.g., WACC tied to Apple\u2019s low financial risk, tax rate aligned with recent history, margin expansion linked to Services mix\u2014but evidence is partial and not comprehensive (limited peer/history benchmarking and few cited sources for discount-rate components). Internal consistency is mostly clean: narrative revenue/margin paths reconcile with the forecast table, and implied valuation multiples are shown. However, there is no quantified sensitivity/scenario analysis for key levers (revenue growth, margins, rates, terminal growth), triggering a cap at Fair. A few important inputs are opaque or underdeveloped (no explicit share count trajectory despite buybacks; no capex or working capital assumptions underpinning FCF). Overall, the assumptions are adequately explicit and specific but only partially justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming ~4% compound annual revenue growth over FY2024\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecast to remain in the low-30s (%), inching up slightly... we model this improving toward ~33% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a weighted average cost of capital of about 8% for Apple",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of ~2.5% beyond 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Effective Tax Rate ~16%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Cost of Equity                | ~8.5%                         | Based on CAPM with \u03b2\u22481.2, RF ~4%, ERP ~4%.",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "These assumptions yield mid-single-digit EPS growth, from $6.11 in FY2024 to roughly $9 in FY2029 (helped by continued share buybacks)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC ~8% without detailed source/peer benchmarking",
+            "Cost of Equity ~8.5% (CAPM inputs not reconciled to market evidence)",
+            "Terminal Growth 2.5% (no cited macro source)",
+            "Cost of Debt ~2% after-tax (no source/term structure provided)"
+        ]
+    }
+}

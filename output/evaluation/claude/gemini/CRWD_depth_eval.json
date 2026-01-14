@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report exhibits some causal mechanisms and explicit assumptions but lacks sufficient benchmarking, quantified sensitivity analysis, and robust scenario testing. The analysis provides causal explanations like \"NII was $14.6B, driven by higher yielding assets\" and \"operating costs grow slower than revenue due to scale,\" but many assumptions remain unsupported. The DCF model includes explicit assumptions (\"19.5% 5Y Revenue CAGR,\" \"WACC: 8.9%,\" \"terminal growth rate of 3.5%\") but these lack industry benchmarks or stress testing. The scenario analysis is superficial, showing bull/bear cases without exploring probability distributions or detailed sensitivity ranges. While the report identifies \"elongated sales cycles\" as a post-outage impact and notes \"GAAP loss from operations widened dramatically to $(113.0) million,\" it fails to quantify the range of potential outcomes or provide decision-relevant thresholds. The competitive analysis mentions threats but doesn't model their quantitative impact on market share or pricing power.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "outage impact \u2192 customer churn quantification not modeled",
+            "competitive pressure \u2192 pricing power degradation not quantified"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3.5% with no GDP/industry benchmark",
+            "margin expansion to 26% without peer comparison",
+            "WACC 8.9% adjustment lacks justification"
+        ],
+        "lack_of_sensitivity": [
+            "DCF scenarios show point estimates without probability ranges",
+            "no stress testing of key assumptions like growth rates or margins",
+            "outage impact modeled as binary rather than range of outcomes"
+        ]
+    }
+}

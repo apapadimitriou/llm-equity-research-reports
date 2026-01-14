@@ -1,0 +1,92 @@
+[
+    {
+        "grade": "Poor",
+        "summary_reasoning": "The report initially appears robust, providing explicit assumptions and quantified scenario analysis. However, it fails the consistency and justification pillars due to multiple major internal contradictions. First, there is a significant numeric discrepancy: the narrative claims a Price/Sales ratio 'exceeding 24x,' while the summary table and the report's own market cap/revenue data ($103B/$4.78B) clearly indicate ~21.5x. Second, the report contains a fundamental methodological contradiction in its WACC calculation. The author calculates a 9.87% cost of capital but adjusts it downward to 8.9% to account for 'High Uncertainty' and 'execution risk.' In standard financial theory, higher risk and uncertainty require a higher discount rate; lowering the rate to reflect risk is a logical failure that artificially inflates the valuation. Third, the report notes that GAAP operating losses 'widened dramatically' to $(113)M due to the 2024 outage and 'elongated sales cycles,' yet the DCF assumes GAAP margins will reach 'high single digits' by the end of the period without providing a specific bridge or causal driver for this reversal. Per the hard caps in the instructions, two or more distinct contradictions mandate a 'Poor' grade.",
+        "assumptions_extracted": [
+            {
+                "quote": "We model a five-year revenue compound annual growth rate (CAGR) of 19.5%.",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "We forecast non-GAAP operating margins to expand from the guided midpoint of approximately 21% in fiscal 2026 to 26% by fiscal 2029.",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "margin/efficiency"
+            },
+            {
+                "quote": "we apply a modest downward adjustment to the calculated WACC, arriving at a final discount rate of 8.9% for our base case.",
+                "location": {
+                    "section": "Weighted Average Cost of Capital (WACC): 8.9%",
+                    "page": "unknown"
+                },
+                "driver_type": "WACC/COE"
+            },
+            {
+                "quote": "We assume a perpetual growth rate of 3.5% for the company's free cash flows beyond the explicit forecast period.",
+                "location": {
+                    "section": "Terminal Growth Rate",
+                    "page": "unknown"
+                },
+                "driver_type": "terminal_growth"
+            },
+            {
+                "quote": "We model the company's free cash flow margin... to remain robust, averaging approximately 28% over the five-year forecast period.",
+                "location": {
+                    "section": "Free Cash Flow Margin",
+                    "page": "unknown"
+                },
+                "driver_type": "other"
+            }
+        ],
+        "checks": {
+            "explicitness": true,
+            "justification_with_evidence": "partial",
+            "specificity_units_horizon": "solid",
+            "internal_consistency": "contradiction_found",
+            "sensitivities_present": true,
+            "sensitivities_quality": "robust_quant",
+            "material_drivers_covered": [
+                "revenue_growth",
+                "margin/efficiency",
+                "WACC/COE",
+                "terminal_growth"
+            ]
+        },
+        "flags": {
+            "contradictions": [
+                {
+                    "description": "The text claims a P/S ratio exceeding 24x, but the table and underlying data ($103B cap / $4.78B revenue) show 21.5x.",
+                    "locations": [
+                        "The Bear Case: A Premium Price for Navigating Post-Outage Turbulence",
+                        "Key Stock & Valuation Data Table"
+                    ]
+                },
+                {
+                    "description": "The author adjusts the WACC downward (from 9.87% to 8.9%) to account for 'High Uncertainty' and 'execution risk,' which is mathematically and theoretically inverse to standard valuation practices.",
+                    "locations": [
+                        "Final WACC Calculation"
+                    ]
+                },
+                {
+                    "description": "The report highlights widening GAAP losses and 'elongated sales cycles' as a bear case, but the DCF assumes a move to high-single-digit GAAP profitability without a reconciled bridge.",
+                    "locations": [
+                        "The Bear Case",
+                        "Operating Margins (DCF section)"
+                    ]
+                }
+            ],
+            "missing_or_opaque_assumptions": [
+                "share_count"
+            ],
+            "unjustified_parameters": [
+                "Terminal growth of 3.5% for a 'Narrow' moat company (typically capped at GDP/Inflation)."
+            ]
+        }
+    }
+]

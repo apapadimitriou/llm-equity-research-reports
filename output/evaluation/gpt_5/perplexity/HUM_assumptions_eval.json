@@ -1,0 +1,110 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are explicitly stated and proximate to the forecasts (revenue CAGR, WACC, terminal growth, tax rate), with clear units and time horizons. Specificity is solid for several drivers (e.g., \u201c6.6%\u201d five-year revenue CAGR, \u201c8.5%\u201d WACC, \u201c3.0%\u201d terminal growth, \u201c24%\u201d tax rate, CenterWell margin target by 2029, star-rating recovery by 2027). However, justification is limited: most parameters (WACC, terminal growth, tax rate, CAGR) lack support from multi-year history, peer benchmarks, or cited sources within the report. Sensitivity analysis is only partially quantified (a $275\u2013$350 FVE range) and not tied to quantified driver ranges, leaving material levers (star ratings, CenterWell growth) unparameterized. Internal consistency suffers from a numeric contradiction: the narrative projects EPS of \u201c~$20\u201322 by 2028\u201d while the financial table shows \u201c$23.41\u201d for 2028E. Several material drivers are missing or opaque (share count, capex/FCF build, segment-level revenue/margin bridges, working capital), and valuation multiples (EV/EBITDA, P/B) are asserted without reconciliation. Overall, assumptions are explicit and specific but weakly justified, with limited sensitivity and a contradiction, warranting a Fair grade under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming revenue compound annual growth rate (CAGR) of 6.6% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The weighted average cost of capital (WACC) assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 24.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Star ratings recovery by 2027",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "CenterWell segment margin expansion to 12% by 2029",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Sensitivity analysis indicates fair value ranges from $275-350 per share depending on star ratings outcomes and CenterWell growth acceleration",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "reduce Medicare Advantage membership by 550,000 members",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative EPS projection (~$20\u201322 by 2028) conflicts with table EPS 2028E ($23.41)",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "segment-level revenue/margin bridges",
+            "working_capital",
+            "driver-to-valuation mapping in sensitivities"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without source",
+            "Tax rate 24.0% without source",
+            "Revenue CAGR 6.6% weakly supported"
+        ]
+    }
+}

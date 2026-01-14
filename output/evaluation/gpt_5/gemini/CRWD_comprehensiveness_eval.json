@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers almost all expected sections: a clear executive summary, business description, strategy and outlook (embedded in thesis), bull/bear drivers, competitive positioning/economic moat, detailed valuation (DCF plus relative), risk analysis, capital allocation, ESG, peer context, and a works-cited section. The valuation is well-articulated, with explicit operating driver assumptions (revenue CAGR, margin trajectory, FCF margin, WACC) and includes bull/base/bear scenarios\u2014strong linkage from drivers to value. Peer benchmarking appears with both qualitative and a small quantitative table. However, the Financials Snapshot is narrative and quarterly-focused; it lacks a multi-year historical and forecast table and omits several core SaaS KPIs (e.g., dollar-based net retention, subscription gross margin, RPO, CAC payback), despite including ARR, net new ARR, module adoption, renewal rate, and FCF margin. Sourcing is generally present but not fully consistent; at least one ESG citation appears mismatched, and some comparative multiples/figures are not directly sourced. There is a methodological inconsistency in lowering WACC while citing higher uncertainty. Redundancy is limited as the risk section adds modest new angles beyond the bear case. Given the missing core SaaS KPIs in the financial snapshot (\u22652 omissions), the report is capped at Fair despite otherwise strong breadth.",
+    "content_checks": {
+        "sections_present": [
+            "Executive Summary / Analyst Note",
+            "Business Description / Company Overview",
+            "Business Strategy & Outlook",
+            "Bull/Bear Drivers",
+            "Competitive Positioning / Economic Moat",
+            "Peer Analysis",
+            "Valuation & Financial Model",
+            "Scenario Analysis",
+            "Risk Analysis",
+            "Capital Allocation",
+            "ESG Profile",
+            "Financials Snapshot",
+            "Sources / Works Cited"
+        ],
+        "sections_missing": [
+            "Appendix/Glossary",
+            "Contents page",
+            "Detailed multi-year financials table (history + forecasts)"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "Net New ARR",
+            "Module adoption (5+/8+ modules)",
+            "Renewal rate (~97%)",
+            "Free cash flow margin (~24%)",
+            "Revenue growth",
+            "Non-GAAP EPS"
+        ],
+        "sector_kpis_missing": [
+            "Dollar-based net retention (DBNRR)",
+            "Subscription gross margin",
+            "Remaining performance obligations (RPO)",
+            "Customer count / adds",
+            "CAC payback / sales efficiency"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC adjusted downward to 8.9% while citing higher uncertainty (which would typically imply a higher discount rate)",
+                "locations": [
+                    "Financial Model & Valuation - DCF assumptions"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "DBNRR",
+            "Subscription gross margin",
+            "RPO",
+            "Customer count/adds",
+            "CAC payback"
+        ],
+        "uncited_claims": [
+            "EV/FY26E Sales ~21.5x not directly sourced in-text",
+            "Sustainalytics ESG Risk Score (18.6) appears linked to a mismatched source in the works cited",
+            "Peer table PANW market cap (~$127B) presented without a clear supporting source"
+        ]
+    }
+}

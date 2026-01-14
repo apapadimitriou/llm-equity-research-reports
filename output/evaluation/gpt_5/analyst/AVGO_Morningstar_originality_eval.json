@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains several company-specific syntheses alongside a meaningful amount of restated management guidance and boilerplate moat/DCF framing. Notably, it links valuation to the growth required in AI chips (implying ~75% FY26\u201327 growth versus the author\u2019s 60% forecast) and quantifies share-of-SAM capture and AI revenue trajectories (e.g., >40% CAGR through 2029, two\u2011thirds of 2027 SAM). It adds peer-specific detail on iPhone dollar content and argues FBAR defensibility against Apple\u2019s in\u2011house plans, plus flags emerging inference demand as potential upside\u2014each decision-relevant to varying degrees. However, multiple insights are restatements (AI revenue targets and VMware growth), and the valuation section\u2019s primary drivers (AI chips, VMware leverage) are standard for Broadcom with no novel mechanisms, triggering a hard cap at Fair. Specificity and numbers are present (growth rates, revenue targets, share assumptions, timelines to 2027), improving actionability, but there is no fully formed original thesis with catalysts beyond consensus AI themes. Boilerplate moat language and generic DCF methodology further reduce originality. Overall, the piece clears the bar for some synthesis and decision relevance but remains capped at Fair due to reliance on common drivers and several restatements.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Shares imply Broadcom hitting the upper end of its fiscal 2027 target range, which implies close to 75% AI chip growth in fiscal 2026 and 2027 vs our 60%.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "We now expect Broadcom to hit $50 billion in AI revenue in fiscal 2027, up from $12 billion in fiscal 2024.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Broadcom is now seeing inference demand on the horizon for its accelerator customers, which could provide further upside to training\u2011centric targets.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "VMware remains the second\u2011largest growth driver, rising more than 60% year over year due to upselling VMware Cloud Foundation.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We model AI chip sales rising at >40% CAGR through 2029 and forecast Broadcom to capture more than two\u2011thirds of the 2027 SAM.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Average dollar content in iPhone is ~$20 for Broadcom (about $10 from FBAR modules) vs Skyworks ~$12 and Qorvo ~$5, underscoring FBAR defensibility.",
+                "classification": "Synthesis",
+                "decision_relevant": false
+            },
+            {
+                "text": "We don\u2019t foresee immediate risk from Apple\u2019s modem plans; FBAR is among the hardest components for Apple to displace.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "AI accelerator revenue concentration poses risk; spending changes by a handful of large customers can create fluctuations.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate moat language on switching costs/intangibles",
+            "Cross-coverage AI commentary (DeepSeek) not company-specific"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 5,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

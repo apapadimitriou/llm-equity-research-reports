@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated and proximal to the forecasts (Appendix and Fair Value sections), with clear units and horizons: revenue CAGR (2024\u20132029), terminal margin, WACC, tax rate, and terminal growth. Specificity is solid\u2014assumptions are quantified and reconcile broadly with the forecast table (e.g., margins trending toward 25.8%). Justification is partial: narrative references to data center/AI momentum and historical margins provide context, but core parameters (WACC 8.5%, terminal growth 3%, tax rate 17%) lack evidence ties to market rates, peer benchmarks, or cited sources. Internal consistency has a notable issue: the text states \u201cmid-teens\u201d revenue CAGR while the Appendix specifies 12.8%, which is lower than mid-teens; this unresolved contradiction caps the grade at Fair. Stress-testing is absent\u2014no quantified sensitivity/scenario analysis is provided for material levers (AI revenue scaling, margins, WACC/terminal growth)\u2014further capping the assessment. Several material assumptions (share count/dilution, capex intensity, working capital) are missing or opaque, limiting auditability. Overall, the assumptions are explicit and specific but weakly justified, with one contradiction and no quantified sensitivities.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2024-2029: 12.8%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to the mid-20% range over the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Operating Margin: 25.8%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate: 17%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Revenue growth assumptions incorporate mid-teens compound annual growth through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states 'mid-teens' revenue CAGR while Appendix specifies 12.8% CAGR (low-teens).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without source",
+            "Tax rate 17% without source",
+            "Terminal operating margin 25.8% without source"
+        ]
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and located near the forecasts (Fair Value and Profit Drivers; Appendix). Specificity is strong: key drivers are quantified with magnitudes, units, and time horizons (e.g., revenue CAGR, iPhone/Services growth, gross margin path, WACC components, terminal growth, exit operating margin). Justification is partial: some links to recent history (gross margin starting at Q2 FY25 47.1%) and general rationales (services mix, privacy-driven ecosystem, risk-free tied to government yields), but there is limited evidence from multi-year history or peer benchmarks and few cited sources anchoring growth/margin trajectories. Internal consistency has a measurable issue: the forecast table implies ~5.6% revenue CAGR FY25\u201329 versus stated 6\u20137%/6.5%, and this discrepancy is not reconciled. Sensitivity analysis is limited: tariffs are quantified (25% gross, ~15% net valuation downside), but other material drivers (Services growth, margins, WACC, terminal rate) lack quantified ranges or scenario impacts. Given the contradiction and narrow sensitivity coverage, the overall quality of assumptions meets the Fair standard rather than Good.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a five-year compound annual revenue growth rate (CAGR) of 6-7% through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "iPhone Revenue: We model 5-6% annual growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Services Revenue: We forecast robust annual growth of over 10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast gross margins will expand from 47.1% in the second quarter of fiscal 2025 toward 50% by fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model employs a weighted average cost of capital (WACC) of 8.23%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Exit Operating Margin 34.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model a potential 25% gross downside risk to our valuation... resulting in a net risk of approximately 15%.",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated revenue CAGR (6\u20137% / 6.5%) vs forecast table implies ~5.6% FY25\u201329",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix \u2014 Key Valuation Assumptions",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "working_capital",
+            "App Store commission rate trajectory (magnitude/timing)"
+        ],
+        "unjustified_parameters": [
+            "Gross margins toward 50% by FY29 with limited evidence beyond mix-shift narrative",
+            "Terminal Growth Rate 3.0% supported only by high-level GDP rationale"
+        ]
+    }
+}

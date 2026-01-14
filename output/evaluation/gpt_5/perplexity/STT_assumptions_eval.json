@@ -1,0 +1,90 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key inputs are mostly explicit and proximate to the valuation section (fee revenue and management fee growth ranges, expense growth, margin trajectory, WACC, terminal growth). Specificity is solid: ranges, units, and time horizons are stated, and the EPS bridge quantifies contributions. However, justification is partial: while some figures are referenced to recent results (e.g., Q4/Q1 margins/fee trends), core valuation parameters like WACC (9.2%) and terminal growth (2.5%) lack sourcing or peer/market evidence. Major banking drivers (NII/NIM path, tax rate, credit costs, capex) are absent or opaque, limiting robustness. Internal consistency appears clean with no contradictions between narrative and tables. Sensitivity is limited to ranges on a few drivers and EPS component bands; there is no quantified scenario analysis showing valuation or target impact across material levers. Given partial justification and limited stress-testing, the assumptions quality aligns with Fair under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Fee revenue growth: 4-6% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Expense growth: 2-3% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model pre-tax margins expanding gradually to 29-30% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We project management fees growing 8-10% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "share repurchases contributing $0.05-0.10",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "tax_rate",
+            "credit_cost",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without source",
+            "Terminal growth rate 2.5% without source"
+        ]
+    }
+}

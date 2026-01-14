@@ -1,0 +1,73 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it contains extensive content, it lacks a proper table of contents matching the actual sections, omits critical pharmaceutical sector KPIs (R&D as % of revenue, pipeline value, regulatory milestones), and provides no peer benchmarking despite operating in a highly competitive market. The financials snapshot is generic with basic metrics rather than sector-specific KPIs like clinical trial success rates, patent cliff analysis, or drug approval timelines. Most critically, the valuation section fails to explicitly link operating drivers to the $900 fair value estimate. Sources are listed but not consistently cited throughout the text, with many claims appearing unsupported. The report reads more like a comprehensive company overview than a rigorous equity research analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Revenue",
+            "Pipeline Value",
+            "Patent Cliff Timeline",
+            "Clinical Trial Success Rates",
+            "Drug Approval Milestones",
+            "Regulatory Timeline Analysis"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 53% GLP-1 market share but provides no peer comparison context",
+                "locations": [
+                    "Analyst Note",
+                    "Business Strategy"
+                ]
+            },
+            {
+                "description": "States comprehensive sources but many key claims lack in-text citations",
+                "locations": [
+                    "Throughout"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D as % of Revenue",
+            "Pipeline Value",
+            "Patent Cliff Analysis",
+            "Clinical Trial Success Rates",
+            "Regulatory Milestone Tracking"
+        ],
+        "uncited_claims": [
+            "$27 billion manufacturing investment impact on capacity",
+            "Oral GLP-1 $10+ billion revenue opportunity",
+            "Manufacturing scale creating competitive barriers"
+        ]
+    }
+}

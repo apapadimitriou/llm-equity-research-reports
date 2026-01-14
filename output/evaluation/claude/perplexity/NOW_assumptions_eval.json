@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails catastrophically on assumption quality. Key financial assumptions driving the detailed valuation model (revenue CAGR 18.5%, terminal growth 4%, peak operating margin 24%, WACC 9.5%) are completely unjustified\u2014no historical benchmarks, peer comparisons, or cited sources support these critical inputs. The assumptions appear only in an appendix table without connection to forecasts or narrative justification. Multiple internal contradictions exist: claims of 22.5% current growth while projecting 18.5% CAGR, mentions 32% FCF margins but projects different margins in tables, and states various margin figures (78.5%, 78-80%, 18.5%) without reconciliation. The 8-year financial forecast table lacks any supporting assumptions or drivers. No sensitivity analysis exists for any material drivers. The extensive narrative focuses on business description rather than assumption justification.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029) 18.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Peak Operating Margin 24.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC 9.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted average cost of capital of approximately 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Current revenue growth of 22.5% conflicts with projected CAGR of 18.5%",
+                "locations": [
+                    "Analyst Note section",
+                    "Appendix valuation table"
+                ]
+            },
+            {
+                "description": "Multiple margin figures stated without reconciliation: 78.5%, 78-80%, 32% FCF margin, 24% peak operating margin",
+                "locations": [
+                    "Various sections throughout report",
+                    "Financial projections"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 4% without justification",
+            "Revenue CAGR 18.5% without support",
+            "Peak operating margin 24% without basis"
+        ]
+    }
+}

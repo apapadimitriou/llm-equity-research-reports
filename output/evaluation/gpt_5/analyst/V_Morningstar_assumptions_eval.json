@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is strong: the report clearly states core inputs driving the DCF and forecast tables (revenue CAGR, margin trajectory on both gross and net revenue bases, COE/WACC, tax rate, Stage II parameters, share count path), generally adjacent to the relevant forecasts. Specificity is solid: magnitudes, units, and horizons are provided (percentages, fiscal years, 5-year projection window, perpetuity year). Justification is partial: narrative references to scalability, cross-border normalization, and long-run electronic payment adoption provide context, but most numerical parameters (e.g., 9% COE, 8% Stage II EBI growth, 70 bps annual margin improvement) lack direct support from multi-year peer benchmarks or cited sources. Consistency is clean: figures reconcile between narrative and the model summary, and distinctions between gross vs. net revenue margins are clearly stated with no observable contradictions. Sensitivity is absent: the report does not offer quantified ranges or scenario impacts on material drivers (revenue growth, margins, COE/WACC), which hard-caps the grade at Fair despite otherwise well-structured assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project gross and net revenue to grow at 10% and 9% compound annual rates, respectively, over the projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margin (based on gross revenue) to improve modestly from 48% in fiscal 2024 to 49% by fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "On a net revenue basis, we expect margin to improve at an average annual rate of about 70 basis points.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 9% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 2,136 2,085 2,029 1,962 1,900 1,824 1,754 1,687",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "11"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Stage II Investment Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "12"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex (Stage I detail)",
+            "sensitivity/scenarios"
+        ],
+        "unjustified_parameters": [
+            "Cost of Equity 9% without source",
+            "Stage II EBI Growth Rate 8% without justification",
+            "Stage II Investment Rate 19% without justification",
+            "Net revenue margin +70 bps annually without quantitative support"
+        ]
+    }
+}

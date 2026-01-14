@@ -1,0 +1,69 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for quality of assumptions, as the core inputs driving the valuation are entirely opaque or explicitly omitted. While the report provides a Fair Value Estimate of $227.95, it admits in the 'Fair Value and Profit Drivers' and 'Appendix' sections that there is 'insufficient data for a detailed model.' Consequently, critical drivers such as Revenue CAGR (2025\u20132029), Terminal Growth Rate, and WACC are left blank. The valuation is not derived from an internal model but is instead anchored to an external 'analyst consensus' from a third-party website, which violates the requirement for justified, evidence-rich inputs. Furthermore, there is a significant internal contradiction: the report provides a specific fair value and a 'Bulls Say' price target while simultaneously stating it lacks the data to forecast margins, revenue growth, or capital costs. There is no quantified sensitivity analysis; the report mentions a hypothetical 20\u201330% valuation swing but immediately disqualifies it as lacking a precise estimate. Without explicit magnitudes, time horizons, or causal drivers for future performance, the report functions as a summary of recent earnings and external sentiment rather than a fundamental equity research product with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Fair-Value Estimate $227.95",
+            "location": {
+                "section": "Cover Block",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Our fair value estimate of $227.95 is based on analyst predictions for 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "adjusted gross margin at 61% versus estimates of 71%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "These could swing valuation by 20-30% [insufficient data for precise estimate]",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "none",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": []
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report issues a specific Fair Value Estimate of $227.95 but explicitly states in the Appendix and Fair Value sections that it has 'insufficient data' for Revenue CAGR, Terminal Growth, and WACC.",
+                "locations": [
+                    "Cover Block",
+                    "Appendix - Key Valuation Assumptions Table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Fair Value Estimate of $227.95 based solely on external consensus without an internal model."
+        ]
+    }
+}

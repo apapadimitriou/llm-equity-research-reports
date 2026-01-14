@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. While some key assumptions are stated (4% revenue CAGR, 8% WACC, 2.5% terminal growth), they lack proper justification with historical data or peer benchmarks. The report contains a significant contradiction between stated 4% revenue CAGR and the actual financial projections showing ~5.0% CAGR (391B to 475B over 5 years). Most importantly, there are no quantified sensitivities or scenario analyses for any material drivers despite Apple's exposure to significant risks like tariffs, competition, and regulatory changes. The assumptions appear in an appendix table rather than being proximal to the forecasts they drive, reducing traceability. Operating margin expansion assumptions (31.5% to 33%) and EPS growth projections lack supporting evidence or stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "~4% compound annual revenue growth over FY2024\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecast to remain in the low-30s (%), inching up slightly as the higher-margin Services segment contributes a greater share of revenue",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of about 8% for Apple",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of ~2.5% beyond 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "mid-single-digit EPS growth, from $6.11 in FY2024 to roughly $9 in FY2029 (helped by continued share buybacks)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as ~4% but financial table shows ~5.0% CAGR (391B to 475B over 5 years)",
+                "locations": [
+                    "Fair Value section text",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% without detailed justification",
+            "Operating margin expansion to 33% without peer comparison",
+            "Terminal growth 2.5% without GDP/inflation support"
+        ]
+    }
+}

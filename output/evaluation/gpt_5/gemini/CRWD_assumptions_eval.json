@@ -1,0 +1,101 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "Assumptions are explicit and concentrated in the DCF section, with clear magnitudes, units, and horizons. Core drivers\u2014revenue CAGR, margin trajectory, FCF margin, WACC components, and terminal growth\u2014are stated near the valuation they inform. Justification is generally solid: growth ties to consensus and management\u2019s ARR target; WACC inputs (Rf, beta, ERP, capital structure, tax rate) are sourced or standard; relative multiple is benchmarked to peers/market. Specificity is strong, e.g., CAGR path to FY31 and non-GAAP margin to FY29. Internal consistency is mostly clean; a minor logic issue exists where WACC is reduced despite citing \u201cHigh\u201d uncertainty, which typically warrants a higher discount rate. Stress-testing is present via quantified bull/base/bear scenarios varying revenue CAGR, margins, and WACC with price target impacts, though sensitivities don\u2019t cover terminal growth, tax rate, or FCF margin. Some material assumptions (share count, capex/SBC detail) are missing or opaque. Overall, the inputs are explicit, specific, and reasonably justified, with partial quantified sensitivity analysis on key levers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year revenue compound annual growth rate (CAGR) of 19.5%... decelerate to 16.5% by fiscal 2031.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast non-GAAP operating margins to expand from the guided midpoint of approximately 21% in fiscal 2026 to 26% by fiscal 2029.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model the company's free cash flow margin... averaging approximately 28% over the five-year forecast period.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC): 8.9%.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Risk-Free Rate (Rf): We use 3.5%... Beta (\u03b2): 1.17... Equity Risk Premium... 5.5%... Cost of Equity: 9.94%.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We utilize management's guided long-term non-GAAP tax rate of 22.5%.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.5% for the company's free cash flows beyond the explicit forecast period.",
+            "location": {
+                "section": "Financial Model & Valuation \u2013 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Relative (EV/FY27E Sales) 21.0x Multiple on FY27E Sales of $5.79B",
+            "location": {
+                "section": "Valuation Summary & Scenario Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "FCF_margin",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "relative_multiple"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex detail underlying FCF",
+            "SBC impact on FCF/GAAP margins",
+            "terminal growth sensitivity"
+        ],
+        "unjustified_parameters": [
+            "WACC reduced to 8.9% despite citing 'High' uncertainty (logic unclear)",
+            "Free cash flow margin ~28% average without multi-year support",
+            "Cost of debt 4.5% not sourced"
+        ]
+    }
+}

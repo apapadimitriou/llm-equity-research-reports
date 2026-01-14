@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded Poor due to significant internal contradictions and a total lack of quantified sensitivity analysis. While the report explicitly lists key drivers such as revenue CAGR (~6%) and operating margins, these figures are undermined by discrepancies between the narrative and the data tables. Specifically, the narrative cites a 2% risk-free rate and 6% equity risk premium to reach an 8% WACC, whereas the Appendix table lists a 4% risk-free rate and 5% equity risk premium for the same 8% WACC. Furthermore, the narrative projects operating margins expanding toward 46%, while the financial snapshot and appendix explicitly model 47% by 2029. Most critically, the report fails the hard cap for sensitivity analysis; although it identifies macro risks like market volatility and interest rate shifts, it provides no quantified impact on valuation or earnings (e.g., no bull/bear cases or delta tables). This 'black-box' approach to the final valuation, combined with unreconciled numeric inputs, prevents the assumptions from being auditable or reliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "estimate FY2024\u20132029 revenue CAGR of ~6%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins gradually expanding towards ~46%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital around 8.0% (beta ~1.0, 2% risk-free, 6% equity premium)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is set at ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate ~25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Risk-free Rate (10y) ~4.0% | Equity Risk Premium ~5.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC components in narrative (2% RF, 6% ERP) conflict with Appendix table (4% RF, 5% ERP).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Operating margin target in narrative (~46%) conflicts with Financials Snapshot and Appendix (~47%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth 2% without historical context or peer comparison."
+        ]
+    }
+}

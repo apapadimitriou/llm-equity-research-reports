@@ -1,0 +1,75 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with a clear cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risk, capital allocation, financials snapshot, ESG, appendix, and sources. The valuation section links operating drivers (segment revenue growth, margin improvement, cost cuts) to fair value via a DCF and provides explicit assumptions and implied multiples. Regulatory context is solid, and peer context is referenced qualitatively, though not benchmarked. However, the Financials Snapshot is generic and omits multiple core bank KPIs (e.g., NIM, credit loss provisions, CET1, efficiency ratio), triggering the hard cap to Fair. Evidence is largely cited to Reuters/FT/SEC, but a few notable claims lack sources. Minor redundancy exists (buybacks and compliance risks recur across sections), and there is no scenario/sensitivity analysis. Additionally, valuation inputs are internally inconsistent between sections (risk-free rate and after-tax cost of debt), which undermines the coherence of assumptions. Overall, breadth is strong, but KPI omissions and assumption inconsistencies limit comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Risk-free rate assumption: 8.5% in Valuation vs 3.5% in Appendix",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "After-tax cost of debt: ~5% in Valuation vs ~3% in Appendix",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "ROTCE (in Financials Snapshot)"
+        ],
+        "uncited_claims": [
+            "Sustainalytics rates Citi 'High' ESG risk (no source in Sources list)",
+            "Dividend yield ~3% (no citation)",
+            "Management announced pilot work on tokenization/stablecoins (no citation)"
+        ]
+    }
+}

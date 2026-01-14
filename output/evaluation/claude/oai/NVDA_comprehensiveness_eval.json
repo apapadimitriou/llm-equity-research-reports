@@ -1,0 +1,74 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "While the report includes most major sections with proper structure and sourcing, it suffers from critical gaps that prevent a higher rating. The financials snapshot lacks essential semiconductor sector KPIs (gross margin, R&D intensity, inventory turns, fab utilization rates), presenting only basic metrics like revenue and EPS. The valuation section, despite extensive discussion, fails to explicitly link operating drivers to the $125 fair value estimate - it mentions a DCF model but doesn't show how specific assumptions translate to the final valuation. Peer benchmarking is completely absent, with no comparison to AMD, Intel, or other semiconductor competitors. The report also exhibits redundancy, particularly around market cap figures and growth statistics repeated across multiple sections without adding new insights.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "R&D Intensity",
+            "Inventory Turnover",
+            "Fab Utilization",
+            "ASP Trends"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin",
+            "R&D Intensity",
+            "Inventory Turnover",
+            "Fab Utilization",
+            "ASP Trends"
+        ],
+        "uncited_claims": [],
+        "redundancy_examples": [
+            {
+                "description": "Market cap of $4 trillion repeated in multiple sections",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Risk section"
+                ]
+            },
+            {
+                "description": "Revenue growth statistics duplicated across sections",
+                "locations": [
+                    "Analyst Note",
+                    "Business Strategy",
+                    "Bulls Say"
+                ]
+            }
+        ]
+    }
+}

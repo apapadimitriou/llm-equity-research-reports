@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all mandatory headline sections and maintains a high standard of citation; however, it fails several technical comprehensiveness requirements. The 'Financials Snapshot' is generic, omitting critical sector-specific KPIs such as AWS segment revenue, AWS operating margins, and Advertising revenue growth\u2014all of which are the primary drivers of Amazon's valuation. While these figures are mentioned in the Analyst Note, their absence from the formal financial table triggers a hard cap at 'Fair'. Furthermore, the report lacks a dedicated peer benchmarking section or table, providing only passing mentions of competitors in the text. The valuation section provides DCF assumptions (WACC, CAGR) but lacks an explicit bridge or sensitivity analysis showing how specific operating drivers impact the fair value outcome. Finally, the report exhibits significant redundancy, repeating the '$100 billion AI capex' narrative across the Analyst Note, Strategy, Bulls/Bears, and Capital Allocation sections without providing incremental depth in each instance, which necessitates a downgrade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Appendix"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "AWS Segment Revenue",
+            "AWS Operating Margin",
+            "Advertising Revenue",
+            "GMV",
+            "Shipping Cost per Unit"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AWS Revenue (missing from Financials Snapshot table)",
+            "AWS Operating Margin (missing from Financials Snapshot table)",
+            "Advertising Revenue (missing from Financials Snapshot table)"
+        ],
+        "uncited_claims": []
+    }
+}

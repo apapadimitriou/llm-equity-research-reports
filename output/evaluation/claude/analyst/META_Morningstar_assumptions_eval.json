@@ -1,0 +1,66 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid explicitness with key assumptions clearly stated in the valuation model summary (12% revenue CAGR, 43% operating margins, 8.9% WACC, 8.9% terminal growth). Justification is partial - revenue growth and margin assumptions are supported by historical context and competitive positioning, while the WACC appears reasonable for a tech company. Specificity is strong with precise units, timeframes, and magnitudes provided throughout the financial projections. Internal consistency is clean with no contradictions found between narrative and tables. However, the report completely lacks quantified sensitivity analysis or scenario testing for material drivers like revenue growth, margins, or cost of capital, which caps the grade at Fair despite otherwise strong assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Meta's sales growing at a 12% compound annual growth rate for the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we believe that the firm's profitability will slightly improve, with operating margins rising to 43% over our explicit five-year forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 2,599",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

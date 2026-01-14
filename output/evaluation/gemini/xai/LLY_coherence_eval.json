@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates high internal consistency regarding its financial modeling and thematic arguments. The narrative in the Fair Value and Profit Drivers section perfectly matches the data in the Financials Snapshot and Appendix; for example, the 15% revenue CAGR and the EPS progression from $13.75 in 2025 to $28.00 in 2029 are synchronized across all tables and text. Furthermore, the Analyst Note successfully reconciles the 'Bears Say' concerns regarding trial disappointments by explaining the 14% share price decline while maintaining the $950 fair value estimate based on long-term secular trends in the obesity market. However, the report contains a critical temporal contradiction that triggers a mandatory grade cap. The document is dated June 7, 2025, yet the Analyst Note and Sources [1, 2, 3, 4] describe Q2 2025 earnings results and market reactions that occurred on August 7-9, 2025. It is logically impossible for a report written in June to cite 'recent' earnings and stock price movements from August of the same year. While the prose is clear and the structural flow between the Economic Moat and Strategy sections is logical, this fundamental failure to align the report's metadata with its cited facts constitutes a major temporal inaccuracy.",
+    "evidence": [
+        "Report date is 2025-06-07, but Analyst Note cites Q2 earnings results from 2025-08-07 (Source [1]).",
+        "EPS bridge from $13.75 (2025) to $28 (2029) in Fair Value section aligns exactly with the Financials Snapshot table.",
+        "Analyst Note reconciles the 14% post-earnings decline with the $950 FVE by citing long-term execution and secular trends."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

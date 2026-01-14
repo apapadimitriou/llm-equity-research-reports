@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure with well-labeled sections that follow a logical arc from business description to strategy, valuation, risks, and capital allocation. Language is generally clear, and most sections reference complementary points (e.g., the integrated model underpinning both the Bulls case and the base-case valuation assumptions). The Financials Snapshot aligns with the Fair Value section\u2019s margin ranges and growth assumptions, supporting internal consistency. However, there are notable temporal and citation alignment issues that detract from coherence. The Cover Block\u2019s \u201cLast Close\u201d and \u201cMarket Cap\u201d are attributed to sources dated August 2025, despite the report date of June 29, 2025, which introduces time-inaccurate presentation of \u201cnow\u201d data. Additionally, the CET1 ratio in the Analyst Note is discussed as a Q1 2025 metric but cites the 4Q24 release, creating a mismatch between the timeframe of the claim and the source. Transitions are adequate, though some sections (e.g., Bulls/Bears) are list-like and not deeply integrated with the valuation sensitivities (fee compression, rate volatility) beyond a brief nod to \u201cnormalized trading revenues.\u201d Overall, the report is understandable and mostly coherent, but the temporal inaccuracy and a minor citation mismatch require a downgrade per the guardrails.",
+    "evidence": [
+        "Cover Block uses Last Close $140.50 and Market Cap $225.6B with sources dated August 2025, while the report date is 2025-06-29.",
+        "Analyst Note references a CET1 ratio of 15.9% for Q1 2025 but cites the 4Q24 earnings release, creating a citation-timeframe mismatch.",
+        "Fair Value assumptions (operating margins 28\u201330%) align with the Financials Snapshot (2024A 28.8%, 2025E 29.2%), supporting internal consistency."
+    ],
+    "flags": {
+        "contradictions_found": false,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness and specificity are strong: the report states key modeling inputs clearly and near the valuation discussion, and consolidates them in an Appendix with magnitudes and horizons (e.g., revenue CAGR 2025\u20132029, NIM path, efficiency ratio target, credit loss rate, terminal growth, and discount rate). Internal consistency is mostly clean between narrative and the Appendix (e.g., revenue CAGR 4\u20136% in text vs. 4.8% in Appendix; NIM 2.7% \u2192 2.9%; efficiency ratio to 65% by 2027). However, there is at least one unresolved numeric contradiction regarding Q1 2025 EPS within the report\u2019s own text. Justification is partial: several assumptions cite management guidance (e.g., NII 1\u20133% for 2025) or qualitative rationale (cost saves, deposit competition), but many core valuation parameters (WACC 10\u201311%, terminal growth 2.5%, credit loss rate 0.45\u20130.50%, non-interest income growth 6\u20138%) lack benchmarking to multi-year history or peers and have no cited sources. Sensitivity/scenario analysis is limited: a fair value range is given, and some inputs are presented as ranges, but there is no robust, quantified sensitivity tying material drivers (NIM, credit costs, efficiency) to earnings or valuation impacts. Given the contradiction and lack of quantified driver sensitivities, the quality of assumptions caps at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029: 4.8%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net Interest Margin: 2.7% stabilizing to 2.9%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Efficiency Ratio Target: 65% by 2027",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Credit Loss Rate: 0.45-0.50% normalized",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Discount Rate: 10.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Non-interest income growth of 6-8% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net interest income guidance of 1-3% growth for 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "credit_cost",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Two different Q1 2025 EPS figures cited ($1.39 vs. $1.27).",
+                "locations": [
+                    "Intro/preface bullet on Q1 2025 results",
+                    "Intro/preface bullet referencing Q1 2025 EPS vs estimates"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC/discount rate (10\u201311% / 10.5%) without source",
+            "Terminal growth rate 2.5% without benchmark",
+            "Credit loss rate 0.45\u20130.50% normalized without evidence",
+            "Non-interest income growth 6\u20138% without historical/peer support"
+        ]
+    }
+}

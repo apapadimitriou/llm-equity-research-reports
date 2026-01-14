@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it presents numerous data points and forecasts, it lacks causal mechanisms explaining how business drivers translate to financial outcomes. The report states \"Azure revenue grew 33%\" and \"we forecast a 13% revenue CAGR\" but provides no explanation of underlying demand drivers, competitive dynamics, or margin mechanics. Key assumptions like \"8.0% WACC\" and \"2.5% terminal growth rate\" are mentioned without benchmarking or justification. The valuation methodology references a DCF model but offers no sensitivity analysis - no exploration of how changes in cloud growth rates, margin assumptions, or competitive pressures might affect the $490 fair value. Risk factors are listed generically (\"regulatory risk is elevated\") without quantifying potential financial impacts. The Bulls/Bears section presents opposing viewpoints but doesn't analyze their probability or magnitude. Overall, this reads like a comprehensive summary rather than rigorous financial analysis.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Azure growth \u2192 profitability linkage unexplained",
+            "Cloud migration \u2192 pricing power connection missing",
+            "AI integration \u2192 margin impact unclear"
+        ],
+        "unsupported_assumptions": [
+            "8.0% WACC with no peer comparison",
+            "2.5% terminal growth rate unsubstantiated",
+            "46% operating margin target without cost structure analysis"
+        ],
+        "lack_of_sensitivity": [
+            "$490 fair value with no range or scenarios",
+            "No stress testing of growth assumptions",
+            "Regulatory risks mentioned but not quantified"
+        ]
+    }
+}

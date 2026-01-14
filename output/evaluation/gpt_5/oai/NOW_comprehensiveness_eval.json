@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and covers nearly all expected sections: cover block and contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation/profit drivers, risks, capital allocation, financials snapshot, ESG, appendix, and sources. Evidence integration is generally strong, with frequent in-text citations to press releases and third-party sources. Valuation assumptions are explicit (revenue growth, margins, tax, WACC, terminal growth) and linked to operating drivers. However, the Financials Snapshot omits core SaaS KPIs (ARR, NRR, RPO/cRPO, billings), which are material for the sector; this triggers the hard cap to Fair. Peer benchmarking is limited to narrative mentions of competitors without comparative metrics or a peer table. No scenario or sensitivity analysis is provided. Some redundancy is present (Q2 beat-and-raise and AI demand repeated across the Analyst Note, Strategy, and Bulls sections). Minor inconsistencies are noted in buyback amounts and EV/sales references, as well as phrasing around price vs fair value. Overall, the scope is broad and mostly proportionate, but the KPI omissions and lack of peer/scenario work constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Free Cash Flow",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "RPO/cRPO",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Valuation phrasing implies FVE is a ~2.6\u00d7 premium to current price, while cover shows Price/FVE 2.6\u00d7 (price above FVE)",
+                "locations": [
+                    "Analyst Note",
+                    "Cover Block"
+                ]
+            },
+            {
+                "description": "EV/sales multiple references conflict (\"2.2\u00d7 EV/sales\" vs \"~8\u20139\u00d7 EV to 2026 sales\")",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Q4\u201923 buyback amount listed as nearly $0.4B (Bulls) vs ~$0.26B (Capital Allocation)",
+                "locations": [
+                    "Bulls Say",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "RPO/cRPO",
+            "Billings"
+        ],
+        "uncited_claims": [
+            "~10,000 customers (as of 2024)",
+            "Net cash positive balance sheet",
+            "Subscription mix 96\u201397% of revenue"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains all major sections with reasonable structure, but suffers from significant deficiencies that prevent a higher grade. While sector-appropriate KPIs like revenue growth, operating margins, and renewal rates are present, the report lacks critical peer benchmarking and scenario analysis. Multiple claims rely on insufficient data or estimates, with several sources explicitly noting 'insufficient data' or being based on analyst assumptions rather than concrete evidence. The valuation section provides some linkage between drivers and fair value but lacks sensitivity analysis. Redundancy is evident with Q2 results repeated across multiple sections without additional depth. The financial snapshot covers key metrics but omits important SaaS KPIs like net revenue retention (NRR) and annual recurring revenue (ARR) breakdown, which are standard for comprehensive SaaS analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Operating Margin",
+            "Subscription Revenue",
+            "Renewal Rate",
+            "ROIC",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "Net Revenue Retention (NRR)",
+            "Annual Recurring Revenue (ARR)",
+            "Customer Acquisition Cost (CAC)",
+            "Lifetime Value (LTV)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Revenue Retention (NRR)",
+            "Annual Recurring Revenue (ARR)",
+            "Customer Acquisition Cost (CAC)"
+        ],
+        "uncited_claims": [
+            {
+                "description": "RPO figure estimate based on 'insufficient data'",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "AI-related revenues projected to comprise 30% by 2027 with no source",
+                "locations": [
+                    "Business Strategy & Outlook"
+                ]
+            },
+            {
+                "description": "FY2024 buybacks estimate from 'prior patterns' rather than actual data",
+                "locations": [
+                    "Capital Allocation",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Multiple 'analyst forecast' and 'insufficient data' disclaimers",
+                "locations": [
+                    "Sources"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key modeling assumptions are explicit and proximate to forecasts (revenue CAGR, margin path, WACC, terminal growth, EPS) and expressed with clear magnitudes, units, and time horizons. The Appendix table further consolidates these inputs. However, justification is limited: growth/margin assumptions are tied broadly to Q1 results and \u201cguidance\u201d without multi-year history, peer benchmarks, or sourced parameters for WACC/ERP/beta beyond brief rationale; terminal growth is asserted as GDP+inflation with no citation. Internal consistency is impaired by a numeric contradiction between the narrative ($55B FY2029 revenue) and the Financials Snapshot ($51.3B FY2029). Stress-testing is absent: no quantified sensitivities or scenarios for material drivers (revenue growth, margins, WACC/terminal growth), only a qualitative 20\u201330% valuation swing. Several important drivers (tax rate, share count/dilution, capex) are missing or opaque. Overall, while assumptions are mostly explicit and specific, the weak evidence base, a clear contradiction, and lack of scenario analysis cap the assessment at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 8% revenue CAGR from fiscal 2025 to 2029, starting from an estimated $38 billion base in fiscal 2025 ... to $55 billion by fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast operating margins improving from 19% in Q1 fiscal 2026 [2] to 25% by fiscal 2029, driven by scale and cost efficiencies.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is set at 9%, reflecting technology sector betas and a 3% risk-free rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029 leads to a fair value of $300 per share.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: Fiscal 2025 EPS estimated at $9.00; add $1.00 from revenue growth, $0.50 from margin expansion, minus $0.50 from higher taxes and investments, yielding fiscal 2026 EPS of $10.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Forecasts based on guidance of $40.7 billion revenue and 22% margin for fiscal 2026 [2], with 8% CAGR thereafter.",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC           | 9.0%   | Sector beta 1.2, equity risk premium 5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Margin (FY29)  | 25.0%  | Efficiency gains",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2029 revenue stated as $55B in narrative vs $51.3B in Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count/dilution",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% (beta/ERP/risk-free not sourced)",
+            "Terminal growth 4% (GDP+inflation assertion without citation)",
+            "FY2029 margin 25% (efficiency gains not evidenced)",
+            "FY2025 base revenue $38B (estimated; weak source [2])"
+        ]
+    }
+}

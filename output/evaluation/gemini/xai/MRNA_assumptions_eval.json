@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple severe internal contradictions and a lack of quantified sensitivity analysis. While the report explicitly lists key assumptions such as revenue CAGR, WACC, and terminal growth, these figures are fundamentally inconsistent with the provided financial data. Specifically, the narrative and appendix claim a -5% revenue CAGR from 2025\u20132029, yet the 'Financials Snapshot' table shows revenue growing from $2.0 billion to $6.5 billion over that same period\u2014a positive CAGR of approximately 34%. Furthermore, the text forecasts '10% growth post-2026,' but the table reflects annual growth rates exceeding 40% for 2027 and 2028. These unresolved numeric conflicts between the narrative and the tables violate the core requirement for internal consistency. Justification for critical inputs like the 10.5% WACC and 3.0% terminal growth rate is weak, relying on generic industry averages rather than company-specific data or cited market yields. Finally, the report fails the stress-testing requirement; although it mentions a vague \u00b130% sensitivity range for the fair value estimate and a potential 20% revenue downside, it provides no quantified scenario analysis or sensitivity matrix showing how changes in material drivers (e.g., launch timing or discount rates) impact the valuation. Per the decision rules, the presence of two or more distinct contradictions combined with the absence of robust sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming a 5-year revenue CAGR of -5% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve from -200% in 2025 to 15% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 10.5%, incorporating high beta due to biotech volatility.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "targeting 2026 GAAP operating expenses of $5.4 billion to $5.7 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "10% growth post-2026 from new launches",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text/Appendix claims -5% Revenue CAGR (2025-2029), but Financials Table shows revenue increasing from $2.0B to $6.5B (~34% CAGR).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text claims 10% growth post-2026, but Table shows 40% growth in 2027 and 43% in 2028.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% (no source or calculation)",
+            "Terminal Growth 3.0% (generic rationale)"
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to a combination of a material internal contradiction and the total absence of quantified sensitivity analysis. While the report explicitly lists key assumptions such as WACC (7.5%), Terminal Growth (3%), and Tax Rate (25%) in an appendix, these figures lack any justification, peer benchmarking, or historical context, appearing as 'black-box' inputs. A significant consistency failure exists: the Appendix explicitly assumes a 'Revenue CAGR 2025-2027: 8-10%,' yet the 'Financials Snapshot' table provides revenue figures ($265B, $285B, $305B) that calculate to annual growth rates of only 7.2%, 7.5%, and 7.0% respectively. This unresolved numeric conflict between the narrative/appendix and the financial model violates the core requirement for internal coherence. Furthermore, the report fails to provide any quantified sensitivity or scenario analysis for material drivers like specialty pharmacy volume or margin fluctuations, offering only qualitative risk descriptions. Per the grading instructions, the presence of one distinct contradiction combined with the lack of sensitivities triggers a mandatory 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2027: 8-10%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins should stabilize in the 6-7% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of 7.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 25%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "specialty pharmacy volume growth of 10-15% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The Appendix states a Revenue CAGR of 8-10% for 2025-2027, but the Financials Snapshot table shows annual growth rates of 7.2%, 7.5%, and 7.0% for those years.",
+                "locations": [
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without calculation or peer benchmark",
+            "Terminal growth 3% without economic context",
+            "Tax rate 25% without historical reference"
+        ]
+    }
+}

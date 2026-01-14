@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded fair due to a significant internal contradiction between the narrative and the financial tables, which triggers a mandatory hard cap under the grading rubric. The narrative consistently describes an 'exceptional growth trajectory' and 'continued dominance,' yet the Financials Snapshot table presents a nonsensical historical revenue sequence: revenue is listed as $60.9 billion in FY 2023A, dropping precipitously to $22.1 billion in FY 2024A, before surging to $130.5 billion in FY 2025A. This unexplained 63% decline in FY 2024 directly contradicts the 'Bulls Say' and 'Analyst Note' sections. Furthermore, the narrative states that Q1 FY26 revenue of $44.1 billion represents 69% year-over-year growth; mathematically, this implies a Q1 FY25 revenue of approximately $26 billion, which is impossible if the entire FY 2024A revenue was only $22.1 billion.\n\nDespite these data integrity failures, the report exhibits high structural coherence. The sections are well-connected, with the 'Economic Moat' analysis of the CUDA ecosystem providing a clear foundation for the 'Fair Value' assumptions regarding pricing power. The 'Bulls Say / Bears Say' arguments are effectively reconciled within the valuation narrative, acknowledging how competitive pressures and export restrictions moderate the long-term growth outlook. The prose is professional and avoids list-like formatting, but the unresolved tensions between the cited figures and the core argument necessitate the fair grade.",
+    "evidence": [
+        "Financials Snapshot table shows revenue dropping from $60.9B (FY23A) to $22.1B (FY24A), contradicting the 'exceptional growth trajectory' narrative.",
+        "Narrative claims Q1 FY26 revenue ($44.1B) is up 69% YoY, which is mathematically inconsistent with the table's FY24A total of $22.1B.",
+        "The Fair Value section successfully reconciles Bull/Bear points, noting that 25-30% growth projections are 'offset by China export restriction headwinds' (Fair Value and Profit Drivers)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This Morningstar report is broadly well-structured and covers most expected sections: a detailed cover/contents, multiple timely Analyst Notes, a clear Business Description, Strategy & Outlook, Bulls/Bears, a thorough Economic Moat discussion, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials, ESG, and an Appendix with methodology and disclosures. Depth is generally proportional: the moat and strategy sections are extensive; valuation includes explicit DCF parameters, multi-year forecasts, and a fair value bridge. Evidence is integrated via management commentary, internal model tables, and Sustainalytics ESG data, with peer context provided for Adobe, Microsoft, and Oracle. However, the Financials Snapshot table is generic and omits core SaaS KPIs (ARR/NRR, billings, CRPO) despite some being mentioned qualitatively in Analyst Notes, triggering the KPI hard cap. Scenario/sensitivity analysis is not included in the report (referenced as available externally), and the Risk section appears dated (May 2024) relative to 2025 updates. Redundancy is minimal. Overall, strong coverage and linkages, but KPI omissions in the snapshot and absence of scenarios cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (Agentforce ~$100M)",
+            "CRPO (discussed in Analyst Notes)",
+            "Customer retention (~92%)",
+            "Non-GAAP operating margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Revenue Retention (NRR)",
+            "Billings",
+            "CRPO (in Financials Snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR",
+            "Billings",
+            "CRPO (in snapshot)"
+        ],
+        "uncited_claims": []
+    }
+}

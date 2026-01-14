@@ -1,0 +1,67 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental structural deficiencies that render it incomplete and superficial. Most critically, it lacks essential equity research components including peer benchmarking, scenario analysis, and explicit valuation methodology linking operating drivers to the $302 fair value estimate. The financials snapshot presents forward projections without methodology or supporting assumptions, while sector-specific KPIs like ARR growth rates, customer acquisition costs, and retention metrics are largely absent. The report exhibits significant redundancy, repeating Agentforce deal counts and AI revenue figures across multiple sections without adding analytical depth. Major claims such as specific revenue projections and margin assumptions lack proper citations or supporting analysis. The valuation section fails to demonstrate how operating drivers translate to the stated fair value, providing only superficial DCF assumptions without detailed modeling or sensitivity analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Detailed Valuation Methodology"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "ARR Growth Rate",
+            "Customer Acquisition Cost",
+            "Net Revenue Retention",
+            "Customer Lifetime Value",
+            "Churn Rate",
+            "Subscription Revenue Breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward financial projections lack supporting methodology or assumptions",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR Growth Rate",
+            "Customer Acquisition Cost",
+            "Net Revenue Retention",
+            "Churn Rate"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $302 per share with no supporting DCF model",
+            "Revenue CAGR projection of 8.7% without derivation",
+            "Forward EPS projections through 2029 without methodology",
+            "WACC assumption of 8.7% without calculation details"
+        ]
+    }
+}

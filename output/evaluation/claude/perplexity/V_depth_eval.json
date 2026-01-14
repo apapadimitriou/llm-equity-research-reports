@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is overwhelmingly descriptive with minimal analytical depth. While it presents extensive financial data and market information, it lacks meaningful causal explanations for performance drivers. The few attempts at reasoning are shallow: \"Payment volumes increased 8% year-over-year on a constant-dollar basis\" and \"cross-border volumes surged 13%\" provide no mechanistic explanation of why these occurred. The valuation section lists assumptions like \"WACC: 8.5%\" and \"Terminal growth rate: 3.0%\" without benchmarking or justification. Revenue projections show \"Revenue CAGR FY2025-2029: 10.0%\" but provide no quantified sensitivity analysis or stress testing of key assumptions. Risk factors are mentioned generically (\"Regulatory fee caps could reduce revenue by 1-2%\") but lack scenario analysis or probability weighting. The report reads more like a comprehensive company overview than rigorous equity analysis, failing to establish clear causal links between strategic initiatives and financial outcomes.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "No explanation of how Network of Networks strategy drives revenue growth",
+            "Value-added services growth drivers not mechanistically linked to financial impact",
+            "Cross-border volume recovery lacks causal reasoning"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.5% with no benchmark justification",
+            "Terminal growth 3.0% without industry comparison",
+            "Operating margin expansion to 68.7% lacks supporting analysis"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario analysis for regulatory fee caps impact",
+            "Revenue growth assumptions not stress-tested",
+            "Fair value estimate lacks sensitivity ranges"
+        ]
+    }
+}

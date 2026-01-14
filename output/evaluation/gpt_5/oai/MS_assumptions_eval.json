@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key modeling inputs are mostly explicit and located near the forecasts they inform. Revenue CAGR, margin path, WACC components, terminal growth, tax rate, and share count are clearly stated with magnitudes and time horizons, and the Financials Snapshot provides a full 2025\u20132029 forecast path. Specificity is solid. Justification is partial: some assumptions reference recent history (e.g., 2024 efficiency ratio ~71%) and segment growth commentary, but core valuation parameters (WACC, beta, ERP, terminal growth, tax rate) lack cited sources or peer/market benchmarks. Internal consistency has a notable issue: the stated fair-value implied P/E \u201c18\u201320\u00d7\u201d conflicts with the report\u2019s own 2025 EPS ~$7 and $150 FVE (which implies ~21.4\u00d7). Sensitivity analysis is limited to a single, rough WACC sensitivity; there are no quantified scenarios for revenue growth, margins/efficiency, NII/NIM, or credit costs\u2014material drivers for a financial firm. Given one contradiction and minimal quantified sensitivities, the assumptions quality merits a Fair grade despite reasonable explicitness and acceptable internal coherence elsewhere.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Morgan\u2019s annual revenue CAGR of roughly 3\u20135% through 2029 (reaching ~$74B by FY2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume operating (pre-tax) margins stay in the mid-to-high 20% range (reflecting a 2024 level of ~28.5%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "expense discipline holding the efficiency ratio around 70%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a risk-free rate ~4.0%, equity risk premium ~5.0%, a stock beta ~1.1, and a pre-tax cost of debt ~5%. With 10% target debt ratio, these give a WACC \u22489%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our long-term economic growth (terminal) is ~2%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model share count roughly flat (repurchases offset new issuance).",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Effective tax rate ~22%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Sensitivity: a 100bp move in WACC shifts valuation by ~10%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Implied P/E at $150 fair value stated as 18\u201320\u00d7 conflicts with 2025 EPS ~$7.0 (150/7 \u2248 21.4\u00d7).",
+                "locations": [
+                    "Fair Value and Profit Drivers (\"implied forward P/E near 18\u201320\u00d7 (2025 EPS ~$7.0)\")",
+                    "Financials Snapshot (2025 EPS $7.0)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC \u22489% without sourced evidence",
+            "terminal growth ~2% without source",
+            "beta ~1.1 without source",
+            "effective tax rate ~22% without source"
+        ]
+    }
+}

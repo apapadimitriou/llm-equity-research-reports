@@ -1,0 +1,61 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Headline sections are largely present (Analyst Note, Business Description, Strategy, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources), but depth is thin across several, with repeated \"insufficient data\" placeholders. The Financials Snapshot is skeletal, lacking multi-year figures and sector-appropriate SaaS KPIs (ARR, RPO, consumption metrics, gross margin, FCF margin), which triggers the KPI hard cap. Valuation provides high-level assumptions (CAGR, margin, WACC, terminal growth) but does not bridge operating drivers to a fair value (no DCF, EPS/cash flow build, or explicit link from guidance/NRR to revenues/margins), invoking the valuation linkage hard cap. Evidence is inconsistently sourced, relying on social media posts, one source without a URL, and several uncited general claims (geography, competition). Peer benchmarking and scenario/sensitivity analysis are absent. Capital allocation is not analyzed (no balance sheet, SBC, liquidity, or buybacks/dividends). There is some redundancy (mixed sentiment repeated; pervasive \"insufficient data\" across sections). Overall, the report covers the expected headings but lacks proportional depth, sector KPIs in the snapshot, explicit valuation linkage, and peer/sensitivity context, making it Fair for comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention (NRR)",
+            "Total Customers",
+            "Customers >$1M TTM Product Revenue",
+            "Product Revenue Guidance",
+            "Non-GAAP EPS"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "Remaining Performance Obligations (RPO)",
+            "Consumption Growth/Usage Metrics",
+            "Gross Margin",
+            "Free Cash Flow Margin",
+            "Cohort/Expansion/Churn Metrics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "RPO",
+            "Consumption/Usage",
+            "Gross Margin",
+            "FCF Margin",
+            "Cohort/Churn"
+        ],
+        "uncited_claims": [
+            "Operates primarily in the United States",
+            "Faces competition from AWS and Google Cloud"
+        ]
+    }
+}

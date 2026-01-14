@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report makes several key valuation and forecast assumptions explicit, primarily in the Fair Value and Profit Drivers section and the Appendix. These include revenue CAGR, cost savings, WACC, terminal growth, and return targets, often with numerical ranges and a clear 2026 horizon. However, justification is weak: most inputs (e.g., WACC 9\u201310%, terminal growth 2.5%, revenue CAGR 3\u20135%) are asserted without ties to multi-year history, peer benchmarks, or cited sources. Specificity is partial: some assumptions have units and timelines, but material drivers like NII/NIM are only qualitatively referenced (\u201cbenefiting from higher rate environment\u201d) with no magnitudes, while credit costs, tax rate, and share count dynamics are omitted. Internal consistency is mostly intact with the financials table, though there is a minor metric inconsistency (ROE vs ROTCE targets used interchangeably) and limited reconciliation between the stated long-term revenue CAGR and near-term revenue growth path. Critically, there is no quantified sensitivity or scenario analysis showing how valuation/targets change under different drivers; ranges are given for some inputs but without valuation impact or scenario outcomes. Under the decision rules, the absence of quantified sensitivities caps the grade at Fair despite some explicitness.",
+    "assumptions_extracted": [
+        {
+            "quote": "Long-term revenue growth: 3-5% CAGR",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cost savings target: $2.5B annually by 2026",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9-10%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Return on tangible common equity is expected to reach 10-11% by 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "net interest margins benefiting from higher rate environment",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "credit_cost",
+            "tax_rate",
+            "NII/NIM (quantification)",
+            "sensitivity/scenario analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 9-10%",
+            "Terminal growth rate 2.5%",
+            "Long-term revenue growth 3-5% CAGR",
+            "ROE/ROTCE 10-11% by 2026"
+        ]
+    }
+}

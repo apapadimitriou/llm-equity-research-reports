@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and covers nearly all expected sections: cover block, contents, an evidence-based Analyst Note, clear Business Description and Strategy, Bulls/Bears, Moat, a DCF-based Valuation, Risks, Capital Allocation, ESG, Appendix/Glossary, and Sources. The proportional depth is solid, with consistent in-text citations across most claims and reasonably current data for financials, risks, and capital structure. The valuation section explicitly links operating drivers (revenue CAGR, margin expansion, WACC, terminal growth) to the fair value outcome, and capital allocation is discussed with balance sheet context and policy choices. However, the Financials Snapshot lacks core, sector-specific KPIs for this hybrid retail/cloud/ads business\u2014there are no segment breakouts (AWS revenue/margin), no advertising metrics, no Prime subscriber trajectory, nor commerce unit/GMV or fulfillment cost metrics. Peer benchmarking and scenario/sensitivity analysis are also absent. Minor issues include one dated datapoint (Prime members from 2021) and at least one uncited performance claim (ads growing faster than sales). Given the hard cap for missing \u22652 core sector KPIs in the Financials Snapshot, the report cannot exceed Fair despite otherwise strong coverage and sourcing. Redundancy is minimal and peer/regulatory context is acknowledged qualitatively.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Segment KPI Tables"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "AWS revenue",
+            "AWS operating margin",
+            "Advertising revenue",
+            "Prime members",
+            "Units/GMV growth",
+            "Fulfillment cost per order"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AWS revenue",
+            "AWS operating margin",
+            "Advertising revenue",
+            "Prime members",
+            "Units/GMV growth",
+            "Fulfillment cost per order"
+        ],
+        "uncited_claims": [
+            "Advertising revenues have been growing faster than overall sales (no source provided)"
+        ]
+    }
+}

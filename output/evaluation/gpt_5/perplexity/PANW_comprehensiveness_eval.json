@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected equity research sections: cover block and contents, analyst note, business description, strategy and outlook, bulls/bears, moat, valuation with drivers, risks, capital allocation, financials snapshot, ESG, appendix, and sources. Depth is generally appropriate, with solid operating context (platformization, ARR, RPO, SASE) and a clear valuation framework linked to revenue/margin drivers. Evidence integration is strong overall, with in-text citations throughout and a comprehensive sources list. Scenario analysis (bull/bear) is present, but peer benchmarking is absent beyond a brief mention of Wiz, limiting industry context. The principal gap is the Financials Snapshot: while it provides multi-year revenue, EPS, FCF, operating margin, and ROIC, it omits core SaaS/cybersecurity KPIs like ARR, NRR, billings, and RPO, triggering a hard cap at Fair. A few material claims (buybacks, debt characterization) lack citations. Redundancy is minimal; recurring themes (platformization, CyberArk) add new facets across sections. Overall, the report is structurally comprehensive but falls short on sector KPI presentation in the financials table and peer benchmarking.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking"
+        ],
+        "sector_kpis_present": [
+            "ARR (discussed in text)",
+            "RPO (discussed in text)",
+            "SASE seats (discussed in text)",
+            "NRR (discussed in text)"
+        ],
+        "sector_kpis_missing": [
+            "ARR (in Financials Snapshot)",
+            "NRR (in Financials Snapshot)",
+            "Billings (in Financials Snapshot)",
+            "RPO (in Financials Snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "RPO"
+        ],
+        "uncited_claims": [
+            "Share repurchase programs actively reducing share count (Capital Allocation)",
+            "Debt levels remain manageable with convertible notes as primary obligation (Capital Allocation)"
+        ]
+    }
+}

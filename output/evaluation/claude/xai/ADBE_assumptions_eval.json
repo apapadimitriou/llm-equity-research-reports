@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides key assumptions but has significant weaknesses across all five pillars. Explicitness is partial - assumptions like 10% revenue CAGR and 8.5% WACC are stated but many drivers lack clear positioning near forecasts. Justification is weak, with most parameters unsupported (48% terminal margin, beta 1.1, 4% terminal growth lack evidence). Specificity is limited - while some units are provided, causal drivers and detailed horizons are often missing. Internal consistency has issues, including contradictory share count treatment (buybacks mentioned but dilution assumed in EPS bridge) and margin expansion claims conflicting with competitive pressure narratives. Most critically, sensitivity analysis is completely absent despite material drivers like AI adoption, competition, and macro risks being highlighted. The lack of quantified scenarios caps the grade at Fair per the hard cap rule.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 10% from FY25 to FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 35% in FY24 to 48% by FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.5%, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "offset by $0.50 in higher taxes and share dilution",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report mentions share buybacks (4.6 million shares repurchased) but assumes share dilution in EPS bridge",
+                "locations": [
+                    "Capital Allocation section",
+                    "Fair Value and Profit Drivers section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "48% terminal operating margin without peer comparison",
+            "Beta of 1.1 without source",
+            "4% terminal growth rate without GDP/inflation support",
+            "13-point margin expansion over 5 years without detailed cost structure analysis"
+        ]
+    }
+}

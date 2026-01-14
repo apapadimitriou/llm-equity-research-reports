@@ -1,0 +1,92 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key assumptions are mostly explicit and proximate to the forecasts: revenue CAGR (\u201c8\u201310%\u201d), margin range (\u201c6\u20137%\u201d), WACC (7.5%), terminal growth (3%), tax rate (25%), and a specialty volume growth range (\u201c10\u201315%\u201d). Specificity is solid (percentages, ranges, multi\u2011year horizons), and most figures reconcile to the Financials Snapshot. However, justification is weak: there is minimal evidence tied to multi\u2011year history, peer benchmarks, or cited sources for WACC, terminal growth, tax rate, or margin trajectory. A numeric inconsistency exists between the stated revenue CAGR (8\u201310% for 2025\u20132027) and the table\u2019s implied CAGR (~7.3%). Sensitivity/stress testing is limited: while two drivers are given as ranges (revenue CAGR and specialty volume growth), there is no quantified scenario analysis linking these ranges to valuation/target or EPS. Material drivers like share count/buybacks and capex/FCF drivers are not explicitly modeled. Overall, assumptions are explicit and specific but weakly justified, with minor internal inconsistency and limited sensitivity, warranting a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins should stabilize in the 6-7% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 7.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 25%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Specialty pharmacy volume growth of 10-15% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as 8\u201310% for 2025\u20132027 conflicts with Financials Snapshot implied CAGR (~7.3%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "FCF drivers/working capital",
+            "sensitivity to WACC/terminal growth/margins"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without source",
+            "Terminal growth 3% without source",
+            "Tax rate 25% without source"
+        ]
+    }
+}

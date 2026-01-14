@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report explicitly states key assumptions including revenue growth rates (23% CAGR over 5 years, 20% over 10 years), margin expansion (gross margins from 67% to 80%, operating margins from -40% to 26%), and valuation multiples (13x forward EV/sales). These assumptions are clearly positioned near forecasts and include specific units and timeframes. Justification is partial, with some historical context and peer awareness but limited quantitative benchmarking. The assumptions show good specificity with clear magnitudes and horizons. However, the report completely lacks quantified sensitivity analysis or scenario testing for any material drivers, which caps the grade at Fair despite otherwise solid assumption quality. Internal consistency appears clean with no contradictions identified between narrative and tables.",
+    "assumptions_extracted": [
+        {
+            "quote": "We expect Snowflake will achieve a compound annual growth rate for revenues of 23% (20%) over the next five (10) years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast that gross margins will expand from 67% in fiscal 2025 to 80% in fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We expect GAAP operating margins to increase from negative 40% in fiscal 2025 to 26% by fiscal 2035",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our valuation implies forward fiscal-year enterprise value/sales of 13 times",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "stock-based compensation (expected to be roughly 37% of revenue in fiscal 2026)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "5"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "13x EV/sales multiple without peer comparison",
+            "80% gross margin target without benchmarking"
+        ]
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple unresolved numeric contradictions between the narrative and the valuation tables, compounded by a total absence of quantified sensitivity analysis. While the analyst explicitly states key assumptions\u2014such as a 6% organic growth rate and a 52% long-term margin\u2014these figures fail to reconcile with the provided financial models. Specifically, the narrative claims a 2024 margin of 49% and forecasts a 300-basis-point expansion to reach 52% by 2029. However, the valuation table on page 14 reports a 2024 Adjusted EBITDA margin of 47.7% and an Operating Margin of 38.6%, neither of which matches the 49% starting point. Furthermore, the table's projected expansion to 2029 represents either a 450-basis-point or a 920-basis-point increase, directly contradicting the '300-basis-point' claim in the text. Additionally, the report lacks any quantified sensitivity analysis or scenario modeling for material drivers like interest rates or bond issuance volumes, which are identified as primary risks. Per the grading instructions, the combination of at least one distinct numeric contradiction and the lack of quantified sensitivities mandates a 'Poor' rating, as the outputs function as a 'black box' that cannot be audited against the report's own data.",
+    "assumptions_extracted": [
+        {
+            "quote": "Over the next five years, we expect organic growth of about 6%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "reach about 52% adjusted operating margins in 2029, which compares with 49% in 2024.",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Ratings revenue growth... model for mid- to high- single-digit growth driven by nominal GDP growth and pricing.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.3",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "S&P raised its January 2025 list price by about 2.5% year over year on corporate bond ratings to 8.10 basis points",
+            "location": {
+                "section": "Analyst Notes Archive",
+                "page": "8"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 7.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil)... 2029: 282",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims 2024 margin of 49% and 300 bps expansion to 52% by 2029, but Table shows 2024 Adjusted EBITDA margin of 47.7% and 450 bps expansion to 52.2%.",
+                "locations": [
+                    "Page 2, Business Strategy & Outlook",
+                    "Page 14, Morningstar Valuation Model Summary"
+                ]
+            },
+            {
+                "description": "Narrative forecasts 'non-GAAP operating margin' of 52%, but Table 'Operating Margin' for 2029 is 47.8%.",
+                "locations": [
+                    "Page 6, Fair Value and Profit Drivers",
+                    "Page 14, Morningstar Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "scenario analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.3% components not detailed",
+            "Stage II EBI Growth 7.0% exceeds Stage I organic growth without explanation"
+        ]
+    }
+}

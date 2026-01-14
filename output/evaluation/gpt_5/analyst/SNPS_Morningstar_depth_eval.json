@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal drivers, explicit and quantified assumptions, and decision-relevant implications. It links growth to mechanisms like AI-driven design starts and rising chip complexity, e.g., \u201cgenerative AI demand leading to more chip design starts.\u201d Forecasts are tied to quantified segment assumptions: \u201cgrow at a 11% (11%) CAGR,\u201d \u201cthe IP segment at an 13% (13%) CAGR,\u201d and margin trajectory \u201cfrom 22% in 2024 to 31% by 2034.\u201d The valuation framework is explicit\u2014\u201ccost of equity of 7.5%,\u201d EV/EBITDA and FCF yield are stated\u2014and growth is benchmarked \u201cabove the expected semiconductor industry growth rate,\u201d which strengthens inference quality. The report acknowledges uncertainty and risks (China exposure, customer concentration, Ansys integration) and incorporates developments (temporary China halt and resumption) into fair value updates, offering decision-relevant takeaways (slight undervaluation contingent on Ansys approval being priced in). However, it lacks quantified sensitivity or scenario ranges (e.g., no numerical impacts if China revenue slows further or if Ansys approval is delayed/denied). The absence of stress testing on key inputs (CAGRs, margins, WACC) limits the treatment of uncertainty. Overall, mechanisms and quantified assumptions are strong, but the missing sensitivity analysis prevents an Excellent grade.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Ansys synergies sizing/timing not detailed",
+            "China revenue recovery path not modeled"
+        ],
+        "unsupported_assumptions": [
+            "'no reason to expect margin expansion to stop' not supported",
+            "7.5% cost of equity without peer benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified China revenue sensitivity",
+            "No scenario for Ansys approval vs denial"
+        ]
+    }
+}

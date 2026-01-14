@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states many core drivers near the forecasts they inform, including product peak sales, IRA-related US sales step-downs, WACC/COE/debt costs, tax rate, and Stage II DCF parameters. Specificity: Assumptions are quantitatively specific with units and horizons (e.g., \u201c2% step-down in US sales,\u201d \u201c60% probability,\u201d \u201cStage II EBI Growth 3.5%,\u201d product peak sales by year), and tie to revenue, margin, and valuation. Justification: Rationale is partial\u2014some inputs reference product histories, competitive context, and policy (IRA), but key parameters (WACC, tax rate, GLP-1 market size) lack cited sources or peer/market benchmarks. Consistency: Most figures reconcile to tables, but at least one numeric inconsistency exists (16% tax in text vs 17% long-run tax in the DCF table). Maritide sales expectations shift across sections/dates without a clear reconciliation, though they may reflect updates. Sensitivity: There is no quantified sensitivity or scenario analysis on material drivers (e.g., maritide uptake/market size, WACC, margins, IRA impacts), so valuation impact feels single-point. Overall, assumptions are relatively explicit and specific but weakly justified and not stress-tested; minor internal inconsistencies are present, capping the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We assume a 60% probability of maritide's approval and probability-adjusted sales of $8 billion in 2033, largely in obesity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We included a 2% step-down in US sales to account for Medicare inflation caps and a 1% step-down in US sales beginning in 2025 to account for Medicare Part D redesign",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 7% cost of capital... our 7.5% cost of equity assumption... We assume a 5.8% pretax cost of debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a 16% tax rate for Amgen beyond 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.5",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Stage II Investment Rate % 25.0",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We expect peak sales of combined Prolia/Xgeva at $6.6 billion (in 2024), Repatha at $3 billion, and Evenity around $2 billion... biosimilar portfolio... more than $4 billion in sales at peak.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we think Amgen can maintain non-GAAP operating margins in the mid-40s over the next several years.",
+            "location": {
+                "section": "Analyst Notes Archive \u2013 Amgen Earnings (2 May 2025)",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text assumes 16% ongoing tax rate, while DCF key drivers table shows Long-Run Tax Rate 17%",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.6)",
+                    "Key Valuation Drivers / DCF (p.14)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth (explicit perpetuity growth rate not stated)",
+            "share_count (buyback/issuance policy not articulated in narrative)",
+            "capex (level/trajectory not specified)",
+            "sensitivity ranges for key drivers"
+        ],
+        "unjustified_parameters": [
+            "WACC 7% / COE 7.5% / 5.8% cost of debt without market/source support",
+            "16% tax rate beyond 2024 without sourcing",
+            "GLP-1 market size ($200 billion) and implied share not sourced",
+            "IRA 2%/1% US sales step-downs lack external validation"
+        ]
+    }
+}

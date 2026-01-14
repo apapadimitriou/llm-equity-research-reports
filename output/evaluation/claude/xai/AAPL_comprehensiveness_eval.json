@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all major sections with detailed content and proper structure, but suffers from critical deficiencies that prevent a higher grade. While comprehensive in scope, it lacks sector-specific KPIs essential for technology equity research (no ARR, user growth metrics, or device unit sales data). The financials snapshot is generic, missing crucial technology sector metrics. Multiple claims lack proper citations, including specific revenue figures and growth projections marked as 'insufficient data.' The valuation section provides assumptions but fails to explicitly bridge operating drivers to the $245 fair value calculation. Sources include questionable references like 'Posts found on X' and inferred data points, undermining credibility. Despite thorough coverage of business strategy, moat analysis, and risk assessment, these fundamental gaps in sector-appropriate metrics and evidence standards cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "iPhone Unit Sales",
+            "Services Attach Rate",
+            "Average Selling Price",
+            "Active Device Growth",
+            "App Store Revenue Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2024 data marked as 'insufficient' while making specific forecasts based on this missing data",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "iPhone Unit Sales",
+            "Services Attach Rate",
+            "Average Selling Price",
+            "Active Device Growth"
+        ],
+        "uncited_claims": [
+            "iPhone revenue increased modestly by 1.9% to an unspecified amount",
+            "over 2 billion active devices",
+            "services retention rates over 90%",
+            "cash and marketable securities over $150 billion",
+            "repurchasing $100 billion annually"
+        ]
+    }
+}

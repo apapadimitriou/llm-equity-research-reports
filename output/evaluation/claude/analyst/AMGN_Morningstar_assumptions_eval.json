@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for most key valuation drivers, with clear units and timeframes. Peak sales forecasts are well-articulated (Prolia/Xgeva $6.6B, Repatha $3B, Tezspire $3B) and the 60% probability weighting for maritide is transparent. Cost of capital assumptions are clearly stated (7% WACC, 7.5% cost of equity, 16% tax rate). However, justification is mixed - while some assumptions reference historical performance and industry context, others lack detailed supporting evidence. The report completely lacks quantified sensitivity analysis or scenario testing for material drivers like drug sales, cost assumptions, or market penetration rates. This absence of stress-testing caps the grade at Fair despite the otherwise solid presentation of assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We assume a 60% probability of maritide's approval and probability-adjusted sales of $8 billion in 2033",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect peak sales of combined Prolia/Xgeva at $6.6 billion (in 2024), Repatha at $3 billion, and Evenity around $2 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 7% cost of capital. We rate the systematic risk surrounding Amgen shares as below average; our 7.5% cost of equity assumption aligns our capital cost assumptions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a 16% tax rate for Amgen beyond 2024, higher than the company's recent tax rates",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "We assume a 5.8% pretax cost of debt to reflect a more normalized long-term rate environment",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 541 538 541 537 529 522 515 508",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "tax_rate",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "60% probability for maritide approval",
+            "16% tax rate assumption"
+        ]
+    }
+}

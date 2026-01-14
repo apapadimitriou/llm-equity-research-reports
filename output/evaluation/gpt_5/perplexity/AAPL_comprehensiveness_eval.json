@@ -1,0 +1,60 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with clear structure: cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, and Sources. The depth is uneven. Valuation includes a fair value, WACC, margin and growth assumptions and ties them to drivers, but lacks sensitivity/scenario analysis or a valuation bridge. The Financials Snapshot provides multi-year revenue, EPS, FCF, ROIC and margins, but omits core hardware/services KPIs (units, ASPs, segment/geography mix, subscriptions), triggering the KPI hard cap. Evidence integration is mixed: many claims are cited, yet several sources are outdated or mismatched (e.g., MacroTrends 2018, Business of Apps 2021, GuruFocus 2017) and some material statements (net cash, services margin, operating cash flow) lack citations. Competitive context references rivals but no peer benchmarking. There is some redundancy (tariff impacts and services growth repeated across Analyst Note and Risk). Overall, headline sections are present, but missing sector KPIs in the Financials and inconsistent sourcing constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Segment revenue mix (iPhone 56%, Services 21%)",
+            "Installed base (2.35B devices)",
+            "Operating margin",
+            "EPS",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "iPhone units",
+            "iPhone ASP",
+            "Services revenue/gross margin (quantified)",
+            "Geographic revenue mix",
+            "Active subscriptions (multi-year)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "iPhone units",
+            "iPhone ASP",
+            "Geographic mix",
+            "Subscriptions (App Store/Services)"
+        ],
+        "uncited_claims": [
+            "Net cash position exceeding $50B",
+            "Services margin near 70% today",
+            "Operating cash flows exceeding $100B annually"
+        ]
+    }
+}

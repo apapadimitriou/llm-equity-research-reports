@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates poor quality of assumptions across all five evaluation pillars. While the document provides extensive narrative content, key modeling assumptions are largely unstated or opaque. Critical drivers like WACC (8.4%), terminal growth (3.0%), and specific revenue growth rates appear only in a brief appendix without justification or supporting evidence. The financial projections table presents precise figures through 2029 but lacks explanation of underlying drivers or methodology. No sensitivity analysis or scenario testing is provided for any material assumptions. Internal consistency issues exist between narrative claims and quantified projections. The assumptions fail to meet basic standards for explicitness, justification, and stress-testing required for equity research.",
+    "assumptions_extracted": [
+        {
+            "quote": "WACC: 8.4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Long-term Operating Margin: 35%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Search Revenue CAGR (2025-29): 7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cloud Revenue CAGR (2025-29): 28%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "revenue compound annual growth rates of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to stabilize around 32-34%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin projections inconsistent between sections (32-34% vs 35% long-term vs table showing 35.3% by 2029)",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.4% without source",
+            "Terminal growth 3.0% without justification",
+            "Search CAGR 7% without supporting analysis",
+            "Cloud CAGR 28% without peer comparison"
+        ]
+    }
+}

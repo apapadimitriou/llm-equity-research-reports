@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are explicit and concentrated in the Fair Value and Profit Drivers section and the Appendix, with proximate tables that reconcile revenue, margins, and EPS paths. Specificity is strong: magnitudes, units, and horizons are stated for core drivers (5-year revenue CAGR ~13%, FY2025 revenue $282B, margin trajectory to ~46%, WACC 8%, terminal growth 2.5%, buybacks ~$20B/year, Activision impact +3% growth and -100 bps margin). Internal consistency between narrative and the Financials Snapshot appears clean; the FY2029 revenue (~$445B) and margin (~46%) align, and EPS trajectories largely match the table. Justification is partial: some references support near-term Azure growth and financial strength (AAA rating), but key valuation inputs (WACC 8%, terminal growth 2.5%, long-term margin 46%, buyback pace) lack rigorous evidence tied to market rates, peer benchmarks, or multi-year historical analysis. Critically, the report provides no quantified sensitivity or scenario analysis for material levers (revenue/margins, WACC, terminal growth, buybacks), triggering the hard cap at Fair. Overall, assumptions are clear and specific but weakly justified and unstress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "Key model assumptions include a 5-year revenue CAGR of ~13% (FY2024\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project FY2025 revenue around $282 billion, up ~15% year-on-year, reflecting ongoing Azure strength (30%+ growth) and incorporation of Activision Blizzard\u2019s gaming revenue.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect a temporary dip in FY2025 margins due to an accounting change and Activision integration costs\u2026 foresee margins recovering and reaching ~46% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a weighted average cost of capital around 8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a 2.5% terminal growth rate.",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We assume the Activision acquisition contributes ~3% of incremental revenue growth in FY2025\u201326 and modest margin dilution of ~100 bps in FY2025.",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We also factor in ~$20 billion per year of share buybacks, reducing shares outstanding by ~1% annually.",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "a long-term EBIT margin of ~46%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% without source",
+            "terminal growth 2.5% without justification",
+            "long-term EBIT margin 46% not benchmarked",
+            "share buybacks ~$20B/year not sourced",
+            "Activision +3% incremental revenue impact not evidenced"
+        ]
+    }
+}

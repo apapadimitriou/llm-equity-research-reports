@@ -1,0 +1,116 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Key valuation drivers are stated explicitly and largely concentrated in the Fair Value and Appendix sections (revenue CAGR, NIM, operating margin, tax rate, WACC, terminal growth, share count). Specificity is generally solid: magnitudes, units, and horizons are given (e.g., 3\u20134% CAGR through 2029, NIM ~3.3%, WACC ~9%, terminal growth 2.5%, tax rate 18%, shares ~9.5B flat). Justification is partial: some assumptions reference recent NII/NIM datapoints and macro inputs, but there is limited use of multi-year history, peer benchmarks, or sourced parameters for tax rate, terminal growth, and WACC components. Internal consistency has at least one unresolved numeric contradiction: the Analyst Note cites \u201cstable 20\u201322% operating margins\u201d while the Fair Value section and table use ~22\u201323% and 22.5\u201323.0%. Sensitivity/scenario analysis is absent; risks are discussed qualitatively without quantified ranges or valuation impacts for material levers (rates/NIM, credit costs, margins). Under the hard caps, the combination of one contradiction and no quantified sensitivities results in a Poor grade despite reasonable explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at a mid-single-digit CAGR (roughly 3\u20134%) through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "net interest margin stabilizing around ~3.3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "yielding ~22\u201323% operating margin over the forecast.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume tax rate ~18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Capital expenditure and share count remain roughly flat.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Capital expenditure and share count remain roughly flat.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We use a WACC of ~9%, reflecting a 10-year Treasury ~3.5%, equity risk premium ~5%, and beta ~1.1\u20131.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our terminal growth rate is ~2.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Shares outstanding ~9.5B (flat).",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "tax_rate",
+            "capex",
+            "share_count",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin range: text says \u201cstable 20\u201322%\u201d vs later assumptions/table of ~22\u201323% and 22.5\u201323.0%.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "tax rate ~18% without source",
+            "terminal growth ~2.5% without source",
+            "WACC ~9% (ERP/beta) without cited sources"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report receives a 'Poor' grade due to the combination of internal numeric contradictions and a total lack of quantified sensitivity analysis. While the report explicitly lists key drivers such as a 4% revenue CAGR, a 9% WACC, and a 3% terminal growth rate, these inputs are weakly justified. The analyst admits to having 'insufficient data' for historical actuals (2022\u20132024), making the forward-looking projections lack a credible baseline or historical context. A clear internal contradiction exists regarding operating margins: the 'Fair Value and Profit Drivers' section specifies a 30% average, the Appendix table cites 30.5%, and the 'Financials Snapshot' table presents a sequence (30.0% to 31.0%) that averages 30.7%. This inconsistency undermines the auditability of the model. Furthermore, the report fails the sensitivity requirement; it merely offers a qualitative statement that valuation could swing by \u00b120% without providing a quantified matrix or scenario analysis for material levers like interest rates or trading revenue. According to the decision rules, the presence of a numeric contradiction combined with the absence of quantified sensitivities triggers a mandatory 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to average 30%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "apply a WACC of 9%, reflecting GS's beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Shares Outstanding 320M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin is stated as 30% in the narrative, 30.5% in the Appendix table, and averages 30.7% in the Financials Snapshot.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Revenue CAGR of 4% lacks historical context as 2022-2024 data is labeled insufficient."
+        ]
+    }
+}

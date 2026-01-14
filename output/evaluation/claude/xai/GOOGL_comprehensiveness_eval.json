@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental structural flaws that render it superficial and unreliable. The Financials Snapshot contains a glaring error with 2024 revenue listed as $3,580 billion (impossible figure), undermining credibility entirely. Critical sector-specific KPIs for tech companies are completely absent - no metrics like monthly active users, click-through rates, cost-per-click, or cloud market share are provided. The valuation section fails to establish clear linkage between operating drivers and fair value assumptions, presenting generic DCF inputs without explicit bridges. Peer benchmarking is virtually non-existent except for brief ESG comparisons. Multiple claims lack proper citations, with several assertions marked as 'insufficient data' or 'estimated.' The report acknowledges data gaps throughout but proceeds with analysis anyway. Scenario analysis and sensitivity testing are entirely missing. While the report covers most expected sections structurally, the execution is severely compromised by data quality issues, missing sector KPIs, weak sourcing, and lack of analytical rigor.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Monthly Active Users",
+            "Click-through Rates",
+            "Cost-per-Click",
+            "Cloud Market Share",
+            "Traffic Acquisition Costs",
+            "Revenue per User"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024 revenue listed as $3,580 billion - mathematically impossible",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Multiple 'insufficient data' disclaimers while making definitive forecasts",
+                "locations": [
+                    "Cover Block",
+                    "Financials Snapshot",
+                    "ESG Risk"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Monthly Active Users",
+            "Click-through Rates",
+            "Cost-per-Click",
+            "Cloud Market Share",
+            "Traffic Acquisition Costs",
+            "Revenue per User"
+        ],
+        "uncited_claims": [
+            "Google holds over 90% search market share globally",
+            "Over 50% of revenue from outside the U.S.",
+            "ROIC exceeding 20% in recent years",
+            "2024 EPS of $6.50 (estimated)",
+            "Sustainalytics ESG rating of 15.2"
+        ]
+    }
+}

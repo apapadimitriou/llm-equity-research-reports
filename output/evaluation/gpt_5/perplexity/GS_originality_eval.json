@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains ample company detail but offers little in the way of unique, decision-relevant interpretation. Most statements restate public data (EPS/revenue beats, #1 M&A rank, AWM AuS, dividend/buyback policy) or rely on boilerplate framing (moat, leadership, reduced volatility from fee revenues). I identified one weak synthesis\u2014linking the strategic pivot away from lower-return businesses to AWM fee growth\u2014but it lacks quantification, peer contrast, or catalysts. The valuation section uses a standard SOTP with normalized ROE and WACC assumptions and does not introduce novel drivers (e.g., specific IB backlog conversion timing, trading mix vs. VaR/vol metrics, or carry realization cadence in alternatives), triggering a hard cap at Fair. Decision relevance is limited: while a $650 fair value is specific, the mechanisms are generic and not company-distinct. No original theses with clear causal links, quantified implications, or timelines are presented. Boilerplate phrasing is prevalent. Overall, the piece reads as a competent recap rather than a source of new insights.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q2 2025 EPS of $10.91 beat consensus; strength driven by Global Banking & Markets activity.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Strategic pivot to higher-return businesses is bearing fruit; AWM posted record fees and $3.14T AuS.",
+                "classification": "Synthesis",
+                "decision_relevant": false
+            },
+            {
+                "text": "Asset & Wealth Management will reduce earnings volatility by expanding fee-based revenues.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value is $650 via SOTP, assuming normalized ROE of 12\u201314% and 8.5% WACC; EPS grows mid-to-high single digits with buybacks.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins should benefit from operating leverage as technology and compliance scale.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Regulatory scrutiny elevates compliance spend, pressuring near-term margins.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'market leadership'/'moat' phrasing",
+            "Valuation relies on normalized ROE without company-specific mechanisms"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

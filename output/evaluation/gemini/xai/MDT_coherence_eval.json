@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report fails on almost every coherence metric, primarily due to a massive internal contradiction regarding data availability. The Analyst Note and Financials sections repeatedly claim that quantitative data for FY2025 Q2 and Q3 is unavailable or 'insufficient.' However, the report explicitly cites the official Medtronic press releases for those exact quarters (Sources 1 and 2), which by definition contain the revenue, earnings, and margin figures the report claims are missing. This suggests a total failure to integrate cited evidence into the narrative. Furthermore, there is a major temporal paradox: the report is dated July 7, 2025, yet it cites a GuruFocus article (Source 3) from August 2025. This temporal inaccuracy violates basic logical consistency. Structurally, the report is a collection of empty shells; six out of twelve sections\u2014including Economic Moat, Fair Value, and Capital Allocation\u2014provide no analysis, simply stating 'insufficient data.' This results in a complete lack of cross-referencing or argumentative flow. The Bulls/Bears section is not reconciled with a base-case valuation because the valuation section is entirely empty. The 'Financials Snapshot' and 'Key Valuation Assumptions' tables are populated with 'N/A,' which directly contradicts the 'raised guidance' and 'strong earnings power' mentioned in the Analyst Note. The reader is left to assemble the argument themselves using the very sources the author failed to utilize.",
+    "evidence": [
+        "Claims 'quantitative details... are not available' for Q2 2025 (Analyst Note) despite citing the Q2 2025 financial results press release (Source 1).",
+        "Report date is 2025-07-07, but Source 3 is dated 2025-08-05, creating a temporal impossibility.",
+        "Six sections (Moat, Fair Value, Risk, Cap Allocation, Financials, ESG) consist entirely of 'insufficient data' placeholders, preventing any structural coherence."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 6,
+        "auto_downgrade_applied": true
+    }
+}

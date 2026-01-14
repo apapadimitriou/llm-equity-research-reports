@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all core sections expected in an equity research note: clear cover and contents, business description, strategy and outlook, bulls/bears, moat, valuation and profit drivers, risks, capital allocation, ESG, and an extensive financials snapshot. Peer context is addressed via competitor comparisons and ESG peer analysis, and regulatory context is thorough. Valuation is supported by explicit DCF inputs (WACC, long-run tax rate) and linked qualitatively to operating drivers (segment growth, margin changes, share repurchases), with multi-year projections for key financials. However, the Financials Snapshot omits multiple sector-appropriate KPIs for managed care/PBM, such as medical loss ratio, membership by segment, and PBM script volumes; membership is mentioned elsewhere but not integrated into the snapshot table. Scenario/sensitivity analysis is not provided despite references to bear-case considerations. Evidence is largely internally sourced, with consistent methodology disclosures, though limited in-text citations. Redundancy is minimal, with each section adding new angles on PBM regulation and utilization trends. Overall, strong breadth and linkage, but the KPI omissions in the snapshot and lack of scenarios cap the comprehensiveness at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Executive Summary",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Adjusted EPS",
+            "Membership (medical members)"
+        ],
+        "sector_kpis_missing": [
+            "Medical loss ratio (MLR)",
+            "Enrollment/membership by segment",
+            "PBM script volume/claims"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical loss ratio (MLR)",
+            "PBM script volumes",
+            "Segment enrollment"
+        ],
+        "uncited_claims": []
+    }
+}

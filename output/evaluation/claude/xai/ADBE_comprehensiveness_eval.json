@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails comprehensiveness standards across multiple critical dimensions. While it includes most expected sections structurally, the content is severely undermined by fundamental issues. The financials snapshot completely omits sector-specific KPIs essential for software companies (ARR growth rates, net revenue retention, churn rates, customer acquisition costs), containing only generic metrics. Sourcing is catastrophically poor with multiple admissions of \"insufficient data\" and vague citations like \"Posts found on X\" without proper attribution. The valuation section lacks explicit linkage between operating drivers and fair value calculations. Critical data inconsistencies appear throughout, including conflicting share repurchase figures and timeline confusion between fiscal years. The report demonstrates superficial coverage masquerading as comprehensive analysis, with essential software industry metrics entirely absent and key claims unsupported by credible sources.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Competitive Positioning analysis",
+            "Detailed peer benchmarking",
+            "Scenario analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR growth rates",
+            "Net Revenue Retention",
+            "Customer churn rates",
+            "Customer Acquisition Cost",
+            "Dollar-based Net Expansion Rate",
+            "Subscription metrics breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Share repurchase data inconsistent - mentions 4.6M shares in Q2 FY24 but report is dated 2025",
+                "locations": [
+                    "Capital Allocation",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Timeline confusion between FY24 actual vs Q2 FY25 results",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR growth rates",
+            "Net Revenue Retention",
+            "Customer churn rates",
+            "Customer Acquisition Cost",
+            "Dollar-based Net Expansion Rate"
+        ],
+        "uncited_claims": [
+            "Adobe holds over 50% share in professional creative software with insufficient source",
+            "Demand for digital experiences projected to grow at 15% annually through 2028 with omitted source",
+            "Sustainalytics ESG score of 15.2 admitted as insufficient data",
+            "Multiple claims sourced to vague 'Posts found on X' without specific attribution"
+        ]
+    }
+}

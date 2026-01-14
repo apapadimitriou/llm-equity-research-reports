@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with fabricated data masquerading as analysis. Critical assumptions lack any causal mechanisms or benchmarking. The \"revenue CAGR of 5%\" and \"margin expansion to 25%\" appear without explanation of underlying drivers. The \"WACC estimated at 9%\" has no sensitivity analysis or justification beyond generic \"beta 1.2\" assumptions. Causal reasoning is superficial at best - \"Revenue growth was supported by higher net interest income\" provides no mechanism for how rate changes translate to earnings. The report contains numerous red flags including \"[assumed model]\" disclaimers and \"insufficient data\" admissions throughout. Most damaging is the complete absence of quantified sensitivity analysis despite claiming \"20% valuation swings from recession scenarios\" without any supporting calculations. The EPS bridge attempts quantification but relies on unsupported assumptions like \"$2.00 from revenue growth\" with no underlying methodology. This represents poor analytical depth with descriptive content packaged as rigorous analysis.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth \u2192 margin expansion pathway not explained",
+            "interest rate changes \u2192 NIM impact not quantified",
+            "data analytics advantage \u2192 profitability link unclear"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3.0% with no benchmark",
+            "WACC 9% without cost of equity calculation",
+            "margin expansion to 25% without operational drivers"
+        ],
+        "lack_of_sensitivity": [
+            "no rate scenario analysis despite NIM sensitivity claims",
+            "20% valuation swing mentioned but not calculated",
+            "recession impact assumed but not modeled"
+        ]
+    }
+}

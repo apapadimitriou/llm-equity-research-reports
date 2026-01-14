@@ -1,0 +1,61 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report follows the expected structural framework, including all required sections from the Analyst Note to ESG analysis. However, it fails to achieve a higher grade due to significant data gaps and poor sourcing. The Financials Snapshot is skeletal; it omits FY2024 actuals entirely despite the report being dated June 2025, and it lacks critical sector-specific KPIs such as Segment Gross Margins (Services vs. Products) and Installed Base metrics. Sourcing is inconsistent, relying on an outdated 2017 document for business segmentation and vague social media references for regulatory risks. Furthermore, the report exhibits significant redundancy, repeating the 2.3% China revenue decline and 12% Services growth across the Analyst Note, Bulls/Bears, and Risk sections without providing additional analytical depth. The absence of peer benchmarking and scenario/sensitivity analysis further limits the report's comprehensiveness. Per the grading rules, the omission of core sector KPIs and the use of outdated/uncited claims cap the grade at 'Fair'.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Services Revenue Growth",
+            "Operating Margin",
+            "Revenue CAGR"
+        ],
+        "sector_kpis_missing": [
+            "Segment Gross Margins",
+            "Installed Base / Active Devices",
+            "Services ARPU"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2024 actuals are listed as 'Insufficient' despite the report date being June 2025 and Q2 2025 results being available.",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Segment Gross Margins",
+            "Installed Base",
+            "iPhone Unit Growth/Mix"
+        ],
+        "uncited_claims": [
+            "Regulatory risks based on 'Posts found on X'",
+            "Business description based on 2017 filing (Source [7])",
+            "ESG peer comparison 'inferred from public datasets'"
+        ]
+    }
+}

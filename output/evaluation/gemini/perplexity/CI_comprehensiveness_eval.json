@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required qualitative sections but fails to meet the depth and technical requirements for a higher grade. Most significantly, the Financials Snapshot is generic and omits critical sector-specific KPIs for a managed care and PBM entity, such as the Medical Loss Ratio (MLR), Pharmacy Benefit Management (PBM) script volumes, and membership growth by segment. The absence of these metrics triggers a hard cap at 'Fair'. Additionally, the report exhibits high redundancy; the Medicare divestiture and Evernorth growth drivers are repeated across five different sections (Analyst Note, Business Description, Strategy, Bulls/Bears, and Capital Allocation) without providing incremental depth in each instance. The valuation section lists high-level assumptions like WACC and CAGR but lacks an explicit linkage or bridge demonstrating how specific operating drivers (e.g., specialty pharmacy volume) mathematically result in the $365 fair value estimate. Finally, the total absence of peer benchmarking and scenario/sensitivity analysis further limits the report's comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Specialty drug volume growth",
+            "Medical customers (total)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "PBM Script Volume",
+            "Days Claims Payable (DCP)",
+            "Membership growth by segment"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Pharmacy Script Volume",
+            "Membership growth rates"
+        ],
+        "uncited_claims": []
+    }
+}

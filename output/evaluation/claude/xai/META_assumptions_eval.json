@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report explicitly states several key assumptions in an appendix table (15% revenue CAGR, 41% operating margin, 9% WACC, 3% terminal growth) with basic rationale provided. However, justification is weak\u2014most assumptions rely on single-quarter trends or generic benchmarks without multi-year history or peer comparisons. Specificity is partial, with units and timeframes clear but limited detail on causal drivers. Internal consistency has issues: the report claims 2024 EPS is 'insufficient data' yet builds forecasts from an assumed $18 baseline, and references Q1 2025 results in a June 2025 report as if they're recent. Most critically, there are no quantified sensitivities or scenarios despite identifying material risks like regulatory changes and competition, which caps the grade at Fair per the hard cap rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 15.0% Based on Q1 growth trends",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Avg Op Margin 41.0% Q1 2025 margin",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC 9.0% Beta 1.2, risk-free rate 4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 3.0% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We apply a WACC of 9%, reflecting Meta's beta of 1.2 and cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 2024 EPS is 'insufficient data' but then assumes $18 baseline for forecasts",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "credit_cost",
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "15% revenue CAGR based only on single quarter",
+            "Beta 1.2 without source",
+            "Risk-free rate 4% without source"
+        ]
+    }
+}

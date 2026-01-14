@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely unstated or buried in complex narratives without clear justification. Key valuation drivers like the 8.85% WACC, probability of success percentages (40-75%), and peak sales estimates ($3.5B-$7B per asset) appear without supporting evidence or methodology. The SOTP model uses 890M diluted shares versus 388M basic shares without explanation for this massive difference. Revenue projections show dramatic swings (2025E: $2.05B to 2028E: $15B) without underlying assumptions. Multiple contradictions exist: claiming 'aggressive cost-cutting' while extending breakeven from 2026 to 2028, and stating strong cash position while highlighting 'alarming cash burn.' No sensitivity analysis is provided for any material drivers despite high execution risks. The assumptions lack specificity in units, timeframes, and causal drivers, making the valuation framework unauditable.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our DCF models utilize a Weighted Average Cost of Capital (WACC) of 8.85% as a baseline, derived from available financial data",
+            "location": {
+                "section": "Valuation: Searching for a Floor",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We then apply a Probability of Success (PoS) discount to each asset's NPV. Our PoS estimates are informed by industry averages for each phase of development",
+            "location": {
+                "section": "Sum-of-the-Parts (SOTP) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Shares Outstanding (diluted): 890*",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Total Revenue 2025E: $2,050, 2026E: $5,500, 2027E: $10,500, 2028E: $15,000",
+            "location": {
+                "section": "Table 5: Abridged Financial Forecasts",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "mRNA-1010 (Flu) Est. Peak Sales (Un-risked): $3.5B, Probability of Success (PoS %): 75%",
+            "location": {
+                "section": "Table 3: Key Pipeline Assets",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims aggressive cost-cutting success while extending breakeven target from 2026 to 2028",
+                "locations": [
+                    "Post-Pandemic Realities section",
+                    "Strategic Priorities section"
+                ]
+            },
+            {
+                "description": "Diluted shares of 890M in valuation vs 388M basic shares outstanding with no explanation for 502M difference",
+                "locations": [
+                    "Table 1: Key Financial Metrics shows 388M",
+                    "Table 4: SOTP shows 890M diluted"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.85% without methodology",
+            "Peak sales estimates $3.5B-$7B per asset",
+            "Probability of success 40-75% without supporting analysis"
+        ]
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report makes several key inputs explicit and proximate to the forecasts (revenue CAGR, margin trajectory, WACC, terminal growth, FY2025/2029 revenue, EPS), and provides specific magnitudes with time horizons. However, justification is weak: drivers are largely attributed to \u201cAI and cloud\u201d tailwinds without multi-year historical evidence, peer benchmarks, or sourced parameter derivations (e.g., WACC and terminal growth rationales are cursory). Internal consistency is problematic with at least two numeric contradictions: the stated 20% revenue CAGR (and 20\u201325% growth through 2027) conflicts with the Financials Snapshot and the implied 2025\u20132029 growth path to $16.1B (~15% CAGR), and WACC at 9% is inconsistent with a 10% cost of equity and \u201cno debt.\u201d Stress-testing is limited but present: revenue downside of 10\u201315% and a 2% WACC swing changing valuation by 20% are quantified; yet there is no sensitivity on terminal growth, margins, or share count, nor valuation impacts across scenarios. Several material assumptions are missing/opaque (tax rate, capex/working capital, share count/dilution). Given the contradictions and incomplete sensitivities, the quality of assumptions is poor under the stated decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model FY2025 revenue at $9.2 billion, implying 22.7% growth from an estimated FY2024 base",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins around 40%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our discounted cash flow model assumes a 20% revenue CAGR from FY2025 to FY2029, driven by AI and cloud expansion, reaching $16.1 billion by FY2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins expanding to 42% by FY2029 from 40% in FY2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 9.0%, incorporating a 10% cost of equity and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 4.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Valuation implies a forward P/E of 45x our FY2026 EPS estimate of $11.10",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Macro risks include economic slowdowns reducing IT spending, potentially cutting revenue by 10%-15%.",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "a 2% WACC change swings valuation by 20%.",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth stated as 20% CAGR (and 20\u201325% annually through 2027) conflicts with the Financials Snapshot and reaching $16.1B from $9.2B (~15% CAGR).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "WACC 9.0% with cost of equity 10% and no debt implies WACC below COE, which is inconsistent for an unlevered firm.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Capital Allocation",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "working_capital",
+            "depreciation_amortization",
+            "stock_based_compensation/dilution"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source/derivation",
+            "Terminal growth 4% without peer/long-run evidence",
+            "Revenue CAGR 20% without reconciliation to tables",
+            "Operating margin expansion to 42% without historical/peer support"
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections (cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, Sources), indicating good structural completeness. However, depth is uneven and sector appropriateness is lacking in key areas. The Financials Snapshot is generic (Revenue, EPS, Op margin, FCF, ROIC) and omits core bank KPIs (NIM, CET1, loan loss provisions, deposit/loan growth, efficiency ratio, ROTCE), triggering the KPI hard cap. Valuation includes assumptions and an EPS bridge linking drivers to value, but uses non-bank metrics (operating margin) and lacks bank-specific operating drivers (NIM trajectory, credit costs, balance-sheet growth), weakening proportionality. Evidence is partially cited, yet several items are vague (\u201cinsufficient data\u201d) and at least one specific number (2024 EPS base) is uncited, and ESG scoring is approximate without source detail. Peer benchmarking is absent beyond a cursory ESG comparison, and no scenario/sensitivity analysis is provided. Some repetition of the asset-cap point across sections occurs with limited added depth. These gaps constrain comprehensiveness despite adequate coverage of headline sections.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation (Fair Value & Profit Drivers)",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Sector KPI Table (bank-specific)",
+            "Detailed Financials History (actual KPI series)"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Net Interest Income (narrative mention)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions/Credit Costs",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "ROTCE"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024 EPS base of $5.61 used in valuation while the Financials Snapshot lists 2024 EPS as 'insufficient data'",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Uncertainty magnitude inconsistent (Risk: 20\u201330% swing vs Appendix: fair value range 20\u201350%)",
+                "locations": [
+                    "Risk & Uncertainty",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1",
+            "Efficiency Ratio",
+            "ROTCE"
+        ],
+        "uncited_claims": [
+            "2024 EPS base of $5.61 used in EPS bridge",
+            "Sustainalytics ESG Risk score 'approximately 25' without exact sourced value"
+        ]
+    }
+}

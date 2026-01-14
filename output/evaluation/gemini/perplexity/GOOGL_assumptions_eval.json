@@ -1,0 +1,88 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as 'Fair' due to a combination of high specificity and explicitness offset by internal contradictions and a lack of quantified sensitivity for material drivers. The report is commendable for its explicitness; it clearly states key valuation inputs such as WACC (8.4%), terminal growth (3.0%), and segment-specific revenue CAGRs (e.g., Cloud at 25-30%) within the 'Fair Value' and 'Appendix' sections. These assumptions are specific, providing clear magnitudes and time horizons. However, the report fails to meet the 'Good' threshold for two main reasons. First, there is a clear internal numeric contradiction: the narrative states operating margins are projected to 'stabilize around 32-34%,' yet the 'Financials Snapshot' table explicitly forecasts margins rising to 35.1% and 35.3% in the outer years (2028-2029). Second, while the report mentions a fair value range ($185\u2013$235) based on 'AI investment productivity,' it fails to provide quantified sensitivity ranges or scenarios for the actual drivers themselves (e.g., no table showing how valuation changes if Cloud growth slows to 20% or if WACC increases). Justification is also relatively thin, relying on broad qualitative trends rather than multi-year historical benchmarking or peer comparisons for the specific valuation parameters used. Per the instruction's hard caps, the presence of a numeric contradiction and the lack of quantified driver sensitivities limit the grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rates of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to stabilize around 32-34%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cloud revenue projected to expand 25-30% annually through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal value assumes 3% perpetual growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "$75 billion capital expenditure commitment for 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states operating margins will stabilize around 32-34%, but the Financials Snapshot table forecasts margins reaching 35.1% in FY2028E and 35.3% in FY2029E.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.4% provided as a point estimate without derivation or peer context.",
+            "Terminal growth 3.0% stated without historical GDP or peer comparison."
+        ]
+    }
+}

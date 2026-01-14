@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal mechanisms, explicit and quantified assumptions, and some benchmarking, but lacks quantified sensitivity/scenario analysis. It ties results and outlook to drivers such as platform consolidation, retention, and operating leverage; for example: \u201cKey drivers include strong module adoption,\u201d \u201c97% gross retention,\u201d and \u201cdriven by $224M of net-new ARR,\u201d indicating why growth has persisted. Forecasts are explicit and quantified: \u201cNon-GAAP operating margin rising into the mid-20s%,\u201d anchored by guidance and industry data. Valuation inputs are stated (\u201cWe use a WACC of \u224810%,\u201d \u201cterminal growth: 3%\u201d) and the DCF conclusion is decision-relevant (\u201cDCF yields a fair equity value near $450/share\u201d), with peer benchmarking (\u201ctrades at a high premium to peers\u201d). However, the analysis does not provide ranges or sensitivities for key assumptions (e.g., WACC, terminal growth, margins, retention, ARR trajectory) nor scenario impacts of the outage beyond qualitative comments (\u201cfallout will continue to depress growth\u201d). The absence of quantified downside, upside, or parameter sensitivities constrains its ability to inform risk-adjusted decisions. Overall, mechanisms and assumptions are well-articulated and partially benchmarked, but the lack of scenario/sensitivity work prevents an Excellent rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Falcon Flex \u2192 churn/price impact not quantified",
+            "Operating leverage drivers not decomposed (S&M, R&D, G&A)",
+            "Outage \u2192 revenue bridge to FY2026 not explained"
+        ],
+        "unsupported_assumptions": [
+            "WACC \u224810% without market benchmark",
+            "Terminal growth 3% unsubstantiated",
+            "30%+ FCF margin by 2029 not evidenced"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/terminal growth sensitivity",
+            "No margin or ARR downside case",
+            "Outage impact lacks scenario range"
+        ]
+    }
+}

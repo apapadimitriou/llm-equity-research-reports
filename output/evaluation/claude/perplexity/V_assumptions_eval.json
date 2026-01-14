@@ -1,0 +1,75 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from critical deficiencies in assumptions quality. While it states some financial projections in the Financials Snapshot table (revenue CAGR 10.0%, terminal growth 3.0%, WACC 8.5%), these key assumptions lack any justification or supporting evidence. The revenue growth assumptions are not tied to specific drivers like payment volume growth rates, cross-border recovery timelines, or value-added services penetration rates. The WACC of 8.5% appears without any breakdown of cost of equity, debt costs, or capital structure assumptions. Most critically, there are no sensitivity analyses or scenario testing for any material drivers. The fair value estimate of $385 is presented as definitive without showing how changes in key assumptions would impact valuation. The report reads more like a business overview than a rigorous financial analysis with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR FY2025-2029: 10.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Operating margin progression: 66.5% to 68.7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital is estimated at 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Revenue CAGR 10.0% without driver breakdown",
+            "Operating margin expansion without supporting analysis"
+        ]
+    }
+}

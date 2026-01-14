@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, and Appendix/Sources. The proportionality is reasonable, with more depth in narrative sections (Analyst Note, Moat, Strategy) and an explicit valuation framework including WACC, terminal growth, and an EPS bridge linking NII/fees/provisions to earnings. However, comprehensiveness is materially weakened by the Financials Snapshot lacking core bank-specific KPIs (e.g., NII, NIM, provisions/credit costs, CET1 over time, efficiency ratio, loans/deposits growth, net charge-offs, ROTCE). This triggers the KPI cap to Fair. Evidence integration is inconsistent: several material claims rely on vague \u201cposts on X\u201d or include \u201cinsufficient data,\u201d and some data points (dividend yield, ROE history, CET1 level) are asserted without proper citation or quantification. Peer benchmarking is effectively absent beyond a brief ESG score comparison, and there is no structured scenario or sensitivity analysis (aside from one-rate-cut impact comment). Redundancy is limited and acceptable. Overall, while broad in scope and with a clear valuation linkage, the lack of sector KPI depth, limited peer context, and uneven sourcing prevent a Good rating.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Qualitative NII guidance mention"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "Net Interest Income (quantified)",
+            "Loan Loss Provisions/Net Charge-offs",
+            "CET1 Ratio (multi-year)",
+            "Efficiency Ratio",
+            "Loans/Deposits growth",
+            "ROTCE"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Sources are dated after the report date",
+                "locations": [
+                    "Cover Block (2025-07-08)",
+                    "Sources (2025-07-15)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net Interest Income (quantified)",
+            "Provisions/Net charge-offs",
+            "CET1 ratio (time series)"
+        ],
+        "uncited_claims": [
+            "Dividend yield 'about 2%' with no source",
+            "ROE above 15% in recent years without citation",
+            "Buybacks exceeded $10B in 2024 sourced only to unspecified posts on X",
+            "Sustainalytics score of 18.5 without a dated/source-specific citation"
+        ]
+    }
+}

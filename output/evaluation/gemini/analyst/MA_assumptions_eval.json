@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Mastercard\u2019s assumptions are explicitly stated and proximal to the valuation conclusions. The report identifies a 12% revenue CAGR and a terminal operating margin of 61% (on a net revenue basis) as primary drivers. These are justified through historical performance, the scalability of the payment network, and the secular shift from cash to digital payments. Specificity is high, with clear magnitudes, five-year time horizons, and units provided for all major model inputs, including tax rates (20%) and cost of equity (9%). Internal consistency is generally maintained, although a potential point of friction exists between the 'net revenue' margins discussed in the narrative and the 'gross revenue' margins presented in the summary financial table. While the text explains that client incentives will keep gross margins flat, the lack of a net revenue line in the main table makes the 61% assumption difficult to audit directly from the provided financials. The most significant limitation is the lack of quantified sensitivity analysis. While the report discusses risks such as macroeconomic sensitivity, travel recovery, and regulatory fines qualitatively, it fails to provide quantified ranges or alternative valuation scenarios (e.g., Bull/Bear cases) for its material drivers within the document. Per the grading instructions, the absence of quantified sensitivity analysis on material drivers mandates a 'Fair' grade, despite the otherwise solid justification and explicitness of the inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project net revenue to grow at a 12% compound annual growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect operating margins (based on net revenue) to improve from 58% in 2024 to 61% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "On a gross revenue basis, we expect increasing client incentives to result in basically flat margins over the projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 2024: 927 ... 2029: 812",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_scenarios"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity of 9% is stated without a specific build-up (risk-free rate, beta, etc.)"
+        ]
+    }
+}

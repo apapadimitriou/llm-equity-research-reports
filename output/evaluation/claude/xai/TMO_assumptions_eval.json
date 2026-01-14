@@ -1,0 +1,70 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails catastrophically on all five pillars of assumption quality. Explicitness: The report explicitly states 'insufficient data' for virtually every key valuation assumption including revenue CAGR, margins, WACC, and terminal growth. Justification: No evidence is provided for any financial assumptions because none are made. Specificity: The Key Valuation Assumptions Table shows 'insufficient data' for all critical drivers with no units, horizons, or magnitudes provided. Consistency: While there are no direct contradictions, this is only because no substantive assumptions exist to contradict. Sensitivity: No sensitivity analysis whatsoever is provided. The report acknowledges it 'cannot proceed without qualifying sources' for financial forecasts, yet still attempts to provide investment analysis. This represents a fundamental failure to meet basic equity research standards where assumptions should drive valuations and conclusions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR insufficient data",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op-Margin insufficient data",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC insufficient data",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth insufficient data",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "annual revenue over $40 billion",
+            "location": {
+                "section": "Business Description",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "none",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": []
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "All key valuation parameters marked as insufficient data"
+        ]
+    }
+}

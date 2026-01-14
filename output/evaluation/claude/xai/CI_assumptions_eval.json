@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. Key assumptions are largely unstated or opaque - the revenue CAGR of 8% appears in narrative without detailed segment breakdown justification, operating margin expansion to 4.5% lacks supporting analysis, and the WACC of 7.0% is mentioned only in appendix without derivation. Multiple contradictions exist: Q2 2025 results are cited as occurring in July 2025 (impossible timing), EPS projections show 2025E of $29.0 conflicting with stated range of $28.50-$29.50, and margin expansion assumptions contradict acknowledged cost pressures. Most critically, there are zero quantified sensitivities or scenario analyses for any material drivers despite significant regulatory and cost risks. The assumptions that do appear lack specificity in units, time horizons, and causal drivers. While some historical context is provided, justification for forward-looking parameters is weak or absent entirely.",
+    "assumptions_extracted": [
+        {
+            "quote": "projected revenue CAGR of 8% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins stabilizing at 4.5%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 7.0%, incorporating a beta of 0.9 and cost of equity of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 3% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "repurchasing $3.5 billion in shares in 2024",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS guidance range $28.50-$29.50 conflicts with point estimate of $29.0",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Report dated July 2025 but cites Q2 2025 results from August 2025 sources",
+                "locations": [
+                    "Cover Block",
+                    "Sources section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% without derivation details",
+            "Terminal growth 3% without justification",
+            "Operating margin expansion to 4.5% without supporting analysis"
+        ]
+    }
+}

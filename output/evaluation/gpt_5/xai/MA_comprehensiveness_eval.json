@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Depth is generally proportional, with operating drivers (GDV, switched transactions, cross-border) discussed and linked to valuation via a DCF and an EPS bridge. Risks, capital allocation, and moat are addressed with reasonable detail. However, the Financials Snapshot is generic\u2014containing revenue, margins, EPS, FCF, and ROIC\u2014but omits core sector KPIs (multi-year GDV, cross-border volume, switched transactions, take rate/transaction yield), triggering the KPI hard cap. Peer benchmarking is minimal (limited ESG score comparisons), and no scenario/sensitivity analysis is provided. Sourcing is mostly consistent, but the Sustainalytics ESG score lacks a specific citation. There is a minor internal inconsistency between the stated 2026 EPS ($15.90 in the Analyst Note vs $17.2 in the table). Overall, strong coverage and linkage of drivers to valuation, but the omission of sector KPIs in the snapshot and absent scenarios/peer benchmarking restrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Switched Transactions (Q2 +17%)",
+            "Cross-border Volume (Q2 +19%)",
+            "Gross Dollar Volume (GDV) growth assumption (+10%/yr)",
+            "Value-Added Services revenue growth (+18% YoY)"
+        ],
+        "sector_kpis_missing": [
+            "Multi-year GDV trajectory in Financials Snapshot",
+            "Multi-year Switched Transactions in Financials Snapshot",
+            "Multi-year Cross-border volumes in Financials Snapshot",
+            "Take rate / transaction yield"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2026 EPS stated as $15.90 in Analyst Note but $17.2 in Financials Snapshot; forward P/E noted as 32x vs 33x elsewhere.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Multi-year GDV",
+            "Multi-year Switched Transactions",
+            "Multi-year Cross-border volume",
+            "Take rate/transaction yield"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG risk score (15.2) lacks a specific source reference."
+        ]
+    }
+}

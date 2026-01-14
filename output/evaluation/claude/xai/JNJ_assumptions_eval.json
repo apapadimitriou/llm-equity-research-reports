@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from fundamental opacity and inconsistencies that render its assumptions unreliable. Key drivers like WACC (7.0%) and operating margins (25-27%) are stated without justification, with WACC explicitly noted as based on 'insufficient data for precise inputs.' The revenue CAGR assumption of 4.5% conflicts with the company's own 2-3% guidance. Multiple critical contradictions exist: EPS projections show 10.80 for 2025 in one section versus 10.86 in another, and the financials table projects impossible precision (revenue to $108.1B by 2029) despite acknowledging data gaps. Most assumptions lack specificity regarding units, timeframes, or causal drivers. No sensitivity analysis is provided for any material assumption. The pervasive use of 'insufficient data' combined with precise forecasts creates an internally contradictory framework that fails basic consistency requirements.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR of 4.5%, based on 2024 base revenue of $88.8 billion and guided 2025 growth of 2-3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in 2025 to 27% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 7.0%, incorporating a beta of 0.6 and risk-free rate of 4.0% [insufficient data for precise inputs, based on industry averages]",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate of 3.0% leads to a discounted cash flow fair value of $175 per share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 adjusted EPS of approximately $9.98 (derived from Q4 data) [2], adding $0.62 from revenue growth, $0.25 from margin expansion, offset by $0.05 from higher taxes, yielding 2025 EPS of $10.80",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR of 4.5% conflicts with company guidance of 2-3% growth",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Analyst Note section"
+                ]
+            },
+            {
+                "description": "EPS projection inconsistency: $10.80 vs $10.86 for 2025",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% without source",
+            "Terminal growth 3.0% without justification",
+            "Operating margin expansion path without support"
+        ]
+    }
+}

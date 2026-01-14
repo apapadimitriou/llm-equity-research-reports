@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. Key assumptions are largely unstated or opaque - the 10% revenue CAGR, 9% WACC, and margin expansion forecasts appear without proper justification or sourcing. Multiple internal contradictions exist: operating margins show as 61% in Q2 2025 text but different values in tables, and payment volume growth rates conflict across sections (8% vs varying figures). The appendix claims assumptions are 'based on 8% volume growth' but doesn't explain how this translates to 10% revenue CAGR. Most critically, there are zero quantified sensitivities or scenario analyses for any material drivers, despite claims that 'valuation sensitivity to +/-2% growth assumptions swinging fair value by 15%' - this sensitivity is mentioned but never actually presented. Financial forecasts span 2025-2029 but lack the granular assumptions that drive these specific projections. Sources are inadequate with multiple '[insufficient data]' references undermining credibility.",
+    "assumptions_extracted": [
+        {
+            "quote": "10% revenue CAGR from 2025 to 2029, driven by 8% payment volume growth and 12% expansion in value-added services",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 64% in 2024 to 66% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The model uses a 9% WACC, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 0.95",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth 4.0% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Buybacks totaled $12 billion in FY2024",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margins stated as 61% in Q2 2025 in Economic Moat section but forecasted differently in tables and Fair Value section",
+                "locations": [
+                    "Economic Moat section",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Payment volume growth rates inconsistent - 8% mentioned multiple times but connection to 10% revenue CAGR unclear",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without market comparison",
+            "Terminal growth 4% without GDP data",
+            "12% value-added services growth without basis"
+        ]
+    }
+}

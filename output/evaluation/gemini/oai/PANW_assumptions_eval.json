@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to multiple internal numeric contradictions that undermine the model's reliability. While the report is explicit in stating its key drivers\u2014such as revenue growth, operating margins, and WACC\u2014it fails the consistency test required for a higher grade. Specifically, there is a direct contradiction regarding the Beta used in the valuation: the 'Fair Value and Profit Drivers' section cites a 1.2 beta, whereas the 'Appendix' lists 1.1. Furthermore, the revenue growth assumption for FY2025 is stated as '~15%' in the narrative, but the 'Financials Snapshot' table forecasts $9,150 million, which represents only a 14% increase over the FY2024 base of $8,027.5 million. Justification is partial; while historical gross margins are cited, the path to a 15% operating margin from the current 8.5% lacks detailed causal drivers beyond 'fixed costs scale.' Specificity is generally solid regarding units and horizons. However, the sensitivity analysis is insufficient, providing only a single-point impact for a WACC change rather than a robust range of scenarios for multiple material drivers like revenue or acquisition integration success. Finally, the projected share count of 700\u2013710 million in the Appendix conflicts with the 'Capital Allocation' claim of 3% annual growth, which would result in a significantly higher figure by 2029 based on the current market cap and price. These cumulative discrepancies trigger the hard cap for a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at ~15% in FY2025 (middle of guidance)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin (non-GAAP) climbing to ~15% by 2029 (from ~8.5% in FY2024)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC \u22489% (cost of equity ~10% with ~1.2 beta, no debt)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth at 2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected shares ~700\u2013710M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "corporate tax 21%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Beta is cited as 1.2 in the Fair Value section but 1.1 in the Appendix.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "FY2025 revenue growth is stated as ~15% in text, but the table value of $9,150M represents 14% growth over FY2024.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Projected share count of 700-710M contradicts the claim of 3% annual growth from the current implied base of ~666M shares.",
+                "locations": [
+                    "Appendix",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "Specific acquisition integration costs for CyberArk"
+        ],
+        "unjustified_parameters": [
+            "Operating margin expansion from 8.5% to 15% lacks specific expense-line drivers."
+        ]
+    }
+}

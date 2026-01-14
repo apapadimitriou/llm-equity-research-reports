@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all major sections expected in an equity research note, including a clear analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risks, capital allocation, ESG, appendix, and a lengthy sources list. Valuation is reasonably well linked to operating drivers (NII moderation, loan growth, non-interest revenues, mid-cycle ROTCE, CAPM inputs), and capital allocation is addressed with specific dividend and buyback figures. However, the Financials Snapshot is generic and omits core bank-specific KPIs (e.g., NII, NIM, CET1 across periods, provisions/credit costs, ROTCE, efficiency ratio), triggering the KPI hard cap. Peer context is limited (mainly an ESG risk table and high-level market share claims) without robust financial benchmarking. Scenario/sensitivity analysis is absent. Sourcing is extensive but unevenly integrated; several material claims are not explicitly tied in-text to sources. There is some repetition (e.g., \u201cfortress balance sheet,\u201d CET1 15%) across multiple sections with modest added depth. Overall, the report is well-structured and informative, but gaps in sector KPI tables and lack of scenarios constrain comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Return on Tangible Common Equity (ROTCE)",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS CAGR stated as 'over the next decade' but forecasts and figures provided only through 2029, creating a timeframe inconsistency.",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NII",
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1",
+            "ROTCE",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Pilot of JPMD deposit token and partnerships with Coinbase and SAP are asserted without in-text sources.",
+            "Board\u2019s intent to increase the quarterly dividend to $1.50 in Q3 lacks explicit in-text citation."
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections: cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, appendix, and sources. Evidence is generally integrated with multiple SEC and media citations, and the valuation section provides explicit assumptions (revenue CAGR, margins, WACC) and a bridge from NII guidance to EPS and fair value. However, the Financials Snapshot relies on generic metrics (revenue, EPS, op margin, FCF, ROIC) and omits core bank KPIs (NII/NIM, loan loss provisions/credit costs, CET1, efficiency ratio, net charge-offs), triggering a hard cap at Fair. Peer benchmarking is largely absent beyond cursory references and ESG comparisons, and scenario analysis is missing (aside from a limited WACC sensitivity). There are a few uncited or weakly supported claims (e.g., buyback authorization size, Tier 1 leverage) and a minor contradiction around P/B vs \u201cnear book value.\u201d While valuation linkages are present, the bank-specific driver-to-value bridge could be more robust. Overall, comprehensiveness is solid in breadth but constrained by KPI omissions and limited peer/scenario depth.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROE (mentioned outside snapshot)",
+            "CET1 (mentioned outside snapshot)",
+            "NII guidance (mentioned outside snapshot)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII) time series",
+            "Loan Loss Provisions/Net Charge-offs",
+            "CET1 ratio (multi-year)",
+            "Efficiency Ratio",
+            "Deposit/Lending growth (multi-year in snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States JPM \u201ctrades near book value\u201d while implying P/B ~1.9x in valuation section",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "NII time series",
+            "Loan Loss Provisions",
+            "Net Charge-offs",
+            "CET1 (multi-year)",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Capital Allocation rating 'Exemplary' in cover block has no direct source citation",
+            "Tier 1 leverage >6% without citation",
+            "Repurchase authorization size (~$24B in 2024) not cited",
+            "'Implied multiples... consistent with peers' without peer data/source"
+        ]
+    }
+}

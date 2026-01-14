@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is generally well-structured with a clear arc from recent performance and strategy (Analyst Note, Business Strategy & Outlook) to valuation, risks, and capital allocation. Language is clear, and key terms like \u201cplatformization,\u201d NGS ARR, and SASE are used consistently across sections. There are effective cross-references, such as platformization penetration (25% of top 5,000 accounts) showing up in both the Analyst Note and Valuation. However, internal contradictions and a temporal mismatch undermine coherence. Most notably, the Financials Snapshot narrative claims FY 2025 EPS incorporates the impact of the CyberArk deal, while the Analyst Note explicitly states the transaction is expected to close in H2 fiscal 2026, making FY 2025 inclusion incoherent. Terminology is also inconsistently applied: the Economic Moat section refers to \u201ccustomer retention rates exceeding 125%,\u201d which appears to conflate retention with net revenue retention cited elsewhere. Citation alignment is noisy where a 500+ billion market size projection is supported by mixed sources, one of which points to a materially lower figure, without reconciliation. Despite decent flow and cross-linking, these contradictions and temporal issues require a downgrade to fair per the guardrails.",
+    "evidence": [
+        "Analyst Note: \u201cThe deal is expected to close in H2 fiscal 2026\u201d vs. Financials Snapshot: \u201cEPS growth acceleration in FY 2025 incorporates the CyberArk acquisition impact.\u201d",
+        "Economic Moat: \u201cCustomer retention rates exceeding 125%,\u201d inconsistent with Bulls\u2019 \u201c125% net revenue retention rate.\u201d",
+        "Business Strategy & Outlook: \u201c$500+ billion by 2030\u201d cited with [16][20], where [20] references a materially lower market size, without reconciliation."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

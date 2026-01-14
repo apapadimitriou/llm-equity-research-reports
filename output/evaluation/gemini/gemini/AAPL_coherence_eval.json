@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong structural coherence and a clear narrative arc, transitioning smoothly from the financial results of May 2025 to the strategic implications of the June 2025 WWDC. The Analyst Note effectively synthesizes the \"Apple Intelligence\" launch with the broader investment thesis, reconciling the bullish enthusiasm for AI with the bearish concerns regarding its incremental nature. Financial assumptions are well-integrated; for instance, the aggressive $100 billion share repurchase program mentioned in the Capital Allocation section is reflected in the Financials Snapshot, where EPS growth significantly outpaces revenue growth.\n\nHowever, the report suffers from a material internal contradiction regarding its ESG data. The narrative states that Apple ranks 286th out of 613 companies in its industry, while the accompanying ESG Risk table explicitly lists the rank as 285. More critically, there is a significant failure in temporal alignment within the bibliography. Although the narrative claims are time-accurate for a June 9, 2025 report date\u2014referencing \"recent\" events in May and June\u2014multiple citations (Sources 29, 85, 92, 93, and 108) are dated July or August 2025. This logical impossibility suggests a hallucination in the source metadata. Per the grading instructions, the presence of an unaddressed contradiction between the narrative and tables, combined with the impossible dating of supporting citations, necessitates a hard cap at the \"fair\" level despite the otherwise high quality of the prose and structural flow.",
+    "evidence": [
+        "ESG rank contradiction: \"286th out of 613\" in narrative vs \"285\" in the ESG Risk table.",
+        "Impossible source dates: Sources 29, 85, 92, 93, and 108 are dated July or August 2025, post-dating the June 9, 2025 report date (Sources section).",
+        "Strong structural connective tissue: \"This reliable cash generation underpins an exceptionally aggressive capital return program\" (Analyst Note)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

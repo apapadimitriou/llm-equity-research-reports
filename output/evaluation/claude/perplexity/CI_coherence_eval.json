@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report exhibits severe structural and consistency problems that render it largely incoherent. The temporal framework is fundamentally broken, with the report dated July 10, 2025 but referencing Q2 2025 earnings released on July 31, 2025, creating impossible time sequences. Multiple sections read like disconnected bullet lists with minimal transitions, particularly the Business Description and Risk sections. Critical contradictions emerge between the narrative and data: the Analyst Note claims Q2 EPS of $7.20 while the Financials Snapshot projects 2025 EPS of $29.60 with no reconciliation of quarterly versus annual figures. The Bulls/Bears section presents opposing views but fails to connect them to the base-case valuation narrative. Revenue figures are inconsistent across sections, with some citing $67.2B quarterly revenue while projections show $265B annually without clear bridging. Citations are poorly integrated and don't support specific claims effectively. The report requires readers to independently construct logical connections between sections.",
+    "evidence": [
+        "Report dated 2025-07-10 references Q2 2025 earnings 'released on July 31, 2025' - impossible temporal sequence (Analyst Note)",
+        "Claims Q2 EPS of $7.20 but projects full-year 2025 EPS of $29.60 with no quarterly reconciliation (Analyst Note vs Financials Snapshot)",
+        "Multiple sections lack transitions, reading as bullet lists rather than connected analysis (Business Description, Risk & Uncertainty sections)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

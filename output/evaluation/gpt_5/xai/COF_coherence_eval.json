@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report has a clear structure and some internal alignment (e.g., 5% revenue CAGR and margin expansion in the narrative match the Financials Snapshot), but multiple unaddressed contradictions and a temporal inaccuracy undermine coherence. First, the Analyst Note cites 2025-Q2 10-Q results and source [1] dated 2025-08-03, while the report date is 2025-07-03\u2014implying use of a document not yet available. Second, the valuation discussion claims \u201c10% upside from recent trading levels\u201d despite the Cover Block stating \u201cLast close insufficient data,\u201d creating a direct inconsistency. Third, the EPS bridge in Fair Value is arithmetically inconsistent: the stated components (12.00 base +2.00 \u20130.50) do not reconcile to the asserted 2029 EPS of 18.00. Additional internal noise includes precise figures paired with \u201cinsufficient data\u201d qualifiers (e.g., ESG Risk rating 18.2 and CET1 \u201cabove 12%\u201d). The Bulls/Bears section introduces material risks (fee caps, fintech pressure) but these are not reconciled with the base-case assumptions of steady 5% CAGR and margin expansion\u2014no sensitivity or scenario linkage is provided. Flow within sections is generally readable, and some cross-references exist, but the contradictions and time mismatch trigger guardrail downgrades. Overall, the reader must reconcile key elements themselves, reducing coherence.",
+    "evidence": [
+        "Temporal mismatch: Report date 2025-07-03 vs source [1] dated 2025-08-03 while claiming 2025-Q2 10-Q results in Analyst Note.",
+        "Valuation inconsistency: Analyst Note says \u201cThis implies a 10% upside from recent trading levels\u201d while Cover Block shows \u201cLast close insufficient data.\u201d",
+        "EPS bridge math: Fair Value states 2024 EPS 12.00, +2.00, \u20130.50 leading to 2029 EPS 18.00\u2014figures don\u2019t reconcile."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

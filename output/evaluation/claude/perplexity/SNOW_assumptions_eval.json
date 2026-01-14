@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates critical deficiencies in assumption quality across all five pillars. Key financial assumptions driving the fair value estimate of $205 are largely opaque and scattered throughout the document without explicit linkage to their forecasting impact. While the report mentions a 22% product revenue CAGR through FY2029, it provides no justification for this figure beyond vague references to 'AI-driven expansion opportunities.' The WACC assumption of 10.5% appears without any supporting rationale or market-based evidence. Most critically, the detailed financial projections table spanning 2022-2029 contains specific revenue and margin forecasts but lacks any explanation of the underlying drivers or methodologies. The report includes no sensitivity analysis or scenario testing despite acknowledging significant execution risks in AI strategy and competitive threats from cloud giants. Internal consistency issues emerge between optimistic growth projections and acknowledged revenue deceleration trends. The assumptions fail basic auditability standards expected in equity research.",
+    "assumptions_extracted": [
+        {
+            "quote": "Product revenue CAGR FY2025-2029: 22%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted average cost of capital: 10.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Target non-GAAP operating margin by FY2029: 15%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We project non-GAAP product gross margins stabilizing around 75%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report projects 22% revenue CAGR while acknowledging deceleration from 34% to 27% growth and competitive pressures",
+                "locations": [
+                    "Appendix assumptions",
+                    "Analyst Note on slowing growth"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without source",
+            "22% revenue CAGR without methodology",
+            "75% gross margin without justification",
+            "15% operating margin target without support"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid explicitness with key assumptions clearly stated in the Fair Value and Profit Drivers section, including specific revenue growth targets (18% five-year CAGR) and margin expansion forecasts (30% to mid-30% range). Justification is partial, with some assumptions supported by company targets and historical performance, but lacks comprehensive peer benchmarking or detailed sourcing. Specificity is good with clear units, timeframes, and magnitudes provided for most drivers. Internal consistency appears clean with no apparent contradictions between narrative and financial tables. However, the report completely lacks quantified sensitivity analysis or scenario testing for any material drivers, which automatically caps the grade at Fair according to the hard cap rules. While the DCF model shows detailed financial projections, there are no stress tests, ranges, or alternative scenarios provided for key assumptions like growth rates, margins, or cost of capital.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year CAGR for revenue of 18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We see non-GAAP operating margin expanding from 30% in 2024 (actual) to the mid-30% area over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 14.4",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 209",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Cost of Equity 9.0% without detailed source",
+            "WACC 8.8% without component breakdown justification"
+        ]
+    }
+}

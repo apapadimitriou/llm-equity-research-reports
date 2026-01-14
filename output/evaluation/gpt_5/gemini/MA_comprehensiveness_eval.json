@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured with a complete contents page and covers all major sections: Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers (with a DCF, explicit WACC inputs, revenue/margin assumptions, and an EPS bridge), Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Competitive positioning is addressed via the moat discussion with scale metrics, and capital allocation is detailed with FCF, buybacks/dividends, and targeted M&A. However, the Financials Snapshot omits core payments-network KPIs (e.g., Gross Dollar Volume, switched transactions, cross-border volume/mix, take rate), triggering the hard cap to Fair despite otherwise strong coverage. Peer benchmarking is largely absent (aside from an ESG rating comparison) and there is no scenario/sensitivity analysis. Evidence integration is mixed: while many sources are listed, numerous specific quantitative claims in-text are not directly cited, reducing consistency. Depth is generally proportional across sections, and redundancy is minimal. Overall, it is a solid, near-comprehensive report constrained by missing sector KPIs in the snapshot, limited peer context, and lack of sensitivities.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Gross Dollar Volume (~$10T in 2024)",
+            "Transactions Switched (159.4B in 2024)",
+            "Cards in Circulation (3.6B as of mid-2025)",
+            "Cross-Border Volume Growth (15% cc in Q1 2025)"
+        ],
+        "sector_kpis_missing": [
+            "Gross Dollar Volume (multi-year, forecast)",
+            "Switched Transactions (multi-year, forecast)",
+            "Cross-Border Mix/Volumes (history + forecast)",
+            "Take Rate/Revenue Yield vs Volume"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Dollar Volume (GDV) time series and outlook",
+            "Switched Transactions time series and outlook",
+            "Cross-border volume/mix and growth trajectory",
+            "Take rate/revenue yield vs volume"
+        ],
+        "uncited_claims": [
+            "Q1 2025 net revenue grew 14% and adjusted EPS increased 13% (no inline source)",
+            "Value-added services grew 16% in Q1 2025 (no inline source)",
+            "Returned $3.2 billion to shareholders in Q1 2025 (no inline source)",
+            "Payment Network revenue of $17.3 billion in 2024 (no inline source)",
+            "Value-added Services revenue of $10.8 billion in 2024 (no inline source)",
+            "Processed nearly $10 trillion GDV and 159.4 billion transactions in 2024 (no inline source)"
+        ]
+    }
+}

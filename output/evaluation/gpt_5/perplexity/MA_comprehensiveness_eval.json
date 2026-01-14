@@ -1,0 +1,74 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, sources) and offers reasonable topical depth on Mastercard\u2019s model, moat, and capital allocation. However, comprehensiveness is limited by key gaps in sector-appropriate KPIs and valuation linkage. The Financials Snapshot presents generic metrics (revenue, EPS, margins, FCF, ROIC) but omits core payments network KPIs such as GDV, cross-border volumes, transaction counts, take-rate/yield, and rebates & incentives\u2014required for a sector-specific view. The valuation section provides qualitative drivers and high-level assumptions but does not credibly bridge operating drivers to the stated fair value (and relies on an external price target); valuation math is inconsistent. Evidence integration is uneven, with multiple outdated sources and some uncited claims, undermining reliability. Peer benchmarking and scenario/sensitivity analysis are absent. Some talking points (wide moat, regulatory headwinds, value-added services) are repeated across sections without added depth. These issues collectively cap the grade at Fair despite broad section coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Gross Dollar Volume (GDV)",
+            "Cross-border Volume Growth",
+            "Transaction Count (Switched Transactions)",
+            "Take Rate/Yield",
+            "Rebates & Incentives as % of Revenue"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value math inconsistent: $640 implies ~40x 2025 EPS ($15.89), not ~34x as stated",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Q2 2025 actuals cited despite report date (2025-07-03) preceding the stated earnings release timing",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Dollar Volume (GDV)",
+            "Cross-border Volumes",
+            "Switched Transactions",
+            "Take Rate/Yield",
+            "Rebates & Incentives %"
+        ],
+        "uncited_claims": [
+            "Share repurchases reduce diluted share count by 2\u20133% annually (no source)",
+            "Debt-to-equity ratio ~0.15x (no source)",
+            "WACC ~8\u20139% referenced via a 2019 page (outdated for current valuation assumptions)"
+        ]
+    }
+}

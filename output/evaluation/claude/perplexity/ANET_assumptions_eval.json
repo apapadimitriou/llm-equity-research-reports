@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions driving the financial model are largely opaque and scattered throughout the report without clear connection to forecasts. The financial snapshot table presents specific projections (revenue growing from $7.0B to $13.8B, EPS from $2.23 to $5.85) but lacks explicit justification for these figures. Key drivers like WACC (11.5%), terminal growth (3.0%), and revenue CAGR (15%) appear only in the appendix without supporting rationale. Multiple internal contradictions exist: fair value of $82 conflicts with $94.97 stock price being described as 'stretched' yet only 1.16x fair value, and gross margins are stated as both 64% and expanding. No sensitivity analysis is provided for any material assumptions despite high uncertainty ratings. The assumptions fail basic explicitness, justification, and stress-testing requirements.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2024-2029: 15%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 11.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Steady-state operating margin: 45%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Fair value estimate of approximately $82 per share reflects discounted cash flow modeling",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value $82 vs stock price $94.97 described as 'stretched' but only 1.16x fair value ratio suggests minimal overvaluation",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Gross margins stated as both 'stable around 64%' and 'expanding to 64%' in different sections",
+                "locations": [
+                    "Business Description",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 11.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Revenue CAGR 15% without support"
+        ]
+    }
+}

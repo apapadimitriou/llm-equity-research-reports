@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains extensive factual information about Wells Fargo's Q2 2025 results and regulatory developments, it lacks meaningful causal explanations, explicit assumptions, and quantified sensitivity analysis. The few causal statements are shallow, such as 'net income of $5.5 billion, representing 12% year-over-year growth' without explaining underlying drivers. The valuation section mentions 'fair value estimate of $85.00' and 'revenue compound annual growth rate of 4-6%' but provides no benchmarking or stress testing of these assumptions. Key phrases like 'assumes revenue compound annual growth rate of 4-6%' and 'weighted average cost of capital estimation of 10-11%' present assumptions without justification. The report states 'fair value range of $78-92 per share' but offers no scenario analysis explaining how these bounds were derived. Despite comprehensive coverage of business segments and risks, the analysis remains largely descriptive rather than providing the causal mechanisms and quantified sensitivities required for analytical depth.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "asset cap removal \u2192 growth impact not quantified",
+            "CRE exposure \u2192 loss scenarios not modeled",
+            "rate environment \u2192 NIM impact not explained"
+        ],
+        "unsupported_assumptions": [
+            "revenue CAGR 4-6% with no benchmark comparison",
+            "fair value $85 with no sensitivity analysis",
+            "terminal growth 2.5% without industry context"
+        ],
+        "lack_of_sensitivity": [
+            "WACC 10-11% presented as point estimate",
+            "no quantified scenarios for key risks",
+            "valuation range $78-92 without methodology"
+        ]
+    }
+}

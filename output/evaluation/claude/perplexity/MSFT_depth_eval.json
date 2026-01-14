@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report lacks fundamental analytical depth, relying heavily on description rather than causal reasoning. While it presents extensive data points like \"AI business $13B run rate (up 175% YoY)\" and \"Azure growth 31%\", it fails to explain the underlying mechanisms driving these results. The valuation section mentions a \"$490 per share\" fair value but provides no explicit assumptions, benchmarks, or sensitivity analysis. Claims like \"AI integration is expected to generate $50 billion in annual revenue by fiscal 2027\" appear without supporting methodology or stress-testing. The report contains no quantified scenarios, ranges, or meaningful counterpoint analysis despite mentioning risks. Most concerning, critical assumptions such as the \"WACC: 8.5%\" and \"Terminal growth rate: 3.0%\" are stated without benchmarking or justification. The analysis reads more like a comprehensive company overview than rigorous equity research with actionable investment implications.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": false,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI revenue growth \u2192 margin impact unexplained",
+            "Azure capacity constraints \u2192 growth limitation unclear",
+            "OpenAI partnership \u2192 competitive advantage mechanism missing"
+        ],
+        "unsupported_assumptions": [
+            "Fair value $490 with no DCF methodology shown",
+            "WACC 8.5% without benchmark justification",
+            "$50B AI revenue by 2027 lacks derivation"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario analysis for AI adoption rates",
+            "Valuation multiples presented without ranges",
+            "Regulatory risk impact not quantified"
+        ]
+    }
+}

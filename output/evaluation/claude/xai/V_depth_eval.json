@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report shows some causal reasoning and explicit assumptions but lacks depth in critical areas. Causal explanations include \"payment volume growth of 8%\" and \"cross-border volume expansion of 13%\" tied to specific drivers, and \"network effects provide pricing power\" linking competitive advantage to financial performance. The DCF model provides explicit assumptions: \"10% revenue CAGR\", \"9% WACC\", and \"66% by 2029\" margin target. However, these assumptions lack benchmarking against peers or industry standards. The report mentions \"valuation sensitivity to +/-2% growth assumptions swinging fair value by 15%\" but provides no detailed scenario analysis or stress testing. Counterpoints exist in the Bears Say section but remain superficial. While implications like the $310 fair value target are stated, they lack conditional frameworks for different economic scenarios.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Network effects \u2192 pricing power mechanism insufficiently detailed",
+            "Revenue growth drivers \u2192 margin expansion linkage unclear"
+        ],
+        "unsupported_assumptions": [
+            "10% revenue CAGR with no peer comparison",
+            "9% WACC components not benchmarked",
+            "Terminal growth 4% without justification"
+        ],
+        "lack_of_sensitivity": [
+            "Fair value range mentioned but not quantified",
+            "No scenario analysis for regulatory risks",
+            "Economic slowdown impact not modeled"
+        ]
+    }
+}

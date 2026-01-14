@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is reasonably strong: the report states core inputs driving the DCF and forecasts (revenue CAGR, margin trajectory, WACC/COE, tax rate, share count, Stage II growth/investment) and places them near the valuation tables. Specificity is solid: magnitudes, units, and horizons are given (e.g., five-year sales CAGR, operating margin target, 9.0% COE, 8.9% WACC, 19% tax). Justification is partial: the narrative cites ARPU history (2018\u20132023) and regional monetization drivers and efficiency gains, but most parameters (e.g., WACC/COE, margin target) lack cited sources, peer benchmarks, or multi-year reconciliations. Consistency has a material issue: text calls for \u201coperating margins rising to 43%,\u201d while the forecast table peaks at 42.5% by 2029; this unresolved text\u2013table mismatch forces caution. Sensitivity is present but limited: two quantified scenario references (\u221215% FVE on tariffs, +20% FVE on a US TikTok ban) indicate valuation impact, yet there is no systematic sensitivity across major levers (revenue growth, margins, WACC, tax). Overall, the assumptions are listed and specific, but with weak justification and a contradiction plus limited quantified sensitivities, warranting a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Meta's sales growing at a 12% compound annual growth rate for the next five years, spearheaded primarily by an increase in average revenue per user, with user growth also chipping in.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6\u20137"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins rising to 43% over our explicit five-year forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Projected Diluted Shares 2,599",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Stage II Investment Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states operating margins will rise to 43% over five years, but the forecast table peaks at 42.5% by 2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers (page 7)",
+                    "Margins & Returns table (page 15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex (explicit dollars/timing)",
+            "quantified sensitivity on margins/revenue/WACC"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.9% without cited sources/peer benchmarks",
+            "Cost of Equity 9.0% without source",
+            "Operating margin target 43% lacks quantitative driver reconciliation"
+        ]
+    }
+}

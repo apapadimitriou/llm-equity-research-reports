@@ -1,0 +1,63 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes most expected sections, critical deficiencies render it incomplete. The Financials Snapshot lacks essential sector-specific KPIs for a diversified technology company (no AWS revenue/margins breakdown, missing key e-commerce metrics like GMV, Prime subscribers, or fulfillment costs). Multiple material claims are completely uncited - fair value of $261.18, WACC assumptions, growth projections, and peer comparisons appear without source attribution. The valuation section provides no explicit linkage from operating drivers to the fair value calculation. Peer benchmarking is superficial, limited to brief competitive mentions without systematic analysis. The report contains significant redundancy, repeating AI investment themes and Q2 results across multiple sections. These fundamental gaps in sector KPIs, sourcing rigor, and valuation methodology create an incomplete analysis unsuitable for investment decision-making.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Systematic Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "AWS Revenue Breakdown",
+            "AWS Operating Margin",
+            "GMV",
+            "Prime Subscribers",
+            "Fulfillment Cost per Unit",
+            "Third-party Seller Services Revenue"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AWS Revenue Breakdown",
+            "AWS Operating Margin",
+            "GMV",
+            "Prime Subscribers",
+            "Fulfillment Cost per Unit"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $261.18",
+            "WACC of 9.5%",
+            "Terminal growth rate of 3.0%",
+            "Revenue projections 2025-2029",
+            "Operating margin expansion assumptions",
+            "Sum-of-the-parts valuation methodology"
+        ]
+    }
+}

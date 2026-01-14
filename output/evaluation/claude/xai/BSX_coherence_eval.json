@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report contains multiple severe coherence issues that fundamentally undermine its credibility. The most egregious problem is temporal inaccuracy: the report claims to analyze Q2 2025 results while being dated 2025-06-28, but cites sources from August 2025 for these 'past' Q2 results, creating an impossible timeline. Additionally, there are significant contradictions between narrative claims and supporting evidence. The analyst states Q2 revenue was $5.06 billion with 23% growth, but the financials table shows full-year 2025 revenue forecast of only $17.0 billion, making the quarterly figure mathematically impossible. The report also references Q1 earnings momentum but provides no Q1 data to support this claim. Structurally, sections read like disconnected bullet points with minimal transitions, particularly the Bulls/Bears section which lists points without integrating them into the broader investment thesis. The Fair Value section uses a DCF model with assumptions that aren't reconciled with the growth claims elsewhere. Finally, the financials table is largely empty with 'insufficient data' entries, yet the narrative confidently discusses financial trends and projections.",
+    "evidence": [
+        "Report dated 2025-06-28 discusses Q2 2025 as past results but cites Yahoo Finance source dated 2025-08-03 - temporal impossibility (Analyst Note)",
+        "Claims Q2 revenue of $5.06B but forecasts full-year 2025 revenue of only $17.0B - mathematically contradictory (Analyst Note vs Financials table)",
+        "Financials table shows 'insufficient data' for all historical periods yet narrative confidently discusses trends and growth patterns (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

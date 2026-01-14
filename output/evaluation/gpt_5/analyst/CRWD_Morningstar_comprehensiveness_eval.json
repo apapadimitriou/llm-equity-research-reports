@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report is broadly well-structured and covers nearly all expected sections: cover and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, ESG, Appendix, and a detailed Financials Snapshot with multi-year history and forecasts. The valuation is explicitly linked to operating drivers, including revenue growth, margin trajectories, and a full DCF (WACC, tax rate, stage assumptions), and peer context is present via competitor comparisons. Sector-appropriate SaaS/cybersecurity KPIs (ARR, net retention, gross retention, net new ARR) appear in narrative and Analyst Notes. However, the Financials Snapshot tables themselves omit at least two core sector KPIs (ARR/NRR/gross retention), which triggers the Fair cap. Scenario/sensitivity analysis is not included in the document (though referenced as available elsewhere). Evidence is generally consistent with dated data points and the ESG section sourced to Sustainalytics; redundancy is minimal despite repeated outage context across sections. Overall, comprehensiveness is strong, but missing KPIs within the snapshot tables and lack of scenarios constrain the grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "Net Retention Rate",
+            "Gross Retention",
+            "Net New ARR"
+        ],
+        "sector_kpis_missing": [
+            "ARR (in Financials Snapshot)",
+            "NRR (in Financials Snapshot)",
+            "Gross Retention (in Financials Snapshot)",
+            "Customer Count",
+            "Modules per Customer"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR in snapshot",
+            "NRR in snapshot",
+            "Gross retention in snapshot"
+        ],
+        "uncited_claims": []
+    }
+}

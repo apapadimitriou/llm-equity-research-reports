@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some company-specific detail but suffers from extensive copying/paraphrasing of source material and generic framing. While it attempts 2-3 syntheses (linking AI adoption to margin stability, connecting acquisition strategy to competitive positioning), these lack quantified mechanisms and specific catalysts. The valuation section relies on standard DCF assumptions without novel drivers. Most insights are either directly copied from press releases (growth rates, deal counts) or represent generic SaaS analysis applicable to any cloud software company. The report shows moderate research effort but fails to provide unique, decision-relevant perspectives that go beyond publicly available information.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Subscription revenue was $3,113M (22.5% YoY growth)",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "We now model a multi-year growth slowdown from recent 20%-plus revenue growth toward mid-teens",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "ServiceNow's moat is rooted in switching costs and ecosystem lock-in",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "The move to use AI internally (slashing $100M in 2025 hires) suggests efficiency gains that could boost margins further",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "High retention (~97-99% of subscription customers) and strong financial execution",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "ServiceNow is becoming the enterprise 'agentic OS' of the AI era",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions",
+            "Extensive copying from press releases",
+            "Boilerplate moat analysis applicable to any SaaS company"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

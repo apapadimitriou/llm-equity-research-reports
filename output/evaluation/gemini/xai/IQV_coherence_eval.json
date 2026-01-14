@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report fails the coherence test due to severe temporal impossibilities and internal numerical contradictions. Most critically, the report is dated May 7, 2025, yet the Analyst Note and Fair Value sections cite Q2 2025 financial results and a Yahoo Finance source dated July 27, 2025. This chronological inconsistency makes the narrative logically impossible. Furthermore, there is a massive disconnect between the narrative and the Financials Snapshot table. The Analyst Note and Fair Value sections cite a 2024 adjusted EPS of $11.13 and project a 2025 EPS of $11.73. However, the Financials Snapshot table lists the 2024 actual EPS as $7.49 and the 2025 forecast as $7.87. These figures are never reconciled, leaving the reader to guess which dataset informs the $260 fair-value estimate. Additionally, the Bear case mentions a 27% EPS decline in Q2 2025, but the Fair Value section ignores this significant headwind, instead projecting immediate margin expansion and EPS growth. While the report follows a standard structure, the lack of alignment between the text and the supporting tables, combined with the impossible timeline, prevents it from forming a connected or credible argument.",
+    "evidence": [
+        "Report date of 2025-05-07 contradicts the inclusion of Q2 2025 data and Source 2 dated 2025-07-27 (Cover Block / Analyst Note).",
+        "Narrative projects 2025 EPS of $11.73 (Fair Value and Profit Drivers) while the Financials Snapshot table forecasts $7.87.",
+        "The 27% EPS decline noted in Bears Say is not reconciled with the base-case assumption of operating margins expanding to 24-25%."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

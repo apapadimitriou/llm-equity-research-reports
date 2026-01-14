@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure with logical progression from the Analyst Note through strategy, moat, valuation, risks, and capital allocation. Language is generally precise and transitions are serviceable; for example, elevated 2025 CapEx is linked to near-term margin pressure and the Financials Snapshot reflects this via a 2025E FCF dip to $10B. Cross-references are mostly coherent: risks around regulation and competition connect to the ad model, and the valuation\u2019s mid-40s margin assumption aligns with the table\u2019s 2027\u20132029 operating margins at 45%. However, there are notable internal inconsistencies and a temporal issue that reduce coherence. The valuation states the ~$400 FVE implies a 2025 forward P/E of about 17\u00d7, but the table shows 2025E EPS of $26, implying ~15.4\u00d7\u2014an unaddressed numerical mismatch. Additionally, Capital Allocation cites a source dated June 30, 2025 to support a financing consideration in a report dated June 16, 2025, a time-inaccurate reference. Citation alignment also falters where \u201ccommitting up to $65 billion in AI and VR investments\u201d is attributed to source [5], which concerns stock options rather than investment levels. While most figures (e.g., revenue trajectory to $290B by 2029, operating margins, and user metrics) are internally consistent, these discrepancies and the date issue necessitate a downgrade to fair under the guardrails.",
+    "evidence": [
+        "Valuation: \u201cimplies a 2025 forward P/E of about 17\u00d7\u201d vs Financials Snapshot 2025E EPS $26 (400/26 \u2248 15.4\u00d7).",
+        "Capital Allocation: cites source [12] dated 30 Jun 2025 for a report dated 2025-06-16\u2014time-inaccurate within the document.",
+        "Capital Allocation: \u201ccommitting up to $65 billion in AI and VR investments\u201d attributed to [5], which discusses stock options, not investment totals."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

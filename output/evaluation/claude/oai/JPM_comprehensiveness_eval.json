@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "While the report includes most expected sections with a comprehensive contents page, it suffers from significant weaknesses that prevent a higher grade. The Financials Snapshot is severely deficient, missing critical banking KPIs (NIM, loan loss provisions, CET1 ratio, deposit costs, efficiency ratio) and instead presenting generic metrics like FCF and ROIC that are less relevant for banks. The valuation section lacks explicit linkage between operating drivers and fair value calculation - it mentions DCF methodology but fails to show how specific assumptions (loan growth, NIM trends, credit costs) translate to the $300 target price. Additionally, there's substantial redundancy across sections with repeated mentions of NII forecasts, loan growth statistics, and management quotes appearing in multiple places without adding new depth. Sources are consistently cited throughout, which is a strength.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Deposit Costs",
+            "Efficiency Ratio",
+            "Return on Assets (ROA)",
+            "Net Charge-offs",
+            "Book Value per Share"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Deposit Costs",
+            "Efficiency Ratio",
+            "Return on Assets (ROA)",
+            "Net Charge-offs"
+        ],
+        "uncited_claims": []
+    }
+}

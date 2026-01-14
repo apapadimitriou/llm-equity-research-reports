@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximal to the valuation, especially in the Appendix and Fair Value & Profit Drivers sections. Specificity is solid: the report states magnitudes, units, and horizons (e.g., revenue CAGR 2025\u201329 of 4.5%, operating margin range of 30.8%\u201332.0%, WACC 8.5%, terminal growth 2.5%, share count reduction 3.5% annually). Consistency appears clean: these inputs reconcile with the financial snapshot (revenue/EPS trajectories and margin path). However, justification is partial: some drivers are connected to recent performance (e.g., ~31% operating margin tied to Q2 2025) and services growth trends, but key valuation parameters (WACC, terminal growth, services margin expansion to 74%) lack rigorous evidence, peer benchmarking, or source citations. Stress-testing is limited: while a few ranges are mentioned (e.g., services growth 12\u201315%, potential 200\u2013300 bps tariff-related margin pressure), there is no structured sensitivity/scenario analysis quantifying valuation impact across material levers (revenue, margins, WACC, terminal growth). The absence of tax-rate and capex assumptions further weakens completeness. Overall, the inputs are clear and internally coherent, but the lack of robust sensitivity work and modest justification caps the assessment at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-29: 4.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Services revenue CAGR: 13.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin range: 30.8%-32.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share count reduction: 3.5% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Services margin expansion from current levels near 70% to 74% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Earnings per share growth expectations of 8-10% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth rate 2.5% without rationale",
+            "Services margin expansion to 74% by 2029 without evidence"
+        ]
+    }
+}

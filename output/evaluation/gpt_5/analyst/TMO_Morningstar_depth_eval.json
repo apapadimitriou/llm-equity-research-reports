@@ -1,0 +1,28 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal mechanisms, explicit assumptions, and extensive quantification, though it lacks formal scenario or sensitivity analysis. Causally, margin improvement is tied to operational levers like \"manufacturing shift to lower-cost regions\" and mix/pricing, and growth is linked to CRO momentum and share gains (\"boosted by the faster-growing CRO segment\"). Forecasts are explicit and tied to drivers: organic growth \"return to historic mid-single-digit growth\" and ~100 bps inorganic contribution (\"approximately 100 basis points of top-line benefit\"). Data use is strong: a DCF is presented with key inputs (\"We use a 7% cost of capital\"), detailed multi-year forecasts, and ROIC/EBITDA paths. Assumptions are modestly benchmarked to history and industry (historic mid-single-digit growth; long-term organic outperformance vs industry ~3%). Counterpoints and uncertainty are discussed across tariffs, China, and funding, with some quantification (\"approximately 5% earnings reduction\" to guidance) and $200 million cancellations, but no quantified ranges or scenario trees. Actionable implications are present (undervaluation vs $630 FVE, margin trajectory, muted 2025 with normalization in 2026). The main gap is the absence of sensitivities (e.g., tariff/China/mix) or scenario ranges that would help investors size risks and upside.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "pricing flexibility impact on margins not quantified",
+            "offsetting 'pricing pressure' mechanism not sized"
+        ],
+        "unsupported_assumptions": [
+            "Stage II EBI growth 7% without benchmark",
+            "WACC 7% not justified vs peers",
+            "100 bps inorganic growth lacking pipeline support"
+        ],
+        "lack_of_sensitivity": [
+            "No tariff escalation EPS sensitivity",
+            "No China rebound range",
+            "No margin sensitivity to mix"
+        ]
+    }
+}

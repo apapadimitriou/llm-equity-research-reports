@@ -1,0 +1,77 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards with numerous critical deficiencies. While it includes most expected sections, the execution is severely flawed. The Financials Snapshot lacks essential sector-specific KPIs for technology companies (R&D spending ratios, gross margins by segment, active device metrics, services attach rates). Multiple material claims are completely uncited, including specific figures like '$900 million quarterly tariff costs' and 'over 95% iPhone production in China.' The valuation section provides assumptions but fails to explicitly link operating drivers to the $237.99 fair value through clear mathematical bridges. Extensive redundancy appears across sections, with tariff risks and China concerns repeated verbatim. The report reads more like a general business summary than rigorous equity research, lacking the analytical depth and evidentiary support required for institutional use. Sources are listed but rarely cited in-text, creating credibility gaps throughout.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Revenue",
+            "Gross Margin by Segment",
+            "Services Attach Rate",
+            "Active Device Growth",
+            "ASP Trends"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 56% iPhone revenue share but provides no supporting calculation or source",
+                "locations": [
+                    "Analyst Note",
+                    "Business Description"
+                ]
+            },
+            {
+                "description": "States China represents 19% of revenue in multiple sections but provides no verification",
+                "locations": [
+                    "Risk & Uncertainty",
+                    "Bulls Say / Bears Say"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D as % of Revenue",
+            "Gross Margin by Segment",
+            "Services Attach Rate",
+            "Active Device Growth",
+            "ASP Trends"
+        ],
+        "uncited_claims": [
+            "$900 million quarterly tariff impact with no source",
+            "Over 95% iPhone production in China claim unsupported",
+            "2.35 billion active devices figure uncited",
+            "90% retention rates claim without verification",
+            "Services margin expansion to 74% by 2029 assumption unexplained"
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are explicit and proximal to forecasts (revenue CAGR, margin target, WACC, terminal growth) with clear units and a defined 2025\u20132029 horizon. However, justification is weak: the 4% CAGR is attributed loosely to asset-cap removal, WACC 9% and terminal growth 2.5% rely on generic rationales without cited data, and margin expansion lacks peer or historical benchmarking. Specificity is partial\u2014major magnitudes are stated, but critical banking drivers (NII/NIM path, tax rate, share count, credit loss rates) are absent or only qualitatively discussed. Consistency is marred by an EPS bridge that does not mathematically reconcile to the stated 2029 EPS, though revenue/margin paths align with tables and the 2025 P/E implication is coherent. Sensitivity analysis is missing; risks are noted qualitatively without quantified ranges for material levers (rates/NIM, credit costs, margins). Under the hard caps, the absence of quantified sensitivities and a numeric inconsistency limit the grade to Fair despite some clear inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "The valuation model assumes a revenue CAGR of 4% from 2025-2029, driven by fee income growth and lending expansion post-asset cap removal",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve to 28% by 2029 from historical levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating banking sector risks.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 2.5% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue CAGR | 4.0% | Based on growth post-asset cap [7]",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Margin Target | 28.0% | Efficiency improvements [8]",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 base of $5.61, adding $0.50 from revenue growth, $0.30 from margin expansion, minus $0.20 from higher provisions, yielding 2029 EPS of $7.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "minus $0.20 from higher provisions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge components (+$0.50, +$0.30, -$0.20 from a $5.61 base) do not sum to the stated 2029 EPS of $7.50.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "tax_rate",
+            "share_count",
+            "credit_loss_rate (beyond a $0.20 EPS impact)",
+            "EV/EBITDA derivation"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% without source/data",
+            "Terminal growth 2.5% without source",
+            "Margin target 28% without peer/history evidence",
+            "Revenue CAGR 4% with minimal support beyond asset-cap reference"
+        ]
+    }
+}

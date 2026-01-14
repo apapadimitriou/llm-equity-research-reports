@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with reasonable depth: cover block and contents, an Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, and an Appendix with base/bull/bear assumptions. Sector context and competitor mentions are present, though formal peer benchmarking is absent. The valuation section links growth/margin drivers and WACC to a fair value estimate, indicating a coherent framework. However, two material gaps constrain comprehensiveness. First, the Financials Snapshot table is generic and omits core SaaS/Software KPIs (e.g., NRR, churn, net new ARR, ARPU), despite referencing ARR and subscriber counts elsewhere. Second, while numerous bracketed citations appear, the Sources section promised in contents is missing, leaving multiple material claims uncited. These issues trigger the hard cap at Fair. Evidence integration is otherwise thoughtful, with limited redundancy across sections, and scenario analysis exists in the Appendix. Addressing the missing KPI table (with multi-year history and forecasts) and providing a complete source list tied to in-text citations would elevate the report to Good or higher.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Sources"
+        ],
+        "sector_kpis_present": [
+            "Digital Media ARR",
+            "Creative Cloud Subscribers",
+            "Remaining Performance Obligations (RPO)",
+            "Monthly Active Users (MAUs)"
+        ],
+        "sector_kpis_missing": [
+            "Net Revenue Retention (NRR)",
+            "Churn Rate",
+            "Net New ARR",
+            "ARPU"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Revenue Retention (NRR)",
+            "Churn Rate",
+            "Net New ARR",
+            "ARPU"
+        ],
+        "uncited_claims": [
+            "Digital Media ARR of $18.09B",
+            "Creative Cloud subscriber base of 37M",
+            "Share repurchases of ~8.6M shares in Q2",
+            "Remaining performance obligations of $19.69B",
+            "Firefly assets generated >16B"
+        ]
+    }
+}

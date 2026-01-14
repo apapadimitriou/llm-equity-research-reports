@@ -1,0 +1,81 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides key assumptions but suffers from significant weaknesses. Explicitness is partial - revenue CAGR (10%), operating margins (22% to 25%), and WACC (8.0%) are stated but scattered across sections. Justification is weak, with revenue growth based solely on one quarter's performance and margin expansion lacking historical context or peer benchmarks. Specificity is adequate for some parameters (units, timeframes) but lacks causal drivers for margin improvement. Internal consistency shows contradictions: Q2 revenue of $5.06B annualized suggests ~$20B, conflicting with forecasted $17.0B for 2025. Most critically, the report contains no quantified sensitivity analysis on any material drivers, only qualitative risk mentions, which caps the grade at Fair per instructions.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 10% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 25% by 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The WACC is estimated at 8.0%, reflecting the company's beta of 0.9 and cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0% Long-term healthcare sector average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 22% in 2025 to 25% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 revenue of $5.06B implies ~$20B annual run rate but 2025 forecast shows $17.0B",
+                "locations": [
+                    "Analyst Note Q2 revenue",
+                    "Financials Snapshot 2025 forecast"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "10% revenue CAGR based on single quarter",
+            "25% margin target without historical context",
+            "Beta 0.9 without source"
+        ]
+    }
+}

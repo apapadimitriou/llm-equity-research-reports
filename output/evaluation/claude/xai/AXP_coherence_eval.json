@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe temporal inaccuracies and multiple unresolved contradictions that fundamentally undermine its coherence. The most glaring issue is the report date of 2025-06-29 discussing Q1 2025 results as historical fact and Q2 2025 as future, which is temporally impossible. The narrative contains significant contradictions: it claims 'insufficient data exists for Q2 2025 detailed results' while simultaneously providing specific guidance and preliminary indicators. The Bulls/Bears section lists 'valuation at 18x forward EPS appears elevated' as a bear case, but the main narrative uses 20x multiples without reconciliation. Source citations are misaligned - citing 2022 and 2024 sources for 2025 'recent' data. The EPS bridge calculation is mathematically inconsistent (starts at $12.50, adds $1.25 net, but arrives at $15.00 instead of $13.75). Additionally, several sections read as bullet dumps with minimal transitions, particularly the Business Description and Risk sections. The fundamental temporal framework collapse makes the entire analytical argument unreliable.",
+    "evidence": [
+        "Report dated 2025-06-29 discusses 'Q1 2025 results' as past events while stating 'insufficient data exists for detailed Q2 2025 results' - temporally impossible",
+        "EPS bridge calculation error: starts at $12.50, adds $1.00 revenue + $0.50 margins - $0.25 taxes = $13.75, but claims result is $15.00 (Fair Value section)",
+        "Bears cite 'valuation at 18x forward EPS appears elevated' but main narrative uses 20x multiples with no reconciliation between these contradictory valuation approaches"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

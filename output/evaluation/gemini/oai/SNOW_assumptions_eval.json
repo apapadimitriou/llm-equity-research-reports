@@ -1,0 +1,87 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report earns a 'Poor' grade due to two major internal contradictions and insufficient sensitivity analysis. First, there is a fundamental mathematical error in the WACC calculation: the report assumes a 30% Cost of Equity and 0% Debt Cost but arrives at a 10% WACC. This would require a 66% debt weighting, yet the report describes the firm as 'Net Cash positive' with a $99B implied equity value against only $2B in debt. Second, a significant discrepancy exists between the narrative's $10B revenue target for FY2029 and the financial snapshot table, which forecasts only $7.378B for the same period. While assumptions for revenue growth (22% CAGR) and margin expansion (to 20%) are explicitly stated and specific, they lack robust justification against historical GAAP losses ($-830M in FY24). Finally, sensitivity analysis is inadequate, providing only a single-point impact for WACC while ignoring material operational drivers like revenue growth or efficiency ratios. These logical and numeric failures render the model's outputs 'black-box' and internally incoherent.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast ~20%\u201325% growth in modestly decelerating fashion (CAGR ~22% from FY2025\u20132029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project non-GAAP operating margin rising from ~8% in FY2024 to ~20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 10.0% WACC (reflecting a 30% equity cost and ~0% debt cost post-conversion)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "perpetual growth 0% after 2029",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share count ~330m",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC math failure: 30% COE and 0% Debt cost cannot equal 10% WACC for a 'Net Cash positive' firm.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Capital Allocation"
+                ]
+            },
+            {
+                "description": "Revenue target discrepancy: Narrative targets $10B by FY2029, but Financials Snapshot table forecasts $7.378B.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "30% Cost of Equity is stated without any risk-free rate or beta benchmarking.",
+            "0% Terminal Growth is stated as a 'market-size assumption' without further detail."
+        ]
+    }
+}

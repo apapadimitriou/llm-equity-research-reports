@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key drivers are mostly explicit and proximal to the forecasts: revenue CAGR, product-level revenue for Skyrizi/Rinvoq, operating margin trajectory, WACC/COE components, and terminal growth are clearly stated with numeric magnitudes and horizons. Specificity is mixed\u2014several inputs are precise (e.g., WACC 7.8%, COE 8.6%, terminal growth 2.5%, >$31B Skyrizi/Rinvoq by 2027), but portfolio growth for Neuroscience/Oncology is described as \u201cmid-single-digit\u201d and Aesthetics as \u201clow-single-digit\u201d without exact figures. Justification is partial: revenue CAGR is tied to management guidance and Q1 performance, while terminal growth is linked to nominal global GDP; however, beta (0.50), ERP (8.6%), capital structure weights (83%/17%), and cost of debt lack cited, in-report empirical support. Internal consistency appears clean; narrative aligns with tables (e.g., operating margin reaching ~46% and P/E \u224816x on $195 FVE and 2025 EPS). Crucially, there is no quantified sensitivity/scenario analysis for material levers (WACC, terminal growth, margin path, product revenues), triggering the hard cap at Fair. Some material drivers (capex, share count, effective tax rate trajectory) are missing or opaque.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 7.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project Skyrizi and Rinvoq will reach combined sales of over $31 billion by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we forecast the adjusted operating margin to expand from 42.3% in Q1 2025 to approximately 45-46% by the end of our explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We also forecast solid mid-single-digit growth from the Neuroscience and Oncology portfolios",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "a modeled low-single-digit decline in the Aesthetics portfolio in fiscal 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our DCF model discounts these future free cash flows using a weighted average cost of capital (WACC) of 7.8%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "cost of equity of 8.6% (based on the Capital Asset Pricing Model using a 4.3% risk-free rate, a 0.50 beta, and an 8.6% equity risk premium) and an after-tax cost of debt of 3.9% (based on a 5.0% pre-tax cost and a 22% tax rate).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a terminal growth rate of 2.5% to our final-year cash flow",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Our model utilizes a 10-year explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "effective_tax_rate (operational)",
+            "expense/R&D growth detail"
+        ],
+        "unjustified_parameters": [
+            "Beta 0.50 without source",
+            "Equity risk premium 8.6% without source",
+            "Capital structure weights ~83% equity / 17% debt without evidence in text",
+            "Pre-tax cost of debt 5.0% without source",
+            "Terminal growth 2.5% with minimal support"
+        ]
+    }
+}

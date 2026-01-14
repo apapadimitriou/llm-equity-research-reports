@@ -1,0 +1,73 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover block, executive summary, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, appendix). Depth is reasonable in strategy, moat, and capital allocation, and the Analyst Note provides recent performance context. However, the Financials Snapshot is generic and omits core semiconductor KPIs (e.g., segment mix, gross margin, capex, inventory turns, units/ASP), triggering a hard cap. Valuation presents assumptions (growth, margins, WACC, multiples) but lacks an explicit bridge from operating drivers to the stated fair value, also invoking a hard cap. Evidence integration is weak: numerous in-text bracketed references are not tied to actual sources in the Sources section, making multiple material claims uncited. Peer benchmarking is absent beyond qualitative mentions, and there is no scenario/sensitivity analysis. Some talking points (China export restrictions, competitive threats) are repeated across sections with limited incremental depth. Overall, while the scope is broad, gaps in KPI coverage, sourcing, and valuation linkage constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Glossary",
+            "Sources with actual citations"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Segment revenue breakdown (Data Center/Gaming/Auto) in snapshot",
+            "Gross Margin",
+            "Capex",
+            "Inventory days/turns",
+            "Units shipped/ASP",
+            "Networking/Compute sub-segment KPIs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Segment revenue mix",
+            "Gross margin",
+            "Capex",
+            "Inventory turns",
+            "Units/ASP"
+        ],
+        "uncited_claims": [
+            "Q1 FY26 revenue of $44.1B and $4.5B inventory charge",
+            "Data Center revenue $39.1B in Q1 FY26",
+            "Q2 FY26 guidance: $45B \u00b1 2%",
+            "$8B lost H20 revenue in Q2 FY26",
+            "Market cap $4.46T",
+            "Cash balance $37.6B",
+            "R&D spend $3.7B, 39% YoY growth",
+            "$50B additional buyback authorization",
+            "DOJ antitrust investigation and RunAI acquisition",
+            "CUDA developer base of 4 million",
+            "AI chip TAM $400B"
+        ]
+    }
+}

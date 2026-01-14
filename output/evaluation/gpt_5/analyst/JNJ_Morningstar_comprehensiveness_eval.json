@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This Morningstar report is broadly structured and covers nearly all expected sections: cover and contents, analyst note, business description, strategy and outlook, bulls/bears, economic moat, valuation and profit drivers, risk and uncertainty, capital allocation, ESG, and an extensive financials snapshot. The depth is generally appropriate for biopharma, with qualitative discussion of pipeline assets (Tremfya, Carvykti, Rybrevant/Lazcluze), patent cliffs, and tariff/legal risks, and a DCF summary that ties forecasts to the fair value. Peer context is present via competitor comparisons and pricing/valuation metrics. However, the Financials Snapshot, while rich in standard metrics (revenue, EPS, margins, leverage), omits core sector-specific KPIs such as product-level sales breakdown, R&D expense detail, and pipeline stage/milestone tables; this reduces comprehensiveness and triggers the KPI cap. Scenario/sensitivity analysis is referenced methodologically but not included for JNJ in the report proper. Evidence is largely internal to Morningstar with limited in-text sourcing; nonetheless, claims are consistently framed and dated. Redundancy is limited, with modest overlap between Economic Moat and Strategy sections. Overall, strong coverage with notable KPI and scenario gaps.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk and Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG"
+        ],
+        "sections_missing": [
+            "Scenario Analysis/Sensitivity"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Product-level sales breakdown (e.g., Stelara, Tremfya, Darzalex)",
+            "R&D expense (% or $) in Financials",
+            "Pipeline/trial stage and milestone tables"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value date displayed as 19 Sep 2022 on cover/competitor page conflicts with 2025 valuation updates and DCF summary timing",
+                "locations": [
+                    "Cover block",
+                    "Competitors",
+                    "Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level sales by drug",
+            "R&D expense detail",
+            "Pipeline stage/milestones"
+        ],
+        "uncited_claims": [
+            "Executive order on May 12 and tariff specifics referenced without external citation"
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report is predominantly composed of restated information from sources with minimal original analysis. While it contains extensive company detail, the vast majority of insights are generic restatements that could apply to any semiconductor company (e.g., 'AI boom driving growth,' 'diversified model reduces risk'). The few candidate syntheses identified are weak and lack quantified mechanisms or specific catalysts. The valuation section relies on standard DCF methodology without novel drivers or company-specific insights. Most critically, the report fails to provide decision-relevant analysis that goes beyond paraphrasing public sources, with multiple instances of copied phrasing and boilerplate commentary.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI semiconductor sales climbed 46% YoY to $4.4 billion",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Broadcom's diversified model (semiconductors + software) and disciplined execution temper downside risk",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "three hyperscalers each plan to deploy on the order of one million Broadcom 'XPU' AI compute clusters by 2027",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management's playbook is to acquire established software franchises and aggressively streamline operations to boost profitability",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "current valuation already anticipates a 'best-case' growth scenario",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "even slight disappointments against lofty expectations can spur volatility",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Extensive copying/paraphrasing from cited sources",
+            "Boilerplate competitive advantage descriptions",
+            "Standard sector-wide insights without company specificity"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

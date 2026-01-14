@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a clear cover block, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, ESG, appendix, and sources. The valuation section provides explicit assumptions (growth, margins, WACC, terminal growth) and links drivers (FARAPULSE, WATCHMAN, acquisitions) to the fair value, which is appropriate. However, the Financials Snapshot is generic and omits multiple sector-specific KPIs for Medical Devices (e.g., organic growth, segment mix, gross margin, R&D intensity, geographic mix, procedure volumes), triggering a hard cap at Fair. Peer context is present qualitatively but lacks benchmarking data. Scenario/sensitivity analysis is absent. Sourcing is generally present, but includes at least one outdated source (R&D expenses referencing 2018) and an uncited material claim (FCF margin), and there is a notable internal contradiction (PFA TAM of ~$500M vs FARAPULSE $1B sales). There is some repetition of FARAPULSE adoption across sections with limited new depth. Overall, breadth is strong, but KPI gaps, limited peer/sensitivity analysis, and sourcing issues constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Organic Growth (%)",
+            "Segment Revenue Mix (Cardiovascular vs MedSurg)",
+            "Gross Margin (%)",
+            "R&D as % of Sales",
+            "Geographic Revenue Mix",
+            "Product/Procedure Volumes (e.g., PFA)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States FARAPULSE generated >$1B sales in 2024 while describing PFA market TAM as >$500M, implying TAM smaller than product sales.",
+                "locations": [
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Organic Growth (%)",
+            "Segment Revenue Mix",
+            "Gross Margin (%)",
+            "R&D Intensity",
+            "Geographic Mix",
+            "Procedure/Unit Volumes"
+        ],
+        "uncited_claims": [
+            "Free cash flow generation averaged 12.5% of revenue over the past five years"
+        ],
+        "outdated_sources": [
+            "MacroTrends R&D expense (2018) used to support current annual R&D (~$1.8B)"
+        ]
+    }
+}

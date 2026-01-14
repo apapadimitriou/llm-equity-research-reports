@@ -1,0 +1,119 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Core drivers are stated explicitly near the forecasts (NII, fees, expenses, credit costs, efficiency, COE), with clear magnitudes and years. Specificity is solid: the report quantifies 2025\u20132026 growth rates, a target efficiency ratio, net charge-off levels, share count trajectory, and DCF inputs (COE, Stage II growth, perpetuity year). Justification is partial: some causal drivers are cited (repricing of securities/swaps, tariff uncertainty, CRE office pressure) and underwriting history in the moat section, but there is limited use of peer benchmarks or cited external sources, and parameters like 9% COE and 58% efficiency target lack evidence tie-ins. Internal consistency is mostly sound (NII and expense growth reconcile to tables), though the efficiency target of 58% conflicts with the model\u2019s forecast ratios remaining above 60% through 2029. Sensitivity/stress testing is absent: no quantified ranges or scenario impacts on NIM/NII, credit costs, efficiency, or valuation are presented for PNC. Given explicit inputs and mostly consistent tables but weak justification and no quantified sensitivities, the assumptions merit a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "efficiency ratio eventually declines to about 58%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We are projecting a 7% improvement in net interest income in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "loan growth of around 3% on average annually the next couple of years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "loan_growth"
+        },
+        {
+            "quote": "We expect roughly 1.5% growth in expenses in 2025, and 2.5% growth in 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "around 2.5% growth in 2025 and 5% growth in 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our 2025 net charge-off ratio is forecast at 0.51%\u2026 We have the net charge-off ratio normalizing to 0.47% through the cycle",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 364",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "credit_cost",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "revenue_growth",
+            "loan_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Efficiency ratio target of ~58% vs forecast efficiency ratios staying above 60% through 2029",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.6)",
+                    "Margins & Returns table (p.15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "NII/NIM sensitivity",
+            "credit_cost sensitivity",
+            "expense/efficiency sensitivity",
+            "terminal_growth sensitivity"
+        ],
+        "unjustified_parameters": [
+            "Cost of Equity 9% without external source",
+            "Efficiency ratio 58% target without evidence/peer benchmark",
+            "Stage II Net Income Growth 3% without support"
+        ]
+    }
+}

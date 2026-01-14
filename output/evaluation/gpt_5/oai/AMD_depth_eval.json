@@ -1,0 +1,28 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report demonstrates strong analytical depth with clear causal linkages, explicit assumptions, quantified sensitivities, and decision-relevant implications. Causality is articulated between segment dynamics and outcomes (e.g., data-center mix and export curbs driving margins), and forecasts are anchored to drivers like AI demand, product mix, and supply constraints. Assumptions are explicit and partly benchmarked to history and peers: gross margin anchored near the 2024 level, terminal growth tied to macro, and valuation metrics compared to peer ranges. Quantification is pervasive, including WACC (~8.5%), tax rate (15%), margins and multi-year revenue/earnings forecasts. Importantly, the report offers quantified sensitivities and scenarios\u2014EPS impact per $1B added sales, valuation sensitivity to WACC/terminal growth, and stress tests for China revenue and data-center stagnation\u2014supporting decision-making alongside a fair-value target and upside. Weaknesses include limited mechanistic detail on how competition or TSMC capacity translate into pricing/margin trajectories and a relatively generic mid-teens CAGR assumption without segment granularity. Nonetheless, the breadth of quantified inputs and scenario work meets the highest bar for analytical depth. Verbatim excerpts: \u201cdriven by a 57% jump in data-center sales\u201d; \u201cwill cut adjusted gross margins by ~11 percentage points\u201d; \u201cassume continued mid-teens topline CAGR thereafter\u201d; \u201cWACC (discount rate) ~8.5%\u201d; \u201cadds ~$10\u201315\u00a2 EPS\u201d; \u201ccould swing valuation by \u00b120%\u201d.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "TSMC capacity constraints \u2192 impact on volumes/pricing not modeled",
+            "Competition (NVIDIA/Intel) \u2192 pricing/margin pressure mechanisms limited",
+            "PC/gaming recovery \u2192 drivers for rebound not decomposed"
+        ],
+        "unsupported_assumptions": [
+            "mid-teens topline CAGR through 2026 without segment detail",
+            "EV/EBITDA near peers\u2019 range without peer set disclosure",
+            "EPS doubling by FY2029 lacks cost/mix bridge"
+        ],
+        "lack_of_sensitivity": [
+            "No margin sensitivity to ASP/pricing changes",
+            "No segment-level scenario ranges for data center vs client"
+        ]
+    }
+}

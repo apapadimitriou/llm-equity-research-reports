@@ -1,0 +1,90 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates a high quality of assumptions, characterized by strong explicitness and specificity. Key value drivers, particularly the GLP-1 market trajectory and margin expansion, are clearly defined with specific magnitudes, such as a $200 billion total market by 2031 and net price declines from $7,000 to $3,000. Justification is solid, utilizing industry benchmarks for R&D spending (low-to-mid 20s vs. high-teens average) and peer-aligned WACC (7.3%). Internal consistency is maintained throughout, with the detailed financial tables on page 13 reconciling with the narrative's double-digit growth and margin expansion forecasts. Sensitivity analysis is present and quantified for critical material drivers; for instance, the analyst explicitly states that orforglipron peak sales could double to $20 billion based on clinical data and quantifies a 200-basis-point margin headwind from potential tariffs. While the report lacks a formal sensitivity matrix for WACC or terminal growth rates, the quantification of specific product-level and macro-level scenarios provides sufficient transparency into the 'cone of uncertainty' mentioned by the analyst. The assumptions are proximal to the forecasts they drive, making the model's logic traceable and auditable.",
+    "assumptions_extracted": [
+        {
+            "quote": "We think Mounjaro/Zepbound sales could surpass $30 billion this year (83% growth).",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP performance margin... could only improve another 400 basis points in the long run, from 42.6% in the quarter to 46.7% by 2030.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "average net prices falling from roughly $7,000 annually to $3,000 in 10 years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Lilly capturing $80 billion of the market [GLP-1 market in 2031].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 5% EBI growth rate between our 10-year explicit forecast and the perpetuity stage.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We estimate a weighted cost of capital for Lilly at 7.3%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "model base case annual legal costs at 3% of non-GAAP net income.",
+            "location": {
+                "section": "Risk and Uncertainty",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

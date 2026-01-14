@@ -1,0 +1,27 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is largely descriptive and constrained by its own repeated data gaps. It offers high-level causal attributions like \u201cinnovation driving sustained growth\u201d and \u201csupported by innovation and market adoption,\u201d but does not unpack mechanisms (e.g., pricing vs. volume vs. mix, margin drivers, competitive displacement) or link them to forecasts. Inference quality is minimal: there are no explicit, quantified assumptions, no valuation framework, and no bridges from product wins to revenue, margin, EPS, or cash flow. The document explicitly acknowledges the absence of numbers (\u201cInsufficient data for a detailed model walkthrough,\u201d \u201ctable populated with N/A,\u201d \u201cInsufficient data for assumptions\u201d), and provides no benchmarking against peers or historical baselines. Counterpoints are generic (competition, macro constraints) and not explored via scenarios or sensitivities. There is no quantified scenario analysis, stress testing, or ranges for adoption, pricing, or margins. Actionability is limited to monitoring upcoming results, without conditional, decision-relevant implications. Verbatim excerpts illustrating these points: \u201cinnovation driving sustained growth\u201d; \u201csupported by innovation and market adoption\u201d; \u201craised guidance\u201d; \u201cInsufficient data for a detailed model walkthrough\u201d; \u201ctable populated with N/A\u201d. Given the lack of explicit assumptions and any sensitivity/scenario analysis, analytical depth is poor despite some generic causal statements.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": false,
+        "assumptions_benchmarked": false,
+        "quantification_used": false,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Unit growth vs pricing vs mix not tied to margins",
+            "Regulatory approval timing \u2192 revenue conversion not modeled",
+            "Competitive responses (TAVR, PFA) \u2192 share impact unexplained"
+        ],
+        "unsupported_assumptions": [
+            "Medium-term outlook appears positive without quantitative support",
+            "Secular trends expected to bolster performance without evidence"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario or sensitivity analysis on growth, margins, or valuation",
+            "No ranges for PFA/diabetes adoption rates or pricing"
+        ]
+    }
+}

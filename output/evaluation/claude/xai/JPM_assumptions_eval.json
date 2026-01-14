@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly justified. Key drivers like the 4% revenue CAGR, 9% WACC, and margin expansion to 38% are stated without meaningful support. The WACC calculation appears internally inconsistent (3% risk-free rate + 6% equity risk premium \u2260 9% with beta 1.1). Multiple assumptions lack specificity, with frequent 'insufficient data' disclaimers undermining credibility. While some assumptions are explicitly listed in the appendix, they lack proper justification beyond vague references. No quantified sensitivities are provided\u2014only a qualitative mention of '100bps cut potentially reducing earnings by 5-10%' without modeling details. The report contains internal contradictions between stated confidence in assumptions and repeated acknowledgments of missing data. Overall, the assumptions feel scattered and unreliable for investment decision-making.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% over 2025-2029, driven by loan growth and fee income",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 38% by 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "expected loan growth of 3-5% annually through 2029",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "buybacks exceeded $10 billion in 2024",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC calculation inconsistent: 3% risk-free + 6% ERP with beta 1.1 should equal ~9.6%, not 9%",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Key Valuation Assumptions Table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "4% revenue CAGR without peer comparison",
+            "9% WACC without market data support",
+            "38% margin target without operational justification"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency issues that undermine its coherence. The narrative contains multiple unresolved contradictions, particularly around financial data and temporal claims. The report presents conflicting revenue figures across sections without reconciliation - citing Q1 2026 revenue of $1.1 billion that 'slightly missed expectations of $1.11 billion' while simultaneously showing forward estimates starting at $3,954M for FY 2025E. The temporal framework is fundamentally broken, with a June 2025 report date discussing 'Q1 2026 results' and treating July 2024 events as both recent and historical. The Bulls/Bears section fails to meaningfully engage with the base-case valuation narrative, reading more like generic talking points than integrated analysis. Multiple sections, particularly the Business Description and ESG Risk, read as disconnected bullet dumps with minimal transitional flow. The financial snapshot table appears fabricated with no source attribution for forward estimates beyond 'analyst projections,' while historical data sources don't support the specific figures presented. Citations frequently misalign with claims made, and key assumptions underlying the $485 fair value are never properly reconciled with the financial projections shown.",
+    "evidence": [
+        "Revenue contradiction: 'Q1 2026 results... revenue of $1.1 billion slightly missed expectations of $1.11 billion' vs. Financials table showing FY 2025E revenue of $3,954M with no reconciliation (Analyst Note vs. Financials Snapshot)",
+        "Temporal inaccuracy: Report dated June 2025 discussing 'Q1 2026 results' and 'latest quarter' results that chronologically cannot exist yet (Analyst Note)",
+        "Unsupported financial projections: Forward estimates in Financials Snapshot table attributed to 'analyst projections and company guidance' but no specific sources support these exact figures (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

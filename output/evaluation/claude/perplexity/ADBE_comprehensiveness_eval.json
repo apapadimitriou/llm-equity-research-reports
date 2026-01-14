@@ -1,0 +1,75 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from critical structural deficiencies that render it incomplete and superficial. Most essential sections are either missing or skeletal, including complete absence of competitive positioning analysis, peer benchmarking, and scenario/sensitivity analysis. The Financials Snapshot lacks crucial sector-specific KPIs for SaaS companies (ARR growth rates, net revenue retention, customer acquisition costs, churn rates), presenting only generic financial metrics. Multiple material claims are uncited or poorly sourced, with many assertions lacking supporting evidence. The valuation section fails to establish explicit linkages between operating drivers and valuation outcomes, presenting assumptions without clear derivation. Significant redundancy exists across sections, with AI capabilities and competitive threats repeated without new depth. The report reads more like a general business overview than a comprehensive equity research analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Management Assessment"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "ARR Growth Rate",
+            "Net Revenue Retention",
+            "Customer Acquisition Cost",
+            "Churn Rate",
+            "Average Revenue Per User",
+            "Monthly Active Users Growth",
+            "Subscription Revenue Mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value estimate of $475 presented without supporting DCF model or valuation bridge",
+                "locations": [
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "Operating margin projections jump from 36.5% to 45.5% without explanation",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR Growth Rate",
+            "Net Revenue Retention",
+            "Customer Acquisition Cost",
+            "Churn Rate",
+            "ARPU"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $475 per share with no supporting calculation",
+            "WACC assumption of 8.5% without justification",
+            "Terminal growth rate assumptions without industry context",
+            "Multiple financial projections without source methodology"
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes most expected sections with reasonable structure, but suffers from significant deficiencies that prevent a higher grade. While healthcare-specific KPIs like medical loss ratio and membership growth are present, the financials snapshot lacks critical sector metrics such as medical cost trends, prior year development, and benefit ratios. The valuation section provides some linkage between drivers and outcomes but lacks explicit DCF calculations or sensitivity analysis. Evidence citations are inconsistent, with several claims unsupported (particularly X posts cited as source [6]) and some sources appearing questionable. The report demonstrates adequate coverage of competitive positioning and capital allocation, but peer benchmarking is superficial. Redundancy is evident across sections, particularly regarding cyber incident costs and margin pressures. The absence of scenario analysis and limited peer context further constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Comprehensive Peer Benchmarking",
+            "Scenario Analysis",
+            "Detailed Competitive Positioning"
+        ],
+        "sector_kpis_present": [
+            "Medical Loss Ratio",
+            "Membership Growth",
+            "Revenue by Segment",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Medical Cost Trends",
+            "Prior Year Development",
+            "Benefit Ratio",
+            "SG&A Ratio",
+            "Days Claims Outstanding"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS guidance ranges differ between sections ($27.50-28.00 vs $27.8 forecast)",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Medical Cost Trends",
+            "Prior Year Development",
+            "Benefit Ratio"
+        ],
+        "uncited_claims": [
+            "Posts on X indicate investor sentiment",
+            "Sustainalytics score based on industry reports",
+            "15% growth in digital services"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a high level of explicitness and specificity regarding its core valuation drivers. Assumptions for individual drug peak sales (e.g., $6.6B for Prolia/Xgeva, $3B for Repatha) and pipeline success probabilities (60% for MariTide) are clearly stated and proximal to the narrative. Justification is solid, incorporating historical performance, management guidance, and specific regulatory impacts like the Inflation Reduction Act (IRA) step-downs (2% and 1%). Financial parameters such as the 7% WACC (broken down into 7.5% COE and 5.8% cost of debt) and a 16% long-term tax rate are explicitly defined. Internal consistency is maintained between the narrative's 'mid-40s' non-GAAP margin targets and the 'Adjusted EBITDA Margin' forecasts in the valuation table (ranging from 42.5% to 45.8%).\n\nHowever, the report is capped at a 'Fair' grade due to the absence of quantified sensitivity or scenario analysis. While the analyst assigns a 'High' Uncertainty Rating and qualitatively discusses risks\u2014such as the impact of biosimilar competition and the 'wild card' effects of political appointments\u2014there is no quantification of how these variables would alter the $333 fair value estimate. The report lacks a bull/bear case or a sensitivity matrix for material levers like MariTide\u2019s clinical success or discount rate fluctuations. Per the evaluation instructions, the lack of quantified stress-testing on material drivers necessitates a 'Fair' rating despite the high quality of individual input specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "We assume a 60% probability of maritide's approval and probability-adjusted sales of $8 billion in 2033, largely in obesity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we included a 2% step-down in US sales to account for Medicare inflation caps and a 1% step-down in US sales beginning in 2025 to account for Medicare Part D redesign",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 7% cost of capital. ... our 7.5% cost of equity assumption ... a 5.8% pretax cost of debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a 16% tax rate for Amgen beyond 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "we think Amgen can maintain non-GAAP operating margins in the mid-40s over the next several years.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We expect peak sales of combined Prolia/Xgeva at $6.6 billion (in 2024), Repatha at $3 billion, and Evenity around $2 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 537 [2025] ... 508 [2029]",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

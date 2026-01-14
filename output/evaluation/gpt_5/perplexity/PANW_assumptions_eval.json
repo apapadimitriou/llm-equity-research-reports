@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation and forecast assumptions are mostly explicit and proximal to the sections they inform (Fair Value, Appendix, Financials Snapshot). Specificity is reasonable: revenue CAGR is stated as \u201c12\u201315%,\u201d margin trajectory \u201c27%\u219230%,\u201d WACC 9.5%, terminal growth 3%, tax 21%, and share count \u22122%/yr, with clear units and horizons. However, justification is weak: inputs like WACC, terminal growth, tax rate, share count decline, and the $800M CyberArk revenue addition lack cited sources, multi-year history, or peer benchmarks. Internal consistency suffers from a notable contradiction: the report says the CyberArk deal closes in FY26 but also attributes FY25 EPS acceleration to its impact. Sensitivity analysis is limited: a bull/bear price range is provided without quantifying changes to material drivers (growth, margins, WACC), so stress-testing is qualitative at best. Overall, while assumptions are stated and somewhat specific, they are thinly justified and not robustly stress-tested, with one contradiction capping the grade at Fair per the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue growth moderating to 12-15% annually over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins expanding from 27% to 30%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "a weighted average cost of capital of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 21%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Share count decline: 2% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "The CyberArk acquisition adds approximately $800 million in annual revenue",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The company's 38% adjusted free cash flow margin",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS growth in FY 2025 said to incorporate CyberArk acquisition impact while deal is stated to close in H2 fiscal 2026",
+                "locations": [
+                    "Financials Snapshot (EPS commentary)",
+                    "Analyst Note (deal expected to close in H2 fiscal 2026)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital",
+            "explicit scenario ranges for revenue growth, margins, and WACC"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 3.0% without source",
+            "Tax rate 21% without source",
+            "Share count decline 2% without source",
+            "CyberArk adds ~$800M revenue without source/bridge to target's scale"
+        ]
+    }
+}

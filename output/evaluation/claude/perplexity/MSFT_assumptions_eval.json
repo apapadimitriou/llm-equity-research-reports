@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear connection to forecasts. While some figures are provided (Azure growth 28-30%, AI revenue $50B by 2027), these lack proper justification with historical context or peer benchmarks. Critical valuation drivers like WACC (8.5%) and terminal growth (3.0%) appear only in the appendix without supporting rationale. The financial projections table contains specific figures but the underlying assumptions driving these numbers are not explained or justified. No sensitivity analysis is provided for any material drivers. Multiple contradictions exist: AI revenue is cited as both $13B run rate and projected $50B by 2027 without reconciliation of the growth path. The report fails to meet basic standards for explicitness, justification, and stress-testing of key assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Azure growth: 28-30% annually through FY 2027",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI revenue scaling: $50B by FY 2027",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion: 200-300bp over 3 years",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue projections anticipate 13-15% annual growth through fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "AI revenue stated as $13B current run rate but projected to $50B by 2027 without explaining the growth trajectory or reconciling the implied growth rate",
+                "locations": [
+                    "Analyst Note - $13B AI revenue run rate",
+                    "Fair Value section - $50B by fiscal 2027"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex_assumptions",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Azure growth 28-30% without historical context",
+            "AI revenue $50B target without basis"
+        ]
+    }
+}

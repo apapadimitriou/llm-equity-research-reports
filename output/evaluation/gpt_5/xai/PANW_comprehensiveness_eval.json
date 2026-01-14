@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation is reasonably explicit, with DCF assumptions (revenue CAGR, margin trajectory, WACC, terminal growth) and an EPS bridge that links operating drivers to the fair value. However, the Financials Snapshot is generic, omitting core sector KPIs (ARR, RPO, billings, NRR) that are critical for a cybersecurity/software name; while these KPIs appear in the narrative, they are not tabulated in the snapshot. Peer benchmarking is absent, and there is no scenario or sensitivity analysis. Evidence citations are inconsistent: several material claims rely on social-media sources or acknowledge insufficient data (e.g., Sustainalytics score), and some metrics lack a clear, direct citation. There is minor redundancy with repeated ARR/RPO highlights across Analyst Note, Bulls/Bears, and Moat without substantial new depth. These gaps, especially the KPI omissions in the snapshot and lack of peer benchmarking/scenarios, cap the comprehensiveness at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "RPO",
+            "Billings",
+            "Subscription Mix"
+        ],
+        "sector_kpis_missing": [
+            "ARR (in Financials Snapshot)",
+            "RPO (in Financials Snapshot)",
+            "Billings (in Financials Snapshot)",
+            "NRR/DBNRR"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (tabulated)",
+            "RPO (tabulated)",
+            "Billings (tabulated)",
+            "NRR/DBNRR"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk score 15.2 has no direct source link",
+            "90% customer retention rate lacks a clear, specific citation"
+        ]
+    }
+}

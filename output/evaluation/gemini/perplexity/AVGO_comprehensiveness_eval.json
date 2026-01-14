@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all 12 required sections with professional analytical prose. However, it is capped at 'Fair' due to significant omissions in sector-specific quantitative depth and peer context. Despite the VMware acquisition representing 42% of revenue, the report lacks SaaS-specific KPIs such as Annual Recurring Revenue (ARR) and Net Retention Rate (NRR). Similarly, the semiconductor analysis omits critical metrics like inventory turnover or book-to-bill ratios. While the valuation section links AI revenue to the fair value estimate, it lacks a sensitivity analysis or scenario modeling (Bull/Bear cases). Furthermore, the absence of a dedicated peer benchmarking section\u2014comparing Broadcom\u2019s multiples and growth rates to competitors like NVIDIA or Marvell\u2014prevents a higher grade. The evidence integration is consistent with numbered citations, but the lack of granular industry context and sensitivity tables results in a report that feels more like a high-level summary than an exhaustive equity research piece.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "AI Revenue",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Annual Recurring Revenue)",
+            "NRR (Net Retention Rate)",
+            "Inventory Turnover",
+            "Book-to-Bill Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Inventory Turnover",
+            "Book-to-Bill"
+        ],
+        "uncited_claims": []
+    }
+}

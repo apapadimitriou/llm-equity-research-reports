@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This Apple report covers most expected sections with reasonable depth, including analyst note, business description, valuation, risks, and financials. However, it suffers from significant gaps that prevent a higher rating. The financials snapshot lacks critical sector-specific KPIs for technology companies (R&D as % of revenue, gross margins by segment, services attach rates, device unit sales). Peer benchmarking is completely absent - no comparison to Samsung, Google, or other tech giants. The valuation section provides assumptions but fails to explicitly link operating drivers (iPhone upgrade cycles, services growth rates, market share changes) to the $185 fair value outcome. Redundancy is evident with tariff impacts and AI delays mentioned repeatedly across sections without new insights. While sourcing appears consistent and the report demonstrates comprehensive coverage of Apple's business, the missing sector KPIs and weak valuation linkage trigger the Fair grade cap.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % Revenue",
+            "Gross Margin by Segment",
+            "iPhone Unit Sales",
+            "Services Attach Rate",
+            "Average Selling Price",
+            "Active Device Install Base"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "R&D as % Revenue",
+            "Gross Margin by Segment",
+            "iPhone Unit Sales",
+            "Services Attach Rate",
+            "Average Selling Price",
+            "Active Device Install Base"
+        ],
+        "uncited_claims": [],
+        "redundancy_examples": [
+            {
+                "description": "Tariff impact costs ($800M, $1.1B) repeated in Analyst Note and Risk sections",
+                "locations": [
+                    "Analyst Note",
+                    "Risk & Uncertainty"
+                ]
+            },
+            {
+                "description": "AI delays and Chinese competition mentioned multiple times without new depth",
+                "locations": [
+                    "Analyst Note",
+                    "Bulls Say/Bears Say",
+                    "Risk & Uncertainty"
+                ]
+            }
+        ]
+    }
+}

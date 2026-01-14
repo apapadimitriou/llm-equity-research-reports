@@ -1,0 +1,61 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes a proper contents page listing all expected sections, the execution is severely deficient. Most critical sections contain only placeholder text stating 'insufficient data available,' including Economic Moat, Fair Value and Profit Drivers, Capital Allocation, and Financials Snapshot. The Financials Snapshot provides only partial Q1 2025 data with no historical context, forecasts, or sector-specific KPIs. The valuation section completely lacks any model, assumptions, or driver linkage. Business Strategy and Risk sections are superficial with minimal depth. Sources are present but several appear to reference future dates (Q2 2025 earnings calls dated August 2025 when report is July 2025), creating credibility issues. The report reads more like an incomplete draft than a professional equity research analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Risk & Uncertainty"
+        ],
+        "sections_missing": [
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of sales",
+            "Gross margin",
+            "Operating margin",
+            "Pipeline value",
+            "Patent expiration timeline",
+            "Drug approval success rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Sources reference Q2 2025 earnings calls dated August 2025, but report date is July 2025",
+                "locations": [
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D as % of sales",
+            "Gross margin",
+            "Operating margin",
+            "Pipeline value",
+            "Patent expiration timeline"
+        ],
+        "uncited_claims": [
+            "Analysts note a high dividend yield and potential upside of 26.64%",
+            "Merck has presence in over 140 countries"
+        ]
+    }
+}

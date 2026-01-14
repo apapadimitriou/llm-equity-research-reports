@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and logical incoherence that renders it fundamentally flawed. The most glaring issue is a temporal impossibility: the report is dated May 3, 2025, yet references Q2 2025 earnings released in August 2025, creating an impossible timeline where future events are discussed as historical facts. The report acknowledges pervasive data insufficiency throughout every major analytical section - valuation, moat assessment, capital allocation, and financial forecasts are all marked 'insufficient data,' yet the analyst still attempts to provide investment conclusions. This creates an internal contradiction where definitive recommendations ('hold recommendation,' 'neutral outlook') are made without analytical foundation. The narrative structure fails basic coherence tests with abrupt topic jumps and no meaningful cross-references between sections. The Bulls/Bears section remains completely unreconciled with any base-case analysis since no coherent valuation framework exists. Most critically, the report presents itself as legitimate equity research while openly admitting it lacks the fundamental data required for such analysis, making it misleading and internally contradictory at its core.",
+    "evidence": [
+        "Report dated 2025-05-03 references 'Q2 2025 results' from August 2025 source, creating impossible temporal sequence (Cover Block vs Analyst Note)",
+        "'This update maintains a hold recommendation' despite stating 'insufficient data' for fair value, moat rating, and capital allocation throughout (Analyst Note vs multiple sections)",
+        "Bulls cite 'Strong revenue growth in Q2 2025' while Bears cite 'EPS lagged expectations in Q2 2025' but no base-case valuation reconciles these points (Bulls/Bears vs Fair Value sections)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

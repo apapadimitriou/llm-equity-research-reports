@@ -1,0 +1,68 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it appears extensive at first glance, critical analysis reveals severe structural deficiencies. The report completely lacks sector-specific KPIs essential for technology companies (no mention of DAU/MAU growth rates, ARPU trends, or engagement metrics despite covering a social media platform). The valuation section provides a DCF result but fails to explicitly link operating drivers to valuation assumptions - a fundamental requirement. Most critically, the financial projections and peer comparison table contain no actual sources beyond generic references, making key quantitative claims unverifiable. The report suffers from significant redundancy, repeating AI investment concerns across multiple sections without adding depth. Essential sections like competitive positioning analysis and capital allocation strategy are either missing or superficially addressed. The extensive ESG section, while detailed, appears disproportionate given the missing core content areas.",
+    "content_checks": {
+        "sections_present": [
+            "Executive Summary",
+            "Business Description",
+            "Valuation",
+            "Risk Assessment",
+            "Financials Snapshot",
+            "ESG Analysis"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Capital Allocation",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Bulls/Bears section"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "DAU/MAU",
+            "ARPU",
+            "Engagement Metrics",
+            "User Growth Rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "DAU/MAU",
+            "ARPU",
+            "User Growth Rates",
+            "Engagement Metrics"
+        ],
+        "uncited_claims": [
+            {
+                "description": "Detailed financial projections table with no source attribution",
+                "locations": [
+                    "Financial Model & Forecasts"
+                ]
+            },
+            {
+                "description": "Peer comparison valuation multiples with generic market data reference",
+                "locations": [
+                    "Valuation"
+                ]
+            },
+            {
+                "description": "WACC of 9.5% assumption unexplained",
+                "locations": [
+                    "Valuation"
+                ]
+            }
+        ]
+    }
+}

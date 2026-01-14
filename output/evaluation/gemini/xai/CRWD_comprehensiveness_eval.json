@@ -1,0 +1,56 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a complete structural framework, covering all required sections from the Analyst Note to Capital Allocation. However, it fails significantly on depth and data integrity. The Financials Snapshot is critically flawed, omitting three years of historical data (FY2022\u20132024) as 'Insufficient data,' which is unacceptable for a major public company like CrowdStrike. In terms of sector-specific KPIs, while it includes ARR and Net New ARR, it omits Net Retention Rate (NRR) and Gross Retention, which are essential for SaaS valuation. The report lacks a peer benchmarking table and any form of scenario or sensitivity analysis, both of which are necessary for a 'Good' or 'Excellent' rating. Furthermore, the sourcing is weakened by the inclusion of social media posts ('Posts found on X') to support material claims regarding operational risk and valuation swings. While the valuation section successfully links operating drivers (revenue CAGR and margin expansion) to the fair value estimate, the lack of historical context and missing retention metrics render the analysis superficial.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (Annual Recurring Revenue)",
+            "Net New ARR",
+            "Revenue Growth",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Retention Rate)",
+            "Gross Retention Rate",
+            "CAC (Customer Acquisition Cost)",
+            "Magic Number"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Retention Rate (NRR)",
+            "Gross Retention",
+            "Historical Financials (FY22-FY24)"
+        ],
+        "uncited_claims": [
+            "Operational risks swinging valuation by 15-20% based on Source [4] (Social Media)"
+        ]
+    }
+}

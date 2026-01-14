@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a comprehensive summary of provided search results rather than an original piece of equity research. Every key insight\u2014including the organizational restructuring details (reduction from 13 to 8 layers), specific regulatory fine amounts ($135.6M), and the Services segment's decade-high performance\u2014is a direct restatement of the provided sources (Sources 17, 21, and 19 respectively). The valuation section adopts a Fair Value estimate ($135.54) directly from Source 15 without introducing any novel drivers, sensitivity analysis, or independent modeling adjustments. There is no evidence of synthesis where disparate data points (e.g., linking specific deposit beta trajectories to the 2026 ROE target) are combined to form a new, testable conclusion. The 'Economic Moat' and 'Bulls/Bears' sections utilize boilerplate industry language ('global footprint,' 'switching costs') that is generic to the banking sector and lacks company-specific interpretive depth. Because the report lacks any original thesis or synthesis and relies entirely on paraphrasing cited sources, it fails the fundamental requirement for originality.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Organizational layers reduced from 13 to 8 and a focus on five core divisions.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Repeated fines totaling $135.6 million in 2025 for insufficient progress on consent order requirements.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Services segment achieved decade-high performance levels, demonstrating value of transaction banking.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Credit costs increased 15% to $2.7 billion due to higher losses in card portfolios, reflecting normalization.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fair value estimate of $135.54 per share suggests the current trading price represents a 32% discount.",
+                "classification": "Restated",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Valuation (Fair Value) is taken directly from a single source (Source 15) without independent adjustment.",
+            "Insights are almost entirely restatements of the provided search results.",
+            "Boilerplate 'Economic Moat' language regarding global networks and switching costs.",
+            "No original synthesis linking macro variables to company-specific outcomes."
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

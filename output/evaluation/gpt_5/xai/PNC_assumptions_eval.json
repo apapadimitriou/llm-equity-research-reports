@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximal to the forecasts: the report states a 3% revenue CAGR (2025\u20132029) with component drivers (2% loan, 4% fee growth), an operating margin band (28\u201330%), WACC (9.5% with beta 1.1 and ERP 5%), and terminal growth (2.5%). These inputs are specific with units and horizons, and they reconcile cleanly with the Financials Snapshot (e.g., margins rising from 26% in 2024 to 30% by 2029; EPS bridge to 2025E of $13.8). However, justification is only partial: the growth mix is attributed to [4] (an EPS estimate article) rather than to multi-year historical trends or peer benchmarks; WACC components (beta/ERP) and terminal growth lack sourced evidence; and the margin trajectory is not benchmarked to peers or historical efficiency ratios. Most importantly, there is no robust sensitivity/scenario analysis quantifying valuation impacts across material drivers. The lone quantified risk note on NIM compression (10\u201315 bps if rates fall) and a broad \u201cvaluation swings of 10\u201320%\u201d are not tied to the DCF outputs or to specific driver ranges. Under the hard caps, the absence of quantified sensitivities for key levers (revenue/NIM, margins, credit costs, WACC) limits the overall assessment to Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is projected to grow at a 3% CAGR from 2025 to 2029, driven by 2% loan growth and 4% fee income expansion [4].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to stabilize at 28-30%, improving from 26% in 2024 due to cost controls.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is set at 9.5%, reflecting beta of 1.1 and equity risk premium of 5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 2.5% implies a P/E multiple of 13x forward earnings",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Starting from 2024 EPS of $12.50, add $1.00 from revenue growth, $0.50 from margin expansion, subtract $0.20 for higher provisions, yielding 2025 EPS of $13.80.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "interest rate fluctuations, potentially compressing net interest margins by 10-15 basis points if rates fall [4].",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "credit_cost rate/coverage trajectory",
+            "NIM base path/driver linkage to NII",
+            "sensitivity of valuation to WACC/growth/margins"
+        ],
+        "unjustified_parameters": [
+            "3% revenue CAGR with 2% loan and 4% fee growth referenced to [4] (EPS article) without historical/peer support",
+            "WACC 9.5% with beta 1.1 and ERP 5% not sourced to market data",
+            "Terminal growth 2.5% justified only as GDP proxy",
+            "Margin target 28\u201330% not benchmarked to historical efficiency or peers"
+        ]
+    }
+}

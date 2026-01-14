@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear connection to forecasts. While some financial projections appear in tables, key drivers lack explicit justification or sourcing. The revenue CAGR assumption of 5% to 2027 appears without supporting analysis of underlying business drivers. Operating margin expansion from 22.6% to 23.8% is stated but not justified with specific efficiency initiatives or benchmarks. The WACC assumption of 8.5% lacks any derivation or market-based support. Tax rate assumptions show no basis in historical performance or regulatory changes. Most critically, there are no sensitivity analyses or scenario testing for any material assumptions. The terminal growth rate of 3.0% appears only in appendix without justification. Internal contradictions exist between narrative claims of 'mid-single digit growth' and the specific 5% CAGR assumption. The assumptions feel disconnected from the extensive narrative, creating a black-box modeling approach that fails basic transparency standards.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth projections assume mid-single digit organic expansion driven by pharmaceutical and biotechnology market strength, with total revenues reaching approximately $49.6 billion by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin improvement represents a key value driver, with adjusted margins expected to expand from current 22.6% levels toward the mid-20% range by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital assumptions incorporate current interest rate environment and TMO's strong balance sheet position, with WACC estimated at approximately 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | N/A | N/A | 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate | 10.5% | 11.0% | 11-12%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states 'mid-single digit organic expansion' while table shows specific 5% CAGR assumption without reconciliation",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Appendix table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without derivation",
+            "Terminal growth 3.0% without justification",
+            "Operating margin expansion without specific drivers",
+            "Tax rate assumptions without basis"
+        ]
+    }
+}

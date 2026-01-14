@@ -1,0 +1,112 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness: The report states most key drivers near the forecasts they inform (revenue CAGR 5\u20136%, EBIT margin path, WACC 8%, terminal assumptions, share count -2%). Specificity: Assumptions generally include magnitudes, units, and time horizons (through FY29), and the financial table provides multi-year forecasts. Justification: Support is weak. Revenue growth is loosely tied to management\u2019s 2025 guidance, but WACC (~8%), terminal EBITDA multiple (18\u00d7), terminal growth (2%), and the -2% annual share count reduction lack evidence from history, peer benchmarks, or cited sources. Consistency: There are material contradictions. The valuation section says it uses \u201ca terminal EBITDA multiple ~18\u00d7,\u201d while the Appendix lists \u201cterminal growth ~2%\u201d as a key assumption, with no reconciliation. The text targets \u201c~42%\u201d margin by 2029 but the table shows 43.0% in 2029; the EPS \u201c~17\u201318 by 2026\u201d conflicts with 18.5 in the table. Sensitivity: No quantified sensitivity or scenario analysis is presented for major drivers (growth, margins, WACC, terminal assumptions). Given the lack of sensitivities and unresolved contradictions across narrative, appendix, and the forecast table, the quality of assumptions is poor under the stated decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes revenue CAGR ~5\u20136% through FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project EBIT margins rising towards ~42% (pre-spin) by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of ~8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a terminal EBITDA multiple ~18\u00d7",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "terminal growth ~2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "reducing share count ~2% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "EPS bridge moves from $12.51 (2023 actual) to ~$17\u201318 by 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Valuation method conflict: uses a terminal EBITDA multiple (18\u00d7) vs Appendix lists a terminal growth rate (2%) as a key assumption.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Margin target inconsistency: text/appendix suggest ~42% by 2029, but the forecast table shows 43.0% in 2029F.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "EPS trajectory mismatch: \u201c~$17\u201318 by 2026\u201d vs table shows 18.5 in 2026F.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC ~8% without source/inputs",
+            "terminal EBITDA multiple ~18\u00d7 without peer/history support",
+            "terminal growth ~2% without macro/company rationale"
+        ]
+    }
+}

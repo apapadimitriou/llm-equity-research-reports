@@ -1,0 +1,103 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to the total absence of quantified sensitivity analysis and the presence of material internal numeric contradictions. While the report explicitly states key assumptions for revenue growth (mid-single digits), operating margins (3.0\u20133.5%), and EPS CAGR (11\u201312%), it fails to stress-test these drivers. There are no scenario analyses or sensitivity tables showing how changes in the Medical Care Ratio (MCR) or PBM regulatory outcomes would impact the $345.00 price target. Per the grading instructions, the lack of quantified sensitivities alone caps the grade at 'Fair'. \n\nFurthermore, a significant contradiction exists regarding the valuation multiples. The Executive Summary states the stock trades at 10.4x the 2026E EPS, yet the Valuation Summary table and the report's own price/EPS data ($308.22 / $33.10) clearly result in a 9.31x multiple. Additionally, the 'Relative Valuation' section calculates a $347 price based on a 10.5x multiple, which does not reconcile cleanly with the final $345 target or the SOTP/DCF outputs ($358 and $340, respectively) without a defined weighting methodology. Justifications for the 7.1% WACC and 2.5% terminal growth are merely cited rather than derived or benchmarked against peers. The combination of zero quantified sensitivities and a material numeric contradiction between the narrative and the tables necessitates a 'Poor' grade under the established hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue: Mid-single-digit revenue growth is projected... high-single-digit growth at Evernorth... low-single-digit growth at Cigna Healthcare.",
+            "location": {
+                "section": "Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The consolidated operating margin is expected to remain relatively stable in a 3.0% to 3.5% range.",
+            "location": {
+                "section": "Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Adjusted EPS is forecast to grow at a compound annual growth rate (CAGR) of 11-12%.",
+            "location": {
+                "section": "Modeling Assumptions (FY25-FY29)",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC) of 7.1% results in an intrinsic value of approximately $340 per share.",
+            "location": {
+                "section": "Valuation Methodology",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Projecting unlevered free cash flows through 2030 with a 2.5% terminal growth rate",
+            "location": {
+                "section": "Valuation Methodology",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We value Evernorth at a 10.0x multiple on our 2026E EBITDA estimate... Cigna Healthcare segment is valued at a 7.5x multiple",
+            "location": {
+                "section": "Valuation Methodology",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Applying a forward P/E multiple of 10.5x to our 2026E Adjusted EPS of $33.10 yields a price of approximately $347.",
+            "location": {
+                "section": "Valuation Methodology",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Executive Summary claims current P/E is 10.4x on 2026E EPS, but the Valuation Summary table and raw math ($308.22 / $33.10) show 9.31x.",
+                "locations": [
+                    "Executive Summary & Investment Recommendation",
+                    "Recommendation & Valuation Summary (Table)"
+                ]
+            },
+            {
+                "description": "Relative valuation math ($33.10 * 10.5x = $347.55) is rounded to $347 in text, but the final price target is $345 without explaining the blend weighting.",
+                "locations": [
+                    "Valuation Methodology",
+                    "Recommendation & Valuation Summary"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.1% without derivation",
+            "Terminal growth 2.5% without peer/economic context"
+        ]
+    }
+}

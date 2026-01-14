@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency issues that render it nearly incoherent. The most glaring problem is pervasive temporal confusion - the report is dated July 15, 2025, yet discusses Q1 fiscal 2026 results for April 27, 2025, as if they are recent earnings, while simultaneously referencing sources dated August 8, 2025 (future dates). The narrative repeatedly contradicts the data tables, claiming specific financial figures while tables show 'insufficient data' for the same metrics. Critical financial information is sourced from unspecified 'X posts' rather than official sources, undermining credibility. The Bulls/Bears section presents contradictory viewpoints without reconciliation - bulls cite 69% growth while bears note margin pressure, but no attempt is made to explain how both can coexist in the base case valuation. Most sections read like bullet dumps with minimal transitions, particularly the Risk section and Business Strategy. The fair value estimate of $227.95 lacks any supporting methodology beyond 'analyst predictions,' making the valuation essentially meaningless. The report fails to establish a coherent investment thesis, instead presenting disconnected facts and figures that often contradict each other.",
+    "evidence": [
+        "Report dated July 15, 2025 discusses April 27, 2025 earnings as recent while citing sources from August 8, 2025 (temporal impossibility)",
+        "Analyst Note cites specific EPS of $0.81 and margins of 61% while Financials Snapshot shows 'insufficient data' for the same metrics",
+        "Fair Value section states '$227.95 based on analyst predictions' with no methodology while admitting 'insufficient data for detailed model'"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

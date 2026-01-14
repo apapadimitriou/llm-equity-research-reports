@@ -1,0 +1,60 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates some company-specific detail but is predominantly composed of restated public information with minimal original analysis. The analyst provides extensive coverage of recent earnings, guidance updates, and regulatory developments around the Ansys acquisition, but most insights are direct restatements from Reuters and company press releases. While there is one weak synthesis attempting to link AI demand trends with Synopsys's growth trajectory, the analysis lacks quantified mechanisms, specific catalysts, or non-obvious investment angles. The valuation section presents standard DCF assumptions (12% revenue CAGR, 50-55% margins, 9% WACC) without novel drivers or company-specific insights beyond generic growth projections. The report reads more like a comprehensive news summary than original equity research, with limited decision-relevant analysis that goes beyond publicly available information.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "strong demand thanks to rising AI-driven chip complexity",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Q4 2024 results showed ~15% revenue growth",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "political and regulatory headwinds loom",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Synopsys's robust growth and high barriers to entry support a premium valuation",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI-driven cycle should support >$1.7B in quarterly revenue",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "dominates the global EDA market (~80% in China)",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "revenue CAGR ~12% from 2025\u201329, reflecting continued AI-era demand",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions",
+            "Extensive copying from Reuters sources",
+            "Boilerplate 'high barriers to entry' phrasing",
+            "Standard Bulls/Bears format with generic points"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

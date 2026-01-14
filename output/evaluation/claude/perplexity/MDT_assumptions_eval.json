@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report contains numerous critical deficiencies in assumption quality. Key financial assumptions are largely unstated or opaque, with revenue growth rates (3.1% CAGR), operating margin expansion (100-150 bps), WACC (8.5%), and terminal growth (2.5%) appearing only in a brief appendix without justification or supporting evidence. Multiple internal contradictions plague the analysis, including conflicting revenue figures ($33.5B vs $32.8B for FY25-26), inconsistent growth narratives (strong growth claims vs declining projected revenues), and contradictory margin stories (17.9% FY25 vs 18.5% FY26 without explaining the diabetes separation impact). The financial projections table shows declining revenues post-separation but lacks explicit assumptions about separation costs, stranded overhead, or business mix impacts. No sensitivity analysis exists for any material drivers despite significant uncertainties around tariff impacts ($200-350M), regulatory approvals, and business separation execution. The valuation methodology mentions DCF but provides no cash flow projections, discount rate justification, or scenario analysis.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (FY25-29): 3.1% post-diabetes separation",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion: 100-150 bps over 5 years",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "FCF conversion: 75-80% of net earnings",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue projections show FY25E $33.5B declining to FY26E $32.8B without clear explanation of diabetes separation impact timing",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Analyst Note section"
+                ]
+            },
+            {
+                "description": "Claims of 'strong growth' and 'accelerating revenue growth' contradict projected revenue decline in financial table",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "debt_levels"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 2.5% without justification",
+            "Revenue CAGR 3.1% without supporting analysis"
+        ]
+    }
+}

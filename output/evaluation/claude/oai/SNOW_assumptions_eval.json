@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear linkage to forecasts. While the financial table shows specific projections (20% operating margin by 2029, 22% revenue CAGR), these lack proper justification or derivation. The WACC assumption of 10% is mentioned but with an impossible 30% cost of equity that contradicts basic finance principles. Revenue growth assumptions reference management's ~$10B target by 2029 but don't explain how the specific 22% CAGR was derived. Operating margin expansion from 8% to 20% lacks benchmarking or historical analysis. Most critically, there are no sensitivity analyses or scenarios testing these material drivers. The assumptions feel disconnected from the narrative, making the model essentially a black box despite the detailed financial projections.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast ~20%\u201325% growth in modestly decelerating fashion (CAGR ~22% from FY2025\u20132029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project non-GAAP operating margin rising from ~8% in FY2024 to ~20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 10.0% WACC (reflecting a 30% equity cost and ~0% debt cost post-conversion)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "no terminal growth beyond 2029 (market-size assumption)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share count ~330m",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC calculation shows 30% cost of equity which is impossibly high and inconsistent with any reasonable equity risk premium or risk-free rate",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "WACC assumption"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "22% revenue CAGR derivation",
+            "Operating margin expansion to 20%",
+            "30% cost of equity",
+            "0% terminal growth rate"
+        ]
+    }
+}

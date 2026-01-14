@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is solid: the report states key valuation inputs in the DCF section (COE, WACC, long-run tax rate, Stage II growth/investment, projected shares) and provides detailed multi-year financial forecasts with margins and revenue paths. Specificity is strong: assumptions have clear units, magnitudes, and time horizons (e.g., 2025 revenue growth, operating margin trajectory to 2029, capex as % of sales). Consistency appears clean: the latest narrative (May 7, 2025) aligns with the forecast table (e.g., ~5% 2025 revenue growth corresponds to 16,189 vs. 15,405), and the fair value used throughout is $268. Justification is partial: revenue/margin views reference backlog, book-to-bill, AI-driven efficiency, and industry outsourcing trends, but several core parameters (WACC/COE, tax rate, Stage II settings, capex % of sales) lack ties to market data, historical company levels, or peer benchmarks. Stress-testing is absent: there are no quantified sensitivity or scenario analyses on material drivers (revenue growth, margins, WACC/COE, tax rate), which hard-caps the assessment at Fair. Overall, the assumptions are explicit and specific, mostly consistent, but only partially justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast 2025 revenue will grow about 5% year over year",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin % ... 20.3",
+            "location": {
+                "section": "Morningstar Valuation Model Summary (Margins & Returns)",
+                "page": "15"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume midcycle capital expenditures will be about 3% of sales.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 181",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.1% without source",
+            "Cost of equity 9% without source",
+            "Long-run tax rate 19% without source",
+            "Stage II EBI growth 4% without source",
+            "Capex ~3% of sales without sourcing to history/peers"
+        ]
+    }
+}

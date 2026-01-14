@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This Morningstar report is broadly comprehensive: it includes a cover block and contents, an up-to-date Analyst Note, detailed Business Description and Strategy & Outlook, Bulls/Bears, a thorough Economic Moat discussion with market share and retention evidence, explicit Valuation & Profit Drivers linked to operating assumptions, Risk & Uncertainty, Capital Allocation, ESG risk analysis, peer context, and a multi-year Financials snapshot with forecasts. The proportional depth is strong in moat, strategy, and valuation, and peer/industry/regulatory context is well integrated (EDA oligopoly, China export restrictions). The valuation section ties segment CAGRs, margin trajectory, and cost of equity to fair value and is supported by a DCF summary. However, the Financials snapshot table is generic and omits multiple sector-specific software/EDA KPIs (e.g., ARR/ACV, NRR, RPO/backlog, bookings), which imposes a hard cap at Fair. Evidence sourcing is largely internal and lacks in-text citations for material regulatory developments, and scenario/sensitivity analysis is absent. Redundancy is limited; repeated AI/system-level demand themes add incremental context across sections. Overall, the report is near Good on breadth and linkage, but KPI omissions and lack of scenarios keep it at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "In-text Sources/References"
+        ],
+        "sector_kpis_present": [
+            "Recurring revenue 80\u201385% (EDA)",
+            "Retention rate ~100%",
+            "Segment mix (IP ~30% of revenue)"
+        ],
+        "sector_kpis_missing": [
+            "ARR/ACV",
+            "NRR (net revenue retention)",
+            "RPO/Backlog",
+            "Bookings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "China revenue share stated as ~11% in Analyst Note vs ~15% in Risk section",
+                "locations": [
+                    "Analyst Note",
+                    "Risk and Uncertainty"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR/ACV",
+            "NRR",
+            "RPO/Backlog",
+            "Bookings"
+        ],
+        "uncited_claims": [
+            "Approval by US Department of Commerce to recommence China operations (no source cited)",
+            "Reversal attributed to a broader US\u2013China trade deal (no source cited)"
+        ]
+    }
+}

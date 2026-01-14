@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Core valuation inputs are made explicit and proximal to forecasts (revenue CAGR, operating margin path, WACC, terminal growth), with clear units and multi-year horizons. Specificity is solid for those items, and tables reconcile with the stated CAGR and margin targets. However, justification is partial: revenue CAGR is loosely tied to industry growth and RPO, while WACC (9.5%) and terminal growth (4%) lack detailed evidence (risk-free rate, ERP, capital structure) or peer benchmarks; the margin expansion is attributed to mix shift without quantifying the mix trajectory. Consistency is marred by a numeric contradiction in the EPS bridge (components do not sum to the stated FY2029 EPS), triggering a hard cap. Sensitivity/scenario analysis is absent for material drivers (no ranges for revenue, margins, WACC, terminal growth), which further enforces the Fair cap. Several material drivers are missing or opaque (tax rate, share count/dilution, capex/FCF drivers), making parts of the model feel black-box despite the summary table. Overall, assumptions are stated and partially justified but lack robustness and stress testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes revenue CAGR of 13% for FY2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margin expansion from 28.5% in FY2025 to 32% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 9.5%, reflecting high beta (1.2) and tech sector risks.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth 4%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "FY2025 base EPS $5.50, plus $0.80 from margin gains, $1.20 from revenue growth, minus $0.50 from higher R&D, yielding FY2029 EPS $11.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "driven by subscription mix shift (60% of revenue)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Key Valuation Assumptions Table | WACC | 9.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Key Valuation Assumptions Table | Terminal Growth Rate | 4.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge components ($5.50 + $0.80 + $1.20 \u2212 $0.50) sum to $7.00, not the stated FY2029 EPS $11.00.",
+                "locations": [
+                    "Fair Value and Profit Drivers (EPS bridge)",
+                    "Financials Snapshot (EPS $11.0 in FY2029)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count/dilution",
+            "capex",
+            "working_capital assumptions",
+            "explicit subscription mix trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without detailed inputs (risk-free, ERP, capital structure)",
+            "Terminal growth 4% without macro/peer justification"
+        ]
+    }
+}

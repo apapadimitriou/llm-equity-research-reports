@@ -1,0 +1,108 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is decent: the report states core DCF inputs near the valuation (revenue trajectory, non-GAAP operating margin, WACC, terminal growth, share count, tax). Specificity is solid with magnitudes, units, and timelines for FY25\u2013FY29, and a forecast table. However, justification is only partial: FY25 revenue is anchored to company guidance, but longer-term growth, margin persistence, tax rate, and WACC lack evidence from multi-year history or peer benchmarks; no sources or parameter build-up for WACC/COE are provided. Internal consistency fails: there are at least two numeric contradictions\u2014(1) revenue CAGR guidance is inconsistent across sections and with the forecast table; (2) FY29 FCF in the narrative (~$10.8b) conflicts with the table ($11.5b). Sensitivity/stress testing is absent: no quantified ranges or scenario analyses for key levers (growth, margins, WACC, terminal growth), nor valuation impacts per change. Per the hard caps, the combination of multiple contradictions and no sensitivity analysis necessarily limits the assessment to Poor despite otherwise clear inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "FY25 revenue \u2248$23.6 b (mid-guidance), ~10% annual growth slowing to ~5% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "steady non-GAAP operating margin \u224846\u201347%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Diluted share count is assumed to decline modestly (reflecting ongoing buybacks).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Using a WACC ~7.5% (reflecting a premium for software risk) and 2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "FCF rising from ~$8.7 b (FY25) to ~$10.8 b (FY29).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "FCF"
+        },
+        {
+            "quote": "non-GAAP tax ~18.5%.",
+            "location": {
+                "section": "Appendix (Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "We forecast mid-single-digit CAGR in the later 2020s",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "FCF"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Growth/CAGR inconsistency: \u201cCAGR ~8% thereafter\u201d conflicts with \u201cmid-single-digit CAGR in the later 2020s\u201d and with the forecast table showing ~4\u20135% growth by 2027\u20132029.",
+                "locations": [
+                    "Appendix (Valuation Assumptions)",
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot (Revenue 2026\u20132029)"
+                ]
+            },
+            {
+                "description": "FY29 FCF mismatch: narrative says \u201c~$10.8 b (FY29)\u201d vs table showing $11.5 b in 2029(e).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (FCF 2029(e))"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC ~7.5% without build-up/source",
+            "terminal growth 2% without support",
+            "non-GAAP tax ~18.5% without rationale",
+            "share count decline magnitude unspecified"
+        ]
+    }
+}

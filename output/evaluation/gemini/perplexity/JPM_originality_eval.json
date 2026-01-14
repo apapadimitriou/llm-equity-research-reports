@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report primarily functions as a summary of the Q2 2025 earnings release and a restatement of publicly available financial metrics. While it provides specific company data (e.g., CET1 ratios, AWM margins, and digital customer counts), it fails to synthesize these into unique, forward-looking conclusions. The analysis of credit normalization in Card Services via 'seasoning vintages' represents a weak synthesis, but it is the only instance of non-obvious commentary. The valuation section relies on standard drivers like 'modest loan growth' and 'stable NIM' without introducing a novel mechanism or company-specific catalyst. Furthermore, the report heavily utilizes boilerplate phrasing ('fortress balance sheet,' 'wide economic moat') and generic sector-wide risks (interest rate sensitivity, regulatory capital). Because more than three insights are restatements of public headlines or generic sector observations, and there is only one weak synthesis, the grade is capped at Fair.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "EPS of $4.96, surpassing consensus estimates of $4.48, while revenue of $44.9 billion also beat expectations.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "CET1 ratio of 15.4%, well above regulatory requirements of 12.3%.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Credit normalization... particularly in Card Services where seasoning vintages are driving higher losses.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Asset & Wealth Management... 80% of long-term fund AUM above peer median.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "JPMorgan possesses a wide economic moat driven by scale, network effects, and regulatory barriers.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Normalized earnings power of approximately $20-22 per share supports the fair value estimate.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'fortress balance sheet' and 'scale' phrasing",
+            "Restatement of public earnings beat headlines"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

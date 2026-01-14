@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains some quantitative forecasts and assumptions, it lacks clear causal mechanisms explaining how business drivers translate to financial outcomes. The report states \"product revenue CAGR FY2025-2029: 22%\" and \"Target non-GAAP operating margin by FY2029: 15%\" but provides no explanation for these assumptions or sensitivity analysis. Causal reasoning is superficial, with statements like \"net revenue retention rate of 126% demonstrates strong customer expansion\" offering correlation without mechanism. The phrase \"consumption-based model creates natural alignment with customer success\" suggests causality but lacks quantification. Risk factors are listed descriptively rather than analyzed quantitatively. The fair value estimate of $205 mentions \"weighted average cost of capital assumption of 10.5%\" and \"forward price-to-sales multiple of 18x\" but provides no benchmarking or scenario analysis. The brief mention that \"sensitivity analysis suggests fair value ranges from $175 to $235\" lacks supporting detail or methodology. Overall, the report reads more like a comprehensive summary than rigorous analytical framework with testable assumptions and quantified sensitivities.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth \u2192 margin expansion pathway unclear",
+            "AI strategy \u2192 financial impact not quantified",
+            "competitive threats \u2192 market share impact unmodeled"
+        ],
+        "unsupported_assumptions": [
+            "22% CAGR with no driver-based justification",
+            "10.5% WACC without benchmark comparison",
+            "15% operating margin target lacks roadmap"
+        ],
+        "lack_of_sensitivity": [
+            "fair value range $175-$235 methodology absent",
+            "no scenario analysis for key variables",
+            "competitive risk impact unquantified"
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains extensive company-specific detail but lacks meaningful original synthesis. Most insights are direct restatements from Reuters/FT sources with minimal interpretive value-add. Key findings include: (1) No original thesis connecting specific mechanisms to outcomes, (2) Generic DCF assumptions without novel drivers beyond standard revenue/margin improvements, (3) Heavy reliance on copied phrases and boilerplate banking language ('scale & diversification,' standard stress-test recaps), (4) Bulls/Bears section largely paraphrases recent earnings reports without unique angles. While the report demonstrates one weak synthesis linking trading volatility to near-term revenue sustainability, it fails to provide decision-relevant insights with quantified catalysts or company-distinct mechanisms. The valuation section uses standard assumptions without novel profit drivers.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "elevated market volatility (tariff-driven) has boosted Citi's markets business",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "strategic overhaul delivering efficiency through streamlining into five businesses",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "analysts doubt the 11-12% ROTCE target for 2026 will be met",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "favorable market volatility and rising fee businesses can sustain 2025 revenue growth modestly above zero",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "regulatory pressure could impose restrictions like mandated business line splits",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "DCF model assumes 2-3% revenue CAGR with margins improving from 20% to 23%",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard banking assumptions",
+            "Heavy reliance on Reuters/FT paraphrasing",
+            "Boilerplate 'scale & diversification' language",
+            "Standard stress-test recap without deeper angle"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

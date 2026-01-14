@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (Analyst Note, Business Description, Strategy, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials, ESG, Appendix, Sources) with reasonable proportionality across qualitative areas. However, comprehensiveness is undermined by a thin and generic Financials Snapshot that omits core internet advertising KPIs (DAU/MAU, ARPU by region, ad impressions, average price per ad, FoA vs Reality Labs segment financials). Forecast tables include placeholders like \u201cInsufficient data,\u201d weakening completeness. Valuation provides a DCF with high-level assumptions (revenue CAGR, margins, WACC, terminal growth) but does not bridge from operating drivers (impressions, pricing, ARPU, segment mix) to the forecast, failing to link drivers explicitly to value. Evidence integration is inconsistent: multiple material claims are labeled \u201cinsufficient data for citation\u201d or rely on uncited/URL-less social media posts (e.g., digital ad growth rate, ESG score, capex guidance), and several assertions in Capital Allocation lack sourcing. Peer benchmarking and scenario/sensitivity analysis are absent. There is some redundancy, with Q1 growth/margin figures repeated across Analyst Note, Bulls/Bears, and Moat with limited added depth. Given the KPI omissions in the Financials Snapshot, weak sourcing on several key claims, and valuation-driver disconnect, the report meets only a Fair level of comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Segment Financials/KPI Breakdown"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "DAU/MAU (Family metrics)",
+            "ARPU by region",
+            "Ad impressions growth",
+            "Average price per ad (CPM)",
+            "FoA vs Reality Labs revenue and operating loss",
+            "Capex detail/time series"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Average operating margin stated as 40% in Valuation narrative vs 41% in Appendix assumptions.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "DAU/MAU",
+            "ARPU by region",
+            "Ad impressions",
+            "Average price per ad",
+            "FoA vs Reality Labs segment financials",
+            "Capex detail"
+        ],
+        "uncited_claims": [
+            "Global digital advertising growth projected at 10\u201312% annually (no source).",
+            "ESG risk score of 25.0 and peer comparison to Alphabet (no specific citation).",
+            "Balance sheet characterization as 'low debt and substantial cash' without data/source.",
+            "Capex guidance of $64\u201372B relies on social media posts without URLs."
+        ]
+    }
+}

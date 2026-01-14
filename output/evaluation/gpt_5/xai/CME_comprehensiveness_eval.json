@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (cover, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources), but many are skeletal. The Financials Snapshot lacks multi-year history (shows \u201cInsufficient data\u201d for 2022\u20132024) and omits core exchange KPIs (e.g., ADV, RPC, open interest) in the table, triggering a cap at Fair. Valuation provides assumptions (revenue CAGR, margins, WACC, EPS bridge) and loosely ties drivers to outcomes, but detail is thin and not transparently linked to sector KPIs. Evidence is partially cited (press releases, transcripts), yet timeline inconsistencies (Q2 2025 data in an April 2025-dated report) and several uncited forecasts reduce consistency. Peer benchmarking and scenario/sensitivity analysis are absent, limiting context and robustness. Redundancy appears (dividend streak and volatility normalization repeated across sections) without added depth. Overall, scope is broad but the KPI depth, peer context, and analytical rigor are insufficient for a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ADV (mentioned in Analyst Note)",
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "ADV (not included in Financials Snapshot)",
+            "Rate per Contract (RPC)",
+            "Open Interest",
+            "Market data/clearing revenue breakdown"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-04-23) precedes use of Q2 2025 results and August 2025 sources.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Cover shows 'Uncertainty rating insufficient data' while Risk section states 'medium uncertainty'.",
+                "locations": [
+                    "Cover Block",
+                    "Risk & Uncertainty"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ADV in Financials Snapshot",
+            "Rate per Contract (RPC)",
+            "Open Interest",
+            "Market data/clearing revenue mix"
+        ],
+        "uncited_claims": [
+            "Medium-term revenue CAGR of 8\u201310% in Analyst Note (no source)",
+            "ADV growth 5\u20137% annually in Strategy & Outlook (no source)",
+            "Valuation inputs (WACC 8%, beta 0.8) without sourcing"
+        ]
+    }
+}

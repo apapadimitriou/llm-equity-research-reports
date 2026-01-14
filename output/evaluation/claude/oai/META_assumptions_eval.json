@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. Key assumptions are largely opaque and unjustified. The revenue growth assumption of ~12% CAGR lacks any supporting analysis or peer comparison. Operating margin stabilization at mid-40s is stated without justification despite current 45% margins. The 8.5% WACC appears arbitrary with no derivation shown, while cost of equity jumps from 8.5% to 10% without explanation. Multiple internal contradictions exist: WACC stated as both 8.5% and derived as 10% from appendix components, and projected operating margins declining from current 45% to 40% then recovering without rationale. Free cash flow projections show extreme volatility (dropping from $40B to $10B then recovering) with no explanation. Most critically, there are zero sensitivity analyses or scenarios for any material drivers, capping the grade at Fair, but the numerous contradictions and unjustified assumptions drive this to Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Meta's revenue to grow at a ~12% compound annual rate over 2024\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model long-run operating margins stabilizing in the mid-40s",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our valuation uses an 8.5% weighted average cost of capital",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "4% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.5%, Cost of Equity: 10.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Shares Outstanding (bn): ~2.6",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC stated as 8.5% in valuation section but Cost of Equity shown as 10.0% in appendix with Beta 1.20 and components that would yield 10.0% cost of equity, making 8.5% WACC inconsistent",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Operating margins projected to decline from current 45% to 40% in 2025 then recover to 45% by 2029 without any explanation for the temporary decline",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "12% revenue CAGR without peer/industry support",
+            "8.5% WACC without derivation",
+            "mid-40s margin target without justification",
+            "4% terminal growth without benchmarking"
+        ]
+    }
+}

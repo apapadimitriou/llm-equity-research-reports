@@ -1,0 +1,110 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are explicitly stated (revenue CAGR, margin range, WACC, terminal growth) and located near the valuation discussion or in the appendix. Specificity is partial: horizons and magnitudes are given for revenue CAGR (2025\u20132029), margins (25\u201328%), WACC (9% with beta and risk-free), and terminal growth (2.5%), but other material inputs (tax rate, share count, NII/NIM band, capex) are absent or qualitative only. Justification is weak: most assumptions reference \u201cindustry trends\u201d without multi-year company history, peer benchmarks, or cited quantitative sources; WACC lacks capital structure detail and ERP is mentioned without derivation. Internal consistency has a clear issue around margins: the appendix calls for \u201cMargin Expansion 1.0%\u201d while the narrative/bridge cites margin compression and the note cautions on margin pressure. Sensitivity analysis is absent\u2014no quantified scenarios or ranges for major levers (rates/NIM, fee growth, margins, WACC, terminal growth), triggering the hard cap at Fair. Overall, the assumptions are somewhat explicit and specific but lack supporting evidence and scenario analysis, with a notable contradiction on margins.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% over 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to stabilize at 25-28%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The WACC is estimated at 9%, incorporating a beta of 1.1 and risk-free rate of 4%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 2.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Margin Expansion | 1.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Forecasts for 2025 suggest revenue growth in the low single digits",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "yielding 2025 EPS of approximately $7.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "assuming stable net interest income and cost controls.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Appendix assumes \"Margin Expansion | 1.0%\" while narrative cites margin compression (\"margins may compress\" and EPS bridge subtracts $0.20 from margin compression) and also says margins will \"stabilize at 25-28%\".",
+                "locations": [
+                    "Appendix \u2014 Key Valuation Assumptions Table",
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers (EPS bridge)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "credit_cost",
+            "NII/NIM (quantified band)"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without capital structure detail/source",
+            "Terminal Growth Rate 2.5% with minimal rationale",
+            "Operating margins 25-28% without historical/peer support",
+            "Revenue CAGR 4% \"Based on industry trends\" without evidence"
+        ]
+    }
+}

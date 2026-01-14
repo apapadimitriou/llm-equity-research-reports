@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all headline sections with good proportionality: cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, and sources. Evidence integration is generally strong, with frequent in\u2011text citations to Reuters, FT, and company releases. The valuation section explicitly links operating drivers (revenue CAGR, margin trajectory, tax rate, Ansys contribution, WACC/terminal growth) to the fair value outcome. However, the Financials Snapshot is generic and omits core software/EDA sector KPIs (ARR, NRR, RPO/backlog, bookings/ACV, renewal/churn), triggering the KPI hard cap. Peer context is present but limited to brief mentions of Cadence/Siemens and a single relative multiple; there is no dedicated peer benchmarking table. Scenario/sensitivity analysis is absent. Minor inconsistency exists in WACC assumptions (8.5% in the Analyst Note vs ~9% in Valuation), and a few material claims lack sources. Redundancy is limited and generally adds incremental detail. Overall, breadth is strong, but missing sector KPIs and lack of scenarios constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking (quantitative)",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "RPO/Backlog",
+            "Bookings/ACV",
+            "Renewal/Churn"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC assumption is 8.5% in Analyst Note but ~9% in Valuation, with the same ~$520 fair value.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "RPO/Backlog",
+            "Bookings/ACV",
+            "Renewal/Churn"
+        ],
+        "uncited_claims": [
+            "China historically ~20% of sales",
+            "BofA estimates repurchases possible from mid-2026",
+            "Cash/swaps typically >$2B"
+        ]
+    }
+}

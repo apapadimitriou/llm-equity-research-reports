@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without explicit connection to forecasts. While financial projections appear in the snapshot table, the underlying drivers are not clearly stated or justified. Revenue CAGR assumptions (16.5% base case) appear only in the appendix without supporting analysis. The 9% WACC is mentioned but not justified with market data or methodology. Operating margin expansion from 15.2% to 25.5% lacks specific drivers or benchmarking. Multiple internal contradictions exist: EPS projections show dramatic improvement from $0.85 to $4.50 without reconciling underlying assumptions, and revenue growth rates vary inconsistently across sections. No quantified sensitivity analysis is provided for material drivers despite significant uncertainty around post-outage recovery. The report reads more like a comprehensive business analysis than a rigorous financial model with traceable, auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029) 16.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Op Margin 25.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC 9.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The weighted average cost of capital assumes a 9% discount rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Earnings per share is projected to grow from current levels to approximately $4.50 by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "margin/efficiency",
+            "WACC/COE",
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS projection shows growth from $0.85 (FY2025E) to $4.50 (FY2029E) without reconciling underlying margin expansion and revenue growth assumptions",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "Revenue growth rates vary inconsistently - 22% current ARR growth mentioned vs 16.5% CAGR assumption vs various other growth references",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix assumptions",
+                    "Business Strategy section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Terminal Op Margin 25.5% without benchmarking",
+            "Revenue CAGR 16.5% without supporting analysis"
+        ]
+    }
+}

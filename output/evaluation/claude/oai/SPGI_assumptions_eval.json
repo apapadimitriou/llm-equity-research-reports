@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered without clear justification. Key drivers like revenue CAGR (~5-6%), operating margin expansion (to ~42%), WACC (~8%), and terminal growth (~2%) are stated but lack supporting evidence from history, peers, or sources. The report contains a significant contradiction: it assumes ~2% annual share count reduction from buybacks while simultaneously showing EPS growing from $12.51 (2023) to $22.0 (2029F) - a 12% CAGR that's inconsistent with stated revenue growth of 5-6%. Most assumptions appear in summary form without specificity regarding units, timeframes, or causal drivers. No sensitivity analysis or scenario testing is provided for any material drivers. The financial projections table shows precise figures but the underlying methodology and assumptions driving these forecasts are not explained or justified, making the model feel like a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes revenue CAGR ~5\u20136% through FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are assumed to gradually expand... we project EBIT margins rising towards ~42% (pre-spin) by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of ~8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal EBITDA multiple ~18\u00d7",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Buybacks are disciplined (netting roughly 2% share-count reduction per year)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS growth from $12.51 (2023) to $22.0 (2029F) implies ~12% CAGR, inconsistent with stated revenue CAGR of 5-6% and modest margin expansion",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC ~8% without source",
+            "terminal EBITDA multiple ~18\u00d7 without justification",
+            "revenue CAGR 5-6% without historical basis",
+            "margin expansion to 42% without peer comparison"
+        ]
+    }
+}

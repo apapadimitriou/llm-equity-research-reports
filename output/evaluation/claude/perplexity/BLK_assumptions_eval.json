@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails fundamental assumption quality standards across all five pillars. Key financial assumptions are almost entirely absent\u2014no explicit revenue growth rates, margin targets, WACC components, or terminal growth rates appear in the narrative sections. The financial snapshot table provides projections without any justification or explanation of underlying drivers. Critical assumptions like the 9.5% WACC and 3% terminal growth only appear buried in an appendix with no supporting rationale. Multiple internal contradictions exist: management targets 'at least $1.5 billion' in buybacks while the model assumes 1.5% annual share reduction; revenue growth assumptions of 8-10% contradict the implied 8.2% CAGR from the financials table. The report contains no sensitivity analysis or scenario testing despite discussing significant regulatory risks and market uncertainties. While the report demonstrates strong research and comprehensive coverage, the assumptions driving the $1,200 fair value estimate are opaque and unjustified.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our fair value estimate of $1,200 per share for BlackRock is derived from a discounted cash flow analysis incorporating the company's multiple revenue streams and growth opportunities. The valuation model assumes revenue compound annual growth rate of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion is projected to occur gradually from current levels of approximately 45% to 47-48% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 9.5% reflects BlackRock's strong balance sheet, predictable cash flows, and moderate financial leverage",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Revenue CAGR (2024-2029): 8.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share Repurchase Rate: 1.5% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth rates conflict between 8-10% in text vs 8.2% CAGR in appendix",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Share buyback assumptions inconsistent - 'at least $1.5 billion' vs 1.5% annual reduction",
+                "locations": [
+                    "Capital Allocation",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Revenue growth 8-10% without basis",
+            "Margin expansion to 47-48% without support"
+        ]
+    }
+}

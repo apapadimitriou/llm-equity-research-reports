@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, functioning instead as a comprehensive recap of public regulatory filings, press releases, and consensus narratives. Every 'insight' identified is a restatement of existing information: the reduction in the Stress Capital Buffer (SCB) is a mechanical regulatory update, the 'trapped capital' argument is management's own multi-year narrative, and the description of the Services segment as the 'crown jewel' is a direct paraphrase of cited Morningstar and company materials. The report relies heavily on boilerplate industry tropes such as the 'Show Me story' and 'Value Trap' without adding interpretive depth. The valuation section is particularly generic, applying a textbook 1.0x P/TBV multiple based on the standard theory that banks earning their cost of capital should trade at book value, offering no novel drivers or company-specific mechanisms. Because the report lacks any clear synthesis of data into new conclusions and relies entirely on paraphrasing cited sources, it meets the criteria for a 'Poor' grade in originality.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "The reduction in the Stress Capital Buffer (SCB) requirement... serves as a crucial vote of confidence from the firm's primary regulator.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "The sale of these businesses... liberates this capital... [to be] channeled toward buying back the company's own stock.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "The Services division is unequivocally Citigroup's highest-return business and has been rightly described by management as the 'crown jewel'.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The firm has delivered four consecutive quarters of positive operating leverage, a clear indication that management's simplification... [is] translating into improved profitability.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Applying a target P/TBV multiple of approximately 1.0x... justified by the expectation that Citigroup will make credible and sustained progress toward its 10-11% RoTCE target.",
+                "classification": "Generic Restatement",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'Show Me' story and 'Value Trap' phrasing",
+            "Generic P/TBV valuation with no novel drivers",
+            "Recap of stress test results without a unique analytical angle",
+            "Heavy reliance on Morningstar and management quotes for core thesis"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

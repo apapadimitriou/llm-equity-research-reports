@@ -1,0 +1,116 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Key drivers are mostly explicit and numerically specific (e.g., 8% revenue CAGR 2025\u20132029, operating margins 3.5\u20134%, MLR 88\u201389%, WACC 8.5%, terminal growth 3%, EPS bridge with share dilution). Assumptions are placed near the forecasts they inform (Fair Value and Financials Snapshot), supporting explicitness and specificity. However, justification is weak: major parameters (MLR, WACC, terminal growth) are largely \u201cmodel-derived\u201d with limited citation or benchmarking; demographic and CenterWell references are qualitative. Internal consistency has two clear contradictions: medium-term revenue growth is stated as 4\u20136% while the model/table apply ~8%; and the claim that ROIC exceeds WACC by 4\u20135 points conflicts with the provided ROIC figures and an 8.5% WACC. Stress-testing is absent\u2014no quantified sensitivities or scenarios on material levers (MLR, rates, membership, WACC), only qualitative risk mentions. Under decision rules, the combination of \u22652 contradictions and lack of sensitivity analysis requires a Poor grade despite decent specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "projected revenue CAGR of 8% over 2025-2029, driven by 4-5% annual MA membership growth",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Margins are expected to stabilize at 3.5-4%, assuming medical loss ratios (MLR) hold at 88-89%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating margins are projected to average 3.8%, improving from 3.5% in 2025 due to scale efficiencies and MLR stabilization at 88.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 8.5% WACC, reflecting Humana's beta of 1.0 and cost of debt at 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 3% leads to fair value of $410",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge from 2024 estimated $18.50: +$4.00 from revenue growth, +$1.50 margin expansion, -$1.00 share dilution, yielding 2025 EPS of $23.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Revenue ($B) ... 2025 Forecast 128.0 ... 2029 Forecast 174.1",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In the medium term (2025-2027), we expect Humana to achieve 4-6% revenue growth",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 4\u20136% medium-term revenue growth while the model and tables imply ~8% growth and an 8% CAGR base case.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Claim that ROIC exceeds WACC by 4\u20135 points conflicts with ROIC (10\u201312%) and WACC 8.5%, which shows only ~1.5\u20133.5 points.",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot",
+                    "Appendix (WACC)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "MLR sourcing/benchmarking",
+            "share count trajectory (units)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source/structure detail",
+            "Terminal growth 3% without evidence",
+            "MLR 88\u201389% with 'insufficient data' note"
+        ]
+    }
+}

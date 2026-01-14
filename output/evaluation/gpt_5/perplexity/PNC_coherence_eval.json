@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is well-structured with clear section headers (Analyst Note \u2192 Strategy/Outlook \u2192 Moat \u2192 Valuation \u2192 Risks \u2192 Capital Allocation) and generally readable language. Transitions within sections are mostly logical, and the base-case narrative around diversified revenue, efficiency gains, and a modest growth outlook ties reasonably into the valuation assumptions and financial projections. However, coherence is undermined by several internal inconsistencies and temporal misalignments. Most notably, the magnitude of the Q2 2025 beat is stated inconsistently (8.5% in the opening narrative versus 1.3% in the Analyst Note) without clarification, and EPS growth guidance (12.7%) does not match the table-implied growth (~11.9%) for 2025. Temporal alignment of data and sources is problematic: the \u201cLast close\u201d price appears drawn from an August 2025 source despite a June 29, 2025 report date, and the fair value/price target references rely on 2022 sources while being presented as current consensus. Bulls/Bears are directionally linked to the valuation narrative, but they are not explicitly reconciled with the base-case assumptions (e.g., NIM pressure sensitivity is not tied to the DCF inputs). These issues require reader effort to reconcile, capping the grade at fair despite otherwise solid organization and clarity.",
+    "evidence": [
+        "Opening narrative vs Analyst Note: EPS beat is cited as 8.5% (intro paragraph) but later as 1.3% (Analyst Note), with no explanation.",
+        "Cover Block price ($189.74) appears sourced to a 2025-08-08 citation while the report date is 2025-06-29, and the $200.29 price target is sourced to 2022 yet presented as current consensus.",
+        "Fair Value section cites 12.7% EPS growth for 2025, while the Financials Snapshot shows EPS rising from 13.74 to 15.37 (~11.9%)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

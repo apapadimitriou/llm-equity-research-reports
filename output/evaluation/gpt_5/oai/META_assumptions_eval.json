@@ -1,0 +1,113 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are generally explicit and proximate to the forecasts: revenue CAGR, margin trajectory, WACC/COE, terminal growth, tax rate, share count, and 2025 CapEx are clearly stated and tied to the model. Specificity is solid, with magnitudes, units, and horizons (e.g., 2024\u20132029 revenue path, mid-cycle margin 45%, WACC 8.5%, terminal growth 4%). However, justification is only partial: the report references broad drivers (ad spend, Reels, AI) and 2024 actuals, but key valuation parameters (WACC components, COE, terminal growth, tax rate) lack cited sources or peer/market benchmarks. Internal consistency has at least one numeric contradiction: the text claims the $400 FVE \u201cimplies\u201d a 2025 forward P/E ~17\u00d7, while the table\u2019s 2025E EPS of $26 implies ~15.4\u00d7 at $400. Critically, there is no quantified sensitivity or scenario analysis on material drivers (revenue growth, margins, WACC, terminal growth, CapEx), triggering the hard cap at Fair. Overall, the assumptions are explicit and specific but weakly justified and not stress-tested, with a minor internal inconsistency.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Meta\u2019s revenue to grow at a ~12% compound annual rate over 2024\u20132029, reaching roughly $290 billion by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Mid-cycle Op. Margin     45%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC                     8.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate     4.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Cost of Equity           10.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Effective Tax Rate       20%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Shares Outstanding (bn)  ~2.6",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Meta plans over $65 billion in 2025 CapEx for AI infrastructure",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text says $400 FVE \u201cimplies a 2025 forward P/E of about 17\u00d7\u201d, but with 2025E EPS $26 the P/E at $400 is ~15.4\u00d7.",
+                "locations": [
+                    "Fair Value and Profit Drivers (P/E claim)",
+                    "Financials Snapshot (2025E EPS $26.0)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "sensitivity/scenario analysis on revenue growth, margins, WACC, terminal growth, CapEx",
+            "capex trajectory beyond 2025",
+            "share repurchase cadence/share count trajectory",
+            "working capital/drivers of FCF beyond CapEx"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Cost of Equity 10% without source",
+            "Terminal Growth 4% without source",
+            "Risk-Free Rate 4% without source",
+            "Equity Risk Premium 5% without source",
+            "Beta 1.20 without source",
+            "Effective Tax Rate 20% without source"
+        ]
+    }
+}

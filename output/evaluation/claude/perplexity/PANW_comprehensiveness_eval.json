@@ -1,0 +1,74 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental structural deficiencies that render it incomplete and unreliable. Most critically, the entire document appears to be fabricated with fictional future dates (2025-2026) and impossible financial projections, violating basic research integrity standards. The report lacks essential sections including competitive positioning analysis, peer benchmarking, and scenario analysis. While it attempts to cover major topics like business description and valuation, the sector-specific KPIs are inadequately developed - missing critical cybersecurity metrics like customer acquisition costs, churn rates, and security incident response times. The financial snapshot provides basic revenue/EPS projections but omits key SaaS metrics like ARR breakdown, net revenue retention details, and customer cohort analysis. Most damaging, the extensive source list appears fabricated with future publication dates, creating a facade of credibility while providing no actual evidentiary support. The valuation section mentions DCF methodology but fails to show explicit linkages between operating drivers and fair value calculations.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "ARR",
+            "Net Revenue Retention"
+        ],
+        "sector_kpis_missing": [
+            "Customer Acquisition Cost",
+            "Churn Rate",
+            "Annual Contract Value",
+            "Security Incident Response Times",
+            "Platform Adoption Rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated August 4, 2025 with future earnings dates and fictional financial results",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Claims Q3 2025 results while report is dated August 2025",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Customer Acquisition Cost",
+            "Churn Rate",
+            "Annual Contract Value",
+            "Security Incident Response Times",
+            "Platform Adoption Rates"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $210 per share with no DCF model shown",
+            "WACC assumption of 9.5% with no calculation basis",
+            "Terminal growth rate of 3.0% without justification",
+            "Multiple financial projections without supporting analysis"
+        ]
+    }
+}

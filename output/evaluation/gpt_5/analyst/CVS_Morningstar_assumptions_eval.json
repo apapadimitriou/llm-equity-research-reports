@@ -1,0 +1,115 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are largely explicit and proximal to the forecasts: revenue CAGR, EPS growth, and DCF inputs (WACC, COE, tax rate, Stage II growth/investment) are stated with units and horizons. Specificity is solid, with numerical paths for revenue, margins, EPS, and share count shown in the model summary. Justification is partial: narrative ties assumptions to recent MA mispricing, PBM contract losses, and regulatory context, but core valuation parameters (WACC 7.8%, COE 9%, tax rate 25.5%) lack cited sources or peer/market benchmarks. Internal consistency is mostly clean, though the narrative \u201c3% revenue growth compounded annually through 2029\u201d conflicts with the table\u2019s five-year revenue CAGR of 2.6% and a 2028 revenue dip. Stress testing is absent: while regulatory headwinds are discussed qualitatively (low-single-digit profit impact), there are no quantified sensitivities or scenario ranges for material levers (rates/WACC, revenue, margins, PBM regulation). Given explicit inputs but limited justification and no quantified sensitivity, and one text\u2013table inconsistency, the assumptions quality fits Fair under the stated hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "we expect 3% revenue growth compounded annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted EPS should grow about 10% compounded annually during the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 25.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Stage II Investment Rate % 37.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "ProjectedDilutedShares 1,262",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "we suspect a low-single-digit profit headwind is the most likely outcome for potential regulations on rebates and spreads in the PBM business",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative '3% revenue growth compounded annually through 2029' vs table showing five-year revenue CAGR 2.6% and a 2028 revenue decline",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.7)",
+                    "Morningstar Valuation Model Summary \u2013 Growth & Ratios (p.15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "capex",
+            "sensitivity/scenarios"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.8% without source",
+            "Cost of Equity 9.0% without source",
+            "Long-Run Tax Rate 25.5% without support"
+        ]
+    }
+}

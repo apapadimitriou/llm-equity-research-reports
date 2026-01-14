@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s assumptions are explicitly stated and specific, covering key drivers such as NII ($95.5B), WACC (9.5%), and terminal growth (2%). However, the quality is severely undermined by multiple internal numeric contradictions and insufficient stress-testing. First, there is a significant discrepancy in growth rates: the narrative assumes an 8% revenue CAGR from 2022\u20132029, but the provided financial table (growing from $128.7B to $250B) implies a 9.9% CAGR. Second, the valuation logic is inconsistent; the report claims the $300 fair value estimate implies a 15x 2025 P/E, but using the table\u2019s 2025 EPS of $22 results in a 13.6x multiple. The report further confuses this by labeling the 15x multiple as '(2026E)' in a subsequent sentence. Justification is weak for several parameters; for instance, the 45% operating margin is presented as a flat assumption without multi-year historical context or peer comparison. Most critically, the report fails the sensitivity requirement. While it provides a single quantified sensitivity for WACC, it offers no quantified ranges or scenarios for material operational drivers like NII or credit costs, despite identifying them as primary risks. Per the grading rubric, the presence of two or more distinct numeric contradictions, combined with limited sensitivity analysis, necessitates a grade of 'Poor.'",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR ~8% (2022\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin ~45%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "updated 2025 NII to $95.5B",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "9.5% WACC (RF ~3.5%, market premium ~6.5%, \u03b2\u22481.2)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of ~2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "effective tax ~24%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated 8% Revenue CAGR (2022-29) conflicts with table data ($128.7B to $250B), which implies a 9.9% CAGR.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Claimed 15x 2025 P/E for $300 FV conflicts with table's 2025 EPS of $22 (which yields 13.6x).",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Operating margin 45% (no historical/peer context)",
+            "Terminal growth 2% (no source/rationale)"
+        ]
+    }
+}

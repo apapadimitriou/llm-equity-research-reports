@@ -1,0 +1,61 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental structural deficiencies that render it incomplete and superficial. The document abruptly cuts off mid-sentence in the valuation section, leaving critical analysis unfinished. While it contains some expected sections like Analyst Note and Business Description, the execution is severely flawed with missing core components including Bulls/Bears analysis (despite headers), competitive positioning details, comprehensive risk assessment, and capital allocation discussion. The financials snapshot is entirely absent, eliminating any sector-specific KPIs essential for pharmaceutical analysis such as R&D-to-sales ratios, pipeline metrics, or margin analyses. Citations are inconsistent with numbered references that lack corresponding source documentation. The valuation section fails to establish clear linkages between operating drivers and fair value calculations, presenting conclusions without supporting methodology. Multiple sections exist only as headers without substantive content, creating an impression of comprehensiveness while delivering superficial coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Economic Moat"
+        ],
+        "sections_missing": [
+            "Bulls/Bears (substantive content)",
+            "Competitive Positioning",
+            "Valuation methodology",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG analysis",
+            "Appendix",
+            "Sources"
+        ],
+        "sector_kpis_present": [],
+        "sector_kpis_missing": [
+            "R&D-to-sales ratio",
+            "Pipeline value metrics",
+            "Drug approval rates",
+            "Patent expiration timelines",
+            "Gross margins by segment",
+            "Market share data"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report cuts off mid-sentence in valuation section",
+                "locations": [
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D-to-sales ratio",
+            "Pipeline metrics",
+            "Patent cliff timeline",
+            "Biosimilar impact quantification",
+            "Therapeutic area margins"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $215 per share with no methodology",
+            "WACC assumption of 7.5% unsupported",
+            "Revenue growth projections lack detailed justification"
+        ]
+    }
+}

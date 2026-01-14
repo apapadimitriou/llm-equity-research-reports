@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly listed (Appendix and Fair Value sections) and proximate to the forecasts they inform. Specificity is solid: the report states magnitudes and horizons for revenue CAGR (~20\u201325% FY2025\u201329), operating margin expansion (~21% \u2192 ~28% by FY2029), WACC (~10%), terminal growth (3%), tax rate (22\u201323%), capex (~3\u20134% of revenue), and even embeds ARR ($10\u201315B by 2029) and FCF margin (~30%+). Justification is partial: revenue growth is anchored to management guidance and industry growth (IDC), gross margins tie to historical subscription margins, but WACC and terminal growth are asserted without evidentiary support. Internal consistency has a notable issue: the stated \u201cP/S ~95\u00d7\u201d conflicts with the report\u2019s own market cap and revenue figures. Most other figures reconcile to the Financials Snapshot. Critically, there is no quantified sensitivity or scenario analysis for material drivers (revenue growth, margins, WACC, terminal growth), triggering a hard cap at Fair. Share count/dilution assumptions are absent. Overall, assumptions are explicit and specific but weakly justified in places and lack stress-testing, with one clear numeric contradiction.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR FY2025\u201329: ~20\u201325%",
+            "location": {
+                "section": "Appendix \u2013 Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP Operating Margin expansion: ~21% (FY2025) \u2192 ~28% (FY2029)",
+            "location": {
+                "section": "Appendix \u2013 Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: ~10% (reflecting growth tech risk)",
+            "location": {
+                "section": "Appendix \u2013 Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth: 3% (stable, long-term rate)",
+            "location": {
+                "section": "Appendix \u2013 Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 22\u201323% (consistent with guidance)",
+            "location": {
+                "section": "Appendix \u2013 Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Key profit drivers include steep subscription gross margins (~80%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capex is modest (~3\u20134% of revenue) as a SaaS provider.",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "our model embeds $10\u201315B in ARR by 2029 and ~30%+ free cash flow margins by then",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "capex",
+            "WACC/COE",
+            "terminal_growth",
+            "ARR/FCF_margin"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states \u201cP/S ~95\u00d7\u201d which conflicts with the report\u2019s market cap ($116.6B) and FY2026 revenue ($4.77B), implying ~24\u00d7 P/S, not 95\u00d7.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Cover Block (Market Cap)",
+                    "Financials Snapshot (Revenue $4.77B)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC ~10% without source",
+            "Terminal growth 3% without source"
+        ]
+    }
+}

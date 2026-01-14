@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some key assumptions but with significant weaknesses. Revenue growth assumptions are stated (5-year CAGR ~13%) with qualitative drivers identified (Azure, Office 365, AI adoption), showing partial explicitness and specificity. Operating margin projections (45% to 46% by 2029) are provided with basic justification around Azure scaling and operating leverage. However, critical valuation inputs lack proper support: the 8.8% WACC is stated without derivation or market context, and the 9.4% Stage II growth rate appears arbitrary. While the DCF methodology is comprehensive, no sensitivity analysis or scenario testing is provided for any material drivers, which caps the grade at Fair. The assumptions that are stated generally align with the financial tables, showing reasonable internal consistency.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a 5-year compound annual growth rate, or CAGR, for revenue of approximately 13%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We also model operating margins increasing modestly from 45% in fiscal 2024 (actual) to 46% in fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "17"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.4",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "17"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 7,465",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "17"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.8% without derivation",
+            "Stage II growth rate 9.4% without support"
+        ]
+    }
+}

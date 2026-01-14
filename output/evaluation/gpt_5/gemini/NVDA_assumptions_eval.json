@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicit and proximate to the forecasts: WACC (9.2%), terminal FCF growth (4.0%), revenue growth by year (FY26 54% to $201B; FY27/28 25%/15%; FY29 5%), operating margin path (64% peak to 62% by end), and tax rate (16.5%). Specificity is solid with magnitudes, units, and timeframes, and the narrative references management guidance and the China export-ban reversal to justify near-term revenue levels. However, justification is partial: the report offers limited evidence from multi-year history or peer benchmarks for longer-term growth/margin assumptions, and rate inputs (risk-free/ERP) lack cited sources. Internal consistency is generally clean; revenue and margin figures reconcile across narrative and the Financials Snapshot, with only minor presentation issues (explicit forecast period cited through FY2030 while the table displays through FY2029). Critically, there is no quantified sensitivity or scenario analysis for material drivers (revenue growth, margins, WACC, terminal growth, China exposure), invoking the hard cap at Fair. Important modeling components like share count impacts amid large buybacks, capex/working capital driving FCF, and segment/ASP mix are not stated, reducing completeness.",
+    "assumptions_extracted": [
+        {
+            "quote": "incorporates a weighted average cost of capital (WACC) of 9.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal free cash flow growth rate of 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The WACC is primarily driven by a cost of equity of 9.24%, which assumes a beta of 1.25, a risk-free rate of 4.1%, and an equity risk premium of 4.1%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Revenue is forecast to grow 54% to $201 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Growth is modeled to decelerate to a still-robust 25% and 15%, respectively",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "A significant slowdown to 5% growth is modeled",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP operating margins are forecast to peak at 64% in fiscal 2027 before moderating to 62% by the end of the forecast period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Effective Tax Rate 16.5% ... assumed to remain stable through the forecast period.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital/FCF bridge",
+            "segment mix/ASP path"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without sourced rf/ERP",
+            "Terminal growth 4.0% with qualitative rationale only",
+            "Effective tax rate 16.5% without detailed support",
+            "Revenue CAGR 26% beyond FY26 guided period"
+        ]
+    }
+}

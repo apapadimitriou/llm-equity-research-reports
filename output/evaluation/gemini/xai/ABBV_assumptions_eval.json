@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s quality of assumptions is rated as Fair. On the positive side, the key inputs\u2014including Revenue CAGR, Terminal Growth, WACC, and Operating Margins\u2014are explicitly stated and proximal to the valuation section. The report provides specific magnitudes (e.g., 4% revenue growth, 7% WACC) and clear time horizons (2025\u20132029). Internal consistency is high; the projected revenue and margin figures in the narrative reconcile perfectly with the provided financial snapshot table. However, the report fails to reach a 'Good' or 'Excellent' rating due to two primary deficiencies. First, justification is weak. While the report cites product-specific drivers like Skyrizi and Rinvoq, it provides no historical data (marked as 'Insufficient data' for 2022\u20132024) to anchor these forecasts against past performance or peer benchmarks. Second, the sensitivity analysis is insufficient. While it mentions a 'valuation sensitivity of \u00b120% to revenue assumptions,' this is a single-point qualitative mention rather than a robust, quantified scenario analysis or sensitivity table covering multiple material drivers like WACC or credit costs. Per the grading instructions, the lack of quantified scenario analysis and the absence of historical justification for key parameters cap the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR is projected at 4% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are modeled at 45%, improving to 47% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.0%, reflecting a beta of 0.6 and cost of debt of 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Skyrizi (projected to reach peak sales of $10 billion) and Rinvoq ($7 billion)",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "buybacks total $5 billion annually",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "4% Revenue CAGR (no historical context provided)",
+            "45% Operating Margin (historical data marked as insufficient)"
+        ]
+    }
+}

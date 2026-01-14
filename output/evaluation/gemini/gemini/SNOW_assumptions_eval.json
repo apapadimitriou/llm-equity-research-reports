@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit, specific, and internally consistent assumptions for its core forecasts. Key drivers, such as the 28% product revenue growth and 9% non-GAAP operating margin for FY26, are clearly stated and justified using a combination of management guidance and recent Q4 FY25 performance metrics (e.g., 126% NRR and 33% RPO growth). Valuation parameters, including a 9.5% WACC and 4.0% terminal growth rate, are explicitly derived from cited market data like the 10Y Treasury and specific Beta estimates. The report maintains high internal consistency; for instance, the FY27 revenue estimate of $5.7 billion correctly applies the assumed 28% growth rate to the FY26 guidance. However, the report fails the 'stress-tested' requirement entirely. While Section 8 identifies material risks\u2014such as consumption volatility, AI-driven margin compression, and competitive pressure from Databricks\u2014these are discussed only qualitatively. There is no quantified sensitivity analysis, such as a table showing the impact of varying WACC or revenue growth rates on the $235.00 price target. Per the mandatory hard caps in the instructions, the absence of quantified sensitivity analysis on material drivers limits the maximum possible grade to 'Fair.'",
+    "assumptions_extracted": [
+        {
+            "quote": "Management\u2019s guidance for Fiscal Year 2026... projects product revenue of $4.446 billion, implying a durable 28% growth rate.",
+            "location": {
+                "section": "Executive Summary",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The FY26 non-GAAP operating margin guidance of 9% reflects a conscious decision to reinvest heavily in GPU capacity and engineering talent.",
+            "location": {
+                "section": "Executive Summary",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9.5%. This is derived from a Beta of ~0.96... a Risk-Free Rate of ~4.2% (10Y Treasury), and an Equity Risk Premium of ~5.5%.",
+            "location": {
+                "section": "Valuation",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 4.0%. This reflects the long-term secular tailwind of data growth...",
+            "location": {
+                "section": "Valuation",
+                "page": "6"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We apply a 14.0x multiple to our estimated FY27 Product Revenue of $5.7 billion",
+            "location": {
+                "section": "Price Target Derivation",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Net Revenue Retention (NRR) stabilized at 126%, effectively halting the deceleration trend",
+            "location": {
+                "section": "Executive Summary",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We use a fully diluted share count of ~370 million shares, accounting for the dilutive impact of SBC and convertible notes.",
+            "location": {
+                "section": "Valuation",
+                "page": "6"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": []
+    }
+}

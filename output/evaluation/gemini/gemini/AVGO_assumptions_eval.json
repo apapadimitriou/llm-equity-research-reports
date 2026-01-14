@@ -1,0 +1,101 @@
+[
+    {
+        "grade": "Poor",
+        "summary_reasoning": "The report fails the quality of assumptions test primarily due to pervasive internal contradictions and insufficient sensitivity analysis. While the report explicitly states several key drivers\u2014including a 20% revenue CAGR through FY2027, a 9.1% WACC, and a 3.0% terminal growth rate\u2014these figures are undermined by significant numeric discrepancies between the narrative and the 'Quarterly Financial Summary' table. Specifically, the text identifies $15.004 billion as Q2 FY25 revenue, whereas the table assigns this figure to Q1 FY25, listing a different value for Q2. Similar contradictions exist for AI-specific revenue ($4.4B in text vs. $5.2B in table) and Infrastructure Software revenue ($6.596B in text vs. $6.786B in table). These unresolved conflicts suggest a lack of internal audit and render the model's outputs unreliable. Furthermore, the report violates the hard cap for sensitivity analysis. Although it provides a quantified range for WACC impact, it offers no quantified scenarios or stress tests for its most material driver: AI revenue growth. Given that the investment thesis hinges on 'torrid AI growth' and custom ASIC ramps, the absence of quantified downside or upside scenarios for these specific levers makes the valuation feel like a 'black box.' Consequently, the presence of more than two distinct numeric contradictions, combined with limited sensitivity analysis, necessitates a 'Poor' grade.",
+        "assumptions_extracted": [
+            {
+                "quote": "Our DCF model projects revenue to grow at a Compound Annual Growth Rate (CAGR) of approximately 20% through fiscal year 2027",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "revenue_growth"
+            },
+            {
+                "quote": "AI semiconductor revenue will continue its rapid expansion, growing at a CAGR exceeding 50%",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "other"
+            },
+            {
+                "quote": "model consolidated non-GAAP operating margins expanding toward 70% over the forecast period",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "margin/efficiency"
+            },
+            {
+                "quote": "Our model utilizes a WACC of 9.1%, based on a cost of equity of 9.2% and a post-tax cost of debt of 4.8%.",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "WACC/COE"
+            },
+            {
+                "quote": "A terminal growth rate of 3.0% is assumed, reflecting long-term global economic growth.",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "terminal_growth"
+            },
+            {
+                "quote": "non-AI semiconductor business will return to low-single-digit growth following its cyclical trough.",
+                "location": {
+                    "section": "Discounted Cash Flow (DCF) Analysis",
+                    "page": "unknown"
+                },
+                "driver_type": "revenue_growth"
+            }
+        ],
+        "checks": {
+            "explicitness": true,
+            "justification_with_evidence": "partial",
+            "specificity_units_horizon": "solid",
+            "internal_consistency": "contradiction_found",
+            "sensitivities_present": true,
+            "sensitivities_quality": "partial_quant",
+            "material_drivers_covered": [
+                "margin/efficiency",
+                "WACC/COE",
+                "terminal_growth"
+            ]
+        },
+        "flags": {
+            "contradictions": [
+                {
+                    "description": "Total Revenue for Q2 FY25 is stated as $15.004B in the text but listed as $15.952B in the summary table (where $15.004B is attributed to Q1).",
+                    "locations": [
+                        "Q2 FY25 Financial Performance and Outlook",
+                        "Quarterly Financial Summary & Estimates"
+                    ]
+                },
+                {
+                    "description": "AI Revenue for Q2 FY25 is stated as $4.4B in the text but listed as $5.2B in the summary table.",
+                    "locations": [
+                        "Segment Performance",
+                        "Quarterly Financial Summary & Estimates"
+                    ]
+                },
+                {
+                    "description": "Infrastructure Software revenue for Q2 FY25 is stated as $6.596B in the text but listed as $6.786B in the summary table.",
+                    "locations": [
+                        "Segment Performance",
+                        "Quarterly Financial Summary & Estimates"
+                    ]
+                }
+            ],
+            "missing_or_opaque_assumptions": [
+                "share_count",
+                "capex"
+            ],
+            "unjustified_parameters": [
+                "20% Revenue CAGR through 2027 is stated without a detailed segment-by-segment build-up or historical bridge."
+            ]
+        }
+    }
+]

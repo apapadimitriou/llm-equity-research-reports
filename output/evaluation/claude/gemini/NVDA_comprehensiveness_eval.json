@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "While the report includes most expected sections with a comprehensive contents page, it suffers from critical deficiencies that cap the grade at Fair. The Financials Snapshot section lacks essential semiconductor-specific KPIs such as wafer starts, fab utilization rates, ASPs (Average Selling Prices), design wins, and R&D as percentage of revenue. The EPS data shows 'Insufficient data' for FY 2022A, creating a significant gap in historical performance analysis. The valuation section provides DCF assumptions but fails to explicitly link operating drivers like GPU shipment volumes, pricing trends, or market share dynamics to the valuation outcome. Additionally, there is notable redundancy with AI demand themes repeated across multiple sections without new depth, and some financial metrics appear inconsistent (e.g., EPS of $2.9 in FY 2025A seems low given the strong revenue growth). The peer benchmarking is limited to ESG comparisons only, missing critical competitive financial metrics.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Wafer Starts",
+            "Fab Utilization",
+            "Average Selling Prices",
+            "Design Wins",
+            "R&D as % Revenue",
+            "GPU Shipment Volumes"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS of $2.9 in FY 2025A appears inconsistent with reported strong revenue growth",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Wafer Starts",
+            "Fab Utilization",
+            "Average Selling Prices",
+            "Design Wins",
+            "R&D as % Revenue"
+        ],
+        "uncited_claims": [
+            "Insufficient data for FY 2022A EPS creates analytical gap"
+        ]
+    }
+}

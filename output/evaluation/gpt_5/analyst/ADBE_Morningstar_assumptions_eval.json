@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are generally explicit, numerically stated, and proximate to the forecasts they inform. The report clearly specifies a five-year revenue CAGR (~10%), margin trajectory (non-GAAP operating margin to expand modestly), capital costs (COE 9%, WACC 8.8%), long-run tax rate (11%), Stage II growth (9.1%), and share count (projected diluted shares 428), all of which reconcile to the forecast tables and DCF summary. Specificity is solid: magnitudes, units, and horizons are provided, and the multi-year forecast tables anchor the narrative. Justification is partial: the revenue and margin assumptions are qualitatively motivated by pricing, cross-sell/upsell, AI monetization, and market size, but there is limited quantitative benchmarking to history or peers for WACC, tax rate, or Stage II parameters. Internal consistency appears clean; GAAP vs non-GAAP margins are distinguished, and forecast revisions align with the stated fair value change. However, the report lacks quantified sensitivity/scenario analysis on material drivers (growth, margins, WACC, tax), beyond a single directional statement on how much growth would need to fall to match the market price, so stress-testing is absent. Given the hard cap for missing sensitivities, the overall assumption quality is Fair despite otherwise clear and coherent inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year revenue compound annual growth rate of approximately 10%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model non-GAAP operating margin, which was 47% in fiscal 2024, to expand modestly on an annual basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 11.0",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.1",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 428",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital",
+            "explicit_terminal_growth_rate",
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.8% without source",
+            "Cost of Equity 9.0% without source",
+            "Long-Run Tax Rate 11.0% without source",
+            "Stage II EBI Growth Rate 9.1% without source"
+        ]
+    }
+}

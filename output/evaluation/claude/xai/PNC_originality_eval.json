@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some company-specific analysis but is primarily composed of restated information and generic banking insights. While it attempts synthesis in areas like linking Q2 results to margin stabilization and connecting digital transformation to competitive positioning, these insights lack depth and quantified mechanisms. The valuation section follows standard DCF methodology without novel drivers beyond basic assumptions. Most insights are applicable to any regional bank rather than being PNC-specific. The report contains significant boilerplate language around 'diversified banking model' and 'regional dominance' without unique angles. Red flags include generic stress-test commentary, standard peer comparisons, and recycled analyst estimate references without original interpretation.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "diversified banking model with strength in regional markets",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "net interest margin stabilization based on raised EPS estimates",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "digital transformation enabling cross-selling opportunities",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "switching costs and network effects create wide moat",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue projected 3% CAGR driven by 2% loan growth and 4% fee expansion",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "exposure to commercial real estate risks",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions",
+            "Boilerplate 'diversified banking model' phrasing",
+            "Standard moat description without PNC-specific evidence",
+            "Generic regulatory risk commentary"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

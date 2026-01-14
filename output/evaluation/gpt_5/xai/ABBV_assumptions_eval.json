@@ -1,0 +1,102 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: Core valuation drivers are clearly stated and proximate to forecasts (Revenue CAGR 4% 2025\u20132029, operating margin path 45%\u219247%, WACC 7%, terminal growth 2%), with an Appendix repeating key inputs and a forecast table. Specificity: Assumptions include magnitudes, units, and horizons; the EPS bridge quantifies component impacts. Justification: Weak. The 10% immunology growth, flat oncology, WACC (beta 0.6, cost of debt 4%), and terminal growth (2%) lack support from multi-year history, peer benchmarks, or cited evidence. The buyback impact ($0.30 EPS, $5B/yr) is not reconciled to share count or price. Consistency: Mostly consistent between narrative and tables, but there is a discrepancy between \u201cmargins should stabilize around 45%\u201d and the modeled improvement to 47% by 2029, and pervasive \u201cinsufficient data\u201d undermines auditability. Sensitivity: Limited. The only quantified sensitivity is a generic \u201c\u00b120% to revenue assumptions\u201d; there are no scenario ranges for other material levers (margin, WACC, terminal growth, share count). Given weak justification and minimal sensitivity analysis, the assumptions merit a Fair grade under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR is projected at 4% from 2025-2029, driven by 10% growth in immunology offsetting flat oncology sales [0].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are modeled at 45%, improving to 47% by 2029 through cost controls.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.0%, reflecting a beta of 0.6 and cost of debt of 4%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The fair value estimate of $185 is derived from a discounted cash flow model assuming a 5-year forecast period and terminal growth of 2%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge for 2025: Starting from 2024 base (insufficient data), add $0.50 from revenue growth, subtract $0.20 from margin pressure, add $0.30 from share buybacks, yielding adjusted EPS of $11.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "buybacks total $5 billion annually.",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "H1 2025 revenue estimated at $29.0 billion for full-year extrapolation.",
+            "location": {
+                "section": "Financials Snapshot (Note)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text says margins should 'stabilize around 45%' while the model shows improvement to 47% by 2029.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers / Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "depreciation/amortization",
+            "working_capital",
+            "share_count trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 7% without source",
+            "beta 0.6 without source",
+            "cost of debt 4% without source",
+            "terminal growth 2% without source",
+            "immunology growth 10% without supporting data"
+        ]
+    }
+}

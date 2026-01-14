@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental deficiencies across all five quality pillars. While it lists some financial figures, key valuation assumptions driving the $108.42 fair value estimate are completely opaque\u2014the DCF model parameters (growth rates, margins, WACC components) are stated without justification or sourcing. The appendix mentions \"4-6% fee revenue growth\" and \"WACC: 9.2%\" but provides zero evidence for these critical inputs. Multiple internal contradictions undermine consistency: the text claims a $108.42 fair value while simultaneously stating this as an analyst consensus average, and projects 2024 EPS of $8.67 despite earlier citing actual Q2 2025 results of $2.53 (implying much higher annual figures). No sensitivity analysis exists for any material drivers. The financial projections table spans through 2029 with precise figures but no methodology or assumptions disclosed. This represents a classic case of presenting conclusions without transparent, justified analytical foundations.",
+    "assumptions_extracted": [
+        {
+            "quote": "Fee revenue growth: 4-6% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 9.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Expense growth: 2-3% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our fair value estimate of $108.42 reflects a discounted cash flow analysis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "margin/efficiency"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value stated as $108.42 from DCF analysis but earlier identified as analyst consensus average from source [10]",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Cover Block section"
+                ]
+            },
+            {
+                "description": "Projects 2024 EPS of $8.67 in financials table despite Q2 2025 actual EPS of $2.53 already reported, creating impossible mathematical consistency",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Analyst Note section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without source",
+            "4-6% fee revenue growth without evidence",
+            "Terminal growth 2.5% without justification",
+            "Expense growth 2-3% without support"
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is almost entirely a compilation of public financial data, management guidance, and news headlines, failing to provide any original synthesis or unique thesis. Every 'insight' provided is a direct restatement of information available in CrowdStrike's investor relations materials or recent news reports, such as the July 2024 outage, the $10B ARR target, and the Adaptive Shield acquisition. The analysis lacks interpretive commentary; for instance, it mentions the 'Falcon Flex' model and 'Charlotte' AI but only repeats management's descriptions without analyzing their specific impact on unit economics or competitive positioning relative to peers. The valuation section is a standard DCF with generic assumptions (WACC, terminal growth) and no novel drivers or mechanisms. Because there are zero original syntheses or testable theses, and nearly all content is paraphrased from cited sources, the report meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "CrowdStrike delivered strong FY2025 results, with total revenue of $3.95B (+29% YoY) and subscription revenue of $3.76B.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management reiterated its goal of $10B ARR by FY2029, suggesting confidence in the long-term growth plan.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "CrowdStrike\u2019s moat is primarily driven by customer switching costs and network effects from its threat data.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The faulty July 2024 sensor update cost customers $11M of revenue and led to an investor class-action lawsuit.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We model FY2025\u201329 revenue CAGR \u224820\u201325%... yields a fair equity value near $450/share.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on 'management noted' and 'Reuters notes'",
+            "Boilerplate moat definitions (switching costs, network effects)",
+            "Recycled headlines regarding the July outage"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

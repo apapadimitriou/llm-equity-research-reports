@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly supported. While some key assumptions are listed in the appendix (6% revenue CAGR, 8.5% WACC, 3% terminal growth), they lack justification with historical data, peer comparisons, or cited sources. The WACC of 8.5% is stated without derivation despite mentioning equity beta of 1.1. Revenue growth assumptions are not tied to specific AUM growth drivers or fee rate expectations. Operating margin expansion from 36.5% to 38.5% lacks supporting rationale. The report contains multiple internal contradictions: EPS projections vary between sections (EPS $42 in analyst note vs $41.50 in fair value section), and frequent '[insufficient data]' disclaimers undermine credibility. Most critically, there are no sensitivity analyses or scenario testing for any material drivers like AUM growth, fee rates, or market conditions. The assumptions feel disconnected from the forecasts they supposedly drive, making the valuation model essentially a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR is projected at 6% from 2025-2029, driven by 5% AUM growth and 1% fee expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is 8.5%, reflecting equity beta of 1.1 and cost of debt [insufficient data]",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Operating margins are forecasted to improve to 38% by 2029 from 36% in 2024, due to scale efficiencies",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: 2024 EPS $38, plus $4 from revenue growth, minus $0.50 from expenses, yielding 2025 EPS $41.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS forecast inconsistent between sections: $42 in analyst note vs $41.50 in fair value section for FY2025",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "cost_of_debt",
+            "specific_AUM_growth_drivers",
+            "fee_rate_assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without derivation",
+            "6% revenue CAGR without historical justification",
+            "margin expansion without supporting evidence"
+        ]
+    }
+}

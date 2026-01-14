@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required structural sections, including a detailed Analyst Note, Business Strategy, and a comprehensive Capital Allocation analysis. It provides a robust peer benchmarking table and a multi-year financial forecast. However, the report is capped at 'Fair' due to two primary deficiencies. First, the Financials Snapshot is generic; while the text frequently discusses specific drug revenues (Humira, Skyrizi, Rinvoq), these core sector-specific KPIs are absent from the formal Financials Snapshot table, which only provides high-level GAAP/non-GAAP metrics. Per the instruction, the omission of core sector KPIs in the snapshot necessitates a 'Fair' cap. Second, the report exhibits significant redundancy; the central thesis regarding Skyrizi and Rinvoq growth offsetting Humira's biosimilar erosion is repeated across the Analyst Note, Business Strategy, Economic Moat, and Valuation sections with minimal incremental depth, which triggers a mandatory downgrade. Finally, while the methodology describes scenario analysis, the report lacks a quantitative sensitivity analysis or bull/bear valuation table, providing only qualitative bullet points.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Peer Benchmarking",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Quantitative Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Adjusted EPS",
+            "ROIC",
+            "R&D as % of Sales"
+        ],
+        "sector_kpis_missing": [
+            "Drug-specific Revenue Forecasts in Financials Table",
+            "Pipeline Probability-of-Success (PoS) Metrics",
+            "Patent Expiration Schedule Table"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Humira Revenue Forecast (Snapshot Table)",
+            "Skyrizi Revenue Forecast (Snapshot Table)",
+            "Rinvoq Revenue Forecast (Snapshot Table)"
+        ],
+        "uncited_claims": []
+    }
+}

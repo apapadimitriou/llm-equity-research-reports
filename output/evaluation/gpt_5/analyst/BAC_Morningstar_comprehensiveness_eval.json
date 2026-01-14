@@ -1,0 +1,59 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report is highly comprehensive, with a full cover block and contents, timely Analyst Notes, Business Description, Strategy & Outlook, Bulls/Bears, a thorough Economic Moat analysis, and clear sections on Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, ESG, and an extensive appendix/methodology. The Financials Snapshot provides multi-year history and detailed forecasts including bank-appropriate KPIs such as NII, NIM, efficiency ratio, provisions as a % of loans, ROA/ROE, and ROTE, complemented by explicit peer benchmarking across major money-center banks. Valuation is well linked to operating drivers (NII/NIM trajectory, fee normalization, expense CAGR, credit costs), with an explicit fair value and a DCF framework. Evidence integration is consistent, with in-text references (e.g., Dealogic for IB share; Sustainalytics for ESG) and dated tables/assumptions throughout. Redundancy is limited; sections build on each other with distinct depth. The main gaps are the absence of a dedicated scenario/sensitivity analysis within BAC\u2019s valuation and the omission of CET1 in the KPI table, plus a minor internal inconsistency on cost of equity (9.5% in text vs 9.0% in the key drivers table). Given the breadth and depth across sections and strong peer context, overall comprehensiveness is excellent, notwithstanding these modest gaps.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "Efficiency Ratio",
+            "Provision as % of Loans",
+            "ROA",
+            "ROE",
+            "Return on Tangible Equity (ROTE)",
+            "Equity/Assets"
+        ],
+        "sector_kpis_missing": [
+            "CET1 Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of equity listed as 9.5% in Valuation narrative but 9.0% in Key Valuation Drivers table",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "CET1 Ratio"
+        ],
+        "uncited_claims": []
+    }
+}

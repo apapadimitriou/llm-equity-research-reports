@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides extensive company detail but lacks meaningful original insights. Most content consists of restated financial data and generic pharmaceutical industry analysis. While the report mentions specific revenue figures and growth rates, it fails to synthesize this information into unique, actionable theses. The analysis relies heavily on standard metrics (revenue growth, margin expansion, P/E multiples) without novel interpretive commentary. The valuation section presents conventional DCF assumptions without distinctive drivers or mechanisms. Though company-specific data is abundant, the interpretive framework remains generic and applicable to most pharmaceutical companies facing patent cliffs. No clear synthesis of multiple data points into non-obvious conclusions is evident.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AbbVie has successfully executed one of the pharmaceutical industry's most challenging patent cliff transitions",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Strategic acquisitions have meaningfully enhanced the oncology and neuroscience portfolios while maintaining disciplined capital allocation",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "The company's patent portfolio encompasses numerous blockbuster drugs with strong intellectual property protection",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue compound annual growth rate of 7-8% through 2029, supported by Skyrizi and Rinvoq reaching combined peak sales exceeding $31 billion",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margin expansion to approximately 45-47% over the forecast period reflects the favorable mix shift toward higher-margin biologics",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'economic moat' phrasing",
+            "Standard patent cliff analysis without unique angle",
+            "Generic Bulls/Bears format with predictable arguments"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates pervasive copying and generic restatements with minimal original analysis. Multiple insights directly paraphrase source materials without adding interpretive value, such as restating China tariff impacts ($400M revenue, $375M operating income) and basic financial metrics. The analysis relies heavily on boilerplate language like 'wide economic moat,' 'secular growth drivers,' and standard competitive advantage descriptions. While the report attempts synthesis in connecting various data points, these efforts lack depth and specificity. The valuation section presents standard DCF assumptions without novel drivers or mechanisms. Most insights are generic and applicable to any life sciences company rather than being TMO-specific. The few attempts at original analysis are undermined by extensive copying from sources and lack of decision-relevant catalysts or timing.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "China tariff impacts create significant near-term headwinds with an estimated $400 million revenue reduction and $375 million operating income pressure",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The company's wide economic moat remains intact, supported by high customer switching costs, regulatory barriers",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Current valuation at 18x forward earnings represents a discount to historical multiples",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "life sciences equipment market projected to reach $97.96 billion by 2031",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "97.66% market share in scientific instruments",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The $2 billion U.S. manufacturing investment positions TMO to capture domestic reshoring opportunities",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'wide economic moat' phrasing",
+            "Extensive copying of financial metrics",
+            "Standard competitive advantage descriptions"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

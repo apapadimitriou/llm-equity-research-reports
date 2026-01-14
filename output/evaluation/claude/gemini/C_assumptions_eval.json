@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely unstated or opaque, scattered throughout without clear connection to forecasts. While some financial projections appear in tables (revenue $84.0B-$87.5B, expenses declining to $52.5B), critical drivers lack justification or specificity. The WACC/cost of equity assumption of \"9-10%\" appears only in passing without derivation. Revenue growth assumptions lack detailed breakdown by segment. Most critically, there are no quantified sensitivities or scenarios for any material drivers. The efficiency ratio improvement assumption (\"mid-60s toward low 60s\") lacks supporting analysis. Credit cost projections ($14.5B-$15.0B) appear without methodology. The 1.0x P/TBV target multiple lacks rigorous justification beyond generic statements about cost of equity coverage. Share count reduction assumptions from the $20B buyback program are not quantified with timing or pace details.",
+    "assumptions_extracted": [
+        {
+            "quote": "The forecast for fiscal year 2025 revenue is $83.95 billion, which aligns with the current market consensus",
+            "location": {
+                "section": "Forward-Looking Model (2025E - 2026E)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The efficiency ratio is projected to improve, moving from the mid-60s toward the low 60s",
+            "location": {
+                "section": "Forward-Looking Model (2025E - 2026E)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The model projects RoTCE will improve to approximately 8.5% in 2025 and approach the lower end of management's 10-11% target range in 2026",
+            "location": {
+                "section": "Forward-Looking Model (2025E - 2026E)",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "typically estimated in the 9-10% range",
+            "location": {
+                "section": "Price Target Derivation",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "applying a target P/TBV multiple of approximately 1.0x to our forward 12-month TBVPS estimate of ~$95",
+            "location": {
+                "section": "Price Target Derivation",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The $20 billion multi-year share repurchase program",
+            "location": {
+                "section": "Capital and Shareholder Returns",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9-10% without derivation",
+            "1.0x P/TBV target without rigorous justification",
+            "Revenue growth drivers not detailed",
+            "Efficiency ratio improvement path not supported"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency issues that render it largely incoherent. The most glaring problem is the pervasive use of \"insufficient data\" throughout critical sections, creating massive gaps that undermine the entire analysis. The Fair Value section explicitly states it \"cannot proceed without qualifying sources,\" yet the report continues with valuation discussions elsewhere. Temporal inconsistencies are rampant - the report date is 2025-07-10, but sources reference events \"relative to 2025-08-10,\" creating impossible future references. The cover block lists all key metrics as \"insufficient data\" while claiming to provide investment analysis. Multiple sections read like disconnected bullet points with minimal transitions. The Bulls/Bears section lacks reconciliation with any coherent base case, as no meaningful financial data exists to support either position. Citations frequently don't align with claims made, and the narrative jumps abruptly between topics without logical flow. The report essentially asks readers to construct their own investment thesis from fragmented, often contradictory pieces.",
+    "evidence": [
+        "Fair Value section states 'cannot proceed without qualifying sources' while other sections discuss valuation implications (Fair Value section)",
+        "Report dated 2025-07-10 but sources reference 'relative to 2025-08-10' creating temporal impossibilities (Sources section)",
+        "Cover block shows all metrics as 'insufficient data' while attempting comprehensive equity analysis throughout report"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

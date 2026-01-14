@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with solid structure: cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, and sources. Valuation assumptions are explicit (growth, margins, WACC, terminal rate) and reasonably linked to operating drivers (AI demand, VMware synergies), and sourcing is generally present throughout. However, the Financials Snapshot is generic, omitting sector-appropriate KPIs for a semiconductors/software conglomerate (e.g., segment revenue/margins, AI semiconductor revenue, software ARR/NRR, retention), triggering a hard cap. Peer context exists but is limited to a few P/E references and ESG comparisons; there is no dedicated peer benchmarking nor scenario/sensitivity analysis. Additionally, at least two material claims (total debt ~$69B and >$5B due within 12 months; investment-grade ratings) are presented without in-text citations despite a source list, which further enforces the Fair cap. Some repetition (valuation premium and debt risk mentioned across sections) adds minor redundancy without substantive new depth. Overall, the report is well-structured and informative but falls short on sector KPIs, consistent in-text sourcing for key claims, and scenario/peer analysis depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources",
+            "Cover Block & Contents"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Segment revenue/margins (semiconductor vs software)",
+            "AI semiconductor revenue breakout/Networking volumes",
+            "Software ARR/NRR and retention"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Segment revenue/margins",
+            "AI semiconductor revenue breakout",
+            "Software ARR/NRR and retention"
+        ],
+        "uncited_claims": [
+            "Broadcom carries ~$69 billion in total debt (Bears; Risk & Uncertainty)",
+            "Over $5 billion of debt due within 12 months (Bears; Risk & Uncertainty)",
+            "Investment-grade credit ratings assertion (Capital Allocation)"
+        ]
+    }
+}

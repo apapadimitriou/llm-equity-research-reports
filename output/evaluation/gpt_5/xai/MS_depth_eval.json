@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth via clear causal explanations, explicit assumptions, and quantified forecasts. It links outcomes to drivers, e.g., \u201cdriven by robust dealmaking and equity underwriting activity\u201d and \u201cbuffer against volatile investment banking cycles,\u201d explaining how the wealth management pivot stabilizes earnings. Assumptions are articulated and quantified: \u201cassumes a 5% revenue CAGR through 2029,\u201d \u201coperating margins expanding to 28% by 2027,\u201d and \u201cWACC is 9%, reflecting beta of 1.2,\u201d alongside an EPS bridge and detailed segment growth rates. Data use is reasonably strong (CET1 ratio, peer-aligned P/E, ESG benchmarks), though several key inputs (revenue CAGR, margin expansion) lack benchmarking against industry norms or historical company performance. Counterpoints and uncertainty are addressed with ranges like \u201crecession reducing deal activity by 20-30%,\u201d but these scenarios are not tied to valuation or EPS impacts, limiting sensitivity analysis. Actionable implications appear as conditional return expectations and capital allocation observations, supporting investor decisions. However, the analysis falls short of Excellent due to the absence of quantified sensitivities connecting rate changes, deal flow, or capital requirements to NIM, EPS, or fair value, and limited stress-testing of core valuation assumptions.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Margin expansion via 'efficiency gains' not specified",
+            "NIM compression mechanism lacks deposit beta/rate linkage",
+            "Deal activity \u2192 revenue/EPS transmission not articulated"
+        ],
+        "unsupported_assumptions": [
+            "5% revenue CAGR without industry or historical benchmark",
+            "Terminal growth 3.0% with GDP proxy only",
+            "Segment growth 6% WM, 4% IS unsubstantiated"
+        ],
+        "lack_of_sensitivity": [
+            "No EPS/NIM sensitivity to interest rate changes",
+            "No fair value sensitivity to WACC or margins",
+            "\u00b120% valuation range not tied to drivers"
+        ]
+    }
+}

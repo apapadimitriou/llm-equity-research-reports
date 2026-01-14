@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report exhibits severe structural and consistency problems that undermine its coherence. Multiple sections read like bullet-point lists with minimal transitions, particularly the Analyst Note which jumps abruptly between Q1 results, management quotes, strategic initiatives, and thesis without connecting logic. The Business Strategy section similarly lacks flow between reorganization details and management projections. Critical contradictions emerge between narrative claims and the financial table: the text repeatedly emphasizes \"mid-single-digit revenue growth\" and \"CAGR ~5%\" while the table shows actual 2025-2029 CAGR of 5.1% for revenue but EPS growing at 8.9% annually - this disconnect between consistent revenue growth and volatile EPS projections is unexplained. The Bulls/Bears section fails to reconcile opposing views with the base-case valuation, leaving tensions unresolved. Temporal accuracy issues include treating 2024 events as \"recent\" in a June 2025 report date context. The writing frequently jumps topics mid-paragraph and relies heavily on citation-heavy sentences that impede readability rather than building a cohesive argument.",
+    "evidence": [
+        "Analyst Note section jumps from Q1 earnings to tariff concerns to EU regulations with no transitional logic connecting these disparate topics",
+        "Financial table shows EPS declining from $40.5 (2024A) to $37.0 (2025E) then rising to $52.0 (2029E) while narrative claims 'mid-single-digit revenue growth' without explaining EPS volatility",
+        "Bulls emphasize trading strength and deal leadership while Bears warn of tariff impacts and cyclicality, but Fair Value section never reconciles these opposing forces in base-case assumptions"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

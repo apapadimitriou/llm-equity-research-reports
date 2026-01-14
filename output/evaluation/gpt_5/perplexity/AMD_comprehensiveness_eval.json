@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections (cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, sources) with reasonable depth. The valuation section provides explicit assumptions (revenue CAGR, margin trajectory, WACC, terminal growth) and links them to operating drivers (data center growth and AI accelerators), but lacks a detailed bridge by segment. Evidence integration is uneven: many claims are cited, yet several material data points rely on outdated or non-primary sources (e.g., 2021 page for Q2\u201925 results; 2024 page for 2025 price/market cap), limiting reliability. The Financials Snapshot is generic and omits multiple sector-specific KPIs (segment revenue mix, gross margin, capex, units/ASPs), triggering the KPI hard cap. Peer benchmarking and scenario/sensitivity analysis are absent, reducing contextual completeness. Some redundancy appears, notably regulatory/export-control impacts repeated in Analyst Note and Risk sections without added analytical depth. Overall, the structure is comprehensive, but thin KPI coverage and inconsistent sourcing constrain the grade to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Segment Revenue Mix (Data Center/Client/Gaming/Embedded)",
+            "Gross Margin",
+            "Capex",
+            "Units/ASPs",
+            "AI Accelerator Shipments/Revenue",
+            "Inventory Turns"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Segment Revenue Mix (Data Center/Client/Gaming/Embedded)",
+            "Gross Margin",
+            "Capex",
+            "Units/ASPs",
+            "AI Accelerator Shipments/Revenue",
+            "Inventory Turns"
+        ],
+        "uncited_claims": [
+            "Q2 2025 revenue and EPS figures rely on a 2021 MarketBeat page (outdated source)",
+            "Last close price ($171.85) and market cap ($278.2B) attributed to a 2024 SimplyWall.St page (outdated for 2025-07-15)",
+            "Share repurchases of $749M in Q1\u201925 and $6B authorization lack a credible IR/10-Q source"
+        ]
+    }
+}

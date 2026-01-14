@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report exhibits strong structural flow and logical transitions, particularly in connecting the regulatory milestone of the asset cap removal to specific segment strategies in Wealth Management and Corporate Investment Banking. The narrative successfully reconciles the 'Bulls Say' growth prospects with 'Bears Say' concerns regarding commercial real estate (CRE) exposure by detailing specific allowance coverage ratios in the Capital Allocation section. However, the report suffers from significant temporal inaccuracies and citation misalignments that undermine its internal consistency. Most notably, the Analyst Note cites 'Q2 2025 results' as a driver of performance despite the report being dated June 29, 2025\u2014one day before the quarter even ends and weeks before actual bank earnings releases. This claim is further undermined by Source [1], which is dated March 19, 2025, making it impossible to contain Q2 data. Additionally, the report relies on severely outdated sources for current valuation metrics, such as using 2018 data (Sources [21] and [25]) to support 2025 PE ratio claims. While the prose is professional and the sections are well-integrated, these chronological contradictions between the narrative, the calendar, and the cited evidence constitute a failure of factual coherence. Per the grading guardrails, the presence of time-inaccurate 'recent' claims and unresolved contradictions between the narrative and the source dates necessitates a hard cap at the 'fair' level.",
+    "evidence": [
+        "The Analyst Note claims 'Q2 2025 results demonstrated... net income of $5.5 billion' despite the report being dated June 29, 2025, before the quarter concluded.",
+        "Source [1] is cited for Q2 2025 earnings but is dated March 19, 2025, creating a logical impossibility (Source [1]/Analyst Note).",
+        "The report uses Source [21] and [25], both dated from 2018, to justify current 2025 PE ratio and valuation claims (Sources/Fair Value)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

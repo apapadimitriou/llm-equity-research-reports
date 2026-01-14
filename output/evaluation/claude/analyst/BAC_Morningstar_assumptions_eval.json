@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report's assumptions are partially explicit but lack sufficient detail and justification. Key drivers like the 9.5% cost of equity, 14% midcycle ROTE, and specific NII growth projections (6.8% in 2025) are clearly stated. However, critical assumptions such as the 2.5% expense CAGR, 0.62% terminal charge-off rate, and Stage II growth rate of 3.0% receive minimal justification beyond brief commentary. The report provides some quantitative forecasts with units and timeframes, but many rely on management guidance rather than independent analysis. Most significantly, there are no sensitivity analyses or scenario testing for any material drivers, which caps the grade at Fair despite the presence of some well-articulated assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a 9.5% cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We project returns on tangible common equity will be roughly 14% through the cycle for the bank",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We project NII to grow by around 6.8% in 2025 followed by another few years of strong growth as NIMs expand",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We project a 2.5% expense compounded annual growth rate in the next 10 years for the bank",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Eventually, we forecast net charge-offs averaging 0.62% of loans",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "21"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 7,434",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "21"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "2.5% expense CAGR",
+            "0.62% terminal charge-off rate",
+            "3.0% Stage II growth rate"
+        ]
+    }
+}

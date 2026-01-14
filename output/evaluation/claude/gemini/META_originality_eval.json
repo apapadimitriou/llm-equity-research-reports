@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates some analytical effort but falls short of providing truly original insights. While it presents detailed financial modeling and sector context, most insights are either generic to the tech/social media sector or restatements of publicly available information. The report correctly identifies the tension between AI investment and near-term financial metrics, but this observation lacks novelty as it's widely discussed in public discourse. The 'depreciation bomb' concept shows some synthesis but isn't sufficiently unique or actionable. The ESG analysis and regulatory discussion are largely boilerplate. The valuation methodology employs standard DCF approaches without novel drivers. The report reads more like a comprehensive summary with standard financial analysis rather than providing decision-relevant, company-specific insights that go beyond what's readily available in earnings calls and public filings.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "The sheer magnitude of the AI spending introduces a level of execution risk and financial pressure that is not adequately reflected in the current valuation",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The vast quantity of servers and data center equipment being purchased will be depreciated over their useful lives... creating a 'depreciation bomb'",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "An inflection point from accelerating to decelerating growth often precedes a re-rating of a company's valuation multiple",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The introduction of business messaging and other potential commercial formats must be executed with extreme care to avoid alienating this massive user base",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Meta's ESG profile remains a significant structural headwind... placing it in the 2nd percentile of the Software & Services industry",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "The company has a strong historical track record of effective capital allocation, as evidenced by a return on invested capital (ROIC) of 25.05% in 2024",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Standard DCF with conventional WACC assumptions",
+            "Generic AI investment risk discussion applicable to any tech company",
+            "Boilerplate regulatory and ESG analysis",
+            "Peer comparison tables without unique insights"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

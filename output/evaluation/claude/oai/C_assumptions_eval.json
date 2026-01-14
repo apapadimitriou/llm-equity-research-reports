@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear connection to forecasts. While some assumptions appear in narrative form (~3% revenue CAGR, 9% WACC, 2% terminal growth), they lack proper justification with multi-year history or peer benchmarks. The report contains a significant contradiction between claiming 'flat share count' while simultaneously discussing ongoing heavy buybacks and 30 million new shares for compensation. Critical assumptions like specific margin improvement drivers, credit cost expectations, and tax rate justifications are missing or vague. Most importantly, there are no quantified sensitivities or scenarios for any material drivers, making the valuation feel like a black box. The assumptions that do appear are weakly supported and inconsistent with the report's own narrative about ongoing restructuring costs and dilution.",
+    "assumptions_extracted": [
+        {
+            "quote": "modest overall growth (~2\u20133% revenue CAGR over 2024\u20132029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins improve from ~20% in 2024 to ~23% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We discount at a WACC of ~9% (cost of equity ~10%, reflecting an 8.5% risk-free rate + 4.5% equity risk premium, with a 1.0 beta and 5% after-tax cost of debt)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our terminal growth is 2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "earnings per share rise from roughly $5 (2024) to ~$10 by 2029 (with diluted shares ~1.8\u20131.9 billion)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims stable share count (~1.8-1.9 billion) while simultaneously discussing $20 billion buybacks and 30 million new shares issued for compensation",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Capital Allocation section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "NII/NIM",
+            "specific_tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% components lack market validation",
+            "Revenue CAGR 2-3% without peer comparison",
+            "Margin improvement 20% to 23% without specific cost-cutting quantification"
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s core modeling assumptions are generally explicit and proximate to the forecasts they drive, with clear magnitudes and horizons (e.g., multi-year CAGRs, margin bands, WACC, tax rate). Specificity is solid: revenue growth rates by segment, non-GAAP margin ranges, share count trajectory, and key DCF parameters (COE/WACC, Stage II growth, investment rate, perpetuity year) are quantified and tied to the valuation tables. Justification is partial: the narrative links assumptions to AI-driven demand, market share gains, and software advantages, but provides limited quantitative benchmarking to multi-year history or peers and few cited external sources for parameters like WACC, long-run tax rate, or Stage II settings. Internal consistency appears clean; the explicit model tables reconcile with the stated growth and profitability trajectory, and no clear numeric contradictions are evident. However, there is no quantified sensitivity or scenario analysis on material drivers (revenue growth/NIM-like pricing power, margins, WACC/COE, terminal assumptions), which hard-caps the grade at Fair. Overall, the assumptions are well-specified and traceable, but they would benefit from evidence-based justification and robust, quantified sensitivities to move into Good/Excellent.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast 17% compound annual sales growth through 2029 for Arista.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Sales into data centers are the biggest contributor to sales over our forecast, and we model a 19% compound annual growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "the firm\u2019s campus revenue increasing 16% annually through 2029 in our model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast Arista\u2019s non-GAAP gross margin to remain in its target of 62%-64%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model Arista\u2019s non-GAAP operating margin to remain in the mid-40% range through 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0 ... Weighted Average Cost of Capital % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 06 May 2025",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 15.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 06 May 2025",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 10.0 ... Perpetuity Year 20",
+            "location": {
+                "section": "Key Valuation Drivers as of 06 May 2025",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex",
+            "sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% without source",
+            "Cost of equity 9.0% without CAPM support",
+            "Long-run tax rate 15% without jurisdictional rationale",
+            "Stage II EBI growth 10% and investment rate 31.5% without evidence"
+        ]
+    }
+}

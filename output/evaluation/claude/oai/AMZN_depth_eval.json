@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is overwhelmingly descriptive with minimal analytical depth. While it presents numerous data points and projections, it lacks the causal mechanisms and explicit assumptions required for meaningful analysis. The report states \"revenue CAGR of roughly 9%\" and projects \"operating margin expansion\" to \"mid-teens within five years\" without explaining the underlying drivers or providing benchmarks. Key assumptions like \"WACC of about 7%\" and \"long-term nominal growth of ~3%\" are mentioned but never justified or stress-tested. The analysis contains vague statements like \"secular tailwinds persist\" and \"efficiency improvements continue\" without quantifying these effects or exploring alternative scenarios. No sensitivity analysis is provided - for example, no exploration of how different AWS growth rates or margin compression scenarios would affect valuation. The competitive threats from \"Temu and others\" and regulatory risks are mentioned but not quantified in terms of financial impact.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": false,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth \u2192 margin expansion linkage unexplained",
+            "AWS deceleration \u2192 profitability impact not quantified",
+            "efficiency improvements \u2192 cost structure not detailed"
+        ],
+        "unsupported_assumptions": [
+            "WACC ~7% with no justification",
+            "terminal growth ~3% without benchmark",
+            "operating margin to mid-teens without driver analysis"
+        ],
+        "lack_of_sensitivity": [
+            "no AWS growth scenarios provided",
+            "no margin compression analysis",
+            "regulatory impact not quantified"
+        ]
+    }
+}

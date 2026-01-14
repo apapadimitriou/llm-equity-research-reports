@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to significant internal numeric contradictions and the total absence of quantified sensitivity analysis on material drivers. A major contradiction exists between the stated 2024 annual revenue of $192.4 billion (averaging ~$48 billion per quarter) and the Q1 2025 revenue of $27.4 billion. The narrative characterizes this 43% sequential decline as a 'strong' performance that 'surpassed analyst expectations,' which is logically irreconcilable. Furthermore, the report assumes a 7.0% long-term earnings growth rate for a mature, systemically important financial institution; this is highly aggressive and lacks justification beyond a vague reference to consensus. While the report includes a 'football field' chart, this merely displays the outputs of different valuation methodologies rather than stress-testing material drivers like Net Interest Income (NII) or credit provisions. Per the grading instructions, the combination of unresolved numeric contradictions and the lack of quantified sensitivities on material levers necessitates a 'Poor' grade. Although some inputs like the cost of equity (7.05%) are specific, they are undermined by the structural incoherence between the report's tables and its narrative conclusions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Net Interest Income (NII) to grow to an exit rate of $15.5 billion to $15.7 billion by the fourth quarter of 2025",
+            "location": {
+                "section": "Bull Case",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "A long-term earnings growth rate of 7.0% is assumed, consistent with consensus analyst estimates.",
+            "location": {
+                "section": "Discounted Cash Flow (DCF)",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The cost of equity is calculated at 7.05%, based on a risk-free rate of 4.09%, an equity risk premium of 4.12%, and a stock beta of 0.72.",
+            "location": {
+                "section": "Discounted Cash Flow (DCF)",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a P/TBV multiple of 1.85x, which represents a slight premium to its current level",
+            "location": {
+                "section": "Relative Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We model a slight sequential increase in provisions as a conservative measure. ... $1.6 [billion]",
+            "location": {
+                "section": "Q2 2025 Forecast",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Consensus estimates project revenue of approximately $26.7 billion",
+            "location": {
+                "section": "Q2 2025 Forecast",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "credit_cost",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report claims 2024 revenue was $192.4B (averaging $48B/quarter) but then lists Q1 2025 revenue of $27.4B as 'strong' despite it being a 43% sequential drop.",
+                "locations": [
+                    "Historical Performance (2022-2024)",
+                    "Financial Summary Table"
+                ]
+            },
+            {
+                "description": "The report assumes a 7% long-term growth rate for a mature bank, which conflicts with the 'Responsible Growth' strategy emphasizing stability and de-risking.",
+                "locations": [
+                    "Discounted Cash Flow (DCF)",
+                    "Company Overview & Business Model"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "7.0% long-term earnings growth rate for a G-SIB bank",
+            "1.85x P/TBV multiple target"
+        ]
+    }
+}

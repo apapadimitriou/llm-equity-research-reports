@@ -1,0 +1,86 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit assumptions with specific figures and locations, particularly in the Fair Value section and Appendix. Key drivers like revenue CAGR (4.0%), mid-cycle ROTCE (18.5%), cost of equity (10.5%), and terminal growth (3.0%) are clearly stated with units and timeframes. Justification is partial - some assumptions reference historical performance and peer comparisons, but many lack robust supporting evidence. The report shows good internal consistency with figures reconciling across sections. However, the complete absence of quantified sensitivity analysis on any material drivers caps the grade at Fair per the hard cap rule. While the report mentions risks qualitatively, it provides no scenarios or ranges for key variables like interest rates, credit losses, or economic downturns that could materially impact the $235 fair value estimate.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes a five-year revenue compound annual growth rate (CAGR) of approximately 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we model a mid-cycle ROTCE of 18.5% on a 13.5% CET1 capital ratio",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our discount rate is a cost of equity of 10.5%, calculated using the Capital Asset Pricing Model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.0% for terminal value calculation",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "management has guided for full-year 2025 net interest income (NII) excluding Markets of approximately $92 billion",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "with adjusted expenses around $95.5 billion",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "This incorporates a 5-year beta of 1.1, which reflects the stock's slightly higher-than-market volatility, a risk-free rate of 4.5%, and an equity risk premium of 5.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "mid-cycle ROTCE of 18.5% lacks peer comparison",
+            "terminal growth rate 3.0% not tied to specific GDP forecast",
+            "revenue CAGR 4.0% weakly supported"
+        ]
+    }
+}

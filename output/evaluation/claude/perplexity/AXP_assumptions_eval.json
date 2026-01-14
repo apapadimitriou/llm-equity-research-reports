@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The assumptions driving the financial model are largely opaque and scattered throughout the report without clear justification. Key parameters like the 9.5% WACC, 2.5% terminal growth rate, and 19x P/E multiple are stated in isolation without supporting evidence or calculation methodology. Revenue projections show internal contradictions - the text mentions 8-10% growth guidance while the table shows declining revenue from $74.2B (2024A) to $71.3B (2025E). Operating margin expansion assumptions lack specific drivers or historical context. The DCF model inputs appear in the appendix without connection to the forecasts they supposedly drive. No sensitivity analysis is provided for any material assumptions despite significant uncertainty around credit normalization, interest rates, and competitive dynamics. The EPS growth projections of 13-15% annually are not reconciled with the specific figures in the financial table.",
+    "assumptions_extracted": [
+        {
+            "quote": "The fair value estimate of $315 per share reflects a discounted cash flow analysis incorporating mid-single-digit revenue growth, stable net interest margins, and modest operating leverage.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The model assumes a 9.5% weighted average cost of capital and 2.5% terminal growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "At a 19x forward P/E multiple, justified by the quality and predictability of earnings, the intrinsic value calculation yields the $315 target.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating leverage should drive 50-100 basis points of annual margin expansion through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue projection shows decline from $74.2B (2024A) to $71.3B (2025E) while text states 8-10% growth guidance and 6.2% CAGR",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Business Strategy & Outlook text",
+                    "Appendix CAGR assumption"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "NII/NIM",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 2.5% without justification",
+            "19x P/E multiple without peer comparison",
+            "50-100 bps margin expansion without drivers"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure and generally coherent narrative: it starts with an investment summary, then moves through bulls/bears, business analysis, financials, risks, valuation, and an appendix. Transitions are mostly smooth, with consistent terminology for LOE, operational growth, and adjusted EPS. Bulls and bears link back to the base case via the scenario table and the HOLD thesis, which emphasizes uncertainty around Stelara and talc litigation. However, there are notable internal inconsistencies between the narrative and tables that undermine coherence. The most material is the margin mismatch: the text forecasts adjusted operating margins in the 25\u201326% range, while Table 4 holds adjusted operating margin at 27.5% throughout, without reconciliation. Similarly, FY2025 revenue guidance is stated as 92.0 billion (operational), yet the firm\u2019s 2025E revenue in tables is 93.394 billion; this difference is not explained (e.g., currency vs operational). The free cash flow calculation in the narrative (~$20.5 billion) diverges from the table\u2019s 2024 FCF of $19.842 billion, despite using the same inputs. Minor phrasing issues\u2014such as calling a $175 target \u201climited upside\u201d when the current price is $178.43\u2014add noise. Citations are plentiful, but the claimed pending acquisition of Intra-Cellular Therapies is not clearly supported by the listed sources, creating a potential alignment issue. These contradictions trigger the hard cap to fair despite otherwise solid flow.",
+    "evidence": [
+        "Margins: Text says \u201cadjusted operating margins to remain\u202625\u201326%,\u201d while Table 4 shows 27.5% for 2025\u20132029 (Appendix Table 4 vs Margin section).",
+        "Revenue: Guidance midpoint is $92.0B operational, but FY 2025E revenue is $93.394B in tables without reconciliation (FY2025 Guidance vs Table 2/4).",
+        "FCF: Narrative computes ~$20.5B (24.3 CFO \u2013 4.4 capex), while Table 4 lists 2024 FCF at $19.842B (Appendix Table 4 vs Margin/FCF Analysis)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

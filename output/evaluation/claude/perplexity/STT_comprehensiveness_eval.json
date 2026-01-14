@@ -1,0 +1,79 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic equity research standards with numerous critical deficiencies. Most essential sections are completely absent, including Bulls/Bears analysis, competitive positioning, and peer benchmarking. The financials snapshot lacks fundamental banking sector KPIs (NIM, loan loss provisions, CET1 ratio, efficiency ratio) that are mandatory for custody bank analysis. Multiple material claims are completely uncited, including the $2.53 Q2 2025 EPS figure and $3.47B revenue that anchor the entire analysis. The valuation section provides no explicit linkage between operating drivers and fair value methodology. Significant redundancy exists across sections, with AUC/A figures and Alpha platform benefits repeated without additional depth. The report reads more like a promotional summary than rigorous equity research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Bulls Say / Bears Say",
+            "Competitive Positioning",
+            "Economic Moat Analysis",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 2025 EPS of $2.53 cited but no Q2 2025 earnings source provided",
+                "locations": [
+                    "Analyst Note",
+                    "Cover Block"
+                ]
+            },
+            {
+                "description": "Fair value estimate $108.42 contradicts analyst average target price methodology",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Tangible Book Value",
+            "Fee Revenue Breakdown"
+        ],
+        "uncited_claims": [
+            "Q2 2025 EPS of $2.53 beating estimates by $0.17",
+            "$3.47B Q2 2025 revenue figure",
+            "Fee revenue growth of 6% year-over-year in Q1 2025",
+            "Pre-tax margins of 28.1% in Q4 2024",
+            "Return on equity of 12.7%",
+            "Management fees increased 20% year-over-year in Q4 2024"
+        ]
+    }
+}

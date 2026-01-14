@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report shows some causal reasoning but lacks depth in critical areas. It provides basic mechanisms like \"AI-driven chip complexity\" driving demand and \"high switching costs\" supporting moat strength. However, key assumptions are poorly supported: the \"WACC ~9%\" and \"terminal growth 3%\" lack benchmarking or industry context. The DCF model assumes \"revenue CAGR ~12%\" and margins expanding to \"~54% by 2029\" without adequate justification for these specific figures. While the report mentions scenarios like China sales impact and cyclical risks, it provides no quantified sensitivity analysis. For example, it states China represents \"~20% of sales\" but doesn't model the EPS impact of this loss. The valuation conclusion of \"~$520 per share\" appears mechanistic rather than stress-tested. Bulls/Bears framework touches on counterpoints but remains descriptive rather than quantitative.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "How AI complexity translates to specific pricing power",
+            "Margin expansion drivers beyond generic scale effects"
+        ],
+        "unsupported_assumptions": [
+            "WACC ~9% with no benchmark",
+            "terminal growth 3% without justification",
+            "revenue CAGR ~12% lacks detailed build-up"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified impact of China loss on EPS",
+            "No range testing for key DCF inputs",
+            "Cyclical risk mentioned but not modeled"
+        ]
+    }
+}

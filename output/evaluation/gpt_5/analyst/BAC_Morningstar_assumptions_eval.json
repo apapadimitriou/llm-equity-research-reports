@@ -1,0 +1,123 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is relatively strong: the report states core drivers near the forecasts (e.g., 2025 NII growth, expense CAGR, noninterest revenue CAGR, credit losses, efficiency ratio path, COE). Specificity is solid, with magnitudes, units, and multi\u2011year horizons for several items, plus detailed forecast tables. However, justification is only partial: while there is some historical context (deposit costs, ROTE vs COE, segment mix) and references to management guidance, most key parameters (COE, terminal Stage II growth, expense and noninterest revenue CAGRs, charge\u2011off average) lack rigorous benchmarking to peers or cited external sources. Sensitivity analysis is absent; there are no quantified scenarios showing how changes in rates/NIM, credit costs, or fees impact valuation\u2014triggering a hard cap. Consistency is undermined by at least two numeric contradictions: COE is \u201c9.5%\u201d in narrative but \u201cCost of Equity % 9.0\u201d in the Key Valuation Drivers table, and NII growth is \u201caround 6.8% in 2025\u201d versus 8.0% in the table. Given multiple contradictions and no sensitivities, the assumptions quality falls to Poor despite otherwise clear, quantified inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project NII to grow by around 6.8% in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Overall, we project a 2.4% noninterest revenue compounded annual growth rate in the next 10 years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Eventually, we forecast net charge-offs averaging 0.62% of loans",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "We expect around 2.5% growth in expenses... We project a 2.5% expense compounded annual growth rate in the next 10 years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "This leads to roughly a 59% efficiency ratio over time",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 9.5% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Key Valuation Drivers",
+                "page": "21"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Key Valuation Drivers",
+                "page": "21"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 7,751 7,507 7,298 7,098 6,941",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "20"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative COE \u201c9.5%\u201d vs table \u201cCost of Equity % 9.0\u201d",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.11)",
+                    "Key Valuation Drivers (p.21)"
+                ]
+            },
+            {
+                "description": "Narrative 2025 NII growth \u201caround 6.8%\u201d vs table \u201cNet Interest Income Growth % 8.0\u201d",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.11)",
+                    "Morningstar Valuation Model Summary \u2013 Growth & Ratios (p.20)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "NIM sensitivity",
+            "loan_growth sensitivity"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity 9.5% without source",
+            "Stage II net income growth 3% without justification",
+            "Expense CAGR 2.5% without peer/history support",
+            "Noninterest revenue CAGR 2.4% without external benchmarks",
+            "Net charge-offs 0.62% of loans without detailed historical/peer evidence"
+        ]
+    }
+}

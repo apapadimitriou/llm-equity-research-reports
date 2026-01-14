@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains some quantified projections like \"15-17% reported sales growth\" and \"$200 million tariff impact,\" these lack causal mechanisms or supporting assumptions. The financial forecasts show revenue growing from $16.7B to $33.6B over five years with no explanation of underlying drivers or methodology. Key statements like \"Operating margin expanded to 16.2%, up 3.6 percentage points\" describe what happened but not why. The valuation section mentions \"12-15% annually through 2029\" and \"8.5% discount rate\" but provides no benchmarking, sensitivity analysis, or alternative scenarios. Most critically, there are no quantified sensitivities, stress tests, or ranges around any assumptions. The report reads more like a comprehensive company overview than rigorous equity analysis.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": false,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth projections lack underlying driver analysis",
+            "margin expansion claims without operational explanations",
+            "valuation multiples presented without justification"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth rate 3.0% with no benchmark",
+            "WACC 8.5% without cost of equity derivation",
+            "organic growth 12-15% without market size validation"
+        ],
+        "lack_of_sensitivity": [
+            "no scenario analysis for key assumptions",
+            "no stress testing of growth rates",
+            "no range estimates for any projections"
+        ]
+    }
+}

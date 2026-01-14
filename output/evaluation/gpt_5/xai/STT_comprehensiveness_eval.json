@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (cover block, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risk, capital allocation, ESG, appendix, sources), but depth is thin in several critical areas. The Financials Snapshot is entirely populated with \u201cinsufficient data,\u201d offering no historical or forecast figures and omitting core custody bank KPIs (e.g., NII/NIM, AuCA/AUM, CET1), which triggers a cap at Fair. Valuation includes a DCF framework with high-level drivers (revenue CAGR, margin range, WACC) and an EPS bridge, but it lacks explicit linkage to sector-operating drivers (NII, fee revenue, AuCA), weakening the connection between operating assumptions and fair value. Peer context is minimal (a solitary mention of BNY Mellon) with no benchmarking, and there is no scenario/sensitivity analysis. Some redundancy exists, with risk factors (rate volatility, regulation) and fee pressure reiterated across sections without added depth. Sourcing is uneven: while key disclosures are cited, several material claims (dividend yield, ESG leadership, Sustainalytics score) are uncited. Overall, the structure is complete, but the absence of quantitative KPIs and thin evidence integration limit comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [],
+        "sector_kpis_missing": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "Assets under Custody/Administration (AuCA)",
+            "Assets under Management (AUM)",
+            "CET1 capital ratio",
+            "Efficiency ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge starts from 'insufficient data' 2024 EPS yet concludes 2025 EPS \u2248 $7.50",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net Interest Income",
+            "AuCA",
+            "AUM",
+            "CET1",
+            "Efficiency ratio"
+        ],
+        "uncited_claims": [
+            "Dividend yield approximately 3-4%",
+            "Leadership in ESG products positions State Street to capture demand",
+            "Sustainalytics score in the 20\u201330 range",
+            "Opportunistic share buybacks"
+        ]
+    }
+}

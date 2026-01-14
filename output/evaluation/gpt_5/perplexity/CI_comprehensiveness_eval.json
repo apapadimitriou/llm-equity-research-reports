@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most core sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, and an Appendix. Proportional depth is reasonable in strategy, moat, risks, and capital allocation, and the valuation section includes explicit assumptions (growth, margins, WACC) with clear operating drivers, linking them to the fair value. However, comprehensiveness is constrained by two major gaps. First, the Financials Snapshot lacks sector-appropriate KPIs for a health insurer/PBM (e.g., medical loss ratio, medical membership, PBM scripts/claims, segment-level KPIs), relying instead on generic metrics; this triggers the KPI hard cap. Second, sourcing is inconsistent: numerous bracketed citations appear without an actual sources list, leaving multiple material claims effectively uncited, which also caps the grade. Peer benchmarking is absent beyond brief competitor mentions, and no scenario/sensitivity analysis is provided. Some repetition of the Medicare divestiture/Evernorth themes recurs across sections with limited incremental detail. Overall, while the structure and many elements are solid, missing sector KPIs and incomplete citations limit comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Detailed Source Citations",
+            "Segment KPI Tables"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "Medical Membership/Customers",
+            "PBM Scripts/Claims Volume",
+            "Medical Cost Trend",
+            "Segment Revenue/Margins (Evernorth vs Cigna Healthcare)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Medical Membership/Customers",
+            "PBM Scripts/Claims Volume",
+            "Medical Cost Trend",
+            "Segment Revenue/Margins"
+        ],
+        "uncited_claims": [
+            "Q2 2025 adjusted EPS of $7.20 and revenue of $67.2B are cited with brackets but no source list provided",
+            "Sale of Medicare business to HCSC for $3.3B has bracketed references without a corresponding source",
+            "Management guidance raised to at least $29.60 EPS for 2025 lacks an actual source reference",
+            "Debt level of $32.0B is stated with a bracket but no source is listed",
+            "Dividend increased to $1.51 per quarter and $6.0B added to buyback authorization are not traceable to any listed source",
+            "18 million medical customers figure is referenced without a verifiable source list"
+        ]
+    }
+}

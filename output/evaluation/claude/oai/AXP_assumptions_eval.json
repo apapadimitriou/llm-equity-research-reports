@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates poor assumption quality across all five pillars. While some key assumptions are mentioned scattered throughout the narrative (7-8% revenue growth, ~29% operating margins, 8% WACC), they lack explicit statement near the forecasts they drive. Justification is extremely weak - revenue growth assumptions cite historical performance but provide no peer benchmarks or detailed rationale for the moderation from 9% to 7-8%. The WACC of 8% appears without any supporting calculation or market data. Specificity is limited with vague timeframes and missing units for several drivers. Most critically, there are zero quantified sensitivities or scenarios despite material macro uncertainty explicitly acknowledged by management. The report contains internal contradictions, including inconsistent EPS figures (2024 EPS stated as both $14.0 and $14.01) and revenue growth assumptions that conflict between sections. Terminal growth of 3% is mentioned only in appendix without justification. The combination of opaque assumptions, weak justification, contradictions, and complete absence of sensitivity analysis results in a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We assume growth moderates to ~7-8% annually as the base gets larger",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The expense ratio should remain contained; operating income margins were roughly 23%, 26% and 27% in 2022\u201324",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Using a WACC ~8%, our DCF yields a per-share fair value in the high-$200s",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth ~3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share count falling ~1% p.a.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024 EPS stated as both $14.0 in table and $14.01 in text",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value and Profit Drivers section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "NII/NIM"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% without source",
+            "Terminal growth 3% without justification",
+            "Revenue growth moderation assumption"
+        ]
+    }
+}

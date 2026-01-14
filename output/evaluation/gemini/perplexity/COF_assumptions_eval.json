@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for several key drivers, including Net Interest Margin (7.0\u20137.3%), credit card revenue growth (3.1% CAGR), and charge-off rates (4.5\u20135.0%). These are primarily located in the 'Fair Value and Profit Drivers' section, ensuring they are proximal to the forecasts they inform. Justification is 'partial'; while the report cites historical performance and management targets (e.g., $1.2B in synergies), it lacks the multi-year historical data tables or peer benchmarking required for a 'Good' or 'Excellent' rating. Internal consistency is generally maintained, though the 81% revenue decline mentioned in the narrative for Q2 2025 creates a complex reconciliation with the massive annual revenue jump shown in the tables. Crucially, the report fails the 'Hard Cap' for a higher grade because it lacks any quantified sensitivity or scenario analysis. While it mentions risks qualitatively in the 'Risk & Uncertainty' section, it does not provide a range of valuation outcomes or EPS impacts based on fluctuations in material drivers like interest rates or credit losses. Additionally, while an all-stock merger is discussed, the specific share count assumption driving the EPS calculation is not explicitly stated. Consequently, the outputs feel somewhat 'black-box' despite the clear listing of several key inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "Credit card revenues are expected to increase at a 3.1% compound annual growth rate through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "margins stabilize around 7.0-7.3% through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "normalized charge-off rates of 4.5-5.0% for the combined credit card portfolio",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "9.5% WACC incorporates the company's beta of 1.17",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of 2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Management targets $1.2 billion in annual run-rate synergies by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "3.1% revenue CAGR (no historical context provided)"
+        ]
+    }
+}

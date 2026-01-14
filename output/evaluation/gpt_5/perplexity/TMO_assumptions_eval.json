@@ -1,0 +1,101 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are mostly explicit and proximate to forecasts: revenue to $49.6B by 2027 (5% CAGR), margin expansion to mid\u201120s, tax rate ~10.5%, WACC ~8.5%, terminal growth 3%, and valuation multiple normalization to 19\u201320x. Specificity is solid: magnitudes, units, and horizons are stated, with some ranges (e.g., $1\u20132B acquisitions annually). Consistency appears clean; figures reconcile across narrative and tables (e.g., FY24 EPS/margin, 2027 EPS ~27.7). However, justification is partial: several inputs (WACC, tax rate, terminal growth, multiple normalization, acquisition add-ons) lack strong evidence or peer/history citations beyond general market growth references. Critically, the report provides no quantified sensitivity/scenario analysis for material levers (revenue growth, margins, tax, WACC, terminal growth, or multiples), which triggers the hard cap at Fair. Overall, assumptions are explicit and specific but not stress\u2011tested and only lightly justified, leaving the model\u2019s robustness under different conditions insufficiently evaluated.",
+    "assumptions_extracted": [
+        {
+            "quote": "total revenues reaching approximately $49.6 billion by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "This represents a 5% compound annual growth rate from 2024 levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted margins expected to expand from current 22.6% levels toward the mid-20% range by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "stable tax rates around 10.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "WACC estimated at approximately 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | N/A | N/A | 3.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The revenue bridge includes $1-2 billion in annual acquisition contributions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Normalization toward 19-20x forward earnings appears reasonable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiple",
+            "M&A_contribution"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "debt/interest expense sensitivity"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without source",
+            "Tax rate ~10.5% without source",
+            "$1\u20132B annual acquisition contribution without source",
+            "Multiple normalization to 19\u201320x without peer/period evidence"
+        ]
+    }
+}

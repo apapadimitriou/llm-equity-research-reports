@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are largely explicit and proximate to forecasts, with several quantified inputs: GLP-1 market size and Lilly\u2019s share, US pricing trajectory, 2025 revenue growth, margin path, WACC/COE, long-run tax rate, Stage II EBI growth, and projected shares. Specificity is generally solid (magnitudes, units, and 10-year horizons are stated), and many items reconcile to the model tables (e.g., operating margin rising toward ~46%). However, justification is partial: assumptions cite competitive dynamics and payer trends but lack multi-year historical benchmarks, peer comps, or external sources for parameters like WACC (7.3%), 19% tax, and 5% Stage II EBI growth. Internal consistency has a notable issue: the text\u2019s \u201c34%\u201d 2025 top-line growth conflicts with the table\u2019s 31.4%. Most importantly, there is no quantified sensitivity/scenario analysis on the material levers (GLP-1 adoption, pricing, margins, WACC), aside from isolated industry-wide tariff commentary; per the hard caps, this limits the grade. Overall, the assumptions are explicit and specific, with largely clean reconciliation to the model, but limited evidentiary backing and no sensitivity work cap the assessment at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our assumptions for overall biopharma GLP-1 sales in 2031 surpass $200 billion ... with Lilly capturing $80 billion of the market.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We think more than 25% of obese adults and 15% of overweight adults in the US will receive treatment in 10 years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "average net prices falling from roughly $7,000 annually to $3,000 in 10 years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "pricing"
+        },
+        {
+            "quote": "We project a 34% top-line growth rate in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4-5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "could only improve another 400 basis points in the long run, from 42.6% in the quarter to 46.7% by 2030.",
+            "location": {
+                "section": "Analyst Note (Earnings) 1 May 2025",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 5% EBI growth rate between our 10-year explicit forecast and the perpetuity stage of our model",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.3 ... Cost of Equity % 7.5 ... Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers / DCF Valuation",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Projected Diluted Shares 898",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "pricing",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 2025 top-line growth of 34% vs model table showing 31.4%",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.4-5): \"We project a 34% top-line growth rate in 2025\"",
+                    "Morningstar Valuation Model Summary (p.13): \"Revenue Growth % ... 31.4\""
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "sensitivity/scenario analysis on GLP-1 adoption and pricing",
+            "sensitivity on margins/operating leverage",
+            "sensitivity on WACC/COE and terminal growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.3% without source",
+            "Cost of Equity 7.5% without source",
+            "Long-Run Tax Rate 19% without source",
+            "Stage II EBI growth rate 5% without source"
+        ]
+    }
+}

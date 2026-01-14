@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report has a clear structure and generally coherent narrative arc (Q1 results \u2192 strategy and moat \u2192 valuation \u2192 risks), with many cross-references aligning well. Notably, the 25% revenue CAGR assumption is consistently echoed across the Strategy section, Fair Value narrative, and the Financials Snapshot table, and the revenue trajectory in the table matches the stated CAGR. However, there are material internal inconsistencies that undermine coherence. The most significant is the valuation inputs: a 10% WACC is asserted alongside a 7% risk-free rate, 6% equity risk premium, and beta of 1.2\u2014implying a cost of equity around 14.2%. Given the company\u2019s \u201cminimal debt,\u201d WACC should approximate cost of equity, making 10% inconsistent and unaddressed. There\u2019s also a timing mismatch: Business Strategy says \u201cmargin expansion to 30% by FY2028,\u201d while the table reaches 30% only by FY2029. Additionally, the use of a source dated August 2025 in a June 2025 report introduces temporal misalignment, and some claims (e.g., analyst estimate alignment) cite the company press release, which likely does not contain that content. Despite these issues, the language is mostly clear, transitions are serviceable, and Bulls/Bears are moderately reconciled by the valuation section\u2019s \u201creasonable given growth prospects\u201d note. These contradictions trigger a hard cap at fair.",
+    "evidence": [
+        "Fair Value: \u201cWe apply a 10% WACC, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.2,\u201d vs Capital Allocation: \u201cminimal debt,\u201d implying WACC should be near ~14% cost of equity.",
+        "Business Strategy: \u201cmargin expansion to 30% by FY2028,\u201d while Financials Snapshot shows Op-Margin 29.0% in FY2028 and 30.0% only in FY2029.",
+        "Sources: [2] Seeking Alpha dated 2025-08-05 is cited in a report dated 2025-06-04, creating temporal misalignment."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

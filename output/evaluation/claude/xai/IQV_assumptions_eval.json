@@ -1,0 +1,88 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical fronts. Key assumptions are largely opaque or contradictory. The DCF model claims a $260 fair value but the math doesn't work: starting from 2024 adjusted EPS of $11.13, adding the stated bridge components ($0.50 - $0.20) yields $11.43, not $11.73, and this doesn't support the $260 target at 22.2x P/E. Operating margins show internal contradiction - Q1 2025 adjusted EBITDA margin of 23.1% is used to imply 23% operating margin for 2025, but EBITDA margin should exceed operating margin. The forecasted EPS progression (7.87, 8.26, 8.67) doesn't align with the claimed 2025 EPS of $11.73 from the bridge analysis. Critical assumptions like WACC components, terminal growth justification, and margin expansion drivers lack proper support. The 8% WACC uses beta 1.1 and 5% equity risk premium but doesn't show the full calculation or justify the risk-free rate assumption. No sensitivity analysis is provided for any material drivers despite the significant valuation impact these would have.",
+    "assumptions_extracted": [
+        {
+            "quote": "5% revenue CAGR through 2029, driven by mid-single-digit growth in clinical trials and analytics",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 24% by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.0%, reflecting IQVIA's beta of 1.1 and cost of debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 adjusted EPS of $11.13, adding $0.50 from revenue growth, $0.30 from margin expansion, offset by $0.20 in higher interest, yielding 2025 EPS of $11.73",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge math error: $11.13 + $0.50 + $0.30 - $0.20 = $11.73 claimed, but actual sum is $11.73, however this conflicts with forecasted EPS table showing 2025 EPS of $7.87",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Operating margin vs EBITDA margin inconsistency: Q1 2025 EBITDA margin of 23.1% used to imply 23% operating margin, but operating margin should be lower than EBITDA margin",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% incomplete calculation",
+            "Terminal growth 3% without industry justification",
+            "Margin expansion drivers not specified"
+        ]
+    }
+}

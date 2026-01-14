@@ -1,0 +1,102 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report states several material drivers explicitly and proximal to the valuation narrative (e.g., credit card revenue CAGR, NIM band, charge-offs, provisions, WACC, terminal growth, synergies). Specificity is generally solid: magnitudes, ranges, and horizons (mostly through 2027) are provided. However, justification is weak: most assumptions lack cited multi-year history, peer benchmarks, or sourced evidence beyond brief rationales (e.g., \u201creflecting historical performance\u201d without data), and unusual figures for a bank (e.g., 7.0\u20137.3% NIM) are not reconciled to peers. Internal consistency appears clean with no direct numeric contradictions between text and tables, though some metrics (e.g., operating margin for a bank) are unconventional without reconciliation. Crucially, there is no quantified sensitivity or scenario analysis linking key drivers (rates/NIM, credit costs, WACC, terminal growth, synergies) to valuation or target price impacts; ranges are presented as base-case inputs rather than stress tests. Given the lack of robust sensitivities and limited evidence-based justification, the assumptions quality fits Fair per the decision rules and hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "Credit card revenues are expected to increase at a 3.1% compound annual growth rate through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Payment network revenues represent a new income stream growing from approximately $3 billion annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The model assumes margins stabilize around 7.0-7.3% through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Capital One expects to realize $1.2 billion in annual run-rate synergies by 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "The model incorporates normalized charge-off rates of 4.5-5.0% for the combined credit card portfolio",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Provisions for credit losses normalize around 2.5-3.0% of average loans",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "A 9.5% WACC",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The terminal growth rate of 2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "credit_cost",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "valuation_sensitivity"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source detail",
+            "terminal growth 2.5% without macro substantiation",
+            "NIM 7.0\u20137.3% without peer/history support",
+            "$3B network revenue without sourcing",
+            "charge-offs 4.5\u20135.0% without historical evidence",
+            "provisions 2.5\u20133.0% of loans without support"
+        ]
+    }
+}

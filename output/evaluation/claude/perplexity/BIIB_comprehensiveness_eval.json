@@ -1,0 +1,70 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it contains extensive content across multiple sections, it suffers from critical structural deficiencies. The report lacks essential peer benchmarking analysis, scenario/sensitivity analysis, and explicit valuation methodology linking operating drivers to fair value outcomes. The financials snapshot, though present with multi-year forecasts, omits crucial biotechnology sector KPIs such as pipeline value, R&D efficiency metrics, drug approval probabilities, and peak sales assumptions by product. Most critically, the valuation section provides a fair value estimate of $198.64 but fails to demonstrate how specific operating assumptions (revenue CAGR, margin expansion, pipeline success rates) mathematically derive this target price. Additionally, significant redundancy exists across sections, with pipeline discussions and financial performance repeated without additional depth. The report reads more like a comprehensive business overview than a rigorous equity research analysis with quantitative valuation justification.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Explicit Valuation Methodology"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline Value",
+            "R&D Efficiency",
+            "Peak Sales by Product",
+            "Approval Probabilities",
+            "Patent Cliff Analysis",
+            "Regulatory Milestone Timelines"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value estimate of $198.64 provided without mathematical derivation from stated assumptions",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Cover Block"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Pipeline Value",
+            "R&D Efficiency",
+            "Peak Sales by Product",
+            "Approval Probabilities",
+            "Patent Cliff Analysis"
+        ],
+        "uncited_claims": [
+            "Weighted average cost of capital of 7.76% with no calculation methodology",
+            "Revenue CAGR assumptions without supporting analysis"
+        ]
+    }
+}

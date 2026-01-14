@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes most expected section headers, the content is severely compromised by fundamental issues. The financials snapshot presents entirely fabricated multi-year forecasts (2025-2029) without any disclosed methodology or assumptions. Multiple material claims lack proper citations, with 18 sources listed but inconsistent in-text referencing. The valuation section fails to establish clear linkages between operating drivers and fair value conclusions. Sector-specific KPIs for biotechnology (pipeline risk-adjusted NPV, R&D efficiency metrics, patent cliff timelines) are largely absent. The report exhibits significant redundancy across sections and contains potential contradictions in financial projections. These deficiencies render the analysis unreliable for investment decision-making.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline Risk-Adjusted NPV",
+            "R&D ROI",
+            "Patent Cliff Analysis",
+            "Peak Sales Estimates by Product",
+            "Clinical Trial Success Rates",
+            "Regulatory Timeline Metrics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forecasted financials (2025-2029) presented without methodology or source data",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "MariTide peak sales estimates vary between $4.5B-7B without clear justification",
+                "locations": [
+                    "Fair Value",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Pipeline Risk-Adjusted NPV",
+            "R&D ROI",
+            "Patent Cliff Timeline",
+            "Clinical Success Rates",
+            "Regulatory Milestone Probabilities"
+        ],
+        "uncited_claims": [
+            "Free cash flow generation of $10.4 billion in 2024",
+            "Debt reduction of $4.5 billion in 2024",
+            "TEPEZZA generated $1.9 billion in full-year 2024 sales",
+            "Current analyst consensus price targets of $315 per share",
+            "All financial forecasts for 2025-2029 period"
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a comprehensive and professional summary of Adobe's Q2 2025 performance, but it functions primarily as a recap of the earnings call rather than an original analytical piece. It relies heavily on restating management's own frameworks, such as the 'P times Q plus V' monetization architecture and the '16 billion assets generated' statistic, which are publicly available data points. While the report successfully synthesizes the tension between AI democratization and the erosion of Adobe's traditional moat (switching costs), this is a well-documented consensus narrative in the equity research community rather than a unique or non-obvious thesis. The valuation section is standard, utilizing generic CAGR and WACC assumptions without introducing a novel driver or a proprietary mechanism for quantifying AI's impact. Because the report contains more than three instances of restated or copied management commentary and lacks a truly original, testable thesis beyond the consensus, it is capped at the 'Fair' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI integration strategy addresses democratization of tools vs enterprise demand for brand-safe solutions.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Monetization architecture described by management as 'P times Q plus V'.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI-powered creative tools reduce the importance of software expertise, weakening traditional switching costs.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Firefly AI platform has generated over 16 billion assets across its ecosystem.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Ethical AI development utilizing licensed Adobe Stock images differentiates from competitors.",
+                "classification": "Restated",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard CAGR/WACC assumptions",
+            "Heavy reliance on management's 'P x Q + V' phrasing",
+            "Restatement of widely reported earnings call statistics"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

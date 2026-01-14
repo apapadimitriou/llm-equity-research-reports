@@ -1,0 +1,74 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "While this report covers most expected sections for equity research, it suffers from several critical deficiencies that prevent a higher grade. The Financials Snapshot is severely lacking in sector-specific biotech KPIs (missing pipeline valuation metrics, R&D efficiency ratios, clinical trial success rates, and regulatory milestone tracking). The valuation section, though present with SOTP methodology, fails to provide explicit linkage from operating drivers to fair value assumptions. Peer benchmarking is completely absent despite operating in a competitive landscape with GSK, Pfizer, and others. The report exhibits significant redundancy, repeating revenue decline statistics and cash burn concerns across multiple sections without adding new depth. Sources are inconsistently cited with many claims unsupported, and some financial data appears contradictory or unclear in derivation.",
+    "content_checks": {
+        "sections_present": [
+            "Executive Summary",
+            "Company Overview",
+            "Q2 2025 Financial Review",
+            "Investment Thesis",
+            "Pipeline Deep Dive",
+            "Valuation",
+            "Risk Assessment",
+            "ESG Profile",
+            "Financial Model Summary"
+        ],
+        "sections_missing": [
+            "Competitive Positioning/Economic Moat",
+            "Capital Allocation",
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "R&D Expense",
+            "Pipeline Programs",
+            "Cash Position"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Revenue",
+            "Clinical Trial Success Rates",
+            "Regulatory Milestone Tracking",
+            "Pipeline NPV Metrics",
+            "Patent Expiration Schedule",
+            "Partnerships Revenue Share"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Diluted shares outstanding shows 388M in key metrics table but 890M in valuation table",
+                "locations": [
+                    "Table 1",
+                    "Table 4"
+                ]
+            },
+            {
+                "description": "Q2 2024 comparative figures marked with asterisks as 'derived' but presented as factual",
+                "locations": [
+                    "Table 2"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D Efficiency Ratios",
+            "Clinical Trial Success Rates",
+            "Pipeline Risk-Adjusted NPV per Share",
+            "Patent Cliff Analysis",
+            "Regulatory Timeline Metrics"
+        ],
+        "uncited_claims": [
+            "Revenue peak of over $19 billion referenced without source",
+            "Industry average PoS estimates claimed but not cited",
+            "WACC of 8.85% derived from 'available financial data' without specifics",
+            "Multiple financial forecasts in Table 5 with no methodology disclosed"
+        ]
+    }
+}

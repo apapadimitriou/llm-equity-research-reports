@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report functions as a high-quality summary of public news and management guidance rather than an original piece of equity research. It fails to provide any unique synthesis or original theses, relying instead on restating well-known facts: the Discover acquisition price ($35.3B), the resulting status as the largest issuer, the Federal Reserve's Stress Capital Buffer (SCB) reduction from 5.5% to 4.5%, and management's own synergy targets ($1.2B). There is no attempt to link disparate data points (e.g., how specific network routing changes will impact merchant acquisition costs relative to peers) into a new conclusion. The valuation section is entirely generic, using standard DCF mechanics and management-provided growth rates without introducing novel drivers or proprietary mechanisms. Because the report offers zero synthesis or original theses and relies on boilerplate 'scale and diversification' arguments, it meets the criteria for a 'Poor' grade under the specified decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Discover acquisition... transforming it into the nation's largest credit card issuer.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Vertical integration... capturing additional revenue streams traditionally retained by payment networks.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Federal Reserve's recent reduction of Capital One's Stress Capital Buffer from 5.5% to 4.5%.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management targets $1.2 billion in annual run-rate synergies by 2027.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Technology transformation... cloud migration in 2020... leader in AI innovation.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Heavy reliance on management's stated synergy targets",
+            "Restating public regulatory news (SCB reduction) as a primary insight"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

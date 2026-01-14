@@ -1,0 +1,127 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report states several key inputs (revenue CAGR, margin trajectory, WACC, terminal growth) near the valuation section, so explicitness is decent. However, justification is weak: figures like 8.5% WACC, 3% terminal growth, 8% AUM growth, and 1% fee expansion lack support from history, peer benchmarks, or cited sources; multiple lines even note \u201cinsufficient data.\u201d Specificity is partial: time horizons and magnitudes are provided, but drivers (e.g., fee rate mechanics, capex/FCF build, tax rate, share count) are not specified. Internal consistency is compromised by contradictions between narrative and tables (margin expansion 1.5% vs improvement from 36% to 38% by 2029; EPS $42 vs $41.5). Critically, there is no quantified sensitivity/scenario analysis for material drivers (AUM growth, fee rates, margins, WACC, terminal growth), only a broad \u201c20% valuation swing,\u201d which is output-focused and qualitative. Under the decision rules, one contradiction plus no sensitivities yields a Poor grade despite some explicit inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "The fair value estimate of $920 assumes a 6% revenue CAGR over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Revenue CAGR is projected at 6% from 2025-2029, driven by 5% AUM growth and 1% fee expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to improve to 38% by 2029 from 36% in 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, reflecting equity beta of 1.1 and cost of debt",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix: Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Margin Expansion    | 1.5%",
+            "location": {
+                "section": "Appendix: Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "expected Q2 revenue of around $4.9 billion, up 5% year-over-year, with operating margins at 37%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "targeting 8% annual AUM growth",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "EPS bridge: 2024 EPS $38, plus $4 from revenue growth, minus $0.50 from expenses, yielding 2025 EPS $41.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "EPS"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "AUM_growth",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Margin expansion magnitude conflicts: narrative says 36% (2024) to 38% (2029) vs appendix \u2018Margin Expansion 1.5%\u2019 and table shows 36.5% (2024) to 38.5% (2029).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix: Key Valuation Assumptions Table",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "FY2025 EPS stated as ~$42 vs table showing 41.5.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex/reinvestment",
+            "working_capital",
+            "fee rate mechanics/elasticity",
+            "AUM market appreciation vs net flows decomposition"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source detail",
+            "Terminal growth 3.0% without justification",
+            "AUM growth 8% target without support",
+            "Fee expansion 1% without evidence"
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most major equity research sections: a clear cover block, executive summary, business description, bull/bear drivers, capital allocation, valuation, peer benchmarking, risks, ESG, and governance, plus segment analysis and stock performance. Depth is reasonable in strategy, moat, and capital strength, and the peer table adds context. However, comprehensiveness is constrained by gaps in the Financials Snapshot and evidence integration. The snapshot lacks several core bank KPIs (e.g., NIM, net charge-offs/NPLs, CET1 trend, efficiency ratio, loan/deposit metrics) and offers a thin multi-year table with missing fields. Valuation does not explicitly bridge operating drivers (NII trajectory, provisions, costs) to the model assumptions and price target; the DCF relies on top-down EPS growth and cost of equity without linking to the bank\u2019s operating outlook. Sourcing is inconsistent: numerous material claims (guidance, capital ratios, TBVPS, consensus beats, peer multiples) are not cited in-text, despite a long source list. Scenario/sensitivity analysis is absent. Some repetition (stress-test outcome and dividend increase) appears across multiple sections with limited incremental detail. These issues trigger caps under the decision rules, yielding a Fair grade despite otherwise broad coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Key Data",
+            "Executive Summary / Analyst Note",
+            "Business Description",
+            "Investment Thesis (Bull/Bear)",
+            "Stock Performance & Key Developments",
+            "Financials Snapshot / Forecasts",
+            "Segment Analysis",
+            "Capital Allocation (Dividends/Buybacks/Capital)",
+            "Valuation",
+            "Peer Benchmarking",
+            "Competitive Positioning / Moat",
+            "Risk & Uncertainty",
+            "ESG",
+            "Management & Governance",
+            "Sources & Disclosures"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Appendix/Glossary with in-text citation mapping"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Net Interest Income (NII)",
+            "Provision for Credit Losses"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Charge-offs (NCOs) / NPL ratio",
+            "CET1 ratio (time series in snapshot)",
+            "Efficiency ratio",
+            "Loans/Deposits growth or Loan-to-Deposit Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Net Charge-offs (NCOs) / NPL ratio",
+            "CET1 time series",
+            "Efficiency ratio",
+            "Loan-to-Deposit Ratio"
+        ],
+        "uncited_claims": [
+            "Management guidance for NII to $15.5\u2013$15.7B Q4 2025 exit rate",
+            "CET1 ratio of 11.8% and new 10.0% minimum post-2025 CCAR",
+            "Tangible book value per share of $27.71 used in valuation",
+            "Q1 2025 EPS of $0.90 vs. $0.81 consensus beat",
+            "Peer P/TBV multiples (e.g., JPM at ~3.00x; Citi at ~0.96x)"
+        ]
+    }
+}

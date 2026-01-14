@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key drivers are mostly explicit and proximal to the forecasts, especially in the Appendix and the Fair Value section. Specificity is generally solid: revenue CAGR ranges, target operating margin, tax rate, share count change, WACC, and terminal growth are quantified with units and horizons. Some justification is present via recent historical revenue and margin trends (2022\u20132024) and management guidance, but several core valuation parameters (WACC ~8%, terminal growth ~3%, tax rate 25%, share count \u22121% p.a.) lack evidence or peer/market linkage. Internal consistency shows at least one numeric contradiction: the Fair Value section states a fair value implies \u201c20\u201322\u00d7 forward EPS\u201d and also \u201c~18\u201319\u00d7,\u201d without reconciliation. Critically, there is no quantified sensitivity/scenario analysis for material levers (rates/NIM, credit losses, margins, revenue growth), triggering a cap at Fair per the hard rules. Assumptions about NII (\u201c500\u2013700 bps annual interest income lifts\u201d) are vague in unit intent and not tied to tables. Overall, the assumptions are clear and specific in places, modestly justified by history, but lack robust evidence and sensitivity analysis, with a noted contradiction in valuation multiples.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes ~7\u20138% annual revenue growth (slightly below 2024\u2019s 9%).",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Valuation Assumptions: 8\u201310% revenue CAGR through 2025E (8% thereafter)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin ~29% (modest expansion)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "25% effective tax rate",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "share count falling ~1% p.a.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "WACC ~8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth ~3%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We assume 500\u2013700 basis points in annual interest income lifts (from both higher balances and rates) \u2026 yielding ~10-15% EPS CAGR to the late 2020s.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "share_count",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Implied forward P/E at fair value stated as both 20\u201322\u00d7 and ~18\u201319\u00d7 without reconciliation.",
+                "locations": [
+                    "Fair Value and Profit Drivers (\"\u2026implying 20\u201322\u00d7 forward EPS.\")",
+                    "Fair Value and Profit Drivers (\"At a $290 fair value, implied forward P/E is ~18\u201319\u00d7\")"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex",
+            "NII/NIM (unit clarity)"
+        ],
+        "unjustified_parameters": [
+            "WACC ~8% without source/peer linkage",
+            "Terminal growth ~3% without macro/industry tie",
+            "25% effective tax rate without rationale",
+            "share count falling ~1% p.a. without buyback program quantification"
+        ]
+    }
+}

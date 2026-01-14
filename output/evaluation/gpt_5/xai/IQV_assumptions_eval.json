@@ -1,0 +1,103 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: Core valuation drivers are clearly stated and centralized in the Fair Value and Profit Drivers section and the Appendix (5% revenue CAGR, margin path to 25%, WACC 8%, terminal growth 3%), with a supporting forecast table. Specificity: Magnitudes, units, and horizons are generally specified (2025\u20132029 CAGR; 2029 operating margin; WACC and beta; 3% terminal growth). Justification: Evidence is limited/partial\u20145% CAGR is tied to a single quarter\u2019s 5.3% growth and \u201chistorical trends,\u201d WACC lacks a full build-up (no risk-free, capital structure, after-tax debt cost), terminal growth is attributed to a generic \u201cindustry average,\u201d and the margin path references EBITDA to infer operating margin. Consistency: There is a numeric contradiction between the EPS bridge (\u201c2025 EPS of $11.73\u201d from adjusted EPS) and the Financials Snapshot (\u201c2025 Forecast\u201d EPS 7.87), which affects implied valuation multiples. Sensitivity: No quantified sensitivity/scenario analysis on material drivers (revenue growth, margins, WACC, terminal growth) is provided; a lone +/-20% valuation swing is qualitative/opaque. Given the lack of sensitivities and the EPS contradiction, the assumptions merit a Fair grade despite acceptable explicitness and specificity in stated inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029) | 5.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 23% in 2025 ... to 25% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating margins expanding to 24% by 2027.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.0%, reflecting IQVIA's beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The EPS bridge starts from 2024 adjusted EPS of $11.13 ... yielding 2025 EPS of $11.73.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "EPS"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 EPS is stated as $11.73 in the EPS bridge (adjusted) but the Financials Snapshot shows 2025 Forecast EPS of $7.87.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "working_capital/FCF conversion",
+            "segment-level growth/mix",
+            "depreciation/amortization",
+            "stock-based compensation"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% without full build-up (risk-free, capital structure, after-tax debt cost)",
+            "Terminal growth 3.0% cited as 'industry average' without source",
+            "Operating margin path to 25% based on EBITDA-implied starting point",
+            "5% revenue CAGR primarily justified by a single quarter\u2019s 5.3% growth"
+        ]
+    }
+}

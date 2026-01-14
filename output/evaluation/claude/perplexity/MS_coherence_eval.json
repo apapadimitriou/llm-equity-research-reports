@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and coherence issues that prevent it from reading as a connected argument. The narrative contains multiple unresolved contradictions between sections, particularly regarding temporal claims and data alignment. The 'Analyst Note' references Q1 2025 actual results with specific figures like '$17.7 billion net revenues' and 'EPS of $2.60,' but the report date is June 29, 2025 - before Q2 results would be available, creating impossible timing. The 'Fair Value and Profit Drivers' section projects 'revenue growth of 6-8% annually' while the 'Financials Snapshot' table shows inconsistent growth rates. Multiple sections read as bullet-point lists without meaningful transitions, particularly 'Bulls Say/Bears Say' and 'Risk & Uncertainty.' The report jumps abruptly between topics without establishing logical connections, forcing readers to assemble the investment argument themselves. Critical terms like 'narrow moat' and specific financial metrics are used inconsistently across sections.",
+    "evidence": [
+        "Report dated June 29, 2025 references 'first quarter 2025 performance exceeded expectations' with specific EPS and revenue figures as historical facts, creating temporal impossibility (Analyst Note)",
+        "Fair Value section projects '6-8% revenue growth annually' while Financials table shows 2025E revenue of $64.5B vs 2024A of $61.8B (4.4% growth), then jumps to $68.2B in 2026E (5.7% growth) - contradicting stated assumptions",
+        "Bulls/Bears section presents opposing viewpoints as disconnected lists without reconciliation to the base-case $145 fair value estimate or addressing how risks are mitigated in valuation (Bulls Say/Bears Say)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

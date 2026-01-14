@@ -1,0 +1,101 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report states the principal valuation drivers explicitly and near the forecasts they inform: multi\u2011year revenue growth bands, operating margin targets, normalized capex intensity, WACC, terminal growth, and FCF margin. Specificity is generally solid with numeric magnitudes and time horizons (e.g., 12\u201315% growth through 2027; WACC 9.2%; terminal growth 3.0%). Internal consistency between narrative, appendix, and the \u201cFinancials Snapshot\u201d table is clean; margin targets and EPS/FCF align with the tabulated projections. However, justification is weak: the DCF inputs (WACC, terminal growth, 14% ad revenue CAGR, 15% capex/revenue) lack supporting evidence from history, peer benchmarks, or cited sources. Several important drivers are missing or opaque, including tax rate, share count/dilution, and explicit treatment of working capital and segment mix, limiting auditability. Sensitivity analysis is only qualitative; there are no quantified ranges or scenario impacts on valuation for key levers (ad growth, margins, WACC, terminal growth, Reality Labs losses). Given the absence of quantified stress tests, the analysis is capped at Fair despite otherwise clear and mostly specific assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project Family of Apps revenue growth of 12-15% annually through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to stabilize around 38-40% as AI infrastructure investments moderate and Reality Labs losses remain contained.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "advertising revenue CAGR of 14% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion to 39% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "normalized capex/revenue ratio of 15% after the current AI infrastructure build-out",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Our weighted average cost of capital estimate of 9.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Normalized FCF margin: 28%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "terminal_growth",
+            "FCF_margin"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "working_capital",
+            "segment_growth_split"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without source",
+            "Terminal growth 3.0% without justification",
+            "Advertising revenue CAGR 14% without benchmark",
+            "Normalized capex/revenue 15% without support"
+        ]
+    }
+}

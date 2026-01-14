@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from critical deficiencies across all five pillars. While some key assumptions are stated in the appendix table, they lack meaningful justification - the 8% revenue CAGR is weakly tied to 'Q1 growth and guidance' without specific analysis, and the 9% WACC lacks proper derivation despite mentioning components. Multiple internal contradictions exist: Q1 operating margins are cited as both 19% and showing 'progress toward 20-22% levels,' creating confusion about the baseline. The forecasts table shows precise progression (20% to 25% margins) but this conflicts with narrative statements. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers, capping the grade at Fair, but the combination of weak justification, internal contradictions, and missing sensitivities results in Poor. The extensive use of 'insufficient data' throughout undermines confidence in the model's foundation.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (FY25-29) 8.0% Based on Q1 growth and guidance",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC 9.0% Sector beta 1.2, equity risk premium 5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0% Long-term GDP plus inflation",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "operating margins improving from 19% in Q1 fiscal 2026 to 25% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "EPS bridge: Fiscal 2025 EPS estimated at $9.00; add $1.00 from revenue growth, $0.50 from margin expansion, minus $0.50 from higher taxes",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margins stated as both 19% in Q1 and showing 'progress toward 20-22% levels' creating baseline confusion",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Analyst Note section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "8% revenue CAGR with minimal support",
+            "9% WACC without proper calculation details",
+            "25% terminal margin without peer comparison"
+        ]
+    }
+}

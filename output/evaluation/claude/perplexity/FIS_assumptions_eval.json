@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report lacks explicit, quantified assumptions that drive its financial projections and $87.00 fair value estimate. While it provides extensive narrative about FIS's business and strategy, critical modeling inputs are either missing or opaque. The financial snapshot shows specific revenue and EPS projections through 2029 but provides no justification for the underlying assumptions driving these forecasts. The WACC is mentioned as 8.5% in the appendix without any supporting calculation or market data. Terminal growth rate of 3.0% appears without justification. Revenue CAGR of 6.2% is stated but not explained or tied to specific business drivers. Most critically, there are no sensitivity analyses or scenario testing for any material assumptions, and several key valuation drivers like margin expansion rates, synergy realization timing, and integration costs lack specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Free Cash Flow Conversion: 85-90% of EBITDA",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "The weighted average cost of capital (WACC) assumption of approximately 8-9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC stated as both 8.5% in appendix and 'approximately 8-9%' in fair value section",
+                "locations": [
+                    "Appendix",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "tax_rate",
+            "capex",
+            "share_count",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Revenue CAGR 6.2% without driver breakdown",
+            "Free cash flow conversion 85-90% without basis"
+        ]
+    }
+}

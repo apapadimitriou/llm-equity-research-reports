@@ -1,0 +1,58 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to the strict application of grading hard caps and mandatory downgrades. While the report includes all required structural sections, it fails significantly in the depth and quality of its financial and comparative analysis. The 'Financials Snapshot' is generic, omitting essential SaaS and cybersecurity sector KPIs such as Annualized Recurring Revenue (ARR), Net Retention Rate (NRR), and Billings forecasts in the multi-year table. According to the instruction, the omission of two or more core sector KPIs in the financials table mandates a hard cap of 'Fair.' \n\nFurthermore, the report lacks any formal peer benchmarking or comparative valuation metrics, which triggers a mandatory one-level downgrade. The analysis also suffers from significant redundancy; the same data points regarding ARR growth (37%) and RPO ($13.0 billion) are repeated across the Analyst Note, Bulls Say, and Economic Moat sections without providing additional depth or context, triggering a second one-level downgrade. Sourcing is another major weakness, as the report relies on social media platforms (X/Twitter) for material claims regarding M&A rumors and capital allocation authorizations. Despite having a functional valuation bridge, the lack of industry-specific financial modeling, peer context, and the presence of superficial repetition results in a report that fails to meet professional standards.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (text only)",
+            "RPO (text only)",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "ARR (in Financials Snapshot)",
+            "NRR (Net Retention Rate)",
+            "Billings (in Financials Snapshot)",
+            "CAC/LTV"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (forecasts in table)",
+            "NRR",
+            "Billings (forecasts in table)",
+            "Customer Acquisition Cost (CAC)"
+        ],
+        "uncited_claims": [
+            "Rumored $25 billion acquisition of CyberArk (Source [5] is social media)",
+            "Share repurchase authorization details (Source [6] is social media)",
+            "ESG score based on 'public peer comparisons' rather than direct data (Source [7])"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely unstated or explicitly omitted. The report provides a Fair-Value Estimate of $227.95 but offers no underlying model inputs (e.g., revenue CAGR, margins, WACC, terminal growth), explicitly stating these are omitted. Where forward-looking views appear (e.g., continued data center growth, margin pressure), they are qualitative and lack magnitudes, units, or time horizons. Justification is weak to none: forward assumptions are not anchored to multi-year history, peer benchmarks, or cited sources beyond social-media sentiment and generic \u201canalyst predictions.\u201d Specificity is minimal; only the FVE is quantified, without decomposing drivers or reconciling to tables. Internal consistency has a notable issue: the Financials Snapshot lists \u201cOp-Margin %\u201d but populates it with an \u201c~61 adj GM\u201d figure, conflating operating and gross margin. Sensitivity analysis is effectively absent: a vague \u201c20\u201330%\u201d valuation swing is mentioned without mapping to drivers (e.g., revenue growth, GM%, capex, WACC) or quantifying impact pathways. Given missing core inputs, lack of driver-level scenarios, and an internal metric mislabeling, the assumptions cannot be audited or stress-tested, meeting the criteria for a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We estimate fair value at $227.95 based on available analyst predictions",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "we expect continued growth in data center revenue",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "highlight potential margin pressure",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "These could swing valuation by 20-30%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Gross margin figure presented under an 'Op-Margin %' label",
+                "locations": [
+                    "Financials Snapshot table (Op-Margin % row shows '~61 adj GM')",
+                    "Analyst Note (states 'adjusted gross margin at 61%')"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Fair Value $227.95 (based solely on 'analyst predictions' without model inputs)",
+            "Valuation swing 20\u201330% (no linkage to drivers or evidence)",
+            "Expectation of continued data center revenue growth (no quantification or sourcing)"
+        ]
+    }
+}

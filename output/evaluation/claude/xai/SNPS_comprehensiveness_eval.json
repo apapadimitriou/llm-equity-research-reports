@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains all major sections with appropriate structure and covers most essential content areas. However, critical deficiencies prevent a higher grade. The Financials Snapshot lacks crucial sector-specific KPIs for software companies (ARR, NRR, bookings, RPO) and contains 'insufficient data' entries that undermine credibility. The valuation section provides assumptions but fails to explicitly bridge operating drivers to the $650 fair value outcome - the EPS bridge jumps from $11.20 to $18.50 without clear linkage to DCF methodology. Multiple claims lack proper citations, including the 90%+ retention rate and specific financial figures. Peer benchmarking is superficial, mentioning Cadence and Siemens without meaningful comparison. Some redundancy exists between sections, particularly around AI themes and competitive positioning.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Comprehensive Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Bookings",
+            "RPO",
+            "Customer Acquisition Cost",
+            "Churn Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2024 data marked as 'insufficient data' undermines baseline credibility",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Bookings",
+            "RPO"
+        ],
+        "uncited_claims": [
+            "90%+ customer retention rate",
+            "Net cash of $1.5 billion",
+            "$500 million buyback authorization",
+            "Beta of 1.1"
+        ]
+    }
+}

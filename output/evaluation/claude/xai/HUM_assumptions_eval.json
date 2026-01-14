@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely compromised by fundamental contradictions and lack of proper justification. A critical contradiction exists between the claimed 8% revenue CAGR and the actual financial table showing 11% CAGR (2025-2029). Key assumptions like WACC (8.5%), terminal growth (3%), and operating margins (3.8% average) are stated but poorly justified with weak sourcing ('model-derived', 'insufficient data'). While some assumptions are explicit with specific units, the justification quality is consistently weak throughout. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers, violating the hard cap rule. The EPS bridge calculation appears internally inconsistent, and multiple assumptions rely on unavailable data sources. The combination of contradictions, weak justification, and complete absence of sensitivity analysis firmly places this in the Poor category.",
+    "assumptions_extracted": [
+        {
+            "quote": "projected revenue CAGR of 8% over 2025-2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Margins are expected to stabilize at 3.5-4%, assuming medical loss ratios (MLR) hold at 88-89%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 8.5% WACC, reflecting Humana's beta of 1.0 and cost of debt at 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 3% leads to fair value of $410",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "buybacks reduced shares by 5% over 2022-2024",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Operating margins are projected to average 3.8%, improving from 3.5% in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as 8% in text but financial table shows 11% CAGR from $128.0B (2025) to $174.1B (2029)",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% with weak sourcing",
+            "Terminal growth 3% without justification",
+            "MLR assumptions based on insufficient data"
+        ]
+    }
+}

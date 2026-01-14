@@ -1,0 +1,66 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block, contents, analyst note, business description, strategy & outlook, bulls/bears, moat, valuation, risks, capital allocation, a financials snapshot, ESG, appendix, and sources. Depth is generally reasonable, with multiple operational details (AI/Data Cloud ARR, Agentforce adoption) and multi\u2011year financials plus forecasts. Valuation is explicitly linked to operating drivers (AI adoption, margin expansion, WACC, terminal growth) and is supported by in\u2011text citations. However, the Financials Snapshot omits core SaaS KPIs (ARR at company level, NRR, cRPO/RPO, billings), which caps comprehensiveness. Peer benchmarking and scenario/sensitivity analysis are absent, limiting industry context and robustness of valuation framing. Evidence is mostly cited, but there are minor inconsistencies (e.g., WACC referencing a 2022 source; misaligned industry citation) and a contradiction on Data Cloud & AI ARR ($900M vs. >$1B) across sections. Some repetition of Agentforce adoption appears in multiple sections without incremental insight. Overall, while the report is structured and largely evidence\u2011based, the omission of key SaaS KPIs in the snapshot and lack of peer/scenario analysis constrain comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Free Cash Flow",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "ARR (company-wide)",
+            "Net Revenue Retention (NRR)",
+            "cRPO/RPO",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Data Cloud & AI ARR stated as $900M in Business Description vs. >$1B in Analyst Note",
+                "locations": [
+                    "Business Description",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR (company-wide)",
+            "NRR",
+            "cRPO/RPO",
+            "Billings"
+        ],
+        "uncited_claims": [
+            "ESG Risk Rating: Medium (cover block) has no source",
+            "Equity Style Box: Large Growth has no source",
+            "Carbon neutrality commitment noted in ESG section without source"
+        ]
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet basic standards for assumption quality across all five pillars. Explicitness is severely lacking\u2014critical valuation drivers like WACC (8.5%), terminal growth (3.5%), and specific margin expansion targets appear only in appendix tables without justification in the main text. Justification is virtually absent, with no historical data, peer comparisons, or sources supporting key assumptions like 8-10% Digital Media growth or 47-48% operating margins by 2029. Specificity is weak, with vague timeframes and missing units for many projections. Internal consistency shows major contradictions: the text claims 45% current operating margins while tables show 36.5% for FY2024. Most critically, there are no sensitivity analyses or scenario testing for any material drivers despite the report's high uncertainty about AI competition and market dynamics.",
+    "assumptions_extracted": [
+        {
+            "quote": "Digital Media segment compound annual growth rate of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins can expand from current levels of approximately 45% to 47-48%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Earnings per share growth of 10-12% annually through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin contradiction: text states 'current levels of approximately 45%' while financial table shows FY2024A at 36.5% and FY2025E at 45.5%",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "8-10% Digital Media growth without historical basis",
+            "47-48% operating margin target without justification",
+            "3.5% terminal growth without rationale"
+        ]
+    }
+}

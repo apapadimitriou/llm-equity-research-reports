@@ -1,0 +1,64 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic equity research standards in multiple critical areas. Most fundamentally, it lacks essential sector-specific KPIs for banking (NIM, loan loss provisions, CET1 ratio, ROA, efficiency ratio) in the Financials Snapshot, containing only generic revenue/EPS data. The valuation section completely fails to link operating drivers to fair value calculations - it mentions a $245 price target and DCF methodology but provides no actual valuation bridge or calculations. Sources are entirely absent despite numerous bracketed citations throughout the text, making claims unverifiable. The report also suffers from significant redundancy, repeating the same Discover acquisition details across multiple sections without adding new depth. Key sections like peer benchmarking and scenario analysis are missing entirely, while the business description and strategy sections overlap substantially.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning",
+            "Sources"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "ROA",
+            "CET1 Ratio",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Tier 1 Capital Ratio",
+            "Book Value per Share"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "ROA",
+            "CET1 Ratio",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Tier 1 Capital Ratio"
+        ],
+        "uncited_claims": [
+            "All bracketed citations [1]-[17] reference non-existent sources",
+            "$35.3 billion acquisition figure",
+            "Q2 2025 net loss of $4.3 billion",
+            "Federal Reserve Stress Capital Buffer reduction",
+            "$245 fair value estimate with no supporting calculations"
+        ]
+    }
+}

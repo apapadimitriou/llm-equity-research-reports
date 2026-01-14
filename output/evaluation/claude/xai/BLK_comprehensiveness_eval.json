@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates adequate structural coverage with all major sections present and a complete contents page. However, critical deficiencies emerge in sector-specific depth and analytical rigor. The Financials Snapshot completely omits essential asset management KPIs (AUM, management fees by asset class, fee rates), providing only generic financial metrics. Evidence integration is severely compromised with pervasive \"insufficient data\" disclaimers undermining credibility. The valuation section lacks explicit linkage between operating drivers and fair value derivation, with assumptions appearing disconnected from business fundamentals. Peer benchmarking is superficial, limited to brief mentions without systematic comparison. Significant redundancy exists across sections, particularly regarding AUM figures and Aladdin platform benefits. Multiple uncited claims and outdated source references further compromise analytical integrity.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Comprehensive Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "AUM by Asset Class",
+            "Management Fee Rates",
+            "Base Fees vs Performance Fees",
+            "Net Flows by Product",
+            "Average Fee Rate",
+            "Expense Ratios"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated 2025-07-07 but references earnings on July 15, 2025 as future event",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Claims Q2 2025 results while simultaneously stating insufficient data for Q2 figures",
+                "locations": [
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "AUM by Asset Class",
+            "Management Fee Rates",
+            "Base Fees vs Performance Fees",
+            "Net Flows by Product",
+            "Average Fee Rate",
+            "Expense Ratios"
+        ],
+        "uncited_claims": [
+            "$50 billion in net inflows in Q1 2025",
+            "Expected Q2 revenue of around $4.9 billion",
+            "Operating margins at 37%",
+            "15% revenue contribution from Aladdin",
+            "Cash reserves of $8 billion",
+            "Debt-to-equity of 0.3"
+        ]
+    }
+}

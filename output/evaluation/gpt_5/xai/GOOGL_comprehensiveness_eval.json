@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover, contents, analyst note, description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, sources). Valuation includes explicit assumptions (revenue CAGR, segment drivers, margin trajectory, WACC, terminal growth) and an EPS bridge, linking operating drivers to the fair value. However, the Financials Snapshot is generic and omits core sector KPIs for a digital ads/cloud platform (e.g., TAC ratio, paid clicks/CPC, segment revenue/margins, YouTube engagement, Cloud profitability/backlog). Data integrity issues in the table (e.g., implausible 2024 revenue, \u201cinsufficient data\u201d flags) undermine comprehensiveness. Evidence is cited throughout, but several material assertions lack sourcing or rely on non-authoritative/unclear references (e.g., dividend initiation, ROIC, ESG score). Peer context is minimal (brief mentions of Microsoft/Meta; no benchmarking tables), and there is no scenario/sensitivity analysis. There is repetition of AI leadership and DOJ risk across multiple sections without added depth. Given the missing sector KPIs in the snapshot and inconsistent sourcing, the report cannot exceed Fair despite breadth of sections and a reasonably linked valuation.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "CapEx (2025 guidance)",
+            "Cloud revenue growth (qualitative)"
+        ],
+        "sector_kpis_missing": [
+            "Traffic Acquisition Costs (TAC) ratio",
+            "Paid Clicks growth",
+            "Cost-per-Click (CPC)",
+            "Segment revenue breakdown (Ads vs Cloud/Other Bets)",
+            "YouTube engagement/ad metrics",
+            "Google Cloud operating margin/backlog"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-06-07) predates cited Q2 2025 results used in Analyst Note",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Financials Snapshot shows 2024A revenue of $3,580B with 'insufficient data' note, inconsistent with 2025E $400B and stated 12% CAGR trajectory",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "ESG section asserts a specific Sustainalytics score (15.2) while noting 'insufficient data for exact' score",
+                "locations": [
+                    "ESG Risk"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "TAC ratio",
+            "Paid Clicks",
+            "CPC",
+            "Segment revenue/margins",
+            "YouTube engagement metrics",
+            "Cloud operating margin/backlog"
+        ],
+        "uncited_claims": [
+            "Initiated a dividend in 2024",
+            "ROIC exceeding 20%",
+            "Specific Sustainalytics ESG risk score (15.2)"
+        ]
+    }
+}

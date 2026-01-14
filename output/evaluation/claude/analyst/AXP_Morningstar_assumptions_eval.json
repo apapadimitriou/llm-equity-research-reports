@@ -1,0 +1,82 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates good quality assumptions across most pillars. Key assumptions are explicitly stated and proximal to forecasts, including specific growth rates, margins, and time horizons. The analyst provides solid justification through historical context (26.1% NII CAGR 2021-24) and peer comparisons. Specificity is strong with detailed units, percentages, and timeframes throughout. Internal consistency is maintained between narrative and financial tables. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers like discount revenue growth, NII projections, or credit costs, which prevents an Excellent rating despite otherwise comprehensive assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "net interest income CAGR of 7.2% from 2024-29, despite falling interest rates",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We expect discount revenue to increase in the mid-single digits in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect the company to generate high-single-digit discount revenue growth in 2026 and beyond",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect American Express' operating margin to be stable over time, ending 2029 at 22%, effectively unchanged from 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 703",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report has a clear structure and generally coherent narrative linking franchise strength, capital adequacy, and valuation. Transitions across sections are mostly sensible (e.g., Analyst Note \u2192 Risks \u2192 Capital Allocation), and terminology like CET1, efficiency ratio, and ROTCE is used consistently in the narrative. However, several internal inconsistencies and temporal issues undermine coherence. Most notably, the report date is 2025-07-08 while it states Q2 2025 results have been delivered, and cited sources for those results include a 2021 item and a Q2 supplement oddly dated February 2025\u2014creating time-inaccurate support. The valuation section posits 4\u20136% annual revenue growth and 6\u20138% EPS growth, yet the Financials Snapshot shows 2025E revenue and EPS both declining versus 2024A, without reconciliation. Similarly, the text claims margin expansion over the forecast period, while the table shows an initial operating margin dip in 2025E. Bulls/Bears are not explicitly reconciled with the base-case: Bears cite NII headwinds and rising capital requirements, but the base case assumes NIM stabilization and sustained fee growth without addressing how those headwinds are incorporated beyond a broad sensitivity range. These tensions make the reader do extra work to align sections, capping the grade despite otherwise readable prose and logical organization.",
+    "evidence": [
+        "Temporal mismatch: Report Date 2025-07-08 while stating \u201cdelivered Q2 2025 results,\u201d citing sources including a 2021 article and a \u201c2Q25 Earnings Supplement\u201d dated February 28, 2025 (Sources [6], [9]).",
+        "Valuation vs table: Fair Value assumes 4\u20136% revenue growth and 6\u20138% EPS growth, but Financials Snapshot shows 2025E revenue/eps below 2024A (Revenue 177.6 \u2192 174.8; EPS 19.75 \u2192 19.40) without explanation.",
+        "Claim of \u201cmargin expansion over the forecast period\u201d conflicts with Op Margin dipping from 48.3% (2024A) to 47.2% (2025E) in the Financials Snapshot."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

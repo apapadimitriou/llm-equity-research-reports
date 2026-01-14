@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers several core sections with decent depth: Cover block & contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, and a Valuation section that explicitly ties operating drivers (Skyrizi/Rinvoq growth, revenue CAGR, margin expansion, WACC/terminal growth) to a fair value. Sector-appropriate KPIs are partially present (product-level sales, growth rates, adjusted EPS, R&D spend). However, multiple expected components are absent or skeletal: no Risk & Uncertainty, Capital Allocation, Financials Snapshot with multi-year history/forecasts, ESG/controversies, Appendix/Glossary, Sources, peer benchmarking, or scenario/sensitivity analysis. Evidence integration is inconsistent: bracketed citations appear but no sources list is provided, leaving several material claims effectively uncited. The Financials Snapshot is missing and at least two core pharma KPIs (pipeline/trial data, multi-year forecasts) are absent, triggering a hard cap. There is also redundancy, with the Skyrizi/Rinvoq growth narrative and 2027 combined sales target repeated across multiple sections without added depth. Overall, while the included sections are directionally solid and the valuation is linked to drivers, the lack of full financials/KPI tables, sourcing, peer context, and risk/capital allocation discussions limits comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers"
+        ],
+        "sections_missing": [
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources",
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Product-level sales (Skyrizi, Rinvoq, Humira)",
+            "Adjusted EPS (2024, Q1-2025)",
+            "R&D spend"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline/trial data and milestones",
+            "Multi-year revenue/EPS forecast table",
+            "Peak sales/LOE timelines by asset"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Pipeline/trial data",
+            "Multi-year forecasts",
+            "LOE timelines"
+        ],
+        "uncited_claims": [
+            "Q1 2025 revenues of $13.3B (+8.4%) and product growth rates",
+            "Skyrizi/Rinvoq combined >$31B sales by 2027 guidance",
+            "Acquisition amounts for ImmunoGen ($10.1B) and Cerevel ($8.7B) without a sources list"
+        ]
+    }
+}

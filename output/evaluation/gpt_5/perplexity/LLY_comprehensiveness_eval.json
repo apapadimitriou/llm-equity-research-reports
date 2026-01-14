@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections with solid breadth: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, and Appendix/Sources. Evidence integration is generally consistent with in-text citations, and the valuation section provides explicit assumptions (revenue CAGR, margins, WACC, terminal growth) linking operating drivers to a $900 fair value. Capital allocation and risk discussions are proportionate and tailored to pharma. However, the Financials Snapshot lacks sector-specific KPIs (e.g., product-level revenue breakdowns, pipeline phase/milestones, LOE timeline, regulatory catalyst calendar), triggering the hard cap to Fair. Peer context exists (notably Novo Nordisk), but there is no formal peer benchmarking table and no scenario/sensitivity analysis. Redundancy is limited, with repeated themes (e.g., $27B manufacturing) adding new angles rather than repetition. Notable inconsistencies include timeline conflicts (Q2 2025 results and August price data within a June 7, 2025-dated report) and an internal mismatch on forward P/E figures between Bears and Valuation. Overall, the report is broad and mostly well-sourced, but the absence of core pharma KPIs in the snapshot and lack of sensitivities constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary and Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking (formal comparative table)",
+            "Scenario/Sensitivity Analysis",
+            "Pipeline/Regulatory Timeline (dedicated section)"
+        ],
+        "sector_kpis_present": [
+            "Product-level sales examples (Mounjaro, Zepbound)",
+            "GLP-1 market share (53%)",
+            "Prescription volume via LillyDirect (1.1M in Q2)",
+            "Clinical efficacy metrics (A1C reduction, weight loss)",
+            "R&D spend as % of revenue"
+        ],
+        "sector_kpis_missing": [
+            "Product-level revenue/margin breakdown in the Financials Snapshot",
+            "Pipeline by phase with key milestones",
+            "Patent expiry/LOE timeline",
+            "Regulatory catalyst calendar",
+            "Gross-to-net/rebate dynamics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated June 7, 2025 includes Q2 2025 results and references pricing consistent with August levels.",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Business Description"
+                ]
+            },
+            {
+                "description": "Forward P/E framing inconsistent: Bears cite >26x while Valuation supports 38\u201342x.",
+                "locations": [
+                    "Bulls/Bears",
+                    "Valuation & Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level breakdown in snapshot",
+            "Pipeline milestones/phases",
+            "LOE/patent expiries",
+            "Regulatory catalyst calendar",
+            "Gross-to-net"
+        ],
+        "uncited_claims": [
+            "Share repurchase plan initiated in December 2024 (no direct citation in that sentence).",
+            "Current and quick ratio figures (1.37x/1.06x) lack explicit citation at point of use."
+        ]
+    }
+}

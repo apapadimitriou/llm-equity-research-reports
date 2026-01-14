@@ -1,0 +1,25 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a solid descriptive foundation with some clear causal mechanisms, particularly linking AI infrastructure investments to operational outcomes, such as the '5% increase in ad conversions on Reels driven by AI-powered improvements.' It offers explicit valuation assumptions, including a 'WACC estimate of 9.2%' and a 'Terminal growth rate: 3.0%.' However, the analytical depth is limited by a lack of benchmarking; these figures are presented as static inputs without comparison to industry standards or historical averages. Most critically, the report fails the requirement for quantified sensitivity or scenario analysis. While it identifies that 'Key sensitivities include advertising market growth rates' and 'Reality Labs investment pacing,' it does not provide numerical ranges or 'if-then' stress tests to show how changes in these variables would impact the Fair Value Estimate of $770. The reasoning is largely linear, projecting that 'EPS of $6.43 growing to projected full-year 2025 EPS of $27.50' without exploring alternative outcomes or the margin of safety. Consequently, while the report is data-rich and identifies relevant drivers, it remains at a 'Fair' level because the assumptions are neither benchmarked nor stress-tested.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Relationship between GPU procurement and specific margin compression timing not detailed"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth rate of 3.0% lacks peer or GDP benchmarking",
+            "WACC of 9.2% provided without cost of equity/debt breakdown"
+        ],
+        "lack_of_sensitivity": [
+            "Sensitivities are listed qualitatively but lack quantified impact on FVE",
+            "No bear/bull case valuation ranges provided despite 'Bulls Say / Bears Say' section"
+        ]
+    }
+}

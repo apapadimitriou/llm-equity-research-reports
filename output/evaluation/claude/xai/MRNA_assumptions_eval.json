@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely compromised by multiple contradictions and lack of justification. Key issues include: (1) A clear contradiction where 2025 revenue guidance is stated as both '$1.5-2.2B' in the analyst note and '$2.0B' in the financials table; (2) Historical data admittedly extrapolated rather than sourced ('insufficient data for precise 2024 figures, extrapolated from patterns'); (3) Critical assumptions like WACC 10.5% and terminal growth 3.0% lack any supporting evidence or peer benchmarks; (4) No sensitivity analysis despite high uncertainty rating; (5) Operating margin assumptions (-200% to 15%) are extreme without justification. While some assumptions are explicitly stated in the appendix table, the combination of contradictions, weak evidence base, and absence of quantified scenarios renders the model unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "5-year revenue CAGR of -5% from 2025-2029, reflecting initial declines followed by 10% growth post-2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve from -200% in 2025 to 15% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 10.5%, incorporating high beta due to biotech volatility",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0% Long-term biotech average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Implied 2029 P/E multiple of 20x supports the FVE",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 revenue guidance stated as '$1.5-2.2B' in analyst note but '$2.0B' in financials table",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without source",
+            "Terminal growth 3.0% without peer data",
+            "Operating margin expansion 215 pts without benchmarks"
+        ]
+    }
+}

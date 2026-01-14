@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block/contents, analyst note, business description, strategy, bulls/bears, moat, valuation and profit drivers, risks, capital allocation, ESG, financials, and appendix/sources. The depth is generally appropriate, with frequent in-text citations and a clear DCF framework that links operating drivers (data-center ramp, margin mix) to valuation. Sensitivity notes and stress-test mentions add useful context. However, the Financials Snapshot is generic and omits multiple core semiconductor KPIs (e.g., gross margin trajectory by year, segment revenue mix, and capex), which are essential for sector analysis; this triggers a cap at Fair. Peer context exists (NVIDIA/Intel references) but formal peer benchmarking is absent. Evidence is mostly well-cited, yet a few material assertions lack sources (e.g., MSI inventory datapoint; ~$4.9B spent to acquire ZT Systems). Some talking points (China export curbs and NVIDIA\u2019s ~80% AI GPU share) recur across sections with limited incremental depth. Overall, the report is structurally comprehensive with solid linkage from drivers to valuation, but missing sector KPIs in the snapshot, limited peer benchmarking, and a couple of uncited claims constrain the grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin (multi-year)",
+            "Segment Revenue Mix (Data Center/Client/Gaming/Embedded)",
+            "Capex (historical/forecast)",
+            "Units/Shipments or ASPs",
+            "Inventory Days/Utilization",
+            "R&D Spend trajectory"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin (multi-year)",
+            "Segment Revenue Mix",
+            "Capex"
+        ],
+        "uncited_claims": [
+            "MSI\u2019s data suggests AMD\u2019s server CPU inventories are being replenished",
+            "AMD spent ~$4.9 billion to acquire ZT Systems in early 2025"
+        ]
+    }
+}

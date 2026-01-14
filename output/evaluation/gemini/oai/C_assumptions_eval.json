@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is rated Poor due to multiple severe internal contradictions and a total absence of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as a 3% revenue CAGR, improving operating margins to 23%, and a 9% WACC\u2014these figures are undermined by logical and numeric inconsistencies. Specifically, the report cites a risk-free rate of 8.5% in the valuation section but 3.5% in the appendix. Furthermore, the Cost of Equity calculation is mathematically impossible, stating that an 8.5% risk-free rate plus a 4.5% equity risk premium equals 10% (rather than 13%). There is also a disconnect between the narrative, which describes 2024 margins as 'mid-teens,' and the financial table, which records them at 19.2%. \n\nCrucially, the report fails the hard cap requirement for stress-testing. Despite identifying 'High' uncertainty and significant macro/regulatory risks, it offers no quantified scenarios or sensitivity tables showing how changes in NII, trading fees, or WACC would impact the $85 fair value estimate. This 'black-box' approach, combined with at least three distinct numeric contradictions, triggers the mandatory 'Poor' grade under the evaluation framework. The justifications provided are largely qualitative and do not reconcile the conflicting data points presented across different sections of the report.",
+    "assumptions_extracted": [
+        {
+            "quote": "~3% CAGR in revenues (2024\u201329)",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins improve from ~20% in 2024 to ~23% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC of ~9% (cost of equity ~10%, reflecting an 8.5% risk-free rate + 4.5% equity risk premium)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth is 2%",
+            "location": {
+                "section": "Appendix",
+                "page": "6"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "diluted shares ~1.8\u20131.9 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "effective tax rate ~21%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Risk-free rate is cited as 8.5% in the valuation narrative but 3.5% in the Appendix.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Cost of Equity math error: 8.5% RF + 4.5% ERP is stated to equal 10%.",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Narrative describes 2024 margins as 'mid-teens' while the Financials Snapshot table shows 19.2%.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "specific credit cost/LLP magnitudes"
+        ],
+        "unjustified_parameters": [
+            "8.5% risk-free rate is extremely high and conflicts with the 3.5% figure used elsewhere."
+        ]
+    }
+}

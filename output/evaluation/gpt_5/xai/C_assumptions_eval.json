@@ -1,0 +1,126 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated near the forecasts (revenue CAGR, margin path, WACC, terminal growth), supported by an assumptions table, and the financial forecast table reconciles with the stated 5% CAGR and the margin expansion path. Specificity is solid: units, magnitudes, and time horizons are clear (2025\u20132029 CAGR; margin from 25% to 30%; WACC components; terminal growth 3%). However, justification is partial: revenue growth is tied to a single quarter\u2019s trend; margin expansion is attributed broadly to \u201ctransformation efficiencies\u201d without quantified evidence; WACC lacks capital structure detail; terminal growth uses a GDP proxy without sources; EPS bridge omits tax rate and credit cost assumptions. Internal consistency has a notable contradiction: ROTCE \u201c11\u201312%\u201d medium-term vs \u201cmid-teens by 2026.\u201d Sensitivity analysis is limited\u2014NIM down 5\u201310% and valuation swing 15\u201320% are cited, but there are no robust scenarios or quantified sensitivities for other material levers (WACC, margins, credit costs, revenue). Missing assumptions include tax rate, credit losses, capex, and share count trajectories. Given the contradiction and limited sensitivity, the overall quality of assumptions is Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is forecasted to grow at a 5% CAGR from 2025 to 2029, driven by 7% growth in services and 4% in markets",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in 2024 to 30% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 estimated $5.50, adding $1.00 from revenue growth, $0.50 from margin expansion, minus $0.30 from higher expenses, yielding 2025 EPS of $6.70.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR 2025-29 | 5.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC | 9.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "interest rate cuts reducing net interest margins by 5-10%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "buybacks resuming at $1 billion per quarter.",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "ROTCE target conflict: \u2018mid-teens by 2026\u2019 vs \u201811\u201312%\u2019 medium-term",
+                "locations": [
+                    "Bulls Say (item 1)",
+                    "Business Strategy & Outlook"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without capital structure detail",
+            "Terminal growth 3% based on GDP proxy without source",
+            "Margin expansion +5 pp attributed to \u2018transformation efficiencies\u2019 without evidence",
+            "Revenue CAGR 5% tied to Q2 trend only",
+            "EPS bridge lacks tax rate and credit loss assumptions"
+        ]
+    }
+}

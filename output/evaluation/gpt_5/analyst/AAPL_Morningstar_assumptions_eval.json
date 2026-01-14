@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key modeling inputs are generally explicit and proximal to forecasts, notably revenue CAGRs, segment growth, margin trajectories, and discount-rate/tax parameters. Specificity is solid: magnitudes, units, and timelines are provided (e.g., through fiscal 2029, percent margins, WACC, COE, tax rate, share count). Justification is partial: some causal drivers are discussed (Pro mix, services regulatory pressure, R&D-driven cost efficiency), but most major parameters (WACC/COE, long-run tax, Stage II settings, margin targets) lack citations to multi-year history or peer benchmarks. Consistency exhibits at least one numeric contradiction between narrative and tables (total revenue CAGR stated at 7% vs table\u2019s 5-year 6% CAGR), which caps the grade. Sensitivity/stress testing is limited but present: a quantified tariff downside (25% impact to earnings and intrinsic value) is offered; however, there is no robust, quantified scenario set across multiple material levers (revenue/margins/WACC) or valuation impact bands. Overall, the assumptions are explicit and specific, partially justified, with minor internal issues and limited quantified sensitivity\u2014appropriate for a Fair grade under the stated caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project 7% compound annual revenue growth for Apple through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6\u20137"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project 6% growth for iPhone revenue over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6\u20137"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast gross margins to rise to 49% in fiscal 2029, up from 46% in fiscal 2024.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6\u20137"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating margins rise almost exclusively due to gross margin expansion in our forecast, reaching 35% in fiscal 2029 from 32% in fiscal 2024.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6\u20137"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 16.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states \u201c7% compound annual revenue growth\u2026 through fiscal 2029\u201d vs table shows 5-year revenue CAGR of 6.0%.",
+                "locations": [
+                    "Fair Value and Profit Drivers (p. 6\u20137)",
+                    "Growth & Ratios table (p. 15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.9% without source",
+            "Cost of Equity 9.0% without source",
+            "Long-Run Tax Rate 16% without source",
+            "Stage II EBI Growth Rate 8% without source"
+        ]
+    }
+}

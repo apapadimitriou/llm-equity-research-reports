@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report states key assumptions but with significant weaknesses. Revenue projections (18% growth in 2025 decelerating to ~10% by 2029) lack specific justification beyond general AI adoption themes. Operating margins are assumed to stabilize at 30% without evidence-based support. The WACC of 8.5% and terminal growth of 3% are stated but not justified with market data or peer comparisons. FCF assumptions (30% of revenue) rely on limited historical trend without stress-testing. Most critically, there are no quantified sensitivities or scenarios for any material drivers, capping the grade at Fair. The assumptions are explicit and mostly consistent internally, but justification is weak and specificity is partial.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project ~18% growth in FY2025 (to ~$13.0B) and a gradual deceleration to high-single digits by FY2029 (ending ~$21B)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume non-GAAP operating margin stabilizes ~30% (near 29.5% in 2024)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC ~8.5%, reflecting ServiceNow's growth profile and low cost of debt. Our terminal-growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a tax rate ~20%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Free cash flow has trended ~30% of revenue... We forecast FCF rising from ~$3.9B in 2025 to ~$6.3B by 2029 (nearly 30% of revenues each year)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "WACC: ~8.5% (unlevered \u03b2 ~1.0\u20131.1, cost of debt ~4%, net cash position). Terminal growth: ~3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without market data",
+            "Terminal growth 3% without justification",
+            "Operating margin 30% stabilization assumption",
+            "Revenue deceleration timeline"
+        ]
+    }
+}

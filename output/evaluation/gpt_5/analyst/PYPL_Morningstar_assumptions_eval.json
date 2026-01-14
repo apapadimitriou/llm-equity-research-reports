@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are largely explicit and placed near the valuation section, with clear magnitudes and horizons (e.g., five-year revenue CAGR, annual margin bps change, COE/WACC, tax rate, Stage II parameters, share count). Specificity is solid: units, time frames, and definitions (adjusted margins) are provided, and the model table quantifies revenue, margins, EPS, and shares annually. Justification is partial: narrative references secular electronic payments growth and scalability, but numeric inputs like COE/WACC, tax rate, and Stage II growth/investment rates have minimal linkage to market data, history, or peer benchmarks. Consistency suffers a notable issue: the text\u2019s \u201c6% revenue CAGR\u201d contrasts with the model\u2019s five-year revenue CAGR of 5.5%, and the annual path includes low growth in 2025. Sensitivity/stress testing is absent; no quantified ranges or scenario impacts are provided for material levers (revenue growth, margins, WACC/COE, or terminal assumptions), which caps the grade. Overall, the report offers clear, traceable assumptions with good specificity, but limited empirical justification and no quantified sensitivities, plus one numeric contradiction between narrative and tables.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our projections result in a 6% revenue CAGR over the next five years, with growth picking up in the back half of our projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins, adjusted to exclude amortization expense and one-time items, will improve at an average annual rate of about 20 basis points over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.6",
+            "location": {
+                "section": "Key Valuation Drivers as of 04 Apr 2025",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 04 Apr 2025",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.5",
+            "location": {
+                "section": "Key Valuation Drivers as of 04 Apr 2025",
+                "page": "14"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Perpetuity Year 15",
+            "location": {
+                "section": "Key Valuation Drivers as of 04 Apr 2025",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 1,158 1,107 1,039 983 938 887 829 775",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states 6% five-year revenue CAGR; model table shows 5-year revenue CAGR of 5.5% and a 2025 revenue growth of 2.2%.",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.5)",
+                    "Morningstar Valuation Model Summary \u2013 Growth & Ratios (p.13)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "COE 9% without source",
+            "WACC 8.6% without source",
+            "Long-run tax rate 21% without source",
+            "Stage II EBI growth 5.5% without justification",
+            "Revenue CAGR 6% without peer/history tie-in"
+        ]
+    }
+}

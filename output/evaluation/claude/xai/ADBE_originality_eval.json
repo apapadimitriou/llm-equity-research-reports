@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report shows some company-specific analysis but falls short of originality. While it provides detailed financial projections and specific metrics (ARR growth of 12%, RPO at $19.7B), most insights are standard restatements of earnings results and generic industry observations. The AI/Firefly discussion represents weak synthesis, linking AI tools to ARR growth, but lacks depth or non-obvious conclusions. The valuation section uses conventional DCF methodology with standard assumptions (10% revenue CAGR, margin expansion to 48%) without novel drivers or mechanisms. Key red flags include boilerplate phrasing about 'switching costs and network effects,' generic competitive positioning statements, and reliance on restated quarterly results without deeper interpretation. The report demonstrates competent financial modeling but provides minimal unique insights beyond what's available in public filings and earnings releases.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI integrations like Firefly boosting user engagement and subscription uptake",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Adobe's dominant position in creative software and shift to AI-driven tools will support mid-teens revenue growth",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Wide moat rating, underpinned by high switching costs and network effects",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins forecasted to expand from 35% to 48% by FY29, benefiting from scale and AI efficiencies",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Competition from free AI tools could erode market share in entry-level segments",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Subscription model ensures predictable revenue",
+                "classification": "Copied",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'switching costs and network effects' phrasing",
+            "Generic competitive positioning statements",
+            "Standard DCF with conventional assumptions",
+            "Heavy reliance on restated quarterly results"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

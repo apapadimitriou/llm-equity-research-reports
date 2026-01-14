@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit assumptions for key drivers like revenue CAGR (4.0%), WACC (6.8%), terminal growth (2.5%), and margin expansion targets (4.2% to 4.5%). However, justification is weak - the WACC lacks detailed derivation, revenue growth assumptions are not benchmarked against peers or multi-year history, and margin expansion relies heavily on unproven integration benefits. Specificity is partial with clear units and timeframes but vague causal drivers. Internal consistency has minor issues with EPS forecasts ($6.25 vs guidance range $6.00-$6.20). Most critically, the report completely lacks quantified sensitivity analysis or scenarios for any material drivers, which caps the grade at Fair per the hard cap rule. The assumptions feel more asserted than rigorously justified.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes a five-year compound annual growth rate (CAGR) for revenue of approximately 4.0% from 2025 through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast a gradual expansion in adjusted operating margins, from an estimated 4.2% in 2025 to approximately 4.5% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model incorporates a weighted average cost of capital (WACC) of 6.8%, which is derived from an estimated cost of equity of 7.9% and a post-tax cost of debt of 5.3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a terminal free cash flow growth rate of 2.5%, in line with our expectations for long-term inflation and economic growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "on our adjusted EPS forecast of $6.25, which is the midpoint of management's raised guidance range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS forecast of $6.25 described as midpoint of guidance range $6.00-$6.20, but actual midpoint is $6.10",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Analyst Note guidance range"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 6.8% without detailed derivation",
+            "4.0% revenue CAGR without peer/historical benchmarking",
+            "margin expansion to 4.5% based on unproven integration synergies"
+        ]
+    }
+}

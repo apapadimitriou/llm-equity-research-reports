@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a clear contents page, including Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, and Appendix. The Valuation section provides a DCF framework with explicit operating assumptions (ad revenue CAGR, margin trajectory, WACC, terminal growth) and a qualitative bridge from drivers to fair value, but it lacks scenario/sensitivity analysis. Evidence integration is weak: while many data points carry bracketed references, the Sources section does not list or map actual citations, leaving multiple material claims effectively uncited. The Financials Snapshot is generic (revenue, margins, EPS, FCF, ROIC) and omits core sector KPIs for social media/online advertising (e.g., MAUs/DAUs trend table, ARPU, ad impressions and price per ad). Peer benchmarking is limited to qualitative mentions of TikTok/X without structured comparisons. Some redundancy appears (capex guidance and TikTok competition repeated across Analyst Note, Strategy, Bears, Risk, and Capital Allocation with modest incremental depth). Given the missing sector KPIs in the snapshot and unresolved citations, the comprehensiveness is capped at Fair despite otherwise broad section coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Detailed Source Citations",
+            "Sector KPIs table in Financials Snapshot"
+        ],
+        "sector_kpis_present": [
+            "DAUs (stated 3.43B, outside snapshot)",
+            "Threads MAUs (300M, outside snapshot)",
+            "Reels ad conversion improvement (+5%, outside snapshot)"
+        ],
+        "sector_kpis_missing": [
+            "ARPU",
+            "Ad Impressions Growth",
+            "Average Price per Ad",
+            "Time Spent/Reels Consumption Trend",
+            "Geographic ARPU trend"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARPU",
+            "Ad Impressions",
+            "Average Price per Ad",
+            "Time Spent/Reels Trend"
+        ],
+        "uncited_claims": [
+            "Q1 2025 revenue $42.31B and EPS $6.43",
+            "Q2 2025 revenue guidance $42.5\u201345.5B",
+            "2025 capex guidance raised to $64\u201372B",
+            "Reality Labs 2024 losses of $17.73B",
+            "EU \u20ac200M fine related to \u2018consent or pay\u2019 model",
+            "DAUs across platforms at 3.43B",
+            "Operating margin expanded to 41% in Q1 2025",
+            "Cash and short-term investments $77.81B",
+            "Dividend initiation and $0.525 quarterly payout"
+        ]
+    }
+}

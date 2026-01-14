@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for its primary valuation drivers, including a 13% revenue CAGR (FY2025-2029), an operating margin expansion to 32% by FY2029, and a WACC of 9.5%. These inputs are clearly stated and proximal to the fair value conclusion. The assumptions are generally consistent with the provided financial snapshot and the narrative regarding the shift toward higher-margin subscription services. However, the report fails to meet the 'Good' criteria due to the lack of quantified sensitivity analysis. While it qualitatively mentions that valuation could swing by 20\u201330% due to AI evolution and competitive dynamics, it does not provide specific scenario tables or sensitivity ranges for material drivers such as WACC, terminal growth, or revenue growth rates. Per the instruction's hard caps, the absence of quantified sensitivity analysis on material drivers limits the maximum possible grade to 'Fair.' Furthermore, while the revenue growth is justified by industry benchmarks (12% CAGR), the terminal growth rate of 4.0% is relatively high and lacks specific justification relative to long-term GDP or inflation expectations. The internal consistency is high, with zero numeric contradictions found between the text and tables, but the lack of stress-testing prevents a higher rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 13% for FY2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion from 28.5% in FY2025 to 32% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 9.5%, reflecting high beta (1.2)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "margin pressure from R&D spending (20% of revenue) could persist",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "FY2025 base EPS $5.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth of 4.0% is stated without specific economic justification."
+        ]
+    }
+}

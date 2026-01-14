@@ -1,0 +1,28 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal reasoning around platformization, network effects, and operating leverage. Mechanisms are articulated, such as \"Cloud-Delivered Security Services improve in effectiveness\" and \"incremental revenue flowing through at high marginal rates,\" linking product scale to margin expansion. Forecasts are grounded in explicit, quantified assumptions: \"revenue growth moderating to 12-15% annually,\" \"WACC 9.5% reflecting the company's growth profile,\" and \"Terminal growth rate: 3.0%.\" Data use is robust (ARR, margins, RPO, FCF), and revenue assumptions are partially benchmarked against market growth (15%+ CAGR), improving inference quality. The report acknowledges uncertainty via competition and integration risks and includes a quantified scenario range with \"bull case scenario of $250 per share\" and \"bear case of $150 per share,\" providing decision-relevant implications alongside \"implies 25% upside.\" However, sensitivities are not quantified (e.g., no EPS or margin impact under rate, churn, or integration delays), and several key assumptions (e.g., \"CyberArk acquisition adds approximately $800 million\") lack benchmarking or source triangulation. Overall, the report exceeds descriptive analysis with mechanisms and quantified assumptions, but the absence of detailed sensitivity analysis and limited benchmarking precludes an Excellent rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Synergy realization from CyberArk not operationally detailed",
+            "Margin expansion drivers not tied to specific cost buckets"
+        ],
+        "unsupported_assumptions": [
+            "CyberArk adds approximately $800 million in annual revenue",
+            "WACC 9.5% without peer or capital-structure benchmark",
+            "Terminal growth rate 3.0% without industry context"
+        ],
+        "lack_of_sensitivity": [
+            "No revenue or EPS sensitivity to competitive losses",
+            "No margin/WACC/growth-rate sensitivity ranges",
+            "Integration timing/retention risk not quantified"
+        ]
+    }
+}

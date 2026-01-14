@@ -1,0 +1,81 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report's assumptions are partially explicit but suffer from significant weaknesses. Key drivers like 9% revenue CAGR and operating margin expansion to 15% are stated but lack robust justification beyond general industry trends. The WACC of 7% and terminal growth of 3% are mentioned but not supported with market data or peer comparisons. Specificity is partial - some units and timeframes are provided, but causal drivers remain vague. A major contradiction exists: the report claims Amazon has \"never paid a dividend\" while simultaneously stating it's one of only two \"Magnificent Seven\" companies not paying dividends, suggesting others do pay dividends, which conflicts with the absolute \"never\" claim. No quantified sensitivity analysis is provided for any material drivers - only qualitative risk discussions. The assumptions feel somewhat hand-wavy, relying heavily on broad statements about secular trends rather than detailed historical analysis or peer benchmarking.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of roughly 9% over 2024\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion. After an operating margin of 10.7% in 2024, we forecast margins rising to the mid-teens within five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of about 7%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "long-term nominal growth of ~3% beyond our explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Cost of Equity ~8%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims Amazon has 'never paid a dividend' but also states it's one of only two 'Magnificent Seven' companies not paying dividends, implying others do pay dividends, which contradicts the absolute 'never' framing",
+                "locations": [
+                    "Capital Allocation section",
+                    "Capital Allocation section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 7% without market data",
+            "Terminal growth 3% without economic justification",
+            "Revenue CAGR 9% without detailed peer analysis"
+        ]
+    }
+}

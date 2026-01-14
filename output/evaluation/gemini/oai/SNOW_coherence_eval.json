@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report provides a comprehensive overview of Snowflake's business model and recent financial performance, but it is held back by significant internal contradictions between the narrative and the data tables. The most prominent discrepancy involves the long-term revenue targets: the 'Business Strategy' and 'Bulls Say' sections explicitly state a management goal of ~$10 billion in product revenue by FY2029, yet the 'Financials Snapshot' table forecasts total revenue of only $7.378 billion for that same year. This $2.6 billion gap is never addressed. Additionally, the valuation assumptions in the Appendix are mathematically inconsistent; the report cites a 10% WACC based on a 30% cost of equity, which is logically incompatible with the 'Net Cash positive' balance sheet described in the Capital Allocation section. There is also a lack of alignment regarding margin expansion, where the strategy section forecasts 'mid-teens' margins by the late decade, while the DCF model and financial table project a higher 20% margin by FY2029. While the report successfully incorporates very recent Q4 FY2025 data and maintains a professional tone, these quantitative mismatches force the reader to choose which set of assumptions to believe, violating the core requirement of a connected, singular argument.",
+    "evidence": [
+        "Management targets... ~$10B product revenue by FY2029 (Strategy) vs. FY2029 Revenue estimate of 7378.0 (Financials Snapshot)",
+        "WACC ~10.0% (Cost of equity ~30%, no tax) (Appendix) despite a Net Cash positive balance sheet (Capital Allocation)",
+        "Operating margin forecast of mid-teens by late decade (Strategy) vs. 20.0% in FY2029 (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

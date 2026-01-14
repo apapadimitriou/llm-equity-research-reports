@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report provides a structured and detailed analysis of Citigroup\u2019s turnaround, effectively linking strategic shifts to segment performance. However, it is subject to a hard cap of 'fair' due to significant internal contradictions regarding valuation assumptions. In the 'Fair Value and Profit Drivers' section, the report claims a 10% cost of equity based on an 8.5% risk-free rate and a 4.5% equity risk premium; mathematically, this sum is 13%, not 10%. Furthermore, the 8.5% risk-free rate cited in that section directly contradicts the 'Appendix,' which assumes a 3.5% risk-free rate. There is also a notable tension between the 'Analyst Note,' which describes the upside as 'limited,' and the 'Cover Block' and 'Fair Value' sections, which indicate the stock is trading at 0.8x its fair value\u2014representing a 25% projected gain, which is typically considered significant in equity research. While the narrative flow is generally smooth and the report successfully integrates recent Q1 2025 financial data, the financial model's integrity is undermined by these discrepancies. The EPS growth projected in the 'Financials Snapshot' (doubling from 2024 to 2029) also appears aggressively disconnected from the modest 2-3% revenue CAGR and the $20 billion buyback narrative, which would not sufficiently reduce the share count to achieve such a result without much higher margin expansion than the 22% terminal margin cited.",
+    "evidence": [
+        "Cost of equity ~10%, reflecting an 8.5% risk-free rate + 4.5% equity risk premium (Fair Value and Profit Drivers) \u2014 Mathematical error (sum is 13%).",
+        "Assume a risk-free rate of 3.5% (Appendix) vs 8.5% risk-free rate (Fair Value and Profit Drivers) \u2014 Direct contradiction in valuation inputs.",
+        "At a ~$68 share price, this leaves limited upside (Analyst Note) vs Price/FVE 0.8x (Cover Block) \u2014 25% upside is inconsistently characterized as limited."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

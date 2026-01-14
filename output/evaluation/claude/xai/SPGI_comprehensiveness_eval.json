@@ -1,0 +1,72 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. Critical gaps include missing actual historical financial data (all marked 'insufficient data'), absence of sector-specific KPIs for financial services (no metrics like ROE, book value multiples, or asset turnover), and lack of peer benchmarking or scenario analysis. The valuation section provides assumptions but fails to explicitly bridge operating drivers to the $550 fair value calculation. Sources are inconsistent and questionable, including 'Posts found on X' and future-dated articles (August 2025 article cited in July 2025 report). The ESG section lacks proper citations, and financial projections appear without supporting rationale. While the report covers expected sections structurally, the content is superficial with significant data gaps that render the analysis incomplete.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ROE",
+            "Book Value",
+            "Asset Turnover",
+            "Revenue per Employee",
+            "Client Retention Rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Future-dated source cited before publication date",
+                "locations": [
+                    "Sources",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "All historical data marked 'insufficient data' undermines analysis credibility",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ROE",
+            "Book Value Multiples",
+            "Asset Turnover",
+            "Client Retention Rates"
+        ],
+        "uncited_claims": [
+            "Forecasted $6 billion in free cash flow for FY2025 cited to social media posts",
+            "ESG peer comparison data lacks proper citation",
+            "Revenue projections lack supporting methodology"
+        ]
+    }
+}

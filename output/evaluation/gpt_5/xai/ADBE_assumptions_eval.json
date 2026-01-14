@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Key drivers are stated and numerically specific (revenue CAGR, margin trajectory, WACC inputs, terminal growth, EPS path), which supports explicitness and specificity. However, justification is weak: revenue growth nods to FY25 guidance, but margin expansion to 48%, terminal growth of 4%, and especially an 8.5% WACC (with rf 7%, ERP 6%, beta 1.1) lack reconciliation to history, peers, or a coherent capital structure. Sensitivity analysis is effectively absent; the report offers no quantified scenarios or ranges on major levers (revenue growth, margins, WACC, terminal growth) or their valuation impact, only a generic \u201c20% valuation swing,\u201d failing the stress-test criterion. Internal consistency is compromised by at least two contradictions: (1) the fair value \u201cimplying 22x FY26 EPS\u201d conflicts with the report\u2019s own FY26 EPS ($23.0), which would equate to ~17.4x at a $400 target; and (2) a net-cash balance sheet implies WACC should approximate COE (~13.6% from the report\u2019s own rf/ERP/beta inputs), not 8.5%, absent substantial cheap debt weighting. Several material assumptions are missing or opaque (tax rate, capex/working capital, share count trajectory), and some sources are flagged as \u201cinsufficient data.\u201d Given contradictions and lack of driver-level sensitivities, the assumptions quality is poor under the stated decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model projects revenue CAGR of 10% from FY25 to FY29, driven by 12% growth in Digital Media and 8% in Digital Experience",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 35% in FY24 to 48% by FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.5%, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.1.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from FY24 estimated $18.00\u2026 yielding FY29 EPS of $32.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "offset by $0.50 in higher taxes and share dilution",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Target multiple claim conflicts with provided EPS: $400 implies ~17.4x FY26 EPS ($23.0), not 22x.",
+                "locations": [
+                    "Fair Value and Profit Drivers (\"implying 22x FY26 EPS\")",
+                    "Financials Snapshot (FY26 EPS $23.0)"
+                ]
+            },
+            {
+                "description": "WACC 8.5% inconsistent with stated rf 7%, ERP 6%, beta 1.1 (COE ~13.6%) and net cash balance sheet (WACC should approximate COE).",
+                "locations": [
+                    "Fair Value and Profit Drivers (WACC inputs)",
+                    "Appendix (Key Valuation Assumptions: WACC 8.5%)",
+                    "Capital Allocation (net cash, low leverage)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without reconciling to rf/ERP/beta and capital structure",
+            "Terminal growth 4% without sourcing",
+            "Operating margin peak 48% without historical/peer support"
+        ]
+    }
+}

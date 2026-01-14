@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required headline sections and maintains a high standard of evidence integration with consistent in-text citations. However, it fails to meet the criteria for a 'Good' or 'Excellent' grade due to two primary deficiencies. First, the Financials Snapshot is generic and lacks essential sector-specific KPIs for a global investment bank; while some figures like AUM and credit reserves are mentioned in the Analyst Note, they are absent from the multi-year historical and forecast table, which omits CET1 ratios, AUM growth, and segmented revenue (Trading vs. Advisory). Second, the report exhibits significant redundancy; the strategic shift into 'Capital Solutions' and the exit from consumer credit card partnerships (Apple/GM) are repeated across the Analyst Note, Business Description, and Strategy sections with almost no additional depth or new data in subsequent mentions. Furthermore, while the valuation section identifies operating drivers, the report lacks a dedicated peer benchmarking table and formal scenario/sensitivity analysis. Per the mandatory decision rules, the omission of core sector KPIs in the Financials Snapshot and the presence of superficial repetition cap the grade at 'Fair'.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "CET1 Ratio",
+            "Assets Under Supervision (AUS/AUM)",
+            "Investment Banking Fees (Segmented)",
+            "Trading Revenue (Segmented)",
+            "Net Interest Margin (NIM)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "CET1 Ratio (Capital adequacy is core for banks)",
+            "AUM/AUS (Critical for Asset Management segment)",
+            "Segmented Revenue (Trading vs IB fees are the primary drivers)"
+        ],
+        "uncited_claims": []
+    }
+}

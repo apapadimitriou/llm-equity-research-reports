@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover/contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation & profit drivers, risk & uncertainty, capital allocation, financials snapshot, ESG, appendix, and sources. Depth is generally proportional, with credible in-text citations across most major claims and a clear valuation framework (explicit WACC, terminal growth, revenue CAGR, margin targets) linked to operating drivers (user growth, Reels/messaging monetization, capex). However, the Financials Snapshot table is generic and omits core sector KPIs for a social media/ads business (e.g., DAUs/MAUs time series, ARPU, ad impressions, price per ad, engagement/time spent, segment/region mix), triggering the hard cap to Fair. Peer benchmarking is limited to qualitative mentions (TikTok, brief ESG peer note) without structured comparative metrics. No scenario or sensitivity analysis is provided. There is minor redundancy where DAU scale and privacy fines/oversight board issues recur across Analyst Note, Bulls/Bears, Risk, and ESG with limited incremental depth. Overall, the report is well-structured and evidence-backed but lacks KPI completeness and peer/scenario extensions.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation",
+            "Risk",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "DAUs (3.43B, narrative)",
+            "MAUs (~4B, narrative)"
+        ],
+        "sector_kpis_missing": [
+            "ARPU (by region)",
+            "Ad Impressions",
+            "Average Price per Ad",
+            "Engagement/Time Spent",
+            "Revenue mix (Family of Apps vs Reality Labs in snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARPU",
+            "Ad Impressions",
+            "Average Price per Ad",
+            "Engagement/Time Spent",
+            "Segment/Region mix"
+        ],
+        "uncited_claims": [
+            "Market Cap ~$1.17 trillion in cover block not sourced"
+        ]
+    }
+}

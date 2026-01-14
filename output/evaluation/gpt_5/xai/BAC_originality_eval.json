@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report contains no clear syntheses or original theses. Most statements restate earnings headlines or generic bank-sector themes (scale, switching costs, digital engagement) without adding company-specific mechanisms or causal links. The valuation section uses a standard DCF with vanilla inputs (WACC, terminal growth, margin expansion) and does not introduce novel drivers (e.g., deposit betas, asset duration, funding mix) to explain BAC\u2019s margin/NII trajectory. Forecasts like 2025 EPS $3.50 and revenue CAGR 3.5% are presented without distinct catalysts, timing, or peer contrasts, limiting decision relevance. While the fair value ($45) and EPS forecast are company-specific, they lack unique insight and are not supported by differentiated analysis. Multiple items paraphrase sources (Q2 beat/miss details, 4% revenue growth, digital adoption from the earnings call), and the bull/bear cases are boilerplate. Given zero synthesis/original theses and a generic valuation framework, the originality of insights is low, triggering the \u201cPoor\u201d grade per decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "EPS exceeded expectations while revenue and net interest income fell short.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue increased 4% YoY driven by robust digital engagement and loan growth; investment banking fees posed challenges.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "We expect 2025 full-year EPS to reach $3.50, supported by stabilizing net interest margins and fee income recovery.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Our DCF fair value is $45, with margins expanding from 28% to 32% by 2029 due to efficiency gains and digital investments.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "BAC maintains a wide moat from scale and customer switching costs.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Risks include tariff-driven recession signals and prolonged high rates.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Earnings recap paraphrased from news sources",
+            "Generic bull/bear points applicable to any large U.S. bank"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

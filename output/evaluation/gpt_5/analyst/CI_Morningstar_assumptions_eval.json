@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are largely explicit and proximate to the forecasts. The report states total revenue CAGR, segment growth cadences, margin directionality, EPS CAGR, and capital structure inputs (WACC/COE, long-run tax) alongside a detailed forecast table including share count declines, which supports traceability. Specificity is solid: magnitudes, units, and horizons are given (e.g., \u201c5% compounded annually through 2029,\u201d WACC 8.1%, tax 21.5%, share count path). Internal consistency is generally clean: stated CAGRs reconcile to the table, and EPS growth aligns with the forecast and buyback trajectory. However, justification is only partial. The narrative references drivers like Evernorth growth, MA divestiture, and cross-selling, but most numerical inputs (e.g., 5% revenue CAGR, 10% EPS CAGR, 9% COE, 8.1% WACC, Stage II settings) lack benchmarking to multi-year history, peers, or cited sources, and margin improvement is asserted without quantified bridges by segment or history. Critically, there is no quantified sensitivity or scenario analysis on material levers (e.g., PBM regulation impacts, medical cost trend/MLR, WACC/terminal assumptions, revenue growth bands), which caps the grade at Fair per the decision rules. Overall, explicit and specific inputs are present and consistent, but evidence is limited and sensitivities are absent.",
+    "assumptions_extracted": [
+        {
+            "quote": "During the next five years, we assume revenue grows 5% compounded annually through 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect Cigna's Evernorth ... to lead the way with revenue growth in the midsingle digits compounded annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "its legacy medical insurance revenue should grow in the low single digits... Excluding that, the medical insurance business should grow in the midsingle digits",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cigna's margins should improve a bit, especially after divesting the lower-margin Medicare Advantage business.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we expect Cigna's earnings per share to grow about 10% compounded annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Cost of Equity % 9.0 ... Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 262 245 229 215 201",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital",
+            "segment_margins/MLR",
+            "terminal_growth_g"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.1% without source",
+            "Cost of Equity 9.0% without source",
+            "Stage II Investment Rate 30.0% without source"
+        ]
+    }
+}

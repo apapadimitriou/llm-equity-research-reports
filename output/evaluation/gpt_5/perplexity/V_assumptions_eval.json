@@ -1,0 +1,122 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report lists several core assumptions (revenue CAGR, margin range, WACC, terminal growth, tax rate, EPS, fair value) and places many of them near the valuation discussion, satisfying explicitness. Specificity is generally strong, with numeric ranges, units, and horizons (e.g., \u201c9\u201312% CAGR through 2027\u201d, \u201c65\u201368% margin\u201d, \u201cWACC 8.5%\u201d, \u201cterminal growth 3%\u201d). However, justification is weak: the model inputs (WACC, terminal growth, tax rate, margin path) lack evidence-based support from history, peers, or cited sources; rationales are qualitative. Internal consistency is compromised by at least two numeric contradictions: revenue by segment totals far exceed the stated Q2 revenue, and ROIC claims (87% average) conflict with the report\u2019s own financial snapshot (FY2022 ROIC 28.5%). Sensitivity/scenario analysis is minimal and not driver-based; a single fair value range is provided without tying outcomes to specific levers, which fails to stress-test material drivers. Given these contradictions and lack of robust sensitivities, the assumptions quality falls to Poor despite decent explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth is projected at a 9-12% compound annual rate through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to remain in the 65-68% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital is estimated at 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 21.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Earnings per share is projected to reach $11.30 in FY2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Visa's fair value estimate of $385",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Operating margin progression: 66.5% to 68.7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Sensitivity analysis suggests fair value ranges from $350-$420",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Sum of revenue components ($4.4B + $4.7B + $3.3B + $0.937B = $13.337B) conflicts with stated Q2 FY2025 total revenue of $9.6B.",
+                "locations": [
+                    "Business Description",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Claimed ROIC averaged 87% (2017\u20132022) conflicts with Financials Snapshot showing FY2022 ROIC 28.5%.",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3% without rationale",
+            "Tax rate 21% without support",
+            "Operating margin range/progression without benchmark evidence",
+            "Revenue CAGR assumptions without reconciliation to history/peers"
+        ]
+    }
+}

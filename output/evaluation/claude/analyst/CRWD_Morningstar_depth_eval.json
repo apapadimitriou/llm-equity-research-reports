@@ -1,0 +1,21 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "This CrowdStrike report demonstrates solid analytical depth with clear causal mechanisms and explicit assumptions. The analyst provides quantified reasoning such as \"adjusted margins contracted 490 basis points\" due to the July outage and forecasts \"22% compound annual growth rate over the next five years.\" Key assumptions are benchmarked, including \"WACC ~8.9%\" and \"Stage II EBI Growth Rate 14.3%.\" The report explains causal relationships like \"vendor consolidation drives upside\" and \"bundling discounts meeting tangible customer demand.\" However, while assumptions are explicit and some benchmarked, the report lacks comprehensive scenario analysis or quantified sensitivity testing. The analyst mentions expectations like \"2030 adjusted margins closing in on 30%\" but doesn't provide ranges or stress-test key variables. Actionable implications are present, maintaining the \"$330 per share fair value estimate\" with clear overvaluation assessment.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [],
+        "unsupported_assumptions": [],
+        "lack_of_sensitivity": [
+            "No quantified scenarios for margin recovery timeline",
+            "Fair value estimate lacks sensitivity ranges",
+            "Growth assumptions not stress-tested across market conditions"
+        ]
+    }
+}

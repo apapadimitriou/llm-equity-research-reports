@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered without proper justification. While some key parameters are mentioned (6% revenue CAGR, 7.5% WACC, 3% terminal growth), they lack detailed support or derivation. The revenue CAGR is supposedly 'based on Q2 growth and guidance' but Q2 showed 9% growth, making 6% forward-looking CAGR unexplained. The WACC calculation claims beta 0.8 and 4% risk-free rate but doesn't show how this yields 7.5%. Operating margin assumptions (improving from unspecified current levels to 35% by 2029) are completely unjustified. Most critically, there are no sensitivity analyses or scenarios provided for any material drivers. The financials table shows 'insufficient data' for all historical periods, making it impossible to validate assumptions against track record. The assumptions that do exist are not explicit about their derivation or proximal to the forecasts they drive.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 6% over the next five years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC of 7.5%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "operating margins improving to 35% by 2029 from current levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.5%, incorporating a beta of 0.8 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 revenue growth of 9% but forward CAGR assumption of 6% without explanation for the disconnect",
+                "locations": [
+                    "Analyst Note Q2 9% growth",
+                    "Fair Value section 6% CAGR"
+                ]
+            },
+            {
+                "description": "WACC calculation inconsistent - claims beta 0.8, risk-free 4%, equity risk premium 5% but these don't reconcile to 7.5% WACC",
+                "locations": [
+                    "Fair Value section WACC components",
+                    "Appendix WACC 7.5%"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "6% revenue CAGR despite 9% Q2 growth",
+            "35% operating margin target without current baseline",
+            "3% terminal growth without industry context"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, sources) with reasonable balance. Valuation includes explicit drivers (segment revenue growth, margin expansion, WACC) and an EPS bridge, linking operations to the fair value. However, the Financials Snapshot omits core sector KPIs for a capital markets/wealth manager (e.g., NIM/NII, CET1, provisions, ROE, AUM, efficiency ratio), triggering the hard cap. Evidence integration is mixed: some key claims rely on social media posts and several material items (dividend yield, payout ratio, buybacks, ROIC history, peer multiples) lack citations. Peer context is qualitative only, with no benchmarking table or metrics. Scenario/sensitivity analysis is absent. There is minor redundancy (e.g., investment banking recovery and NIM pressure repeated across the Analyst Note and Bulls/Bears). A notable internal inconsistency exists between the raised 2025 EPS in the Analyst Note ($7.50) and the 2025 EPS forecast in the Financials Snapshot and valuation ($7.30). Overall, while the structure is solid and the valuation linkage present, missing sector KPIs and sourcing gaps constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Return on Equity (ROE)",
+            "Assets Under Management (AUM)",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Analyst Note raises 2025 EPS forecast to $7.50, while Financials Snapshot and Valuation sections show 2025 EPS of $7.30",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "Loan Loss Provisions",
+            "CET1",
+            "ROE",
+            "AUM",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Dividend yield 3% and 50% payout ratio in Capital Allocation lack source",
+            "Buybacks totaled $5 billion in 2024 without citation",
+            "Historical ROIC averaging 8% over five years without source",
+            "EV/EBITDA of 10x 'in line with peers' lacks benchmarking/source"
+        ]
+    }
+}

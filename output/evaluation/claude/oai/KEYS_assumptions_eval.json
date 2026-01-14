@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered without proper justification. While the Appendix mentions key DCF inputs (WACC ~9%, terminal growth ~2%, tax rate ~15%), these critical assumptions lack any supporting evidence or rationale. The revenue growth forecast of '~5-6% CAGR' and operating margins of '27-29%' are stated without historical benchmarks, peer comparisons, or clear drivers. Multiple internal contradictions exist: EPS drops from $5.9 to $3.5 in FY2024 then jumps to $6.0 in FY2025F without explanation; operating margins show inconsistent patterns (25.5% to 24.4% to 27.3% to 27.0%); and ROIC fluctuates wildly (28% to 24% to 27% to 25%) with no underlying logic. The report provides no sensitivity analysis or scenario testing for any material drivers. The fair value estimate of $170 appears to be derived from unstated assumptions, making the valuation effectively a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a WACC of ~9% and terminal growth ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2025\u201329 revenue growing ~5\u20136% per year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "stable operating margin around 27\u201329%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Tax rate ~15%; Share count ~174M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "revenue_growth",
+            "margin/efficiency",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS drops from $5.9 (FY2023) to $3.5 (FY2024) then jumps to $6.0 (FY2025F) without explanation",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Operating margins fluctuate inconsistently: 25.5% to 24.4% to 27.3% to 27.0% without underlying rationale",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Terminal growth 2% without justification",
+            "Revenue growth 5-6% without benchmarks",
+            "Operating margin 27-29% without historical support"
+        ]
+    }
+}

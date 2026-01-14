@@ -1,0 +1,66 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates mixed quality in assumptions. Key assumptions are explicitly stated, including revenue CAGR of 22% over five years, gross margin expansion to mid-80s range, and WACC of 8.9%. These are reasonably well-justified with references to the company's land-and-expand model, historical performance, and industry trends. The financial tables provide specific units and time horizons. However, the report is significantly limited by the complete absence of quantified sensitivity analysis or scenario testing for any material drivers. While the analyst mentions risks and uncertainty factors qualitatively, there are no stress tests, ranges, or alternative scenarios provided for revenue growth, margins, WACC, or other key valuation inputs. The assumptions appear internally consistent across narrative and tables, with no major contradictions identified. The lack of quantified sensitivities caps the grade at Fair despite otherwise solid assumption presentation and justification.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast CrowdStrike's revenue growing at a 22% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we are modeling GAAP gross margins to expand to the mid-80s range over our 10-year explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 14.3",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 247",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

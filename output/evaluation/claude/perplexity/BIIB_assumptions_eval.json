@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without explicit connection to forecasts. While the Financials Snapshot table provides revenue and margin projections through 2029, the underlying assumptions driving these numbers are not clearly stated. Key drivers like the 3.5% revenue CAGR, terminal growth of 2.5%, and WACC of 7.76% appear only in a brief appendix without justification or sourcing. Peak sales estimates for salanersen ($1.8B) and SKYCLARYS ($500M) lack supporting analysis or peer comparisons. The report contains internal contradictions, such as projecting revenue growth resumption while acknowledging accelerating MS franchise decline. No sensitivity analysis or scenario modeling is provided for any material assumptions. Most critically, the valuation methodology and key inputs remain black-box, with fair value of $198.64 appearing without transparent calculation or stress-testing of underlying parameters.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029: 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 7.76%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Peak sales estimates: Salanersen $1.8B, SKYCLARYS $500M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to 25-27% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "MS franchise decline rate: 6% annually through 2027",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Projects revenue growth resumption (3.5% CAGR) while acknowledging MS franchise decline may 'accelerate beyond current projections' and stating 'execution risk remains elevated'",
+                "locations": [
+                    "Financials Snapshot section",
+                    "Risk & Uncertainty section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.76% without source",
+            "Terminal growth 2.5% without justification",
+            "Peak sales estimates without peer comparison",
+            "Revenue CAGR 3.5% without supporting analysis"
+        ]
+    }
+}

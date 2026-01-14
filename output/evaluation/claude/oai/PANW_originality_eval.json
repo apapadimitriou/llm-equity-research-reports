@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report demonstrates minimal originality, relying heavily on copied content from public sources. The vast majority of insights are direct paraphrases from Reuters articles and SEC filings without meaningful synthesis. Key statements like 'AI-driven threats, cloud migration, and remote work are cited as key drivers' and 'Next-Gen Security ARR reached $4.8B in Q2, up 37% year-over-year' are lifted directly from sources. The analysis lacks company-specific angles beyond what's already public. The valuation section uses generic DCF assumptions (WACC ~9%, terminal growth 2.5%) without novel drivers or mechanisms. Even critical commentary about the CyberArk acquisition (1% ROI, $16B market cap loss) is copied from Reuters Breakingviews rather than original analysis. No meaningful synthesis connects multiple data points into new conclusions, and there are no original theses with specific catalysts or timelines.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI-driven threats, cloud migration, and remote work are cited as key drivers",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Next-Gen Security ARR reached $4.8B in Q2, up 37% year-over-year",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The CyberArk deal's 1% projected ROI and $16B market cap loss",
+                "classification": "Copied",
+                "decision_relevant": true
+            },
+            {
+                "text": "Platform strategy encourages clients to consolidate security tools",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "High subscription retention creates revenue visibility and stickiness",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue grows at ~15% in FY2025, slowing to ~7-8% by FY2029",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions (WACC 9%, terminal growth 2.5%)",
+            "Extensive copying from Reuters articles",
+            "Boilerplate cybersecurity demand drivers",
+            "Standard subscription business model commentary"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

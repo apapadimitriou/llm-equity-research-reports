@@ -1,0 +1,122 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are mostly explicit and proximate to the forecasts: revenue growth, margins, WACC/COE, tax rate, Stage II DCF inputs, and share count are stated with figures and horizons. Specificity is solid: the report quantifies 5% average annual top-line growth through 2029, operating margin trajectory in tables, WACC 7.0% with COE 7.5% and pre-tax debt 6.5%, long-run tax rate 19%, Stage II EBI growth 5%, investment rate 15%, and perpetuity year 20, plus projected diluted shares. Justification is partial: narrative cites product efficacy/launch momentum (Skyrizi/Rinvoq) and industry policy/tariff context, but offers limited reconciliation for the sharp margin expansion beyond \u201cfairly stable,\u201d and WACC inputs lack cited sources. Consistency has one clear numeric contradiction between tables (2025 net income), triggering the Fair cap. Sensitivity is present and quantified at the industry level (24% US price alignment impact; 25% tariff \u21d2 ~2-pt margin headwind, assumed ending by 2026), but not tied to AbbVie-specific valuation deltas. Overall, assumptions are explicit and specific, with partial justification and quantified but broad sensitivities; the single contradiction and lack of AbbVie-specific scenario valuation impacts cap the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We incorporate roughly 5% average annual top-line growth into our model through 2029",
+            "location": {
+                "section": "AbbVie Earnings: Raising Our Fair Value Estimate on Solid Long-Term Outlook; Shares Fairly Valued",
+                "page": "9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect fairly stable operating margins as new immunology drugs carry strong enough margins to offset the lost sales on high-margin Humira.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we use a 7.5% cost of equity and market rates for the cost of debt.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.0",
+            "location": {
+                "section": "Key Valuation Drivers (Discounted Cash Flow Valuation)",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers (Discounted Cash Flow Valuation)",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers (Discounted Cash Flow Valuation)",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Perpetuity Year 20",
+            "location": {
+                "section": "Key Valuation Drivers (Discounted Cash Flow Valuation)",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "ProjectedDilutedShares 1,769",
+            "location": {
+                "section": "Key Valuation Drivers (Discounted Cash Flow Valuation)",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We assume pharmaceutical tariffs are enacted but do not last after 2026\u2026 a 25% tariff would only amount to a 2-percentage-point operating margin headwind in the worst case",
+            "location": {
+                "section": "Biopharma Industry: We Anticipate Tariffs to Bring Short-Term Margin Pressure; No Valuation Changes",
+                "page": "8-9"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "bringing US prices in line with European prices\u2026 would result in a 24% hit to US drug revenue",
+            "location": {
+                "section": "Analyst Note (Executive Order on Drug Prices)",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 Net Income figure differs between tables (14,665 vs 21,153)",
+                "locations": [
+                    "Morningstar Valuation Model Summary (page 13)",
+                    "Forecast Revisions (page 14)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth (explicit growth rate at perpetuity not stated)",
+            "capex (no explicit capital spending assumptions)",
+            "product-level sales assumptions for Skyrizi/Rinvoq (not itemized in model)"
+        ],
+        "unjustified_parameters": [
+            "WACC/COE inputs lack cited sources (7.0% WACC; 7.5% COE)",
+            "Operating margin expansion to ~37% by 2029 characterized as 'fairly stable' without quantitative driver reconciliation"
+        ]
+    }
+}

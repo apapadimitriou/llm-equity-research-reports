@@ -1,0 +1,25 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates strong analytical depth by moving beyond descriptive financial reporting to explain the causal relationship between Meta's aggressive AI capital expenditure and future margin compression. Specifically, it details the 'depreciation bomb' mechanism, where massive infrastructure spending leads to accelerated non-cash expenses that suppress GAAP operating income ('depreciation directly reduces GAAP operating income'). Assumptions for the DCF ('WACC of 9.5%... terminal growth rate of 3.5%') are explicit, and the report provides excellent benchmarking of capital intensity against mega-cap peers ('CapEx as a percentage of revenue... set to diverge significantly'). While it identifies key risks and includes a qualitative Bull/Bear debate, it falls short of an 'Excellent' grade because it lacks quantified sensitivity tables or multi-scenario financial outputs. It mentions that the 'valuation is highly sensitive to changes' in WACC but fails to provide the specific numerical impact of those changes. The implications are actionable, linking the 'unfavorable asymmetric risk profile' to a HOLD rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Specific useful life assumptions for AI servers not disclosed",
+            "Revenue impact of Threads monetization not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth rate of 3.5% lacks macro or industry benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "Sensitivity analysis mentioned but no quantified ranges provided",
+            "No quantified bear case for ad pricing degradation"
+        ]
+    }
+}

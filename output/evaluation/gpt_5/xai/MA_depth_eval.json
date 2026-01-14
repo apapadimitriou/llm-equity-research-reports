@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates meaningful analytical depth by linking results to underlying drivers and quantifying key assumptions. It provides clear causal explanations for recent performance and cost dynamics (\u201cgrowth was driven by a 17% rise in switched transactions\u201d; \u201coperating expenses rose 12% due to investments in technology\u201d), and ties forward-looking forecasts to explicit levers (\u201cWe project revenue CAGR of 12% from 2025 to 2029\u201d). Data use is relatively strong: the DCF inputs are specified (\u201cWACC is estimated at 8.5%\u201d; \u201cTerminal growth rate is 4%\u201d), margin expansion is forecast with rationale (scale efficiencies), and an EPS bridge decomposes growth. There is some benchmarking (cashless growth 8\u201310%, ROIC>WACC) and valuation cross-checks via implied P/E and EV/sales. Uncertainty is acknowledged with quantified ranges (\u201cpotentially impacting 10\u201315% of revenue\u201d; \u201ccould swing earnings by 15\u201320% in adverse scenarios\u201d), but sensitivities or scenario analysis are not tied to valuation or specific drivers (e.g., cross-border volatility, fee caps) and no parameter ranges are stress-tested (WACC, terminal growth, margins). Actionable implications exist via a stated fair value and a note that valuation appears full, but conditional decision triggers are limited. Overall, mechanisms and quantified assumptions are solid, yet the absence of explicit, quantified sensitivities/scenarios constrains depth.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "VAS growth \u2192 margin expansion not decomposed",
+            "Regulatory fee caps \u2192 EPS/valuation transmission not modeled",
+            "Cross-border volume \u2192 revenue elasticity not specified"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 4% with minimal benchmarking",
+            "Exit multiple 25x not justified by comps",
+            "Revenue CAGR 12% vs market 8\u201310% not reconciled"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC or terminal growth sensitivity",
+            "No scenarios for cross-border/travel slowdown",
+            "Regulatory 10\u201315% revenue impact not mapped to DCF"
+        ]
+    }
+}

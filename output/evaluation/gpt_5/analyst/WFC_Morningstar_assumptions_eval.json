@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report states most key drivers near the forecasts they inform, with numerical targets for NIM, NII growth, efficiency ratio, noninterest revenue CAGR, cost of equity, Stage II growth, and share count, so explicitness is reasonable. Specificity is solid: magnitudes, units, and timeframes (e.g., 2025\u20132027 NIM, 10-year noninterest revenue CAGR, and share count trajectory) are generally clear and tied to model tables. Justification is partial: some assumptions reference business context (asset cap removal, asset sensitivity, deposit franchise) and macro rate paths, but many core parameters (e.g., 2.5% fee CAGR, 3% Stage II net income growth, 9% COE) lack supporting evidence from multi-year history, peer benchmarks, or cited sources. Internal consistency has a notable numeric contradiction between narrative NIM (compression to ~2.70% in 2025 and 2.66% in 2026) and the model table showing 2.8% (2025) and 2.7% (2026). Stress-testing is limited; while there is a quantified sector bear-case (midteens FVE decrease) in an archived note, there are no company-specific sensitivities quantifying valuation impacts across major levers (rates/NIM, credit cost, efficiency). Overall, explicit and specific inputs with a clean model layout, but modest justification and a text\u2013table inconsistency constrain the grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "expect net interest margin, or NIM, to compress slightly to around 2.70% in 2025 ... NIM of 2.66% in 2026.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Overall, NIM compression and modest growth in loan and deposit balances lead to a NII growth of about 1% in 2025.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "we project the federal-funds rate to reach 2.50% by the end of 2027.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Overall, we project a 2.5% noninterest revenue compounded annual growth rate in the next 10 years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "the bank will eventually bring its efficiency ratio back down to roughly 61%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Key Valuation Drivers",
+                "page": "22"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Key Valuation Drivers",
+                "page": "22"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 3,400 ... 2,963",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "21"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative NIM compression to ~2.70% in 2025 and 2.66% in 2026 conflicts with model table showing 2.8% (2025) and 2.7% (2026).",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.12)",
+                    "Morningstar Valuation Model Summary \u2013 Margins & Returns (p.21)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "WACC/discount_rate detail",
+            "loan growth CAGR (beyond qualitative)",
+            "buyback magnitude/pace",
+            "credit_loss methodology/justification"
+        ],
+        "unjustified_parameters": [
+            "Cost of Equity 9.0% without source",
+            "Stage II Net Income Growth Rate 3.0% without support",
+            "Noninterest revenue 2.5% 10-year CAGR without evidence"
+        ]
+    }
+}

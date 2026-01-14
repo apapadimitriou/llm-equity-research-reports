@@ -1,0 +1,61 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "This report is broadly comprehensive. It includes a clear cover block and contents, dated Analyst Notes, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers with explicit DCF parameters, Risk & Uncertainty, Capital Allocation, a robust multi\u2011year Financials snapshot with forecasts, ESG/controversies via Sustainalytics, and an Appendix detailing methodology and disclosures. Sector-appropriate biopharma KPIs appear through pipeline/trial data (A1C and weight-loss outcomes), R&D intensity (low\u2011 to mid\u201120s percent of sales), patent protections, and GLP\u20111 market share and pricing assumptions; peer benchmarking is thorough with multiple comparators. Evidence is consistently tied to dated internal notes and tables, though formal external source citations for policy assertions are limited. Linkage from operating drivers (GLP\u20111 penetration, pricing, margin expansion) to valuation is explicit. Minor redundancy exists where GLP\u20111 market sizing is repeated in valuation and Analyst Notes. The main gaps are the absence of a formal scenario/sensitivity analysis and limited product-level KPI tables (no sales by drug or pipeline phase counts). These gaps modestly detract from completeness but do not outweigh the overall scope and integration.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Formal Sources Citations"
+        ],
+        "sector_kpis_present": [
+            "Pipeline/trial data (A1C change, weight loss)",
+            "R&D as % of sales (low\u2013mid 20s)",
+            "Patent protection timelines (e.g., GLP-1 to 2036)",
+            "GLP-1 market share/sales projections and pricing"
+        ],
+        "sector_kpis_missing": [
+            "Product-level sales breakdown by drug",
+            "Pipeline phase counts/status table"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Long-run tax rate assumption (19%) in DCF differs from industry note expectation that tax rates could rise closer to 21%",
+                "locations": [
+                    "Valuation Model Summary",
+                    "Biopharma Industry note (3 Apr 2025)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Sales by product (e.g., Mounjaro/Zepbound, Verzenio, Taltz) in tables",
+            "Pipeline phase counts/status",
+            "Explicit R&D expense line in Financials Snapshot"
+        ],
+        "uncited_claims": [
+            "US drug prices roughly double those in major international markets"
+        ]
+    }
+}

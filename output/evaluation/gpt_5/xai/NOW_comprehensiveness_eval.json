@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with a clear contents page and includes an Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. The valuation section explicitly ties operating drivers (revenue CAGR, margin expansion, WACC) to the fair value outcome and provides an EPS bridge, which is positive. However, sector-appropriate SaaS KPIs are largely absent from the Financials Snapshot; ARR, NRR, billings, and cRPO are not tabulated, and customer cohort metrics are missing. Evidence integration is inconsistent: several material claims (RPO +25%, ACV +15%, FY2024 buybacks/dividend) rely on \u201cinsufficient data\u201d estimates or social media posts without firm sourcing. Peer benchmarking is absent beyond brief mentions of competitors, and there is no scenario/sensitivity analysis. Some points (elongated sales cycles, high switching costs) are repeated across sections with limited additional depth. These gaps\u2014especially missing core SaaS KPIs in the financials and uncited claims\u2014cap comprehensiveness at Fair despite otherwise broad section coverage and a reasonably linked valuation.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Subscription Revenue Growth",
+            "Renewal Rate (98%)",
+            "Estimated RPO Growth (+25%)",
+            "Average Contract Value (+15% YoY)"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "cRPO",
+            "Customer count >$1M ACV"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Mix of non-GAAP operating margin (30.5% in Q2) vs GAAP-style operating margin assumptions (20% 2025E) without clarity on basis",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "cRPO",
+            "Customer count >$1M ACV"
+        ],
+        "uncited_claims": [
+            "Remaining performance obligations +25% based on social media posts (no firm source)",
+            "Average contract values +15% YoY (no firm source)",
+            "FY2024 share buybacks $1.5B (estimated; no firm source)",
+            "Dividend initiated in 2024 (no firm source)"
+        ]
+    }
+}

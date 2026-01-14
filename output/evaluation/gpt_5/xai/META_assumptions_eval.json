@@ -1,0 +1,118 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is moderate: the report lists several core drivers near the valuation (revenue CAGR 15%, average operating margin, WACC 9%, terminal growth 3%), and provides point forecasts for EPS and FCF. Specificity is decent on units and horizon (5-year DCF, 2025\u20132029 CAGR, percentages), but several inputs lack operational detail (no tax rate, share count/dilution, or working-capital assumptions). Justification is weak-to-partial: revenue CAGR is tied vaguely to \u201cQ1 trends,\u201d margin to a single quarter, and terminal growth to a generic GDP proxy; WACC is only partly decomposed (beta and risk-free rate) without ERP or capital structure. Consistency is poor: there are at least two numeric contradictions\u2014average operating margin stated as 40% in one section versus 41% in the appendix, and forward P/E \u201c15x at fair value\u201d versus \u201c25x P/E\u201d in the same paragraph of implied multiples. Sensitivity/stress-testing is absent: no quantified scenarios for revenue growth, margins, WACC, capex, or terminal growth, and no valuation impact ranges beyond a generic 20\u201330% uncertainty statement. Given the contradictions and lack of sensitivities on material drivers, the assumptions quality merits a Poor grade per the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project revenue CAGR of 15% from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to average 40%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Avg Op Margin 41.0%",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 9%, reflecting Meta's beta of 1.2 and cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "full-year 2025 guidance at $64 billion to $72 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Starting from 2024 EPS (insufficient data; assuming $18 ...), we forecast 2025 EPS at $22 ... By 2029, EPS reaches $40",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "implying a forward P/E of 15x at fair value. Implied multiples include 10x EV/sales and 25x P/E",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Average operating margin stated as 40% vs 41% in Appendix",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix - Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "Forward P/E said to be 15x at fair value vs 25x in implied multiples",
+                "locations": [
+                    "Fair Value and Profit Drivers (same paragraph)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count/dilution",
+            "working_capital",
+            "segment-level margin path",
+            "SBC treatment",
+            "capex path beyond 2025",
+            "DCF bridge from operating metrics to FCF"
+        ],
+        "unjustified_parameters": [
+            "Revenue CAGR 15% justified only by 'Q1 trends'",
+            "Avg Op Margin (40\u201341%) anchored to a single quarter",
+            "WACC 9% without full ERP/debt structure support",
+            "Terminal growth 3% as generic GDP proxy",
+            "Assumed 2024 EPS $18 without source"
+        ]
+    }
+}

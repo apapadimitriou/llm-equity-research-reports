@@ -1,0 +1,75 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials, ESG, Appendix, Sources), and the valuation section offers explicit linkages from operating drivers (revenue CAGR, margin expansion, EPS bridge) to the DCF-derived fair value. However, the Financials Snapshot is generic, with historicals labeled as \u201cinsufficient data,\u201d and it omits multiple sector-specific biopharma KPIs (e.g., product-level sales, pipeline/trial timelines, peak sales assumptions, R&D intensity). Peer benchmarking is largely absent beyond cursory competitor mentions, and there is no scenario or sensitivity analysis. Evidence sourcing is inconsistent: several material claims are weakly supported or explicitly uncited, diminishing robustness. Redundancy appears in repeated cost-savings/margin-expansion themes across sections without added depth. These gaps materially limit comprehensiveness, especially for biotech where pipeline and product-level detail are crucial. Under the hard caps, missing \u22652 core sector KPIs in the Financials Snapshot constrains the grade to Fair despite adequate coverage of sections and reasonable valuation linkages.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Pipeline/Trial Data",
+            "Product-Level Sales Breakdown"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline/trial timelines and readouts",
+            "Product-level sales (Leqembi, Spinraza, MS)",
+            "Peak sales assumptions",
+            "R&D intensity (% of sales)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin reaches 35% by 2027 in Bulls vs 2029 in Financials Snapshot",
+                "locations": [
+                    "Bulls/Bears",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Report date precedes stated Q2 2025 results date",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Pipeline/trial timelines",
+            "Product-level sales by therapy",
+            "Peak sales assumptions",
+            "R&D intensity (% sales)"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating 22.5 (explicitly noted as insufficient citation)",
+            "Spinraza generated over $1.7B annually",
+            "Net debt approximately 0.5x EBITDA"
+        ]
+    }
+}

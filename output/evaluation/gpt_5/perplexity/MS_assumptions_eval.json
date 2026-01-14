@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation and forecast drivers are clearly stated and proximate to the sections they inform (Fair Value and Profit Drivers; Appendix), covering revenue growth by segment, operating margin, WACC, and terminal growth. Specificity is solid: assumptions include numeric ranges or CAGRs, time horizons (next five years; 2025\u20132029), and causal drivers (e.g., WM asset growth and fee expansion). However, justification is weak: the report does not tie these inputs to multi-year historical trends, peer benchmarks, or cited sources; WACC (9.5%), terminal growth (3.0%), and the operating margin range (28\u201330%) are asserted without evidence. Internal consistency appears clean, with these inputs aligning with the Financials Snapshot and Appendix (e.g., revenue CAGR 6.8% and operating margins within the stated range). A critical shortcoming is the lack of quantified sensitivity/scenario analysis for material drivers (revenue growth, margins, WACC, terminal growth), which triggers the hard cap to Fair. Several material assumptions are missing or opaque (tax rate, share count, capex, credit costs), further limiting auditability. Overall, the inputs are explicit and specific but insufficiently justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project revenue growth of approximately 6-8% annually over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Wealth Management net revenues growing at a 7% compound annual growth rate driven by 5% annual asset growth and modest fee expansion;",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Institutional Securities revenues growing at 6% annually with normalized trading revenues and continued investment banking recovery;",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Investment Management revenues growing at 8% annually on asset gathering and fee optimization.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume operating margins remain in the 28-30% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.8%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "ROIC"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 3.0% without source",
+            "Operating margin 28\u201330% without evidence",
+            "Segment revenue growth rates (6\u20138% overall; 7%/6%/8%) without historical/peer support"
+        ]
+    }
+}

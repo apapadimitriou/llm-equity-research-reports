@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, sources) with reasonable proportional depth and a coherent narrative. The valuation section explicitly links operating drivers (payment volume, value-added services growth, margin expansion, WACC/terminal growth) to the DCF-based fair value and provides an EPS bridge, which is a strength. However, comprehensiveness is undermined by two hard caps: (1) the Financials Snapshot omits core payments-network KPIs (e.g., total payment volume, cross-border mix, processed transactions, take rate/net revenue yield, client incentives %) despite citing them elsewhere; and (2) multiple material claims are uncited or marked \u201cinsufficient data\u201d (industry growth rates, regulatory impact, leverage/cash figures, buybacks, ESG ratings). Peer benchmarking is absent beyond cursory mentions, and scenario/sensitivity analysis is minimal (only a brief sensitivity note). Some data points (e.g., cross-border growth and 8% payment volume growth) are repeated across sections without added depth. There is also a potential inconsistency in describing deceleration versus prior-year growth. Overall, while the structure is robust and valuation linkage is present, missing KPI detail in the snapshot and inconsistent sourcing cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Detailed Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Payment Volume Growth",
+            "Cross-Border Volume Growth",
+            "Processed Transactions Growth",
+            "Cards in Force",
+            "Merchant Acceptance Locations"
+        ],
+        "sector_kpis_missing": [
+            "Total Payment Volume (TPV) levels",
+            "Cross-border revenue/mix",
+            "Take rate / Net revenue yield",
+            "Client incentives as % of gross revenue",
+            "Authorization/approval rates"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States payment volume growth decelerated versus prior period but cites 8% in Q2 FY25 and references 8% in Q2 FY24, implying no deceleration.",
+                "locations": [
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Total Payment Volume (TPV)",
+            "Cross-border revenue/mix",
+            "Take rate / Net revenue yield",
+            "Client incentives % of gross revenue",
+            "Authorization/approval rates"
+        ],
+        "uncited_claims": [
+            "Global digital payments projected to grow at 12% CAGR through 2030 (no source)",
+            "Regulatory actions could reduce revenues by 5\u201310% (no source)",
+            "Net debt at 0.5x EBITDA and cash > $15B (no source)",
+            "Dividend payout ratio targets 20% (no source)",
+            "Buybacks totaled $12B in FY2024 (no source)",
+            "Sustainalytics ESG Risk Rating 15.2 and peer comparison to Mastercard 16.5 (no source)"
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally complete, covering all required sections from the Analyst Note to ESG and Capital Allocation. It successfully links operating drivers (specifically the normalization of medical costs) to a valuation outcome and provides a basic scenario analysis. However, the report is capped at 'Fair' due to two primary failures. First, the Financials Snapshot table omits the two most critical sector-specific KPIs for a managed care organization: the Medical Care Ratio (MCR/MLR) and Membership/Enrollment figures. While mentioned in passing within the text, their absence from the multi-year financial summary violates the hard cap for sector-appropriate data. Second, the report suffers from significant redundancy; the return of Stephen Hemsley and the specific 13.7x P/E discount are repeated across five different sections (Analyst Note, Strategy, Bulls/Bears, Valuation, and ESG) with virtually no incremental depth. Finally, peer benchmarking is superficial, lacking a comparative table or detailed analysis of UNH's performance relative to Elevance or Cigna, which triggers a further level downgrade per the decision rules.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Medical Care Ratio (MCR)",
+            "Total Membership/Enrollment",
+            "Days Claims Payable (DCP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Care Ratio (MCR) missing from Financials Snapshot table",
+            "Membership/Enrollment data missing from Financials Snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

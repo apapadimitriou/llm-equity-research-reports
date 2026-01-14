@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates strong research and company-specific detail but falls short of providing truly original insights. While it contains 2-3 weak syntheses (linking outage costs to GAAP deterioration, connecting module adoption to switching costs), most analysis consists of restated financial metrics and generic competitive observations. The DCF valuation lacks novel drivers beyond standard assumptions. Key insights like 'premium valuation vs. post-outage headwinds' and 'land-and-expand stickiness' are company-specific but represent conventional analytical frameworks rather than unique theses. The report provides solid fundamental analysis but doesn't offer decision-relevant insights that meaningfully differentiate from standard equity research approaches.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "GAAP loss widened to $(113.0) million due to outage remediation costs vs $13.7 million profit prior year",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "67% of customers use 5+ modules creating high switching costs through deep platform integration",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Premium valuation (24x P/S) vs peers leaves little room for execution missteps",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Threat Graph creates network effects as more endpoints improve AI/ML detection for all customers",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Strong secular tailwinds from cloud migration and AI-driven threats",
+                "classification": "Generic",
+                "decision_relevant": false
+            },
+            {
+                "text": "Microsoft represents structural threat through bundling strategy",
+                "classification": "Generic",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Standard DCF with conventional assumptions",
+            "Generic competitive dynamics discussion",
+            "Boilerplate 'secular tailwinds' phrasing"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

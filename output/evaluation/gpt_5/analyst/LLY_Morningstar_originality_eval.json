@@ -1,0 +1,52 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report contains multiple company-specific, decision-relevant syntheses and at least two strong original theses. Notably, it quantifies a GLP-1 market trajectory (>$200B by 2031) with Lilly\u2019s $80B capture, ties volume growth and competitive entry to net price compression ($7,000 to $3,000 over 10 years), and embeds this into margin expectations\u2014clear mechanisms with numbers and timelines. It also offers an original thesis on orforglipron, with comparative efficacy/tolerability vs Ozempic, a $20B 2034 sales forecast, and near-term catalysts (Q3 obesity data). The margin cap (to ~46.7% by 2030) due to price competition is a quantified synthesis linked to competitive dynamics. Policy angles (Medicare coverage via overlapping indications) add a company-relevant pathway. While there is some boilerplate (wide moat, innovation platitudes), the valuation section includes novel drivers (penetration, pricing decay, patent timelines), and insights are not copied from headlines. The evidence includes explicit units, catalysts, and timelines, resulting in high decision relevance. Copied/generic content is limited, and peer-/company specificity is evident.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "We estimated that bringing US prices in line with European prices across US channels would result in a 24% hit to US drug revenue...",
+                "classification": "Synthesis",
+                "decision_relevant": false
+            },
+            {
+                "text": "We are raising our Eli Lilly fair value estimate to $650 per share from $620, after raising our assumptions for potential orforglipron sales, slightly countered by lower Kisunla.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Our assumptions for overall biopharma GLP-1 sales in 2031 surpass $200 billion... with Lilly capturing $80 billion; US net prices falling from roughly $7,000 annually to $3,000 in 10 years.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Price competition means that non-GAAP performance margin could only improve another 400 bps in the long run, from 42.6% in the quarter to 46.7% by 2030.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Orforglipron\u2019s phase 3 data and $20 billion sales forecast by 2034; upcoming obesity data (Attain-1) in Q3 will clarify competitiveness versus Novo\u2019s oral Wegovy.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "We think Novo and Lilly will gain Medicare obesity coverage via overlapping indications (e.g., sleep apnea, liver disease) rather than broad Part D expansion.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'wide moat' and 'innovative culture' phrasing"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": true,
+        "decision_relevant_insights_count": 5,
+        "copied_or_generic_count": 0
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": true,
+        "peer_specificity_detected": true
+    }
+}

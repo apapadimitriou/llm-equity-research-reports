@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicit and proximate to forecasts (revenue CAGR, margin path, WACC, terminal growth, and buyback-related share count), with clear magnitudes and horizons. Specificity is solid: the report states 2025\u20132029 revenue CAGR at 7%, margin rising to 20% by 2029, WACC 9.5%, and terminal growth 3%, plus a 10% share reduction assumption tied to a $15B buyback. Justification is partial: several assumptions are loosely anchored to guidance or general sector norms, with limited evidence (e.g., tweets/articles) and no multi-year peer benchmarks or detailed drivers beyond brief references to TPV growth and cost efficiencies. Internal consistency is mostly clean between narrative and tables; minor issues include \u201cmid-single-digit\u201d growth language versus ~7% forecasts, but no hard contradictions. Critically, there is no quantified sensitivity/scenario analysis for material levers (revenue/TPV, margins, WACC, terminal growth, buybacks), triggering a cap at Fair under the hard caps. Overall, the assumptions are stated and numerically specific but weakly justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes a revenue CAGR of 7% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve from 16% in 2024 to 20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 9.5%, reflecting fintech sector betas",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a 3% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "driven by TPV growth of 8-10% and modest account expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "assuming $15 billion program reduces shares by 10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "cost_of_debt"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without full build-up/source",
+            "Terminal growth 3% generic rationale",
+            "20% operating margin target weakly supported",
+            "10% share reduction from $15B buyback not evidenced"
+        ]
+    }
+}

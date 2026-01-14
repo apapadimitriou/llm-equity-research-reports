@@ -1,0 +1,101 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet the minimum standards for high-quality assumptions due to two critical violations of the grading rubric's hard caps. First, the report provides no quantified sensitivity or scenario analysis for material drivers such as revenue growth, operating margins, or WACC. While it qualitatively discusses risks like regulatory pressure and macroeconomic headwinds, it fails to provide the required quantified ranges or valuation impacts, which automatically caps the grade at 'Fair'. Second, the report contains multiple internal numeric contradictions between the narrative and the financial data. The 'Business Strategy & Outlook' section explicitly forecasts a 2024\u201329 revenue CAGR of ~13%, yet the 'Financials Snapshot' note assumes ~14% annual growth. Similarly, the narrative projects operating margins between 55\u201356%, but the financial table lists margins as high as 56.5% for 2027 and 2028. These inconsistencies, combined with the total absence of stress-testing, indicate a lack of internal coherence and auditability. Although the report is explicit regarding its WACC components (risk-free rate, ERP, beta) and share count projections, the failure to reconcile core growth and margin figures across the document necessitates a 'Poor' grade under the decision rules requiring a 'Poor' rating for two or more contradictions or one contradiction paired with no sensitivities.",
+    "assumptions_extracted": [
+        {
+            "quote": "2024\u201329 revenue CAGR of ~13%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "assume ~14% annual revenue growth (2024\u201329)",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins should stay high (~55\u201356%)",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "DCF model uses a risk-free rate ~4.0%, equity risk premium ~5.0%, beta ~0.95 (WACC ~8.0%)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "3% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Assumes diluted shares ~930M (2025) gradually declining to ~880M by 2029",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Tax rate ~16% effective",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR is stated as 13% in the Strategy and Fair Value sections but 14% in the Financials Snapshot note.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Operating margins are projected at 55-56% in the narrative, but the Financials table shows 56.5% for FY2027 and FY2028.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis"
+        ],
+        "unjustified_parameters": [
+            "3% terminal growth provided without specific economic or peer justification"
+        ]
+    }
+}

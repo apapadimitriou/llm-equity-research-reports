@@ -1,0 +1,25 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates clear causal reasoning and explicit, quantified assumptions, but lacks benchmarking of those assumptions and offers only limited sensitivity analysis. It links drivers to outcomes (e.g., margin expansion tied to scale and mix) and quantifies key inputs in the valuation model. Examples include \u201cOperating margin expansion is projected to occur gradually\u201d supported by \u201cscale efficiencies and higher-margin technology revenue growth,\u201d and explicit parameters like \u201cWACC: 9.5%\u201d and \u201cTerminal Growth Rate: 3.0%.\u201d It also uses data effectively, citing AUM, revenue growth, and tech growth (\u201ctechnology revenue increasing 16% year-over-year\u201d) and includes a valuation range (\u201cfair value estimates ranging from $1,050 to $1,350\u201d). However, the assumptions (WACC, terminal growth, target margins) are not benchmarked to peers, history, or market rates, and the sensitivity is high-level without mapping specific input changes to valuation or earnings effects. The discussion of regulatory risks is substantive but does not quantify potential financial impacts or provide scenario probabilities. Actionable elements (FVE vs. price, uncertainty rating) are present but not tied to explicit decision triggers or scenario-based guidance. Overall, strong mechanisms and quantification are offset by unbenchmarked assumptions and limited sensitivity depth, capping analytical depth at Fair.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Regulatory outcomes \u2192 earnings impact transmission not modeled",
+            "Private credit integration \u2192 fee uplift not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC 9.5% with no peer benchmark",
+            "Terminal Growth Rate 3.0% lacks justification"
+        ],
+        "lack_of_sensitivity": [
+            "No AUM drawdown or fee-rate compression sensitivities"
+        ]
+    }
+}

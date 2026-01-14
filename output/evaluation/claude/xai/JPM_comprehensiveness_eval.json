@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. Critical banking sector KPIs are systematically missing from the Financials Snapshot, including NIM, loan loss provisions, deposit growth rates, and loan-to-deposit ratios. The report repeatedly uses \"insufficient data\" placeholders throughout, indicating incomplete analysis. Valuation methodology lacks explicit linkage between operating drivers and fair value calculation - the DCF model mentions a $220 target but provides no detailed cash flow projections or sensitivity analysis. Sources are inconsistent, mixing credible outlets with vague \"Posts found on X\" citations. Multiple sections contain unsupported claims with no backing data. The report structure exists but content depth is severely lacking, with generic statements replacing sector-specific analysis expected for a major bank.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Detailed DCF Model"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROE mention"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Deposit Growth",
+            "Loan-to-Deposit Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims strong Q2 results but admits insufficient data for key metrics",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "States CET1 ratio around 14% but marks as insufficient data",
+                "locations": [
+                    "Capital Allocation",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Deposit Growth",
+            "Loan-to-Deposit Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ],
+        "uncited_claims": [
+            "Revenue CAGR of 4% over 2025-2029 assumption not supported by detailed analysis",
+            "Operating margins expanding to 38% by 2029 lacks justification",
+            "WACC calculation components not sourced",
+            "Multiple 'insufficient data' admissions throughout report"
+        ]
+    }
+}

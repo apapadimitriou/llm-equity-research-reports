@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation and forecast assumptions are generally explicit and placed close to the forecasts they inform (Fair Value and Profit Drivers; Appendix). Specificity is strong: ranges, units, and horizons are provided for revenue growth (20\u201322% for three years, moderating to 15\u201318%), gross margins (78\u201380%), FCF margin (35\u201338%), WACC (9.5%), terminal growth (4%), and peak operating margin (24%), with an EPS target for 2027. Internal consistency is largely clean, with assumptions reconciling to the Financials Snapshot (e.g., operating margin rising to 24% by 2029E; FCF margins trending toward 35\u201338%). Sensitivity/scenario analysis exists in the Appendix (base/bull/bear), quantified for several material drivers (revenue CAGR, WACC, terminal growth, peak margins) and shows fair value impacts. However, justification is partial: major parameters like WACC, terminal growth, gross margin stability, and FCF margin are asserted with limited evidence (no peer benchmarks, limited historical tie-outs). Material drivers such as tax rate, share count/dilution, and capex are missing/opaque. Given partial justification and limited sensitivity breadth beyond three scenarios, the assumptions quality merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue projections assume ServiceNow maintains subscription revenue growth rates of approximately 20-22% annually over the next three years, gradually moderating to 15-18% as the company reaches larger scale.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Gross margins should remain stable around 78-80% given the subscription software model, while operating margins have potential for gradual improvement from current levels toward industry-leading benchmarks.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The model assumes free cash flow margins stabilize around 35-38% over the medium term, reflecting mature subscription business characteristics.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted average cost of capital of approximately 9.5% reflects ServiceNow's strong balance sheet position, low financial leverage, and technology sector risk profile.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Earnings per share progression shows ServiceNow reaching approximately $12-14 per share by 2027, driven by revenue growth and modest margin expansion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal Growth Rate | 4.0% | 5.0% | 3.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC | 9.5% | 8.5% | 10.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Peak Operating Margin | 24.0% | 27.0% | 21.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source-backed derivation",
+            "Terminal growth 4% without cited market long-run benchmark",
+            "Gross margin stability at 78\u201380% without historical/peer evidence",
+            "FCF margin 35\u201338% without detailed underpinning"
+        ]
+    }
+}

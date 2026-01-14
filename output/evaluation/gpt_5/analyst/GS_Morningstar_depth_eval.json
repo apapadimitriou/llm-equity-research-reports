@@ -1,0 +1,24 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report demonstrates strong analytical depth with clear mechanisms, explicit assumptions, quantified forecasts, and several scenario-style considerations. It links outcomes to drivers across segments (e.g., brand, scale, regulation) and ties valuation to transparent inputs: \u201cWe use a 9.5% cost of equity,\u201d \u201cinvestment banking and trading of 3% annually,\u201d and a \u201clong-term 60% efficiency ratio target.\u201d Forecasts are quantified at segment level with supporting evidence (market shares, retention rates, leverage levels), and multiple comparative benchmarks (ROE vs COE, Dealogic shares, advisor churn). It addresses uncertainty and counterpoints, explicitly noting cyclicality and policy risks, and even revises its stance: \u201craise our Uncertainty Rating to High.\u201d The report includes quantified scenario elements: stress capital buffers \u201cfall by 1.5 and 1.2,\u201d with an alternative path if averaging isn\u2019t adopted, and sector-level downside in a tariff \u201cbear-case.\u201d Decision relevance is present via capital return capacity\u2014banks could \u201chold as much as 5% of its market cap\u201d in excess capital\u2014and caution on buybacks at premiums. While rate/trading sensitivities aren\u2019t modeled as explicit EPS deltas, the combination of mechanism-rich reasoning, quantified assumptions and scenarios/ranges, and investor-relevant implications meets a high bar for analytical depth.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "rate path \u2192 revenue sensitivity by segment not quantified",
+            "trading normalization magnitude not modeled explicitly"
+        ],
+        "unsupported_assumptions": [
+            "60% efficiency ratio by decade-end lacks peer benchmarking"
+        ],
+        "lack_of_sensitivity": [
+            "no range around 3% IB/trading growth"
+        ]
+    }
+}

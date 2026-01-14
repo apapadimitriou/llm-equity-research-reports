@@ -1,0 +1,87 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is highly explicit and internally consistent. Key drivers such as Revenue CAGR (4.8%), NII growth (1-3%), and the Efficiency Ratio (targeting 65%) are clearly stated and reconcile perfectly with the provided financial snapshot table. Justification is solid, leveraging management guidance, historical expense saving tracks ($12B), and peer/analyst benchmarks (Goldman Sachs). Specificity is high, with clear units and time horizons (e.g., 2025-2029). However, the report fails to provide robust, quantified sensitivity analysis for material drivers. While it offers a Fair Value range ($78-92) and a WACC range (10-11%), it lacks the 'if-then' quantification for operational levers like Net Interest Margin (NIM) or Credit Loss rates. There is no scenario analysis (e.g., Bear/Base/Bull) detailing how specific changes in macroeconomic conditions or CRE loss magnitudes would impact the valuation. Additionally, while share buybacks are mentioned ($40B), the specific projected share count used in the EPS calculation is not disclosed. Per the grading instructions, the absence of quantified sensitivity/scenario analysis on material drivers caps the grade at 'Fair.'",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue compound annual growth rate of 4-6% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net interest income guidance of 1-3% growth for 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Efficiency ratio improvement toward 65% from current levels near 69%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital estimation of 10-11%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Allowance for credit losses coverage of 1.61% of total loans",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "allowance coverage of 7.9% for CRE office loans",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 10-11% (components like Beta or ERP not provided)",
+            "Terminal growth 2.5% (no macro-economic justification)"
+        ]
+    }
+}

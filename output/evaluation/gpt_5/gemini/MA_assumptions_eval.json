@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states most key drivers near the forecasts they inform (revenue CAGR 11.5%, 2025 revenue growth ~12.5%, operating margin path, WACC 9.8%, terminal growth 4.0%, share count -3.5%), and ties them to the DCF and EPS bridge. Specificity: Assumptions include magnitudes, units, and horizons (2025\u20132029), with clear sub-drivers for revenue (cross-border, value-added services). Consistency: Figures largely reconcile between narrative and the forecast table; minor differences (e.g., margin to ~59.5% vs 59.8% in 2029) are not material. Justification: Partially supported\u2014WACC inputs cite the 10Y Treasury and Kroll ERP; revenue sub-drivers reference Q1-2025 trends and 2024 segment growth, and management guidance. However, terminal growth (4.0%), after-tax cost of debt (3.65%), and the margin expansion trajectory lack rigorous evidence/peer benchmarking, and the 3.5% share count reduction is assumed without price/authorization cadence detail. Sensitivity: No quantified sensitivity or scenario analysis on material levers (revenue growth mix, margins, WACC, terminal growth, buybacks), which triggers a cap at Fair. Several material DCF inputs (tax rate, capex/working capital drivers) are not articulated, leaving parts of free cash flow formation opaque.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast a five-year revenue CAGR of 11.5% through 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "based on our ~12.5% revenue growth forecast for 2025.",
+            "location": {
+                "section": "Fair Value and Profit Drivers \u2013 Earnings Per Share (EPS) Bridge",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "This segment is forecast to be the fastest-growing part of the business, with mid-teens annual growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers \u2013 Revenue and Profit Drivers (Value-Added Services Expansion)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cross-Border volume growth is expected to moderate ... to a sustainable high-single-digit rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers \u2013 Revenue and Profit Drivers (Cross-Border Recovery Normalization)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project adjusted operating margins will expand modestly from 58.4% in 2024 to approximately 59.5% by the end of the forecast period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "assumes a weighted average cost of capital (WACC) of 9.8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a terminal growth rate of 4.0%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share Repurchase Contribution: ~$0.55 per share, assuming a net share count reduction of approximately 3.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers \u2013 Earnings Per Share (EPS) Bridge",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth rate 4.0% without detailed support",
+            "After-tax cost of debt 3.65% without source/derivation",
+            "Operating margin expansion to ~59.5% lacks peer/history benchmarking",
+            "Share count reduction of ~3.5% not tied to authorization pacing/assumed repurchase price"
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are explicit and placed proximate to forecasts (revenue CAGR, ROTCE/CET1, operating margin range, COE components, terminal growth, EPS trajectory). Specificity is solid: magnitudes, units, and timeframes are provided, and several items reconcile to the Financials Snapshot (EPS path, margin trajectory). Justification is partial: some references to management guidance (NII, expenses) and to market norms (ERP, GDP-linked terminal growth) are offered, but major drivers like normalized ROTCE and revenue CAGR lack evidence tied to multi-year history or peer benchmarks; credit costs and tax rates are not stated. Consistency is mostly clean but a notable issue exists: the stated five-year revenue CAGR of ~4% is not supported by the table (which implies ~3.2\u20133.5%). Most material drivers lack stress-testing; there are no quantified sensitivities or scenario ranges for rates/NIM, credit losses, margins, or valuation parameters. Given the absence of quantitative sensitivity analysis and the minor internal mismatch on revenue growth, the assumptions quality merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes a five-year revenue compound annual growth rate (CAGR) of approximately 4.0%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we model a mid-cycle ROTCE of 18.5% on a 13.5% CET1 capital ratio.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "This profitability assumption leads to a mid-cycle operating margin (defined as pre-provision profit divided by revenue) in the 43%-44% range.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our discount rate is a cost of equity of 10.5%, calculated using the Capital Asset Pricing Model. This incorporates a 5-year beta of 1.1 ... a risk-free rate of 4.5%, and an equity risk premium of 5.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.0% for terminal value calculation.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Based on these drivers, we forecast diluted EPS to grow at an 8.3% CAGR over the next decade, from a consensus 2025 forecast of $19.29 to approximately $26.50 by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "management has guided for full-year 2025 net interest income (NII) excluding Markets of approximately $92 billion, with adjusted expenses around $95.5 billion.",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "ROTCE",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated five-year revenue CAGR (~4.0%) does not reconcile with the forecast table\u2019s revenue path (~3.2\u20133.5%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count",
+            "NII/NIM trajectory beyond 2025",
+            "expense growth path beyond 2025",
+            "provisioning/loan loss assumptions"
+        ],
+        "unjustified_parameters": [
+            "Equity Risk Premium 5.5% without cited source",
+            "Terminal growth rate 3.0% with limited evidence",
+            "Mid-cycle ROTCE 18.5% without peer/history support",
+            "Revenue CAGR ~4.0% with limited substantiation"
+        ]
+    }
+}

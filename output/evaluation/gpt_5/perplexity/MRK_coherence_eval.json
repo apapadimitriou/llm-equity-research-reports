@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure and repeats its core thesis\u2014near-term strength versus the 2028 Keytruda patent cliff\u2014across Analyst Note, Strategy/Outlook, Valuation, and Risks, which helps coherence. Transitions within sections are generally serviceable, and key terms like patent cliff, moat, and guidance are used consistently. However, several internal contradictions and temporal citation issues disrupt the narrative\u2019s integrity. Most notably, the Fair Value section states growth through 2027 with impact starting in 2028, yet simultaneously posits Keytruda\u2019s peak sales in 2028, which is not reconciled. The Financials Snapshot shows only a modest revenue decline from 2028 to 2029, inconsistent with the Appendix\u2019s modeled 35%/50% Keytruda erosion, creating tension between assumptions and the table. In Capital Allocation, the characterization of a 72.26x debt-to-equity ratio as \u201cmanageable\u201d is contradictory. Citations are also temporally mismatched (e.g., 2017 market cap source and a 2021-dated earnings source used for 2025 claims), undermining recency assertions. While sections reference each other (e.g., patent cliff in Risks aligning with Valuation assumptions), these inconsistencies require the reader to self-reconcile key points, limiting coherence. Given the contradictions and time-inaccurate citations, the grade is capped at fair per guardrails.",
+    "evidence": [
+        "Fair Value: \u201cgrowth through 2027\u2026 patent cliff impact beginning 2028\u201d vs. \u201cKeytruda\u2019s trajectory toward peak sales \u2026 in 2028 before biosimilar erosion,\u201d an unresolved tension.",
+        "Financials Snapshot vs. Appendix: Revenue drops ~5% (72.1\u219268.5) while Appendix assumes 35%/50% Keytruda erosion, inconsistent with the magnitude implied.",
+        "Capital Allocation: \u201cdebt-to-equity ratio of 72.26x reflecting manageable leverage levels,\u201d a contradiction between the metric and characterization."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

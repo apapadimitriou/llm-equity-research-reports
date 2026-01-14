@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally sound and covers all required sections, including a detailed Analyst Note, Business Strategy, and ESG risk assessment. It maintains consistent in-text citations and avoids superficial redundancy. However, it is capped at 'Fair' due to several critical omissions regarding sector-specific depth and valuation mechanics. The Financials Snapshot is generic and fails the 'Hard Cap' for sector KPIs; it omits Gross Margin, R&D intensity, and inventory metrics, which are essential for semiconductor analysis. Furthermore, the valuation section lists operating drivers (AI scaling, server market share) but lacks an explicit linkage or bridge showing how these drivers mathematically result in the $144.55 fair value estimate. Peer benchmarking is limited to narrative mentions of competitors like Intel and NVIDIA, lacking a dedicated comparative data table or relative valuation analysis. While the report provides a professional overview, it lacks the granular sensitivity analysis and peer context required for a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario/Sensitivity Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Server Market Share",
+            "AI Accelerator Revenue"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "R&D as % of Revenue",
+            "Inventory Turnover/Days",
+            "Book-to-Bill Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin (critical for semiconductor profitability analysis)",
+            "R&D Intensity (essential for assessing competitive moat in tech)",
+            "Inventory Metrics (key for tracking cyclical semiconductor demand)"
+        ],
+        "uncited_claims": []
+    }
+}

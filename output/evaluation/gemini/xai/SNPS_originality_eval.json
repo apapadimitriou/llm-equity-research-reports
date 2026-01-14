@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique thesis, relying almost entirely on restating public information from the Q2 2025 earnings release and general industry knowledge. The 'Analyst Note' is a summary of reported revenue and EPS figures, while the 'Business Strategy' and 'Economic Moat' sections use boilerplate language regarding 'secular trends' and 'high switching costs' that could apply to any major EDA player. There is no evidence of the analyst linking disparate data points to form a new conclusion; for example, the mention of AI demand is a standard industry narrative rather than a quantified or company-specific insight. The valuation section utilizes a standard DCF model with generic growth and margin assumptions (10% CAGR, 32% margin) that lack novel drivers or specific catalysts. Because the report contains zero original syntheses or theses and relies on paraphrased news and boilerplate phrasing, it meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q2 performance reflects resilient execution... contributions from AI-enabled design tools and hardware-assisted verification.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Thesis remains intact: as a leader in semiconductor design software, it benefits from secular trends in chip complexity and AI proliferation.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "High switching costs lock in users... evidenced by a 90%+ customer retention rate in core segments.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue CAGR of 10% driven by 8% organic growth in EDA and 12% in IP, fueled by AI and 5G demand.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins are forecasted to expand from 28% in FY2024 to 32% by FY2029, benefiting from scale and cost efficiencies.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'secular trends' and 'high switching costs' phrasing",
+            "Restating public earnings headlines as primary analysis",
+            "Recapping lobbying disclosures without interpretive value"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

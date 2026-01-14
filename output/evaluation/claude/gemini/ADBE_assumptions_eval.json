@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates poor assumption quality across all five pillars. While some assumptions are explicitly stated, they lack proper justification and contain significant contradictions. The DCF analysis claims a WACC of 8.5% but provides conflicting sources (\"blend from multiple data providers\" vs. specific beta of 1.5 that doesn't reconcile). Terminal growth of 3.5% is stated without justification. Operating margin assumptions of 45-46% are mentioned but not reconciled across different sections. Most critically, there are zero sensitivity analyses or scenarios despite this being a valuation-dependent investment thesis. The revenue growth assumptions lack specificity about drivers, and the AI monetization assumptions ($125M run-rate doubling) are mentioned but not integrated into forecasts. Internal contradictions include inconsistent margin figures and unexplained gaps between historical data and projections.",
+    "assumptions_extracted": [
+        {
+            "quote": "We utilize a WACC of 8.5%. This figure is a blend derived from multiple financial data providers",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.5% for terminal free cash flow, a reasonable proxy for long-term global economic growth",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We assume a stable long-term non-GAAP operating margin of 45%",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "revenue growth gradually decelerates from 10% toward 8%",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model non-GAAP operating margins to remain robust near 46%",
+            "location": {
+                "section": "5.2 Financial Projections (FY2025-FY2027)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin assumption inconsistency: 45% vs 46% in different sections without explanation",
+                "locations": [
+                    "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                    "5.2 Financial Projections (FY2025-FY2027)"
+                ]
+            },
+            {
+                "description": "WACC methodology unclear: claims 'blend from multiple providers' but also references specific beta of 1.5 that doesn't reconcile to 8.5% WACC",
+                "locations": [
+                    "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                    "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count_trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without clear derivation",
+            "Terminal growth 3.5% without benchmarking",
+            "Revenue deceleration path without driver analysis"
+        ]
+    }
+}

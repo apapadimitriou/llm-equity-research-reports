@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: a detailed cover/contents, recent Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, ESG, and an extensive Financials Snapshot with multi-year history and forecasts. Peer context is provided via competitor pages with valuation metrics, and the valuation framework is supported by a DCF summary with WACC, tax rate, growth, and investment assumptions that tie to qualitative drivers (segment growth, margin expansion, acquisitions, capex). Evidence is internally consistent and dated, with sector context repeatedly integrated through backlog and book-to-bill figures in Analyst Notes. However, the Financials Snapshot table omits core CRO-specific KPIs (backlog, book-to-bill, segment mix/KPIs), and no scenario/sensitivity analyses are included in the document. Redundancy is limited, as moat and strategy sections add distinct depth beyond headline talking points. The omission of at least two sector KPIs in the snapshot triggers a cap at Fair despite otherwise strong coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Explicit Sources/Citations section"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Margins"
+        ],
+        "sector_kpis_missing": [
+            "Backlog",
+            "Book-to-Bill Ratio",
+            "Segment KPIs (TAS vs R&DS)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Backlog",
+            "Book-to-Bill Ratio",
+            "Segment KPIs (TAS vs R&DS)"
+        ],
+        "uncited_claims": [
+            "Share repurchases totaling about $6.7 billion since the 2016 merger have no explicit source citation in-text"
+        ]
+    }
+}

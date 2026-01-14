@@ -1,0 +1,70 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet any of the five pillars of assumption quality. Regarding explicitness, the report explicitly labels all key valuation inputs\u2014including Revenue CAGR, Operating Margin, WACC, and Terminal Growth\u2014as 'N/A' or 'insufficient data.' Consequently, there is no justification provided; the report lacks historical context, peer benchmarks, or cited sources for numerical forecasts. Specificity is entirely absent, as no magnitudes, units, or time horizons are attached to the qualitative claims of 'durable growth.' Internal consistency cannot be verified because the financial tables and the 'Key Valuation Assumptions Table' are unpopulated, creating a void between the narrative's optimistic tone and the lack of supporting data. Finally, there is no sensitivity or scenario analysis. The report admits that 'absence of recent numerical data constrains valuation updates,' rendering the entire output a qualitative summary of press releases rather than a functional equity research model. Under the defined decision rules, because the assumptions are mostly unstated and opaque, the report must be graded as Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR: N/A",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op-Margin %: N/A",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: N/A",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth: N/A",
+            "location": {
+                "section": "Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "none",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": []
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report claims to provide a 'Financials Snapshot' and 'Key Valuation Assumptions' but populates every field with 'N/A' or 'insufficient data,' contradicting the purpose of an equity research report.",
+                "locations": [
+                    "Financials Snapshot",
+                    "Key Valuation Assumptions Table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "All valuation parameters are listed as N/A without quantitative basis."
+        ]
+    }
+}

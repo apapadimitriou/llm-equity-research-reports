@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to significant internal contradictions between the narrative and the financial model, alongside a lack of quantified sensitivity analysis. The analyst explicitly forecasts a 9% net revenue CAGR and a 70-basis-point annual improvement in net operating margins in the 'Fair Value and Profit Drivers' section. However, the 'Morningstar Valuation Model Summary' table contradicts these claims, showing a 10.2% revenue CAGR and a total operating margin expansion of only 50 basis points over the entire five-year forecast period (averaging 10 basis points per year). These discrepancies suggest a lack of internal coherence between the report's qualitative narrative and its quantitative valuation model. Furthermore, while the report identifies material risks\u2014including macroeconomic sensitivity, regulatory antitrust suits, and shifting consumer spending\u2014it provides no quantified sensitivity analysis or scenario modeling for these drivers. The 'Medium' uncertainty rating and the resulting 1-star/5-star price ranges are generic outputs of the Morningstar methodology and do not constitute a stress-test of specific model inputs. Although assumptions for the cost of equity (9%), tax rate (21%), and Stage II growth (8%) are stated, they lack specific justification or evidence-rich benchmarking. The combination of multiple numeric contradictions and the absence of quantified sensitivities necessitates a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project gross and net revenue to grow at 10% and 9% compound annual rates, respectively, over the projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "On a net revenue basis, we expect margin to improve at an average annual rate of 70 basis points.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 9% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 1,687 [in 2029]",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative projects 9% net revenue CAGR, but the valuation table calculates to a 10.2% CAGR from 2024-2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 4",
+                    "Morningstar Valuation Model Summary, Page 12"
+                ]
+            },
+            {
+                "description": "Narrative projects 70 bps annual net margin improvement, but the table shows only 50 bps total improvement over five years.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 5",
+                    "Morningstar Valuation Model Summary, Page 12"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Cost of equity of 9% is stated without a risk-free rate or beta build-up.",
+            "Stage II EBI growth of 8% is not justified against long-term industry expectations."
+        ]
+    }
+}

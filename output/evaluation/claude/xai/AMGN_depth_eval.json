@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some causal mechanisms like \"results were driven by robust global demand\" and \"revenue CAGR of 6% from 2025-2029\" but lacks depth and rigor. While it includes quantified assumptions such as \"WACC of 7.5%\" and \"terminal growth rate 3%\", these are not benchmarked against industry standards or peer comparisons. The analysis mentions \"operating margins improving to 35% by 2029\" but provides no sensitivity analysis around this key assumption. Counterpoints are superficial, limited to generic \"Bears Say\" points without quantified impact scenarios. The report states valuation could swing \"20-30%\" from uncertainty but fails to model specific scenarios or stress tests. Causal explanations are shallow, such as \"higher operating costs partially offset revenue gains\" without exploring underlying cost drivers or margin dynamics.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "margin expansion drivers not explained",
+            "pipeline success probability not quantified",
+            "competitive dynamics impact unclear"
+        ],
+        "unsupported_assumptions": [
+            "35% operating margin target with no peer benchmark",
+            "6% revenue CAGR without market size validation",
+            "terminal growth 3% not justified"
+        ],
+        "lack_of_sensitivity": [
+            "WACC 7.5% with no range testing",
+            "no scenario analysis for patent cliff risks",
+            "valuation swing 20-30% mentioned but not modeled"
+        ]
+    }
+}

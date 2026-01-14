@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely deficient across all five pillars. Explicitness is poor - key assumptions are scattered throughout without clear linkage to forecasts. Justification is nearly absent - critical parameters like WACC 7.0%, terminal growth 2.0%, and operating margins lack any supporting evidence or peer benchmarks. Specificity is weak with vague drivers and no clear causal relationships. Internal consistency is compromised by multiple contradictions: the report date conflicts with cited future sources, Q1 EPS of $2.46 annualizes to $9.84 yet 2025F EPS is $11.00, and revenue projections lack any historical baseline. Most critically, there are zero sensitivity analyses on any material drivers, automatically capping the grade at Fair, but the numerous contradictions and opaque assumptions drive it to Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR is projected at 4% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are modeled at 45%, improving to 47% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.0%, reflecting a beta of 0.6 and cost of debt of 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth of 2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "add $0.30 from share buybacks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q1 EPS of $2.46 annualizes to $9.84 but 2025F EPS forecast is $11.00 with no explanation",
+                "locations": [
+                    "Analyst Note Q1 EPS",
+                    "Financials Snapshot 2025F EPS"
+                ]
+            },
+            {
+                "description": "Report dated 2025-05-12 but cites sources from August 2025 as occurring in the past",
+                "locations": [
+                    "Cover Block report date",
+                    "Sources section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% without source",
+            "Terminal growth 2.0% without justification",
+            "Operating margin targets without peer comparison"
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards despite appearing complete at first glance. Critical sector-specific KPIs for semiconductor companies are completely absent - no gross margins, R&D as percentage of revenue, fab utilization rates, or ASP trends are provided in the Financials Snapshot. The valuation section lacks explicit linkage between operating drivers and fair value calculations, presenting assumptions without showing how they translate to the $144.55 target price. Multiple material claims are uncited, including specific financial projections and market share figures. The report contains significant redundancy, repeating AI revenue targets and regulatory impacts across multiple sections without adding depth. Sources are listed but rarely cited in-text, making verification impossible. The analysis feels more like a general overview than rigorous equity research, missing the quantitative rigor and analytical depth expected for institutional investors.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "R&D % of Revenue",
+            "ASP Trends",
+            "Fab Utilization",
+            "Design Win Metrics",
+            "Wafer Costs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims record x86 market share but provides conflicting percentage figures",
+                "locations": [
+                    "Analyst Note",
+                    "Business Strategy & Outlook"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Margin",
+            "R&D % of Revenue",
+            "ASP Trends",
+            "Fab Utilization",
+            "Design Win Metrics"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $144.55 with no calculation methodology shown",
+            "WACC of 8.5% with no derivation provided",
+            "Revenue growth assumptions lack supporting analysis",
+            "Market share figures presented without source attribution",
+            "Customer concentration claims lack specific data"
+        ]
+    }
+}

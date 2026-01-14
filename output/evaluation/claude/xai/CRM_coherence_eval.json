@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe coherence issues that fundamentally undermine its credibility. Most critically, it contains a temporal impossibility: the report is dated May 29, 2025, yet cites future sources from August 2025 and claims Q2 results are 'scheduled for September 3, 2025' while simultaneously referencing historical patterns and prior guidance as if writing from a future perspective. The narrative frequently contradicts the financial table - claiming 'Q1 results showing progress toward 20-22% levels' while the table shows flat 20% margins for FY2025. Revenue growth projections are internally inconsistent, with text mentioning '7-8% revenue growth' from prior guidance but using 8% CAGR assumptions that don't align with the table's implied 7.1% growth rate from $38B to $40.7B. The Bulls/Bears section lacks reconciliation with base-case assumptions, particularly regarding the 12% cRPO growth driving optimism versus the conservative 8% revenue projections. Throughout, 'insufficient data' appears repeatedly, creating gaps that force readers to piece together the argument themselves. Multiple sections read as disconnected lists rather than flowing analysis.",
+    "evidence": [
+        "Report dated 2025-05-29 cites source [3] from 'approximately 2025-08-07' - a future date that's temporally impossible",
+        "Text claims 'Q1 results showing progress toward 20-22% levels' but Financials table shows flat 20.0% operating margin for FY2025",
+        "Bulls cite '12% cRPO growth signals accelerating demand' but base-case uses conservative 8% revenue CAGR with no reconciliation of this tension"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

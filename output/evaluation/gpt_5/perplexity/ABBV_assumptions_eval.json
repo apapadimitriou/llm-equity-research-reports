@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated and proximal to the forecasts: revenue CAGR (7\u20138% to 2029), margin expansion (45\u201347%), WACC (7.5%), terminal growth (3%), and an EPS path ($10.12 in 2024 to $15\u201316 by 2029), plus a qualitative note on share count reduction. Specificity is decent for most inputs with magnitudes and horizons; however, share count is vague (\u201cmodest\u201d), and several material drivers (tax rate, capex, working capital, interest rate/debt schedule) are missing. Justification is weak: the revenue growth and product sales targets reference management guidance, but margin, WACC, terminal growth, and buyback/share count lack support from historical data, peers, or cited sources. Internal consistency appears clean\u2014no numeric contradictions with the narrative. Critically, there is no quantified sensitivity/scenario analysis for major levers (e.g., Skyrizi/Rinvoq adoption, margin trajectory, WACC/terminal growth); only qualitative risk mentions. Under the decision rules, absence of quantified sensitivities caps the grade at Fair. Overall, assumptions are explicit and partially specific but thinly justified and incomplete.",
+    "assumptions_extracted": [
+        {
+            "quote": "The valuation model incorporates a revenue compound annual growth rate of 7-8% through 2029, supported by Skyrizi and Rinvoq reaching combined peak sales exceeding $31 billion[3].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to approximately 45-47% over the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The earnings bridge analysis projects adjusted earnings per share growth from $10.12 in 2024 to approximately $15-16 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "modest share count reduction through buybacks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "The weighted average cost of capital of 7.5% reflects AbbVie\u2019s strong credit profile and stable cash flows",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "the terminal growth rate assumption of 3% aligns with long-term pharmaceutical industry expectations",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "with management projecting combined sales exceeding $31 billion by 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "debt/interest rate",
+            "share_count (quantification)",
+            "R&D expense trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without source",
+            "terminal growth 3% without source",
+            "Operating margin 45\u201347% without historical/peer support",
+            "Share count change described as \u201cmodest\u201d without quantification"
+        ]
+    }
+}

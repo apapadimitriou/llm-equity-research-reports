@@ -1,0 +1,116 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is decent: the report clearly lists core valuation inputs (growth, margin path, WACC/COE, terminal growth, share count, exit multiple) in the Fair Value and Appendix sections, proximate to the forecasts and table. Specificity is solid, with magnitudes, units, and time horizons. However, justification is weak: growth is loosely tied to management commentary, while WACC (10% with 30% COE), terminal growth (0%), and the 4.5x revenue exit multiple lack evidence from CAPM, market rates, peers, or cited sources; share count (~330m) is also unsourced. Consistency has two numeric conflicts: (i) the stated \u201cCAGR ~22% from FY2025\u20132029\u201d disagrees with the forecast table (FY2025\u20132029 revenue implies ~19% CAGR); (ii) \u201cmid-teens margin by late decade\u201d contradicts the 20% 2029 margin used in the valuation and table. Sensitivity analysis is minimal\u2014only a single quantified WACC sensitivity\u2014without scenario ranges for revenue growth, margins, or terminal assumptions. Under the decision rules, two contradictions and limited sensitivities reduce the overall quality of assumptions to Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast ~20%\u201325% growth in modestly decelerating fashion (CAGR ~22% from FY2025\u20132029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we project non-GAAP operating margin rising from ~8% in FY2024 to ~20% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 10.0% WACC (reflecting a 30% equity cost and ~0% debt cost post-conversion)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "no terminal growth beyond 2029 (market-size assumption).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Terminal multiples: we assume ~4.5\u00d7 revenue exit.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "share count ~330m.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "a 1% change in WACC swings PV by ~10%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Fair Value \u2248 $300/share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated \u201cCAGR ~22% from FY2025\u20132029\u201d conflicts with the forecast table\u2019s FY2025\u20132029 revenue path (~19% CAGR).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative says margin rises toward the mid-teens by late decade, but valuation/table assume ~20% by 2029.",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers | Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "stock-based compensation/dilution",
+            "weighting between DCF and multiples"
+        ],
+        "unjustified_parameters": [
+            "WACC 10% without CAPM/market rate support",
+            "Cost of equity 30% without source",
+            "Terminal growth 0% without market sizing evidence",
+            "Terminal multiple 4.5\u00d7 revenue without peer comparables",
+            "Share count 330m without dilution/buyback rationale"
+        ]
+    }
+}

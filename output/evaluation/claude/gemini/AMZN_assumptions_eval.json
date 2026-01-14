@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "While the report lists several key assumptions in the DCF table (WACC 10.3%, terminal growth 3.0%, 5-year revenue CAGR 9.5%, terminal operating margin 15.0%), these assumptions are largely unjustified and lack specificity. The WACC is claimed to be 'in line with industry benchmarks' but no sources or calculations are provided. The revenue CAGR is said to 'align with consensus analyst forecasts' without citing specific sources. Most critically, there are no sensitivity analyses or scenario testing for any material drivers despite the >$100B capex cycle and competitive pressures being central to the investment thesis. The report mentions risks and uncertainties but provides no quantified ranges or stress testing. Operating margin expansion assumptions lack detailed justification beyond general statements about mix shift. The absence of any sensitivity analysis on material drivers like AWS growth, capex efficiency, or competitive impact represents a fundamental gap in assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "A Weighted Average Cost of Capital (WACC) of 10.3% is utilized, which is in line with industry benchmarks for large-cap consumer discretionary technology firms",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 9.5%, which aligns with consensus analyst forecasts",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecast to expand toward the mid-teens over the next decade, up from the current level of approximately 11.4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Fair Value and DCF Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Terminal Operating Margin 15.0%",
+            "location": {
+                "section": "Fair Value and DCF Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital expenditures are projected to exceed $100 billion in 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.3% without source",
+            "Terminal growth 3.0% without justification",
+            "Terminal operating margin 15.0% without detailed support"
+        ]
+    }
+}

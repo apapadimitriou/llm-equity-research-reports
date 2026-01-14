@@ -1,0 +1,83 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails catastrophically on assumptions quality with virtually no explicit financial modeling assumptions stated. While it mentions a DCF approach and provides some brief valuation parameters in the appendix (Keytruda peak sales $41B, WACC 8.5%, etc.), these are isolated figures without justification, context, or connection to the forecasted financials table. The financial projections table shows specific EPS, revenue, and margin forecasts through 2029 but provides zero explanation of the underlying drivers, growth rates, or methodologies. Critical contradictions exist between narrative claims and the financial model - the text discusses patent cliff beginning in 2028 yet shows revenue growing from $72.1B in 2028 to declining only in 2029. No sensitivity analysis or scenario testing is provided despite the massive Keytruda patent cliff risk being the central investment thesis. The assumptions are essentially opaque, unjustified, and inconsistent with the report's own strategic narrative.",
+    "assumptions_extracted": [
+        {
+            "quote": "Keytruda peak sales: $41B (2028)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-term growth rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Patent cliff erosion: 35% Year 1, 50% Year 2",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion from current 31% levels reflects ongoing operational efficiency initiatives",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states patent cliff begins 2028 but financial table shows revenue growing from $72.1B (2028) to $68.5B (2029), inconsistent with 35% Year 1 erosion claim",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "detailed revenue growth methodology"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "41B Keytruda peak sales without methodology",
+            "Operating margin expansion assumptions",
+            "Long-term growth rate 3%"
+        ]
+    }
+}

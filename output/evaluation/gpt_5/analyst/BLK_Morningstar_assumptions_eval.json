@@ -1,0 +1,107 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "Assumptions are explicit and concentrated in the Fair Value and Profit Drivers and Valuation Model Summary sections, with clear quantitative inputs tied to forecasts and the DCF. Specificity is strong: units, magnitudes, and horizons are stated (e.g., 2025\u201329 revenue CAGR, margin ranges, AUM organic growth, COE/WACC, long-run tax rate, Stage II EBI growth, perpetuity year). Justification is solid, referencing multi-year organic AUM growth history and margin performance and linking drivers (ETF scalability, product mix/realization rate, fee compression) to outcomes. Internal consistency between narrative and tables is clean; the key figures reconcile across sections, and the scenario targets map coherently to valuation impacts. Sensitivity is robustly handled via quantified bull/bear scenarios that vary material levers (revenue CAGR, margin trajectory, product mix/realization rate) and show fair value per-share outcomes. Overall, the report provides traceable, auditable assumptions that drive forecasts and valuation, including share count and payout frameworks, with minimal ambiguity and clear causal drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We are currently forecasting 4.4% (3.9%) average annual organic AUM growth during 2025-29 (2025-34), with a standard deviation of 1.0% (1.5%).",
+            "location": {
+                "section": "Economic Moat",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "we are projecting 8.4% top-line growth on average annually during 2025-29.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We envision the firm generating adjusted operating margins in a 43%-47% range during 2025-29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 21% US statutory corporate tax rate and a 9% cost of equity in our valuation.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 6.0",
+            "location": {
+                "section": "Key Valuation Drivers / Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We project a bull-case fair value estimate of $1,630 per share ... an 12.3% compound annual growth rate for revenue during 2025-29 ... adjusted operating margins exceeding 50% by the end of our five-year projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Our downside-case fair value estimate of $630 per share ... a 6.1% CAGR for revenue during 2025-29. We also assume BlackRock's adjusted operating margins drop below 40% before the end of our five-year forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Projected Diluted Shares 153",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

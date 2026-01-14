@@ -1,0 +1,102 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation and forecast inputs are generally explicit and proximate to the model: revenue CAGR, NII/noninterest growth split, margin trajectory, WACC, terminal growth, and an EPS bridge. Specificity is solid, with magnitudes, time windows (2025\u20132029), and units clearly stated. However, justification is partial: several drivers are anchored to broad claims (e.g., Q2 trends, efficiency gains) without multi-year historical evidence, peer benchmarks, or cited market-derived parameters (e.g., ERP, beta) beyond brief mentions. Internal consistency shows at least one contradiction\u2014the fair value implies \u201capproximately 12x\u201d forward P/E in the Analyst Note versus \u201c12.9x\u201d in the valuation section\u2014unresolved in the text. Sensitivity analysis is essentially absent; the report offers a generic \u00b120% valuation swing under stress but no quantified ranges tied to material drivers (NII/NIM, credit costs, margins, terminal growth, or WACC). As a result, stress-testing is inadequate and triggers the hard cap at Fair. Important drivers like tax rate, share count, and detailed credit cost assumptions are missing, diminishing traceability and robustness of conclusions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029 | 3.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "driven by 2% growth in net interest income and 5% in noninterest income",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 28% in 2025 to 32% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, based on a beta of 1.2 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 2.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from 2024 base of $3.20... yielding 2025 EPS of $3.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "subtracting $0.10 from higher provisions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "credit_cost",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward P/E at fair value stated as ~12x vs 12.9x",
+                "locations": [
+                    "Analyst Note (\"approximately 12x\")",
+                    "Fair Value and Profit Drivers (\"forward P/E of 12.9x\")"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "loan_growth granularity",
+            "NII/NIM sensitivity",
+            "credit_cost trajectory beyond single $0.10 EPS impact"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% (beta 1.2, ERP 5%) without market/source triangulation",
+            "Terminal growth 2.5% as generic GDP proxy without support",
+            "Operating margin expansion to 32% with limited evidentiary backing",
+            "NII +2% / noninterest +5% growth rates tied loosely to Q2 trends"
+        ]
+    }
+}

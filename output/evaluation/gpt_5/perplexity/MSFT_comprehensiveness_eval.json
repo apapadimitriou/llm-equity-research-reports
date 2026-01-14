@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a clear structure: cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, and sources. The depth is reasonable across strategy, moat, and risks, and there are numerous in-text citations. However, the Financials Snapshot omits core sector KPIs for a large-cap software/cloud name (e.g., Azure/Cloud metrics, bookings/RPO, ARR/NRR, seat growth), providing only generic financials (revenue, EPS, margins, FCF, ROIC). This invokes the hard cap to Fair. Valuation assumptions are stated and linked to operating drivers (Azure growth, AI revenue, margins, WACC), but there is no scenario/sensitivity analysis and peer benchmarking is minimal. Evidence integration is uneven: some claims are mis-cited or rely on outdated sources (e.g., MacroTrends 2018 for 2025 P/E; capex figure inconsistently described as quarterly vs annual, with mismatched sources), and several material ESG/market data points lack citations. Redundancy appears where premium valuation concerns and AI run-rate points are repeated without added depth. Overall, headline coverage is present, but KPI gaps, limited peer context, and citation inconsistencies constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary and Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Azure revenue growth",
+            "Microsoft Cloud revenue",
+            "Commercial bookings",
+            "Remaining performance obligation (RPO)",
+            "ARR",
+            "NRR",
+            "Seat growth (Office 365)",
+            "MAU (LinkedIn/Xbox)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Capital expenditures cited as $22.6B in fiscal Q2 2025 vs $22.6B annually elsewhere, with mismatched sources",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Azure/Cloud growth metrics",
+            "Commercial bookings",
+            "RPO",
+            "ARR/NRR",
+            "Seat growth"
+        ],
+        "uncited_claims": [
+            "ESG commitments (carbon negative by 2030; $1B climate innovation fund) lack citations",
+            "Cover block market data (Last Close, Market Cap) uncited",
+            "ESG Risk Rating (Medium) uncited",
+            "Forward P/E ~39x supported by an outdated MacroTrends source listing (2018)"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid assumption quality across most pillars. Key assumptions are explicitly stated and proximal to forecasts, including specific DC revenue projections ($182B fiscal 2026, $246B fiscal 2027), gross margin targets (71% fiscal 2026, 74% fiscal 2027), and detailed growth rates with clear time horizons. Justification is strong, referencing multi-year historical performance (DC growth from $3B to $115B fiscal 2020-2025) and management guidance. The WACC of 9.0% and terminal growth assumptions are clearly specified in the valuation table. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers like revenue growth, margins, or cost of capital, which caps the grade at Good despite otherwise comprehensive assumption disclosure.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model $79 billion of DC revenue in the first half of fiscal 2026... Our estimates of $49.4 billion in the October quarter and $53.9 billion in the January 2026 quarter brings our fiscal 2026 DC revenue estimate to $182 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we model 35% growth to $246 billion in fiscal 2027, and 15% growth to $281 billion in fiscal 2028, resulting in a 34% CAGR from fiscal 2026 to fiscal 2028",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model a near-term dip in GAAP gross margin to 71% in fiscal 2026... we now anticipate that gross margin will not compress very much in the decade ahead, as we model a 74% GAAP gross margin in fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We anticipate that GAAP operating margins will be 61% in fiscal 2026 and stay in the low-60% range thereafter",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 11.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 24",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

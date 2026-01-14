@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid explicitness with key assumptions clearly stated in the Fair Value section and detailed financial tables. Justification is partial, with some assumptions supported by historical context (e.g., pricing compression trends, NII volatility) but lacking peer benchmarks or external sources for critical inputs like the 9% cost of equity. Specificity is good with clear units, timeframes, and growth rates provided throughout the forecast tables. Internal consistency appears clean with no obvious contradictions between narrative and tables. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers like NII growth, fee compression, or cost of equity changes. While qualitative risks are discussed extensively, there are no quantified ranges or stress tests for key valuation inputs, which caps the grade at Fair per the methodology.",
+    "assumptions_extracted": [
+        {
+            "quote": "We expect net interest income to be up just 1% in 2025 but note that net interest income can be difficult to forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "After 2025, we expect low-single-digit growth as the firm continues to face pricing headwinds from a consolidating asset management industry",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect State Street's returns on tangible equity to be in the mid to high teens during the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 4.0",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding declining from 370 million in 2022 to 229 million in 2029",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Cost of Equity 9.0% without source or benchmark justification"
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from severe contradictions and lacks quantified sensitivity analysis on material drivers. Multiple internal inconsistencies undermine credibility: Q1 2025 results are presented as factual despite the report date being 2025-06-29, making future Q1 results impossible. The EPS bridge calculation is mathematically incorrect ($12.50 + $1.00 + $0.50 - $0.25 = $13.75, not $15.00). While key assumptions like 8% revenue CAGR, 8.5% WACC, and 4% terminal growth are explicitly stated with some justification, the report provides only qualitative sensitivity mentions (e.g., '50 basis points delinquency increase' and '15% valuation swing') without systematic quantified scenarios for all material drivers. The combination of multiple contradictions plus absence of robust sensitivity analysis triggers the 'Poor' grade per the hard caps, despite reasonable explicitness and partial justification of core assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 8% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand to 22% by 2029 from 21% in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 8.5%, incorporating a 4% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%, aligned with global GDP",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share buybacks totaled $4 billion in 2024, reducing shares by 2%",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge calculation error: $12.50 + $1.00 + $0.50 - $0.25 should equal $13.75, but text claims 2026 EPS of $15.00",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "EPS bridge calculation"
+                ]
+            },
+            {
+                "description": "Report dated 2025-06-29 but presents Q1 2025 results as historical fact, which is temporally impossible",
+                "locations": [
+                    "Cover Block report date",
+                    "Analyst Note Q1 2025 results"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "6% equity risk premium without source citation",
+            "Beta of 1.2 without derivation method"
+        ]
+    }
+}

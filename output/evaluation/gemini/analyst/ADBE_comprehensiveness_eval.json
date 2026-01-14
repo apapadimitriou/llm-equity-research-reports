@@ -1,0 +1,48 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a high level of qualitative detail across all mandatory sections, including a robust discussion of Adobe\u2019s economic moat, business strategy, and capital allocation. The analyst effectively integrates the impact of generative AI (Firefly) across the business segments. However, the report is constrained to a 'Fair' grade due to several structural omissions and redundancies. Most critically, the Financials Snapshot (Pages 15-16) is generic and lacks core sector-specific KPIs for a SaaS business, such as Annual Recurring Revenue (ARR) and Net Retention Rate (NRR), in its structured data tables. While ARR is mentioned in the text of the Analyst Notes, its absence from the multi-year forecast table limits the report's comprehensiveness. Additionally, the report lacks explicit scenario or sensitivity analysis; while the methodology mentions these tools, the Adobe-specific output (e.g., a bull/bear valuation range or a WACC/Growth sensitivity matrix) is missing. The valuation section provides a basic link between revenue/margin drivers and the fair value estimate but lacks a detailed bridge. Finally, significant redundancy is observed in the Analyst Notes Archive, where talking points regarding AI monetization and the Figma merger termination are repeated across multiple entries without providing incremental depth, which warrants a downgrade according to the instruction's hard caps.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue Growth",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Annual Recurring Revenue) in financial tables",
+            "NRR (Net Retention Rate) in financial tables",
+            "Customer Acquisition Cost (CAC)",
+            "Churn Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Annual Recurring Revenue) in structured financial tables",
+            "NRR (Net Retention Rate) in structured financial tables"
+        ],
+        "uncited_claims": []
+    }
+}

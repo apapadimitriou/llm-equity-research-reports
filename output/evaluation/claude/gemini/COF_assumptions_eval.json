@@ -1,0 +1,89 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from fundamental deficiencies in assumption quality that render the valuation unreliable. Key assumptions are largely unstated or opaque - the WACC of 10.5% appears without justification, terminal growth rates lack support, and critical drivers like loan growth rates and normalized charge-off assumptions are missing. The DCF sensitivity table provides only a narrow range (2.0-2.5% terminal growth, 9.5-11.5% WACC) without explaining parameter selection. Multiple contradictions exist: NIM is stated as both 6.93% and 6.9% for Q1 2025, and synergy figures vary between $1.2B and $1.3B without reconciliation. The financials table contains extensive 'insufficient data' entries, making verification impossible. While some assumptions are mentioned (network synergies, integration costs), they lack the specificity, evidence-based justification, and comprehensive sensitivity analysis required for a reliable valuation model.",
+    "assumptions_extracted": [
+        {
+            "quote": "The DCF model employs a Weighted Average Cost of Capital (WACC) of 10.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "NIM, which stood at 6.93% in Q1 2025 pre-merger",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "network synergies, projected at $1.2 billion by 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "$1.3 billion in operating expense synergies by 2027",
+            "location": {
+                "section": "Bulls Say / Bears Say",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "total integration costs will be \"somewhat higher\" than the initially projected $2.8 billion",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "NIM stated as both 6.93% and 6.9% for Q1 2025",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Network synergies cited as both $1.2B and operating expense synergies as $1.3B without clear distinction",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Bulls Say section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count",
+            "loan_growth_rates",
+            "normalized_charge_offs"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without source",
+            "Terminal growth rates 2.0-2.5% without justification",
+            "Synergy projections without supporting analysis"
+        ]
+    }
+}

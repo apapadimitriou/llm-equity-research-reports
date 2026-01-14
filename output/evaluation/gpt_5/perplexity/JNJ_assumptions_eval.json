@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are explicitly stated and proximal to the forecasts (revenue CAGR, margin path, discount rate, terminal growth, tax rate), with clear magnitudes, units, and horizons. Specificity is solid: the report provides quantified ranges (100\u2013150 bp margin expansion) and point assumptions (2.5% terminal growth; 8.2% discount rate; 21% tax rate). However, justification is weak: the 4.5% revenue CAGR and margin expansion are framed as conservative relative to management guidance but lack supporting multi-year history, peer benchmarks, or cited sources tying directly to the chosen figures. The discount rate and terminal growth are unreferenced, and the R&D intensity shift to 25% of Innovative Medicine revenue is not evidenced. Internal consistency has a notable contradiction: the Economic Moat section cites a 5.9% WACC while the DCF uses an 8.2% discount rate without reconciliation. Sensitivities are qualitative only; there are no quantified scenario or sensitivity analyses on material drivers (e.g., revenue erosion from Stelara, margin bands, discount rate or terminal growth impacts). Several important drivers remain opaque or missing (capex, share count trajectory, working capital). Per decision rules, the lack of quantified sensitivities and the contradiction cap the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "The valuation assumes operational sales compound annual growth rate of 4.5% through 2030",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin improvement of 100-150 basis points over the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model R&D investment increasing to 25% of Innovative Medicine revenue",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Tax rate: 21%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Discount rate: 8.2%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Economic Moat cites WACC of 5.9% while DCF uses a discount rate of 8.2% without reconciliation.",
+                "locations": [
+                    "Economic Moat",
+                    "Appendix \u2014 Key Valuation Assumptions"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "share_count",
+            "working_capital",
+            "biosimilar_erosion_rate_quantification"
+        ],
+        "unjustified_parameters": [
+            "Discount rate 8.2% without source",
+            "Terminal growth 2.5% without evidence",
+            "Tax rate 21% not tied to effective rate history",
+            "Revenue CAGR 4.5% selection not benchmarked",
+            "Margin expansion 100\u2013150 bp lacks historical/peer support",
+            "R&D at 25% of IM revenue lacks evidence"
+        ]
+    }
+}

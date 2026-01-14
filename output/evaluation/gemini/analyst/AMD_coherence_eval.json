@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a \"fair\" grade due to significant internal contradictions between the narrative analysis and the supporting financial tables. The primary disconnect involves the 2025 revenue growth forecast. In the \"Fair Value and Profit Drivers\" section, the analyst explicitly states that 2025 growth is modeled at 12%, revised down from a prior estimate of 28% due to AI GPU restrictions in China and a weak PC market. However, the \"Morningstar Valuation Model Summary\" table lists 2025 revenue growth at 25.5%. Furthermore, the \"Forecast Revisions\" table shows that the 2025 revenue estimate was actually revised upward to $32,371 million from a prior $28,973 million, directly opposing the narrative's claim of a downward revision.\n\nAdditional friction exists regarding earnings; the Analyst Note suggests \"Adjusted EPS will dip\" due to an $800 million writeoff, yet the Financials table shows Adjusted EPS rising from $3.31 in 2024 to $4.22 in 2025. While the report provides a deep qualitative dive into the x86 market and competitive dynamics with Intel and Nvidia, these quantitative misalignments force the reader to question which data set drives the $120 fair value estimate. The structural flow is generally good, with clear section headers and consistent terminology, but the failure to reconcile the base-case narrative with the explicit model outputs triggers a hard cap under the grading rubric.",
+    "evidence": [
+        "\"We model 12% growth in 2025, down from our prior estimate of 28%\" (Fair Value and Profit Drivers) vs. \"Revenue Growth % ... 2025 ... 25.5\" (Growth & Ratios table).",
+        "\"Adjusted EPS will dip\" (Analyst Note) vs. Adjusted Earnings Per Share rising from $3.31 in 2024 to $4.22 in 2025 (Financials table).",
+        "The Forecast Revisions table shows 2025 Revenue increasing to $32,371M from $28,973M, contradicting the narrative's claim of lowered expectations (Page 15)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

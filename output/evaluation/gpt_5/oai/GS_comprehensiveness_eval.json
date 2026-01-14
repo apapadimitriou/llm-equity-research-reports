@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover and contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, and sources. Valuation includes explicit assumptions (WACC, terminal growth, margin trajectory) and references operating drivers (trading, IB fees), linking them to revenue/margin forecasts. Capital allocation and ESG are addressed with reasonable depth and multiple citations. However, the Financials Snapshot is generic and omits core sector KPIs for a bank/investment broker (e.g., NIM/NII, CET1, loan loss provisions, ROE, AUM), triggering a hard cap at Fair. Sourcing is largely consistent via Reuters/FT, but key historical financial figures and certain metrics (e.g., CET1 ~13%) are not directly cited to filings, weakening evidence integration. Peer context appears in moat/ESG and a brief P/B comparison, but there is no structured peer benchmarking table. Scenario/sensitivity analysis is limited to qualitative mentions without quantitative cases. There is some redundancy, with leadership rankings repeated across Analyst Note, Business Description, Moat, and Bulls with limited incremental depth. Overall, the breadth is good, but KPI omissions, partial sourcing gaps, and lack of scenarios constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Trading Revenue (qualitative, Q1)",
+            "Investment Banking Fees (qualitative, Q1)",
+            "Supervised Assets (qualitative)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Income (NII)",
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "Common Equity Tier 1 (CET1) ratio",
+            "Return on Equity (ROE)",
+            "Assets Under Management (AUM) in snapshot"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "Loan Loss Provisions",
+            "CET1",
+            "ROE",
+            "AUM (not in Financials Snapshot)"
+        ],
+        "uncited_claims": [
+            "Financials Snapshot historical figures (Revenue, EPS, FCF, Op Margin) lack direct filing citations",
+            "CET1 ~13% mentioned in Bulls Say without a specific source"
+        ]
+    }
+}

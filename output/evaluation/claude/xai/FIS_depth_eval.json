@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains some quantified forecasts like \"5% revenue CAGR\" and \"WACC of 8.5%\", these lack supporting mechanisms or benchmarks. Causal reasoning is extremely shallow, with vague statements like \"driven by strength in banking and capital markets segments\" providing no actual explanation of underlying drivers. The DCF model presents assumptions (\"Operating margins expand from 18% in 2025 to 20% by 2029\") but offers no justification for why these improvements will occur beyond generic references to \"cost efficiencies and AI integrations\". Critical gaps include no sensitivity analysis, no benchmarking of assumptions against peers or historical performance, and no quantified scenarios despite claiming \"medium uncertainty\". The risk section mentions \"valuation could swing by 20-30%\" but provides no analysis of what would cause this variation. Overall, the report reads like a collection of forecasts without the analytical foundation to support them.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Revenue growth \u2192 segment drivers unexplained",
+            "Margin expansion \u2192 specific cost reduction levers missing",
+            "AI innovations \u2192 actual impact quantification absent"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 3% with no benchmark",
+            "Operating margin 20% with no peer comparison",
+            "WACC 8.5% methodology not provided"
+        ],
+        "lack_of_sensitivity": [
+            "No scenarios for 20-30% valuation swing",
+            "Fixed assumptions with no ranges",
+            "Medium uncertainty claim unsupported by analysis"
+        ]
+    }
+}

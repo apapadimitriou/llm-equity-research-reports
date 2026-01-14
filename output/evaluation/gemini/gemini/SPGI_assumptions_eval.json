@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple significant internal numeric contradictions and a total lack of quantified sensitivity analysis for the valuation. First, there is a major mathematical error in the Cost of Equity calculation: the report cites a 4.2% risk-free rate, a 1.05 beta, and a 5.0% equity risk premium to arrive at an 8.2% Cost of Equity, whereas the actual CAPM formula (4.2 + 1.05 * 5.0) results in 9.45%. Second, the stated 7.8% revenue CAGR for 2025\u20132029 is inconsistent with the financial table, which shows revenue growing from $14.21B to $20.90B, representing an 8.0% CAGR. \n\nBeyond these contradictions, the report fails the stress-testing requirement. While it provides a single-point sensitivity for issuance volumes and EPS, it offers no quantified ranges or scenarios for the Fair Value Estimate ($595). There is no sensitivity matrix for WACC or terminal growth, and the bull/bear cases are entirely qualitative. Per the hard caps in the instructions, the presence of two or more distinct contradictions, combined with the absence of quantified valuation sensitivities, mandates a 'Poor' grade. While the assumptions are explicitly listed and specific, they lack the internal coherence and robustness required for a higher rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue Growth (CAGR 2025-2029): 7.8%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project adjusted operating margins to expand from ~46% in 2024 to 49.0% by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity: 8.2% (Beta of 1.05, Risk-free rate of 4.2%... and an Equity Risk Premium of 5%).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.50%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share Count Decline: -1.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Ratings: We forecast a 6.5% CAGR.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of Equity math error: Stated 8.2% using 4.2% RF, 1.05 Beta, and 5% ERP. Correct calculation is 9.45%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Revenue CAGR mismatch: Text states 7.8% CAGR, but Table 1 data ($14.21B to $20.90B over 5 years) calculates to 8.0%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_valuation_sensitivities"
+        ],
+        "unjustified_parameters": [
+            "Equity Risk Premium 5.0% cited as 'standard' without specific source."
+        ]
+    }
+}

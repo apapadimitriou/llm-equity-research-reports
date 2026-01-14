@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe coherence issues that make it nearly unreadable as a connected analytical piece. The most glaring problem is massive temporal confusion: the report date is June 7, 2025, yet it discusses Q2 FY25 results 'ended December 31, 2024' as recent events, then references future data from July 2025 as if it's already happened. Multiple contradictions plague the analysis - Azure growth is described as both strong momentum and concerning deceleration without reconciliation. The Bulls/Bears section lists Azure's 31% growth as positive while simultaneously citing the slowdown from 34% as negative, creating unresolved tension with the base-case narrative. Sections read like disconnected bullet points with minimal transitions. The Financials table is essentially empty ('insufficient data' throughout), undermining valuation credibility. Critical sections like Economic Moat and Capital Allocation are admittedly incomplete. The fair value calculation lacks supporting detail and contradicts the revenue figures mentioned elsewhere. Sources include questionable X posts for financial data, and citation [5] has an impossible future date. The report reads more like fragmented notes than a coherent investment thesis.",
+    "evidence": [
+        "Report dated 2025-06-07 discusses Q2 FY25 results as recent while citing source [5] from 2025-07-27 as past data (Analyst Note)",
+        "Bulls cite 'Azure's 31% growth' as positive while Bears cite 'Azure growth slowed from 34% to 31%' with no reconciliation (Bulls Say/Bears Say)",
+        "Financials table shows 'insufficient data' for all historical actuals while building DCF model on these missing foundations (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

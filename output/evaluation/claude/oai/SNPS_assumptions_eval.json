@@ -1,0 +1,96 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some key assumptions but with significant weaknesses. Revenue growth assumptions (12% CAGR 2025-29, 10-15% annually) are stated but poorly justified - no peer benchmarks or detailed historical analysis provided. Operating margin expansion from 50% to 54-55% lacks supporting evidence. The WACC of 8.5% (mentioned in thesis) vs 9% (in valuation section) creates internal inconsistency. Terminal growth of 3% is stated without justification. Share count assumptions (~160M) appear reasonable but lack context. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers, capping the grade at Fair. The assumptions have partial specificity with units and timeframes, but justification relies heavily on general industry trends rather than rigorous analysis.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR ~12% from 2025\u201329",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP operating margin is modeled expanding modestly from ~50% (2024 on continuing basis) to ~54% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of ~9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal FCF growth 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share count ~160M (diluted)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "DCF at 8.5% WACC",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume non-GAAP tax ~18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC stated as 8.5% in Analyst Note but 9% in Fair Value section",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.5%/9% without source",
+            "terminal growth 3% without justification",
+            "operating margin expansion to 54% without peer/historical support",
+            "revenue CAGR 12% without detailed benchmarking"
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states a few key inputs (WACC 10.5%, synergy targets, integration costs \u201csomewhat higher\u201d than $2.8b, exchange ratio) and provides a DCF sensitivity grid, but most core operating drivers (loan/NII growth path, NIM trajectory, credit cost normalization, efficiency ratio path, tax rate, share count evolution) are not laid out near forecasts and FY25\u201326 figures are largely lifted from consensus. Justification: Rationale is weak; WACC is said to be CAPM-derived without components, terminal growth lacks justification, and synergy/eps-accretion claims aren\u2019t sourced in-text. Specificity: Some inputs are specific (magnitudes, dates for 2027 synergies; WACC) but many are qualitative or ranges without units or phasing; no quant for credit losses or NIM forward. Consistency: No clear contradictions between narrative and tables; numbers generally reconcile, though base terminal growth is only implied by the grid. Sensitivity: Only a valuation sensitivity on WACC/terminal growth is quantified; there is no scenario/sensitivity for material bank drivers like NIM, charge-offs/provisions, or synergy realization. Given partial explicitness, weak justification, and limited sensitivity, the assumptions quality merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "The DCF model employs a Weighted Average Cost of Capital (WACC) of 10.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "10.5% $215.40 $230.00",
+            "location": {
+                "section": "Fair Value and Profit Drivers (DCF Sensitivity Analysis)",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "significant network synergies, projected at $1.2 billion by 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "$1.2 billion in high-margin network revenue synergies and $1.3 billion in operating expense synergies by 2027",
+            "location": {
+                "section": "Bulls Say",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "total integration costs will be \"somewhat higher\" than the initially projected $2.8 billion.",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "projected to be more than 15% accretive to adjusted non-GAAP EPS in 2027",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "NIM, which stood at 6.93% in Q1 2025 pre-merger",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Discover shareholders received 1.0192 Capital One shares for each Discover share, resulting in Capital One and former Discover shareholders owning approximately 60% and 40% of the combined company",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "loan_growth",
+            "tax_rate",
+            "NII/NIM forward trajectory",
+            "non_interest_income trajectory",
+            "efficiency_ratio path",
+            "share_count evolution"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without CAPM inputs",
+            "terminal growth base (implied 2.5%) without rationale",
+            "$1.2b/$1.3b synergies by 2027 without sourced backup in-text",
+            "'>15% accretive' EPS in 2027 without model detail",
+            "integration costs 'somewhat higher' than $2.8b without quantification/phasing"
+        ]
+    }
+}

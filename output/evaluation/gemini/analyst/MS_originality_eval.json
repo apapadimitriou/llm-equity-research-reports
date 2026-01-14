@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides a comprehensive overview of Morgan Stanley's quarterly performance and long-term strategy but relies heavily on restating public data and generic sector themes. The primary insights\u2014such as the mean reversion of trading revenue, the cyclical recovery of investment banking, and the strategic shift toward wealth management\u2014are standard industry perspectives rather than original theses. While the 'Analyst Notes Archive' contains some higher-level synthesis regarding direct indexing and tariff impacts, the core report (Analyst Note and Strategy sections) contains more than five instances of restated or generic insights. Specifically, the discussion of Basel III impacts and the 'scale and diversification' benefits of the E-Trade/Eaton Vance acquisitions are boilerplate. Furthermore, the valuation section utilizes a standard DCF model with conventional drivers (AUM growth, NII normalization) and lacks a novel mechanism or company-specific angle that differentiates it from consensus. Per the decision rules, the presence of more than three generic/restated insights and the lack of a novel valuation driver cap the grade at 'Fair'.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Trading revenue should ultimately correct from its currently elevated level over the long run... trend may persist in the near term until markets attain more clarity.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "2024 was only the early innings of a recovery in dealmaking and investment banking revenue, but... current backdrop has the potential to delay normalization.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Management continues to execute on its initiative to raise client assets, booking a further $93.8 billion in net inflows.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Proposed Basel III regulatory capital rules could increase risk-weighted assets by up to 20% at Morgan Stanley, which would pose some headwinds.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "The acquisitions of E-Trade and Eaton Vance in the early 2020s added both scale and additional capabilities to Morgan Stanley.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Low-cost sweep deposit balances increased for the second quarter in a row, which could be positive... if this marks a turning point for sweep deposits.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Direct indexing and mass personalization could be as momentous as the advent of exchange-traded funds, restructuring the investment services ecosystem.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Standard mean-reversion assumptions for trading revenue"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

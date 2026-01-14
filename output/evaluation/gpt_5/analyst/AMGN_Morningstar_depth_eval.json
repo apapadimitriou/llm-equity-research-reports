@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal links, explicit assumptions, and quantified forecasts. It explains mechanisms behind results, such as dose escalation improving tolerability and manufacturing/cost controls defending margins. Strong inference quality appears in probability-weighted and market-share-based forecasts tied to drivers like efficacy and dosing frequency. Data use is extensive: revenue peaks by product, fair value DCF inputs, and explicit policy impacts. Counterpoints and uncertainty are acknowledged (biosimilars, payer pressure, IRA, regulatory shifts), though they are not explored via quantified scenarios or sensitivities. Actionable implications are present through a maintained fair value, timeline to launch, and base-case sales framing for maritide within a $200 billion GLP-1 market. Strongest reasoning includes quantified assumptions linked to mechanisms and markets: \u201ctwo steps of dose escalation have brought vomiting rates down\u201d, \u201cWe assume a 60% probability of maritide's approval\u201d, \u201cThese estimates imply roughly 5% market share\u201d, \u201cincluded a 2% step-down in US sales\u201d, \u201cWe assume a 7% cost of capital\u201d, \u201cin line with Lilly\u2019s Zepbound\u201d. Weaknesses are the absence of sensitivity ranges around key drivers (maritide sales, IRA impact) and limited stress-testing of DCF parameters. Overall, the report merits a Good grade; adding quantified scenario ranges would elevate it further.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "tolerability \u2192 market share conversion not modeled",
+            "biosimilar pricing pressure \u2192 margin path not detailed"
+        ],
+        "unsupported_assumptions": [
+            "Stage II EBI growth 3.5% not benchmarked to peers",
+            "5% GLP-1 share not stress-tested"
+        ],
+        "lack_of_sensitivity": [
+            "maritide sales $9B base without range",
+            "IRA impact fixed at 2%/1% with no scenarios"
+        ]
+    }
+}

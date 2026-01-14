@@ -1,0 +1,105 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are explicitly stated and proximate to forecasts: consolidated revenue CAGR (17% 2025\u20132029, 33% in 2025, ~13% 2026\u20132029), segment CAGRs (data center 20%, client 16%, gaming 20%, embedded 5%), AI GPU revenue path ($8.2B in 2025 to $17.9B in 2029), margin trajectory (gross to 57% by 2027; operating to 35% by 2029), and valuation inputs (COE/WACC 9%, long-run tax 15%, Stage II parameters, shares 1,637). Specificity is solid: magnitudes, units, and timeframes are provided and tables reconcile for growth rates and share count. Justification is partial: some references to management long-term targets, historical margin expansion, and industry context (Nvidia dominance, TAM >$500B) but limited tie-ins to multi-year history/peer benchmarks for WACC/tax or margin targets. Internal consistency appears mostly clean; adjusted vs GAAP margin references are somewhat ambiguous but not definitively contradictory to the tables. Stress testing is absent; no quantified sensitivities or scenario ranges are provided for material levers (AI GPU adoption, margins, WACC, China policy). Given explicitness and specificity but weak justification and no sensitivities, the assumptions quality is Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We expect AMD to achieve a top-line compound annual growth rate of 17% from 2025 to 2029. We model 33% growth in 2025\u2026 We model an average annual growth rate of 13% from 2026 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "For AMD\u2019s data center segment\u2026 we model a 20% revenue CAGR over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model AMD\u2019s AI GPU revenue reaching $8.2 billion in 2025\u2026 We model AMD reaching $17.9 billion in AI GPU revenue in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In client revenue (PC CPUs), we model a 16% CAGR\u2026 In gaming\u2026 20% CAGR\u2026 We model a 5% CAGR for AMD\u2019s embedded business",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Adjusted gross margin\u2026 should reach management\u2019s long-term target of 57% as soon as 2027\u2026 operating margin expansion to 35% in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0\u2026 Weighted Average Cost of Capital % 9.0\u2026 Long-Run Tax Rate % 15.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 9.1\u2026 Stage II Investment Rate % 46.7\u2026 Perpetuity Year 15",
+            "location": {
+                "section": "Key Valuation Drivers / DCF Valuation",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,637",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We are re-inserting $1.2 billion of revenue in 2025 and $2.8 billion to our 2029 AI GPU estimates",
+            "location": {
+                "section": "Analyst Note",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Long-Run Tax Rate 15% without source",
+            "Stage II EBI Growth Rate 9.1% without source"
+        ]
+    }
+}

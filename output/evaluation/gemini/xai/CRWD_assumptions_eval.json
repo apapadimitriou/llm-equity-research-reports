@@ -1,0 +1,79 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report\u2019s quality of assumptions is graded as Poor due to a critical internal numeric contradiction and the total absence of quantified sensitivity analysis. While the report is explicit in stating its key drivers\u2014such as a 25% revenue CAGR and a terminal operating margin of 30%\u2014it fails the consistency test. Specifically, the report states a WACC of 10.0%, yet the provided components (7% risk-free rate, 6% equity risk premium, and 1.2 beta) mathematically result in a 14.2% cost of equity/WACC under standard CAPM. This unresolved discrepancy invalidates the discounted cash flow model and the resulting fair value estimate. Furthermore, the report lacks any quantified sensitivity or scenario analysis for material drivers like revenue growth or margins; it merely mentions qualitative risks and historical price volatility without providing a range of valuation outcomes. The terminal growth rate of 10% is also exceptionally high and lacks sufficient justification relative to standard long-term economic growth benchmarks. Finally, while the report mentions a 'share dilution offset' in its EPS bridge, it provides no specific share count forecasts or dilution magnitudes, leaving a material driver of the per-share valuation opaque. Per the decision rules, the presence of a major numeric contradiction combined with the lack of quantified sensitivities mandates a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "discounted cash flow model assuming 25% revenue CAGR through FY2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in FY2026 to 30% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 10% WACC, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "tapering to 10% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "adding $1.00 from margin gains and $0.50 from share dilution offset, reaching $5.00 by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The stated WACC of 10% is mathematically inconsistent with its cited components (7% Rf + 1.2 Beta * 6% ERP = 14.2%).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix - Key Valuation Assumptions Table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth rate of 10% is extremely high without specific justification for long-term sustainability.",
+            "WACC of 10% contradicts the report's own risk-free rate and equity risk premium inputs."
+        ]
+    }
+}

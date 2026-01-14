@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides key assumptions with moderate explicitness, listing revenue CAGR (3%), WACC (9.5%), terminal growth (2.5%), and margin targets (30% by 2029) in an appendix table. However, justification is weak - most assumptions lack historical context or peer benchmarks beyond brief mentions. Specificity is partial, with some units and timeframes provided but limited causal drivers explained. Internal consistency shows minor issues, particularly around EPS calculations and margin progression that don't fully reconcile with stated figures. Most critically, the report provides no quantified sensitivity analysis for any material drivers, only mentioning '10-15 basis points' margin compression qualitatively. The absence of robust scenarios caps the grade despite adequate assumption disclosure.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue is projected to grow at a 3% CAGR from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is set at 9.5%, reflecting beta of 1.1 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 2.5% implies a P/E multiple of 13x forward earnings",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to stabilize at 28-30%, improving from 26% in 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Starting from 2024 EPS of $12.50, add $1.00 from revenue growth, $0.50 from margin expansion, subtract $0.20 for higher provisions, yielding 2025 EPS of $13.80",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS bridge calculation yields 2025 EPS of $13.80 but financials table shows $13.8, and the math doesn't reconcile cleanly with stated margin improvements",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% lacks market data support",
+            "3% revenue CAGR without historical comparison",
+            "Terminal growth 2.5% without GDP context"
+        ]
+    }
+}

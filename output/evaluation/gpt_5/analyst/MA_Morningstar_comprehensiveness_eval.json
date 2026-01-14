@@ -1,0 +1,52 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This is a well-structured report that covers nearly all expected sections: cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, ESG, and a detailed Financials/valuation model. Depth is generally proportional: the moat and risk sections are substantive, and the valuation includes explicit assumptions (revenue CAGR, margin trajectory, cost of equity/WACC) and a DCF bridge to fair value. Evidence integration is consistent, with internal tables and references to Sustainalytics and a Wall Street Journal note where applicable. Peer context is present via competitor comparisons (Visa, AmEx) and ESG peer benchmarking. Redundancy is limited; repeated themes (cross-border, consumer spending) add incremental data points in Analyst Notes. The main gap is the Financials Snapshot: while it is robust on financial statements and returns, it omits core payment-network KPIs in a multi-year/forecast format (e.g., GDV, cross-border volume, switched transactions, take rate, client incentives % gross revenue). Some of these metrics appear qualitatively in narrative but not in the consolidated KPI table. Scenario/sensitivity analysis is also absent in the report (only referenced as available for download). These omissions constrain comprehensiveness under the rubric, capping the grade despite otherwise strong coverage and clear linkage from operating drivers to valuation.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario Analysis/Sensitivity"
+        ],
+        "sector_kpis_present": [
+            "Gross Dollar Volume (2024 point estimate)",
+            "Cross-border volume growth (y/y, narrative)"
+        ],
+        "sector_kpis_missing": [
+            "Gross Dollar Volume (multi-year/forecast)",
+            "Switched Transactions",
+            "Cross-border Volume (multi-year/forecast)",
+            "Take Rate/Net Revenue Yield",
+            "Client Incentives % of Gross Revenue"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Dollar Volume (GDV) time series",
+            "Cross-border volume time series",
+            "Switched transactions",
+            "Take rate/net revenue yield"
+        ],
+        "uncited_claims": []
+    }
+}

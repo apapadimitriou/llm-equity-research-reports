@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report contains numerous critical deficiencies in assumption quality. Key financial assumptions are largely unstated or opaque - the DCF model mentions a $210 fair value with 9.5% WACC and 3.0% terminal growth but provides no justification for these critical parameters. The financial projections table presents specific revenue and margin forecasts through 2029 without any supporting assumptions or methodology. Multiple internal contradictions exist: EPS jumps from $1.74 to $6.33 (264% increase) with no explanation, and revenue growth assumptions contradict stated deceleration trends. The CyberArk acquisition impact of '$800 million in annual revenue' lacks integration timeline or synergy assumptions. No sensitivity analysis is provided for any material drivers including competitive risks, macro impacts, or acquisition integration. The report reads more like a comprehensive business overview than a rigorous financial analysis with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow analysis yields a fair value estimate of $210 per share... weighted average cost of capital of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "revenue growth moderating to 12-15% annually over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins expanding from 27% to 30% through operational leverage",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Share count decline: 2% annually",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS projection jumps from $1.74 in FY2024A to $6.33 in FY2025E (264% increase) with no explanation or supporting assumptions",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "Revenue growth assumptions of '12-15% annually' contradict stated 'deceleration' trend and Q3 actual growth of 15%",
+                "locations": [
+                    "Fair Value section",
+                    "Analyst Note section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "capex",
+            "tax_rate_justification",
+            "acquisition_integration_timeline"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Margin expansion to 30% without supporting analysis",
+            "CyberArk $800M revenue impact without timeline"
+        ]
+    }
+}

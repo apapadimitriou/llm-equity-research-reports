@@ -1,0 +1,112 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from critical deficiencies in assumption quality. Key assumptions are scattered and lack proper justification - the 9% WACC appears without derivation, terminal growth of 2.5% lacks support, and revenue growth assumptions (\"mid-single-digit\" then \"3-4%\") are vague. Multiple contradictions exist: share repurchases of \"$9.5M\" (clearly wrong magnitude), projected EPS rising from $4.0 to $4.9 (2025-2029) while the table shows different figures, and inconsistent NIM assumptions (\"~3.3%\" vs Q1 actual 3.31%). The financial table contains implausible data (2022 revenue $115B vs actual ~$89B). Most critically, there are zero quantified sensitivities despite acknowledging material risks like rate changes and credit losses. While some assumptions are explicit, the combination of contradictions, unjustified parameters, and absence of sensitivity analysis renders the model unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue grows at a mid-single-digit CAGR (roughly 3\u20134%) through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "net interest margin stabilizing around ~3.3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "~22\u201323% operating margin over the forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume tax rate ~18%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "We use a WACC of ~9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our terminal growth rate is ~2.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Capital expenditure and share count remain roughly flat",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Share repurchase amount stated as $9.5M which is implausibly small for a $360B market cap bank",
+                "locations": [
+                    "Analyst Note",
+                    "unknown"
+                ]
+            },
+            {
+                "description": "Revenue projections inconsistent between narrative (mid-single-digit, 3-4%) and financial table showing different growth rates",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "2022 revenue shown as $115B in table vs actual BAC revenue around $89B",
+                "locations": [
+                    "Financials Snapshot",
+                    "unknown"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without derivation",
+            "Terminal growth 2.5% without support",
+            "Tax rate 18% without justification"
+        ]
+    }
+}

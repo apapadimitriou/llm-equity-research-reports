@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is overwhelmingly descriptive with minimal analytical depth. While it contains some quantified data points like \"revenue growth of 4.6% year-over-year\" and \"Tier 1 capital ratio of 11.5%\", these are presented without causal mechanisms or underlying drivers. The few attempts at explanation are shallow, such as \"revenue growth is expected to average 3-4% annually\" with no supporting rationale. Key assumptions like \"Cost of equity: 9.5%\" and \"Terminal P/E multiple: 12.0x\" are listed without benchmarking or justification. The report lacks any meaningful sensitivity analysis, scenario testing, or quantified uncertainty ranges. Most statements are generic observations rather than analytical insights, such as \"Credit risk represents the primary concern\" without quantifying potential impacts or probabilities. The valuation methodology is mentioned but not explained, and there are no stress tests or alternative scenarios provided.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth 3-4% annually with no drivers explained",
+            "efficiency ratio optimization without methodology",
+            "margin pressure mentioned but not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Cost of equity: 9.5% with no benchmark",
+            "Terminal P/E multiple: 12.0x without justification",
+            "Long-term GDP growth: 2.5% unexplained"
+        ],
+        "lack_of_sensitivity": [
+            "No rate sensitivity analysis provided",
+            "Credit loss scenarios not quantified",
+            "Fair value estimate lacks range or confidence interval"
+        ]
+    }
+}

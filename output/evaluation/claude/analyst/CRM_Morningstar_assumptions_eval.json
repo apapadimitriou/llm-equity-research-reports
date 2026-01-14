@@ -1,0 +1,74 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates strong explicitness with clearly stated assumptions proximal to forecasts and comprehensive financial projections. Justification is solid, with revenue growth supported by market size data ($248 billion TAM), historical performance context, and peer benchmarks. Specificity is comprehensive, providing precise units, timeframes, and drivers across all major assumptions. Internal consistency is clean with no contradictions found between narrative and financial tables. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers like revenue growth, margins, or WACC, which caps the grade at Good despite otherwise strong fundamentals.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year compound annual growth rate, or CAGR, for total revenue of 8% through fiscal 2030",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast non-GAAP operating margin expanding from 31% in fiscal 2024 (actual) to the upper 30% area in fiscal 2030",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 997 984 974 971 975 975 975 975",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

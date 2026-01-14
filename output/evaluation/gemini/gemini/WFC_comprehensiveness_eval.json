@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is capped at 'Fair' primarily due to the omission of at least two core sector-specific KPIs within the Financials Snapshot. While the 'Key Financial Estimates' table provides multi-year forecasts for Revenue and EPS, it lacks explicit forecasts for Net Interest Margin (NIM) and Loan Loss Provisions, both of which are essential for a bank of this scale. Per the instruction's hard caps, missing $\\ge$2 core sector KPIs in the financials snapshot limits the grade to 'Fair'. Additionally, the report exhibits significant redundancy; the 'Investment Summary' and 'Investment Thesis' sections repeat the same 'triple-barreled' catalyst structure (Asset Cap, Efficiency, and Capital Return) with minimal incremental depth, which triggers a mandatory downgrade. \n\nDespite these structural flaws, the report provides high-quality evidence integration and regulatory depth. The analysis of the Stress Capital Buffer (SCB) and CET1 ratios is exhaustive, and the valuation section successfully links operating drivers (ROTCE) to valuation outcomes (P/TBV). Peer benchmarking is present, but the lack of a proprietary sensitivity analysis table (e.g., NII sensitivity to interest rate shifts) and the repetitive narrative further justify the 'Fair' rating. The report feels comprehensive in its prose but incomplete in its quantitative data presentation.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Valuation",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Works Cited"
+        ],
+        "sections_missing": [
+            "Proprietary Scenario Analysis Table",
+            "Dedicated Economic Moat Section"
+        ],
+        "sector_kpis_present": [
+            "ROTCE",
+            "TBV",
+            "Efficiency Ratio",
+            "CET1 Ratio",
+            "Stress Capital Buffer (SCB)",
+            "Net Charge-Offs (NCOs)",
+            "Allowance for Credit Losses (ACL)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM) Forecasts",
+            "Loan Loss Provision (LLP) Dollar Forecasts"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Net Interest Margin (NIM) forecasts missing from the Key Financial Estimates table.",
+            "Loan Loss Provision dollar amount forecasts missing from the Financials Snapshot."
+        ],
+        "uncited_claims": []
+    }
+}

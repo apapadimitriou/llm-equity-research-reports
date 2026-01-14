@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a complete contents page, but exhibits significant weaknesses that prevent a higher grade. While major sections are present, the Financials Snapshot is severely compromised with 'insufficient data' entries across critical historical periods and lacks sector-specific KPIs essential for pharmaceutical analysis (R&D spending ratios, drug approval metrics, pipeline value). The valuation section attempts to link drivers to outcomes but relies heavily on assumptions marked as 'insufficient data,' undermining credibility. Evidence citations are inconsistent, with multiple claims unsupported by proper sources. Redundancy is evident with Q1 results repeated across Analyst Note and other sections without additional depth. The peer benchmarking context is largely absent, and scenario analysis is missing entirely.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D Spending Ratio",
+            "Pipeline Value",
+            "Drug Approval Metrics",
+            "Patent Cliff Analysis",
+            "Biosimilar Impact Metrics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS projections show 2025F at $10.80 but earlier text states guidance of $10.50-$10.70",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D Spending Ratio",
+            "Pipeline Value",
+            "Drug Approval Metrics",
+            "Patent Cliff Timeline",
+            "Biosimilar Competition Impact"
+        ],
+        "uncited_claims": [
+            "WACC estimated at 7.0% with insufficient data acknowledgment",
+            "Operating margins projected to expand to 27% by 2029 without supporting analysis",
+            "Terminal growth rate of 3.0% with no justification",
+            "Talc litigation payouts exceeding $10 billion with insufficient data",
+            "Multiple financial projections in Financials Snapshot marked as insufficient data"
+        ]
+    }
+}

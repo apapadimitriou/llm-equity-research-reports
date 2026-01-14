@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is almost entirely derivative, functioning as a summary of public news headlines and SEC filings rather than an original piece of equity research. It fails to provide any synthesis or original thesis. The 'Analyst Note' is heavily reliant on Reuters citations for basic performance data (EPS beats, revenue growth), and the 'Business Strategy' section merely lists recent acquisitions (Intra-Cellular, Shockwave) without analyzing their strategic synergy or quantified impact on future margins. The 'Bulls Say / Bears Say' and 'Economic Moat' sections utilize boilerplate language ('diversified portfolio,' 'aging populations,' 'patent cliffs') that is generic to the large-cap pharmaceutical sector. Furthermore, the valuation section lacks any novel drivers, employing standard DCF assumptions (8% WACC, 2% terminal growth) and round-number forecasts without explaining the underlying mechanisms. Because the report contains zero syntheses or original theses and relies on at least five generic or restated insights, it meets the criteria for a 'Poor' grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q2 2025 results beat expectations with Darzalex and MedTech outperformance.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Thesis rests on steady cash flows from a diversified healthcare franchise.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Acquisitions of Intra-Cellular and Shockwave expand the portfolio into high-growth areas.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Patent cliffs for Stelara and litigation risks from talc lawsuits are key headwinds.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fair value of $170 based on 4% revenue CAGR and 34% operating margins.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Reuters for basic performance commentary",
+            "Boilerplate 'scale & diversification' phrasing",
+            "No company-specific synthesis of M&A impact"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

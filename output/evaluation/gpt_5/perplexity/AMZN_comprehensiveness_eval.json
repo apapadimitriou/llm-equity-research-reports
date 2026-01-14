@@ -1,0 +1,61 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. The proportional depth is generally solid, and the valuation section provides explicit operating assumptions (AWS growth/margins, retail growth/margins, WACC, terminal growth) that link drivers to the fair value estimate. However, the Financials Snapshot is generic, focusing on revenue, margins, EPS, FCF, and ROIC, and omits multiple sector-specific KPIs critical for an Internet Retail/Cloud hybrid (e.g., AWS revenue and margin, Ad revenue growth, segment operating income, Prime subs, 3P mix). This triggers the KPI hard cap. Evidence integration is inconsistent: several material figures (Q2 2025 revenue/EPS; Q3 2025 guidance) are tied to outdated or mismatched sources, and many tabled metrics lack explicit sourcing, invoking the uncited/outdated hard cap as well. Peer/industry context is mentioned (Walmart, Microsoft, Google Cloud), but formal peer benchmarking and scenario/sensitivity analysis are absent. Some repetition of AI investment themes appears across multiple sections without much incremental depth. Net impact: good structural coverage and reasonable linkage from drivers to valuation, but capped at Fair due to missing KPIs in the snapshot and citation issues.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "AWS revenue and operating margin",
+            "Advertising revenue and growth",
+            "Segment operating income (NA/International/AWS)",
+            "Prime subscribers",
+            "Third-party seller services mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AWS revenue and margin",
+            "Advertising revenue growth",
+            "Segment operating income by segment",
+            "Prime subscribers",
+            "3P unit mix"
+        ],
+        "uncited_claims": [
+            "Q2 2025 revenue ($167.7B) and EPS ($1.68) cited to a 2021 MarketBeat page (outdated/mismatched)",
+            "Q3 2025 operating income guidance ($13\u201317.5B) referenced to a 2023 source (mismatched date)",
+            "Financials Snapshot EPS/FCF/ROIC history and forecasts lack explicit in-text sourcing"
+        ]
+    }
+}

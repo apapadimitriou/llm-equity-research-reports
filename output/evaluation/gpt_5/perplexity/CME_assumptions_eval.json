@@ -1,0 +1,92 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are stated explicitly and proximate to the forecasts: the appendix lists revenue CAGR (2024\u20132029), terminal growth, WACC, tax rate, and target operating margin, and the financials table provides multi\u2011year projections. Specificity is solid: magnitudes, units, and horizons are provided for material drivers. Internal consistency appears clean, with table values (e.g., 2024A EPS $10.26; op margin path to ~67%) aligning with narrative claims. However, justification is limited: WACC (8.5%), terminal growth (3%), tax rate (24%), and the 67% margin target lack support from cited sources, peer benchmarks, or a multi\u2011year historical rationale beyond brief mentions of strong margins and revenue records. The revenue CAGR (6.8%) is not triangulated against historical multi\u2011year growth or peer exchanges. Critically, there is no quantified sensitivity/scenario analysis for major levers (revenue growth, margins, WACC, terminal growth, tax), which triggers a hard cap at Fair. Share count/buyback effects are referenced qualitatively without specific modeling assumptions. Overall, assumptions are explicit and specific but weakly justified and not stress\u2011tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2024-2029): 6.8%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Tax Rate: 24.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Target Operating Margin: 67.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 8.5% reflects CME Group's stable cash flow characteristics...",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The model assumes sustainable free cash flow conversion above 90% of net income",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal Growth 3.0% without source",
+            "Tax Rate 24.0% without support",
+            "Target Operating Margin 67.0% without benchmarking",
+            "FCF conversion >90% without support"
+        ]
+    }
+}

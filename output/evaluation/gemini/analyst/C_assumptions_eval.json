@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' primarily due to multiple significant numeric contradictions between the narrative and the valuation tables, combined with a total absence of quantified sensitivity analysis. While the analyst is explicit in stating key assumptions\u2014such as midcycle revenue growth of 2%-3%, a 63% efficiency ratio, and an 8% ROTCE\u2014these figures fail to reconcile with the provided financial models. Specifically, the narrative explicitly cites a 10% cost of equity as a hurdle the bank cannot meet, yet the 'Key Valuation Drivers' table on page 20 utilizes a 9.0% cost of equity. Furthermore, the text forecasts a modest 0.8% growth in Net Interest Income (NII) for 2025, whereas the 'Morningstar Valuation Model Summary' table on page 19 projects a 1.5% decline for the same period. Justification is qualitatively solid, leveraging segment-specific analysis (TTS, Markets, USPB) and historical context to challenge management's guidance. However, the report fails the 'stress-tested' pillar entirely. Despite identifying Citigroup as being on the 'higher end of Medium' uncertainty and noting risks from interest rate cycles and credit disruptions, there are no quantified sensitivity tables or bull/bear scenarios illustrating the impact of these variables on the $75 fair value estimate. Per the grading rubric, the presence of two distinct numeric contradictions, combined with the absence of quantified sensitivities, necessitates a 'Poor' rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project the bank will struggle to meet our assigned cost of equity of 10%, even by the end of our forecast period.",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We have net interest income growing modestly by 0.8% in 2025, due to flattish net interest margins and muted balance sheet growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Over time, on a core basis, we expect overall revenue growth of around 2%-3% annually on a midcycle basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect the overall expense base of the bank to remain flattish for the next two years due to management's efficiency initiatives.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our forecasts have the bank essentially missing almost every one of management's medium-term goals, including an efficiency ratio of less than 60% (we're at 63%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We have assumed that the Mexico unit of the bank is worth $6 billion, for a net adjustment of $4.5 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "20"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of Equity is stated as 10% in the narrative but listed as 9.0% in the Valuation Model Summary table.",
+                "locations": [
+                    "Economic Moat, Page 4",
+                    "Key Valuation Drivers, Page 20"
+                ]
+            },
+            {
+                "description": "2025 Net Interest Income growth is forecast at 0.8% in the text but shown as a 1.5% decline in the Valuation Model Summary table.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 10",
+                    "Morningstar Valuation Model Summary, Page 19"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Stage II Net Income Growth Rate of 3.0% is provided in the table without narrative justification."
+        ]
+    }
+}

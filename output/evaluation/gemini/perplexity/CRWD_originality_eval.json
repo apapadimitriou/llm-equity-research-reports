@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original synthesis or unique theses, functioning instead as a high-quality summary of the provided search results. Every 'insight' identified is a direct restatement of data points found in the source material, particularly regarding Q1 2026 EPS beats, ARR growth percentages, and Charlotte AI deal counts (sourced directly from [3], [11], and [14]). There is no attempt to link disparate data points\u2014such as connecting the specific financial impact of the July 2024 outage to a quantified shift in customer acquisition costs or competitive win rates. The valuation section is entirely generic, utilizing standard CAGR and WACC assumptions without identifying a novel driver or company-specific mechanism. The 'Economic Moat' and 'Business Strategy' sections rely on boilerplate industry phrasing ('land and expand,' 'switching costs') that could apply to almost any SaaS provider. Because the report contains zero syntheses or original theses and relies on at least six copied or generic restatements, it meets the criteria for a 'Poor' grade under the established decision rules.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Q1 2026 results showed resilience with $0.73 EPS beating consensus by 10.6%.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Charlotte AI was included in over 100 customer deals during the latest quarter.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Next-Gen SIEM business grew over 115% year-over-year to $330 million in ARR.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The company's 'land and expand' model drives customer acquisition with initial endpoint protection.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Economic moat stems from switching costs, network effects, and brand recognition.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Valuation assumes ARR growth moderates to a sustainable 15-18% CAGR over five years.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'land and expand' and 'switching costs' phrasing",
+            "Direct copying of ARR and EPS figures from provided search results",
+            "Recap of 2024 outage without unique interpretive commentary"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

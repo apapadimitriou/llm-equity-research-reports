@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "This report demonstrates solid analytical depth by linking outcomes to identifiable drivers and embedding explicit, quantified assumptions within a full DCF framework. Causally, it explains Worldpay\u2019s underperformance as \u201cunderinvestment in the SMB, or small and medium-sized business, space\u201d and notes FIS \u201clagged its peers during this recovery,\u201d attributing it to mix (large merchants, UK exposure) and operational missteps. Forecasts are tied to business dynamics: a mature bank-tech focus leads to \u201ca 4% revenue CAGR,\u201d and scalability plus cost actions support \u201cadjusted EBITDA margins to improve\u201d by \u201c40 basis points\u201d annually. Data use is strong, with detailed multi-year projections, and clear valuation inputs\u2014\u201cWe use a cost of equity of 7.5%.\u201d The report also distinguishes recurring vs one-time license revenue and outlines risks (\u201cresults at Worldpay are sensitive to macroeconomic conditions\u201d) and data-security ESG exposure. However, it falls short on quantified scenario or sensitivity analysis\u2014there\u2019s no WACC, growth, or margin sensitivity, and key assumptions aren\u2019t benchmarked to peers or industry ranges. Actionable implications are present (e.g., fair value, capital return emphasis), but the lack of explicit scenario ranges limits decision-ready contingencies. Overall, clear mechanisms and quantified assumptions elevate the depth, even as the absence of sensitivity analysis and benchmarking leaves room for improvement.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "4% revenue CAGR \u2192 segment drivers not decomposed",
+            "EBITDA +40 bps/yr \u2192 operational levers not specified",
+            "Worldpay sale \u2192 FIS margin bridge not quantified"
+        ],
+        "unsupported_assumptions": [
+            "cost of equity 7.5% with no CAPM inputs",
+            "Stage II EBI growth 4% without industry benchmark",
+            "Perpetuity Year 15 not justified"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC or COE sensitivity shown",
+            "No range around 4% revenue CAGR",
+            "No downside/upsides for bank-tech growth or margins"
+        ]
+    }
+}

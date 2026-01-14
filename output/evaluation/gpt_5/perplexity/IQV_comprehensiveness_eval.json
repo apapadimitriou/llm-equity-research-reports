@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections with a clear cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, ESG, Financials Snapshot, and Sources. Valuation assumptions are reasonably explicit and linked to operating drivers (segment growth and margin expansion), and sector-relevant metrics like backlog and book-to-bill are discussed in-text. However, the Financials Snapshot table omits core CRO KPIs (e.g., backlog, book-to-bill, net new awards, pass-through mix), triggering a hard cap. Evidence integration is mixed: while many claims are cited, several references are outdated (e.g., fair value/WACC tied to a 2022 source, style box from 2020, dividend data from 2013), which undermines comprehensiveness and timeliness. Peer benchmarking and scenario/sensitivity analysis are absent, limiting industry context and robustness. Redundancy appears where leverage and macro headwinds recur across Analyst Note, Bears, Risk, and Capital Allocation with modest added depth. Overall, strong structural coverage and reasonable linkage of drivers to valuation are offset by missing sector KPIs in the snapshot, lack of peer/scenario analysis, and inconsistent citation currency.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Backlog",
+            "Book-to-Bill",
+            "Segment Revenues",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Backlog (in Financials Snapshot)",
+            "Book-to-Bill (in Financials Snapshot)",
+            "Net New Awards",
+            "Pass-Through Revenue Mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Backlog (Financials Snapshot)",
+            "Book-to-Bill (Financials Snapshot)",
+            "Net New Awards",
+            "Pass-Through Revenue Mix"
+        ],
+        "uncited_claims": [
+            "ESG Risk Rating: Medium (no in-text source)",
+            "Capital Allocation rating: Good (no in-text source)"
+        ]
+    }
+}

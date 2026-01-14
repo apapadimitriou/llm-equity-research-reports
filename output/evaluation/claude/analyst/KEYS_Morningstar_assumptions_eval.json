@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates moderate explicitness with key assumptions clearly stated in dedicated sections, particularly valuation drivers. Justification is partial - revenue growth assumptions are supported by recent guidance and market context, margin assumptions reference historical trends and mix shifts, but WACC components lack detailed sourcing. Specificity is solid with clear units, timeframes, and magnitudes throughout the financial forecasts. Internal consistency is clean with no contradictions found between narrative and tables. However, the report completely lacks quantified sensitivity analysis or scenario testing for any material drivers, which caps the grade at Fair despite otherwise solid assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast more modest growth in fiscal 2025 before a more meaningful rebound in fiscal 2026. Long-term, we see mid-single-digit growth for Keysight.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect a mix tilting toward software and services to expand non-GAAP gross margins from 65% in fiscal 2024 up to 66% in fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We predict non-GAAP operating margins to expand from a below-normal 26% in fiscal 2024 to 30% in fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.7",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Projected Diluted Shares 171",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.7% without detailed sourcing",
+            "Cost of Equity 9.0% without methodology"
+        ]
+    }
+}

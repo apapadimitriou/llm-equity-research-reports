@@ -1,0 +1,88 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit point-estimate assumptions for several material drivers, including a revenue CAGR of 7-8% through 2029, operating margins of 45-47%, and a specific WACC of 7.5%. These are proximal to the valuation conclusion and include specific units and time horizons. Justification is partial; while the report cites management guidance for product sales and industry expectations for terminal growth, it lacks a detailed build-up for the WACC or a multi-year historical comparison to validate the margin expansion claims. The report's primary deficiency is the total absence of quantified sensitivity or scenario analysis. While it qualitatively lists 'key sensitivity factors' such as adoption rates and competitive dynamics, it fails to provide quantified ranges or impact analysis on the Fair Value Estimate (FVE). Per the instruction's hard caps, the lack of quantified sensitivity analysis on material drivers mandates a maximum grade of 'Fair'. Internal consistency is maintained between the stated EPS growth and revenue targets, and no numeric contradictions were identified.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 7-8% through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "combined 2027 sales outlook for Skyrizi and Rinvoq to exceed $31 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion to approximately 45-47% over the forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital of 7.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate assumption of 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "modest share count reduction through buybacks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "adjusted earnings per share growth from $10.12 in 2024 to approximately $15-16 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without derivation",
+            "Operating margin expansion to 45-47% without historical context"
+        ]
+    }
+}

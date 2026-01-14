@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections with reasonable breadth: cover block and contents, an Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, and Appendix/Sources are present. Depth is mixed: narrative context on segments, pipeline mentions, and capital allocation are included, and the valuation section states explicit assumptions (growth, margin, discount rate, tax) and links them to drivers (new launches, geographic expansion, margin change). However, the Financials Snapshot is generic and omits multiple core sector KPIs (segment revenue breakdown, product-level sales, pipeline/trial phase metrics, MedTech volumes), triggering a comprehensiveness cap. Evidence integration is inconsistent: several material claims rely on outdated sources (2018\u20132020) or are not clearly supported by the cited references, weakening the report\u2019s evidentiary rigor. Peer benchmarking and scenario/sensitivity analysis are absent, and key talking points (Stelara biosimilars) recur across sections with limited added depth. These gaps reduce proportionality and completeness despite the otherwise broad structure, resulting in a Fair grade under the decision rules.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Segment growth (MedTech +4.1% operational)",
+            "R&D as % of Innovative Medicine revenue (~24%)",
+            "US/International revenue mix (56%/44%)",
+            "Recent pipeline approval (IMAAVY for gMG)",
+            "LOE/biosimilar exposure (Stelara)"
+        ],
+        "sector_kpis_missing": [
+            "Segment revenue breakdown in Financials Snapshot",
+            "Product-level sales (Stelara, Darzalex, Tremfya)",
+            "Pipeline/trial timeline and phase counts",
+            "R&D intensity trend in Financials Snapshot",
+            "MedTech procedure/device volume KPIs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Discount rate (8.2%) in Appendix is inconsistent with WACC stated as 5.9% in Economic Moat.",
+                "locations": [
+                    "Economic Moat",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "ROIC cited as 15.9% in Economic Moat vs 14.9% shown for FY2024A in Financials Snapshot.",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Segment revenue breakdown",
+            "Product-level sales for key franchises",
+            "Pipeline/trial phase metrics",
+            "MedTech volume/backlog KPIs"
+        ],
+        "uncited_claims": [
+            "Free cash flow of $16.4B annually cited to a 2018 source",
+            "ROIC 15.9% based on a 2019 source",
+            "Shareholder yield (buyback + dividend yields) derived from 2020 data",
+            "Market cap and last close figures in Cover Block without citation",
+            "Intra-Cellular Therapies acquisition mention not supported by the cited source"
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report offers clear causal explanations for key drivers, e.g., \u201cAuCA growth driven by market recoveries and client expansions,\u201d \u201cmargins may compress due to higher operating costs,\u201d and \u201cinterest rate normalization could pressure net interest margins.\u201d Inference quality is supported by explicit, quantified assumptions in the valuation (e.g., \u201cRevenue CAGR 2025-2029 | 4.0%,\u201d \u201cOperating margins are projected to stabilize at 25-28%,\u201d \u201cTerminal Growth Rate | 2.5%,\u201d and \u201cWACC is estimated at 9%\u201d). Data use includes a basic EPS bridge and a P/E cross-check \u201cconsistent with historical averages,\u201d plus terminal growth linked to GDP, which provides some benchmarking. However, the analysis lacks quantified sensitivities or scenario ranges; risks are noted qualitatively without tying them to earnings or valuation impacts. Several areas rely on \u201cinsufficient data,\u201d weakening robustness (e.g., the EPS bridge baseline). Actionable implications are present but limited, mainly to monitoring upcoming Q2 metrics (AuCA, fees, guidance). Overall, mechanisms and quantification are present with minimal benchmarking, but the absence of sensitivity/scenario analysis and the limited linkage of assumptions to operational drivers cap the analytical depth at Good.\n\nExcerpts:\n- \u201cAuCA growth driven by market recoveries and client expansions\u201d\n- \u201cmargins may compress due to higher operating costs\u201d\n- \u201cinterest rate normalization could pressure net interest margins\u201d\n- \u201cOperating margins are projected to stabilize at 25-28%\u201d\n- \u201cRevenue CAGR 2025-2029 | 4.0%\u201d\n- \u201cTerminal Growth Rate | 2.5%\u201d",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "No linkage between AuCA changes and fee rate/yield",
+            "Limited explanation for margin stabilization at 25\u201328%"
+        ],
+        "unsupported_assumptions": [
+            "Revenue CAGR 4% \u201cBased on industry trends\u201d without evidence",
+            "EPS ~$7.50 despite \u201cinsufficient data\u201d starting EPS",
+            "Margin expansion 1.0% attributed to efficiency gains without detail"
+        ],
+        "lack_of_sensitivity": [
+            "No rate sensitivity for NII/NIM",
+            "No scenario ranges for margins or revenue",
+            "Risks not quantified into EPS/valuation impacts"
+        ]
+    }
+}

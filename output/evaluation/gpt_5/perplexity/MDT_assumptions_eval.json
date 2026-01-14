@@ -1,0 +1,148 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Several core inputs are explicitly stated (segment growth bands, WACC, terminal growth, FCF conversion, margin trajectory), but justification is limited: figures are asserted without multi-year historical reconciliation, peer benchmarks, or cited sources. Specificity is mixed\u2014some assumptions have clear magnitudes and horizons (e.g., \u201cWACC: 8.5%\u201d, \u201cTerminal growth rate: 2.5%\u201d), while others are vague (e.g., \u201cmodest share count reduction\u201d) and omit tax rate and capex. Internal consistency is impaired by unresolved contradictions: FY25 EPS in the narrative (adjusted $5.49) conflicts with the FY25E EPS (3.61) in the table; margin expansion is stated as \u201c50\u2013100 bps annually\u201d in one section versus \u201c100\u2013150 bps over 5 years\u201d in the appendix. Sensitivity analysis is absent\u2014no quantified ranges/scenarios tie key levers (growth, margins, WACC, terminal growth) to valuation. Under the decision rules and hard caps, the combination of at least one contradiction and no sensitivities warrants a Poor grade. While assumptions are partially explicit and specific, lack of evidence, contradictions, and no stress-testing materially undermine reliability.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth drivers include 5-7% organic expansion in cardiovascular solutions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "4-6% growth in neuroscience applications",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "3-5% medical surgical growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The diabetes separation removes approximately $2.8 billion in revenue",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion of 50-100 basis points annually appears achievable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital estimate of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Free cash flow conversion from net earnings should improve toward 75-80%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR (FY25-29): 3.1% post-diabetes separation",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion: 100-150 bps over 5 years",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "modest share count reduction through buybacks",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY25 EPS in narrative ($5.49 adjusted) conflicts with FY25E EPS (3.61) in table with no reconciliation.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Margin trajectory conflicts: '50\u2013100 bps annually' vs '100\u2013150 bps over 5 years'.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count (not quantified)",
+            "sensitivity/scenario analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source/benchmark",
+            "Terminal growth 2.5% without source",
+            "Segment growth bands (5\u20137%, 4\u20136%, 3\u20135%) without historical/peer evidence",
+            "FCF conversion 75\u201380% without support"
+        ]
+    }
+}

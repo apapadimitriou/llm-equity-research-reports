@@ -1,0 +1,59 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report is broadly comprehensive, with a clear cover block and contents, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials, ESG, and an Appendix. The Financials Snapshot is robust, providing multi-year history and forecasts for revenue, margins, ROIC, EPS, FCF, and leverage\u2014appropriate for medical devices\u2014and the Valuation section explicitly links operating drivers (adoption of renal denervation, pulsed field ablation, extravascular devices) to revenue growth and margin expansion assumptions, supported by a detailed DCF (WACC, tax rate, stage parameters). Peer benchmarking is included with competitor comparisons and valuation metrics. Evidence is consistently presented through internal Morningstar tables and Sustainalytics ESG data, with minimal redundancy across sections. The main gaps are the absence of explicit scenario/sensitivity analysis within the document and limited device-specific KPIs (e.g., procedure volumes/installed base) in the snapshot tables. There\u2019s a minor inconsistency in fair value dating on the cover versus updated valuation content. Overall, the scope and linkage justify a Good grade despite these small gaps.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Notes Archive",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "EBITDA Margin",
+            "ROIC",
+            "Revenue Growth %",
+            "Free Cash Flow Margin"
+        ],
+        "sector_kpis_missing": [
+            "Procedure Volumes/Installed Base"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value date on cover (Nov 22, 2022) conflicts with updated valuation content and model dated May/Jul 2025",
+                "locations": [
+                    "Cover block",
+                    "Fair Value and Profit Drivers",
+                    "Morningstar Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Procedure volumes/installed base"
+        ],
+        "uncited_claims": []
+    }
+}

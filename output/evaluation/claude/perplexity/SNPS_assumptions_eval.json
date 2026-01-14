@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from severely opaque assumptions that are scattered throughout without clear connection to forecasts. Key financial projections in the Financials Snapshot table (revenue growing from $6.1B to $8.4B, EPS jumping from $9.85 to $24.50) lack any explicit justification or derivation. The Fair Value section mentions '$685 per share' using '28x forward P/E on $24.50 EPS' but provides no basis for these critical inputs. WACC/discount rate assumptions are buried in appendix without justification. Most concerning, there are clear contradictions: the report claims 'net cash position of $3.8 billion' while simultaneously stating 'debt-to-equity ratio of 101.4%' - these cannot both be true. China revenue projections show internal inconsistency (16% decline vs 15% decline in different sections). No quantified sensitivity analysis exists for any material drivers despite significant uncertainties around China restrictions and Ansys integration. The assumptions fail all five quality pillars.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth assumptions include 8-10% organic growth driven by AI tool adoption and IP expansion, plus Ansys contribution targeting combined entity revenue of $8+ billion by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion from current 21% toward 25% reflects scale benefits and $400 million cost synergies realization",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "28x forward price-to-earnings multiple to fiscal 2026 estimated earnings per share of $24.50",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Discount rate: 10.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Normalized China revenue decline: 15% in FY2025, recovering 50% by FY2027",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims both 'net cash position of $3.8 billion' and 'debt-to-equity ratio of 101.4%' which cannot both be accurate",
+                "locations": [
+                    "Capital Allocation section",
+                    "Business Description section"
+                ]
+            },
+            {
+                "description": "China revenue decline stated as both '16% year-over-year' and '15% in FY2025' in different sections",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "tax_rate",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without source",
+            "28x P/E multiple without benchmark",
+            "Terminal growth 3.0% without justification",
+            "EPS projection $24.50 without derivation"
+        ]
+    }
+}

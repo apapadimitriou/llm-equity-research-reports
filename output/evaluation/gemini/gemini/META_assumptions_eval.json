@@ -1,0 +1,70 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s quality of assumptions is characterized by high explicitness and internal consistency, yet it is strictly limited by the absence of quantified sensitivity analysis. Key drivers\u2014specifically the 17% revenue growth for 2025, the $70 billion to $90 billion CapEx ramp-up, and the resulting operating margin contraction to 37-38%\u2014are clearly stated and proximal to the forecasts they inform. These inputs are well-justified through a combination of management guidance and a logical causal driver: the 'depreciation bomb' resulting from hyper-intensive AI infrastructure spending. The report maintains a clean reconciliation between its narrative, financial tables, and the blended DCF/SOTP price target calculation. However, the report hits a hard cap of 'Fair' because it lacks any quantified sensitivity or scenario analysis for its material drivers. While the text acknowledges that the valuation is 'highly sensitive' to the Weighted Average Cost of Capital (WACC) and terminal growth rate, it fails to provide the specific ranges or valuation impacts required for a 'Good' or 'Excellent' rating. Furthermore, while the 9.5% WACC is stated, the underlying components (risk-free rate, beta, equity risk premium) remain opaque, and the share count assumptions are not explicitly detailed. The reliance on a single-point estimate for such a volatile investment cycle prevents the model from being truly stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "A 17% growth rate is modeled for 2025, driven by the continued positive impact of AI on ad performance",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "A consolidated GAAP operating margin contraction is forecast from 42% in 2024 to 38% in 2025 and 37% in 2026.",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model $70 billion in 2025 (the midpoint of guidance) and $90 billion in 2026.",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Utilizing a Weighted Average Cost of Capital (WACC) of 9.5%, which reflects the increased risk profile associated with the massive AI investment cycle",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a terminal growth rate of 3.5%",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without component breakdown (Beta, ERP, etc.)"
+        ]
+    }
+}

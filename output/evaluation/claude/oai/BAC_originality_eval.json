@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates minimal originality, heavily relying on paraphrased content from cited sources with only superficial synthesis. While it presents some company-specific details (e.g., NIM of 3.31%, $3.8B technology spend), most insights are generic banking sector observations or direct restatements of public information. The report contains extensive boilerplate language about 'scale & diversification' and 'responsible growth.' The valuation section lacks novel drivers, using standard DCF assumptions without unique analytical angles. Although there are 1-2 weak attempts at synthesis (linking technology investment to efficiency, connecting stress test results to capital returns), these lack depth and specificity. The analysis fails to provide decision-relevant insights that go beyond what's readily available in earnings reports and news coverage.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "BAC forecasts record NII in 2025 (up ~6\u20137%)",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Scale & Diversification: A top-3 U.S. franchise with branches, Merrill Lynch, corporate banking",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Large technology budget (\u2248$3.8B/year) and data initiatives improve productivity",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "BofA passed the 2025 stress test, indicating ample capital to resume buybacks/dividends",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "If the Fed cuts rates, net interest margins could compress",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Morningstar recently upgraded BAC to a Wide moat",
+                "classification": "Copied",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic 'scale & diversification' boilerplate",
+            "Standard DCF with no novel drivers",
+            "Extensive paraphrasing of earnings reports",
+            "Generic banking sector risk discussion"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

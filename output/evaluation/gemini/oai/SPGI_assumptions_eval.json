@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to a combination of a material internal contradiction and a total absence of quantified sensitivity analysis. While the report explicitly states its key drivers\u2014including revenue growth, EBIT margins, WACC, and terminal growth\u2014it fails to maintain internal consistency. Specifically, the narrative repeatedly claims a revenue CAGR of 5\u20136% and 'mid-single-digit' growth, yet the 'Financials Snapshot' table presents figures implying 10.4% growth for 2024E and 8.7% for 2025F. This unresolved numeric conflict between the text and the model's primary output table violates the core requirement for consistency. Furthermore, the report lacks any quantified stress-testing or scenario analysis. While it qualitatively mentions risks such as economic downturns and regulatory probes, it provides no quantified ranges or valuation impacts for these material drivers. The justification for the 8% WACC is non-existent, lacking any breakdown of the risk-free rate, beta, or equity risk premium. Per the grading instructions, the presence of one major contradiction combined with the lack of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our model assumes revenue CAGR ~5\u20136% through FY29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project EBIT margins rising towards ~42% (pre-spin) by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "backed by a ~8% WACC",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth ~2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "reducing share count ~2% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth rate in text (5-6% CAGR) conflicts with the Financials Snapshot table which shows 10.4% growth in 2024E and 8.7% in 2025F.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_sensitivity_analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC of 8% stated without components or source."
+        ]
+    }
+}

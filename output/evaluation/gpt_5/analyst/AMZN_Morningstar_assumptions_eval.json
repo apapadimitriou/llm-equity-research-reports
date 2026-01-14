@@ -1,0 +1,113 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s core assumptions are explicit and proximal to the forecasts they inform. Key drivers\u2014segment CAGRs (retail 8%, AWS 16%, ads 17%), total revenue CAGR (~10% to 2028), margin expansion (2024 to 2029), discount rate (COE 9%, WACC 8.7%), tax rate (21%), and share count (11)\u2014are clearly stated with units and horizons, and they reconcile well to the valuation tables. Specificity is solid, with magnitudes and timeframes provided, plus DCF stage parameters (Stage II EBI growth 8.8%, perpetuity year 20) and an EV/sales and FCF yield implication. Justification is partial: the narrative links growth and margin expansion to AWS/ads outperformance and operational efficiencies, and offers limited peer context (e.g., ad margins vs. Facebook) but lacks systematic multi-year historical or benchmark evidence tied to each numeric input. Internal consistency appears clean; table values broadly align with stated trajectories, with only minor rounding differences. However, there is no quantified sensitivity or scenario analysis for material drivers (e.g., revenue CAGRs, margin path, WACC), which caps the assessment. Overall, assumptions are explicit and specific but weakly justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model total retail-related revenue growing at an 8% compound annual growth rate (CAGR) over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Over the next five years, we project AWS revenue growing at a 16% CAGR and advertising revenue growing at a 17% CAGR.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In total, Amazon should grow at an 10% CAGR through 2028.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model GAAP operating margin expanding from 11% (actual) in 2024 to approximately 13% in 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our fair value estimate for Amazon is $240 per share, which implies a 2025 enterprise value to sales multiple of 4 times and a 2% free cash flow yield.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.7",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Perpetuity Year 20",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 11",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth (rate not explicitly quantified)",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.7% without source linkage",
+            "Segment CAGRs (AWS 16%, ads 17%) lack cited benchmarks/sources"
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation-driving assumptions are stated explicitly in the DCF section, including revenue CAGRs by segment, margin trajectory, WACC components, and terminal growth. Specificity is mixed: some inputs have clear magnitudes and horizons (e.g., ~20% revenue CAGR through FY27, WACC 9.1%, terminal growth 3%), while others are vague (\u201cdouble-digit,\u201d \u201clow-single-digit,\u201d \u201ctoward 70%\u201d). Justification is partial: the report references management guidance and external WACC ranges, but provides limited historical/peer evidence tying >50% AI CAGR, double-digit software growth, and 70% margins to multi-year data or benchmarks. Internal consistency has a notable contradiction between narrative quarterly figures and the estimates table (Q2 FY25 numbers appear mismapped), triggering a cap at Fair. Sensitivity analysis is limited to a quantified WACC change (200 bps \u2192 15\u201320% valuation impact); there are no quantified scenarios for other material drivers like AI growth, software growth, or margins. Several important model inputs (tax rate, capex, share count trajectory) are missing or opaque, further limiting auditability.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our DCF model projects revenue to grow at a Compound Annual Growth Rate (CAGR) of approximately 20% through fiscal year 2027, before moderating to a high-single-digit rate.",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI semiconductor revenue will continue its rapid expansion, growing at a CAGR exceeding 50%",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "the Infrastructure Software segment will deliver consistent double-digit growth as the VCF subscription transition matures",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "the non-AI semiconductor business will return to low-single-digit growth following its cyclical trough.",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we model consolidated non-GAAP operating margins expanding toward 70% over the forecast period",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our model utilizes a WACC of 9.1%, based on a cost of equity of 9.2% and a post-tax cost of debt of 4.8%.",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "A terminal growth rate of 3.0% is assumed, reflecting long-term global economic growth.",
+            "location": {
+                "section": "Valuation Analysis \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states Q2 FY25 total net revenue of $15.004B and segment revenues ($8.408B Semiconductor; $6.596B Software), while the table shows Q2'25 Total Revenue $15,952M; Semiconductor $9,166M; Software $6,786M\u2014appears the narrative uses Q1'25 figures labeled as Q2.",
+                "locations": [
+                    "Q2 FY25 Financial Performance and Outlook",
+                    "Quarterly Financial Summary & Estimates"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "AI CAGR >50% without multi-year/peer evidence",
+            "Operating margin ~70% without detailed synergy quantification",
+            "Terminal growth 3% without source/benchmark"
+        ]
+    }
+}

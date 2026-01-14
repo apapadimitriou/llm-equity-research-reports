@@ -1,0 +1,80 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to a combination of significant internal contradictions and a total lack of quantified sensitivity analysis. While the report explicitly identifies key drivers such as revenue growth, operating margins, and WACC, these assumptions are weakly justified. There is no multi-year historical data or peer benchmarking provided to support the specific magnitudes chosen. A critical numeric contradiction exists between the narrative and the data tables: Section 8 ('Fair Value and Profit Drivers') explicitly assumes 'revenue growth of approximately 6-8% annually over the next five years,' yet the 'Financials Snapshot' table in Section 11 shows 2025E revenue growth of only 4.3% ($61.8B to $64.5B) and a three-year CAGR of approximately 5.1%. Per the instruction's hard caps, the presence of a distinct contradiction combined with the absence of quantified sensitivities (the 'Risk & Uncertainty' section is entirely qualitative) necessitates a 'Poor' grade. Furthermore, the valuation parameters\u2014specifically the 9.5% WACC and 3.0% terminal growth rate\u2014are presented as point estimates without any underlying calculation, source, or scenario testing, rendering the model's outputs a 'black box' that cannot be audited or stress-tested by the reader.",
+    "assumptions_extracted": [
+        {
+            "quote": "project revenue growth of approximately 6-8% annually over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Wealth Management net revenues growing at a 7% compound annual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "assume operating margins remain in the 28-30% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The narrative assumes 6-8% annual revenue growth, but the Financials Snapshot table shows only 4.3% growth for 2025E and a 5.1% CAGR through 2027E.",
+                "locations": [
+                    "Section 8: Fair Value and Profit Drivers",
+                    "Section 11: Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC of 9.5% without derivation or market source",
+            "Terminal growth of 3.0% without economic justification"
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (cover block, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, appendix, sources), but many are skeletal and labeled \u201cinsufficient data.\u201d The valuation section explicitly lacks a model and does not link operating drivers (e.g., segment growth, margins, capex) to the fair value\u2014triggering a hard cap at Fair. The Financials Snapshot is thin and mixes metrics (gross margin noted under operating margin) and omits core semiconductor KPIs (gross margin series, segment mix, capex, R&D%, inventory/ASPs), breaching the KPI hard cap. Evidence integration is inconsistent: several material figures (EPS, gross margin vs. estimates, data center revenue vs. estimates) rely on unspecified \u201cX posts,\u201d and a 20\u201330% valuation swing is asserted without sourcing. Peer benchmarking and scenario/sensitivity analysis are absent, reducing industry context and robustness. There is minor redundancy (repeated 69% YoY data center growth and \u201cinsufficient data\u201d disclaimers across sections) without added depth. While the table of contents is complete and sources are listed, the lack of detailed financial history/forecast tables, sector KPIs, model assumptions (WACC, terminal growth), and peer context limits comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation (Fair Value and Profit Drivers)",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking / Industry Context",
+            "Scenario / Sensitivity Analysis",
+            "Valuation Model Details (WACC, terminal growth, margins bridge)",
+            "Detailed KPI Tables by Segment"
+        ],
+        "sector_kpis_present": [
+            "Total Revenue",
+            "Adjusted EPS",
+            "Data Center revenue (point-in-time mention)",
+            "Adjusted Gross Margin (point-in-time)"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin % time series in Snapshot",
+            "Segment mix (Data Center/Gaming/Pro Viz/Auto)",
+            "R&D as % of Sales",
+            "Capex",
+            "Units/ASPs or supply metrics",
+            "Inventory turns/days"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Gross margin (~61%) is placed under 'Op-Margin %' in the Financials Snapshot, conflicting with the metric label.",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Margin % time series",
+            "Segment mix by revenue",
+            "R&D as % of Sales",
+            "Capex",
+            "Units/ASPs",
+            "Inventory turns"
+        ],
+        "uncited_claims": [
+            "Adjusted EPS $0.81 vs. $0.93 estimate and adjusted gross margin 61% vs. 71% estimate attributed to 'X posts' without verifiable source.",
+            "Data Center revenue $39.1B vs. $39.22B estimate sourced to 'X posts' without citation.",
+            "Valuation swing of 20\u201330% stated without supporting source.",
+            "FY2025 revenue '91.1 (partial, Q1\u2013Q3 sum)' references 'X posts' and is not properly sourced."
+        ]
+    }
+}

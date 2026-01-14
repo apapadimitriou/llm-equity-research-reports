@@ -1,0 +1,100 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximate to forecasts (revenue path, margins, WACC, terminal growth appear in \u2018Fair Value and Profit Drivers\u2019, the Financials Snapshot, and the Appendix). Specificity is solid: magnitudes, units (% and $ billions), and time horizons (2025\u20132029, 2026\u20132028) are stated. However, justification is weak: key inputs (WACC 10.5%, terminal growth 3%, margin expansion) lack cited evidence beyond general statements about volatility, cost cuts, and pipeline launches; peer/history benchmarks are minimal. Internal consistency has at least one clear numeric contradiction: the stated \u201c5-year revenue CAGR of -5% from 2025\u20132029\u201d conflicts with the revenue table that rises from $2.0B in 2025 to $6.5B in 2029. Sensitivity analysis is effectively absent for material drivers; while a broad \u201c\u00b130%\u201d FVE sensitivity and a qualitative 20% revenue risk are mentioned, there are no quantified driver-based scenarios (e.g., revenue/approval timing, margin, WACC) tied to valuation impact. Given one contradiction and lack of driver sensitivities, the assumptions quality is capped at Fair despite acceptable explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "5-year revenue CAGR of -5% from 2025-2029, reflecting initial declines followed by 10% growth post-2026 from new launches",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to improve from -200% in 2025 to 15% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Revenue (B) \u2026 2025 Forecast | 2.0 \u2026 2029 Forecast | 6.5",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is estimated at 10.5%, incorporating high beta due to biotech volatility.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Margin Expansion | 215 pts | Cost cuts to breakeven by 2028",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "targeting 2026 GAAP operating expenses of $5.4 billion to $5.7 billion and 2027 expenses of $4.7 billion to $5.0 billion, with a goal of cash breakeven by 2028",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiple"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated \u201c5-year revenue CAGR of -5% from 2025\u20132029\u201d conflicts with revenue forecast rising from $2.0B (2025) to $6.5B (2029).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "working_capital assumptions",
+            "unit/pricing drivers for revenue"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.5% without source/peer evidence",
+            "Terminal Growth 3.0% without citation",
+            "Margin expansion of 215 pts without detailed cost plan linkage"
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "While the report includes a cover block, contents, Analyst Note, Business Description, Strategy/Outlook, Bulls/Bears, and a brief Risks section, most core sections are missing or explicitly labeled as \u2018insufficient data\u2019 (Economic Moat, Valuation & Profit Drivers, Capital Allocation, Financials Snapshot, ESG, Appendix tables). The Financials Snapshot is skeletal, offering only partial Q1 revenue and EPS with no multi-year history, forecasts, or biopharma-specific KPIs. Valuation is absent and provides no linkage from operating drivers to fair value, triggering a hard cap. Evidence integration is inconsistent: an in-text citation [8] is missing from Sources, several material claims (e.g., Keytruda patent timeline, analyst forecasts) lack citations, and sources include items post-dating the report and an outdated 2022 link. Peer benchmarking and scenario/sensitivity analysis are absent. There is redundancy, with Gardasil headwinds repeated in Analyst Note, Bears, and Risks without added depth. Overall, the report is incomplete and lacks the necessary data, KPIs, valuation bridge, capital allocation analysis, and ESG coverage to be considered comprehensive.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears (Upside/Downside)",
+            "Risk & Uncertainty",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Capital Allocation",
+            "Financials Snapshot (multi-year history + forecasts)",
+            "ESG/Controversies",
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue (Q1 2025)",
+            "GAAP EPS (Q1 2025)",
+            "Non-GAAP EPS (Q1 2025)",
+            "Product-level sales mentions (Keytruda, Gardasil, Winrevair) in Analyst Note"
+        ],
+        "sector_kpis_missing": [
+            "Multi-year product sales breakdown table (Keytruda, Gardasil, Winrevair, Animal Health)",
+            "Pipeline/trial milestones table and timelines",
+            "Patent expiry schedule (e.g., Keytruda LOE)",
+            "R&D and SG&A as % of revenue",
+            "Gross margin/operating margin",
+            "Company guidance and long-term growth assumptions"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Sources for 'recent earnings call transcripts' [4],[5] post-date the report (2025-08 vs. report date 2025-07-09), creating temporal inconsistency.",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product sales breakdown (multi-year/table)",
+            "Pipeline/trial milestones",
+            "Patent expiry timeline",
+            "Margins (gross/operating) and R&D/SG&A ratios"
+        ],
+        "uncited_claims": [
+            "Potential upside of 26.64% referenced as [8], but no source [8] provided",
+            "Keytruda facing patent expiration risks in the late 2020s (no citation)",
+            "Analysts project continued revenue expansion (no citation)"
+        ]
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it incomplete and unsuitable as a professional equity research document. Multiple essential sections are entirely absent, including competitive positioning analysis, peer benchmarking, and scenario/sensitivity analysis. The financials snapshot lacks critical sector-specific KPIs such as gross dollar volume (GDV), cross-border volume growth, switched transactions, and network revenue metrics that are fundamental to payment processor analysis. Valuation methodology is superficial with no explicit linkage between operating drivers and fair value assumptions. The report contains numerous uncited claims throughout, particularly in financial projections and market data. Significant redundancy exists across sections, with payment volume growth and diversification strategy repeated multiple times without additional depth. The sourcing is inconsistent and many sources appear fabricated or inaccessible. Overall, this reads more like a generic business overview than a comprehensive equity research report.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Management Assessment"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Dollar Volume (GDV)",
+            "Cross-Border Volume Growth",
+            "Switched Transactions",
+            "Network Revenue",
+            "Purchase Volume Growth",
+            "Cards Outstanding"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stock price inconsistency: $472.50 in Analyst Note vs $574.42 in Cover Block",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Market cap varies between $435B, $484B, and $483.98B across sections",
+                "locations": [
+                    "Cover Block",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Dollar Volume (GDV)",
+            "Cross-Border Volume Growth",
+            "Switched Transactions",
+            "Network Revenue",
+            "Purchase Volume Growth",
+            "Cards Outstanding"
+        ],
+        "uncited_claims": [
+            "Full-year 2025 revenue guidance of $31.92 billion",
+            "Value-added services now representing nearly 40% of total net revenues",
+            "Commercial payments representing approximately 13% of gross dollar volume",
+            "Mastercard tokenized approximately 4 billion transactions per month in 2024",
+            "Target operating margins in the high-50% range",
+            "Fair value estimate of $640 per share"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it contains extensive narrative content, it lacks fundamental analytical rigor and sector-appropriate depth. The financials snapshot presents projected figures without any sourcing or methodology explanation, rendering the forecasts meaningless. Critical exchange-specific KPIs are completely absent - no clearing revenue breakdown, margin rates, open interest data, or competitive market share metrics that are essential for evaluating exchange operators. The valuation section provides a fair value estimate of $290 but fails to explain the derivation or link operating drivers to valuation assumptions beyond vague references to 6-8% revenue growth. Most damaging is the complete fabrication of financial data and earnings results that contradict the sources provided, creating fundamental credibility issues. The report reads more like marketing material than analytical research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Valuation",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Rate per contract",
+            "Clearing revenue breakdown",
+            "Open interest",
+            "Market share by asset class",
+            "International revenue mix",
+            "Technology revenue"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims Q1 2025 record ADV of 29.8M contracts and Q2 2025 EPS of $2.96 with no supporting sources",
+                "locations": [
+                    "Analyst Note",
+                    "Business Strategy"
+                ]
+            },
+            {
+                "description": "States 2024 record revenue of $6.1B but sources only show Q4 2024 results",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Rate per contract",
+            "Clearing revenue breakdown",
+            "Open interest",
+            "Market share metrics",
+            "International revenue percentage",
+            "Technology/data revenue"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $290",
+            "All projected financial figures 2025-2029",
+            "WACC assumption of 8.5%",
+            "Revenue CAGR projection of 6.8%",
+            "Most recent earnings and volume data"
+        ]
+    }
+}

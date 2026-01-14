@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered without proper justification. Key DCF inputs like WACC (7.5%), terminal growth (2%), and tax rate (18.5%) are buried in the appendix without any supporting rationale or peer benchmarks. Revenue growth assumptions show internal contradictions\u2014the text claims 'mid-single-digit CAGR in the later 2020s' but the financials table shows 7-8% growth through 2029, not mid-single digits. Operating margin assumptions (46-47%) lack historical context or peer comparison. Share count decline assumptions are vague ('modestly') without quantification. Most critically, there are zero sensitivity analyses or scenario testing for any material drivers, making the $430 fair value appear as a black box. The combination of unstated key assumptions, internal contradictions, and complete absence of quantified sensitivities renders this analysis fundamentally unreliable for investment decision-making.",
+    "assumptions_extracted": [
+        {
+            "quote": "WACC ~7.5% (reflecting a premium for software risk) and 2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "~10% annual growth slowing to ~5% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "steady non-GAAP operating margin \u224846\u201347%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Diluted share count is assumed to decline modestly (reflecting ongoing buybacks)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "non-GAAP tax ~18.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "revenue_growth",
+            "margin/efficiency",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 'mid-single-digit CAGR in the later 2020s' but financials table shows 7-8% growth 2025-2029",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "WACC justification",
+            "terminal_growth_rationale",
+            "tax_rate_basis"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without peer comparison",
+            "2% terminal growth without rationale",
+            "18.5% tax rate without basis"
+        ]
+    }
+}

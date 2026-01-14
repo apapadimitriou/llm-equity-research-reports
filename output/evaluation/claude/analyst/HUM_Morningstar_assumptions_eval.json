@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with some key assumptions stated, particularly around valuation drivers like WACC (8.2%), cost of equity (9.0%), and terminal growth (4.0%). However, critical revenue growth and margin assumptions driving the forecasts lack sufficient detail and justification. The justification is weak overall - while some parameters reference historical context or peer comparisons, most lack robust supporting evidence. Specificity is partial with some units and timeframes provided in the DCF model, but operational assumptions remain vague. Internal consistency shows minor issues with some narrative-table alignment concerns. Most critically, the report provides no quantified sensitivity analysis on material drivers, only qualitative scenario mentions (bull case vs. base case), which caps the grade at Fair per the hard cap rule.",
+    "assumptions_extracted": [
+        {
+            "quote": "Weighted Average Cost of Capital % 8.2",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "high-single-digit revenue growth and midteens adjusted EPS growth on a compound annual basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 121",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.2% without detailed source",
+            "Cost of equity 9.0% without market yield reference",
+            "Revenue growth assumptions lack peer benchmarks"
+        ]
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are mostly explicit and co-located with the valuation discussion and forecast table. Key drivers are stated with magnitudes and horizons (e.g., revenue CAGR, operating margin trajectory, WACC), and a simple base/bull/bear table provides quantified scenario ranges for 2\u20133 core inputs with fair value per share outcomes. Internal consistency between narrative and the financial snapshot (e.g., EPS ~$4.50 in FY2029, operating margin ~25.5% by FY2029, revenue path implying ~16% CAGR) is clean. However, justification is weak: the report does not benchmark the 25\u201330% operating margin target, 15\u201318% revenue CAGR, or 9% WACC to history, peers, or sourced market data; the valuation multiples (35\u201340x EPS; 12\u201315x revenue) are asserted without evidence. Several material assumptions are missing or opaque, including tax rate, dilution/share count, SBC effects, working capital/FCF drivers, and terminal growth assumptions (only terminal operating margin is provided). Sensitivities are present but limited to a few inputs and not tied to operational levers (e.g., churn/NRR, pricing, module attach, SBC dilution). Given the weak justification and limited scope of sensitivity analysis despite good explicitness and internal coherence, the overall quality of assumptions merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "annual recurring revenue growth moderates from current 22% levels to a sustainable 15-18% CAGR over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The model assumes gradual margin expansion to 25-30% over time",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital assumes a 9% discount rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Fair value multiples of 35-40x forward earnings and 12-15x revenue appear reasonable",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Earnings per share is projected to grow from current levels to approximately $4.50 by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR (2025-2029) | 16.5% | 19.2% | 13.8%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Op Margin | 25.5% | 28.0% | 22.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 9.0% | 8.5% | 9.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Fair Value per Share | $485 | $575 | $350",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "valuation_multiple"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "terminal_growth",
+            "share_count/dilution",
+            "capex/FCF drivers",
+            "stock-based compensation impact"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Operating margin target 25\u201330% without peer/history support",
+            "Revenue CAGR 15\u201318% without detailed bridge or benchmarking",
+            "Valuation multiples (35\u201340x EPS; 12\u201315x revenue) without evidence"
+        ]
+    }
+}

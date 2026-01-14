@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it presents extensive historical data and quotes numerous statistics like \"total revenue of $3.95B (+29% YoY)\" and \"ending ARR reached $4.24B (+23%)\", it lacks causal mechanisms explaining these results. The valuation section mentions \"WACC of \u224810%\" and \"3% terminal growth rate\" but provides no benchmarking, sensitivity analysis, or justification for these critical assumptions. The report states \"our DCF yields a fair equity value near $450/share\" without showing any scenario analysis or explaining how key drivers impact this valuation. Risk factors are listed generically (\"potential slowdown in enterprise IT spending\") without quantifying their impact. The analysis contains no stress testing of assumptions, no sensitivity ranges, and no conditional implications for different scenarios. Most content simply restates company guidance and historical performance without deeper causal analysis.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Revenue growth drivers not causally explained",
+            "Operating margin expansion path unclear",
+            "No explanation for WACC derivation"
+        ],
+        "unsupported_assumptions": [
+            "WACC \u224810% with no benchmark comparison",
+            "3% terminal growth rate without justification",
+            "Mid-20s% operating margins by 2029 unsupported"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario analysis for $450 fair value",
+            "No stress testing of growth assumptions",
+            "No quantified impact of identified risks"
+        ]
+    }
+}

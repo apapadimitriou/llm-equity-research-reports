@@ -1,0 +1,89 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains several key assumptions that drive AbbVie's valuation, but they have mixed quality. On explicitness, the report clearly states assumptions like WACC (7.8%), cost of equity (8.6%), terminal growth rate (2.5%), and revenue CAGR (7.5%), typically near the forecasts they inform. For justification, some assumptions have partial support (e.g., terminal growth tied to GDP), but others lack robust evidence (e.g., WACC components). On specificity, the report provides precise figures with units and timeframes for most assumptions. However, consistency issues emerge with contradictory debt figures ($70B vs $69.9B) and capital structure weights. The most significant weakness is the complete absence of sensitivity analysis or scenario testing for key drivers like revenue growth, margins, or discount rates, which prevents readers from understanding the range of potential outcomes and makes the valuation appear as a black box with single-point estimates.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our DCF model discounts these future free cash flows using a weighted average cost of capital (WACC) of 7.8%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our WACC is derived from a cost of equity of 8.6% (based on the Capital Asset Pricing Model using a 4.3% risk-free rate, a 0.50 beta, and an 8.6% equity risk premium) and an after-tax cost of debt of 3.9% (based on a 5.0% pre-tax cost and a 22% tax rate).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The weights are based on a capital structure of approximately 83% equity and 17% debt.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a terminal growth rate of 2.5% to our final-year cash flow, which represents a conservative estimate for long-term nominal global GDP growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 7.5%, which aligns with management's guidance for high single-digit growth through 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast the adjusted operating margin to expand from 42.3% in Q1 2025 to approximately 45-46% by the end of our explicit forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "The report states total debt as 'nearly $70 billion' in one section and '$69.9 billion' in another",
+                "locations": [
+                    "Bears Say",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "credit_cost",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "beta of 0.50",
+            "equity risk premium of 8.6%",
+            "pre-tax cost of debt of 5.0%"
+        ]
+    }
+}

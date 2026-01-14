@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, an Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. The valuation section is reasonably explicit, linking revenue growth and margin expansion to EPS and a DCF-derived fair value. However, the Financials Snapshot is generic and incomplete (FY2024 marked \u201cinsufficient data\u201d) and omits core sector-specific KPIs for software/EDA (ARR, NRR, backlog/RPO, billings/bookings, segment and license mix). This triggers a hard cap at Fair. Evidence usage is mixed: several material claims are uncited (e.g., buyback authorization, ESG score, Ansys pending, social sentiment), while key financial results are properly cited. Peer context is limited to brief mentions of Cadence without benchmarking. There is minor redundancy (AI-driven demand and CHIPS Act/lobbying repeated across sections) without added depth. Overall, breadth is solid, but KPI depth, sourcing consistency, and peer/sensitivity analysis gaps prevent a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Segment KPIs Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC",
+            "Customer retention (90%+) mentioned outside snapshot"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Backlog/RPO",
+            "Billings",
+            "Bookings",
+            "Segment revenue mix",
+            "License mix (time-based vs upfront)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2024 EPS 'estimated $9.50' used in EPS bridge while FY2024 actuals are 'insufficient data' in the snapshot",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Claim 'ROIC above 15% historically' conflicts with 14% shown for FY2022 in snapshot",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Backlog/RPO",
+            "Billings",
+            "Bookings",
+            "Segment revenue mix",
+            "License mix"
+        ],
+        "uncited_claims": [
+            "Buybacks ($500 million authorized annually) with no source",
+            "ESG risk score of 15 (Sustainalytics equivalent) with no source",
+            "Ansys acquisition pending with no source",
+            "Posts on X indicate positive sentiment with no source"
+        ]
+    }
+}

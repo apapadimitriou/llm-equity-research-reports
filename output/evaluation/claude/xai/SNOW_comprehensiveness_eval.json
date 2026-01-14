@@ -1,0 +1,61 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally incomplete and superficial across all major sections. The Financials Snapshot is entirely empty with all metrics marked as 'insufficient data', violating the core requirement for sector-specific KPIs. Critical SaaS metrics like ARR, NRR details, and customer metrics are absent from the financial tables. The valuation section lacks any concrete analysis or fair value estimate, with no explicit linkage from operating drivers to valuation outcomes. Most sections are skeletal - Economic Moat, Capital Allocation, and ESG sections provide no substantive analysis. The report relies heavily on social media posts from X (Twitter) as primary sources, which undermines credibility. There is significant redundancy with NRR figures repeated across multiple sections without adding depth. The analysis feels more like a collection of fragmented data points than a comprehensive equity research report.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Risk & Uncertainty",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention Rate",
+            "Customer Count"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Revenue Per Customer",
+            "Customer Acquisition Cost",
+            "Gross Revenue Retention",
+            "Dollar-Based Net Expansion"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value section claims insufficient data but then provides specific assumptions and calculations",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "Revenue Per Customer",
+            "CAC",
+            "LTV",
+            "Gross Revenue Retention"
+        ],
+        "uncited_claims": [
+            "WACC of 10% (standard for tech) with no justification or source",
+            "Operating margin expansion to 20% assumption with no basis provided",
+            "Revenue CAGR of 30% projection without detailed analysis"
+        ]
+    }
+}

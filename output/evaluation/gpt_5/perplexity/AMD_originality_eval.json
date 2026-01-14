@@ -1,0 +1,60 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains mostly restated or paraphrased content from public sources (quarterly beat/miss, export-control impact, x86 share gains, AI accelerator roadmap) and a standard DCF with conventional assumptions (mid-teens CAGR, mid-20s margins, 8.5% WACC, 3% terminal growth) without introducing novel valuation drivers. I found one weak synthesis that links the AI PC refresh, Dell partnership, and H2\u201925 timing to a commercial catalyst; otherwise, the analysis leans on boilerplate formulations about diversified portfolios and execution. The export-control quantification ($1.5B and related charges) is cited rather than interpreted into differentiated margin/NOPAT trajectories or customer-level exposure, limiting originality. There are no original theses with clear mechanisms, quantified implications, or monitorable catalysts (e.g., ROCm maturation vs CUDA lock-in, MI350 die/yield constraints affecting gross margin, or hyperscaler purchase commitments). Peer-specific contrasts are largely absent, and risks are a generic laundry list. Decision relevance exists in the fair value call and a few timing notes, but interpretive depth is limited. Given \u22653 copied/generic insights and a valuation section lacking novel drivers, originality caps at Fair.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "EPS miss attributed to regulatory headwinds and inventory adjustments; export controls cut ~$1.5B FY25 revenue with $800m inventory reserve and ~$700m Q2 lost sales.",
+                "classification": "Copied",
+                "decision_relevant": true
+            },
+            {
+                "text": "Data center is the primary growth engine with Instinct scaling; MI350 mid-2025 and MI400 in 2026.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Record x86 share in Q1\u201925 (server 39.4%, desktop 34.4%) shows competitive execution.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI PC refresh + expanded Dell partnership + AI-enabled Ryzen create a commercial catalyst in H2\u201925.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Fair value ~$145 based on mid-teens CAGR through 2029, mid-20s operating margins, 8.5% WACC, 3% terminal growth.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Risks include export controls, entrenched competitors with stronger software ecosystems, customer concentration, and TSMC dependence.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "At ~102.7x P/E, price embeds optimistic growth; margin/geopolitical risks argue for caution.",
+                "classification": "Restated",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'diversified portfolio provides resilience' phrasing",
+            "Laundry-list risks without unique angles",
+            "Product roadmap recap without implications for unit economics or margins"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 4,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

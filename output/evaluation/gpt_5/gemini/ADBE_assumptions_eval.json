@@ -1,0 +1,102 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are mostly explicit and numerically specified near the forecasts/valuation. The report states multi-year revenue growth rates, operating margin levels, and valuation inputs (WACC, terminal growth, and a P/E multiple) with clear units and horizons. Justification is partial: FY25 is anchored to company guidance and outer years to consensus; margin assumptions reference recent history, and WACC is a \u201cblend\u201d from data providers. However, evidence is thin for key valuation levers (e.g., no decomposition of WACC inputs, only generic rationale for terminal growth). Internal consistency is largely clean; the forecast uses ~46% non-GAAP margins while the DCF assumes a 45% long-term margin, which is not contradictory and is directionally reasonable. Critically, there is no quantified sensitivity or scenario analysis for material drivers (growth, margins, WACC, terminal growth, AI monetization, buybacks), triggering a cap at Fair. Several important DCF drivers are missing or opaque (tax rate, reinvestment/capex, working capital, SBC/GAAP-to-FCF bridges, share count trajectory), which limits auditability and robustness. Overall, assumptions are explicit/specific but only moderately justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project revenue growth to remain in the high-single to low-double-digit range",
+            "location": {
+                "section": "5.2 Financial Projections (FY2025-FY2027)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model non-GAAP operating margins to remain robust near 46%",
+            "location": {
+                "section": "5.2 Financial Projections (FY2025-FY2027)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "a five-year explicit forecast period where revenue growth gradually decelerates from 10% toward 8%.",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a stable long-term non-GAAP operating margin of 45%",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We utilize a WACC of 8.5%.",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.5% for terminal free cash flow",
+            "location": {
+                "section": "6.1 Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "applying a forward P/E multiple of ~23x to our FY2026 EPS estimate of $23.09.",
+            "location": {
+                "section": "6.3 Price Target Synthesis",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "approved a new $25 billion stock repurchase program, effective through March 2028.",
+            "location": {
+                "section": "5.3 Capital Allocation Strategy: Prioritizing Shareholder Returns",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex/reinvestment",
+            "working_capital",
+            "SBC/GAAP-to-FCF bridge",
+            "share_count trajectory in model",
+            "free_cash_flow build"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without component breakdown",
+            "terminal growth 3.5% with generic rationale",
+            "revenue deceleration path not reconciled to explicit outer-year table"
+        ]
+    }
+}

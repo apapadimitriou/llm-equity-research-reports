@@ -1,0 +1,68 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely unstated or opaque throughout. While some financial forecasts appear in the Financials Snapshot table (revenue growth 3-5% CAGR, target ROE 10-11%), these lack justification, specificity about drivers, or proximity to the forecasts they inform. The fair value estimate of $135.54 is mentioned but the underlying DCF assumptions (WACC 9-10%, terminal growth 2.5%) are relegated to a brief appendix without supporting evidence or rationale. Critical valuation drivers like credit costs, NIM assumptions, expense ratios, and tax rates are completely absent. No sensitivity analysis or scenario testing is provided despite acknowledging 'high uncertainty.' The report reads more like a business summary than a rigorous financial analysis with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate of 3-5% driven by Services and Markets segment expansion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Return on tangible common equity is expected to reach 10-11% by 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of approximately 9-10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "revenue_growth",
+            "margin/efficiency"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9-10% without source",
+            "Terminal growth 2.5% without justification",
+            "Revenue growth 3-5% without peer comparison",
+            "ROE target 10-11% without historical context"
+        ]
+    }
+}

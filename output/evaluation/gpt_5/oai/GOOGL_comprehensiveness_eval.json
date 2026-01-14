@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with a clear cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, ESG, appendix, and sources. The valuation section is explicit and links operating drivers (ad growth, Cloud growth, margin expansion, capex and buybacks) to the DCF fair value, which strengthens comprehensiveness. Evidence integration is generally solid, with in-text citations throughout. However, the Financials Snapshot is thin on sector-specific KPIs for a digital ads/cloud platform: it presents revenue, EPS, margins, FCF, and ROIC but omits core KPIs like Traffic Acquisition Costs (TAC), segment revenue splits (Ads/Cloud/Other Bets), Cloud margins, and YouTube engagement/subscriber metrics. Peer benchmarking is absent, and no scenario/sensitivity analysis is provided. There is some repetition (cloud reacceleration and wide moat themes recur across sections) and a notable contradiction on 2025 capex ($75B vs ~$85B) across sections. A couple of material claims are uncited (e.g., searches per day; cumulative buybacks), reducing consistency. Given the hard cap for missing \u22652 sector KPIs in the Financials Snapshot and limited peer/scenario coverage, the appropriate grade is Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Traffic Acquisition Costs (TAC)",
+            "Segment revenue breakdown (Ads/Cloud/Other Bets)",
+            "Google Cloud operating margin",
+            "YouTube engagement/subscribers (MAUs/Watch time)",
+            "Ad pricing metrics (CPC/CPM)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 capex guidance conflicts: $75B (Analyst Note) vs ~$85B (Capital Allocation/Appendix/Bears)",
+                "locations": [
+                    "Analyst Note",
+                    "Capital Allocation",
+                    "Appendix",
+                    "Bulls/Bears"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "TAC",
+            "Segment revenue mix",
+            "Cloud margin",
+            "YouTube engagement"
+        ],
+        "uncited_claims": [
+            "Google processes ~8.5 billion searches per day",
+            "Repurchased over $100 billion of shares in the last two years",
+            "Share count shrank ~5% over two years"
+        ]
+    }
+}

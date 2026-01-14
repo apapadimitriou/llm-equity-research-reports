@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure (Analyst Note \u2192 strategy \u2192 moat \u2192 valuation \u2192 risks \u2192 capital allocation \u2192 financials) and generally uses consistent terminology. Transitions within sections are mostly smooth, and many elements tie together coherently: for example, the Analyst Note\u2019s margin dip and Azure growth are echoed in the Fair Value section and the Financials Snapshot. Citations and dates are largely aligned, and the narrative references the table forecasts (FY2029 revenue \u2248 $445B) effectively. However, there are notable internal inconsistencies among narrative and assumptions that introduce noise. The Business Strategy & Outlook states both \u201clow-teens\u201d and \u201cmid-teens\u201d top-line growth without reconciling the difference, while the base-case and table reflect ~13% CAGR (low-teens). Valuation multiples are also inconsistent: the Fair Value section cites EV/Sales ~13\u00d7 whereas the Appendix says the fair value implies EV/Revenue ~10\u00d7, with no clarification on period or basis. Additionally, the claim that $490 equates to \u201cabout 38\u00d7\u201d FY2025 EPS conflicts with the provided $13.4 EPS (~36.6\u00d7), which undercuts precision. Bulls/Bears are presented well but not explicitly reconciled with the base-case (e.g., Office 365 maturity vs assumed ARPU upsell). These contradictions trigger the hard cap to fair despite otherwise strong coherence.",
+    "evidence": [
+        "Business Strategy & Outlook: States \u201clow-teens aggregate revenue growth\u201d and later \u201cmid-teens top-line growth,\u201d while the model and table use ~13% CAGR.",
+        "Fair Value vs Appendix: EV/Sales ~13\u00d7 (Fair Value) vs EV/Revenue ~10\u00d7 (Appendix) with no basis/period reconciliation.",
+        "Fair Value multiple: \u201cabout 38\u00d7 our FY2025 EPS\u201d vs table EPS $13.4 implies ~36.6\u00d7, not 38\u00d7."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

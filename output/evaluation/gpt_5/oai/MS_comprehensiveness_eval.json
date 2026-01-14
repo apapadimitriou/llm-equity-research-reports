@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation & profit drivers, risk, capital allocation, ESG, appendix, and sources. The Analyst Note and Strategy sections integrate timely data with citations, and the risk/regulatory context is adequately addressed. Valuation includes explicit assumptions (revenue CAGR, margin, WACC, terminal growth) and ties them to drivers, with a brief sensitivity to WACC. Capital allocation and ESG are treated with reasonable depth. However, the Financials Snapshot is generic and omits core sector KPIs for a global broker/dealer-bank (e.g., NII/NIM, loan loss provisions, CET1, efficiency ratio, AUM/NNA), triggering a hard cap to Fair. Peer benchmarking is absent, and scenario analysis beyond a single WACC sensitivity is missing. Sourcing is generally consistent, though a few material claims lack explicit citations. Redundancy is limited, with repeated efficiency/CET1 points generally adding context in separate sections. Overall, the report is well-structured and evidence-based, but the lack of sector KPIs in the snapshot and missing peer/scenario work constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "NII/NIM",
+            "Loan Loss Provisions",
+            "CET1",
+            "Efficiency Ratio",
+            "AUM/Net New Assets"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NII/NIM",
+            "Provisions",
+            "CET1",
+            "Efficiency Ratio",
+            "AUM/NNA"
+        ],
+        "uncited_claims": [
+            "Return on tangible common equity was 23% in Q1",
+            "Risk-weighted assets have fallen 6% since 2022 year-end",
+            "Balance-sheet leverage is modest (no quantitative support provided)"
+        ]
+    }
+}

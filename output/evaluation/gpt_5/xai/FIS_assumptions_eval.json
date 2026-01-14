@@ -1,0 +1,124 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Key drivers are stated (revenue CAGR, margin path, WACC, terminal growth, EPS growth via buybacks), but justification is weak and internal consistency is poor. Assumptions are explicit and proximate to forecasts, with units and horizons (e.g., 5% CAGR to 2029, WACC 8.5%, terminal growth 3%). However, the report provides limited evidence: references to Q2 trends and sector averages without multi-year historical reconciliation, peer benchmarks, or cited parameter sources. Specificity is partial: magnitudes are given, but share count/buyback magnitude, tax rate, capex/reinvestment and working capital assumptions are absent, and WACC components are not broken out. Internal contradictions undermine coherence: 2029 revenue is stated as $12.9B in text vs $12.6B in the table; 20% margin is targeted by 2027 in one section vs 2029 in the model; 2029 EPS is $6.50 in text vs $6.40 in the table. No quantified sensitivity or scenario analysis is provided for material levers (revenue growth, margin, WACC/terminal rate), triggering the hard cap and reinforcing a Poor grade. Overall, assumptions feel selective and under-justified, with multiple unresolved numeric mismatches.",
+    "assumptions_extracted": [
+        {
+            "quote": "\u201cassuming a 5% revenue CAGR through 2029, improved operating margins to 20%, and a WACC of 8.5%\u201d",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "\u201cRevenue is projected at a 5% CAGR from $10.4B in FY2025 to $12.9B in FY2029\u201d",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "\u201cOperating margins expand from 18% in 2025 to 20% by 2029\u201d",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "\u201cWACC is 8.5%, reflecting sector betas and debt costs.\u201d",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "\u201cTerminal growth of 3% yields a DCF-based fair value of $85\u201d",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "\u201cEPS bridge: 2025 EPS $4.90, growing to $6.50 by 2029 via margin gains and share buybacks.\u201d",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "\u201cFIS aims to achieve operating margin expansion to 20% by 2027\u201d",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "\u201cRevenue (B) |      9.7   |      9.8   |     10.0   |        10.4   |        10.9   |        11.4   |        12.0   |        12.6\u201d",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2029 revenue stated as $12.9B vs table shows $12.6B",
+                "locations": [
+                    "Fair Value and Profit Drivers (text)",
+                    "Financials Snapshot (table)"
+                ]
+            },
+            {
+                "description": "Operating margin target 20% by 2027 vs modeled to 20% by 2029",
+                "locations": [
+                    "Business Strategy & Outlook (text)",
+                    "Fair Value and Profit Drivers + Financials Snapshot (table)"
+                ]
+            },
+            {
+                "description": "2029 EPS stated $6.50 vs table shows $6.40",
+                "locations": [
+                    "Fair Value and Profit Drivers (text)",
+                    "Financials Snapshot (table)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count trajectory/buyback magnitude",
+            "capex/reinvestment rate",
+            "working capital assumptions",
+            "depreciation/amortization",
+            "interest rate/credit spread for WACC components"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source or build-up",
+            "Terminal growth 3% without macro/industry support",
+            "Revenue CAGR 5% tied to a single quarter trend",
+            "Operating margin expansion drivers not quantified"
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report for Humana Inc. achieves a 'Fair' grade due to structural completeness offset by significant technical omissions and repetitive content. While all required sections are present, the report fails several 'Hard Cap' criteria. Most notably, the Financials Snapshot table is generic, omitting core sector-specific KPIs such as the Medical Loss Ratio (MLR) and Membership enrollment forecasts, which are fundamental to evaluating a healthcare payer. Although these figures are mentioned in the narrative, their exclusion from the quantitative summary limits the report's utility. Furthermore, the report suffers from excessive redundancy; the '550,000 membership decline' and the 'margin over growth' strategy are repeated across the Analyst Note, Business Strategy, Bulls/Bears, and Valuation sections with minimal added depth, triggering a mandatory downgrade. Evidence integration is also flawed; while a comprehensive source list is provided, the in-text citations appear as empty placeholders (e.g., ' .'), rendering claims technically uncited. The valuation section, while linking drivers to the DCF, lacks a peer benchmarking comparison and any form of scenario or sensitivity analysis. These gaps\u2014specifically the missing KPIs in the financial table and the lack of rigorous peer/scenario context\u2014prevent the report from reaching a 'Good' or 'Excellent' standing, leaving it as a structurally sound but substantively thin analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Medical Loss Ratio (MLR) / Benefit Ratio (text only)",
+            "Membership counts (text only)",
+            "Star Ratings (text only)"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR) in Financials Snapshot",
+            "Membership Enrollment in Financials Snapshot",
+            "Days Claims Payable (DCP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR) omitted from Financials Snapshot table",
+            "Membership enrollment figures omitted from Financials Snapshot table"
+        ],
+        "uncited_claims": [
+            "Membership decline of up to 550,000 in 2025 (placeholder citation)",
+            "Doubling of MA margins by 2026 (placeholder citation)",
+            "Debt-to-total capitalization ratio of 42.8% (placeholder citation)"
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from critical contradictions and lacks proper sensitivity analysis. A major contradiction exists in the financials table where 2024A revenue is listed as $3580.0B (impossible given historical context and other figures). Key assumptions like 12% revenue CAGR, 33% terminal operating margin, and 8.5% WACC are stated but weakly justified with vague references to trends. While some assumptions are explicit with specific magnitudes and timeframes, justification relies heavily on hand-wavy references to unspecified trends from earnings calls. No quantified sensitivity analysis is provided for any material drivers - only qualitative risk mentions. The EPS bridge methodology is shown but built on questionable base figures. Multiple assumptions reference generic 'trends' without specific supporting data or peer comparisons.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 12% from FY 2025 to FY 2029, driven by 10% growth in advertising and 25% in cloud",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 30% in FY 2025 to 33% by FY 2029, reflecting scale efficiencies and AI-driven cost savings",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.5%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The company raised its full-year capital expenditure outlook to $85 billion for 2025",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024A revenue listed as $3580.0B in financials table conflicts with historical context and other revenue figures",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Historical revenue context"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "12% revenue CAGR based on vague 'trends'",
+            "33% terminal operating margin without peer comparison",
+            "25% cloud growth rate unsupported"
+        ]
+    }
+}

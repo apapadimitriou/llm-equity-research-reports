@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates some analytical depth but falls short of rigorous quantitative analysis. It provides basic causal explanations like \"revenues hit a record $1.64B driven by geopolitical and economic volatility\" and \"ADV reached 29.8M contracts +13% YoY driven by geopolitical tensions.\" The report includes explicit assumptions (\"WACC ~8.5%,\" \"terminal growth ~3%,\" \"5-7% revenue CAGR through 2029\") but these lack benchmarking or justification. While it mentions competitive threats like \"BGC's FMX Futures\" and notes risks such as \"if market volatility recedes volumes could slow,\" it provides no quantified sensitivity analysis or scenario modeling. The implications are generic rather than decision-relevant, stating the stock is \"trading near our estimate\" without specific conditional guidance for different market conditions.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Volume growth drivers not quantified",
+            "Fee rate stability assumption unexplained",
+            "Operating margin compression mechanism unclear"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.5% with no benchmark justification",
+            "Terminal growth 3% without industry comparison",
+            "60% operating margins assumed without stress testing"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified impact scenarios for competition",
+            "Missing volatility sensitivity analysis",
+            "Rate environment impact not modeled"
+        ]
+    }
+}

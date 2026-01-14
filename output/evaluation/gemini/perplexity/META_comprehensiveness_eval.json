@@ -1,0 +1,56 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all mandatory sections and maintains a professional tone with consistent sourcing. However, it is capped at 'Fair' due to significant omissions in the Financials Snapshot and Valuation sections. Specifically, the Financials Snapshot table is generic, omitting core sector-specific KPIs such as Average Revenue Per User (ARPU) and Monthly Active Users (MAU), which are essential for evaluating a social media firm's growth trajectory. While Daily Active Users (DAU) and Reality Labs losses are mentioned in the text, their absence from the multi-year forecast table limits the report's comprehensiveness. Furthermore, the valuation section provides high-level growth and margin assumptions but lacks an explicit, detailed linkage from specific operating drivers (e.g., ad load or pricing trends) to the final fair value estimate. The report also suffers from significant redundancy, repeating the same talking points regarding AI capital expenditure and Reality Labs losses across five different sections without adding incremental depth. Finally, the absence of a formal sensitivity analysis or a peer benchmarking data table prevents the report from reaching a 'Good' or 'Excellent' rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario/Sensitivity Analysis Table"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC",
+            "DAU (text only)",
+            "Reality Labs Operating Loss (text only)"
+        ],
+        "sector_kpis_missing": [
+            "ARPU",
+            "MAU",
+            "Ad Impressions",
+            "Price per Ad"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARPU (Average Revenue Per User)",
+            "MAU (Monthly Active Users)",
+            "Ad Pricing Trends",
+            "Ad Impression Growth"
+        ],
+        "uncited_claims": []
+    }
+}

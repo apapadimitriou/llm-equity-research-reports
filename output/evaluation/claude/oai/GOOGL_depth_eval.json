@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains some causal statements like \"revenue rose 12% year-on-year\" and \"advertising sales grew a solid 8.5%\", these lack mechanistic explanation. The valuation section mentions key assumptions (\"9% WACC\", \"terminal growth rate of ~4%\", \"5-year revenue CAGR of ~10%\") but provides no benchmarking, sensitivity analysis, or ranges. Forecasts like \"mid-teens EPS growth\" and \"operating margin ticking up to the mid-30s\" are unsupported generalizations without underlying drivers. The report lists risks but fails to quantify their impact or explore scenarios. Most critically, there are no quantified sensitivities (e.g., \"if ad spending falls X%, EPS drops Y%\") or alternative scenarios that would make implications actionable for investors.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI investments \u2192 ad revenue growth linkage unexplained",
+            "Cloud capacity additions \u2192 margin improvement mechanism unclear",
+            "Market share decline \u2192 financial impact not quantified"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth rate of ~4% with no benchmark",
+            "operating margin expansion to mid-30s without drivers",
+            "mid-teens EPS growth with no supporting analysis"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario analysis for regulatory breakup impact",
+            "WACC ~9% assumption not stress-tested",
+            "No quantified impact of AI competition on search revenue"
+        ]
+    }
+}

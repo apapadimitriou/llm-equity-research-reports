@@ -1,0 +1,112 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key assumptions are explicitly stated and proximate to the valuation and forecast sections, with clear units and time horizons (e.g., revenue CAGR, WACC, terminal growth, EBITDA synergies, FCF conversion). Specificity is solid: the report provides multi-year revenue, margin, EPS, FCF paths and discrete inputs like WACC 8.5% and terminal growth 3.0%. However, justification is weak: most parameters (WACC, terminal growth, revenue CAGR, margin trajectory, FCF conversion) lack support from multi-year company history, peer benchmarks, or cited sources. Synergy figures are referenced but not reconciled to the margin/FCF tables. Internal consistency has a notable contradiction: the stated 2025\u20132029 revenue CAGR (6.2% and 5\u20136%) conflicts with the tabled revenue path implying ~8\u20139% CAGR. Sensitivity analysis is absent; no quantified scenario ranges are provided for material drivers (revenue growth, margins, WACC, terminal growth), triggering a cap at Fair. Overall, assumptions are explicit and specific but weakly justified, with at least one unresolved numeric inconsistency and no stress testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "The valuation model assumes a revenue compound annual growth rate (CAGR) of approximately 5-6% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.2%",
+            "location": {
+                "section": "Appendix (Key Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix (Key Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix (Key Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Acquisition Synergies: $150M+ net EBITDA by year 3",
+            "location": {
+                "section": "Appendix (Key Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Free Cash Flow Conversion: 85-90% of EBITDA",
+            "location": {
+                "section": "Appendix (Key Valuation Assumptions)",
+                "page": "unknown"
+            },
+            "driver_type": "free_cash_flow"
+        },
+        {
+            "quote": "Revenue ($B) | 2024A | 10.1 | 2025E | 10.5 | 2026E | 12.8 | 2027E | 13.5 | 2028E | 14.2 | 2029E | 14.9",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op Margin % | 2025E | 14.5 | 2026E | 16.2 | 2027E | 17.8 | 2028E | 18.5 | 2029E | 19.1",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "free_cash_flow"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated revenue CAGR (5\u20136% and 6.2%) conflicts with tabled revenue path that implies ~8\u20139% CAGR from 2025E 10.5 to 2029E 14.9.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix (Key Valuation Assumptions)",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "depreciation/amortization",
+            "working_capital assumptions",
+            "explicit sensitivity ranges for revenue/margins/WACC/terminal"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.0% without source",
+            "Revenue CAGR 5\u20136% with limited support",
+            "Free cash flow conversion 85\u201390% of EBITDA without support",
+            "Operating margin trajectory without historical/peer benchmarking"
+        ]
+    }
+}

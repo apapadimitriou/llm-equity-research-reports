@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit assumptions for key drivers including revenue growth (12% CAGR), margin expansion (58% to 61% by 2029), and cost of equity (9%). These assumptions are clearly stated and proximal to forecasts. Justification is partial, with some historical context provided (e.g., 2024 operating margins at 58%, pandemic recovery patterns) but limited peer benchmarking or detailed sourcing. Specificity is solid with clear units, timeframes, and magnitudes provided. Internal consistency appears clean with no obvious contradictions between narrative and financial tables. However, the report lacks any quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Fair per the hard cap rules. While assumptions are well-articulated, the absence of stress-testing through quantified ranges significantly limits the analytical robustness.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project net revenue to grow at a 12% compound annual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect operating margins (based on net revenue) to improve from 58% in 2024 to 61% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Operating margins (using net revenue) in 2024 were 58%",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding declining from 971M in 2022 to 812M in 2029",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "11"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without detailed sourcing"
+        ]
+    }
+}

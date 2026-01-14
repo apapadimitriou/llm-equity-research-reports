@@ -1,0 +1,96 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states several core drivers near the forecasts they inform, including revenue CAGR, margin path, WACC inputs, terminal growth, and an EPS bridge. Specificity: Magnitudes, units, and time horizons are generally clear (e.g., \u201c10% from FY 2025\u20132029,\u201d \u201coperating margin to 12% by 2029,\u201d WACC components). Justification: Support is weak; revenue growth is loosely tied to one quarter\u2019s guidance, and segment growth rates (e-commerce 8%, AWS 15%), WACC (8% with 6% Rf, 5% ERP, beta 1.2), and terminal growth (4%) lack evidence from multi-year history, peer benchmarks, or sourced studies. Consistency: There is a numeric contradiction between the narrative and the table regarding 2029 revenue ($1,050B in text vs $981B in the table), undermining internal coherence. Sensitivity: No quantified sensitivity/scenario analysis is provided for material drivers (revenue growth, margins, WACC, terminal growth, capex); risks are discussed qualitatively only. Given one contradiction and absent quantitative sensitivities, assumptions quality caps at Fair despite reasonable specificity. The report also omits several material assumptions (tax rate, share count/dilution, capex levels), reducing completeness and auditability.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 10% from FY 2025 to 2029, driven by 8% growth in e-commerce and 15% in AWS, reaching $1,050 billion by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 8.5% in FY 2025 to 12% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.0%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge from FY 2024 estimate of $4.50: +$0.80 from revenue growth, +$0.50 from margin expansion, -$0.30 from higher capex, yielding FY 2025 EPS of $5.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "EPS"
+        },
+        {
+            "quote": "Recent guidance suggests FY 2025 revenue around $670 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2029 revenue stated as $1,050B in narrative versus $981.0B in Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex (level and trajectory)",
+            "working_capital",
+            "stock-based_compensation/dilution"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% without capital structure/cost of debt support",
+            "Risk-free rate 6% unsourced",
+            "Equity risk premium 5% unsourced",
+            "Beta 1.2 unsourced",
+            "Terminal growth 4% with generic rationale only",
+            "Segment growth splits (e-commerce 8%, AWS 15%) without evidence"
+        ]
+    }
+}

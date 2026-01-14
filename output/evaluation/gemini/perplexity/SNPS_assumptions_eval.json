@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's quality of assumptions is graded as Poor due to multiple internal numeric contradictions and the absence of quantified sensitivity analysis for material drivers. While the report is explicit in listing key inputs within a dedicated appendix, it fails the consistency test. Specifically, the narrative cites a 16% decline in China revenue, while the valuation assumptions appendix uses 15%. Furthermore, the narrative describes the 'current' operating margin as 21%, contradicting the 'Financials Snapshot' table which records the FY2024 actual margin at 21.7%. Justification for critical valuation parameters, such as the 10.5% discount rate and 3.0% terminal growth rate, is entirely absent, lacking any reference to historical averages, peer benchmarks, or risk-free rate components. Specificity is generally high regarding units and time horizons, but this is undermined by the lack of robust stress-testing. The report mentions a price sensitivity range ($620\u2013$750) but fails to provide quantified scenarios or sensitivity tables for the underlying drivers (e.g., synergy realization or revenue growth deltas), rendering the valuation process a 'black box.' Per the grading rubric, the presence of two distinct contradictions and the lack of quantified driver sensitivities necessitates a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "China revenue expected to decline 16% year-over-year",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Normalized China revenue decline: 15% in FY2025",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion from current 21% toward 25%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "operational synergies projected at $400 million by year three",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Discount rate: 10.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "China revenue decline cited as 16% in text but 15% in valuation appendix.",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Current operating margin cited as 21% in narrative but 21.7% in the Financials Snapshot table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "WACC components"
+        ],
+        "unjustified_parameters": [
+            "Discount rate 10.5% without source",
+            "Terminal growth 3.0% without benchmark"
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it inadequate as an equity research analysis. Most critically, the entire report appears to be fabricated, with fictional data points including impossible future dates (Q2 2025 results reported from a 2024 perspective), manufactured financial figures, and invented press releases with non-existent publication dates. Essential investment banking sector KPIs are completely absent - no Net Interest Margin, loan loss provisions, CET1 ratios, or other regulatory capital metrics that are fundamental to bank analysis. The valuation section provides generic assumptions without demonstrating how operating drivers connect to the $650 fair value estimate. Sources are fabricated with impossible future dates, violating basic research integrity standards. While the report superficially appears comprehensive with proper section headers, the content lacks analytical depth and sector-appropriate rigor expected for a major investment bank.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Regulatory Capital Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROE",
+            "Market Cap"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin",
+            "CET1 Ratio",
+            "Loan Loss Provisions",
+            "Book Value per Share",
+            "Tangible Book Value",
+            "Tier 1 Capital Ratio",
+            "Risk-Weighted Assets"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated 2025 but analyzing Q2 2025 results as historical",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Multiple sources dated in future (2025) from impossible perspective",
+                "locations": [
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin",
+            "CET1 Ratio",
+            "Loan Loss Provisions",
+            "Book Value per Share",
+            "Tangible Book Value",
+            "Tier 1 Capital Ratio",
+            "Risk-Weighted Assets",
+            "Return on Tangible Equity"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $650 with no valuation methodology shown",
+            "WACC assumption of 8.5% without justification",
+            "Revenue CAGR projections without supporting analysis",
+            "Multiple financial projections in tables without source derivation"
+        ]
+    }
+}

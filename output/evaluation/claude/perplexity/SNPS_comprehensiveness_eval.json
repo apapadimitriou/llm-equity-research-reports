@@ -1,0 +1,76 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental structural deficiencies that render it incomplete and superficial. Most critically, it lacks essential sector-specific KPIs for software/technology companies (ARR, NRR, customer retention, R&D as % of revenue trends, etc.) and provides fabricated financial projections without any methodological basis or sourcing. The Financials Snapshot presents multi-year forecasts as facts with no explanation of assumptions or models. Valuation methodology is skeletal, mentioning DCF and P/E multiples but failing to show actual calculations or explicit linkage between operating drivers and fair value derivation. The report exhibits significant redundancy, repeating Ansys acquisition details and China restrictions across multiple sections without adding depth. Sources are improperly cited with no in-text references, and several key claims about financial metrics and strategic initiatives appear unsupported by the provided source material.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Positioning Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "Customer Retention Rate",
+            "R&D % of Revenue",
+            "Subscription Mix",
+            "Customer Acquisition Cost",
+            "License vs Maintenance Revenue Split"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Provides detailed financial forecasts through FY2027 with no supporting methodology or source documentation",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Claims specific synergy targets ($400M) and timeline without adequate sourcing",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Customer Retention Rate",
+            "R&D % of Revenue",
+            "Subscription Revenue Mix",
+            "Bookings Growth"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $685 per share with no calculation shown",
+            "Specific financial projections for FY2025-2027 without methodology",
+            "Market share claims (38% in EDA) without current sourcing",
+            "Customer metrics and adoption rates for AI tools without supporting data"
+        ]
+    }
+}

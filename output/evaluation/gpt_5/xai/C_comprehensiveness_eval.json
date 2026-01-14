@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers the major headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources), with reasonable narrative depth. However, the Financials Snapshot is generic and lacks core bank KPIs, and several 2024 \u201cactual\u201d fields are marked as insufficient data, undermining comprehensiveness. Sector-appropriate metrics like NIM, NII, loan loss provisions, efficiency ratio, deposits/loans, and asset quality are absent from the table; while ROTCE and CET1 appear in the text, they are not integrated into the snapshot, triggering the KPI hard cap. The valuation section does link drivers (revenue CAGR and margin expansion) to the fair value, but it relies on non-bank metrics (operating margin) and an EPS bridge without bank-specific drivers (NIM, credit costs), limiting proportionality for the sector. Peer context is minimal (a single P/E remark vs JPMorgan) and there is no scenario/sensitivity analysis. Sourcing is mixed: most claims are cited, but at least one material claim (buybacks at $1B/quarter) is uncited and one source lacks a URL. Some repetition of the transformation/regulatory themes across multiple sections adds redundancy. Overall, breadth is solid, but sector KPI omissions and evidence gaps cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Segment KPI Table (bank-specific)"
+        ],
+        "sector_kpis_present": [
+            "ROTCE",
+            "CET1",
+            "Dividend per share"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Deposits",
+            "Loans",
+            "Nonperforming Loan (NPL) Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "Deposits",
+            "Loans",
+            "NPL Ratio"
+        ],
+        "uncited_claims": [
+            "Share buybacks resuming at $1 billion per quarter",
+            "ESG alignment with JPMorgan on metrics without source",
+            "EPS bridge starting from 2024 estimated $5.50 without citation"
+        ]
+    }
+}

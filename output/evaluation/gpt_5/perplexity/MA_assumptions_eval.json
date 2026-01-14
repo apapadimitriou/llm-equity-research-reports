@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report makes most key drivers explicit and proximal to forecasts, especially in the Fair Value/Profit Drivers section and the Appendix, with clear magnitudes, ranges, and horizons (e.g., revenue CAGR, payment volume CAGR, operating margin target, WACC, terminal growth, buybacks). Specificity is solid: units and timeframes are stated, and several operational sub-drivers (value-added services growth) are quantified. However, justification is weak-to-partial. While some narrative ties to pre-pandemic cross-border trends and segment mix, major valuation inputs (WACC 8.5%, terminal growth 3.0%, operating margin path 61.5%) lack evidence from multi-year history, peer benchmarks, or cited sources. Internal consistency suffers a notable contradiction: \u201chigh-50%\u201d operating margin guidance conflicts with the 61.5% target and the 60%+ margin trajectory shown in forecasts. Sensitivity analysis is absent; risks are mentioned qualitatively without quantified scenarios or valuation impacts. Per decision rules, the lack of quantified sensitivities hard-caps the grade at Fair, and the unresolved margin contradiction also enforces a Fair cap. Overall, assumptions are explicit and specific but under-justified, with one contradiction and no stress testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029): 11.2%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Payment Volume CAGR (2025-2029): 9.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Value-added services revenue should grow 15-20% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target Operating Margin: 61.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Target operating margins in the high-50% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Discount Rate (WACC): 8.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share repurchase activity reducing diluted share count by 2-3% per year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin target stated as 'high-50%' conflicts with 61.5% target and 60%+ margins in forecast table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix \u2014 Key Valuation Assumptions",
+                    "Financials Snapshot (Op Margin % 2025E\u20132029E \u226560%)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth rate 3.0% without source",
+            "Target operating margin 61.5% without historical/peer support",
+            "Value-added services growth 15\u201320% without cited evidence"
+        ]
+    }
+}

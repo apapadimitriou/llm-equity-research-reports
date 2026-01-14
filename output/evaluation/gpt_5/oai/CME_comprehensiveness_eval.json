@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, ESG, appendix, and sources. Valuation assumptions are explicit and reasonably linked to operating drivers (volume and fee rate), and sourcing is generally consistent across news and company filings. However, the Financials Snapshot is generic\u2014containing revenue, margins, EPS, FCF, and ROIC\u2014but omits core exchange-sector KPIs (e.g., multi-year ADV, fee per contract/RPC, open interest, segment mix), which is a critical gap and triggers a cap at Fair. Peer/industry context exists in places (FMX competition; ESG peer scores) but there is no formal peer benchmarking of operating metrics or valuation, and no scenario/sensitivity analysis. There is mild redundancy (FMX competition and cross-margining repeated across multiple sections) and a few uncited claims (e.g., 2021 Google cloud deal; shareholder protests). Overall, breadth is strong, linkage from drivers to value is present, and evidence is mostly cited, but the absence of sector KPIs in the snapshot and limited benchmarking/sensitivities reduce comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Sector KPI Table within Financials Snapshot"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Average Daily Volume (multi-year & forecast)",
+            "RPC/Fee per Contract (multi-year)",
+            "Open Interest",
+            "Segment Mix by Product (rates/equity/FX/data)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ADV (multi-year & forecast)",
+            "RPC/Fee per Contract",
+            "Open Interest"
+        ],
+        "uncited_claims": [
+            "Reference to a $1B Google cloud partnership in 2021 without source",
+            "Mention of shareholder protests regarding broker status without citation"
+        ]
+    }
+}

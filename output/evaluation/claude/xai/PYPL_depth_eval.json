@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it attempts quantification, the analysis lacks clear causal mechanisms and relies heavily on unsupported assumptions. Key excerpts illustrate shallow reasoning: \"revenue CAGR of 7% through 2029\" appears without derivation, \"operating margins expanding to 20%\" lacks justification for the mechanism driving this improvement, and \"WACC of 9.5%\" is stated without benchmarking. The report mentions \"network effects\" but never explains how they translate to financial outcomes. EPS projections like \"rising to $7.50 by 2029 via revenue growth (+$0.50), margin expansion (+$1.00)\" are arbitrary allocations without underlying drivers. No sensitivity analysis exists - the single fair value of \"$85 per share\" has no range or stress testing. The report repeatedly notes \"insufficient data\" undermining confidence in conclusions.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "network effects \u2192 financial impact not quantified",
+            "margin expansion \u2192 operational drivers unexplained",
+            "TPV growth \u2192 revenue conversion unclear"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3% with no benchmark",
+            "WACC 9.5% without peer comparison",
+            "20% margin target without cost structure analysis"
+        ],
+        "lack_of_sensitivity": [
+            "single $85 fair value with no range",
+            "no scenario analysis for competition impact",
+            "FCF volatility acknowledged but not modeled"
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with key assumptions stated but scattered throughout. Revenue growth projections (6% CAGR over five years) and margin improvement expectations (20 basis points annually) are explicitly mentioned with specific timeframes. Cost of equity (9%) is clearly stated. However, justification is weak - growth assumptions lack peer benchmarks or detailed historical analysis beyond general commentary. Specificity is partial with some units and horizons provided but limited detail on causal drivers. Internal consistency appears clean with no obvious contradictions between narrative and financial tables. The critical weakness is the complete absence of quantified sensitivity analysis on material drivers, which caps the grade at Fair despite other positive elements.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our projections result in a 6% revenue CAGR over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins, adjusted to exclude amortization expense and one-time items, will improve at an average annual rate of about 20 basis points over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our fair value estimate equates to 19.9 times our projected 2025 adjusted earnings per share estimate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 1,158 1,107 1,039 983 938 887 829 775",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "6% revenue CAGR without detailed peer comparison",
+            "20 basis points margin improvement without quantified scenarios"
+        ]
+    }
+}

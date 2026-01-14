@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe temporal inconsistencies and contradictions that render it incoherent. The most glaring issue is the impossible claim that Q2 2025 results were reported on July 31, 2025, when the report date is July 19, 2025 - a logical impossibility. The report consistently treats July 2025 events as historical while being dated earlier. Multiple sections contain contradictory information: the Bulls/Bears section mentions 35% operating margins by 2027, but the Fair Value section forecasts the same 35% margin by 2029. The Financials table shows 2025 revenue forecast of $10.2B, but this conflicts with the Q2 revenue of $2.65B (which would annualize to $10.6B). The Capital Allocation section states Biogen has \"0% dividend payout (no dividend)\" but then discusses dividend policy inconsistently. Throughout the report, there are abrupt topic jumps with minimal transitions, particularly in the Strategy & Outlook section which moves from partnerships to secular trends without connection. The extensive use of \"insufficient data\" in financial tables while making specific forecasts creates additional contradictions. Sources are poorly aligned with claims, and the temporal framework is fundamentally broken.",
+    "evidence": [
+        "\"Biogen Inc. reported Q2 2025 results on July 31, 2025\" vs report date of July 19, 2025 (Analyst Note)",
+        "Bulls Say forecasts 35% operating margins by 2027, but Fair Value section projects 35% margins by 2029 (Bulls Say vs Fair Value)",
+        "\"The company maintains a dividend payout of 0% (no dividend)\" immediately followed by dividend policy discussion (Capital Allocation)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

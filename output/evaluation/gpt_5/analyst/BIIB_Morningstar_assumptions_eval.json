@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are generally explicit and proximate to the forecasts they inform. The report clearly states product-level revenue assumptions (e.g., Leqembi peak sales, MS franchise declines, Spinraza stabilization), capital assumptions (WACC), and DCF parameters (Stage II EBI growth, tax rate, share count). Specificity is solid: magnitudes, units, and time frames are provided (peak sales dollars, annual decline rates, percent WACC/tax, forecast share count through 2029). Justification is partial: narratives cite competitive dynamics, launch trajectories, reimbursement, and historical headwinds, but quantified tie-ins to multi-year history or peer benchmarks are limited and sources are largely uncited. Internal consistency is mostly clean with minor tension where narrative and later sections update views (e.g., Spinraza trajectory), but the model tables and the \u201cFair Value and Profit Drivers\u201d section align overall. However, there is no quantified sensitivity/scenario analysis for material drivers like Leqembi adoption, MS erosion, WACC, or terminal growth; risks are discussed qualitatively without ranges or valuation impacts. This lack of stress-testing caps the grade, despite otherwise clear and specific inputs. Overall, the assumptions are explicit and specific, and mostly consistent, but justification is only partial and sensitivity analysis is absent.",
+    "assumptions_extracted": [
+        {
+            "quote": "We now assume $3 billion in global peak sales of Biogen and Eisai's Leqembi.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We think combined global sales of Avonex and Plegridy will continue to fall, with low-double-digit declines annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We now expect sales to stabilize at around $1.5 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers (Spinraza)",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our assumption on Ocrevus royalties are based on peak sales of $9 billion.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a weighted average cost of capital of 7.1%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 18.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 139",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "13"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.1% without source tie-in",
+            "Stage II EBI growth 3.0% without evidence",
+            "Long-run tax rate 18% without support",
+            "Leqembi $3B peak without quantified benchmarking",
+            "Ocrevus $9B peak without cited source"
+        ]
+    }
+}

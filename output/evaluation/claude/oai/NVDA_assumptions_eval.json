@@ -1,0 +1,105 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "While the report lists some key assumptions, they are largely unjustified and contain significant internal contradictions. The revenue projections (15% CAGR through 2029, specific annual figures) and margin forecasts (operating margin declining from 55% to 45%) are stated without supporting evidence or peer comparisons. Critical valuation inputs like the 9% WACC and 4% terminal growth rate are mentioned but not justified with market data or methodology. The report contains clear contradictions: it states revenue doubled from ~$60B to $130.5B (FY2024 to FY2025) but the financials table shows FY2024 at $60B and FY2025E at $130.5B, implying these are actuals vs estimates inconsistently. Operating margins are projected to decline from 55% to 45% without explanation of competitive dynamics driving this compression. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers despite the 'Very High' uncertainty rating, automatically capping the grade at Fair, but the contradictions and weak justification push this to Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast Nvidia's top-line to grow at a 5-year CAGR of about 15% through FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model a long-term gross margin in the high-60s% and operating margin in the low-to-mid 50s%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of approximately 9% to discount cash flows",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a terminal growth rate of ~4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share count is assumed roughly stable; we expect that options/RSU dilution will be offset by share buybacks over time",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Tax rate is assumed at 13\u201315%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "annual CapEx plus capital lease commitments (largely pre-paying foundry capacity) are modeled around 5\u20136% of revenue",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue growth narrative inconsistent with financials table - text suggests FY2024 actual of ~$60B doubled to FY2025 $130.5B, but table shows this as estimate not actual",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Financials Snapshot table"
+                ]
+            },
+            {
+                "description": "Operating margin projections show decline from 55% to 45% without justification for competitive pressure that would cause this compression",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 9% without methodology or market data",
+            "Terminal growth 4% without justification",
+            "15% revenue CAGR without supporting analysis",
+            "Operating margin decline path without competitive rationale",
+            "Tax rate 13-15% without jurisdictional breakdown"
+        ]
+    }
+}

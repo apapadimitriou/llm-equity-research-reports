@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: Core valuation drivers are stated clearly in the Fair Value and Profit Drivers section and Appendix (revenue CAGR, WACC, terminal growth, operating margin path), with corresponding forecast tables. Specificity: Assumptions generally include magnitudes, units, and time horizons (e.g., 6% revenue CAGR 2025\u20132029; WACC 7.5% with beta 0.8; terminal growth 3%; op margin to 35% by 2029). Consistency: Most items reconcile to the forecast table, but there is a clear numeric contradiction between the narrative EPS target \u201c$25 by 2029\u201d and the table\u2019s \u201c$25.8\u201d for 2029. Sensitivity: There is no quantified sensitivity/scenario analysis on material drivers (revenue growth, margins, WACC, terminal growth), only qualitative risk discussion\u2014this alone caps the grade at Fair. Justification: Rationale is weak; revenue CAGR is tied mainly to one-quarter growth and \u201craised guidance,\u201d terminal growth is attributed to \u201clong-term industry average,\u201d and WACC lacks capital structure/cost of debt detail. No multi-year historical context or peer benchmarks are provided for margin improvement or growth. Overall, assumptions are explicit and specific but thinly justified, with one internal contradiction and no stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "projects revenue CAGR of 6% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume operating margins improving to 35% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 7.5%, incorporating a beta of 0.8 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "full-year revenues around $35 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "2025 EPS estimated at $20.50 ... growing to $25 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "WACC          | 7.5%  | Beta 0.8, risk-free rate 4%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS 2029 stated as $25 in narrative vs $25.8 in forecast table",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "capital_structure/cost_of_debt"
+        ],
+        "unjustified_parameters": [
+            "Revenue CAGR 6% based mainly on one quarter/guidance",
+            "Operating margin improvement to 35% without historical/peer support",
+            "Terminal growth 3% without source/benchmark detail",
+            "WACC 7.5% lacks debt cost and capital structure disclosure"
+        ]
+    }
+}

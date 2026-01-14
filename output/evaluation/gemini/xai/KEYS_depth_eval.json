@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates 'Good' analytical depth by providing clear causal links between market trends and financial performance. For instance, it notes 'improved margins from operational efficiency' and a focus on 'high-margin software,' identifying the specific mechanism for margin expansion. Forecasts are tied to explicit drivers, such as a '5% revenue CAGR... driven by recovery in communications' and AI-related testing demand. The valuation section is robust, providing explicit assumptions like a 'WACC of 8.5%, incorporating a 3% risk-free rate' and a terminal growth rate of 3%, which is benchmarked as a 'long-term industry average.' However, the report falls short of 'Excellent' because it lacks a formal, quantified sensitivity analysis or scenario modeling. While it mentions that 'supply chain disruptions... could swing valuation by 15-20%,' it does not provide a table or range showing how specific changes in inputs (like WACC or growth) would impact the fair value estimate. The implications are actionable, clearly stating the stock is 'undervalued at current levels' with a specific 13% upside target. The treatment of uncertainty is present through the identification of export controls and cyclicality, but these are not modeled as distinct scenarios.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "specific quantification of AI revenue contribution to total growth"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3% lacks specific peer comparison data"
+        ],
+        "lack_of_sensitivity": [
+            "no table showing FVE sensitivity to WACC or growth changes"
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes most headline sections (cover, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, Sources). However, depth is uneven: Economic Moat and ESG are skeletal, and Capital Allocation provides no substantive analysis. The Financials Snapshot omits historical actuals (2022\u20132024 marked \u201cinsufficient data\u201d) and lacks core software/cloud KPIs, instead offering only generic financial metrics and forecasts, which triggers a hard cap. Valuation presents a DCF with explicit revenue growth by segment, margin expansion, WACC components, and a fair value, linking drivers to outcome adequately, but without sensitivity/scenario analysis. Evidence use is inconsistent: several key operating results are attributed to social media posts, and a future-dated Yahoo Finance article is cited within a report dated earlier, undermining citation reliability. There is minimal peer/industry benchmarking beyond generic mentions of AWS/Google. Some repetition of AI/Azure growth appears across Analyst Note, Strategy, and Bulls/Bears with limited incremental insight. Overall, the report covers the expected structure but misses proportional depth in moat, capital allocation, ESG, and\u2014critically\u2014sector KPIs and historicals in the financials, capping the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Azure revenue growth (31%)",
+            "AI revenue run-rate ($13B)",
+            "Cloud revenue growth (19%)",
+            "Xbox hardware growth (-29%)"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "NRR",
+            "RPO/Commercial bookings",
+            "Commercial cloud gross margin",
+            "Segment revenue mix (by division)",
+            "Capex/AI capex intensity"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cites a July 2025 Yahoo Finance article for results within a report dated June 2025 (forward results treated as known).",
+                "locations": [
+                    "Analyst Note",
+                    "Sources [5]"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "RPO/Commercial bookings",
+            "Commercial cloud gross margin",
+            "Capex/AI capex"
+        ],
+        "uncited_claims": [
+            "Risk section asserts 20\u201330% potential valuation swing with no source.",
+            "WACC inputs (6% risk-free, 5% ERP, beta 1.0) presented without citation."
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from critical deficiencies across all five quality pillars. While assumptions are somewhat explicit, they lack proper justification with most key parameters unsupported by evidence. The WACC of 8.5% and terminal growth of 2.75% are stated without derivation or benchmarking. Revenue growth projections of 12.7% for 2025 and ~10% CAGR lack historical context or peer comparison. Most critically, there are no quantified sensitivities beyond a single WACC scenario in the DCF. Internal inconsistencies exist between text claims and data presentation. The $75B capex figure appears in multiple contexts without clear sourcing. Overall, the assumptions feel black-box with insufficient rigor for material drivers that determine the $210 price target.",
+    "assumptions_extracted": [
+        {
+            "quote": "WACC of 8.5% and a terminal growth rate of 2.75%",
+            "location": {
+                "section": "Investment Summary",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of 2.75%",
+            "location": {
+                "section": "Investment Summary",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "we anticipate total revenue growth of approximately 12.7% to $394.3 billion",
+            "location": {
+                "section": "Financial Analysis & Forecast",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "capital expenditures to approximately $75 billion for fiscal year 2025",
+            "location": {
+                "section": "Business & Strategic Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Shares Outstanding (M) 12,135",
+            "location": {
+                "section": "Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "risk-free rate of 4.1%, an equity risk premium of 4.1%, and a levered beta of 1.02",
+            "location": {
+                "section": "Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "capex",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Multiple references to $75B capex with inconsistent attribution - sometimes cited as management guidance, other times as company forecasting",
+                "locations": [
+                    "Business & Strategic Analysis",
+                    "Financial Analysis & Forecast"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "tax_rate",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% components not derived",
+            "Terminal growth 2.75% without benchmark justification",
+            "Revenue growth rates lack historical/peer context",
+            "Operating margin compression assumptions vague"
+        ]
+    }
+}

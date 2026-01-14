@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with a clear cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, a financials snapshot, ESG, and an appendix with sources. Depth is reasonable in moat, risk, and capital allocation, and the valuation outlines DCF inputs (revenue CAGR, WACC, margins) with qualitative linkage to operating drivers (volume growth, international expansion, cloud efficiency, buybacks). However, comprehensiveness is constrained by two hard caps: (1) the Financials Snapshot omits core exchange-sector KPIs (e.g., ADV time series by asset class, revenue per contract/RPC, open interest, fee rates/mix), and (2) sourcing inconsistencies with multiple material claims tied to outdated or missing citations (e.g., market cap/price and EPS beats linked to 2021\u20132022 pages; Google Cloud migration cited as [17] without a source entry). Peer benchmarking versus ICE/CBOE/NDAQ/LSEG is absent, as are scenario/sensitivity analyses. Redundancy is present with repeated talking points on international ADV records and the Google Cloud migration across the Analyst Note, Strategy, Bulls, Capital Allocation, and ESG without incremental detail. Overall, while the structure is largely complete and valuation is partially linked to drivers, missing sector KPIs in the snapshot and citation issues cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ADV (headline total)",
+            "International ADV growth"
+        ],
+        "sector_kpis_missing": [
+            "ADV (time series, by asset class, in Financials Snapshot)",
+            "Revenue per contract (RPC)",
+            "Open Interest",
+            "Asset-class mix / fee rate metrics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ADV time series (and by asset class) in the Financials Snapshot",
+            "Revenue per contract (RPC)",
+            "Open Interest",
+            "Asset-class mix / clearing fee rate"
+        ],
+        "uncited_claims": [
+            "Q2 2025 EPS of $2.96 vs $2.91 consensus is cited to a 2021 MarketBeat page ([6])",
+            "Market cap ($101.7B) and last close ($282.21) sourced to a 2022 StockAnalysis page ([4])",
+            "Google Cloud migration details cited as [17] but no source [17] is provided in the list",
+            "Approx. $1.55B proceeds from OSTTRA sale not explicitly sourced",
+            "Financials Snapshot projections (2025E\u20132029E) lack sourcing/support"
+        ]
+    }
+}

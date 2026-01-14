@@ -1,0 +1,89 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with key valuation assumptions stated in the DCF section, including cost of equity (7.5%), WACC (7.0%), and terminal growth (5.0%). However, justification is weak - these parameters lack supporting evidence from peer comparisons or market data. Specificity is solid with clear units and timeframes for financial projections through 2029. Internal consistency appears clean with no contradictions identified between narrative and financial tables. The critical limitation is the complete absence of sensitivity analysis or scenario testing for any material drivers, despite the report's 'High' uncertainty rating and significant business risks (Humira patent cliff, regulatory threats). While revenue growth assumptions and margin expectations are discussed qualitatively, no quantified ranges or stress tests are provided for key variables like drug pricing pressures, competitive dynamics, or cost structure changes. This lack of sensitivity analysis, combined with weak parameter justification, caps the grade at Fair despite otherwise reasonable assumption transparency.",
+    "assumptions_extracted": [
+        {
+            "quote": "For the weighted average cost of capital, we use a 7.5% cost of equity and market rates for the cost of debt.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 7.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "we expect fairly stable operating margins as new immunology drugs carry strong enough margins to offset the lost sales on high-margin Humira",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,769",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.0% without peer comparison",
+            "Cost of equity 7.5% without market data support",
+            "Terminal growth 5.0% without economic justification"
+        ]
+    }
+}

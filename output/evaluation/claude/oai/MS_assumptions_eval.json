@@ -1,0 +1,96 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet basic standards for assumption quality. Key assumptions are scattered and largely opaque\u2014the WACC of 9% appears only in the appendix without justification, terminal growth of 2% lacks support, and revenue growth projections (3-5% CAGR) are vaguely stated without specific drivers or timeframes. Critical inconsistencies undermine credibility: 2024 EPS is listed as both $8.0 and $7.95 in different sections, and expense ratios are inconsistently cited as both 70% and 71% for 2024. The efficiency ratio assumption of 'around 70%' contradicts the reported 2024 figure of 71%. Most damaging is the complete absence of sensitivity analysis or scenario testing for any material drivers. While some assumptions reference historical data, the justification is weak and selective. The combination of multiple contradictions, opaque key parameters, and zero quantified sensitivities results in a model that feels like a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Morgan's annual revenue CAGR of roughly 3\u20135% through 2029 (reaching ~$74B by FY2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we assume MS keeps expense growth below revenue growth (building on 2024's efficiency ratio ~71%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted-average cost of capital around 9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our long-term assumptions include ~2% terminal growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model share count roughly flat (repurchases offset new issuance)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We assume operating (pre-tax) margins stay in the mid-to-high 20% range (reflecting a 2024 level of ~28.5%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2024 EPS reported as both $8.0 in financials table and $7.95 in analyst note",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Analyst Note section"
+                ]
+            },
+            {
+                "description": "Efficiency ratio assumption of 'around 70%' contradicts reported 2024 figure of 71%",
+                "locations": [
+                    "Fair Value section assumption",
+                    "Multiple references to 71% actual"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "terminal growth 2% without justification",
+            "revenue CAGR 3-5% without specific drivers"
+        ]
+    }
+}

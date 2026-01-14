@@ -1,0 +1,62 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains all major sections with a clear structure, but suffers from significant deficiencies that prevent a higher grade. While the Analyst Note provides reasonable depth and the valuation section attempts to link drivers to outcomes, critical banking-specific KPIs are completely missing from the Financials Snapshot (no NIM, loan loss provisions, CET1 ratio trends, or deposit metrics). The report repeatedly mentions 'insufficient data' throughout, undermining credibility. Source [7] explicitly states 'insufficient data' yet is used for ESG scoring. The valuation methodology lacks explicit bridge calculations showing how operating assumptions translate to the $45 fair value. Peer benchmarking is superficial, limited to brief ESG score comparisons. The report demonstrates reasonable coverage of strategic themes and risks but fails to provide the quantitative rigor expected for banking analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Comprehensive Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC",
+            "CET1 ratio mentioned in text"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 ratio in financials table",
+            "Deposit growth metrics",
+            "Loan growth rates",
+            "Book value per share",
+            "Tangible book value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "Deposit metrics",
+            "Loan growth",
+            "Tangible book value"
+        ],
+        "uncited_claims": [
+            "Source [7] states 'insufficient data' but provides specific ESG scores",
+            "Multiple 'insufficient data' disclaimers throughout financials",
+            "CET1 ratio of 11.8% cited without proper sourcing in financials table"
+        ]
+    }
+}

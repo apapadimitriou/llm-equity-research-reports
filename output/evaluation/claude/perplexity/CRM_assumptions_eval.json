@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamentally opaque assumptions that drive its $302 fair value estimate and financial projections. Critical valuation inputs like the 8.7% WACC, 3.5% terminal growth rate, and specific revenue growth rates appear without any justification or sourcing. The financial snapshot table projects detailed metrics through 2029 with no explanation of underlying drivers or methodology. Multiple internal contradictions exist, including conflicting revenue figures across sections and inconsistent growth rate calculations. While some assumptions are listed in the appendix, they lack supporting evidence, peer comparisons, or sensitivity analysis. The report provides no quantified scenarios despite material uncertainty around AI adoption rates and competitive pressures. Key drivers like margin expansion assumptions, AI revenue monetization rates, and acquisition synergies remain completely unexplained, making the analysis unauditable and the conclusions unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029): 8.7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Target Operating Margin: 24%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "FCF Conversion: 32%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Our fair value estimate of $302 per share reflects a discounted cash flow analysis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue figures conflict between sections - fiscal 2025 stated as both $37.9B and $41.3B in different locations",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Business Strategy & Outlook section"
+                ]
+            },
+            {
+                "description": "Growth rate inconsistency - 8.7% CAGR claimed but table shows different implied growth rates",
+                "locations": [
+                    "Appendix assumptions",
+                    "Financials Snapshot calculations"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.7% without source",
+            "Terminal growth 3.5% without justification",
+            "Target operating margin 24% without support",
+            "Revenue CAGR 8.7% without methodology"
+        ]
+    }
+}

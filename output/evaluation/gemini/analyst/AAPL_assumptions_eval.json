@@ -1,0 +1,117 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Apple\u2019s valuation is supported by explicit and highly specific assumptions across revenue segments and margins, but the report is undermined by internal numeric contradictions between its narrative and financial tables. The 'Fair Value and Profit Drivers' section (dated Nov 2024) projects a 7% revenue CAGR and 6% iPhone growth through 2029, whereas the 'Valuation Model Summary' (dated Feb 2025) implies a lower 6.3% revenue CAGR, and recent Analyst Notes (May 2025) cite a 5% iPhone growth forecast. Similarly, the text targets a 35% operating margin by 2029, while the table specifies 34.6%. These discrepancies suggest the narrative was not fully updated to reconcile with the latest model iterations. \n\nDespite these issues, the quality of justification for individual drivers is solid. The report references historical context\u2014such as the 500 bps product margin expansion since 2019\u2014to support the forecast of 49% gross margins by 2029. Specificity is excellent, providing magnitudes for nascent products (Vision Pro at $4B) and near-term headwinds ($900M tariff impact). Sensitivity analysis is a notable strength, offering a robust 25% downside quantification for potential tariff risks and 'what you must believe' scenarios for growth. However, the unresolved numeric contradictions between the stale narrative and the updated model summary trigger a hard cap at the 'Fair' grade per the evaluation instructions.",
+    "assumptions_extracted": [
+        {
+            "quote": "project 7% compound annual revenue growth for Apple through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project 6% growth for iPhone revenue over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "forecast 5% average annual growth through fiscal 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "10"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "forecast gross margins to rise to 49% in fiscal 2029, up from 46% in fiscal 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating margins... reaching 35% in fiscal 2029 from 32% in fiscal 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "estimate a 25% gross downside risk to earnings and Apple's intrinsic valuation if it were to lose its exemption",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.9",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 16.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR of 7% in text conflicts with the 6.3% CAGR implied by the Valuation Model Summary table ($391B to $531B over 5 years).",
+                "locations": [
+                    "Fair Value and Profit Drivers (p. 6)",
+                    "Morningstar Valuation Model Summary (p. 15)"
+                ]
+            },
+            {
+                "description": "iPhone revenue growth is projected at 6% in the Fair Value section but 5% in multiple recent Analyst Notes.",
+                "locations": [
+                    "Fair Value and Profit Drivers (p. 6)",
+                    "Analyst Notes (pp. 9, 10, 12)"
+                ]
+            },
+            {
+                "description": "Operating margin target of 35% in narrative conflicts with 34.6% in the summary table.",
+                "locations": [
+                    "Fair Value and Profit Drivers (p. 7)",
+                    "Morningstar Valuation Model Summary (p. 15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.9% provided as a point estimate without component justification in text."
+        ]
+    }
+}

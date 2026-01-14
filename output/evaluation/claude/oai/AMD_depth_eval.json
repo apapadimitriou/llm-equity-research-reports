@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains some causal statements like \"revenue rose 36% year-over-year...driven by a 57% jump in data-center sales\" and \"data-center segment doubled in 2024,\" these lack mechanistic explanation. The valuation section provides basic assumptions (\"WACC ~8\u20139%,\" \"terminal growth ~3%,\" \"gross margin ~49%\") but offers no benchmarking against peers or industry standards. Critical gaps include no sensitivity analysis on key drivers, no quantified scenarios despite mentioning \"stress-test scenarios,\" and vague implications like \"fair value is about $165/share\" without conditional decision frameworks. The China export impact (\"$1.5 billion revenue shortfall\") is mentioned but not integrated into scenario modeling. Risk factors are listed descriptively rather than quantified, and the DCF methodology lacks transparency in key assumptions or ranges.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "data-center growth drivers not explained beyond demand",
+            "margin improvement path lacks operational detail",
+            "competitive dynamics impact on pricing not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC ~8-9% with no peer comparison",
+            "terminal growth ~3% without industry justification",
+            "operating margin targets lack basis"
+        ],
+        "lack_of_sensitivity": [
+            "no quantified scenarios despite claiming stress-tests",
+            "China impact mentioned but not modeled",
+            "no ranges provided for key assumptions"
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report states several core valuation and forecast assumptions explicitly in the Fair Value and Profit Drivers section and the Appendix, and they are proximate to the forecasts they inform. Specificity is solid: most assumptions include magnitudes, units, and time horizons (e.g., revenue CAGR, margin bands, WACC, terminal growth, product peak sales). Internal consistency is mostly clean; the financial snapshot broadly aligns with narrative ranges, with only minor discrepancies (e.g., operating margin reaching 27.8% by 2029 while the text targets 25\u201327% in the medium term). Justification is partial: while some figures reference historical context and cited sources, key valuation parameters (WACC 7.76%, terminal growth 2.5%) and growth bands lack robust evidence tied to multi-year history, peer benchmarks, or defensible sources. Sensitivity is limited: although ranges are provided for several drivers (revenue CAGR, MS decline, EPS growth, Leqembi revenue, margin), there is no structured sensitivity/scenario analysis nor quantified valuation impact across cases, and no ranges for WACC or terminal growth. Material assumptions for share count, tax rate, and capex are missing or opaque. These factors collectively cap the assessment at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "key assumptions including 3-5% revenue compound annual growth rate through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion to 25-27% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital of 7.76%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "MS franchise decline rate: 6% annually through 2027",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Leqembi collaboration revenue could reach $200-400 million annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Earnings per share growth of 4-6% annually through 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Free cash flow generation of $2.5-3.0 billion annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.76% without source depth",
+            "Terminal growth rate 2.5% without evidence",
+            "Revenue CAGR 3\u20135% weakly justified"
+        ]
+    }
+}

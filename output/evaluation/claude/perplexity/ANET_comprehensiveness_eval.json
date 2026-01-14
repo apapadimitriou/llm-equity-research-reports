@@ -1,0 +1,78 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it incomplete and unreliable. Most critically, it contains numerous temporal inconsistencies, presenting itself as written on June 26, 2025 while referencing future events and using outdated sources. The Financials Snapshot lacks essential sector-specific KPIs for networking hardware companies (gross margins by segment, R&D intensity, inventory turns, customer concentration metrics). Multiple uncited claims appear throughout, including specific revenue figures and market share percentages without source attribution. The valuation section fails to establish explicit linkages between operating drivers and fair value calculations. Peer benchmarking is entirely absent, providing no competitive context. While section headers are present, content depth is insufficient with repetitive information across sections rather than progressive analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin by Segment",
+            "R&D as % Revenue",
+            "Inventory Turnover",
+            "Customer Concentration Ratios",
+            "ASP Trends",
+            "Unit Shipments"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated June 26, 2025 references Q1 2025 results as historical while citing sources from future dates",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Stock price listed as $94.97 contradicts fair value of $82 with P/FVE of 1.16x (should be 1.16)",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Gross Margin by Segment",
+            "R&D Intensity",
+            "Inventory Turnover",
+            "Customer Concentration Metrics",
+            "ASP Trends",
+            "Unit Shipments"
+        ],
+        "uncited_claims": [
+            "Commands approximately 45% market share in datacenter ports above 100 Gb/sec",
+            "Serves seven of the top ten largest cloud service providers",
+            "Ultra Ethernet Consortium strategic initiative",
+            "Management targeting at least $1.5 billion in combined AI center revenue for 2025"
+        ]
+    }
+}

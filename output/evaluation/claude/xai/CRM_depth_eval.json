@@ -1,0 +1,27 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some causal mechanisms and explicit assumptions but falls short of rigorous analytical depth. Causal explanations exist, such as \"cRPO growth of 12% signals accelerating demand\" and \"margin expansion to 22% supports earnings growth,\" but these are shallow and lack detailed drivers. The DCF model provides explicit assumptions: \"8% revenue CAGR,\" \"WACC is set at 9%,\" and \"Terminal growth of 4%.\" However, these assumptions are not benchmarked against industry standards or stress-tested. The EPS bridge attempts quantification: \"add $1.00 from revenue growth, $0.50 from margin expansion,\" but the underlying mechanics are oversimplified. While counterpoints appear in \"Bears Say\" section mentioning \"Macro headwinds could pressure IT budgets,\" no quantified sensitivity analysis explores these risks. The report mentions \"20-30% valuation swing possible\" but provides no scenarios or ranges to support this claim. Actionable implications are present but generic, lacking conditional decision frameworks.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI monetization \u2192 revenue growth linkage not quantified",
+            "switching costs \u2192 retention rates connection unsupported"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth of 4% with no industry benchmark",
+            "25% operating margin by 2029 without peer comparison"
+        ],
+        "lack_of_sensitivity": [
+            "WACC fixed at 9% without range",
+            "No quantified scenarios for macro headwinds impact",
+            "20-30% valuation swing mentioned but not modeled"
+        ]
+    }
+}

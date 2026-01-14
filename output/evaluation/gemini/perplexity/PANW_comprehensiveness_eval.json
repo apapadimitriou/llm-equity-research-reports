@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report follows the required structural template and includes all major sections, but it fails to meet the depth and data integrity standards required for a 'Good' or 'Excellent' rating. Most significantly, the Financials Snapshot table is generic, omitting core sector-specific KPIs such as Annual Recurring Revenue (ARR) and Net Revenue Retention (NRR) in the multi-year forecast. Per the grading instructions, the omission of two or more core sector KPIs in the snapshot triggers a mandatory cap at 'Fair'. While these metrics are mentioned in the Analyst Note, their absence from the tabular financial model limits the report's analytical utility. Additionally, the report lacks a dedicated Peer Benchmarking section or comparative table, providing only passing mentions of competitors like Wiz. This absence of relative context necessitates a one-level downgrade. Furthermore, the report includes a massive factual error regarding a $25 billion acquisition of CyberArk; while cited to the report's own source list, this material claim is factually incorrect (hallucinated), which, combined with uncited tax and share count assumptions, reinforces the 'Fair' grade. The valuation section provides basic DCF drivers but lacks the sensitivity analysis or scenario modeling expected in professional-grade research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Annual Recurring Revenue)",
+            "NRR (Net Revenue Retention)",
+            "Billings",
+            "Customer Acquisition Cost (CAC)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (Annual Recurring Revenue) in Financials Snapshot",
+            "NRR (Net Revenue Retention) in Financials Snapshot",
+            "Billings"
+        ],
+        "uncited_claims": [
+            "Tax rate assumption of 21% in Appendix",
+            "Share count decline of 2% annually in Appendix",
+            "CyberArk acquisition for $25B (Factually incorrect/Hallucinated)"
+        ]
+    }
+}

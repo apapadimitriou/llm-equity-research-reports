@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by linking outcomes to drivers and embedding explicit, quantified assumptions. Causal reasoning is used repeatedly, tying revenue and margin expectations to AI adoption and product launches: \u201con the back of optimism around artificial intelligence sales,\u201d \u201cProduct sales grew 28% year over year due to,\u201d and \u201cthis is normal as a software company scales.\u201d It provides clear, quantified profit drivers and valuation anchors: \u201centerprise value/sales of 13 times,\u201d \u201cto 80% in fiscal 2035,\u201d and \u201coperating margins to increase from negative 40%.\u201d Inference quality is supported by data points like RPO growth, net retention, and management guidance, and the narrative includes counterpoints on competition and the uncertain AI monetization path, plus a \u201cVery High Morningstar Uncertainty Rating.\u201d However, the analysis stops short of quantified sensitivity or scenario ranges (e.g., no growth or margin bands, nor alternative valuation cases), and benchmarking versus peers is limited. Actionable implications are present in the fair value revision and conditions for sustaining mid\u201120s growth and margin trajectory. Overall, explicit assumptions, mechanisms, and quantification are strong, while sensitivity analysis is the main gap.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "80% gross margin \u2192 cost drivers not detailed",
+            "AI workflows \u2192 revenue capture path not specified"
+        ],
+        "unsupported_assumptions": [
+            "Revenue CAGR 23%/20% without TAM quantification",
+            "Operating margin 26% by 2035 without peer benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "No ranges on revenue growth or margins",
+            "No scenario if competition intensifies on pricing/consumption"
+        ]
+    }
+}

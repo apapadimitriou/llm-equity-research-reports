@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit key assumptions with specific units and timeframes, including revenue CAGR (6.5%), Services growth (over 10%), WACC (8.23%), and terminal growth (3.0%). However, justification is weak for most parameters - the WACC components lack sourcing, margin expansion assumptions are not benchmarked against peers, and Services growth projections lack detailed support beyond general statements about installed base expansion. Internal consistency is maintained throughout. The critical failure is the complete absence of quantified sensitivity analysis despite identifying material risks like tariffs (mentioned as 15% valuation impact but not modeled as scenarios) and regulatory pressures on App Store commissions. The report caps at Fair due to no meaningful stress-testing of assumptions through quantified ranges or scenarios for any material drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a five-year compound annual revenue growth rate (CAGR) of 6-7% through fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast Services revenue: We forecast robust annual growth of over 10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast gross margins will expand from 47.1% in the second quarter of fiscal 2025 toward 50% by fiscal 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our DCF model employs a weighted average cost of capital (WACC) of 8.23%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0% Analyst estimate, reflecting long-term nominal GDP growth and Apple's mature status",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The share buyback is Apple's primary method of capital return. In conjunction with its fiscal Q2 2025 earnings report on May 1, 2025, the board authorized an additional $100 billion for share repurchases",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.23% components lack detailed sourcing",
+            "Services 10%+ growth lacks peer benchmarking",
+            "Margin expansion to 50% not justified with historical context"
+        ]
+    }
+}

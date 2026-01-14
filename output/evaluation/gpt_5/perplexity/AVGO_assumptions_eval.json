@@ -1,0 +1,119 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report states many key inputs explicitly and with clear units, horizons, and locations (e.g., revenue to $110B by FY2027, operating margin to 65% by FY2027, WACC 8.5%, terminal growth 3%, terminal P/E 33x), meeting the explicitness and specificity pillars. However, justification is weak: most drivers (WACC, terminal growth, terminal multiple, AI revenue CAGR) are asserted without support from multi-year history, peer benchmarks, or cited source excerpts. Internal consistency is compromised by at least two numeric contradictions: FY2024 revenue is cited as approximately $57B in the narrative and used as the baseline in valuation discussion, while the financial table shows FY2024A revenue of $51.6B; and R&D is described as ~25% of FY2022 revenue yet also as $4.9B, which does not reconcile with the report\u2019s own FY2022 revenue figure. Stress-testing is absent: there are no quantified sensitivities or scenarios on material levers (AI revenue, total revenue CAGR, margins, WACC, terminal assumptions), which triggers the hard cap. Given multiple contradictions and the lack of quantified sensitivity analysis, the overall quality of assumptions is poor despite their explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "projecting total revenue reaching $110 billion by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "from current levels of approximately 62% to 65% by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital estimate of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a terminal multiple of 33x to projected fiscal 2028 earnings per share of $12.62",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "AI Revenue CAGR 2024-2027: 85%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Total Revenue CAGR 2024-2027: 28%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "gross margins exceeding 80%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2024 revenue baseline inconsistent: narrative uses ~$57B while table shows $51.6B",
+                "locations": [
+                    "Intro paragraph (opening statement)",
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot (Revenue FY 2024A 51.6)"
+                ]
+            },
+            {
+                "description": "R&D stated as ~25% of FY2022 revenue and also $4.9B; does not reconcile with FY2022 revenue of $35.8B",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Financials Snapshot (FY 2022A Revenue 35.8)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "working_capital",
+            "segment_mix assumptions",
+            "no quantified sensitivities/scenarios"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source/benchmark",
+            "Terminal Growth Rate 3% without support",
+            "P/E Multiple (Terminal) 33x not benchmarked to peers/history",
+            "AI Revenue CAGR 85% not evidenced",
+            "'gross margins exceeding 80%' for AI semis not substantiated"
+        ]
+    }
+}

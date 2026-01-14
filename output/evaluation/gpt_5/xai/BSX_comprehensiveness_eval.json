@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections (cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, appendix, sources). However, the Financials Snapshot lacks historical data (marked \u201cinsufficient data\u201d for FY2022\u2013FY2024) and omits core medtech KPIs (e.g., organic growth, segment mix, gross margin, R&D as % sales, geographic mix, procedure volumes/pipeline milestones), triggering a hard cap to Fair. Valuation provides a DCF with explicit revenue and margin drivers and a simple EPS bridge, linking drivers to value, but without sensitivity/scenario analysis. Evidence integration is inconsistent: some key claims (ESG ratings, balance sheet quality/investment-grade status, buybacks/dividends) are uncited; one source is vaguely dated, and the ESG section explicitly notes missing citations. Peer/industry context is mentioned (Medtronic, Abbott) but lacks benchmarking tables or comparative metrics. There is minor redundancy (Q2 growth and macro/regulatory risks reappear across sections with limited new depth). Overall, while the structure is complete and some drivers are linked to valuation, missing historicals, absent sector KPIs, thin peer benchmarking, and citation gaps constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Segment Financials/Breakdown",
+            "Pipeline/Clinical Data"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Organic revenue growth",
+            "Segment revenue/margins",
+            "Gross margin",
+            "R&D as % of sales",
+            "Geographic mix",
+            "Procedure volumes/market share",
+            "Pipeline milestones/approvals"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Growth outlook inconsistent: \u2018sustain mid-teens revenue growth through 2029\u2019 vs DCF assuming 10% CAGR 2025\u20132029",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Organic revenue growth",
+            "Segment revenue/margins",
+            "Gross margin",
+            "R&D as % of sales",
+            "Geographic mix",
+            "Procedure volumes/market share",
+            "Pipeline milestones/approvals"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating scores for BSX/peers have no source cited",
+            "Balance sheet described as \u2018low debt-to-equity\u2019 and \u2018investment-grade\u2019 with no citation",
+            "Dividend/buyback policy statements lack sources"
+        ]
+    }
+}

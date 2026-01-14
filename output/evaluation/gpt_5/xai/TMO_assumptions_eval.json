@@ -1,0 +1,67 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely unstated or explicitly deferred (\u201cInsufficient data\u2026 including revenue CAGR, margins, WACC\u2026\u201d), so the core drivers of forecasts and valuation are missing. Explicitness is weak: apart from a cited $2 billion, four-year investment plan and a historical revenue figure (> $40 billion), no revenue growth, margin, tax, WACC/COE, terminal growth, or share count assumptions are stated near any forecasts. Justification is minimal; sources corroborate the investment headline and revenue scale, but there is no evidence-based linkage to specific financial drivers or model inputs. Specificity is poor: magnitudes, units, and horizons for material drivers are absent, and the financial tables contain \u201cinsufficient data.\u201d Consistency is mostly moot due to the lack of inputs; minor ambiguity exists between a \u201cMedium\u201d uncertainty fair value range (25\u201350%) and a separate 10\u201320% valuation swing, but not a clear contradiction. Sensitivity/scenario analysis on material drivers is absent; the lone 10\u201320% swing is a qualitative macro comment rather than a quantified driver sensitivity tied to the model. Overall, the report\u2019s assumptions do not meet the criteria for an auditable, justified, and stress-tested framework.",
+    "assumptions_extracted": [
+        {
+            "quote": "$2 billion investment plan over the next four years",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "annual revenue over $40 billion",
+            "location": {
+                "section": "Business Description",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "potential valuation swings from 10-20% based on sector recovery",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Uncertainty Rating: Medium (fair value range of 25-50%).",
+            "location": {
+                "section": "Appendix \u2013 Glossary of Ratings",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "unjustified_parameters": [
+            "Medium uncertainty fair value range (25\u201350%) not linked to modeled drivers",
+            "10\u201320% valuation swing not tied to specific financial drivers or scenarios"
+        ]
+    }
+}

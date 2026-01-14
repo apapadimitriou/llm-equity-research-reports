@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some company-specific analysis but is predominantly composed of generic banking insights and boilerplate phrasing. While it contains one weak synthesis linking BAC's asset-sensitive balance sheet to NII growth potential under elevated rates, most insights are standard restatements about capital strength, deposit franchise advantages, and macro sensitivity that could apply to any major bank. The valuation section relies on conventional DCF and P/TBV multiples without novel drivers. Key red flags include extensive use of generic phrases like 'fortress balance sheet,' 'scale advantages,' and 'responsible growth' framework descriptions. The CRE stress acknowledgment and specific dividend increase details provide some company relevance, but insufficient original analysis to warrant a higher grade.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "asset-sensitive balance sheet remains well-positioned to benefit from sustained elevated rates with NII growth to $15.5-15.7B exit rate",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "fortress balance sheet with CET1 ratio at 11.8% substantially above 10.0% minimum",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "vast, low-cost consumer deposit franchise remains formidable competitive advantage",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "specter of slowing economy presents material threat to loan growth and credit quality, particularly CRE",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "responsible growth framework built on four tenets of market growth, customer focus, risk management",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "scale enables cost leadership strategy allowing efficiencies smaller competitors cannot match",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions",
+            "Boilerplate 'fortress balance sheet' and 'responsible growth' phrasing",
+            "Standard competitive advantage descriptions",
+            "Peer comparison without unique angles"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report's assumptions show mixed quality across the five pillars. Explicitness is reasonable with key drivers like NII growth, efficiency ratios, and ROTE targets clearly stated in forecasting sections. Justification is partial, with some historical context and peer comparisons but limited multi-year benchmarking for specific parameters. Specificity is solid, providing concrete figures like 2%-3% core revenue growth, 63% efficiency ratio, and 8% ROTE with clear time horizons. Internal consistency appears clean with no obvious contradictions between narrative and financial tables. However, the critical weakness is the complete absence of quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Fair despite other strengths.",
+    "assumptions_extracted": [
+        {
+            "quote": "We have net interest income growing modestly by 0.8% in 2025, due to flattish net interest margins and muted balance sheet growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Over time, on a core basis, we expect overall revenue growth of around 2%-3% annually on a midcycle basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "10"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Our forecasts have the bank essentially missing almost every one of management's medium-term goals, including an efficiency ratio of less than 60% (we're at 63%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "With our forecast ROTCE stuck at 8%, below our 10% cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "20"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "20"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,829",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "20"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Cost of equity 9.0% vs 10% mentioned in text without reconciliation"
+        ]
+    }
+}

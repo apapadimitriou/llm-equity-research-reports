@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report has a clear structure and mostly consistent narrative arc: Analyst Note anchors on recent performance, followed by strategy, moat, valuation, risks, and a forecast table that broadly aligns with the stated 6% revenue CAGR and margin improvement. Transitions are generally smooth, and sections cross-reference each other (e.g., Strategy\u2019s 5\u20137% growth ties to the DCF\u2019s 6% CAGR; Risks echo cost pressure noted in Bulls/Bears). However, there are material coherence issues. First, a temporal mismatch: the report date is 2025-07-02, yet it discusses Q2 2025 results and cites sources dated August 5\u20139, 2025. This undermines the internal timeline. Second, the valuation narrative contains a minor but clear inconsistency: it states EPS will grow to $25 by 2029, while the Financials Snapshot table projects $25.8. Additionally, the Analyst Note describes \u201cstable margins,\u201d whereas the valuation explicitly models improving operating margins from 32% in 2025 to 35% in 2029\u2014an unresolved phrasing tension. There\u2019s also a small price coherence issue (after-hours price equals last close), though not decisive. Overall, while the report is largely readable and internally connected, the temporal inaccuracy and the EPS/margin inconsistencies necessitate a downgrade under the guardrails.",
+    "evidence": [
+        "Temporal mismatch: Report date 2025-07-02 vs Q2 2025 results cited with sources dated 2025-08-05 to 2025-08-09 (Analyst Note; Sources [1][2][3][4]).",
+        "EPS inconsistency: \u201cgrowing to $25 by 2029\u201d (Fair Value and Profit Drivers) vs table showing EPS 25.8 in 2029 (Financials Snapshot).",
+        "Margin phrasing tension: \u201cstable margins\u201d (Analyst Note) vs explicit model of margin rising to 35% by 2029 (Fair Value and Profit Drivers; Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

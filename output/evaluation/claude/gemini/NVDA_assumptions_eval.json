@@ -1,0 +1,89 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report explicitly states key assumptions with specific figures (WACC 9.2%, terminal growth 4.0%, revenue CAGRs by year) and provides clear location in tables. However, justification is weak - WACC components lack sourcing beyond 'market volatility,' revenue growth rates have minimal historical context, and operating margin assumptions lack peer benchmarks. Specificity is solid with clear units, timeframes, and drivers. Internal consistency shows minor issues - EPS data shows 'Insufficient data' for FY2022A creating gaps, and some forward P/E calculations don't fully reconcile. Most critically, the report completely lacks quantified sensitivity analysis despite acknowledging 'Very High Uncertainty' - only qualitative risk discussions are provided. This absence of scenarios/sensitivities caps the grade at Fair per the hard cap rule.",
+    "assumptions_extracted": [
+        {
+            "quote": "WACC of 9.2% and a terminal free cash flow growth rate of 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal free cash flow growth rate of 4.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue is forecast to grow 54% to $201 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP operating margins are forecast to peak at 64% in fiscal 2027 before moderating to 62%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "projects a five-year compound annual growth rate (CAGR) of 26%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "cost of equity of 9.24%, which assumes a beta of 1.25, a risk-free rate of 4.1%, and an equity risk premium of 4.1%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS shows 'Insufficient data' for FY2022A while other metrics are provided for same period",
+                "locations": [
+                    "Financials Snapshot table FY2022A EPS",
+                    "Financials Snapshot table FY2022A other metrics"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% components lack sourcing",
+            "Revenue growth rates lack historical context",
+            "Operating margin assumptions lack peer benchmarks"
+        ]
+    }
+}

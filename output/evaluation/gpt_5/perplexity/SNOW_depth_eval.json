@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal mechanisms and explicit, quantified assumptions tied to valuation. It explains drivers such as how the \u201ccreates natural alignment with customer success\u201d consumption model and multi\u2011cloud architecture underpin growth and moat, and links expansion to the \u201cnet revenue retention rate of 126%.\u201d Forecasts are grounded in quantified inputs\u2014\u201cnon-GAAP product gross margins stabilizing around 75%,\u201d \u201cweighted average cost of capital assumption of 10.5%,\u201d and a defined terminal growth\u2014feeding a $205 fair value. Data use is reasonably strong, employing customer counts, RPO, margins, and cash, and referencing management guidance as a benchmark for margins. The report incorporates a quantified sensitivity\u2014\u201cSensitivity analysis suggests fair value ranges from $175 to $235\u201d\u2014and acknowledges uncertainty via competitive and macro pressures (\u201cEconomic downturns could pressure enterprise customers\u201d). Actionable implications emerge from the fair value vs. price framing and identification of key drivers (AI adoption, competitive dynamics). However, benchmarking is limited (peer multiples not quantified), and sensitivities are high level without parameter mapping (e.g., how AI adoption or pricing shifts impact margins/consumption). There is also a lack of detailed operating leverage decomposition. Overall, mechanisms and quantified assumptions are present with one sensitivity range, but scenario analysis and benchmarking depth are not extensive enough for Excellent.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Link between AI Cortex adoption and revenue CAGR not modeled",
+            "Operating leverage drivers (S&M, SBC) not decomposed",
+            "Competitive pricing impact on margins unspecified"
+        ],
+        "unsupported_assumptions": [
+            "NRR 125% maintained without evidence of sustainability",
+            "Terminal growth 3.0% not benchmarked to industry growth",
+            "Forward P/S \u2018discount\u2019 to peers not quantified"
+        ],
+        "lack_of_sensitivity": [
+            "Only one broad FV range; no driver-by-driver sensitivities",
+            "No scenario for macro downturn consumption impact",
+            "No margin sensitivity to hyperscaler pricing changes"
+        ]
+    }
+}

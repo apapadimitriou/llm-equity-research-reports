@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block and contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation with explicit assumptions, risks, capital allocation, financials snapshot, ESG, and an appendix with sources. Evidence is generally integrated with in-text citations and a thorough sources list. Valuation ties operating drivers (AUM/flows, private credit expansion, Aladdin growth, margin expansion, buybacks) to DCF assumptions, and even includes a sensitivity range, which strengthens comprehensiveness. Capital allocation and regulatory context are addressed with reasonable depth. However, the Financials Snapshot lacks core asset management KPIs: it presents revenue, EPS, margins, FCF, and ROIC, but omits a multi-year AUM series, organic net new asset flows, effective fee rate (bps), and performance-fee metrics. These omissions trigger the KPI hard cap and constrain comprehensiveness. Peer benchmarking is absent beyond passing mentions, limiting competitive context. Redundancy is limited, though the HPS acquisition appears across sections with incremental depth rather than repetition. A few claims (e.g., last close/market cap, dividend payout ratio) are not explicitly sourced, but overall sourcing is consistent. Given strong coverage and linkage but missing multiple sector KPIs and no formal peer benchmarking, the appropriate grade is Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking"
+        ],
+        "sector_kpis_present": [
+            "AUM (point-in-time, $12.5T mentioned)",
+            "ETF flows (IBIT monthly flow example)",
+            "Technology revenue growth (Aladdin)"
+        ],
+        "sector_kpis_missing": [
+            "Multi-year AUM (history/forecast) in Financials Snapshot",
+            "Organic net new asset flows (NNA)",
+            "Average base fee rate / fee yield (bps)",
+            "Performance fees (trend/levels)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUM time series in snapshot",
+            "Organic net new asset flows",
+            "Average fee rate (bps)",
+            "Performance fees"
+        ],
+        "uncited_claims": [
+            "Last close price ($1,125) and market cap ($170.8B) shown without citation",
+            "Dividend payout ratio (~49%) referenced without a source"
+        ]
+    }
+}

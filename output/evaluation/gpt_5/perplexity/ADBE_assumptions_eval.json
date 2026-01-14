@@ -1,0 +1,97 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "Key modeling assumptions are explicit and proximal to the forecasts they inform, with clear magnitudes, units, and horizons. Revenue growth is specified by segment (Digital Media 8\u201310%, Document Cloud 15\u201318%, Digital Experience 10\u201312%), margin trajectory is quantified (to 47\u201348% by FY29), and valuation inputs (WACC 8.5%, terminal growth 3.5%) are stated. Sensitivities are present via base/bull/bear ranges for several material levers (Revenue CAGR, operating margin, AI revenue mix, subscriber growth, WACC, terminal growth), providing partial quantified stress tests. Internal consistency is generally clean; figures reconcile with the Financials Snapshot and guidance midpoints. However, justification is partial: most assumptions are supported qualitatively (management guidance, SaaS scalability) rather than with multi-year peer benchmarks or cited sources within the report. Some material parameters (tax rate, capex/FCF drivers, share count trajectory) are missing or opaque, and valuation inputs like WACC and terminal growth lack sourced evidence. Overall, the assumptions are explicit, specific, and mostly consistent with partial sensitivities, but justification depth and coverage gaps prevent an Excellent grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth projections assume Digital Media segment compound annual growth rate of 8-10% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Document Cloud segment growth of 15-18% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The Digital Experience segment's 10-12% growth trajectory",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins can expand from current levels of approximately 45% to 47-48%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.5% | 4.0% | 2.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Creative Cloud Subs Growth | 8% | 12% | 4%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "AI Revenue Contribution | 15% | 25% | 8%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal growth 3.5% without source"
+        ]
+    }
+}

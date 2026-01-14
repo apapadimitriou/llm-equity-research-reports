@@ -1,0 +1,70 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover, contents, executive summary, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, sources) with reasonable narrative depth. Valuation includes explicit assumptions (growth, margins, synergies, discount rate, terminal growth) and links operating drivers to a DCF-based fair value, supplemented by a P/E cross-check. However, the Financials Snapshot is generic and omits multiple sector-appropriate KPIs for software/EDA (e.g., ARR, RPO/backlog, billings, bookings, renewal rates, segment mix), triggering the hard cap. Peer benchmarking is absent beyond passing mentions (e.g., Cadence), and scenario/sensitivity analysis is limited to a single range without structured cases. Evidence integration is mixed: many claims are cited, but several material assertions (ESG metrics, workforce composition) lack in-text citations. Some redundancy appears with repeated mentions of the Ansys acquisition and China export restrictions across sections without incremental analysis. These gaps constrain comprehensiveness despite broad topical coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix & Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow",
+            "Design IP revenue growth (YoY)"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "RPO/Backlog",
+            "Billings",
+            "Bookings",
+            "Renewal Rate",
+            "Segment Revenue Split (Design Automation vs IP)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States a net cash position while also citing a debt-to-equity ratio of 101.4%, creating internal inconsistency on leverage profile",
+                "locations": [
+                    "Capital Allocation",
+                    "Cover Block"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "RPO/Backlog",
+            "Billings",
+            "Bookings",
+            "Renewal Rate",
+            "Segment Revenue Split (DA vs IP)"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG risk score of 23.4 and industry median of 28.7",
+            "Workforce composition: 28% women globally and 35% underrepresented minorities in the US",
+            "Share repurchase activity described as modest without supporting data"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report generally maintains a coherent arc from Q2 performance to strategy, moat, and valuation, with consistent themes (e.g., a 12% revenue CAGR appears in Analyst Note, Fair Value, and Appendix; the EPS bridge to 2025 aligns with the Financials Snapshot). Transitions are mostly smooth, and sections reference Q2 metrics to support the outlook and moat. However, there are material internal inconsistencies and a clear temporal misalignment that cap the coherence grade. The most significant contradiction is the 2026 EPS used for valuation: the Analyst Note states a 2026 EPS forecast of $15.90 implying 32x, while the Financials Snapshot shows 2026E EPS of $17.2 and the Fair Value section references 33x on 2026 estimates\u2014these cannot all be true simultaneously without explanation. Additionally, the report date (July 3, 2025) precedes the cited Q2 2025 results and sources dated July 31, 2025, making the \u201creported\u201d results time-inaccurate within the document\u2019s own timeline. Less critical rough edges include minor rounding drift (e.g., margins \u201cto 58% by 2029\u201d vs 58.5% in the table) and a non-specific ESG citation ([6] acknowledges insufficient source detail). Bulls/Bears are broadly reconciled with the base case through explicit regulatory and macro risk discussion, and most terminology is used consistently. Given the unresolved EPS/multiple inconsistency and the timing issue, the report is understandable but internally noisy.",
+    "evidence": [
+        "Temporal mismatch: Cover Block report date 2025-07-03 vs Analyst Note citing Q2 2025 results with sources dated July 31, 2025 (Analyst Note; Sources [1]-[3]).",
+        "Valuation inconsistency: Analyst Note says FVE $510 implies 32x on 2026 EPS $15.90, but Financials Snapshot lists 2026E EPS $17.2 and Fair Value section says 33x on 2026 estimates (Analyst Note; Financials Snapshot; Fair Value and Profit Drivers).",
+        "Minor drift: Fair Value text projects margins to 58% by 2029, while the table shows 58.5% (Fair Value and Profit Drivers; Financials Snapshot)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

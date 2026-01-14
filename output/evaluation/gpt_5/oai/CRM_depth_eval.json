@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by linking outcomes to drivers and providing explicit, quantified assumptions tied to valuation. Margin expansion is causally attributed to cost actions (\u201creflecting cost discipline and prior restructuring\u201d) and future margin gains are grounded in operating leverage (\u201cdue to scale and efficiency gains\u201d). Growth is framed through product strategy and AI adoption (\u201cAI-driven automation will drive next-phase growth\u201d), and the DCF specifies key inputs (\u201cWACC ~9%, 2.5% terminal growth\u201d). Forecasts for revenue CAGR (7\u20138%), margin (34\u201335%), EPS trajectory, and FCF conversion show disciplined use of data. A quantified sensitivity is included (\u201cSensitivity: a 1% error in revenue growth\u201d), though it\u2019s limited and lacks driver-by-driver ranges or downside cases for AI uptake. Counterpoints acknowledge uncertainty (\u201cIf enterprises balk at AI platform projects\u201d), but without quantitative scenario analysis. Actionable, decision-relevant implications are present via valuation vs. price and implied multiples (\u201ctrades near intrinsic value\u201d). Overall, mechanisms and quantified assumptions are clear, but the absence of benchmarking (e.g., WACC, terminal growth vs. peers) and the minimal sensitivity/scenario work constrain the depth to Good rather than Excellent.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI monetization \u2192 per-customer ARR uplift not specified",
+            "Margin expansion drivers beyond 'scale' not decomposed"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 2.5% with no industry benchmark",
+            "WACC ~9% not compared to peers or history"
+        ],
+        "lack_of_sensitivity": [
+            "Only '1% error' sensitivity; no bull/bear ranges",
+            "No quantified downside for slower Agentforce adoption"
+        ]
+    }
+}

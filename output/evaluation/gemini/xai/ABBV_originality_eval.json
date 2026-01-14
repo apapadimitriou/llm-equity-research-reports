@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report primarily functions as a summary of AbbVie's Q1 2025 earnings release and a restatement of well-known management narratives regarding the post-Humira transition. It identifies Skyrizi and Rinvoq as primary growth drivers and cites management's own peak sales targets ($10B and $7B respectively), which constitutes a generic restatement of public guidance rather than original analysis. The only attempt at synthesis is a basic EPS bridge for 2025, which decomposes earnings into revenue, margin, and buyback components; however, this is a standard modeling exercise lacking unique, non-obvious drivers or specific catalysts. The valuation section is boilerplate, utilizing a standard DCF with generic assumptions (4% CAGR, 2% terminal growth) and no novel mechanisms. While the report provides company-specific detail, it lacks a truly original thesis or decision-relevant insights that go beyond what is available in public filings and news headlines.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AbbVie reported first-quarter 2025 financial results... adjusted diluted EPS of $2.46, representing a 6.5% increase year-over-year.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Growth drivers now include Skyrizi (projected to reach peak sales of $10 billion) and Rinvoq ($7 billion).",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "EPS bridge for 2025: Starting from 2024 base... add $0.50 from revenue growth, subtract $0.20 from margin pressure, add $0.30 from share buybacks.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Secular trends favoring AbbVie include aging populations driving demand for immunology and oncology drugs.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "AbbVie possesses a wide economic moat, primarily sourced from intangible assets like patents and brand power.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'aging populations' and 'scale' phrasing",
+            "Restating management's peak sales targets as analysis"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

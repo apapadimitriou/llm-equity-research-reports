@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely compromised by opaque modeling, insufficient justification, and complete absence of sensitivity analysis. While some key assumptions are stated in the appendix (20% revenue CAGR, 9% WACC, 30% terminal margin), they lack meaningful support\u2014revenue growth is justified only by 'Q2 growth trends' despite projecting identical 20% growth through 2029. The WACC calculation references beta 1.2 and 6% ERP without sources. Most critically, there are no quantified sensitivities or scenarios for any material drivers, automatically capping the grade at Fair. The EPS bridge contains mathematical inconsistencies (claims 28% EPS growth from $12.50 to $16.00, but this equals 28% not the stated figure). Financial projections show dramatic margin expansion from 15% to 30% without detailed justification. Multiple assumptions rely on 'insufficient data' or 'analyst estimates' without backing. The combination of weak justification, missing sensitivities, and internal inconsistencies results in a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-29) 20.0% Based on Q2 growth trends",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC 9.0% Beta 1.2, ERP 6%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 4.0% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 9.3% in FY2023 to 30% by 2029, reflecting scale efficiencies and pricing power",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "This yields a terminal value at 25x EPS",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS growth calculation error: claims 28% growth from $12.50 to $16.00 but calculation shows 28%",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "EPS bridge calculation"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source verification",
+            "20% revenue CAGR through 2029 based only on Q2 trends",
+            "30% terminal margin without detailed justification"
+        ]
+    }
+}

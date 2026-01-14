@@ -1,0 +1,77 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes most expected sections structurally, the content is severely deficient. The Financials Snapshot is skeletal, missing all sector-specific KPIs critical for a capital markets company (trading volumes, market share, clearing fees breakdown, margin requirements). Historical financials are entirely absent with only forward projections based on limited data. The valuation methodology lacks rigor - key assumptions like WACC calculation are unsupported, and there's no sensitivity analysis or scenario modeling. Peer benchmarking is completely missing despite this being essential for exchange analysis. Multiple claims are either uncited or based on questionable sources (social media posts). The Economic Moat section explicitly states 'insufficient data' despite this being core to equity analysis. Overall, the report reads more like a preliminary draft than a comprehensive equity research piece.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Competitive Positioning/Peer Analysis",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Average Daily Volume (ADV)",
+            "Market Share",
+            "Clearing Fees Breakdown",
+            "Open Interest",
+            "Rate per Contract",
+            "Margin Requirements",
+            "Trading Volume by Asset Class"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC assumption of 8% with beta 0.8 lacks supporting calculation or market data",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Revenue CAGR projection methodology inconsistent between sections",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Average Daily Volume (ADV)",
+            "Market Share",
+            "Clearing Fees Breakdown",
+            "Open Interest",
+            "Rate per Contract",
+            "Margin Requirements"
+        ],
+        "uncited_claims": [
+            "Operating margins of 60% with no historical basis",
+            "WACC calculation components",
+            "Terminal growth rate of 3%",
+            "PE multiple of 20x justification"
+        ]
+    }
+}

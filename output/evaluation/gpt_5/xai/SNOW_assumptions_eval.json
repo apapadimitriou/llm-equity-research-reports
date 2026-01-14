@@ -1,0 +1,83 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated in the narrative and an assumptions table (revenue CAGR 30% for 2025\u20132029, operating margin 20%, WACC 10%, terminal growth 4%, and a FY25 product revenue base of $3.356B). Specificity is partial: magnitudes are given in percentages and the revenue CAGR has a clear horizon, but there is no granularity on tax rate, capex/reinvestment, SBC, or share count, and the valuation linkage (10x sales) is asserted without a transparent bridge. Justification is weak: growth is tied broadly to recent year-over-year rates from social media posts, WACC is labeled \u201cstandard for tech,\u201d terminal growth as a \u201cGDP proxy,\u201d and margin expansion is unsubstantiated by history/peers. Internal consistency appears mostly clean between the narrative and the appendix, though the \u201cimplies a 10x sales multiple\u201d is not reconciled to any model outputs and coexists with a stated inability to provide a fair value estimate. Critically, there is no quantified sensitivity or scenario analysis for any material driver (growth, margins, discount rate), triggering a hard cap at Fair. Overall, assumptions are present and somewhat specific but thinly justified, with no stress testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "fiscal 2025 product revenue is projected at $3.356 billion [1].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Assuming a revenue CAGR of 30% over 2025-2029 (based on recent 29-36% growth rates [1][3])",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margin expansion to 20% (insufficient data for actual)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "with WACC of 10% (standard for tech)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 4.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "implies a fair value multiple of 10x sales.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Revenue CAGR 30% without robust source/benchmarks",
+            "Operating margin 20% assumed without evidence",
+            "WACC 10% labeled 'standard for tech' without support",
+            "Terminal growth 4% as GDP proxy without citation",
+            "10x sales multiple asserted without valuation bridge"
+        ]
+    }
+}

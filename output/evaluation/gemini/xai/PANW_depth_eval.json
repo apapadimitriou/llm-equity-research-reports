@@ -1,0 +1,24 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates strong analytical depth by moving beyond descriptive statistics to explain the causal drivers behind financial trends. It identifies the \"shift toward higher-margin subscription services\" as the primary mechanism for margin expansion and links slowing billings to \"customers prioritize platform consolidation.\" Assumptions are explicit and benchmarked against industry growth rates (12% market CAGR) and peer ESG scores. The inclusion of a multi-year EPS bridge (\"EPS bridge: FY2025 base EPS $5.50... yielding FY2029 EPS $11.00\") provides a clear roadmap of value creation, distinguishing between revenue growth and margin gains. However, the report falls short of an 'Excellent' grade because it lacks a formal sensitivity analysis or quantified scenario modeling. While it notes that uncertainty \"could swing valuation by 20-30%,\" it does not provide specific price targets for alternative scenarios or test how changes in key inputs (like WACC or terminal growth) would impact the $195 fair value estimate. The \"WACC is 9.5%, reflecting high beta (1.2)\" is a solid explicit assumption, but the terminal growth rate of 4% is aggressive and lacks a specific benchmark to justify it against long-term GDP. Overall, the reasoning is clear and tied to valuation, but the treatment of uncertainty remains qualitative rather than model-driven.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Impact of rumored CyberArk acquisition on capital structure not modeled"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 4% exceeds typical long-term GDP benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity table for WACC or revenue growth",
+            "No quantified bull/bear case price targets"
+        ]
+    }
+}

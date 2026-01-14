@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it presents some basic causal links like \"27.6% year-on-year growth\" driven by \"AI, cloud, and enterprise transformation,\" it lacks explicit mechanisms explaining how these drivers translate to financial outcomes. The valuation section mentions \"WACC of ~9\u201310%\" and \"15\u201318% CAGR\" but provides no benchmarking, sensitivity analysis, or justification for these assumptions. Critical gaps include no explanation of how AI demand specifically impacts margins, no quantified scenarios for competitive risks, and vague implications like \"valuation leaves limited margin.\" The financial forecasts show declining operating margins from 42% to 38% without explaining the underlying drivers. Customer concentration risk is mentioned (\"two customers alone were 15% and 20%\") but not quantified in terms of revenue impact. The report fails to provide decision-relevant analysis beyond generic statements.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": false,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI demand \u2192 margin impact not explained",
+            "customer concentration \u2192 revenue risk not quantified",
+            "competitive pressure \u2192 market share impact unclear"
+        ],
+        "unsupported_assumptions": [
+            "WACC ~9\u201310% with no benchmark justification",
+            "15\u201318% CAGR assumption not tied to specific drivers",
+            "operating margin decline 42% to 38% unexplained"
+        ],
+        "lack_of_sensitivity": [
+            "no scenarios for customer concentration risk",
+            "no range analysis for key assumptions",
+            "valuation model lacks stress testing"
+        ]
+    }
+}

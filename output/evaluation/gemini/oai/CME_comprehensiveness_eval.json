@@ -1,0 +1,49 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally sound, containing all mandatory sections from the Analyst Note to the ESG Risk assessment. It provides a logical valuation bridge, linking volume growth and stable fee rates to future EPS and fair value. However, the report is capped at 'Fair' due to several critical omissions and structural weaknesses. Most significantly, the Financials Snapshot fails the hard cap requirement for sector-specific KPIs; while Average Daily Volume (ADV) and fees per contract are discussed qualitatively in the text, they are absent from the multi-year forecast table, which remains limited to generic financial metrics. Furthermore, the report lacks a dedicated peer benchmarking table for financial performance, relying instead on brief mentions of competitors like BGC and Cboe. There is also no scenario or sensitivity analysis to test the valuation under different volatility or interest rate environments. Redundancy is noted as the threat from BGC\u2019s FMX and the OSTTRA sale are repeated across the Analyst Note, Strategy, and Bulls/Bears sections without adding incremental depth. These gaps result in a report that, while informative, lacks the quantitative rigor and exhaustive comparative analysis expected in high-level equity research.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Average Daily Volume (ADV) - text only",
+            "Fee per contract - text only"
+        ],
+        "sector_kpis_missing": [
+            "Average Daily Volume (ADV) - forecast table",
+            "Revenue Per Contract (RPC) - forecast table",
+            "Open Interest - forecast table"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Average Daily Volume (ADV) in Financials Snapshot",
+            "Revenue Per Contract (RPC) in Financials Snapshot"
+        ],
+        "uncited_claims": []
+    }
+}

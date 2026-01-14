@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to significant internal contradictions and temporal inaccuracies that undermine its credibility. The most egregious error is found in the 'Fair Value and Profit Drivers' section, where the EPS bridge calculation is mathematically impossible: it claims a base EPS of $12.00 plus $2.00 from growth minus $0.50 from provisions yields a 2029 EPS of $18.00. The actual sum is $13.50, creating a massive unexplained gap of $4.50 that invalidates the valuation narrative. Furthermore, there is a severe temporal contradiction; the report is dated July 3, 2025, yet it cites Source [1] from August 3, 2025. It is logically impossible for a report to reference a source published a month in its future. Additionally, the report suffers from data inconsistencies between sections. The Cover Block states there is 'insufficient data' for the last close price and Price/FVE, yet the Analyst Note explicitly claims the $150 fair value estimate 'implies a 10% upside from recent trading levels.' This suggests the author had the price data but failed to integrate it into the summary tables. While the narrative flow between the Business Strategy and Economic Moat sections is adequate, these structural and logical failures require the reader to reconstruct the argument, meeting the rubric's criteria for a poor grade. The auto-downgrade for contradictions and temporal inaccuracies is applied.",
+    "evidence": [
+        "EPS bridge: 2024 base EPS $12.00, plus $2.00... minus $0.50... yielding 2029 EPS of $18.00 (Fair Value and Profit Drivers)",
+        "Report date '2025-07-03' vs Source [1] date '2025-08-03' (Cover Block / Sources)",
+        "'insufficient data' for price in Cover Block vs 'implies a 10% upside' in Analyst Note"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

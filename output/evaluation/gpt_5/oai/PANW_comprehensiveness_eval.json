@@ -1,0 +1,56 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover/contents, executive summary, business description, strategy & outlook, bulls/bears, moat, valuation, risks, capital allocation, financials snapshot, ESG, appendix, and sources. Evidence is generally integrated with multiple in-text citations to SEC filings, press releases, and Reuters. Valuation assumptions (growth, margins, WACC, terminal rate) are explicit and linked to drivers, with a brief sensitivity. However, the Financials Snapshot is generic and omits core SaaS/security KPIs (ARR, NRR, billings, RPO), despite some appearing in text (ARR, subscription mix); per decision rules, this alone caps the grade at Fair. Peer benchmarking is minimal (mentions of competitors without quantitative comparison). There are several uncited or potentially outdated claims (e.g., renewal rates ~83\u201390%, \u201cno dividends or buybacks,\u201d share count trend, and inclusion of Wiz in M&A), which reduces consistency. Some repetition occurs (80% subscription mix and platformization appear across multiple sections with limited new depth). Overall, while the structure is strong and most themes are addressed, missing sector KPIs in the snapshot and inconsistent sourcing prevent a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary and Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (Next-Gen Security)",
+            "Subscription Mix (~80% recurring)",
+            "Gross Margin (~74%)",
+            "Guided FCF Margin (37\u201338%)"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Revenue Retention)",
+            "Billings",
+            "RPO (Remaining Performance Obligations)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR",
+            "Billings",
+            "RPO"
+        ],
+        "uncited_claims": [
+            "Renewal rates (~83\u201390%)",
+            "No dividends or buybacks",
+            "Share count up ~3% annually",
+            "M&A example list includes Wiz"
+        ]
+    }
+}

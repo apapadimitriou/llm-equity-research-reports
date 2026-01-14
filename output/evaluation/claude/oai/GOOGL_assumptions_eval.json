@@ -1,0 +1,105 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet minimum standards for quality assumptions. While some key assumptions are stated (revenue CAGR ~10%, operating margins expanding to mid-30s%, terminal growth 4%), they lack proper justification with historical data or peer benchmarks. Critical assumptions like the 9% WACC and specific growth rates are mentioned but not supported with evidence. The report contains significant internal contradictions: it states WACC is \"around 9%\" in one section but \"9.5% cost of equity and ~9% WACC\" in another, and references a \"$85 billion 2025 capex\" versus \"$75 billion\" elsewhere. Most damaging is the complete absence of quantified sensitivity analysis or scenario testing for any material drivers. The assumptions feel scattered and opaque, with vague justifications that don't provide the specificity needed for a credible valuation model.",
+    "assumptions_extracted": [
+        {
+            "quote": "5-year revenue CAGR of ~10%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "weighted average cost of capital around 9%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of ~4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "operating margin ticking up to the mid-30s (%) over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "share repurchases (roughly 2% of shares retired per year)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "9.5% cost of equity and ~9% WACC",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "annual capital expenditures peaking at $85 billion in 2025",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC stated as both 'around 9%' and '9.5% cost of equity and ~9% WACC'",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Capex stated as both '$75 billion 2025 capital expenditure plan' and '$85 billion in 2025'",
+                "locations": [
+                    "Analyst Note",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "10% revenue CAGR without historical support",
+            "4% terminal growth without GDP/industry justification",
+            "Mid-30s operating margins without peer comparison"
+        ]
+    }
+}

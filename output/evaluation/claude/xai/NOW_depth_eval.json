@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some analytical depth but falls short of rigorous standards. Causal explanations are present but shallow: \"non-GAAP operating margin expanding to 30.5% from 27.8% a year ago, aided by operational efficiencies and scale\" links margin improvement to scale but lacks specificity. The DCF model includes explicit assumptions like \"WACC of 9.0%\" and \"five-year revenue CAGR of 20%\" but these are poorly benchmarked\u2014the WACC components appear generic and revenue projections lack industry context. Quantification exists throughout: \"EPS bridge: Starting from FY2024 EPS of $12.50\" and \"forward P/E of 50x\" but sensitivity analysis is minimal. The report mentions \"Macroeconomic slowdowns could extend sales cycles\" and \"potentially reducing revenue by 5-10%\" as counterpoints but doesn't explore scenarios systematically. While implications are stated, they remain somewhat vague rather than providing clear, conditional guidance for different market conditions.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "margin expansion \u2192 scale efficiencies not quantified",
+            "AI adoption \u2192 revenue impact not modeled"
+        ],
+        "unsupported_assumptions": [
+            "WACC 9.0% with generic components",
+            "terminal growth 4.0% without industry benchmark",
+            "revenue CAGR 20% lacks competitive context"
+        ],
+        "lack_of_sensitivity": [
+            "no scenario analysis for key assumptions",
+            "single-point estimates for critical drivers",
+            "valuation range not stress-tested"
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with key assumptions stated in the Fair Value and Profit Drivers section, including revenue growth (7%), EPS growth (8%), and specific regulatory impacts ($20 billion clawback). Justification is weak to partial\u2014revenue and EPS growth rates lack supporting evidence from historical data or peer comparisons, though the $20 billion regulatory provision shows some context. Specificity is solid with clear units, timeframes, and magnitudes provided (e.g., 'Through 2029', percentage growth rates, dollar amounts). Internal consistency appears clean with no contradictions found between narrative and financial tables. However, the report completely lacks sensitivity analysis or scenario testing for material drivers, which caps the grade at Fair per the hard cap rule. The WACC of 8.3% is stated without justification, and growth assumptions appear disconnected from the company's stated 13%-16% long-term targets without adequate explanation for the significant deviation.",
+    "assumptions_extracted": [
+        {
+            "quote": "Through 2029, we assume revenue grows 7% and adjusted earnings per share grow 8% compounded annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted earnings per share grow 8% compounded annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "potential $20 billion clawback in Medicare Advantage-related payments",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.3",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 915",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.3% without source",
+            "Revenue growth 7% without historical context",
+            "EPS growth 8% significantly below management's 13%-16% target without adequate explanation"
+        ]
+    }
+}

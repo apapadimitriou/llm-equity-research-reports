@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment primarily due to multiple internal contradictions between the narrative claims and the provided financial data, triggering a mandatory 'Poor' grade. The narrative explicitly forecasts 'Revenue growth of 4\u20136% annually' and 'expected earnings growth of 6\u20138% annually.' However, the 'Financials Snapshot' table contradicts these claims, showing a year-over-year revenue decline of 1.6% and an EPS decline of 1.8% for the 2025E period. Furthermore, the subsequent years in the table (2026E\u20132027E) show revenue growth of approximately 3.8% to 4.4%, which falls below the stated 4\u20136% range. \n\nBeyond consistency issues, the report lacks quantified sensitivity analysis for material drivers. While it provides a fair value range ($280\u2013$360), it does not quantify how specific changes in Net Interest Margin (NIM), credit costs, or interest rates would impact the valuation, rendering the sensitivity 'qualitative only' or 'black-box.' Justification for key inputs like the $12\u201315 billion credit provision is weak, lacking specific multi-year historical context or peer benchmarking to support the 'normalization' claim. Finally, critical valuation parameters such as the Cost of Equity (COE) or WACC and the terminal growth rate are omitted, relying instead on shorthand P/E and P/TBV multiples without justifying the specific levels chosen.",
+    "assumptions_extracted": [
+        {
+            "quote": "expected earnings growth of 6-8% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Revenue growth of 4-6% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Credit provisions are expected to normalize at $12-15 billion annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "efficiency ratio in the low-50% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "loan portfolio growth of 3-5% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "price-to-earnings multiple of 14-15x",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "margin/efficiency",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative claims 4-6% annual revenue growth, but the Financials Snapshot table shows a 1.6% decline in 2025E and growth as low as 3.8% in 2027E.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Narrative claims 6-8% annual EPS growth, but the Financials Snapshot table shows an EPS contraction of 1.8% in 2025E.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Credit provisions of $12-15B without historical data support",
+            "P/E multiple of 14-15x without specific peer comparison data"
+        ]
+    }
+}

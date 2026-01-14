@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains mostly generic insights applicable to any EDA software company, with limited original analysis. While it attempts some synthesis connecting AI trends to EDA demand and references specific product launches, these connections lack quantified mechanisms or unique angles. The valuation section presents standard DCF assumptions (10% revenue CAGR, margin expansion to 32%) without novel drivers or company-specific catalysts. Most insights are either restated from earnings releases or represent boilerplate industry analysis ('high switching costs,' 'secular trends in AI/5G'). The few attempts at synthesis, such as linking AI proliferation to EDA growth, are generic and lack the specificity, timing, or quantified pathways that would make them decision-relevant. Red flags include extensive use of generic phrasing and a valuation model that relies on standard assumptions rather than unique company-specific drivers.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AI proliferation drives EDA tool adoption, boosting revenue growth beyond 10% annually",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "High switching costs lock in users, as migrating requires significant retraining",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "90%+ customer retention rate in core segments evidences switching costs",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Revenue CAGR of 10% driven by 8% organic growth in EDA and 12% in IP",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Operating margins expanding from 28% to 32% by 2029 from scale and cost efficiencies",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Secular trends in AI, 5G, and autonomous vehicles demand advanced semiconductors",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with standard assumptions",
+            "Boilerplate 'switching costs' and 'secular trends' phrasing",
+            "No novel valuation drivers beyond industry averages"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 1,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

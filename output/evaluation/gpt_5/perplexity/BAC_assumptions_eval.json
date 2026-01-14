@@ -1,0 +1,111 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are mostly explicit and proximate to the forecasts (NII growth, fee growth, expense growth, ROE, WACC/COE, terminal growth, valuation multiple). Specificity is decent: magnitudes, units, and timeframes are given (e.g., \u201c$15.5\u2013$15.7 billion by Q4 2025,\u201d \u201c6\u20137% full-year growth,\u201d \u201c6% annual fee income growth,\u201d \u201c2\u20133% expense growth,\u201d \u201cCOE/WACC 9.2%,\u201d \u201cterminal 2%,\u201d \u201c11.5x P/E\u201d). However, justification is weak-to-partial: several core inputs (fee growth, ROE normalization, WACC/COE, terminal growth, P/E multiple) lack evidence tied to multi-year history, peers, or cited sources; only NII guidance is linked to management outlook. Internal consistency has minor issues: the report references a DCF-WACC approach while also relying on a P/E multiple, and labels 9.2% as WACC in one section and COE in another without reconciling methodology. Critically, no quantified sensitivity/scenario analysis is provided on material drivers (rates/NII, credit costs, margins, valuation), which triggers the hard cap at Fair. Important drivers are missing or opaque (tax rate, share count trajectory, credit loss assumptions), weakening auditability and completeness of the model inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "The bank's net interest income guidance of $15.5-$15.7 billion by fourth-quarter 2025 implies 6-7% full-year growth",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We project 6% annual fee income growth driven by asset gathering, market appreciation, and fee expansion from enhanced client services.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Management projects expense growth of 2-3% in 2025",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our model incorporates $62 billion in annual net interest income by 2027, representing a 4% compound annual growth rate from current levels.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 9.2% incorporates current risk-free rates and banking sector equity risk premiums.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The valuation assumes a normalized return on tangible common equity of 14-15% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Applying a 11.5x price-to-earnings multiple reflects BAC's premium franchise quality while acknowledging cyclical banking sector dynamics.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiple"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Methodology labels WACC as 9.2% in narrative but lists Cost of Equity as 9.2% in Appendix without reconciling approach (DCF vs COE).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "credit_cost",
+            "buyback pace",
+            "NIM path"
+        ],
+        "unjustified_parameters": [
+            "WACC/COE 9.2% without source",
+            "Terminal growth 2% without justification",
+            "Fee income growth 6% without evidence",
+            "Normalized ROE 14\u201315% without benchmarks",
+            "11.5x P/E multiple without peer comparison"
+        ]
+    }
+}

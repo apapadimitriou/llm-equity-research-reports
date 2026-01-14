@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to significant, unresolved contradictions between the narrative and the financial data. The most glaring issue is the treatment of the $25B CyberArk acquisition. While the Analyst Note and Strategy sections frame this as a defining recent event (July 2025), the financial model in the Appendix and the Financials Snapshot completely ignore its impact. The report claims the company has 'no significant debt' and projects a share count of 700\u2013710M; however, a $25B acquisition\u2014representing nearly 20% of the firm's market capitalization\u2014would necessitate either massive debt issuance or substantial equity dilution far beyond the projected figures. Furthermore, the revenue forecasts in the table appear to reflect organic growth guidance (~14%) rather than the inorganic jump expected from a multi-billion dollar merger.\n\nAdditionally, the report fails to reconcile the 'Bears Say' section with the base-case valuation. The Bear case explicitly mentions a $16B loss in market value and a dismal 1% ROI for the CyberArk deal, yet the Fair Value section proceeds with a standard DCF that does not account for this capital destruction or the associated integration risks. Technical inconsistencies further undermine coherence, such as the use of conflicting beta values (1.1 vs. 1.2) between the Valuation and Appendix sections. While the writing is professional, the disconnect between the strategic narrative and the quantitative model requires the reader to bridge impossible gaps.",
+    "evidence": [
+        "The narrative discusses a $25B acquisition (July 2025), but the Appendix assumes 'no debt' and only ~700M shares, which cannot mathematically fund such a deal (Capital Allocation / Appendix).",
+        "The Fair Value section cites a beta of 1.2 for the cost of equity, while the Appendix lists the beta as 1.1 (Fair Value / Appendix).",
+        "The Bear case notes a $16B market cap destruction and 1% ROI from the CyberArk deal, but the base-case valuation fails to reconcile these impacts (Bulls/Bears / Fair Value)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

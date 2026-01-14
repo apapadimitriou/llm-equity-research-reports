@@ -1,0 +1,54 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report relies heavily on Reuters and SEC filings, with most analysis restating public facts (export curbs, NVIDIA share, segment trends, buybacks). I identified one weak synthesis: a simple sensitivity linking $1B revenue at ~50% GM to $0.10\u2013$0.15 EPS and noting valuation sensitivity to WACC/terminal growth. Forecast statements (mid-teens CAGR, H2\u201925 data-center pullback) are generic and lack company-specific mechanisms or catalysts beyond widely reported export restrictions. The valuation section is a standard DCF with conventional inputs (CAGR, WACC, margins) and no novel drivers (e.g., deposit betas equivalent like GPU supply cadence, MI300 yield/packaging constraints, or customer mix shifts). Decision relevance is present for some items (margin hit from curbs, fair value/EV/EBITDA), but originality is minimal: no unique theses, quantified causal links, or peer-differentiated angles. With \u22653 copied/restated insights and no strong original thesis, and a valuation lacking new mechanisms, the report fits a Fair grade under the hard caps.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "AMD expects ~$1.5B 2025 revenue hit from China export curbs, cutting adjusted gross margin by ~11ppt to mid-40s.",
+                "classification": "Copied",
+                "decision_relevant": true
+            },
+            {
+                "text": "We model a modest H2 2025 data-center growth pullback due to regulation but assume mid-teens topline CAGR thereafter.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "High-margin data-center/client mix vs low-margin consoles will drive earnings leverage as sales grow.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "DCF inputs (~10% CAGR, mid-teens op margin, 8\u20139% WACC) imply ~$165 FV (~11% upside), EV/EBITDA ~18x.",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Each extra $1B annual sales at ~50% GM adds ~$0.10\u2013$0.15 to EPS; a 10% shift in WACC/terminal growth changes value \u00b115%.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "ZT Systems deal with Sanmina transfer \u2018largely preserving value\u2019; buybacks reflect shareholder-return priority.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate competition/cyclicality framing",
+            "Stress-test scenarios without deeper mechanism or catalysts"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 4,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

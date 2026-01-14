@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are largely explicit and near the forecasts they inform. The report states revenue contributions by program (covid ~$2 billion annually; non-covid vaccines $7 billion by 2034; oncology $3 billion by 2034; rare disease $1 billion by 2034) and margin/WACC/tax/share assumptions. Specificity is solid: magnitudes (USD), probabilities (20%-60%), and time horizons (2025\u20132034) are quantified; DCF parameters (WACC 9%, long-run tax 21%, Stage II settings) are numerically defined. Consistency is clean; narrative figures reconcile with the model summary (e.g., 2028 revenue cut to $5.5 billion aligns with table; WACC and shares match the valuation section). Justification is partial: historical sales and competitive context are referenced, but probabilities of approval, long-term margins (>40%), Stage II EBI growth (10%), and $7 billion non-covid sales lack cited sources or peer benchmarks. Stress-testing is absent: no quantified sensitivities or scenario ranges are shown for material drivers (covid demand, vaccine uptake, pricing/margins, WACC). Given explicit and specific inputs but limited evidence and no sensitivities, the assumptions quality fits Fair, with no contradictions detected.",
+    "assumptions_extracted": [
+        {
+            "quote": "We think mRNA-1273, the company\u2019s authorized covid vaccine, should generate roughly $2 billion in annual sales in 2025 and beyond, due to recurring boosters in high-risk populations.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume $7 billion in annual infectious-disease vaccine sales outside of covid by 2034.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 60% probability of approval for Merck and Moderna's personalized cancer vaccine, mRNA-4157, and we expect Moderna could record $3 billion in sales from the program by 2034.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We include $1 billion in annual sales from rare-disease therapeutics by 2034 (20%-50% probabilities of approval).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect operating margins will surpass 30% by 2031 and model long-term margins above 40%, even with continued strong investment in research and development.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assign Moderna an average level of systemic risk, resulting in a cost of equity (and weighted average cost of capital) of 9%, in line with its early commercial-stage biotech peers.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Projected Diluted Shares 384",
+            "location": {
+                "section": "Key Valuation Drivers / Morningstar Valuation Model Summary",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "Stage II EBI growth rate 10% without support",
+            "Operating margins >40% long-term without peer justification",
+            "Probabilities of approval (60%, 20%-50%) without citations",
+            "$7B non-covid vaccine sales by 2034 without external evidence"
+        ]
+    }
+}

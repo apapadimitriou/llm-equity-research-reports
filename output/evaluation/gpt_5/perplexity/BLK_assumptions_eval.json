@@ -1,0 +1,97 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "Key valuation drivers are explicit and proximate to the forecasts: revenue CAGR, margin trajectory, technology revenue growth, WACC, terminal growth, and buybacks are clearly stated with magnitudes and time horizons. Specificity is solid (e.g., \u201cRevenue CAGR (2024-2029): 8.2%,\u201d \u201cTarget Operating Margin (2029): 47.8%,\u201d \u201cWACC: 9.5%,\u201d \u201cTerminal Growth Rate: 3.0%\u201d). Internal consistency is clean: the Financials Snapshot reconciles with the Appendix assumptions and the narrative (e.g., margin path to 47\u201348% by 2029 aligns with 47.8% in the table). Justification is partial: some drivers are linked to history and strategic actions (e.g., growth underpinned by acquisitions and Aladdin), but WACC and terminal growth lack rigorous evidence or peer benchmarks; technology revenue growth cites history but without detailed source excerpts in the report. Sensitivity is present but limited; the fair value range ($1,050\u2013$1,350) is quantified and tied to growth and margin, yet lacks scenario grids across other material levers (WACC, terminal growth, share count). Overall, the assumptions are explicit and specific with coherent tables, modest historical grounding, and partial quantified sensitivity, meeting the threshold for Good but not Excellent.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2024-2029): 8.2%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin expansion is projected to occur gradually from current levels of approximately 45% to 47-48% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Target Operating Margin (2029): 47.8%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Technology services revenue is expected to grow at 12-15% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "WACC: 9.5%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share Repurchase Rate: 1.5% annually",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Sensitivity analysis indicates fair value estimates ranging from $1,050 to $1,350 per share depending on growth rate and margin expansion assumptions",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "AUM/fee_rate trajectory details"
+        ],
+        "unjustified_parameters": [
+            "WACC: 9.5% without market/peer linkage",
+            "Terminal Growth Rate: 3.0% without macro/industry support"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong internal logic regarding financial modeling, with a clear EPS bridge and consistent margin assumptions across the narrative and the Financials Snapshot. The transition between the Analyst Note and the Fair Value section is smooth, and the Economic Moat section effectively uses Q2 data to support its claims. However, there is a significant temporal contradiction that undermines the report's credibility. The report is dated July 10, 2025, yet it discusses Q2 2025 earnings results and cites news sources dated August 3, 2025. This chronological impossibility suggests a failure in document control or a fundamental error in the 'recent' claims. Additionally, while the Bulls/Bears are reconciled with the base case, the report relies on data that, according to its own header, does not yet exist. Per the grading guardrails, the presence of time-inaccurate claims relative to the provided dates necessitates a hard cap at 'fair.' Aside from this temporal issue, the document is structurally sound and the terminology is consistent throughout the narrative and tables. The financial projections for revenue and EPS in the snapshot table align with the narrative's 8% CAGR and 2025 guidance, showing good internal mathematical coherence despite the external dating failure.",
+    "evidence": [
+        "Report date: 2025-07-10 vs. Source [2] dated 2025-08-03 (Cover Block / Sources)",
+        "Analyst Note discusses Q2 2025 results as 'reported' despite the report date preceding the earnings release date cited in sources (Analyst Note)",
+        "EPS bridge in Fair Value section aligns perfectly with the 2025E projection in the Financials Snapshot (Fair Value and Profit Drivers / Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

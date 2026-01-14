@@ -1,0 +1,51 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all required structural sections but fails to achieve a higher grade due to significant omissions in the Financials Snapshot and a lack of comparative context. While the text mentions sector-specific KPIs such as ARR and Software Mix, these are absent from the multi-year Financials Snapshot table, which is a core requirement for comprehensiveness. Specifically, Gross Margin and ARR\u2014critical for a company undergoing a software transformation\u2014are missing from the forecast data. Furthermore, the report lacks explicit peer benchmarking (no specific competitors are named or compared) and scenario analysis (no quantitative bull/bear cases), which are necessary for a 'Good' or 'Excellent' rating. There is also notable redundancy; the '36% software mix / 28% ARR' data point is repeated across five different sections (Analyst Note, Strategy, Bulls, Moat, and Valuation) without adding incremental depth in each instance. While the valuation section successfully links operating drivers to the fair value estimate, the overall depth is capped by the lack of industry-relative positioning.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Gross Margin",
+            "Annual Recurring Revenue (ARR)",
+            "Software/Services Mix %",
+            "Book-to-Bill Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Gross Margin (missing from Financials Snapshot table)",
+            "ARR (missing from Financials Snapshot table)",
+            "Software Mix % (missing from Financials Snapshot table)"
+        ],
+        "uncited_claims": []
+    }
+}

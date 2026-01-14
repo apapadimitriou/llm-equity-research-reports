@@ -1,0 +1,74 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections (cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, ESG, appendix, sources) with reasonable breadth. However, the Financials Snapshot is generic and omits core diagnostics KPIs (e.g., test/accession volumes, esoteric mix, segment/organic growth, reimbursement/payer mix). Valuation discusses drivers (growth, margins, WACC, FCF) and gives a fair-value and sensitivity range, but lacks an explicit numeric bridge from operating drivers to value and does not present detailed scenario analysis. Sourcing is inconsistent: several material claims are tied to dated or mismatched sources (e.g., 2025 results citing a 2021 page), and key projections and operational statistics lack in-text citation. Peer context is present qualitatively (Quest mention, market share), but formal benchmarking is absent. Some repetition occurs (e.g., Fortrea spinoff reiterated across multiple sections without incremental detail). Given hard caps\u2014multiple missing sector KPIs in the Financials Snapshot and multiple uncited/outdated claims\u2014the report\u2019s comprehensiveness is capped at Fair despite strong structural coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Test Volumes",
+            "Accession Growth",
+            "Esoteric Test Mix",
+            "Segment/Organic Growth",
+            "Reimbursement/Payer Mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 2025 revenue/EPS beats are cited to a 2021 MarketBeat page, creating a date mismatch for the claimed figures.",
+                "locations": [
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Cover block price/market cap reference includes a 2021 MarketScreener citation for 2025 values.",
+                "locations": [
+                    "Cover Block"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Test Volumes",
+            "Accession Growth",
+            "Esoteric Test Mix",
+            "Segment/Organic Growth",
+            "Reimbursement/Payer Mix"
+        ],
+        "uncited_claims": [
+            "Financials Snapshot projections (FY2025E\u20132029E) lack in-text source/model citation.",
+            "Claim of ~600 million patient tests annually lacks direct in-text substantiation.",
+            "Fair-value estimate ($285) and sensitivity range ($275\u2013$295) presented without model references or source attribution."
+        ]
+    }
+}

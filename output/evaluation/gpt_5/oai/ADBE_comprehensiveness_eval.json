@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections: cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Evidence integration is strong, with frequent in-text citations to filings and reputable media. The valuation section presents a DCF with explicit assumptions (growth, margins, WACC, terminal growth, buybacks) and connects operating drivers to fair value. Capital allocation and risk are treated with reasonable depth. However, the Financials Snapshot lacks core software/SaaS KPIs (e.g., ARR/NRR trends, billings, churn, RPO) within the table, which is a critical omission and triggers the hard cap to Fair despite ARR/RPO being mentioned elsewhere. Peer benchmarking is absent, and no scenario/sensitivity analysis is provided, limiting industry context and robustness. Redundancy is minimal. Overall, the scope is broad and mostly proportional, but missing sector KPIs in the snapshot and lack of peer/scenario analysis reduce comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (Digital Media ARR)",
+            "RPO"
+        ],
+        "sector_kpis_missing": [
+            "NRR (Net Revenue Retention)",
+            "Billings",
+            "Churn/Customer Retention",
+            "Customer Count/ARPU"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NRR",
+            "Billings",
+            "Churn",
+            "Customer metrics (count/ARPU)"
+        ],
+        "uncited_claims": [
+            "P/E is roughly mid-20s on FY26 consensus, close to peers"
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to failing multiple hard caps regarding internal consistency and sensitivity analysis. While the report explicitly lists key assumptions such as revenue CAGR, operating margins, and WACC, it contains a significant and unresolved numeric contradiction between the narrative and the financial tables. The text explicitly states a revenue CAGR assumption of 20\u201325% for FY2025\u20132029 and claims the model embeds a $10\u201315B ARR by 2029. However, the 'Financials Snapshot' table forecasts revenue growing from $3.95B in 2025 to only $7.44B in 2029, which calculates to a ~17% CAGR\u2014well below the stated assumption. Furthermore, a $7.44B revenue forecast for 2029 is logically inconsistent with a $10\u201315B ARR target in the same year for a subscription-based business. \n\nAdditionally, the report provides no quantified sensitivity analysis or scenario modeling for material drivers like revenue growth, margin expansion, or WACC. It merely mentions risks qualitatively in the 'Risk & Uncertainty' section without providing the required impact ranges on the fair value estimate. The justification for the 10% WACC is also opaque, lacking a breakdown of the risk-free rate, beta, or equity risk premium. Per the instruction's hard caps, the combination of a material numeric contradiction and the total absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR FY2025\u201329: ~20\u201325%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Non-GAAP Operating Margin expansion: ~21% (FY2025) \u2192 ~28% (FY2029)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of \u224810%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "3% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 22\u201323% (consistent with guidance)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "model embeds $10\u201315B in ARR by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text assumes 20-25% Revenue CAGR, but the Financials Snapshot table shows a ~17% CAGR ($3.95B to $7.44B).",
+                "locations": [
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Text claims model embeds $10-15B ARR by 2029, but the table forecasts only $7.44B in total revenue for 2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 10% stated without derivation or source."
+        ]
+    }
+}

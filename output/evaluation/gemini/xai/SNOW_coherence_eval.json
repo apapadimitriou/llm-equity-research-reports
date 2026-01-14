@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded poor due to pervasive internal contradictions and a critical temporal impossibility that invalidates the narrative's logic. The most egregious error is the chronological mismatch: the report is dated February 27, 2025, yet it explicitly cites sources [4] and [5] from August 2025 to discuss upcoming events. This suggests the document was compiled from disparate data points without any editorial review for temporal consistency or logical sequencing. \n\nFurthermore, the report suffers from massive internal data conflicts. The Financials Snapshot table is entirely populated with insufficient labels for all historical and forecast periods, directly contradicting the Fair Value and Profit Drivers section and the Appendix, which both provide specific numerical assumptions including a 30% revenue CAGR and a 20% operating margin. Similarly, the Analyst Note claims that insufficient data for recent periods limits a full update, yet it simultaneously provides highly granular fiscal 2025 second-quarter results, including specific revenue, EPS, and customer retention figures. Structurally, the report fails to build a connected argument. The Bulls and Bears sections, as well as the Risk & Uncertainty section, are mere bulleted lists that lack transitions or reconciliation with the valuation narrative. Because the reader is forced to navigate these unresolved tensions and assemble the logic themselves, the report lacks the basic coherence required for a professional equity research document.",
+    "evidence": [
+        "Report date of 2025-02-27 contradicts Source [4] and [5] which are dated August 2025 (Cover Block / Sources).",
+        "Financials Snapshot shows 'insufficient' for all metrics, contradicting the specific 30% CAGR and 20% margin provided in the Appendix (Financials Snapshot / Appendix).",
+        "Analyst Note claims 'insufficient data for recent periods' while simultaneously providing detailed Q2 FY25 revenue and customer growth figures (Analyst Note)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

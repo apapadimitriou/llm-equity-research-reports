@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected equity research sections: cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, financial tables, ESG, appendix/disclosures, and even a peer comparison. Depth is generally appropriate, with clear industry and regulatory context (PAMA, payer dynamics) and a robust multi-year financial snapshot and DCF model that links operating drivers (utilization, mix shift to esoteric tests, margin improvement post-CRO spinoff) to valuation. Peer context is explicitly provided. However, the Financials Snapshot omits core sector-specific KPIs for diagnostics (e.g., test volumes, price per requisition, esoteric mix) despite narrative references, triggering a hard cap. Scenario/sensitivity analysis is absent, and ESG coverage is skeletal with limited company-specific metrics. Evidence is largely internal with no in-text source citations for several material claims. Redundancy is limited; repeated themes (PAMA, utilization) add incremental context across sections. Overall comprehensiveness is solid, but KPI omissions in the snapshot and lack of scenarios and in-text citations constrain the grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Methodology & Disclosures",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis",
+            "In-text Source Citations"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Test Volume Growth",
+            "Price per Requisition",
+            "Esoteric Mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "PAMA headwind cited as $100 million in 2026 vs. earlier $80 million revenue headwind into 2026",
+                "locations": [
+                    "Analyst Note (29 Apr 2025)",
+                    "Analyst Notes Archive (24 Oct 2024)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Test Volume Growth",
+            "Price per Requisition",
+            "Esoteric Mix"
+        ],
+        "uncited_claims": [
+            "Labcorp holds roughly 20% of the independent lab market",
+            "Approximately 2,000 patient-service centers operated",
+            "Invitae assets acquired for $239 million vs. roughly $500 million in 2022 revenue"
+        ]
+    }
+}

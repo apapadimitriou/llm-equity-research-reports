@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key DCF inputs are stated near the valuation section and include revenue growth, margin trajectory, terminal growth, and WACC with component details, so explicitness is decent. Specificity is partial: several levers have clear magnitudes and timing (37% 2025 revenue growth; 45% operating margin by 2028; g=3%; WACC=7.3%), but crucial cash-flow items (capex, working capital, D&A, share count) are not quantified, leaving the FCF build opaque. Justification relies on consensus, company guidance, and Morningstar references, but is uneven: margin expansion \u201cconsistent with other analysts\u201d and g=3% lack robust evidence, and the pricing-erosion narrative is not translated into quantified model inputs. Internal consistency has a notable issue: FY2025 revenue of $61.7B is described as consistent with guidance, while guidance is $58\u201361B, creating a contradiction. Sensitivity analysis is mentioned (bull/base/bear varying peak sales and price erosion) but not quantified, so stress-testing quality is qualitative only. Given qualitative sensitivities and one contradiction, the assumptions quality is capped at Fair under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "The model incorporates consensus-aligned near-term forecasts, including FY2025 revenue of $61.7 billion and non-GAAP EPS of $22.83 7, which are consistent with the company's own guidance.9",
+            "location": {
+                "section": "Executive Summary",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Revenue Growth: The model begins with a 37% revenue growth rate for 2025, aligning with consensus estimates, before gradually moderating to a terminal rate of 5% by 2034.",
+            "location": {
+                "section": "V. Valuation: Justifying a $650 Price Target \u2013 A. Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin: Non-GAAP operating margins are modeled to expand from current levels to a peak of 45% by 2028, driven by economies of scale in manufacturing and marketing.",
+            "location": {
+                "section": "V. Valuation: Justifying a $650 Price Target \u2013 A. Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate (g): A terminal growth rate of 3.0% is assumed, serving as a proxy for long-term global nominal GDP growth.",
+            "location": {
+                "section": "V. Valuation: Justifying a $650 Price Target \u2013 A. Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC): A WACC of 7.3% is utilized as the discount rate.",
+            "location": {
+                "section": "V. Valuation: Justifying a $650 Price Target \u2013 A. Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Effective Tax Rate t 19.0% 9",
+            "location": {
+                "section": "V. Valuation: Justifying a $650 Price Target \u2013 WACC Calculation",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY2025 revenue assumption of $61.7B labeled as consistent with guidance conflicts with stated company guidance of $58.0\u2013$61.0B.",
+                "locations": [
+                    "Executive Summary",
+                    "IV. Financial Analysis and Forecasts \u2013 Review of Q1 2025 Results"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital",
+            "depreciation/amortization",
+            "free_cash_flow conversion",
+            "explicit pricing-erosion inputs in the model"
+        ],
+        "unjustified_parameters": [
+            "terminal_growth 3.0% without cited empirical support",
+            "operating_margin peak 45% by 2028 with minimal benchmarking",
+            "revenue deceleration to 5% by 2034 not supported by detailed market/peer evidence"
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains all major structural sections with a clear contents page, but suffers from critical gaps that prevent a higher grade. The Financials Snapshot is severely compromised with all historical data marked 'insufficient data', providing only forward-looking forecasts without baseline context. Multiple sector-specific KPIs for medical devices are missing, including R&D spend as % of revenue, gross margins, and device-specific metrics like procedure volumes or market share data. The valuation section lacks explicit bridges connecting operating drivers to the $90 fair value estimate beyond basic assumptions. Peer benchmarking is superficially mentioned in ESG but absent from competitive analysis. Several claims lack proper citations, particularly ESG data and specific financial assumptions. The report shows redundancy with Q2 performance metrics repeated across multiple sections without added depth.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % Revenue",
+            "Gross Margin",
+            "Device Unit Volumes",
+            "Market Share",
+            "Pipeline Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated 2025-06-28 but references Q2 2025 results as historical",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D as % Revenue",
+            "Gross Margin",
+            "Device Unit Volumes",
+            "Market Share",
+            "Pipeline Value"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating score of 15.2 with peer comparisons",
+            "Beta of 0.9 assumption in valuation model",
+            "Specific segment growth rates (cardiovascular 12% CAGR, endosurgery 8% CAGR)",
+            "All historical financial data marked as 'insufficient data'"
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximate to the forecasts: the report states a 20% five-year revenue CAGR, margin expansion to 30% by 2029, WACC at 9% with component inputs, and terminal growth at 4%. Specificity is solid\u2014percentages, units, and horizons are given, and the Financials Snapshot aligns with the narrative for revenue and margin paths. Justification is partial: revenue CAGR references Q2 trends, terminal growth uses a GDP proxy, and WACC components are standard but lack capital structure detail or sourcing; the 25x EPS terminal multiple is not benchmarked to peers or history. Internal consistency has a key issue: the text applies both a 4% terminal growth rate and an exit multiple of 25x EPS, without reconciling methodologies. Sensitivities are limited; the report mentions potential revenue reduction of 5\u201310% and valuation swing of 15\u201320%, but these are not tied to model drivers in quantified scenarios or shown with valuation impact across cases. Given the unresolved terminal-method contradiction and the absence of robust sensitivity analysis on material drivers, the assumptions quality fits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a five-year revenue CAGR of 20%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 9.3% in FY2023 to 30% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 9.0%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 4.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "This yields a terminal value at 25x EPS",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_multiple"
+        },
+        {
+            "quote": "EPS bridge: Starting from FY2024 EPS of $12.50, we forecast growth to $16.00 in FY2025 (+28%)... reaching $35.00 by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "terminal_multiple",
+            "EPS"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Terminal methodology conflict: uses both 4% perpetuity growth and an exit multiple of 25x EPS without reconciliation.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix \u2013 Key Valuation Assumptions Table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex/working_capital"
+        ],
+        "unjustified_parameters": [
+            "Terminal value at 25x EPS without peer/market justification",
+            "Revenue CAGR 20% based primarily on Q2 growth trends",
+            "WACC 9% lacks capital structure weighting/source detail"
+        ]
+    }
+}

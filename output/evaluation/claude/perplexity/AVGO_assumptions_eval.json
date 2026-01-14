@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report suffers from fundamental flaws that render its assumptions largely opaque and unjustified. Key financial projections appear in the Financials Snapshot table without any explicit assumptions or justification in the text\u2014revenue growth from $51.6B to $135B by 2029, operating margin expansion to 66%, and EPS growth to $14.20 are presented as black-box outputs. The Fair Value section mentions a $415 target and 8.5% WACC but provides no source or calculation methodology. Multiple internal contradictions exist, including claims of 'conservative assumptions' while projecting 28% revenue CAGR and conflicting AI revenue figures ($60-90B guidance vs. specific projections). Most critically, there are no quantified sensitivities or scenario analyses for any material drivers despite the report's acknowledgment of significant risks. The assumptions that do appear are either unsupported (WACC, terminal multiples) or inconsistent with the aggressive growth projections presented.",
+    "assumptions_extracted": [
+        {
+            "quote": "AI Revenue CAGR 2024-2027: 85%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Total Revenue CAGR 2024-2027: 28%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Operating Margin: 65%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "P/E Multiple (Terminal): 33x",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating margin expansion is expected through multiple drivers... We project consolidated operating margins expanding from current levels of approximately 62% to 65% by fiscal 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 'conservative assumptions within management's guidance range' while projecting 28% revenue CAGR and 85% AI revenue CAGR, which are highly aggressive growth rates",
+                "locations": [
+                    "Fair Value section",
+                    "Appendix assumptions"
+                ]
+            },
+            {
+                "description": "States AI revenue guidance of '$60-90 billion by fiscal 2027' but Financial Snapshot shows total revenue of $110B by 2027 without clear AI component breakdown",
+                "locations": [
+                    "Business Strategy section",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal P/E 33x without justification",
+            "Operating margin expansion drivers not quantified",
+            "Revenue growth rates not tied to specific business drivers"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a clear structure and generally strong narrative flow, but it is held to a 'fair' grade due to internal contradictions between the narrative assumptions and the provided financial data. Specifically, the 'Fair Value and Profit Drivers' and 'Appendix' sections explicitly state a 10% revenue CAGR through 2029. However, the 'Financials Snapshot' table forecasts revenue growing from $35.0 billion in 2024 to $54.4 billion in 2029, which represents a compound annual growth rate of approximately 9.2%, failing to meet the stated assumption. Additionally, the 'Analyst Note' contains a logical inconsistency regarding growth trends; it describes a 'slight deceleration' in payment volume growth by comparing the 8% growth in fiscal Q2 2025 to an identical 8% growth in fiscal Q2 2024. This lack of numerical change contradicts the narrative claim of slowing momentum. While the report successfully reconciles the Bulls/Bears cases with the base-case valuation and maintains consistent terminology (e.g., WACC, payment volume), these quantitative mismatches between the model and the text create 'internal noise' that requires the reader to reconcile the data themselves. The temporal claims are accurate relative to the June 2025 report date, and the sections are well-integrated, but the mathematical misalignment triggers the mandatory cap under the grading rubric.",
+    "evidence": [
+        "Valuation models project... 10% revenue CAGR through 2029 (Analyst Note) vs. $35.0B to $54.4B revenue (Financials Snapshot) which calculates to ~9.2%.",
+        "Analyst Note claims payment volume growth 'slowed from 8% in fiscal Q2 2024' while citing Q2 2025 growth at the same 8% level.",
+        "The report successfully reconciles the Bulls/Bears cases with the base-case valuation, citing the $30 billion buyback and 8% volume growth consistently across sections."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

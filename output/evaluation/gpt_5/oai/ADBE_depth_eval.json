@@ -1,0 +1,27 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report shows some analytical depth through explicit DCF inputs and a few causal mechanisms, but lacks benchmarking and sensitivity analysis. It articulates drivers such as fixed-cost leverage and operating scale to support stable margins, and provides quantified assumptions for revenue growth, margins, WACC, and terminal value. Examples include: \u201cWe assume FY25 revenue \u2248$23.6 b\u201d; \u201cgrowth slowing to ~5% by 2029\u201d; \u201cOperating margin \u224846\u201347%\u201d; \u201cWACC ~7.5%, terminal growth 2%\u201d; \u201cfixed-cost leverage on subscription revenue\u201d; \u201cFX headwinds up to ~1\u20132% revenue.\u201d Inference quality is adequate\u2014forecasts are tied to subscription economics and buybacks\u2014but the model does not test key variables (AI monetization, competition, FX) or provide ranges. Data use is robust (ARR, FCF, ROIC, margins), yet assumptions are unbenchmarked (e.g., WACC, terminal growth, margin stability) and not sanity-checked against peers or historical dispersion. Counterpoints (AI adoption risk, competition, regulation) are noted but not quantified into scenarios, aside from a minor FX range. Actionable implications are limited to a stated fair value and a general catalyst framing; there are no conditional decision rules or sensitivity-driven takeaways. Under the decision rules, the absence of benchmarking and quantified sensitivity caps the grade at Fair.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI adoption \u2192 ARR/upsell uplift not quantified",
+            "Competitive response \u2192 pricing/margin impact not detailed"
+        ],
+        "unsupported_assumptions": [
+            "WACC 7.5% without industry benchmark",
+            "Terminal growth 2% not justified",
+            "Operating margin 46\u201347% held constant"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC or margin sensitivity",
+            "No scenario for AI monetization lag"
+        ]
+    }
+}

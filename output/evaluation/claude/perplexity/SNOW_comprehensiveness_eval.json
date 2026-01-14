@@ -1,0 +1,65 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report demonstrates significant structural deficiencies that render it incomplete for equity research standards. Most critically, the Financials Snapshot contains fabricated forward-looking projections (FY2025E-2029E) with no methodology disclosed, violating fundamental research integrity. The valuation section lacks explicit linkage between operating drivers and the $205 fair value estimate, providing assumptions without demonstrating the analytical bridge from inputs to output. Sector-specific SaaS KPIs are almost entirely absent\u2014missing ARR, NRR details, customer acquisition costs, lifetime value, and churn rates that are essential for evaluating SaaS companies. The report suffers from extensive redundancy, repeating the same revenue growth and AI positioning points across multiple sections without adding analytical depth. While the report covers most expected sections superficially, the combination of fabricated data, missing valuation methodology, absent sector KPIs, and repetitive content creates a fundamentally unreliable analysis unsuitable for investment decision-making.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Net Revenue Retention Rate"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue",
+            "Customer Acquisition Cost",
+            "Customer Lifetime Value",
+            "Churn Rate",
+            "Dollar-Based Net Expansion Rate",
+            "Gross Revenue Retention"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward financial projections (FY2025E-2029E) appear fabricated with no disclosed methodology",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "CAC",
+            "LTV",
+            "Churn Rate",
+            "Dollar-Based Net Expansion Rate"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $205 per share with no valuation methodology shown",
+            "Forward EPS projections from -$0.85 to $2.15 with no analytical support",
+            "WACC assumption of 10.5% with no justification"
+        ]
+    }
+}

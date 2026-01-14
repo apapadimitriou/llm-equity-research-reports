@@ -1,0 +1,74 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report demonstrates an exceptional level of transparency and rigor regarding its valuation inputs. Key assumptions for organic AUM growth, revenue CAGR, and operating margins are explicitly stated and proximal to the fair value discussion. Justification is evidence-rich, frequently referencing 5-year and 10-year historical averages (e.g., 4.3% historical organic growth vs. 4.5% forecast) and peer benchmarks to contextualize the 'Wide Moat' rating. Specificity is high, with clearly defined time horizons (2024-2028) and magnitudes for all material drivers. Internal consistency is maintained between the narrative and the detailed 'Morningstar Valuation Model Summary' table, with no identified numeric conflicts. Most notably, the report provides robust, quantified sensitivity analysis through Bull and Bear scenarios. These scenarios are not merely qualitative; they specify the exact impact on revenue CAGRs, margin floors/ceilings, and the resulting fair value estimates ($1,630 and $630 respectively). This level of stress-testing allows for a fully auditable link between the model's levers and the final investment conclusion, meeting all criteria for an Excellent grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "We are currently forecasting 4.5% (3.9%) average annual organic AUM growth during 2025-29 (2025-34)",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "we are projecting 9.3% top-line growth on average annually during 2024-28",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We envision the firm generating adjusted operating margins in a 42%-47% range during 2024-28",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 21% US statutory corporate tax rate and a 9% cost of equity in our valuation.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "much of which we expect to be returned to shareholders as dividends (40%) and share repurchases (20%)",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "10"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "This scenario also assumes... adjusted operating margins exceeding 50% by the end of our five-year projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "comprehensive",
+        "specificity_units_horizon": "comprehensive",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "robust_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count",
+            "organic_AUM_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

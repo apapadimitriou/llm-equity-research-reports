@@ -1,0 +1,110 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key assumptions are mostly explicit and numerically specific, appearing proximate to the forecasts and the SOTP valuation. The report states a baseline WACC (8.85%), applies PoS haircuts to major pipeline assets, and provides multi-year projections for revenue, expenses, capex, cash flow, and a diluted share count used in valuation. Specificity is solid: magnitudes, units (millions), and time horizons (2024\u20132028) are clearly tabulated. However, justification is partial: PoS and overhead NPV lack detailed source citations or historical benchmarking beyond general statements; the unusually high diluted share count (890 vs. 388M reported outstanding) is not rigorously reconciled. Internal consistency is mostly clean, though the share count treatment raises minor concerns. Sensitivity analysis is minimal: only a qualitative mention of higher discount rates is provided, with no quantified ranges or valuation impact across material drivers (e.g., revenue ramps, margins, PoS). Given the hard cap for absent quantified sensitivities and the limited evidentiary support for several key inputs, the overall quality of assumptions merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our DCF models utilize a Weighted Average Cost of Capital (WACC) of 8.85% as a baseline",
+            "location": {
+                "section": "Valuation: Searching for a Floor",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "mRNA-1083 (Flu/COVID Combo) ... 60%",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "mRNA-1647 (CMV) ... 40%",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Shares Outstanding (diluted) ... 890*",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Less: Corporate Overhead (NPV) ... ($14,500)",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Add: Net Cash (Q2'25) ... $6,760",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Total Revenue ... $2,050 ... $5,500 ... $10,500 ... $15,000",
+            "location": {
+                "section": "Table 5: Abridged Financial Forecasts (2024A - 2028E)",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "R&D Expense ... $3,700 ... $3,500 ... $3,800 ... $4,200",
+            "location": {
+                "section": "Table 5: Abridged Financial Forecasts (2024A - 2028E)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital Expenditures ... ($300) ... ($400) ... ($500) ... ($600)",
+            "location": {
+                "section": "Table 5: Abridged Financial Forecasts (2024A - 2028E)",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "tax_rate",
+            "PoS rationale (quantitative evidence)",
+            "overhead NPV build",
+            "quantified sensitivity ranges/impacts"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.85% without detailed source derivation",
+            "Corporate Overhead NPV ($14,500) without methodology",
+            "PoS percentages (75/60/50/40) with limited evidentiary support",
+            "Diluted shares 890 vs. 388M reported, rationale not fully reconciled"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report shows some mechanisms and assumptions but lacks depth and rigor. Causal explanations are present but shallow: \"driven by strength in key product lines\" and \"cost savings of $800 million annually from restructuring\" provide basic causality without detailed mechanisms. Assumptions are explicit with \"4% revenue CAGR from 2025-2029\" and \"WACC is 8.5%\" but lack benchmarking or justification. The \"Terminal growth is 2%\" assumption cites \"Long-term biotech industry average\" but provides no supporting data. Quantification exists in forecasts and valuation but sensitivity analysis is completely absent. The report mentions \"swing valuation by 20-30%\" for operational risks but provides no scenarios or stress tests. Actionable implications are vague, offering only a \"hold recommendation\" without conditional decision frameworks tied to specific outcomes or thresholds.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "revenue growth \u2192 margin expansion linkage unexplained",
+            "cost savings \u2192 competitive positioning not detailed",
+            "pipeline success \u2192 market share mechanics missing"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 2% with no biotech benchmark data",
+            "WACC 8.5% with generic risk premium",
+            "35% operating margin target lacks peer comparison"
+        ],
+        "lack_of_sensitivity": [
+            "no scenario analysis for pipeline failures",
+            "fixed WACC without range",
+            "margin expansion assumptions not stress-tested"
+        ]
+    }
+}

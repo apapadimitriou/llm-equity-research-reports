@@ -1,0 +1,66 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report covers nearly all expected sections for biopharma equity research: a clear executive summary, business description, strategy/outlook, bulls/bears, competitive context, detailed financial snapshot with multi-year forecasts, risks, ESG, and a sourced SOTP valuation. Sector-appropriate KPIs are included via pipeline status, PoS, peak sales estimates, and upcoming milestones, alongside cash runway, R&D/SG&A, and product sales breakdown. Evidence integration is strong, with in-text numeric references and an extensive works cited list, and the valuation section links operating drivers (asset-level DCFs, PoS, WACC) to the $26 target via an explicit rNPV table. Depth is proportional across sections, with granular Q2 analysis, expense trends, and pipeline commentary. However, the absence of formal peer benchmarking (beyond qualitative mentions of GSK/Pfizer) and the lack of scenario/sensitivity tables are notable gaps. A key modeling assumption\u2014using 890M diluted shares\u2014appears inconsistent with reported 388M shares outstanding and is insufficiently justified. Redundancy is minimal, as repeated themes (regulatory headwinds, cash burn) add new context in risk and ESG. Overall, comprehensiveness is strong, but missing peer benchmarking/scenarios and the share-count inconsistency prevent an Excellent rating.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls & Bears",
+            "Competitive Context",
+            "Valuation (SOTP)",
+            "Risk & Uncertainty",
+            "Capital Allocation / Balance Sheet",
+            "Financials Snapshot (history + forecasts)",
+            "ESG",
+            "Sources / Works Cited"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking (quantitative)",
+            "Scenario/Sensitivity Analysis (tables)",
+            "Contents Page",
+            "Appendix/Glossary"
+        ],
+        "sector_kpis_present": [
+            "Pipeline phases (Phase 3)",
+            "Probability of Success (PoS)",
+            "Estimated peak sales by asset",
+            "Upcoming milestones/timelines",
+            "Cash & investments runway",
+            "R&D and SG&A trends",
+            "Product sales breakdown (COVID/RSV)"
+        ],
+        "sector_kpis_missing": [
+            "Clinical efficacy metrics (e.g., VE%, ORR/PFS)",
+            "Trial enrollment/size details",
+            "Regulatory timeline specifics (e.g., PDUFA dates)",
+            "Quantitative peer share/price/margin benchmarking"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Diluted share count of 890 used in SOTP conflicts with reported 388M shares outstanding; rationale for >2x dilution not explained.",
+                "locations": [
+                    "Table 1: Key Financial & Valuation Metrics",
+                    "Table 4: SOTP Valuation Breakdown"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Clinical efficacy metrics (VE%, ORR/PFS)",
+            "Trial enrollment/size",
+            "Regulatory timeline specifics (PDUFA dates)",
+            "Peer benchmarking metrics"
+        ],
+        "uncited_claims": []
+    }
+}

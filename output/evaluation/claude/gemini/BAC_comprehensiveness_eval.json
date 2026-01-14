@@ -1,0 +1,62 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet comprehensiveness standards due to critical structural deficiencies. While it contains extensive content, most expected sections are either missing entirely or severely underdeveloped. The financials snapshot lacks essential banking KPIs (NIM, loan loss provisions, CET1 ratios by quarter), providing only basic revenue/EPS data. No dedicated competitive positioning, capital allocation, or risk sections exist as standalone analyses. The valuation methodology is superficial, failing to clearly link operating drivers to the $52 price target beyond generic DCF assumptions. Peer benchmarking is minimal with incomplete data tables. The report suffers from significant redundancy, repeating dividend announcements and capital strength themes across multiple sections without adding analytical depth. Sources are listed but rarely cited in-text, creating credibility gaps for key claims.",
+    "content_checks": {
+        "sections_present": [
+            "Executive Summary",
+            "Business Description",
+            "Investment Thesis",
+            "Financial Analysis",
+            "Valuation Analysis"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Capital Allocation",
+            "Risk Analysis",
+            "Bulls/Bears",
+            "Appendix"
+        ],
+        "sector_kpis_present": [
+            "EPS",
+            "Revenue",
+            "CET1 Ratio"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "Net Charge-offs",
+            "Loan Loss Provisions",
+            "Efficiency Ratio",
+            "ROTCE by quarter"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims Q2 2025 results not yet released but references Q2 earnings call transcript",
+                "locations": [
+                    "Financial Analysis",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM by quarter",
+            "Net Interest Margin trends",
+            "Loan loss provisions",
+            "Efficiency ratio",
+            "Book value progression"
+        ],
+        "uncited_claims": [
+            "11th consecutive year of dividend increases",
+            "26 consecutive quarters of checking account growth",
+            "Strong performance in Fed stress tests"
+        ]
+    }
+}

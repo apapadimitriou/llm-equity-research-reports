@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is decent: the report clearly states core valuation drivers in the Fair Value and Profit Drivers section (revenue CAGR, segment growth, margin path, WACC, terminal growth) and ties them to the DCF. Specificity is partial: magnitudes and timelines to 2029 are provided, but key inputs like tax rate, share count, and capex/working capital are absent, and insurance-specific drivers (e.g., Aetna MLR trajectory) are not quantified. Justification is partial: several assumptions are attributed to management guidance and generic trends, but lack multi-year historical context, peer benchmarks, or sourced evidence for WACC (7.5%), terminal growth (3%), and margin expansion. Consistency has a material issue: the fair value of $75 paired with 2026 EPS of $6.80 implies ~11x, yet the text states \u201cabout 10x\u201d and \u201c10.0x,\u201d an unresolved contradiction. Sensitivity analysis is limited: aside from a single statement that valuation is \u00b120% sensitive to margin assumptions, there are no quantified ranges or scenarios for other material levers (revenue, WACC, terminal growth, insurance costs). Given the contradiction and weak sensitivities, the assumptions quality is Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 5-year revenue CAGR of 5.0%, driven by 4% growth in Pharmacy & Consumer Wellness and 6% in Health Care Benefits",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins expanding from 4.5% in 2025 to 5.2% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 7.5%, incorporating a beta of 0.9 and cost of debt at 4.0%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3.0%, leading to a fair value of $75.00 per share.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: ... yielding 2025 adjusted EPS of $6.10 (midpoint of guidance) ... Extending to 2029, EPS reaches $8.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "valuation sensitivity of \u00b120% to margin assumptions.",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FVE $75 with 2026 EPS $6.80 implies ~11x P/E, but text asserts ~10x and 10.0x.",
+                "locations": [
+                    "Analyst Note (fair value implies ~10x 2026 EPS)",
+                    "Fair Value and Profit Drivers (implies 2026 P/E of 10.0x)",
+                    "Financials Snapshot (2026 EPS = 6.80)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "capex",
+            "working_capital",
+            "insurance MLR trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.5% without source",
+            "Terminal growth 3.0% without source",
+            "Operating margin expansion to 5.2% with limited evidence",
+            "Segment growth rates (4%/6%) weakly supported"
+        ]
+    }
+}

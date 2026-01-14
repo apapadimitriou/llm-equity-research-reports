@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally sound and covers all required sections, including a clear Analyst Note, Business Description, and Risk assessment. It provides a logical valuation bridge, explicitly linking revenue growth (15% tapering to 7-8%) and operating margin expansion (8.5% to 15%) to the $180 Fair Value Estimate. However, the report fails to meet the 'Good' or 'Excellent' thresholds due to two primary deficiencies. First, the Financials Snapshot is generic; it omits core sector-specific KPIs for a cybersecurity/SaaS firm\u2014such as Annual Recurring Revenue (ARR), Net Retention Rate (NRR), and Billings\u2014from the multi-year data table. While ARR is mentioned in the text, its absence from the forecast table triggers a hard cap. Second, the report exhibits significant redundancy; the '80% subscription revenue' metric is repeated across four sections (Analyst Note, Business Description, Bulls Say, and Economic Moat) with no additional depth, which necessitates a downgrade. Furthermore, while competitors are mentioned, the report lacks a formal peer benchmarking table or a robust scenario analysis, providing only a basic sensitivity check on WACC.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Detailed Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR (text only)",
+            "Gross Margin",
+            "Subscription Revenue %"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Financials Snapshot table)",
+            "Net Retention Rate (NRR)",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (missing from multi-year forecast table)",
+            "Net Retention Rate (NRR)",
+            "Billings"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates meaningful causal reasoning and explicit, quantified assumptions but lacks benchmarking and stress-tested sensitivities. Strong causal links include regulatory changes enabling growth (\u201cThe elimination of regulatory restrictions unlocks significant strategic opportunities\u201d) and earnings mix offsets (\u201cnon-interest income growth provides partial offset\u201d). Forecasts are explicitly quantified across NII, NIM, fees, and capital return (\u201cNet interest income guidance of 1-3% growth for 2025\u201d; \u201cNet interest margin stabilization near current levels of approximately 2.7%\u201d; \u201cTerminal Growth Rate: 2.5%\u201d). It also provides a valuation range (\u201cfair value range of $78-92 per share\u201d) and references external projections, supporting inference quality. However, the report does not benchmark core valuation assumptions (e.g., terminal growth, discount rate, NIM, revenue CAGR) to peers, history, or rate environments, and it does not quantify sensitivities (e.g., EPS/NIM impact per 100 bp rate change, CRE loss scenarios). Counterpoints are discussed qualitatively (rates, deposit competition, CRE), but without scenario ranges or driver-based stress tests. Actionable implications are present (post-cap growth avenues, capital returns focus, CRE risk monitoring), yet they are not tied to quantified decision thresholds. Overall, the absence of benchmarking and quantified sensitivity constrains analytical depth to Fair despite solid mechanisms and quantification.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Deposit beta and funding mix impact on NIM not analyzed",
+            "CRE loss transmission to EPS/ROTE not modeled",
+            "Asset cap removal \u2192 loan growth translation not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Terminal Growth Rate 2.5% without peer/industry reference",
+            "Revenue CAGR 4\u20136% not benchmarked to history/peers",
+            "Discount rate 10.5% lacks supporting benchmarks"
+        ],
+        "lack_of_sensitivity": [
+            "No NII/NIM sensitivity to 100 bp rate move",
+            "Fair value $78\u201392 not tied to drivers",
+            "CRE charge-off scenarios not quantified"
+        ]
+    }
+}

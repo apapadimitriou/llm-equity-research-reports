@@ -1,0 +1,24 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by moving beyond descriptive summaries to provide a structured EPS bridge and benchmarking its internal growth forecasts against industry-wide outsourcing trends. It identifies specific causal mechanisms for margin expansion, such as \"operating margins... driven by scale efficiencies,\" and attributes recent earnings softness to \"margin compression from rising operational costs.\" The valuation is grounded in explicit, quantified assumptions including a 5% revenue CAGR, an 8.0% WACC, and a 3% terminal growth rate. The report also benchmarks its valuation multiples against \"peer averages,\" providing a necessary sanity check. However, the report fails to reach the 'Excellent' threshold due to a lack of comprehensive scenario analysis. While it mentions a \"+/-20% swing in valuation possible\" based on backlog conversion, this is a single, isolated range rather than a detailed sensitivity matrix or a set of distinct Bull/Bear case valuations. Furthermore, the actionable implications, such as \"monitor Q3 bookings,\" are relatively standard and lack the conditional depth found in top-tier research. The treatment of uncertainty is present but lacks the quantified rigor required to model how specific changes in variables, such as a 100bps change in WACC, would impact the fair-value estimate.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "link between backlog conversion and 20% valuation swing"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3.0% lacks specific historical or regional context"
+        ],
+        "lack_of_sensitivity": [
+            "No sensitivity matrix for WACC or terminal growth assumptions",
+            "Single valuation point provided without explicit bull/bear cases"
+        ]
+    }
+}

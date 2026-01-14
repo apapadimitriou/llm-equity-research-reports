@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key modeling inputs are largely explicit and proximate to the forecasts. Revenue growth and margin trajectories are stated in narrative and reconciled to detailed forecast tables, and core valuation parameters (cost of equity, WACC, tax rate, Stage II assumptions, share count) are disclosed in the model summary. Specificity is solid: magnitudes, units, and time horizons are provided (e.g., \u201c11% average annual top-line growth through 2029,\u201d operating margin peaking in 2029, explicit WACC/COE/tax assumptions). Justification is partial: adoption drivers for Farapulse/Watchman and tariff impacts reference management commentary and competitive context, but there is limited evidence anchoring the chosen WACC/COE, long-run tax rate, and Stage II parameters to market data, multi-year history, or peer benchmarks. Internal consistency is mostly clean; narrative targets align with tabled margins and share count. However, the report does not present quantified sensitivities or scenario analysis on material levers (revenue growth, margins, WACC, tax), which is a hard cap. Overall, assumptions are explicit and specific, with partial justification, but the lack of stress-testing keeps the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "This translates into 11% average annual top-line growth through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we forecast operating margin to peak at 27% in 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,486",
+            "location": {
+                "section": "Key Valuation Drivers / DCF summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.6",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 10.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "the full-year impact of tariffs will be roughly $200 million... offset roughly half the tariff impact through favorable foreign exchange and the other half through cost-cutting.",
+            "location": {
+                "section": "Analyst Notes Archive (23 Apr 2025)",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.6% without market/source tie-in",
+            "Cost of Equity 9.0% without source",
+            "Long-run tax rate 19.0% without evidence",
+            "Stage II EBI growth 10.5% and investment rate 26.3% without justification"
+        ]
+    }
+}

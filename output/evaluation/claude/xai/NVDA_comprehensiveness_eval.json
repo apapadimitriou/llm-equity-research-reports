@@ -1,0 +1,67 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally incomplete and superficial across all major sections. While it contains the expected section headers, the content is skeletal with pervasive \"insufficient data\" disclaimers throughout. Critical semiconductor sector KPIs are entirely missing (GPU shipment volumes, data center vs gaming revenue breakdown, R&D as % of revenue, fab capacity utilization). The valuation section provides only an analyst consensus target with zero methodology, completely failing to link operating drivers to valuation assumptions. Financial forecasts are non-existent beyond one quarter of actual results. The report relies heavily on uncited social media sentiment (\"from X posts\") rather than credible financial data. Most sections like Economic Moat, Capital Allocation, and ESG contain no substantive analysis. The extensive use of \"insufficient data\" across financials, competitive positioning, and risk quantification makes this report unsuitable for investment decision-making.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Competitive Analysis",
+            "Detailed Valuation Methodology"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Adjusted EPS",
+            "Gross Margin"
+        ],
+        "sector_kpis_missing": [
+            "GPU Unit Shipments",
+            "Data Center Revenue Breakdown",
+            "Gaming Revenue",
+            "R&D as % Revenue",
+            "Fab Capacity Utilization",
+            "Average Selling Price"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date is 2025-07-15 but references future earnings on 2025-08-27 as if past event",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "GPU Unit Shipments",
+            "Data Center Revenue Breakdown",
+            "Gaming Revenue",
+            "R&D as % Revenue",
+            "Fab Capacity Utilization",
+            "Average Selling Price"
+        ],
+        "uncited_claims": [
+            "Adjusted EPS came in at $0.81, against estimates of $0.93",
+            "Data Center revenue reached $39.1 billion, though this was slightly below some estimates of $39.22 billion",
+            "Adjusted gross margin at 61% versus estimates of 71%"
+        ]
+    }
+}

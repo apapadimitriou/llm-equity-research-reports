@@ -1,0 +1,80 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates good quality assumptions with explicit statements of key drivers and specific magnitudes. Revenue assumptions are clearly stated with specific decline rates (MS drugs declining 10% annually, Leqembi peak sales of $3 billion, Spinraza at $1.5 billion). The WACC of 7.1% is explicitly stated. Justification is solid, drawing on historical performance, competitive dynamics, and regulatory approvals. However, the report lacks quantified sensitivity analysis or scenario ranges for material drivers like Leqembi sales ramp, MS decline rates, or WACC variations. While risks are discussed qualitatively, no numerical ranges are provided. The assumptions are internally consistent and reconcile well across sections, supporting the revenue forecasts and valuation model.",
+    "assumptions_extracted": [
+        {
+            "quote": "MS revenue fades and new drugs for Alzheimer's, depression, and rare diseases begin to ramp up...we see these sales declining nearly 10% annually",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We now assume $3 billion in global peak sales of Biogen and Eisai's Leqembi",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect sales of Reata's newly approved drug Skyclarys will eventually exceed $1 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "For Spinraza (nusinersen)...We now expect sales to stabilize at around $1.5 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a weighted average cost of capital of 7.1%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our assumption on Ocrevus royalties are based on peak sales of $9 billion",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding...143, 138, 136, 134, 132",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

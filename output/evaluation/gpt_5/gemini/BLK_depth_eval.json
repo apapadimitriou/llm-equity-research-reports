@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal links and explicit, quantified assumptions. It explains why results occur (e.g., fee compression and business mix drive the pivot; integration complexity may constrain margins) and ties forecasts to drivers, such as \u201cdouble-digit growth in technology services revenue\u201d and private markets scaling. Data use is robust: it quantifies the $52B outflow (\u201csingle institutional client redemption of $52 billion\u201d), recalculates underlying flows, details EPS/AUM trajectories, and frames valuation via SOTP and DCF with explicit inputs (\u201c15x '26E Asset Mgmt EBIT; 25x '26E Tech EBIT\u201d and \u201cWACC: 8.5%; Terminal Growth: 3.5%\u201d). Benchmarking appears, though not exhaustive, with sector P/E comparisons and reference to management margin ambitions. Actionable implications are clear, noting the stock is \u201cpriced for a perfect future state\u201d and risk/reward \u201cskewed significantly to the downside.\u201d The main shortfall is the absence of quantified scenario or sensitivity analysis: no ranges for WACC/terminal growth, fee compression, or integration outcomes are provided, and segment-level bridges from AUM to fees are not modeled. Overall, mechanisms and quantified assumptions are strong, but the lack of explicit sensitivities/scenarios caps the depth at Good rather than Excellent.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "No segment build underpinning 9.5% revenue CAGR",
+            "AUM-to-fee revenue bridge absent",
+            "Synergy/talent retention impact on margins not modeled"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.5% without component inputs",
+            "Terminal growth 3.5% vs GDP unquantified",
+            "SOTP multiples justified qualitatively, no peer comps shown"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/terminal growth sensitivity on DCF",
+            "No fee compression sensitivity on margins",
+            "No integration downside scenario or range"
+        ]
+    }
+}

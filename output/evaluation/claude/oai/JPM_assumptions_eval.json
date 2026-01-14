@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and poorly justified. While some key drivers are mentioned (8% revenue CAGR, 45% operating margin, 9.5% WACC), they lack proper justification with historical data or peer comparisons. The revenue growth assumption of 8% annually appears inconsistent with the financials table showing 38% growth in 2023 and 12% in 2024, yet no explanation reconciles this dramatic deceleration. The 9.5% WACC is stated without supporting calculations for beta, risk-free rate, or equity premium components. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers. The report mentions 'sensitivity to WACC is \u00b1$20 per 100bp' but provides no other stress testing. Key assumptions like credit losses, loan growth rates, and NII projections are either missing or lack specificity. The forecasted margins of exactly 45% for five consecutive years (2025-2029) appear arbitrary without historical context or justification.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR ~8% (2022\u201329), driven by loan and fee growth as rates stay mildly elevated",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin ~45%, reflecting stable expense control (overhead ratio ~55\u201360%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "A weighted average cost of capital around 9\u201310% is plausible (\u03b2 \u22481.2\u20131.3, 3% risk-free, 6\u20137% equity premium)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Using a terminal growth of ~2%, our DCF yields a per-share fair value near $300",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We used a 9.5% WACC (RF ~3.5%, market premium ~6.5%, \u03b2\u22481.2) and terminal growth of 2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC stated as 'around 9-10%' in Fair Value section but precisely '9.5%' in Appendix with different component assumptions",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Revenue growth assumption of 8% CAGR conflicts with historical volatility (38% growth in 2023, 12% in 2024) without explanation",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "loan_growth",
+            "NII_growth",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "8% revenue CAGR without historical justification",
+            "45% operating margin for 5 consecutive years",
+            "9.5% WACC components",
+            "2% terminal growth"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections (cover/contents, Analyst Note, Business Description, Strategy/Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources). Several sections have reasonable depth: the Analyst Note includes segment and geographic highlights; Strategy/Outlook and Moat articulate drivers; Valuation provides a DCF with explicit revenue/margin/WACC assumptions and an EPS bridge; Risks and Capital Allocation are addressed. However, comprehensiveness is constrained by gaps and inconsistent evidence. The Financials Snapshot lacks core sector-specific KPIs (e.g., installed base, services mix, segment breakdown, iPhone units/ASPs, gross margin), and FY2024 actuals are missing. The cover block omits last close and market cap, undermining completeness. Sourcing relies on social media posts and \u201cinferred\u201d data; multiple material claims are uncited or outdated. Peer benchmarking is absent (aside from a tangential ESG comparison), and no scenario/sensitivity analysis is provided. There is some repetition of the \u201cservices strength\u201d theme across sections without incremental depth. While the valuation section does link operating drivers to fair value, the combination of missing sector KPIs and sourcing issues caps the report at Fair under the hard rules.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Active Devices Installed Base",
+            "Services as % of Revenue",
+            "Segment Revenue Breakdown (iPhone/Mac/iPad/Services/Wearables)",
+            "iPhone Units/ASP",
+            "Gross Margin %"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin target inconsistent (32% by 2029 in Valuation vs 32.5% margin target in Appendix)",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Claims ~10% upside from recent levels while cover shows 'Last close insufficient data'",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Cover Block"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Active Devices Installed Base",
+            "Services % of Revenue",
+            "iPhone Units/ASP"
+        ],
+        "uncited_claims": [
+            "Services retention rates over 90% in key markets",
+            "Over 2 billion active devices",
+            "Repurchasing ~$100B annually in recent years",
+            "ESG risk score ~15/100 and Samsung 20/100 (inferred)",
+            "Geographic revenue mix percentages attributed to 'recent filings' but sourced to a 2017 AnnualReports.com page"
+        ]
+    }
+}

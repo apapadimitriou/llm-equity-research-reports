@@ -1,0 +1,57 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources) with reasonable proportionality. The valuation section explicitly links operating drivers (NII and noninterest income growth, margin expansion, provisions) to EPS and fair value, which is a strength. However, the Financials Snapshot omits core bank-specific KPIs (e.g., NIM, net interest income, loan loss provisions, CET1 in the table), triggering the hard cap to Fair. Evidence integration is mixed: several claims rely on weak or insufficient sourcing (historicals from social media posts; ESG score without direct source; CET1 cited to Nasdaq earnings page). Peer context is limited to brief mentions and ESG score comparisons, with no financial benchmarking. Scenario/sensitivity analysis is absent beyond a high-level \u00b120% stress comment. Some points (rate sensitivity and tariff risks; digital engagement) recur across sections with limited added depth. Overall, while structurally complete and with a linked valuation, missing sector KPIs, uneven sourcing, and thin peer/scenario coverage constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Deposit growth (narrative)",
+            "CET1 ratio (narrative)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 (in Financials Snapshot)",
+            "Net Interest Income (NII)",
+            "Net Charge-Offs"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Loan Loss Provisions",
+            "CET1 (in table)",
+            "NII",
+            "Net Charge-Offs"
+        ],
+        "uncited_claims": [
+            "ESG risk score of 18.5 lacks direct source ([7] notes insufficient data)",
+            "Buybacks totaled $5 billion in recent years with no source"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates a logical structure, moving from current quarterly performance to long-term strategic positioning. The Analyst Note (April 2025) provides a timely update on consumer spending and cross-border volume trends, maintaining a clear connection to the 'wide moat' thesis. However, it contains significant internal contradictions between the narrative and the financial tables. The 'Economic Moat' section (Page 4) states that the 2024 operating margin on a net revenue basis was 67%, yet the 'Margins & Returns' table (Page 12) lists the 2024 Operating Margin at 48.8% and the Net Margin at 38.4%. Furthermore, the 'Fair Value and Profit Drivers' section (Page 5) forecasts that net revenue margins will improve by 70 basis points annually. This is directly refuted by the model table, which shows the Net Margin % actually declining from 38.4% in 2024 to 37.3% by 2029. While the report's qualitative analysis of Visa's network effect is strong, these quantitative misalignments between the analyst's stated assumptions and the provided data tables create substantial noise. Additionally, the 'Risk and Uncertainty' section is nearly a year out of date, failing to incorporate the DOJ antitrust suit or the 'tariffs' mentioned in the latest Analyst Note. Under the provided guardrails, the presence of unresolved contradictions between the narrative and the tables requires a hard cap at the 'fair' grade.",
+    "evidence": [
+        "Narrative states 2024 net operating margin was 67% (Page 4), but the financial table (Page 12) reports an Operating Margin of 48.8% and a Net Margin of 38.4%.",
+        "The report predicts a 70-basis-point annual improvement in net revenue margins (Page 5), while the table (Page 12) forecasts the Net Margin % to drop from 38.4% to 37.3% by 2029.",
+        "The Analyst Note (Page 2) identifies 'tariffs' as a new uncertainty, but the Risk and Uncertainty section (Page 5) has not been updated since June 2024."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

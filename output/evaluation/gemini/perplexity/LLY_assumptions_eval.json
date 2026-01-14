@@ -1,0 +1,94 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to the presence of multiple distinct numeric contradictions and a total absence of quantified sensitivity analysis, triggering the most severe hard caps in the evaluation framework. While the report is explicit in listing assumptions within a dedicated appendix and financial table, it fails on internal consistency and stress-testing. \n\nSpecifically, there are two major contradictions: First, the text projects 'sustained net margins in the 28-32% range,' yet the financial snapshot table shows a peak 'Op Margin %' of only 31.8%. When applying the report's own 14% tax rate assumption, the implied net margin is approximately 27.3%, making the 28-32% claim mathematically impossible. Second, the Appendix cites a 'Revenue CAGR 2025-29' of 12.0%, but the financial table's figures ($60.0B to $90.5B) result in a calculated CAGR of only 10.8%. \n\nFurthermore, despite an 'Uncertainty Rating' of Medium and significant discussion of competitive risks (Novo Nordisk, biosimilars), the report provides zero quantified sensitivity or scenario analysis. There are no ranges provided for the $900 fair value estimate based on changes in GLP-1 market share, pricing, or WACC. Justification is also weak; for instance, a terminal growth rate of 3.5% is stated without any historical or peer-based rationale for why it exceeds standard long-term GDP growth expectations.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate assumptions of 12-15% through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "project sustained net margins in the 28-32% range",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate | 14.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "announced $27 billion manufacturing investment",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Net margin projection (28-32%) is mathematically impossible given the peak Operating Margin (31.8%) and Tax Rate (14%) provided in the tables.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Appendix states a 12.0% Revenue CAGR (2025-29), but the Financials Snapshot table implies a 10.8% CAGR for that period.",
+                "locations": [
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "Terminal growth rate of 3.5% is high and lacks cited rationale."
+        ]
+    }
+}

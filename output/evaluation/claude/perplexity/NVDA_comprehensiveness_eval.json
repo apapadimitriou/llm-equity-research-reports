@@ -1,0 +1,74 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails fundamental comprehensiveness requirements with critical structural deficiencies. The 'Financials Snapshot' contains completely unrealistic projections (revenue declining from $60.9B to $22.1B then jumping to $130.5B) that appear fabricated rather than analytically derived. Multiple core sections are missing including explicit competitive positioning analysis, peer benchmarking, and scenario/sensitivity analysis. While the report covers basic content areas, the financial data integrity issues, lack of sector-specific KPIs for semiconductors (R&D intensity, fab utilization, ASPs), and absence of proper valuation methodology linking drivers to outcomes render it fundamentally flawed. The sourcing appears inconsistent with numbered references that don't correspond to actual sources. These deficiencies make the report unsuitable for investment decision-making despite adequate coverage of business description and risk factors.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Proper Valuation Methodology",
+            "Sources/Appendix with actual citations"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Revenue",
+            "Gross Margin by Segment",
+            "ASP Trends",
+            "Fab Utilization",
+            "Design Win Metrics",
+            "TAM/SAM Analysis"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue projections show impossible decline from $60.9B (FY2023) to $22.1B (FY2024) then surge to $130.5B (FY2025)",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Fair value estimate of $175 vs current price $182.70 contradicts positive analyst tone",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D Intensity",
+            "Segment Gross Margins",
+            "ASP Trends",
+            "Market Share Metrics",
+            "Competitive Win Rates"
+        ],
+        "uncited_claims": [
+            "Numbered references [1]-[21] with no corresponding source list",
+            "Specific financial figures without data source attribution",
+            "Market share percentages without research citations"
+        ]
+    }
+}

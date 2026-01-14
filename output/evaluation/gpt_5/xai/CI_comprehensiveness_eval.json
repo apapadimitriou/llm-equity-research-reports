@@ -1,0 +1,68 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections, including a clear cover block, analyst note, business description/strategy, bulls/bears, moat, valuation with DCF inputs and an EPS bridge, risks, capital allocation, a multi-year financials snapshot, ESG, appendix, and sources. Valuation is reasonably linked to operating drivers (segment growth, margin expansion, WACC, terminal growth), which strengthens comprehensiveness. However, the Financials Snapshot omits core sector KPIs for managed health care (e.g., medical loss ratio, membership/lives, PMPM medical cost trend, pharmacy scripts volume), limiting operational depth. Evidence citations are mostly present, but ESG peer ratings are explicitly uncited and the H1 2025 capital return figure lacks a source, reducing citation consistency. Peer benchmarking is minimal (limited to ESG comparisons) and no scenario/sensitivity analysis is provided. There is minor repetition (Evernorth growth and wide moat assertions) but not pervasive. A timeline inconsistency exists between the report date and cited Q2 2025 sources. Due to \u22652 missing sector KPIs and \u22652 uncited material claims, the report is capped at Fair despite otherwise solid coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "Membership/Enrolled Lives",
+            "PMPM Medical Cost Trend",
+            "Pharmacy Scripts Volume"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-07-10) precedes cited Q2 2025 events/sources dated 2025-08-03",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Membership/Enrolled Lives",
+            "PMPM Medical Cost Trend",
+            "Pharmacy Scripts Volume"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating values for CI, UNH, CVS",
+            "Returned $4.2 billion to shareholders in H1 2025"
+        ]
+    }
+}

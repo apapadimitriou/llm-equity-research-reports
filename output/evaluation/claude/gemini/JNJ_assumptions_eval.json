@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit assumptions with clear units and timeframes, but suffers from weak justification and limited sensitivity analysis. Key assumptions like WACC (8.14%), terminal growth (2.0%), and revenue growth (4.5% CAGR) are stated but lack proper sourcing or benchmarking evidence. The WACC calculation claims specific inputs (7.98% cost of equity, 4.06% risk-free rate, 0.95 beta) but these are unsupported assertions. Revenue forecasts show specific segment growth rates but justification relies mainly on management guidance rather than independent analysis. Operating margins are assumed stable at 25-26% with minimal explanation. The report includes qualitative scenario analysis (bull/bear cases with $200/$150 price targets) but lacks quantified sensitivities for material drivers like Stelara decline rates or litigation costs. While assumptions are generally consistent across tables and narrative, the absence of robust quantified sensitivity analysis on key value drivers caps the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We utilize a WACC of 8.14% in our DCF model. This is calculated using the Capital Asset Pricing Model (CAPM) for the cost of equity and the company's current borrowing costs for the cost of debt. The key inputs are a cost of equity of 7.98% (based on a 4.06% risk-free rate, a beta of 0.95, and an equity risk premium of 4.12%), a post-tax cost of debt of 9.52%, and a capital structure with a 10% debt weighting.",
+            "location": {
+                "section": "V. Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 2.0% beyond our explicit forecast period. This rate is consistent with long-term expectations for global economic growth and is appropriate for a mature, diversified company of JNJ's scale.",
+            "location": {
+                "section": "V. Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Our model incorporates a five-year revenue CAGR of approximately 4.5%, which is slightly more conservative than the low end of management's 5-7% long-term guidance for 2025-2030",
+            "location": {
+                "section": "V. Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast adjusted operating margins to remain relatively stable in the 25-26% range through the forecast period.",
+            "location": {
+                "section": "III. Financial Performance and Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Shares Outstanding ~2.41 Billion",
+            "location": {
+                "section": "I. Investment Summary",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 8.14% with specific component inputs lacking source verification",
+            "Risk-free rate 4.06% without market data reference",
+            "Beta 0.95 without calculation methodology",
+            "Operating margin stability assumption without peer benchmarking"
+        ]
+    }
+}

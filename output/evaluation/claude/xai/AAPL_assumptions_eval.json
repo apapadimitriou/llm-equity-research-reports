@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. Key assumptions are largely opaque or buried without clear justification. The revenue CAGR of 6% is stated in the appendix but not explained or linked to underlying drivers. Operating margin expansion from 31% to 32.5% lacks supporting evidence beyond vague 'services mix' claims. The WACC of 8.5% appears arbitrary with minimal justification ('Beta 1.1, risk-free 4%' without sources). Most critically, there are no sensitivity analyses or scenarios testing these material assumptions. The EPS bridge attempts specificity but uses unsupported figures (+$2.00 revenue uplift, +$1.00 margin gains) without showing the underlying calculations. Revenue forecasts jump from unspecified Q2 annualized figures to $400B FY2025 without clear reconciliation. The terminal growth rate of 3% is stated without justification. While some assumptions are listed in the appendix, they lack the proximity, evidence, and stress-testing required for quality analysis.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 6.0% Services-led growth",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand to 32% by 2029 through cost efficiencies and services mix, up from 31% in Q2 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital (WACC) is set at 8.5%, reflecting low uncertainty and strong balance sheet",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate of 3% yields the $245 fair value",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share repurchases (+$0.50)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue forecasts show $400B FY2025 but Q2 2025 was $95.4B, implying unrealistic acceleration without explanation",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "services_growth_rate",
+            "hardware_growth_breakdown",
+            "tax_rate",
+            "capex_assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% with minimal support",
+            "Terminal growth 3% without justification",
+            "Revenue CAGR 6% without detailed buildup",
+            "Margin expansion to 32.5% without cost structure analysis"
+        ]
+    }
+}

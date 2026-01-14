@@ -1,0 +1,85 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment due to multiple severe internal contradictions and a total lack of quantified sensitivity analysis. While key assumptions such as revenue CAGR, operating margins, and WACC are explicitly stated and proximal to the valuation narrative, they are internally inconsistent. Specifically, the report contains two major numeric contradictions: first, the stated WACC of 8.0% is mathematically irreconcilable with its cited components (a 6% risk-free rate, 1.2 beta, and 5% equity risk premium imply a 12% cost of equity/WACC under the CAPM). Second, the narrative forecasts 2029 revenue of $1,050 billion, which directly conflicts with the $981.0 billion figure presented in the Financials Snapshot table. Furthermore, the report provides no quantified sensitivity or scenario analysis for material drivers like AWS growth rates or margin expansion, offering only a vague qualitative statement regarding valuation uncertainty. Although the assumptions are specific in terms of units and horizons, the lack of mathematical integrity and the 'black-box' nature of the valuation impact under varying conditions trigger the hard caps for a 'Poor' grade. The justification for the WACC is also considered 'Poor' as the resulting figure contradicts the logic of its own provided inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 10% from FY 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 8.5% in FY 2025 to 12% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.0%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Recent guidance suggests FY 2025 revenue around $670 billion",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC calculation error: 6% Rf + (1.2 * 5% ERP) equals 12%, but the report states 8.0%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix - Key Valuation Assumptions Table"
+                ]
+            },
+            {
+                "description": "2029 Revenue discrepancy: Narrative projects $1,050 billion, while the Financials Snapshot table projects $981.0 billion.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex_as_percentage_of_revenue"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% (mathematically inconsistent with stated Rf, Beta, and ERP)"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is reasonably strong: core assumptions for revenue growth, operating margin trajectory, and capital expenditures are clearly stated and proximate to the forecasts they inform, and DCF inputs (WACC and terminal growth) are specified. Specificity is solid on magnitudes, units, and horizons (percent growth rates, $ billions, 2025\u20132027), and tables reconcile numerically with the stated assumptions (e.g., CapEx/revenue ratio). Justification is mixed: CapEx 2025 leverages management guidance, margin contraction references guided depreciation acceleration, and growth deceleration is qualitatively linked to tougher comps; however, WACC (9.5%) and terminal growth (3.5%) lack empirical support (market yields, beta/capital structure, GDP/inflation context), and 2026 CapEx ($90B) extends qualitative commentary without quantified corroboration. Consistency appears clean\u2014no unresolved contradictions between narrative and tables. Stress-testing is the main weakness: despite noting that DCF is sensitive to WACC and terminal growth, there are no quantified sensitivity ranges or scenarios for major drivers (revenue, margins, CapEx, WACC, terminal growth), triggering the hard cap at Fair. Several material drivers (share count/buybacks, tax rate, depreciation schedules, working capital) are missing or opaque, limiting auditable traceability.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue: A 17% growth rate is modeled for 2025... projected to decelerate to a more sustainable 13% by 2027",
+            "location": {
+                "section": "Financial Model & Forecasts \u2014 Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin: A consolidated GAAP operating margin contraction is forecast from 42% in 2024 to 38% in 2025 and 37% in 2026.",
+            "location": {
+                "section": "Financial Model & Forecasts \u2014 Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital Expenditures: We model $70 billion in 2025 (the midpoint of guidance) and $90 billion in 2026.",
+            "location": {
+                "section": "Financial Model & Forecasts \u2014 Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Utilizing a Weighted Average Cost of Capital (WACC) of 9.5%... and a terminal growth rate of 3.5%, our DCF model yields an intrinsic value of $755 per share.",
+            "location": {
+                "section": "Valuation: Priced for Near-Perfection \u2014 Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "CapEx as % of Revenue (2025E) \u2014 Meta Platforms: 36.4%",
+            "location": {
+                "section": "Valuation: Priced for Near-Perfection \u2014 SOTP & Peer Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "depreciation schedule/useful lives",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "terminal growth 3.5% without macro/industry justification",
+            "2026 CapEx $90B extrapolated from qualitative commentary",
+            "Revenue deceleration to 13% lacks peer/history quant support"
+        ]
+    }
+}

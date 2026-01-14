@@ -1,0 +1,23 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates meaningful causal reasoning and quantified assumptions but lacks benchmarking and true sensitivity mapping to outcomes, capping analytical depth at Fair per the decision rules. Causal links are explicit, e.g., \u201creflects Adobe\u2019s successful integration of AI capabilities\u201d and \u201cdriven by Creative Cloud\u2019s expanding subscriber base.\u201d Assumptions are clearly stated and quantified, including \u201cfair value estimate of $475 per share,\u201d \u201cWACC 8.5%,\u201d \u201cTerminal Growth Rate 3.5%,\u201d and segment growth targets like \u201cRevenue CAGR (FY25-29) 8.5%.\u201d A scenario table provides ranges (e.g., \u201cAI Revenue Contribution 15%\u201d), but it does not translate these drivers into EPS or fair value impacts, so sensitivity remains qualitative (\u201cUpside scenarios assume accelerated AI adoption\u201d). Data use is robust across segments and margins, yet assumptions (WACC, terminal growth, margin trajectories) are not benchmarked to peers or macro norms and lack stress-test outputs. Counterpoints are covered (competitive AI pressure), but uncertainty treatment is not quantified. Actionable elements exist (Price/FVE 0.72, moat/uncertainty ratings), though implications are not conditionally quantified. Overall, the report provides mechanisms and quantified inputs but misses benchmarking and quantified scenario-to-outcome linkage.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI monetization \u2192 pricing uplift path not linked to ARR"
+        ],
+        "unsupported_assumptions": [
+            "WACC 8.5% without sector benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "No EPS/FV impact shown for bull/bear scenarios"
+        ]
+    }
+}

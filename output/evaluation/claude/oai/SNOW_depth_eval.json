@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is predominantly descriptive with minimal analytical depth. While it contains some causal statements like \"Revenue grew 27% to $986.8M\" and \"driven by cross-cloud adoption and new AI feature upsells,\" these lack mechanistic explanation of how cross-cloud adoption translates to revenue growth. The DCF model presents assumptions (\"10.0% WACC,\" \"no terminal growth beyond 2029\") but provides no benchmarking or justification for these critical inputs. The sensitivity analysis is superficial (\"1% change in WACC swings PV by ~10%\") without exploring meaningful scenarios. Growth forecasts like \"~20%\u201325% growth in modestly decelerating fashion\" and margin expansion projections (\"operating margin rising from ~8% to ~20%\") are stated without underlying drivers or stress-testing. The report fails to quantify key risk scenarios or provide decision-relevant ranges, instead offering generic statements about macro risks and competition.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "cross-cloud adoption \u2192 revenue growth mechanism unexplained",
+            "AI features \u2192 margin expansion pathway unclear",
+            "net revenue retention \u2192 financial impact not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC 10.0% with no industry benchmark",
+            "operating margin 8% to 20% without cost structure analysis",
+            "22% CAGR through 2029 lacks competitive context"
+        ],
+        "lack_of_sensitivity": [
+            "no scenarios for competitive pressure impact",
+            "growth deceleration ranges not quantified",
+            "macro downturn effects on retention unmodeled"
+        ]
+    }
+}

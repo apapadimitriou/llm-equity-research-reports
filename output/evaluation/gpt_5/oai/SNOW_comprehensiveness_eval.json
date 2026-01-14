@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured with a clear cover block and contents, and it covers all the headline sections: Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials, ESG, Appendix, and Sources. Evidence integration is strong: most key operational and financial claims are supported with SEC filings, earnings transcripts, and reputable third-party sources, and valuation assumptions are explicitly stated and tied to growth and margin drivers. However, the Financials Snapshot is generic and omits core SaaS sector KPIs (e.g., ARR, RPO, cohort/customer metrics, gross margin), triggering the hard cap to Fair. Peer benchmarking is absent beyond cursory references and ESG peer mentions, limiting competitive context. There is limited sensitivity/scenario analysis; a single WACC sensitivity note is insufficient for a robust scenario framework. Minor redundancy appears where retention/network effects and the ~$10B long-term goal recur across sections without added depth. Capital allocation, risk, and ESG sections are proportionate and supported. Overall, despite solid coverage and sourcing, missing sector KPIs in the Financials Snapshot and lack of peer/scenario analysis constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Net Revenue Retention (~126%)",
+            "Customer count (>11,000)",
+            "Fortune 2000 penetration (~745)"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "RPO (Remaining Performance Obligations)",
+            "Gross Margin trend",
+            "Customers >$1M product revenue",
+            "Cohort metrics/DBNRR time series"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States balance sheet is Net Cash positive while indicating ~$2B cash vs ~$2B debt (implies roughly net neutral).",
+                "locations": [
+                    "Capital Allocation",
+                    "Cover Block (implied metrics)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "RPO",
+            "Gross margin",
+            "$1M+ customer count",
+            "NRR time series"
+        ],
+        "uncited_claims": []
+    }
+}

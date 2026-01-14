@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is generally well-structured and readable, moving from a clear Investment Summary to Q2 results, thesis (bulls vs. bears), moat, financials, valuation, and risks. Transitions are mostly smooth: the RPO discussion (2.3) explicitly counters market concerns and is later balanced by risks (7.2) acknowledging multiple persistence. Financials and valuation are largely aligned: Q2 revenue/EPS in text match Table 1; FY25\u2013FY27 projections in 5.2 mirror Table 3; the DCF (6.1) assumes long-term 45% non-GAAP margins consistent with near-term 46% modeled in 5.2; and the price target (6.3) triangulates DCF with a 23x multiple on FY26 EPS. Terminology (ARR, RPO, non-GAAP margins) is used consistently. However, there is a material internal contradiction regarding Figma\u2019s IPO timing: the Investment Summary calls it \u201crecent,\u201d while the Bear Case labels it \u201cimpending,\u201d creating a temporal inconsistency that is not resolved. This triggers an auto-downgrade per the guardrails. Additionally, the characterization of RPO as a \u201clagging indicator\u201d (2.3) is asserted without substantiating logic or cross-reference, which slightly weakens the coherence of that rebuttal, and Table 4\u2019s many N/A entries make the relative valuation support feel thin. Despite these issues, the narrative generally ties sections together and aligns assumptions with the valuation framework, but the IPO timing inconsistency caps the grade at fair.",
+    "evidence": [
+        "Investment Summary vs. Bear Case: \u201crecent IPO of design rival Figma\u201d (1.0) conflicts with \u201cimpending IPO of design rival Figma\u201d (3.2).",
+        "Financials coherence: Q2 revenue $5.87B and non-GAAP EPS $5.06 in text (2.1) match Table 1; ARR sequential increase of $460M (2.2) supports the rebuttal to RPO concerns (2.3).",
+        "Valuation alignment: DCF assumes long-term 45% non-GAAP margin (6.1) while projections model ~46% near term (5.2); price target also supported by ~23x FY26 EPS of $23.09 (6.3)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

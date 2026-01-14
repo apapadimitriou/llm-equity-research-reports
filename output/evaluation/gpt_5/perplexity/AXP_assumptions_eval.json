@@ -1,0 +1,120 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are mostly explicit and numerically stated in the \u201cFair Value and Profit Drivers,\u201d \u201cAppendix,\u201d and the forecast table, with ranges and horizons (e.g., WACC 9.5%, terminal growth 2.5%, 50\u2013100 bps margin expansion through 2027). However, justification is weak: figures lack support from multi-year history, peer benchmarks, or cited sources beyond brief mentions (e.g., billed business growth), and key parameters like WACC, terminal growth, and valuation multiple are asserted without evidence. Specificity is partial\u2014many inputs have magnitudes and timeframes, but some are vague or context-free (e.g., \u201cnet revenue margins 10\u201311%\u201d without definition, \u201cstable NIM\u201d without quantification). Internal consistency is compromised by at least two numeric contradictions: FY2025E revenue declines versus stated 8\u201310% growth guidance, and the Appendix\u2019s 2025\u20132029 revenue CAGR (6.2%) conflicts with the model table (~7.9%). Stress testing is absent; sensitivities are only qualitative, with no quantified ranges or scenario analysis for revenue/NIM/margins/credit costs. Given multiple contradictions plus lack of quantified sensitivity on material drivers, the overall quality of assumptions is poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "The model assumes a 9.5% weighted average cost of capital and 2.5% terminal growth rate.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Key revenue drivers include 6-8% annual growth in billed business",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net revenue margins are expected to remain stable around 10-11%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating leverage should drive 50-100 basis points of annual margin expansion through 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Earnings per share are projected to grow 13-15% annually through 2026, reaching approximately $16.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "At a 19x forward P/E multiple",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR 2025-2029: 6.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal Op-Margin: 19.2%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "NII/NIM",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiple",
+            "EPS_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FY 2025E revenue declines vs stated full-year guidance for 8\u201310% growth",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Appendix revenue CAGR (6.2%) conflicts with 2025\u20132029 model table (~7.9%)",
+                "locations": [
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count",
+            "capex",
+            "NII/NIM (quantified)"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without source",
+            "Terminal growth 2.5% without source",
+            "Net revenue margin 10\u201311% without definition/support",
+            "50\u2013100 bps margin expansion without evidence",
+            "19x forward P/E multiple without peer/precedent support",
+            "EPS growth 13\u201315% without tie to drivers"
+        ]
+    }
+}

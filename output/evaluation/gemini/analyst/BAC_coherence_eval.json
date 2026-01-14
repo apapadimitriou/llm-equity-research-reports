@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report earns a 'fair' grade due to several unresolved contradictions between the narrative and the supporting financial tables, as well as temporal inconsistencies regarding valuation updates. A primary conflict exists in the Net Interest Income (NII) projections; the 'Fair Value and Profit Drivers' section (3 Apr 2025) explicitly forecasts 6.8% growth for 2025, yet the Valuation Model Summary table shows NII rising from $56,060 million in 2024 to $60,521 million in 2025, which represents a 7.95% increase. Furthermore, there is a significant temporal misalignment concerning the Fair Value Estimate (FVE). The report header and valuation tables state the $43.00 FVE was established on 4 Feb 2025, but the Fair Value section dated 3 Apr 2025 is written as a fresh update, stating, 'we are increasing the fair value estimate... to $43.00 per share from $39.50.' This creates an 'internally noisy' narrative where the timing of the analyst's conviction is unclear. Additionally, while the Analyst Note (15 Apr 2025) highlights a 'profitability boost' and the Fair Value section predicts 'strong growth' and expanding margins, the summary table actually forecasts a slight decline in Return on Tangible Equity (ROTE) from 12.8% in 2024 to 12.7% in 2025. Despite these data mismatches, the report maintains a logical flow, and the Bulls/Bears are effectively reconciled with the base-case valuation, particularly concerning interest-rate sensitivity.",
+    "evidence": [
+        "Narrative projects NII growth of 'around 6.8% in 2025' (Fair Value section) while the Valuation Model Summary table shows 7.95% growth ($56,060 to $60,521).",
+        "The report header lists the $43.00 FVE date as 4 Feb 2025, contradicting the 3 Apr 2025 section claim that 'we are increasing the fair value estimate... to $43.00 per share from $39.50.'",
+        "The Valuation Model Summary table forecasts a 2025 ROTE of 12.7%, which is a decrease from the 2024 actual of 12.8%, despite narrative claims of 'improved profitability' and 'strong growth' (Analyst Note/Fair Value sections)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

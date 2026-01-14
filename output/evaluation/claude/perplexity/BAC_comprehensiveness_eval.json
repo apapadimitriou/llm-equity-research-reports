@@ -1,0 +1,74 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it incomplete and superficial. The cover block contains fabricated data including a fictional fair value estimate of $48.50 that contradicts the $39.50 Morningstar estimate mentioned in sources. Critical banking-specific KPIs are entirely absent from the Financials Snapshot - no Net Interest Margin, loan loss provisions, or CET1 ratios are presented in tabular format. The valuation section fails to establish any explicit linkage between operating drivers and the fair value conclusion. Multiple sections contain identical repetitive content without additional depth, particularly regarding technology investments and digital metrics. Sources are improperly cited with many claims appearing unsupported by the referenced materials. The report lacks peer benchmarking, scenario analysis, and meaningful industry context essential for banking sector analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Book Value per Share",
+            "Tangible Book Value",
+            "Efficiency Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value estimate of $48.50 contradicts Morningstar's $39.50 estimate cited in sources",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Claims Q2 2025 EPS of $0.89 but provides no detailed analysis or source verification",
+                "locations": [
+                    "Analyst Note",
+                    "Business Strategy"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Book Value per Share",
+            "Tangible Book Value",
+            "Efficiency Ratio"
+        ],
+        "uncited_claims": [
+            "Fair value estimate methodology and assumptions lack supporting calculations",
+            "Revenue projections through 2029 appear fabricated without source basis",
+            "Multiple financial metrics cited without proper source attribution"
+        ]
+    }
+}

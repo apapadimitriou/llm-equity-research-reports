@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid causal reasoning and explicit, quantified assumptions, but lacks benchmarking and quantified sensitivity/scenario analysis. Causality is articulated across segments and capital allocation (e.g., \u201cdriven by continued demand for core banking modernization solutions\u201d and how the issuer acquisition \u201creplaces non-cash generating minority interest with growing recurring revenues\u201d). Assumptions are explicit and quantified within the valuation and modeling framework (\u201cRevenue CAGR 2025-2029: 6.2%\u201d, \u201cWACC: 8.5%\u201d, \u201cnet EBITDA synergies exceeding $150 million by year three\u201d), and data use is extensive (e.g., recurring revenue mix and leverage metrics). However, the report does not benchmark these key inputs to peers, historical company ranges, or market references; the implied multiples mentioned are not compared against sector norms. There are no quantified scenarios or sensitivities for critical drivers (synergy realization, margin trajectory, deleveraging pace, or growth rates), and risk discussion remains qualitative. Actionable implications are present (fair value vs. price, accretion timing, temporary pause in buybacks), but without sensitivities the decision-relevance is constrained. Verbatim excerpts: \u201cdriven by continued demand for core banking modernization solutions\u201d; \u201crecurring revenue now representing 81% of total sales\u201d; \u201cRevenue CAGR 2025-2029: 6.2%\u201d; \u201cWACC: 8.5%\u201d; \u201cnet EBITDA synergies exceeding $150 million by year three\u201d. Overall, analytical depth is meaningful but capped by absent benchmarking and scenario analysis.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Cross-sell revenue uplift mechanism not quantified or timed",
+            "Macro-to-segment transmission (rates\u2192IT spend) not modeled"
+        ],
+        "unsupported_assumptions": [
+            "Revenue CAGR 6.2% without peer or historical benchmark",
+            "WACC 8.5% with no derivation",
+            "Terminal growth 3.0% with no industry benchmark"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario ranges on margins or growth",
+            "No sensitivity to synergy shortfall",
+            "Leverage path (3.4x\u21922.8x) lacks stress test"
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely unstated or qualitative. The report provides no valuation model and explicitly notes insufficient data for revenue CAGR, margins, WACC, EPS bridge, fair value, or implied multiples, so core drivers are opaque. The few forward-looking statements (e.g., Gardasil shipments to China paused through end-2025; medium-term growth from Keytruda/Winrevair offsetting vaccine weakness) are not quantified, lack units, and are not proximate to any forecasts or tables. Justification is weak: while some claims cite sources, there is no multi-year history, peer benchmarks, or numerical linkage to model inputs. Specificity is minimal\u2014no magnitudes for revenue growth by product, margins, tax rates, capex, or share count; only one time horizon (end-2025 for China shipments) is given. Internal consistency is mostly acceptable but the report references a non-existent source [8] and uses later-dated transcripts relative to the report date. Crucially, there is no sensitivity or scenario analysis on any material driver. Under the decision rules, assumptions mostly unstated/opaque and no sensitivities lead to a Poor grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Shipments to China are not expected to resume through at least the end of 2025 due to elevated channel inventories and soft demand [5][6].",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In Japan, Gardasil faces a more significant headwind [6].",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "In the medium term (2025-2027), Merck's outlook appears stable, with expected growth from Keytruda and newer launches like Winrevair offsetting vaccine declines [1].",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Keytruda driving the majority of revenue but facing patent expiration risks in the late 2020s.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "References a non-existent source [8] and cites Aug-2025 transcripts in a report dated 2025-07-09.",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "margin/efficiency",
+            "tax_rate",
+            "capex",
+            "share_count",
+            "WACC/COE",
+            "terminal_growth",
+            "revenue_CAGR",
+            "EPS bridge",
+            "fair_value/target methodology"
+        ],
+        "unjustified_parameters": [
+            "\"potential upside of 26.64%\" without internal valuation or source reconciliation"
+        ]
+    }
+}

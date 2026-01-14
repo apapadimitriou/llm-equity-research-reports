@@ -1,0 +1,22 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report exhibits \"Good\" analytical depth by moving beyond simple description to provide clear causal mechanisms for Salesforce's performance. For instance, it attributes \"Revenue growth of 8%... driven primarily by strength in data cloud\" and explains the \"wide economic moat\" through specific factors like switching costs and network effects. The analyst provides explicit, quantified forecasts, such as a \"model a five-year compound annual growth rate... of 8%\" and a non-GAAP operating margin expanding to the \"upper 30% area.\" These forecasts are grounded in data, including a total addressable market of $248 billion and the fact that \"customer retention... now sits at approximately 92%.\" The report also identifies significant counterpoints and uncertainties, noting that \"Integration risk is real... risk of increasingly large... deals\" and that the generative AI strategy has faced challenges. Actionable implications are clear, with a raised fair value estimate of $325 per share and a conclusion that shares are attractive. However, the report falls short of an \"Excellent\" grade because it lacks quantified sensitivity analysis or scenario-based valuation ranges within the document. While it assigns a \"High\" uncertainty rating and notes that \"Agentforce is generating $100 million in annually recurring revenue,\" it does not provide a specific numerical breakdown of how the fair value would change under different growth or margin assumptions. The \"WACC % 8.8\" is provided as a fixed input without stress-testing.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [],
+        "unsupported_assumptions": [
+            "operating margin expanding... to the upper 30% area without detailed cost-reduction roadmap"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified bull/bear valuation scenarios provided in text",
+            "Fair value estimate of $325 is a single point without a sensitivity matrix"
+        ]
+    }
+}

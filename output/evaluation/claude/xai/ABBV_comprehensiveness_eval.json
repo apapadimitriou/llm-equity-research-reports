@@ -1,0 +1,71 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards despite having a proper structure. Critical deficiencies include: (1) Financials Snapshot contains virtually no historical data (marked 'Insufficient data' for all metrics 2022-2024), making trend analysis impossible; (2) Essential pharma KPIs are completely missing - no R&D spending ratios, pipeline value metrics, drug approval timelines, or patent expiration schedules; (3) Valuation section lacks explicit linkage between operating drivers and the $185 fair value, with generic DCF assumptions but no clear bridge from business fundamentals; (4) Multiple uncited key claims including '$18 billion annual free cash flow', specific peak sales projections for Skyrizi ($10B) and Rinvoq ($7B), and acquisition details; (5) Peer benchmarking is entirely absent despite being critical for pharma valuation; (6) Report date inconsistencies create confusion about data currency. While all major sections are present, the content is superficial with significant data gaps that render the analysis unreliable for investment decisions.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "R&D as % of Revenue",
+            "Pipeline Value",
+            "Patent Expiration Schedule",
+            "Drug Approval Timeline",
+            "Biosimilar Impact Analysis"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated 2025-05-12 but references Q2 2025 results 'expected' while sources show Q2 results already published",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "R&D as % of Revenue",
+            "Pipeline Value Metrics",
+            "Patent Cliff Analysis",
+            "Biosimilar Penetration Rates",
+            "Drug Launch Timelines"
+        ],
+        "uncited_claims": [
+            "Free cash flow of $18 billion annually",
+            "Skyrizi peak sales of $10 billion projection",
+            "Rinvoq peak sales of $7 billion projection",
+            "ImmunoGen acquisition details in 2024",
+            "Over 90 programs in pipeline",
+            "Combined Skyrizi/Rinvoq sales exceeding $15 billion by 2025"
+        ]
+    }
+}

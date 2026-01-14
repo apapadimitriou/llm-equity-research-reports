@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness is moderate: the report states core inputs (revenue CAGR, operating margin trajectory, WACC, tax rate, terminal growth) near the valuation and forecast sections, and provides a revenue/OM path in the table. Specificity is relatively solid with numeric ranges and time horizons (e.g., 2025\u20132029 CAGR, WACC ~9\u201310%, terminal growth ~2\u20133%). However, justification is weak-to-partial: revenue growth is loosely tied to \u201cmanagement\u2019s guidance,\u201d but WACC, tax rate, and terminal growth lack evidence (no cost-of-equity build, peer or macro references, or sources). Internal consistency suffers a material contradiction: the stated 15\u201318% revenue CAGR for 2025\u20132029 conflicts with the forecast table (8,000 \u2192 13,700), which implies ~14.4% CAGR. Sensitivity/stress testing is absent; while some parameters are given as ranges, there is no quantified sensitivity/scenario analysis showing valuation or forecast impacts. Given the contradiction and lack of true sensitivities, the assumptions fall short on consistency and stress-testing despite being partially explicit and specific.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue growing roughly 15\u201318% CAGR over 2025\u20132029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume operating income margins near 40\u201342%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Operating Margin (%) ... 2025E 41.0 | 2026E 40.0 | 2027E 39.0 | 2028E 38.5 | 2029E 38.0",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a weighted-average cost of capital (WACC) of ~9\u201310%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "U.S. tax rate ~18%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "terminal growth ~2\u20133%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Revenue ... 2025E 8,000 | 2026E 9,300 | 2027E 10,700 | 2028E 12,150 | 2029E 13,700",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Stated 15\u201318% revenue CAGR (2025\u20132029) conflicts with forecast table implying ~14.4% CAGR (8,000 \u2192 13,700).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital",
+            "WACC build (risk-free rate, beta, ERP)",
+            "depreciation/amortization trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC ~9\u201310% without source",
+            "terminal growth ~2\u20133% without source",
+            "U.S. tax rate ~18% without cited basis"
+        ]
+    }
+}

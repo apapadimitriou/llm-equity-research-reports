@@ -1,0 +1,95 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key modeling assumptions are mostly explicit and proximate to the forecasts they inform. Revenue growth (5\u20136% CAGR, FY2025\u201329), operating margin (27\u201329%), WACC (~9%), terminal growth (~2%), tax rate (~15%), share count (~174M), and gross margin (64\u201365%) are clearly stated with units and time horizons, and they reconcile with the Financials Snapshot, indicating clean internal consistency. However, justification is limited: the mid\u2011single\u2011digit growth and margin stability are largely tied to qualitative references (secular tailwinds, backlog improvement, Spirent contribution) without quantitative evidence such as multi\u2011year historical benchmarking, peer comparisons, or sourced parameter support (e.g., for WACC, tax rate, gross margin). Specificity is solid for the parameters listed, but capital intensity, working capital, and Spirent\u2019s explicit revenue/synergy contribution are not specified. Critically, there is no quantified sensitivity or scenario analysis on material drivers (revenue growth path, margins, discount rate, terminal growth, tax), triggering a hard cap at Fair per the rubric. Overall, assumptions are explicit and specific with clean reconciliation, but justification is weak and the absence of sensitivities prevents a higher grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "2025\u201329 revenue growing ~5\u20136% per year",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "stable operating margin around 27\u201329%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Gross margin is forecast near 64\u201365%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a WACC of ~9% and terminal growth ~2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth ~2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate ~15%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Share count ~174M",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "gross_margin",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital",
+            "Spirent contribution/synergies magnitude",
+            "segment-level growth drivers",
+            "FX assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC ~9% without source/benchmark",
+            "Terminal growth ~2% without macro/industry support",
+            "Tax rate ~15% without historical/forward basis",
+            "Gross margin 64\u201365% without historical/peer context"
+        ]
+    }
+}

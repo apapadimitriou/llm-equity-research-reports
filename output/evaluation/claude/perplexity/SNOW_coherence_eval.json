@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This equity research report suffers from numerous critical coherence issues that severely undermine its readability as a unified argument. The report contains multiple unresolved contradictions between narrative claims and financial data, particularly regarding growth rates where the text states Q4 FY2025 shows 28% growth while simultaneously claiming deceleration from 30% in Q2 FY2025, but earlier cites Q2 FY2025 at 29% growth. Temporal accuracy problems are pervasive, with the report dated February 27, 2025 but referencing Q4 FY2025 results as historical when Snowflake's fiscal year ends January 31. The Bulls/Bears section presents opposing viewpoints but fails to reconcile these tensions with the base-case valuation narrative. Multiple sections read as disconnected bullet dumps, particularly the Business Description and ESG Risk sections, lacking smooth transitions between ideas. The fair value methodology section jumps abruptly between valuation approaches without explaining the logical connections. Financial projections in the snapshot table appear disconnected from the narrative assumptions, and several key terms like 'consumption-based model' are used inconsistently throughout. The report requires readers to independently piece together the investment argument rather than presenting a coherent analytical framework.",
+    "evidence": [
+        "Revenue growth contradiction: 'Q4 FY2025 product revenue... 28% year-over-year growth, though this marks a deceleration from the 30% growth achieved in Q2 FY2025' vs earlier statement 'Q2 FY2025 results showing revenue of $868.8M, 29% YoY growth' (Analyst Note)",
+        "Temporal inaccuracy: Report dated 2025-02-27 treats Q4 FY2025 results as historical when fiscal year ends January 31, creating timeline confusion throughout (Cover Block/Analyst Note)",
+        "Disconnected sections: Business Description jumps from architecture to customer count to revenue model without transitions, reading like isolated facts rather than coherent explanation (Business Description)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

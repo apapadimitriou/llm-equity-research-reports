@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report has a clear structure and generally smooth narrative flow from results to strategy, moat, valuation, and risks. Terms are used consistently (e.g., medical loss ratio, operating margin), and several sections reference shared assumptions (e.g., margins normalizing at 8.5\u20139% echoed in both Outlook and Fair Value). However, multiple internal inconsistencies undermine coherence. Most notably, the EPS trajectory in the Fair Value section (\u201cscaling to $40.00 by 2029\u201d) conflicts with the Financials Snapshot (2029 EPS 37.0) and the 2026 EPS bridge ($28.50) conflicts with the table (29.8). The implied multiple statement (\u201c$650 \u2026 implying 20x 2026 EPS\u201d) also misaligns with both EPS paths and the table, yielding a different implied value. Furthermore, the 2025 revenue forecast in the table ($420B) exceeds the raised guidance ($400\u2013405B) presented in the Analyst Note without explanation. Temporal/source alignment issues add noise: a cited fund update dated 2025-08-08 appears after the report date (2025-07-24), and source [1] lists a July 16, 2025 UHG item but links to a different site/date, weakening citation coherence. Despite these issues, the section-to-section logic is mostly clear, and risk factors broadly tie back to the operating margin discussion. Given the unaddressed contradictions and time misalignments, the report is capped at fair per the rubric.",
+    "evidence": [
+        "Fair Value vs Financials Snapshot: EPS bridge to $28.50 in 2026 and $40.00 by 2029 conflicts with table showing 29.8 (2026) and 37.0 (2029).",
+        "Analyst Note guidance vs table: 2025 revenue guidance $400\u2013405B vs Financials Snapshot 2025 forecast $420.0B with no reconciliation.",
+        "Temporal mismatch: Source [4] dated 2025-08-08 (fund update) cited in a report dated 2025-07-24; Source [1] date/publisher vs URL/date inconsistency."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

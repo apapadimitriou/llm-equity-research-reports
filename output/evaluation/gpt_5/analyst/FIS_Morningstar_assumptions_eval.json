@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key modeling inputs are explicit and proximal to the forecasts: revenue CAGR, margin trajectory, cost of equity, tax rate, Stage II parameters, and share count are all clearly stated in the Fair Value and model summary sections. Specificity is generally solid, with magnitudes, units, and horizons (for example, \u201c4% revenue CAGR over the next five years,\u201d \u201c40 bps per year\u201d margin improvement, \u201cPerpetuity Year 15,\u201d and exact percentages for COE/WACC/tax). Internal consistency is clean; figures in the narrative reconcile to tables (e.g., $88 fair value \u2248 15.2x 2025 adjusted EPS; adjusted EBITDA margin path matches model). Justification is partial: the report ties assumptions to segment mix, observed organic growth, and business stability, but provides limited quantitative evidence from multi-year history or peers and no cited external sources for COE/WACC or margin progression. Critically, there is no quantified sensitivity or scenario analysis for material drivers (revenue, margins, COE/WACC, terminal dynamics, share count). By the stated hard caps, the absence of sensitivities limits the grade to Fair despite otherwise clear and coherent inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "We still project only a 4% revenue CAGR over the next five years for the company as a whole.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect adjusted EBITDA margins to improve at an average annual rate of 40 basis points through our projection period.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a cost of equity of 7.5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "4"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Stage II Investment Rate % 15.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Perpetuity Year 15",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 604 591 555 528 508 485 473 454",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "capex",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity 7.5% without source",
+            "WACC 7.1% without source"
+        ]
+    }
+}

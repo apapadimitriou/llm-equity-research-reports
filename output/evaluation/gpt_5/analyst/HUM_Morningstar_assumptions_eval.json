@@ -1,0 +1,125 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are relatively explicit and proximal, especially in the Valuation Model Summary and Key Valuation Drivers (COE, WACC, tax rate, Stage II parameters, shares). Specificity is solid for units and horizons (multi-year revenue/EPS growth, margin trajectory, perpetuity year). However, justification is weak: key parameters (WACC 8.2%, COE 9.0%, long-run tax 25%) are not tied to market data, peers, or sources, and revenue/margin recovery lacks quantitative linkage to historical or peer benchmarks. Internal consistency has a notable issue: EBITDA figures conflict between tables (2027 EBITDA -4,299 vs \u201cForecast Revisions\u201d EBITDA 3,903, which matches Adjusted EBITDA), indicating an unresolved labeling/numeric mismatch. Sensitivity analysis is present only qualitatively/partially: a single bull-case scenario (EPS CAGR ~23%, >$550 fair value) is cited, but there are no quantified ranges across multiple material drivers (WACC, margins, shares, tax) or valuation impacts. Overall, explicitness and specificity are decent, but limited justification, an internal contradiction, and minimal sensitivity keep the assessment at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.2",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 25.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 4.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Stage II Investment Rate % 30.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Perpetuity Year 15",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 121 121 121 121",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "we expect high-single-digit revenue growth and midteens adjusted EPS growth on a compound annual basis in our base-case scenario.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect operating margins to return to more normal levels by the end of its five-year forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "adjusted EPS growth could accelerate to roughly 23% on a compound annual basis, and our bull-case fair value estimate would exceed $550 per share.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2027 EBITDA shown as -4,299 in the main table vs 3,903 in Forecast Revisions (which matches Adjusted EBITDA), indicating mislabeled or conflicting EBITDA figures.",
+                "locations": [
+                    "Morningstar Valuation Model Summary (EBITDA table), page 14",
+                    "Forecast Revisions (EBITDA line), page 15"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "terminal_growth_rate (explicit g not provided beyond Stage II formulation)",
+            "driver-level sensitivity ranges (margins, WACC, tax, share count)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.2% without source",
+            "Cost of Equity 9.0% without source",
+            "Long-Run Tax Rate 25.0% without source",
+            "Stage II EBI Growth Rate 4.0% without source",
+            "Stage II Investment Rate 30.0% without source"
+        ]
+    }
+}

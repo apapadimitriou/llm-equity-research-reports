@@ -1,0 +1,96 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from pervasive opacity and multiple contradictions that undermine assumption quality. Key valuation drivers lack justification - the 10% revenue CAGR, 12% terminal operating margin, and 8% WACC are stated without supporting evidence from history, peers, or sources. Critical contradictions include claiming Q2 2025 guidance while reporting from June 2027, AWS growth rates that conflict between sections (17% vs 15%), and inconsistent revenue forecasts. The financial table shows 'insufficient data' for 2024 actuals yet projects precise future figures. Most assumptions appear in a brief appendix table rather than being explicit near the forecasts they drive. No sensitivity analysis exists for any material drivers. While some assumptions have units and timeframes, the lack of justification, internal contradictions, and missing sensitivities result in a black-box model that fails basic quality standards.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast revenue CAGR of 10% from FY 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 8.5% in FY 2025 to 12% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.0%, incorporating a 6% risk-free rate, 5% equity risk premium, and beta of 1.2",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "driven by 8% growth in e-commerce and 15% in AWS",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report dated June 2027 but discusses Q2 2025 guidance and Q1 2025 results as recent events",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "AWS growth stated as both 17% (Q1 2025 actual) and 15% (forecast assumption) without reconciliation",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Revenue forecast methodology unclear with 'insufficient data' for 2024 baseline yet precise future projections",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% without source",
+            "10% revenue CAGR without historical justification",
+            "12% terminal margin without peer benchmarks",
+            "4% terminal growth without rationale"
+        ]
+    }
+}

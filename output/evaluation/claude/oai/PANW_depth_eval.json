@@ -1,0 +1,28 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some causal mechanisms but lacks analytical rigor. Causal explanations include \"revenue grew 14% to $2.26B\" driven by \"AI-driven threats, cloud migration\" and \"Next-Gen Security ARR reached $4.8B\" due to \"strong renewal of subscription contracts.\" The valuation contains explicit assumptions: \"WACC \u22489%\" and \"terminal growth at 2.5%\" with \"revenue grows at ~15% in FY2025.\" However, these assumptions are not benchmarked against industry standards or peers. The report mentions \"operating margin climbing to ~15% by 2029\" but provides no sensitivity analysis or alternative scenarios. Risk factors are listed descriptively without quantified impact. The CyberArk acquisition criticism (\"1% projected ROI\") shows some analytical depth, but overall the report reads more like a summary with shallow causal links rather than rigorous analysis with stress-tested assumptions and decision-relevant implications.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "platform strategy \u2192 switching costs mechanism not quantified",
+            "subscription mix \u2192 margin improvement pathway unclear"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 2.5% with no industry benchmark",
+            "WACC ~9% components not validated against peers",
+            "operating margin to 15% by 2029 without justification"
+        ],
+        "lack_of_sensitivity": [
+            "no sensitivity analysis on key assumptions",
+            "fair value $180 with no range or scenarios",
+            "revenue growth assumptions not stress-tested"
+        ]
+    }
+}

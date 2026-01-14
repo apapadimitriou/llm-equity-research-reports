@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections: cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation & profit drivers, risk, capital allocation, financials snapshot, ESG, appendix, and sources. Valuation is reasonably explicit, with a DCF framework tied to operating drivers (loan and fee growth, margin trajectory) and an EPS bridge. Risks and capital allocation are addressed with sector-relevant context (Basel III/SCB, dividend/buybacks). However, comprehensiveness is constrained by a generic Financials Snapshot that omits core bank KPIs (NIM/NII, provisions/credit costs, CET1/other capital ratios, efficiency ratio, NCO/NPLs, loans/deposits growth), triggering a hard cap at Fair. Evidence integration is inconsistent: the Sustainalytics ESG score is \u201cinferred\u201d without a source, and claims like >90% customer retention and ~$300B AUA rely on a dated 2023 link or lack clear citations. Peer benchmarking is minimal (one mention of U.S. Bancorp) and no scenario/sensitivity analysis is provided. There is mild redundancy with repeated references to the stress capital buffer and dividend across sections without added depth. These gaps reduce sector specificity and the robustness of the evidence base, limiting overall comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Loan Loss Provisions",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Net Charge-Offs/NPLs",
+            "Loans & Deposits Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM",
+            "Provisions",
+            "CET1"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating of 18.2 and peer average of 20.5 stated as inferred with no direct source link",
+            "Customer retention rate above 90% in retail segments (no clear citation support)",
+            "Assets under administration over $300B as of 2024 filings cited to a 2023 source without specific evidence"
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are largely explicit and proximate to the forecasts: the report states WACC (8.4%), terminal growth (3.0%), long-term margin (35%), segment CAGRs (Search 7%, Cloud 28%), and near-term growth ranges (Search 6\u20138%, YouTube 10\u201312%, Cloud 25\u201330% to 2027) with units and horizons. Specificity is solid. However, justification is weak: major valuation parameters (WACC, terminal growth, margin trajectory) lack support from historical data, peer benchmarks, or cited sources, and the segment growth rates are not tied to market share/industry context. Internal consistency appears clean; numbers reconcile across narrative and the financial table. Sensitivity analysis is mentioned only at the fair value level ($185\u2013$235) without quantified drivers (e.g., how revenue growth, margins, or WACC shifts move valuation), limiting stress-testing quality. Several material drivers are missing or opaque, notably tax rate, share count/buybacks, working capital, D&A, and capex trajectory beyond the single 2025 figure. Given weak justification and limited, non-robust sensitivities, the assumptions quality meets the Fair standard rather than Good.",
+    "assumptions_extracted": [
+        {
+            "quote": "Terminal Growth Rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "WACC: 8.4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-term Operating Margin: 35%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Search Revenue CAGR (2025-29): 7%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Cloud Revenue CAGR (2025-29): 28%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to stabilize around 32-34% as AI investments mature",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model Search revenues growing at 6-8% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "YouTube advertising growth of 10-12% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "revenue projected to expand 25-30% annually through 2027 ... Cloud operating margins reaching 25% by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "The company's $75 billion capital expenditure commitment for 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "working_capital",
+            "depreciation_amortization",
+            "capex beyond 2025"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.4% without source",
+            "Terminal growth 3% without source",
+            "Long-term operating margin 35% without external/peer support"
+        ]
+    }
+}

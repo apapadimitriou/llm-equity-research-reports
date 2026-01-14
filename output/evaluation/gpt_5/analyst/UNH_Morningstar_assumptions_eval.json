@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are relatively explicit and proximate to the forecasts: the report states multi-year revenue/EPS growth through 2029, a 2025 EPS drawdown, a modeled $20 billion cash outflow, and key DCF parameters (WACC/COE, tax rate, Stage II inputs). Specificity is solid: magnitudes, units, and time horizons are provided (e.g., \u201cThrough 2029\u2026 revenue grows 7%,\u201d \u201c17% drop in adjusted EPS,\u201d \u201cWACC 8.3%\u201d). Internal consistency between narrative and the forecast table is generally clean (e.g., the -17% adjusted EPS is reflected; share count declines via repurchases). However, justification is only partial: growth and margin expectations are framed against management targets and qualitative regulatory context, but lack deeper evidence benchmarking to multi-year history/peers beyond the included table, and key valuation parameters (COE/WACC, Stage II rates) are not sourced. Critically, there is no quantified sensitivity/scenario analysis on material drivers (MA margins/utilization, regulatory outcomes, WACC/terminal), which hard-caps the grade. Some drivers (segment-level margin paths, capex/working capital mechanics, explicit terminal growth rate) are opaque. Overall, explicit and specific inputs with reasonable internal coherence, but weak evidence and no sensitivity work lead to a Fair rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "Through 2029, we assume revenue grows 7% and adjusted earnings per share grow 8% compounded annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "which includes a 17% drop in its adjusted EPS",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "we have already included a potential $20 billion cash outflow in our model and lower Medicare Advantage margins than historical norms",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "ongoing regulatory concerns... represent a mid-single-digit percentage headwind to ongoing profits on a probability-adjusted basis",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Cost of Equity % 9.0 ... Weighted Average Cost of Capital % 8.3",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 21.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 5.0 ... Stage II Investment Rate % 30.0 ... Perpetuity Year 15",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) ... 915 899 881 863 846",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "tax_rate",
+            "terminal_growth",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "segment-level margin trajectory quantification",
+            "capex",
+            "working_capital",
+            "explicit terminal growth rate (only Stage II parameters provided)",
+            "sensitivity/scenario analysis"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.3% without source",
+            "COE 9% without source",
+            "Stage II EBI growth 5% without support",
+            "Stage II investment rate 30% without support",
+            "Perpetuity Year 15 without rationale",
+            "$20 billion clawback magnitude lacks external sourcing/probability",
+            "mid-single-digit profit headwind probability-weighting not sourced"
+        ]
+    }
+}

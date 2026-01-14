@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is well-structured and professional, providing a clear narrative arc from the strong Q1 2025 performance to a long-term valuation. However, it suffers from significant quantitative contradictions that trigger a hard cap at the 'fair' level. Specifically, there is a terminology and mathematical mismatch regarding valuation multiples. The 'Bulls Say' section identifies a 27.85x 'trailing' P/E ratio. Based on the provided price of $769.30, this implies trailing earnings of $27.62. This contradicts the 'Financials Snapshot' table, which lists 2024A EPS at $23.73 and 2025E EPS at $27.50. It is logically inconsistent for trailing earnings to exceed forward estimates in this growth context; the 27.85x figure clearly refers to the forward 2025 estimate ($769.30 / $27.50 = 27.97x), making the 'trailing' label a material error. Furthermore, the report contains a contradiction regarding capital expenditure. The 'Analyst Note' and 'Bears Say' sections correctly cite management's 2025 guidance of $64-72 billion. However, the 'Capital Allocation' section claims capex is 'approximately 40% of projected revenue.' When applied to the table\u2019s $185.2 billion revenue projection, this results in $74.1 billion, which is $2.1 billion above the high end of the cited guidance. Finally, the report notes a 41% operating margin in Q1 but projects a full-year margin of 38.5% without explicitly detailing the drivers of the implied H2 margin compression.",
+    "evidence": [
+        "\"Valuation appears reasonable at 27.85x trailing earnings\" (Bulls Say) vs 2024A EPS of $23.73 and 2025E EPS of $27.50 (Financials Snapshot)",
+        "\"2025 capital expenditure guidance to $64-72 billion\" (Analyst Note) vs capex being \"approximately 40% of projected revenue\" ($74.1B based on table) (Capital Allocation)",
+        "\"operating margins expanding to 41% in Q1 2025\" (Analyst Note) vs \"2025E Op Margin % [of] 38.5%\" (Financials Snapshot)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

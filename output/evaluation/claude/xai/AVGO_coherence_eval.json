@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates reasonable overall structure but suffers from several significant issues that prevent a higher grade. While the narrative arc from analysis to valuation is generally coherent, there are notable contradictions between sections that remain unaddressed. The Bulls/Bears section claims strong Q3 guidance signals sustained demand, yet the Bears section raises valid concerns about margin compression and valuation that aren't reconciled with the base-case fair value narrative. Additionally, the operating margin assumptions show inconsistency - the text states margins will expand from 35% to 38% by 2029, but the financials table shows 2024 actual margins at 36%, creating a contradiction about the starting point. The EPS bridge calculation appears flawed, starting from $4.80 and adding components totaling $1.40 but concluding at $6.20 rather than $6.20. Temporal claims are generally accurate, though some forward-looking statements lack precision. The report reads coherently in most sections but fails to address these internal contradictions, requiring readers to reconcile conflicting information themselves.",
+    "evidence": [
+        "Operating margin contradiction: Text claims 'expand from 35% in 2025 to 38% by 2029' while Financials table shows 2024 actual at 36% (Fair Value vs Financials sections)",
+        "EPS bridge math error: Claims starting from $4.80, adding $1.20 + $0.50 - $0.30 should equal $6.20 but the arithmetic is inconsistent (Fair Value section)",
+        "Unreconciled Bulls/Bears: Bulls emphasize strong guidance while Bears cite margin compression and high valuation, but base-case narrative doesn't address these tensions"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

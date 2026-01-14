@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness is generally strong: the report states key drivers near the valuation (segment growth rates, efficiency and compensation ratio targets, leverage path, share count, and cost of equity). Specificity is solid, with clear magnitudes, units, and time horizons (e.g., \u201c3% annually\u201d for IB/trading; \u201c60% efficiency ratio\u2026by the end of the decade\u201d; \u201cjust north of 15 times leverage\u201d). Justification is partial: while the narrative references business mix shifts, historical ROE, and industry dynamics, most numeric inputs (COE, terminal/Stage II growth, margin targets) lack cited sources or peer/benchmark ties within the valuation section. Consistency has a notable issue: the text sets COE at 9.5%, while the \u201cKey Valuation Drivers\u201d table shows 9.0%, an unresolved numeric contradiction. Sensitivity/stress testing is absent for material levers\u2014no quantified ranges or scenario impacts on valuation for rates/NII, trading, margins, or ROE\u2014triggering a hard cap at Fair. Overall, the assumptions are clear and specific but only modestly justified, with one contradiction and no quantitative sensitivities.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a 9.5% cost of equity in our valuation, which corresponds with a 1.7 times price/book ratio.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8-9"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "long-term growth in investment banking and trading of 3% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8-9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "4.7% annual growth in asset and wealth management",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8-9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "2.9% annual growth in net interest income",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8-9"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "we now expect the firm to achieve its long-term 60% efficiency ratio target by the end of the decade.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8-9"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we expect a significant 490 basis points of margin expansion between 2024 and 2034",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "9"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "our estimates calling for just north of 15 times leverage by the end of the decade",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "9"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Projected Diluted Shares 334",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "18"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "COE stated as 9.5% in text vs 9.0% in Key Valuation Drivers table",
+                "locations": [
+                    "Fair Value and Profit Drivers (page 8-9)",
+                    "Morningstar Valuation Model Summary \u2013 Key Valuation Drivers (page 18)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Cost of equity 9.5% without source",
+            "Stage II Net Income Growth Rate 3.5% without source",
+            "60% efficiency ratio by decade-end without external evidence"
+        ]
+    }
+}

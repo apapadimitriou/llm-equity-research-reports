@@ -1,0 +1,92 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are explicit and proximate to valuation: the report clearly lists WACC (10.3%), terminal growth (3.0%), a 5-year revenue CAGR (9.5%), and a terminal operating margin (15.0%), plus segment margin expectations for AWS and a 2025 capex figure. Specificity is solid: magnitudes, units, and horizons are provided for the main DCF inputs and profit drivers. Justification is partial: revenue CAGR is tied to consensus and margin expansion is linked to mix shift and retail efficiency, but WACC and terminal growth lack evidence and peer/market citations; terminal margin is asserted without quantified historical/peer support. Internal consistency appears acceptable; figures in the valuation section reconcile conceptually with the snapshot table, with only minor ambiguity around \u201ccurrent\u201d operating margin. However, there is no quantified sensitivity/scenario analysis for material levers (WACC, terminal growth, margins, AWS growth), invoking the hard cap to Fair. Coverage of material drivers is incomplete: tax rate, share count, working capital, and longer-term capex trajectory are absent. Overall, explicit and specific inputs but weakly justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "A Weighted Average Cost of Capital (WACC) of 10.3% is utilized",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers (Fair Value and DCF Assumptions table)",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We model a 5-year revenue compound annual growth rate (CAGR) of approximately 9.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecast to expand toward the mid-teens over the next decade, up from the current level of approximately 11.4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Operating Margin 15.0%",
+            "location": {
+                "section": "Fair Value and Profit Drivers (Fair Value and DCF Assumptions table)",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital expenditures are projected to exceed $100 billion in 2025",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "AWS remains the principal driver of corporate profitability... operating margins sustained above 30% are critical",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "capex"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "working_capital",
+            "stock_based_comp",
+            "long_term_capex_trajectory"
+        ],
+        "unjustified_parameters": [
+            "WACC 10.3% without source",
+            "Terminal growth rate 3.0% without support",
+            "Terminal operating margin 15.0% without peer/history linkage"
+        ]
+    }
+}

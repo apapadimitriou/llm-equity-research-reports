@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally descriptive with minimal analytical depth. While it contains some causal statements like \"revenue of $142 million, beating analyst expectations\" and \"Cost reduction initiatives totaling $1.4-1.7 billion,\" these lack meaningful mechanistic explanation. The DCF valuation mentions \"WACC assumption of 11.5%\" and \"Terminal growth rate: 3.0%\" but provides no benchmarking, derivation, or sensitivity analysis around these critical assumptions. The report states \"EPS progression assumes losses continuing through 2025-2026\" without explaining the underlying drivers or testing alternative scenarios. Most concerning, the financial projections show dramatic swings (operating margins from -150% to +28.9%) with no quantified sensitivity analysis or stress testing. The \"fair value estimate of $42.00\" lacks any scenario analysis or range despite acknowledging \"very high uncertainty.\" Counterpoints are mentioned generically in Bulls/Bears but not quantified or integrated into valuation. The analysis reads more like a comprehensive summary than rigorous analytical assessment.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "No explanation how $1.4-1.7B cost cuts translate to margin recovery",
+            "Pipeline success rates stated without derivation methodology",
+            "Market share gains \u2192 revenue impact not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC 11.5% with no peer benchmarking",
+            "Terminal growth 3.0% without industry justification",
+            "Peak operating margin 30% assumption unexplained"
+        ],
+        "lack_of_sensitivity": [
+            "Fair value $42 with no range despite 'very high uncertainty'",
+            "No scenario analysis for pipeline failures",
+            "Fixed financial projections without stress testing"
+        ]
+    }
+}

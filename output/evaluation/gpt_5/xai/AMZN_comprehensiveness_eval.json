@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover block, contents, analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, sources). Valuation assumptions are explicit with segment growth, margin trajectory, WACC, and an EPS bridge, linking operating drivers to value. However, the Financials Snapshot is generic, omits core sector KPIs for internet retail/cloud, and leaves 2024 actuals as \u201cinsufficient data,\u201d undermining completeness. Evidence integration is inconsistent: several material claims rely on unspecified social media posts or mismatched/outdated sources, and multiple statements are flagged as \u201cinsufficient data.\u201d Peer benchmarking and scenario/sensitivity analysis are absent. Redundancy appears where AWS growth deceleration and regulatory/tariff risks recur across Analyst Note, Strategy, Bears, and Risk without added depth. The cover block lacks basic reference metrics (price, market cap), further detracting from comprehensiveness. Given \u22652 missing core KPIs in the snapshot and sourcing issues, the report earns a Fair grade despite solid section coverage and a coherent valuation link.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "AWS revenue growth (Q1: $29.3B, +17%)",
+            "AWS operating margin (Q1: 39%)",
+            "Advertising revenue growth (+18% Q1)",
+            "Prime subscribers (~200M mentioned)"
+        ],
+        "sector_kpis_missing": [
+            "GMV/Order Units",
+            "Prime subscriber growth (time series)",
+            "Segment mix (1P vs 3P, take rate)",
+            "Advertising revenue (multi-year time series)",
+            "AWS revenue/margin (multi-year time series)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "GMV/Order Units",
+            "Prime subscriber growth",
+            "Segment mix (1P vs 3P, take rate)",
+            "Advertising revenue time series",
+            "AWS revenue/margin time series"
+        ],
+        "uncited_claims": [
+            "AWS dominates cloud with 31% market share [insufficient data]",
+            "Prime members spend twice as much as non-members [5]",
+            "Over 200 million Prime subscribers [5]",
+            "Debt-to-equity of 0.3 and $80B cash as of Q1 2025 [insufficient data for exact]",
+            "Tariff impacts noted in Q1 earnings cited to Amazon IR page updated 2018-10-25 [6]",
+            "EPS beat details sourced to unspecified X posts [2]"
+        ]
+    }
+}

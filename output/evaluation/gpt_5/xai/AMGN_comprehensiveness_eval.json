@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most headline sections: cover block, contents, analyst note, business description, strategy & outlook, bulls/bears, moat, valuation, risk, capital allocation, financials snapshot, ESG, appendix, and sources. Valuation includes explicit assumptions (revenue CAGR, margins, WACC, terminal growth) and links drivers to the fair value, but depth is limited. Evidence is partially integrated with citations throughout the Analyst Note and valuation rationale, yet several material claims are uncited and there is a timing mismatch between the report date and cited Q2 sources. The Financials Snapshot lacks multi-year actuals (2022\u20132024 omitted) and omits core biopharma KPIs (pipeline/trial milestones, product-level sales, R&D intensity), which constrains comprehensiveness. Peer benchmarking and scenario/sensitivity analysis are absent. ESG and capital allocation are addressed but remain thin (no balance sheet metrics, ESG scores). Redundancy appears as the Q2 beat is repeated in Analyst Note, Bulls, and Moat with limited added depth. Given the missing sector KPIs, weak historical financials, lack of peer/scenario analysis, and inconsistent sourcing, the report meets the structure but cannot exceed Fair under the decision rules.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Detailed Financial History (actuals)"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline/Trial Milestones",
+            "Product-Level Sales Breakdown",
+            "R&D as % of Sales",
+            "Regulatory/PDUFA Calendar"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date (2025-07-02) predates and conflicts with reliance on Q2 2025 sources dated Aug 5\u20139, 2025",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            },
+            {
+                "description": "Source [5] is Q1 2025 results but is cited alongside Q2 performance discussion",
+                "locations": [
+                    "Analyst Note",
+                    "Business Description",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Pipeline/Trial Milestones",
+            "Product-Level Sales Breakdown",
+            "R&D as % of Sales",
+            "Regulatory/PDUFA Calendar"
+        ],
+        "uncited_claims": [
+            "Financial health score of 2.95 indicating stability",
+            "Reference to Horizon Therapeutics acquisition enhancing rare disease focus",
+            "Mention of MariTide obesity program as a growth driver"
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This is a well-structured report with a complete cover block and contents, clear Analyst Notes, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, ESG, and a detailed multi-year Financials Snapshot. The valuation section explicitly ties operating drivers (product peak sales, LOEs, IRA impacts, PoS for maridebart cafraglutide) to the fair value via a DCF with stated WACC, tax, share count, and PV by stage, which is a strong linkage. Peer context is included with competitor comparisons. Evidence is consistently dated and internally sourced, and sector context is discussed throughout. However, the Financials Snapshot lacks key biopharma-specific KPI tables (e.g., product-level revenue forecasts, pipeline/milestone table, R&D as % of sales), which triggers the KPI hard cap. Scenario/sensitivity analysis is not shown in-report. There are minor internal inconsistencies (e.g., long-run tax rate 16% in text vs 17% in the DCF table; Otezla LOE 2028 vs 2029 elsewhere). Despite these gaps, redundancy is limited and most core sections have reasonable depth, with product and pipeline drivers woven into valuation and risk. The missing snapshot KPIs and absence of scenarios cap the grade at Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Competitors/Peer Benchmarking",
+            "Appendix/Methodology & Disclosures"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Product-level Financials/KPI Table"
+        ],
+        "sector_kpis_present": [
+            "Peak sales estimates by key assets (Repatha, Tezspire, Prolia/Xgeva, Evenity, maridebart cafraglutide)",
+            "Pipeline phase/timelines (phase 2/3 data timing)",
+            "Probability of approval (maridebart cafraglutide 60%)",
+            "Patent cliff timing (Prolia/Xgeva 2025; Enbrel; Otezla)"
+        ],
+        "sector_kpis_missing": [
+            "Product-level revenue breakdown in Financials Snapshot",
+            "Pipeline/milestone table in Financials Snapshot",
+            "R&D as % of sales in Financials Snapshot"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Long-run tax rate assumption differs: 16% beyond 2024 in Valuation text vs 17% in Key Valuation Drivers table.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Morningstar Valuation Model Summary (Key Valuation Drivers)"
+                ]
+            },
+            {
+                "description": "Otezla LOE timing cited as 2028 in one section vs 2029 modeled elsewhere.",
+                "locations": [
+                    "Economic Moat",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product revenue by drug (historical/forecast) in snapshot",
+            "Pipeline/milestone table with timelines in snapshot",
+            "R&D expense as % of sales in snapshot"
+        ],
+        "uncited_claims": [
+            "Approximately three fourths of sales from the US market (no external source cited)",
+            "Nearly $50 billion net debt at end of 2024 (no explicit source cited)"
+        ]
+    }
+}

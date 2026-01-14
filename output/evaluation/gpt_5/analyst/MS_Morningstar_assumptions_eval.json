@@ -1,0 +1,105 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are generally explicit and proximal to the forecasts they drive, with clear magnitudes and horizons (e.g., five-year CAGRs for net revenue, AUM, and NII; a stated cost of equity; Stage II parameters and share count). Specificity is solid: units, percentages, and timeframes are provided, and many figures reconcile to the model tables (e.g., NII path and net revenue growth). Justification is partial: the report references historical trading over-earning, management targets, and business mix, but offers limited benchmarking against peers and few cited sources for key parameters like COE 9% or Stage II growth 3.5%. Internal consistency shows a notable issue: \u201cacross-a-cycle operating margins of around 26%\u201d conflicts with the forecast efficiency/margin path that implies closer to ~29% in most explicit years. Critically, there is no quantified sensitivity or scenario analysis on material drivers (rates/NII, trading normalization, margins, capital rules), triggering the Fair cap under the hard rules. Overall, the assumptions are explicit and specific, with partial justification and one contradiction, but lack stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project a net revenue compound annual growth rate of over 2.5% during the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast assets under management growing at a 6%-8% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We have net interest income growing at a 8% compound annualized growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We expect investment banking revenue to grow at a 2.5% compound annual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model across-a-cycle operating margins of around 26%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Last, we use a cost of equity of 9% in our discounted cash flow model.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II Net Income Growth Rate % 3.5",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 1,607",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states \"across-a-cycle operating margins of around 26%\" while model tables imply ~28\u201329% operating margin in most forecast years (consistent with efficiency ratio ~71% vs <70%).",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.8)",
+                    "Morningstar Valuation Model Summary tables (p.15\u201316)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "terminal_growth (perpetuity growth rate)"
+        ],
+        "unjustified_parameters": [
+            "cost of equity 9% without source",
+            "Stage II net income growth 3.5% without source"
+        ]
+    }
+}

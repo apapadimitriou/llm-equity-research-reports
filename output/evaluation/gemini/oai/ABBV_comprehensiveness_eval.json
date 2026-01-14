@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all mandatory sections and provides a clear narrative regarding AbbVie's transition from Humira to its newer immunology platform. However, it fails to meet the 'Good' or 'Excellent' criteria due to several structural omissions and technical gaps. Most notably, the Financials Snapshot is generic; while it includes standard financial metrics, it omits the sector-specific KPI forecasts (e.g., multi-year revenue projections for Skyrizi, Rinvoq, and Humira or pipeline probability-adjusted values) required for biopharma research. Furthermore, there is no peer benchmarking or scenario/sensitivity analysis, which are essential for evaluating a company facing significant patent-cliff uncertainty. The report also suffers from significant redundancy, repeating the same Q2 2025 sales figures across the Analyst Note, Strategy, and Bulls/Bears sections without adding incremental depth or analysis in those subsequent mentions. While the valuation is linked to operating drivers, the lack of industry context and sensitivity modeling, combined with the generic financial table, triggers hard caps that limit the grade to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "FCF",
+            "Operating Margin"
+        ],
+        "sector_kpis_missing": [
+            "Drug-specific revenue forecasts (Skyrizi/Rinvoq/Humira)",
+            "Pipeline trial phase tracking",
+            "R&D-to-Sales ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Multi-year drug-level revenue forecasts in the Financials Snapshot",
+            "Pipeline/trial data milestones in the Financials Snapshot"
+        ],
+        "uncited_claims": []
+    }
+}

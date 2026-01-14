@@ -1,0 +1,26 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some analytical depth with causal explanations and quantified assumptions but falls short of comprehensive analysis. Causal reasoning appears in statements like \"driven by strong demand in electronic design automation\" and \"High switching costs lock in users, as migrating to alternatives requires significant retraining.\" The DCF model provides explicit assumptions: \"WACC of 8.5%,\" \"10% revenue CAGR through 2029,\" and \"operating margins expanding to 32%.\" However, these assumptions lack benchmarking or sensitivity analysis. The report mentions \"valuation sensitivity of \u00b120% to revenue assumptions\" but provides no quantified scenarios. Risk factors are identified (\"semiconductor cycle downturns, potentially reducing chip design spending by 10-15%\") but not integrated into valuation scenarios. While implications exist (\"fairly valued with upside from AI-driven demand\"), they remain generic without conditional decision frameworks.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "margin expansion from 28% to 32% lacks operational drivers",
+            "10% revenue CAGR not tied to specific customer segments"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 4% with no industry benchmark",
+            "WACC 8.5% components not validated against peers"
+        ],
+        "lack_of_sensitivity": [
+            "no quantified scenarios for semiconductor downturn",
+            "\u00b120% sensitivity mentioned but not calculated"
+        ]
+    }
+}

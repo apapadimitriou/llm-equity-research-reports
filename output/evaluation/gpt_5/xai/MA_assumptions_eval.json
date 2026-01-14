@@ -1,0 +1,105 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely explicit and specific (clear revenue CAGR, margin path, WACC inputs, terminal growth, and an EPS bridge), and they are proximal to the valuation section. However, justification is weak/partial\u2014claims rely on recent quarterly trends and general references without multi-year evidence or peer benchmarks. Internal consistency suffers from multiple numeric contradictions: 2026 EPS is stated as $15.90 in text versus $17.2 in the table; forward P/E is cited as 32x in one place and 33x in another; margin target is 58% by 2029 in text versus 58.5% in the table. Sensitivity/scenario analysis is absent for material drivers (revenue growth, margins, WACC, terminal growth), with only qualitative risk discussion; this violates the stress-testing pillar. Key drivers like share count, tax rate trajectory, and capex/working capital assumptions are missing or opaque relative to the FCF forecasts. Given the contradictions and lack of quantified sensitivities, the assumptions quality falls to Poor under the stated decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project revenue CAGR of 12% from 2025 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "driven by 10% annual growth in gross dollar volume and 15% in value-added services",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 56% in 2024 to 58% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.0",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate is 4%, implying a 2029 exit multiple of 25x.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: Starting from 2024 EPS of $13.50, we add $1.50 from revenue growth, $0.90 from margin expansion, subtract $0.50 for higher taxes and expenses, yielding 2025 EPS of $15.40",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2026 EPS forecast stated as $15.90 vs $17.2 in the Financials Snapshot",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Forward P/E implied as 32x vs 33x elsewhere for the same fair value",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Margin target: 58% by 2029 in text vs 58.5% in the table",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "cost_of_debt/leverage weights in WACC"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without sourced inputs beyond generic market references",
+            "Terminal growth 4% tied to GDP+inflation without citation",
+            "Gross dollar volume +10% and value-added services +15% growth without robust evidence"
+        ]
+    }
+}

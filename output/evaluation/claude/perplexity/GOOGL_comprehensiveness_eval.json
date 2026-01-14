@@ -1,0 +1,64 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards for equity research. While it includes many expected section headings, the content lacks depth and analytical rigor throughout. The Financials Snapshot completely omits sector-specific KPIs for technology companies (no metrics like DAU/MAU, RPU, TAC rates, or ad load). The valuation section provides a price target but fails to explicitly link operating drivers to valuation assumptions with clear mathematical bridges. Multiple claims lack proper citations, with sources listed generically at the end rather than integrated throughout. The Bulls/Bears section reads more like marketing copy than analytical assessment. Peer benchmarking is entirely absent, with no comparison to Meta, Amazon, or Microsoft. The report demonstrates significant redundancy, repeating AI investment themes and regulatory concerns across multiple sections without adding new depth. Overall, the report feels more like a superficial overview than a comprehensive equity research analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Competitive Positioning Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Daily/Monthly Active Users",
+            "Revenue Per User",
+            "Traffic Acquisition Costs",
+            "Ad Load Metrics",
+            "Search Query Volume",
+            "YouTube Watch Time"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Daily/Monthly Active Users",
+            "Revenue Per User",
+            "Traffic Acquisition Costs",
+            "Ad Load Metrics",
+            "Search Query Volume",
+            "YouTube Watch Time"
+        ],
+        "uncited_claims": [
+            "Circle to Search usage increased nearly 40% year-over-year",
+            "Lens visual searches grew by over 5 billion queries since October",
+            "Shorts engagement rose over 20% year-over-year",
+            "YouTube has over 270 million paid subscriptions",
+            "Google processes billions of queries daily"
+        ]
+    }
+}

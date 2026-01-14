@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some company-specific analysis but falls short of providing truly original insights. While it presents a contrarian SELL thesis on Eli Lilly, most insights are generic industry observations applied to LLY rather than unique syntheses. The three main pillars (valuation disconnect, peak GLP-1 enthusiasm, operational risks) are restated from common pharmaceutical industry dynamics without novel mechanisms or quantified pathways. The DCF analysis lacks innovative drivers beyond standard assumptions. The report heavily relies on Morningstar's $650 valuation target, essentially validating rather than independently deriving value. Some company-specific details emerge (tirzepatide concentration risk, manufacturing scale-up challenges), but these represent weak synthesis rather than original thesis development. The analysis lacks explicit causal mechanisms, peer-specific comparisons, or monitoring signals that would elevate it to original insight territory.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "LLY trades at multiples more characteristic of high-growth technology firm than pharmaceutical company",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Market is underestimating long-term impact of price competition in GLP-1 market",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Company's heavy reliance on tirzepatide franchise creates significant concentration risk",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Massive manufacturing scale-up introduces critical operational execution risk",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Patent-protected GLP-1 franchise valued as if permanent, ignoring terminal nature",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Morningstar projects decline in average net prices from $7,000 to $3,000",
+                "classification": "Copied",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Heavy reliance on Morningstar's $650 target",
+            "Generic pharmaceutical industry dynamics",
+            "Standard DCF with peer-aligned WACC",
+            "Boilerplate competitive and regulatory risk language"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates some causal mechanisms and explicit assumptions but suffers from shallow analysis and lack of quantified sensitivity testing. The report provides basic causal explanations like \"subscription revenues growing 22.5% year-over-year to $3.113 billion\" and \"remaining performance obligations growing 29%\" but fails to explain underlying drivers or provide benchmarked assumptions. While it includes financial projections showing \"Revenue CAGR (2025-2029) 18.5%\" and \"Terminal Growth Rate 4.0%\", these assumptions lack industry benchmarks or stress testing. The valuation table presents \"Bull Case\" and \"Bear Case\" scenarios with \"Fair Value per Share $1,050\" versus alternatives of \"$1,280\" and \"$840\", but provides no quantified sensitivity analysis explaining how key variables drive these outcomes. Counterpoints are mentioned generically through \"Bears Say\" sections noting \"intensifying competition\" but without quantified impact assessment. The report reads more descriptively than analytically, with limited mechanism-rich reasoning connecting assumptions to outcomes.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Revenue growth assumptions lack underlying driver analysis",
+            "Margin expansion projections without operational leverage quantification",
+            "Customer acquisition costs and unit economics not explained"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth rate 4.0% with no industry benchmark",
+            "WACC 9.5% without cost of equity calculation",
+            "Peak operating margin 24.0% without competitive comparison"
+        ],
+        "lack_of_sensitivity": [
+            "No quantified impact of competition on growth rates",
+            "Missing analysis of economic downturn effects on enterprise spending",
+            "Valuation scenarios lack variable sensitivity explanation"
+        ]
+    }
+}

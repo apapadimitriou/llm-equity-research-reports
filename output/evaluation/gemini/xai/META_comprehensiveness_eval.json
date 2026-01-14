@@ -1,0 +1,64 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is fundamentally incomplete and fails to meet the basic requirements for a comprehensive equity research document. While the structural headers are present, the content is riddled with 'Insufficient data' placeholders for critical metrics, including the current stock price, market capitalization, and, most significantly, the 2024 actual financial results\u2014a major omission given the report's June 2025 date. The Financials Snapshot is generic and lacks all mandatory sector-specific KPIs such as ARPU, DAU/MAU, and Ad Impressions in the multi-year forecast table, triggering a hard cap at 'Fair'. Furthermore, the report exhibits significant redundancy, repeating identical talking points regarding AI reach and Capex guidance across three separate sections (Analyst Note, Strategy, and Bulls/Bears) without providing additional depth. Sourcing is inconsistent, with multiple material claims regarding secular growth and regulatory risks explicitly noted as uncited. The total absence of peer benchmarking and scenario/sensitivity analysis, combined with the superficiality of the valuation linkage, necessitates a downgrade from 'Fair' to 'Poor'.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "ARPU (Average Revenue Per User)",
+            "DAU (Daily Active Users) in Financials Table",
+            "MAU (Monthly Active Users)",
+            "Ad Impressions",
+            "Average Price per Ad"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date is June 2025, yet 2024 actuals are listed as 'Insufficient data'.",
+                "locations": [
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARPU",
+            "DAU/MAU Forecasts",
+            "Ad Impressions",
+            "Price per Ad"
+        ],
+        "uncited_claims": [
+            "Digital advertising projected to grow globally at 10-12% annually",
+            "Regulatory risks including antitrust scrutiny",
+            "ESG risk score of 25.0"
+        ]
+    }
+}

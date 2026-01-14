@@ -1,0 +1,106 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s key modeling inputs are generally explicit and placed close to the forecasts they inform. Core drivers\u2014revenue growth, AI segment trajectory, margin path, WACC/COE, tax rate, Stage II growth, and share count\u2014are stated with clear magnitudes, units, and horizons, and reconcile to the valuation tables, supporting internal consistency. Justification is partial: the AI revenue assumptions reference management\u2019s serviceable addressable market and recent guidance, and the narrative notes VMware upsell and networking strength, but most parameters (WACC, tax rate, Stage II assumptions) lack cited sources or peer/market evidence. Specificity is solid, with numeric targets through fiscal 2029 and DCF parameters listed. However, there is no quantified sensitivity/scenario analysis for material levers (AI growth, margins, WACC, terminal/fade dynamics), nor valuation impact ranges; scenario discussion is qualitative only. Minor model evolution (older archive vs current AI numbers) appears time-dated rather than contradictory. Overall, explicitness and specificity are strong, justification is partial, internal consistency is clean, but absence of stress tests caps the grade at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model 20% revenue growth for Broadcom through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We model Broadcom\u2019s AI chip sales rising at more than a 40% compound annual growth rate through fiscal 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We now expect Broadcom to hit $50 billion in AI revenue in fiscal 2027, up from $12 billion in fiscal 2024.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "we project non-GAAP operating margins rising to the mid-60% range in fiscal 2029, from 60% in fiscal 2024.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.8",
+            "location": {
+                "section": "Key Valuation Drivers as of 05 Jun 2025",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 05 Jun 2025",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 13.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 05 Jun 2025",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 8.0",
+            "location": {
+                "section": "Key Valuation Drivers as of 05 Jun 2025",
+                "page": "15"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 4,790",
+            "location": {
+                "section": "Key Valuation Drivers as of 05 Jun 2025",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.8% without source",
+            "Long-Run Tax Rate 13% without source",
+            "Stage II EBI Growth Rate 8% without source"
+        ]
+    }
+}

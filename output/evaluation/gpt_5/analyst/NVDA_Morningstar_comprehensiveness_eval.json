@@ -1,0 +1,63 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "This Morningstar report covers nearly all expected equity research sections with meaningful depth: a cover/contents page, an up-to-date Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials Snapshot, ESG, and an Appendix. The valuation section explicitly links operating drivers (data center growth, China H20 reversal, segment revenue forecasts, margin trajectory) to the fair value estimate and provides a DCF summary with key parameters. Sector-appropriate KPIs for semiconductors are present in narrative form (data center, gaming, automotive revenues; margins; ROIC), and peer context is addressed via competitor tables and ESG peer analysis. Evidence is largely internally consistent, though the Risk section dated May still reflects pre-reversal views on China, creating minor tension with the July Analyst Note. The Financials Snapshot is rich but omits some semiconductor-specific operational KPIs (units/ASP, explicit segment tables, capex detail). Scenario/sensitivity analysis is absent, and some points about CUDA/GPU advantages are repeated across sections, though generally with added context. Overall, comprehensiveness is strong, with gaps mainly in scenario analysis and certain KPIs in the snapshot.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis",
+            "In-text Source Citations"
+        ],
+        "sector_kpis_present": [
+            "Data Center revenue by quarter/year",
+            "Gaming segment revenue",
+            "Automotive revenue",
+            "Gross margin",
+            "Operating margin",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Unit shipments/ASP",
+            "Segment mix table in Financials Snapshot",
+            "Capital expenditure by segment"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Risk section states no recovery in China AI sales, while the July Analyst Note assumes H20 sales to China resume and are reinserted into the model.",
+                "locations": [
+                    "Risk and Uncertainty (29 May 2025)",
+                    "Analyst Note (15 Jul 2025)",
+                    "Fair Value and Profit Drivers (15 Jul 2025)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Unit shipments/ASP",
+            "Segment mix table in Financials Snapshot",
+            "Capital expenditure by segment"
+        ],
+        "uncited_claims": []
+    }
+}

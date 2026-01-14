@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report includes all required structural sections and maintains consistent in-text citations. However, it fails to achieve a 'Good' or 'Excellent' rating due to two primary deficiencies. First, the Financials Snapshot is generic; it omits core sector-specific KPIs such as 'Organic Revenue Growth %' and 'Recurring Revenue %' in the multi-year forecast table, which are critical for evaluating Life Sciences Tools companies. While these are mentioned qualitatively in the text, their absence from the financial data block triggers a hard cap of 'Fair'. Second, the report exhibits significant redundancy. The $2 billion U.S. manufacturing investment and the P/E multiple comparison (18x vs. 22x) are repeated across five separate sections (Analyst Note, Strategy, Bulls Say, Fair Value, and Capital Allocation) with virtually no additional depth or new information provided in subsequent mentions. This superficial repetition violates the instruction to minimize redundancy. Finally, while the report mentions competitors like Danaher and Illumina, it lacks a formal peer benchmarking table or comparative metric analysis, further limiting its comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis (Quantitative)"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Organic Revenue Growth %",
+            "Recurring Revenue %",
+            "Book-to-Bill Ratio",
+            "FX Impact"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Organic Revenue Growth % (Core for Life Sciences)",
+            "Recurring Revenue % (Core for Life Sciences)"
+        ],
+        "uncited_claims": []
+    }
+}

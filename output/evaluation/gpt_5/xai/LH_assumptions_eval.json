@@ -1,0 +1,75 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely absent or qualitative. Explicitness is weak: the report repeatedly states \u201cInsufficient data\u201d across key drivers (revenue CAGR, margins, WACC, terminal growth) and does not present a valuation model. The few assumptions that do appear (e.g., \u201clow-to-mid single-digit revenue growth\u201d) are not tied to forecast tables or a coherent model, and are scattered rather than proximal to outputs. Justification is weak: the mid-single-digit growth statements are not supported with multi-year history, peer benchmarks, or sourced cost-of-capital data; the only cited figure is a single quarter\u2019s revenue (Q2 2025) and a 9.5% y/y growth datapoint. Specificity is weak: magnitudes lack precise ranges, units, and operational drivers; margins are discussed qualitatively with no percentages or timelines. Internal consistency is generally clean (no direct numeric contradictions), but the model remains a black box. Sensitivity analysis is effectively absent; a vague \u201ccould swing valuation by 10\u201320%\u201d is not tied to material drivers or valuation impacts. Overall, the assumptions do not meet the standards for explicit, justified, specific, or stress-tested inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "Over the medium term (3-5 years), Labcorp is positioned for low-to-mid single-digit revenue growth",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Valuation appears reasonable if revenue growth sustains at mid-single digits",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "assuming a similar quarterly run rate, annualized revenue could imply mid-single-digit growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Margins may improve with cost controls",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "These factors could swing valuation by 10-20%, but quantitative assessment is insufficient data.",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count",
+            "operating margin trajectory",
+            "EPS bridge",
+            "FCF",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "mid-single-digit revenue growth without multi-year evidence or peer benchmarks",
+            "valuation swing 10\u201320% without driver linkage or source"
+        ]
+    }
+}

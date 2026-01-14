@@ -1,0 +1,56 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This is a broad, well-structured 24-page report that hits nearly all expected sections: cover/contents, timely Analyst Notes, Business Description, Strategy & Outlook, Bulls/Bears, detailed Moat/competitive positioning by segment, Valuation & Profit Drivers, Risks, Capital Allocation, ESG, and a robust Financials/valuation model summary. Evidence is integrated consistently with dates, internal model tables, and selective external references (e.g., AMA, Sustainalytics). Peer context is included with a competitor comparison. The valuation narrative links operating drivers (revenue CAGR, MA margin normalization, PBM contract losses, regulatory headwinds) to the fair value, and the model discloses WACC, tax, and DCF stages. However, the Financials Snapshot lacks sector-specific KPI tables for managed care/PBM (e.g., MLR, medical membership, PBM volumes, Star Ratings), even though some are mentioned narratively; this omission triggers a hard cap. Scenario/sensitivity analysis is referenced conceptually but not presented as explicit scenarios/bridges. Redundancy is minimal; archived notes provide historical context without duplicating core sections. Overall, comprehensiveness is strong, but missing \u22652 core sector KPIs in the snapshot and the absence of explicit scenario/sensitivity analysis limit the grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Competitive Positioning / Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Peer Benchmarking",
+            "Appendix/Methodology and Disclosures"
+        ],
+        "sections_missing": [
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Segment KPI Tables with sector metrics"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "EBITDA",
+            "Debt/Capital",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "Medical Membership (MA/Total)",
+            "PBM Adjusted Claims/Retention",
+            "Medicare Star Ratings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Medical Membership",
+            "PBM Adjusted Claims",
+            "Medicare Star Ratings"
+        ],
+        "uncited_claims": []
+    }
+}

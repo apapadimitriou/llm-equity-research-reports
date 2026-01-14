@@ -1,0 +1,84 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet basic assumption quality standards across all five pillars. Key DCF assumptions lack explicit justification\u2014the 37% 2025 revenue growth, 45% peak operating margins, 3% terminal growth, and 7.3% WACC are stated without supporting evidence, history, or peer benchmarks. Critical assumptions like revenue growth deceleration rates and margin compression timing are completely opaque. The report contains a material contradiction: it claims consensus 2025 revenue of $61.71B but models 37% growth from 2024's $45.04B base, which would yield $61.9B, creating unexplained inconsistency. No sensitivity analysis is provided for any material drivers despite acknowledging significant risks around pricing pressure, competition, and manufacturing execution. The DCF methodology is mentioned but key assumptions remain black-box, making the $650 target unauditable and unconvincing.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue growth is projected to be approximately 37% in 2025, consistent with consensus estimates, before decelerating progressively to a mid-single-digit rate by the end of the 10-year forecast period",
+            "location": {
+                "section": "Multi-Year Financial Projections",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are expected to continue their expansion from the current levels, reaching a peak in the mid-40% range by 2028",
+            "location": {
+                "section": "Multi-Year Financial Projections",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth Rate (g): A terminal growth rate of 3.0% is assumed, serving as a proxy for long-term global nominal GDP growth",
+            "location": {
+                "section": "Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC): A WACC of 7.3% is utilized as the discount rate",
+            "location": {
+                "section": "Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "The bottom-up calculation yields a WACC of 6.64%; however, to ensure a conservative valuation that is not predicated on an overly punitive discount rate, the slightly higher peer-based rate of 7.3% is used",
+            "location": {
+                "section": "Primary Methodology: Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue projection inconsistency: Claims consensus 2025 revenue of $61.71B but models 37% growth from 2024 base of $45.04B, which yields $61.9B",
+                "locations": [
+                    "Financial & Valuation Metrics table showing $61.71B consensus",
+                    "Multi-Year Financial Projections showing 37% growth assumption"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "specific_revenue_deceleration_path",
+            "margin_compression_timing",
+            "capex_assumptions",
+            "tax_rate_assumptions",
+            "share_count_changes"
+        ],
+        "unjustified_parameters": [
+            "37% revenue growth rate",
+            "45% peak operating margins",
+            "3% terminal growth rate",
+            "7.3% WACC selection over calculated 6.64%"
+        ]
+    }
+}

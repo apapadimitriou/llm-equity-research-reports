@@ -1,0 +1,79 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards with multiple critical deficiencies. The Financials Snapshot completely omits essential banking KPIs (NIM, CET1, ROE, ROA, loan loss provisions) that are fundamental to bank analysis, instead using generic metrics like ROIC that are inappropriate for banking. The valuation section lacks explicit linkage between operating drivers and fair value derivation, providing only vague assumptions without mathematical bridges. Peer benchmarking is entirely absent despite multiple references to 'peer group valuations' without substance. The report contains numerous uncited claims including specific financial figures, market share data, and strategic initiatives with no supporting sources. Additionally, significant redundancy exists across sections with repeated mentions of CET1 ratios, earnings beats, and competitive positioning without new analytical depth. The absence of scenario analysis further undermines comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "NIM",
+            "CET1 Ratio",
+            "ROE",
+            "ROA",
+            "Loan Loss Provisions",
+            "Book Value per Share",
+            "Tangible Book Value",
+            "Deposit Growth",
+            "Loan Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "CET1 ratios cited as both 15.4% and 15.5% without explanation",
+                "locations": [
+                    "Analyst Note",
+                    "Capital Allocation"
+                ]
+            },
+            {
+                "description": "References to Q2 2025 results as both preview and actual results",
+                "locations": [
+                    "Throughout report"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "CET1 Ratio",
+            "ROE",
+            "ROA",
+            "Loan Loss Provisions",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ],
+        "uncited_claims": [
+            "Markets revenue of $9.7 billion in Q1",
+            "71 million active digital customers",
+            "Card market share of 17.3%",
+            "Commerce volumes reaching $23 billion",
+            "Technology investments exceeding $15 billion annually",
+            "$1.5 billion in annual AI and machine learning value creation"
+        ]
+    }
+}

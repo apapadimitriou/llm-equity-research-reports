@@ -1,0 +1,64 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections, including analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, and appendix/sources. The breadth is good and the valuation section links operating drivers (segment revenue growth, margin expansion, WACC) to EPS and a DCF-derived fair value, showing an explicit EPS bridge. However, the Financials Snapshot is thin and generic: it lacks core sector KPIs for healthcare plans/PBM/retail pharmacy (e.g., medical loss ratio, membership, script volumes, PBM claims, MA star ratings), and includes \u201cinsufficient data\u201d for multiple historical fields. Sourcing is inconsistent: several material claims (CMS growth rate, ESG scores, payout ratio, dividend yield) are not cited, and one financial data point relies on a social media post. Peer benchmarking is largely absent beyond a brief ESG comparison, and there is no scenario/sensitivity analysis. Some points (elevated medical costs/MLR pressure) are repeated across the analyst note, bears, and risk sections with limited incremental detail. Given the KPI omissions in the snapshot and uneven evidence support, comprehensiveness is constrained despite strong section coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Medical Loss Ratio (MLR)",
+            "Insurance Membership (MA/commercial)",
+            "Pharmacy Script Volume/Same-store Rx",
+            "PBM Claims/Retention",
+            "Medicare Advantage Star Ratings",
+            "PMPM Utilization"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Medical Loss Ratio (MLR)",
+            "Membership",
+            "Pharmacy script volumes",
+            "PBM claims",
+            "MA Star Ratings",
+            "PMPM"
+        ],
+        "uncited_claims": [
+            "Healthcare spending projected to grow at 5.6% annually through 2031 per CMS estimates",
+            "Sustainalytics ESG risk score of 22.5; UNH 20.0; Cigna 24.0",
+            "Dividend policy targets a 50% payout ratio",
+            "Current dividend yield around 4%"
+        ]
+    }
+}

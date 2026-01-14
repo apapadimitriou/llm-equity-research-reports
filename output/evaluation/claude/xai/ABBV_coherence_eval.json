@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and temporal incoherence that fundamentally undermines its credibility. The most glaring issue is the temporal contradiction: the report is dated May 12, 2025, yet cites Q2 2025 sources published 'one week ago from August 10, 2025' - creating an impossible timeline where the analyst references future events. The narrative flow is choppy with abrupt transitions between topics, particularly in the Analyst Note which jumps from Q1 results to Q2 expectations to thesis without clear connective tissue. Multiple contradictions exist between assumptions and narrative claims - the report states 'insufficient data' for historical financials yet builds detailed forecasts, claims strong cash flows while admitting data gaps, and presents precise fair value calculations based on incomplete information. The Bulls/Bears section fails to reconcile with the base-case valuation narrative, particularly regarding Humira erosion impacts. Sources are misaligned with claims, citing future-dated articles that cannot support current analysis. The writing reads like disconnected bullet points rather than a coherent argument, forcing readers to assemble the investment thesis themselves.",
+    "evidence": [
+        "Report dated 2025-05-12 cites sources 'Published 1 week ago (from 2025-08-10)' - impossible temporal sequence (Sources section)",
+        "Claims 'insufficient data' for all historical metrics yet builds detailed DCF model with precise $185 fair value (Financials Snapshot vs Fair Value sections)",
+        "Abrupt topic jumps: 'Q1 EPS of $2.46... Looking ahead to Q2... The thesis for AbbVie remains...' without transitions (Analyst Note)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 3,
+        "auto_downgrade_applied": true
+    }
+}

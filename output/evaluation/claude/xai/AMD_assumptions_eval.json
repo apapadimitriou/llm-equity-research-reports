@@ -1,0 +1,70 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides key assumptions with partial justification and specificity. Revenue CAGR (15%), operating margin expansion (10% to 25%), and WACC (10%) are explicitly stated with some supporting rationale. However, justification is selective - the 25% data center growth assumption lacks peer benchmarks, and the aggressive margin expansion from 10% to 25% over 5 years is not adequately supported by historical performance or industry comparisons. Internal consistency has minor issues with some 'insufficient data' entries in financial tables. Most critically, there are no quantified sensitivity analyses on any material drivers, only qualitative risk mentions. The EPS bridge provides some transparency, but key assumptions like the beta of 1.5 and specific growth rates by segment need stronger evidence-based support.",
+    "assumptions_extracted": [
+        {
+            "quote": "15% revenue CAGR from 2025-2029, driven by 25% annual growth in data center (from AI) and 10% in client/gaming",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 10% in 2024 to 25% by 2029, reflecting scale and mix shift to high-margin products",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 10%, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.5",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal value assumes 3% growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The company does not pay dividends but engages in opportunistic share buybacks, with $4 billion authorized",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "25% annual data center growth without peer benchmarks",
+            "Operating margin expansion from 10% to 25% without historical justification",
+            "Beta of 1.5 without source"
+        ]
+    }
+}

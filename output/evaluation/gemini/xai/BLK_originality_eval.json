@@ -1,0 +1,50 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to provide any original insights or syntheses, relying entirely on public data points and boilerplate industry descriptions. It identifies well-known aspects of BlackRock's business\u2014such as the scale of iShares ETFs and the Aladdin technology platform\u2014but offers no interpretive commentary or unique conclusions. The analysis of 'Bulls Say / Bears Say' consists of generic sector-wide observations (e.g., fee compression, market volatility) that are applicable to any large asset manager. Furthermore, the valuation section utilizes standard DCF assumptions (6% revenue CAGR, 8.5% WACC) without introducing any novel drivers or company-specific mechanisms. There is no evidence of the analyst linking disparate data points (such as specific macro shifts to margin trajectories) to form a testable thesis. Per the decision rules, the absence of any synthesis or original thesis necessitates a grade of 'Poor.'",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "BlackRock's scale and technology edge will support long-term growth.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Aladdin technology provides sticky, high-margin revenue, diversifying beyond traditional asset management.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Fee compression in asset management could erode margins amid competition.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue CAGR is projected at 6% from 2025-2029, driven by 5% AUM growth and 1% fee expansion.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Aladdin platform creates high switching costs for clients, as migrating data and systems is complex.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate 'scale & diversification' phrasing",
+            "Restating public AUM and inflow figures without interpretation",
+            "Generic sector risks (fee compression, volatility) used as primary analysis"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 5
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

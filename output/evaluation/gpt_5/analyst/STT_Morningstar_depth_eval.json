@@ -1,0 +1,26 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by linking outcomes to drivers and embedding explicit, quantified assumptions within a detailed forecast framework. Causal explanations are clear, for example rate-driven NII dynamics and pricing headwinds: \u201cas a result of the Federal Reserve raising interest rates\u201d and \u201cbenefit has moderated due to deposit costs.\u201d Inference quality is supported by modeled revenue, NII, EPS, and returns, as well as top-down assumptions: \u201cCost of Equity % 9.0\u201d and \u201cexpects fee revenue growth of 3%-5%.\u201d Data use is robust, with quantified tables (NIM, efficiency, growth rates) and some benchmarking to peers and scale (\u201cin contrast to peer BNY\u201d and both large trust banks\u2019 tech spend), plus sector-wide capital implications (\u201cstress capital buffers fall by 1.5\u201d). The report acknowledges uncertainty and counterpoints\u2014market level sensitivity for fee lines, deposit mix/NIM, and variable cost flexibility (\u201cvariable expenses at about one third of total\u201d)\u2014but it lacks quantified sensitivity or scenario ranges tied to key drivers (e.g., rates, deposit betas, equity market drawdowns). Actionable implications are present but high-level (caution on repurchasing above fair value; potential excess capital returns). Overall, mechanism-rich reasoning and explicit assumptions earn a Good, constrained by the absence of quantified scenarios.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "deposit beta and rate pass-through not modeled",
+            "fee line elasticity to AUC changes not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Cost of equity 9% without justification to market conditions",
+            "Stage II growth 4% unbenchmarked to industry history"
+        ],
+        "lack_of_sensitivity": [
+            "No NII/NIM sensitivity to rate paths or deposit mix",
+            "No quantified impact if equity markets decline on asset-based fees"
+        ]
+    }
+}

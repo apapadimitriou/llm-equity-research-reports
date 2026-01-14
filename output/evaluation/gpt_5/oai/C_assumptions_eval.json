@@ -1,0 +1,129 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Assumptions are largely explicit and proximate to forecasts (revenue CAGR, margin path, tax rate, WACC/COE, terminal growth, share count). Specificity is generally solid with magnitudes and horizons given. However, justification is weak: multi-year revenue CAGR, margin improvement, and capital-cost inputs are not anchored to historical trends, peer benchmarks, or cited sources beyond recent quarterly datapoints. Internal consistency is problematic: the report contains multiple unresolved numeric contradictions, notably in cost of capital (risk-free 8.5% vs 3.5%; after-tax cost of debt 5% vs ~3%; COE stated ~10% yet described as 8.5% RF + 4.5% ERP with beta 1 implying ~13%) and the margin target (23% by 2029 vs table showing 22%). Material drivers like credit costs and NII/NIM are qualitatively described but not quantified. There is no sensitivity or scenario analysis for key levers (rates/NIM, trading revenues, margins, credit costs, WACC), triggering hard caps. Given \u22652 contradictions plus no quantified sensitivities, the quality of assumptions falls to Poor under the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "We assume modest overall growth (~2\u20133% revenue CAGR over 2024\u20132029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins improve from ~20% in 2024 to ~23% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use an effective tax rate ~21%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "earnings per share rise from roughly $5 (2024) to ~$10 by 2029 (with diluted shares ~1.8\u20131.9 billion).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We discount at a WACC of ~9% (cost of equity ~10%, reflecting an 8.5% risk-free rate + 4.5% equity risk premium, with a 1.0 beta and 5% after-tax cost of debt).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a risk-free rate of 3.5%, equity risk premium ~4.5%, beta ~1.0, giving CoE ~8\u20139%; cost of debt ~5% (post-tax ~3%)... We use a 9% unlevered WACC.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Our terminal growth is 2%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We assume normal cycle loan growth and credit costs modest.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Risk-free rate and COE inputs conflict: 8.5% RF + 4.5% ERP with beta 1 cited alongside COE ~10% (implied ~13%).",
+                "locations": [
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Risk-free rate mismatch: 8.5% (implied) vs 3.5% stated elsewhere.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "After-tax cost of debt mismatch: 5% vs ~3%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "Operating margin target 23% by 2029 vs table showing 22% in 2029.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "NII/NIM",
+            "credit_cost",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% with inconsistent COE/RF assumptions",
+            "risk-free rate 8.5%/3.5% without source",
+            "operating margin 23% by 2029 without benchmarking",
+            "credit costs 'modest' not quantified"
+        ]
+    }
+}

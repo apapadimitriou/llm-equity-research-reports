@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic standards for assumption quality across all five pillars. Key financial assumptions are either completely unstated or buried without explicit connection to forecasts. The detailed financial projections table (showing revenue growth from $16.7B to $33.6B by 2029) lacks any supporting assumptions for growth rates, margin expansion drivers, or methodology. Critical valuation inputs like the 8.5% WACC, 21% terminal margin, and 12-15% organic growth CAGR appear only in a brief appendix without justification. Multiple internal contradictions exist, including claims of 'investment-grade credit profile' while showing aggressive acquisition spending, and margin expansion targets that conflict with tariff headwind discussions. No sensitivity analysis is provided for any material drivers despite significant uncertainties around competitive dynamics, regulatory risks, and integration challenges.",
+    "assumptions_extracted": [
+        {
+            "quote": "Organic revenue CAGR 2025-2029: 12-15%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Terminal operating margin: 21%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital: 8.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax rate: 22%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 'investment-grade credit profile' while discussing $4.1B in recent acquisitions and aggressive spending",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Capital Allocation section"
+                ]
+            },
+            {
+                "description": "Projects 21% terminal operating margin while discussing $200M tariff headwinds and competitive pressures",
+                "locations": [
+                    "Appendix assumptions",
+                    "Risk & Uncertainty section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "working_capital",
+            "debt_structure"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "12-15% organic growth without methodology",
+            "21% terminal margin without benchmarking"
+        ]
+    }
+}

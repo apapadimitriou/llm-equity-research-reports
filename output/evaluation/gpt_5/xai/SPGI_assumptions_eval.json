@@ -1,0 +1,103 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: Core valuation drivers are clearly stated, largely concentrated in the Fair Value and Profit Drivers and Appendix sections (revenue CAGR, margin path, WACC, terminal growth, EPS). Specificity: Assumptions include magnitudes, units, and time horizons (e.g., 8% revenue CAGR FY2024\u20132029, margins to 45% by 2027, WACC 8%, terminal growth 4%, FY2025 EPS $12.00; FCF $6B). Consistency: Most numbers reconcile to the Financials Snapshot, but there is a direct contradiction on the forward P/E implied by the $550 FVE (30x in Analyst Note vs 46x in Fair Value and Profit Drivers), triggering a cap at Fair. Justification: Rationales are high level and largely qualitative; limited evidence is cited for the chosen magnitudes (e.g., WACC, terminal growth, revenue mix of organic vs M&A, margin expansion) and no peer or multi-year benchmarking is shown. Sensitivity: Some partial quantification appears (10\u201315% ratings revenue decline in a downturn; \u00b120% fair value sensitivity), but there is no structured, quantified sensitivity/scenario analysis by material drivers tied to valuation impact. Important drivers are missing/opaque (share count, tax rate, capex/working capital, cost of debt). Overall, usable and specific inputs are provided, but weak justification, one contradiction, and limited sensitivities keep the quality at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "assumes a 8% revenue CAGR from FY2024 to FY2029, driven by 6% organic growth and 2% from acquisitions, reaching $20B by FY2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 42% in FY2024 to 45% by FY2027 through cost synergies, then stabilize.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8%, reflecting a beta of 1.0 and cost of equity of 9%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth of 4% post-2029 leads to a fair value of $550 per share, implying a FY2025 P/E of 46x and EV/EBITDA of 25x, aligned with historical premiums for moat quality.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge starts from FY2024 estimated $10.50 ... yielding FY2025 EPS of $12.00.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "free cash flow of $6 billion for FY2025, implying a 3.7% yield based on current market capitalization",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "our fair value estimate of $550 implying a forward P/E of 30x on projected FY2025 EPS.",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "$550 FVE implies forward P/E of 30x vs 46x for FY2025",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "cost_of_debt/interest_rate",
+            "working_capital",
+            "buyback_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% without capital structure or market support",
+            "Terminal growth 4% without long-run evidence/peer benchmarks",
+            "Revenue CAGR 8% (6% organic/2% M&A) without historical/peer validation",
+            "Margin expansion to 45% by 2027 without cost program quantification",
+            "EV/EBITDA 25x 'aligned with historical premiums' without data support"
+        ]
+    }
+}

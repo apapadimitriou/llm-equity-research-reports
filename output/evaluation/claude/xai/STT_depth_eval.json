@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is fundamentally compromised by pervasive data gaps and lacks meaningful analytical depth. While it attempts some causal reasoning with phrases like \"driven by market recoveries and client expansions\" and \"offsetting fee pressures,\" these explanations are superficial and unsupported. The financials table contains entirely \"insufficient data\" entries, making quantitative analysis impossible. Key assumptions like \"Revenue CAGR of 4%\" and \"WACC estimated at 9%\" are stated without benchmarking or justification. The EPS bridge calculation starting from \"2024 EPS (insufficient data)\" is meaningless. No sensitivity analysis exists - assumptions are presented as fixed points without ranges or scenarios. The report mentions \"potential valuation swings of 20-30%\" but provides no quantified scenarios to support this. Actionable implications are vague, with generic statements like \"investors should monitor the upcoming Q2 release.\" The analysis fails to establish clear causal mechanisms linking drivers to outcomes, relying instead on descriptive statements and unsupported projections.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": false,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AuCA growth \u2192 fee income linkage not quantified",
+            "market volatility \u2192 earnings impact undefined",
+            "regulatory changes \u2192 capital requirement effects unexplained"
+        ],
+        "unsupported_assumptions": [
+            "Revenue CAGR of 4% with no industry benchmark",
+            "WACC 9% without peer comparison",
+            "Terminal Growth Rate 2.5% as GDP proxy unsubstantiated"
+        ],
+        "lack_of_sensitivity": [
+            "No scenarios for interest rate changes",
+            "No range analysis for margin assumptions",
+            "Valuation swings mentioned but not modeled"
+        ]
+    }
+}

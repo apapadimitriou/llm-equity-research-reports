@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, Sources), with a coherent valuation that links operating drivers (segment growth, margin expansion, WACC, terminal growth) to a fair value via a DCF and an EPS bridge. However, comprehensiveness is constrained by two key shortcomings. First, the Financials Snapshot omits core software/SaaS KPIs (ARR, RPO, NRR, subscriber counts, ARPU, billings), despite some ARR/RPO references in the text; per the rubric, missing \u22652 sector KPIs in the snapshot caps the grade at Fair. Second, sourcing is inconsistent: multiple material claims are flagged as \u201cinsufficient data\u201d or rely on social media posts, with specific market share, industry growth, ESG score, and margin assertions lacking robust citations. Peer benchmarking is minimal (only cursory mentions of Canva and ESG peers) and there is no scenario/sensitivity analysis. While redundancy is limited, the Bulls section reuses Analyst Note metrics without added depth. Overall, solid structure and linkage, but KPI depth, peer context, and citation rigor fall short of Good.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "ARR",
+            "RPO"
+        ],
+        "sector_kpis_missing": [
+            "NRR",
+            "Subscriber Count",
+            "ARPU",
+            "Billings"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (not included in Financials Snapshot)",
+            "RPO (not included in Financials Snapshot)",
+            "NRR",
+            "Subscriber Count",
+            "ARPU",
+            "Billings"
+        ],
+        "uncited_claims": [
+            "Adobe holds over 50% share in professional creative software [5] marked as insufficient data",
+            "Demand for digital experiences projected to grow at 15% annually through 2028 [6] with omitted source",
+            "Sustainalytics ESG risk score 15.2 and peer comparisons [9] marked as insufficient data",
+            "Gross margins above 88% [3] without specific citation support"
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates good explicitness with key assumptions clearly stated in the DCF valuation section, including WACC (7.2%), cost of equity (7.5%), Stage II growth rate (3.5%), and investment rate (20%). These parameters are well-justified through the company's wide economic moat assessment and historical performance context. Specificity is solid with clear units, timeframes, and drivers identified throughout the financial forecasts. However, the report is capped at Fair due to the complete absence of quantified sensitivity or scenario analysis on any material drivers. While the report mentions risks and uncertainties qualitatively, it provides no quantified ranges or stress-testing of key assumptions like WACC, terminal growth, or margin assumptions that would demonstrate robustness of the $164 fair value estimate. Internal consistency appears clean with financial projections aligning with narrative expectations.",
+    "assumptions_extracted": [
+        {
+            "quote": "Weighted Average Cost of Capital % 7.2",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Cost of Equity % 7.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.5",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Stage II Investment Rate % 20.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We expect annual adjusted earnings per-share growth will average close to 4% during the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect fairly flat operating margins over the next several years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "WACC/COE",
+            "terminal_growth",
+            "margin/efficiency",
+            "revenue_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

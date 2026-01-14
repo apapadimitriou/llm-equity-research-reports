@@ -1,0 +1,29 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report is primarily descriptive with minimal analytical depth. While it contains some basic causal links like \"driven by a 45% jump in equity trading revenue\" and \"expense discipline holding the efficiency ratio around 70%\", these lack meaningful explanation of underlying mechanisms. The valuation section mentions \"WACC around 9%\" and \"terminal growth ~2%\" but provides no benchmarking or justification for these critical assumptions. The report states \"100bp move in WACC shifts valuation by ~10%\" but this is the only sensitivity analysis provided, and it's superficial. Most content consists of historical data recitation and generic industry observations rather than rigorous analysis. The forecasted financials show specific numbers but lack supporting drivers or stress-testing. Risk factors are listed but not quantified or integrated into valuation scenarios.",
+    "checks": {
+        "causal_explanation_present": false,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": false
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "No explanation of how integrated model drives competitive advantage",
+            "Trading revenue growth drivers not analyzed",
+            "Wealth management fee compression risks not quantified"
+        ],
+        "unsupported_assumptions": [
+            "WACC ~9% with no benchmark justification",
+            "Terminal growth ~2% without industry context",
+            "Mid-single-digit revenue CAGR assumption lacks supporting analysis"
+        ],
+        "lack_of_sensitivity": [
+            "No scenario analysis for key variables",
+            "Single sensitivity metric on WACC insufficient",
+            "No stress testing of assumptions under different market conditions"
+        ]
+    }
+}

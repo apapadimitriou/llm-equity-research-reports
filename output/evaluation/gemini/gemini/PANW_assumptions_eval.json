@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded 'Poor' due to multiple severe internal contradictions and a total lack of quantified sensitivity analysis, triggering several 'Hard Cap' rules. While the report explicitly states key drivers\u2014such as a 9.5% WACC, 3.5% terminal growth, and specific FY25 guidance for NGS ARR and FCF margins\u2014these inputs are undermined by mathematical and logical failures. Specifically, Table 3 (Sum-of-the-Parts) contains a glaring calculation error, stating a 'Total EV' of ~$10.8 Billion despite the individual segments summing to $115.6 Billion. Furthermore, the report presents a logical impossibility regarding share count: it cites a current market cap of ~$123.8 Billion (implying ~650 million shares at $190.52) but then estimates a post-merger share count of only ~450 million. This occurs despite the $25 billion CyberArk acquisition being funded partially with stock, which should increase the share count, not reduce it by 200 million. Justification for long-term inputs like WACC and terminal growth is minimal, lacking ties to specific risk-free rates or peer benchmarks. Finally, the report fails the requirement for sensitivity analysis; while it mentions qualitative bull/bear cases for the upcoming quarter, it provides no quantified ranges or valuation impacts for its primary model drivers (WACC, margins, or synergies). These flaws render the model's outputs internally inconsistent and auditable only as a 'black box'.",
+    "assumptions_extracted": [
+        {
+            "quote": "Full Year NGS ARR: $5.52 billion to $5.57 billion (+31-32% YoY).",
+            "location": {
+                "section": "4.2. Guidance for Q4 and Full Year FY2025",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Full Year FCF Margin: 37.5% to 38.0%",
+            "location": {
+                "section": "4.2. Guidance for Q4 and Full Year FY2025",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 9.5% (reflecting higher beta due to acquisition integration).",
+            "location": {
+                "section": "7.2. DCF Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 3.5% (cybersecurity will outpace GDP for decades).",
+            "location": {
+                "section": "7.2. DCF Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Share Count ~450M (diluted) Post-merger estimate (illustrative).",
+            "location": {
+                "section": "7.1. Valuation Methodology",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "FCF CAGR (5-year): 22%.",
+            "location": {
+                "section": "7.2. DCF Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Table 3 SOTP math error: The sum of segments ($29.4B + $37.2B + $35.0B + $14.0B) is $115.6B, but the table lists 'Total EV' as ~$10.8 Billion.",
+                "locations": [
+                    "Table 3: Sum-of-the-Parts Valuation",
+                    "Section 7.1"
+                ]
+            },
+            {
+                "description": "Share count logic: Current market cap of $123.8B at $190.52 implies ~650M shares. The report assumes a post-merger share count of ~450M despite a $25B acquisition involving stock issuance.",
+                "locations": [
+                    "Section 1: Cover Block",
+                    "Table 3: Sum-of-the-Parts Valuation"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified_synergies",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without risk-free rate or ERP components",
+            "Terminal growth 3.5% without peer comparison"
+        ]
+    }
+}

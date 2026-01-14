@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides explicit and specific assumptions for key drivers, including NII growth (6\u20137%), expense growth (2\u20133%), and a normalized ROE (14\u201315%). These inputs are proximal to the forecasts and maintain internal consistency with the 'Financials Snapshot' table. However, the report is strictly limited to a 'Fair' grade due to the total absence of quantified sensitivity or scenario analysis. While the 'Risk & Uncertainty' section qualitatively mentions that falling rates could compress margins, it fails to provide a range of outcomes or a valuation impact (e.g., a sensitivity table for NIM or credit costs). Furthermore, the justification for valuation parameters is weak; the WACC (9.2%) and terminal growth rate (2.0%) are presented as static figures without any derivation, source, or peer benchmarking. The justification for revenue and expense drivers relies almost exclusively on management guidance rather than independent historical analysis or industry cross-referencing. Per the grading instructions, the lack of quantified sensitivities on material drivers necessitates a hard cap at 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "Net interest income guidance of $15.5-$15.7 billion by fourth-quarter 2025 implies 6-7% full-year growth",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Management projects expense growth of 2-3% in 2025",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "weighted average cost of capital assumption of 9.2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "normalized return on tangible common equity of 14-15% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without source or CAPM derivation",
+            "Terminal Growth 2.0% without economic justification"
+        ]
+    }
+}

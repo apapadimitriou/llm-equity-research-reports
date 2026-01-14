@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections, including cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation assumptions are explicit and link operating drivers (Keytruda erosion, Winrevair ramp, Verona/Ohtuvayre contribution, WACC, margins) to a fair value outcome. However, the Financials Snapshot is generic and lacks biopharma-specific KPIs (product-level sales segmentation, R&D intensity, pipeline milestones, LOE timeline), triggering a KPI-based cap. Evidence integration is uneven: several material claims rely on outdated/mismatched sources (e.g., 2025 EPS and market cap citing 2021/2017 sources), capping the grade. Peer benchmarking is absent, and there is no scenario/sensitivity analysis. There is mild repetition of the Keytruda patent-cliff talking point across sections with limited incremental detail. Overall, breadth is good, but missing sector KPIs and inconsistent sourcing reduce comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Product-level sales by key drugs (Keytruda, Gardasil, Winrevair)",
+            "R&D expense and intensity",
+            "Pipeline status/milestones (Phase II/III, approvals)",
+            "Patent/LOE timeline by asset"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 2025 EPS ($2.13) and consensus beat are cited to sources dated 2021 and Feb 2025, which cannot substantiate July 2025 results",
+                "locations": [
+                    "Analyst Note",
+                    "Sources [3],[1]"
+                ]
+            },
+            {
+                "description": "Market cap and last close include a 2017 Trading Economics source, unsuitable for 2025 cover block data",
+                "locations": [
+                    "Cover Block",
+                    "Sources [6]"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Product-level sales breakdown",
+            "R&D intensity",
+            "Pipeline/Phase milestones",
+            "LOE/patent expiry schedule"
+        ],
+        "uncited_claims": [
+            "Share repurchase activity remains opportunistic"
+        ]
+    }
+}

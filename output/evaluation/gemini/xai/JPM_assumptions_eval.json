@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report\u2019s assumptions are explicit and proximal to the forecasts, appearing in both the narrative and a dedicated appendix table. Specificity is high, with clear magnitudes (4% CAGR, 9% WACC) and a defined five-year horizon (2025\u20132029). Internal consistency is a notable strength; the EPS bridge, revenue CAGR, and margin expansion figures reconcile perfectly between the text and the financial snapshot table. However, the report falls short on justification and robust sensitivity analysis. While the WACC is broken down into its constituent parts (RFR, ERP, Beta), other major drivers like the 300bps margin expansion and 4% revenue growth are supported only by vague references to 'efficiency gains' and 'loan growth' without multi-year historical context or peer benchmarking. Most critically, the report provides only a single quantified sensitivity (interest rate impact on earnings) and lacks any scenario analysis or sensitivity matrix for the valuation model itself (e.g., WACC vs. Terminal Growth). Per the grading rubric, the failure to provide quantified sensitivities for at least 2\u20133 material drivers, combined with the partial justification for margin and revenue trajectories, limits the grade to 'Fair'.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% over 2025-2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 38% by 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "1"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 9.0%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "2"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "expected loan growth of 3-5% annually through 2029",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "100bps cut potentially reducing earnings by 5-10%",
+            "location": {
+                "section": "Risk & Uncertainty",
+                "page": "2"
+            },
+            "driver_type": "NII/NIM"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "NII/NIM"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Operating margin expansion to 38% (record high) justified only by 'efficiency gains' without specific cost-out targets."
+        ]
+    }
+}

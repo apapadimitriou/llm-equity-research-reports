@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with key assumptions stated but scattered across sections. Several critical assumptions are provided with specific magnitudes and time horizons, including NIM compression to 2.70% in 2025, efficiency ratio targets of ~61%, and terminal ROTE of 14.3%. Justification is partial, with some historical context and peer comparisons but limited depth. The report shows solid internal consistency with no major contradictions found between narrative and financial tables. However, the complete absence of quantified sensitivity analysis or scenario testing for material drivers like NIM, credit costs, or efficiency ratios caps the grade at Fair per the hard cap rule. While assumptions are reasonably well-stated, the lack of stress-testing significantly limits the model's robustness.",
+    "assumptions_extracted": [
+        {
+            "quote": "we expect net interest margin, or NIM, to compress slightly to around 2.70% in 2025 from 2.74% in 2024",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "We project NIM compression in 2025 and 2026 is offset by some balance sheet growth. Lower interest rates result in NIM of 2.66% in 2026",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "we project a 2.5% noninterest revenue compounded annual growth rate in the next 10 years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We think that the bank will eventually bring its efficiency ratio back down to roughly 61%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our projections produce a terminal return on tangible equity of roughly 14.3%, in excess of the bank's 9% cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "12"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "22"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding declining from 3,468 Mil in 2024 to 2,963 Mil in 2029",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "21"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Stage II Net Income Growth Rate 3.0%",
+            "Stage II Incremental ROIC 11.0%"
+        ]
+    }
+}

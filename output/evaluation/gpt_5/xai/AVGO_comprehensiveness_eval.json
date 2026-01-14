@@ -1,0 +1,73 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections (analyst note, business description, strategy, bulls/bears, moat, valuation, risk, capital allocation, financials, ESG, appendix, sources) with reasonable proportionality. Valuation assumptions are explicit and linked to operating drivers (AI growth, software growth, margin expansion, DCF inputs), and the financials include multi-year history and forecasts. However, the Financials Snapshot is generic and omits multiple sector-specific KPIs pertinent to semiconductors and infrastructure software (e.g., segment revenue breakdown, ARR/NRR, capex, R&D intensity, AI mix trend), triggering a comprehensiveness cap. Peer benchmarking and scenario/sensitivity analysis are absent, limiting context and robustness. Evidence integration is inconsistent: several material claims are uncited or rely on broad landing pages, and there is at least one internal inconsistency (operating margin 58% vs 35%). Some talking points (AI momentum, VMware contribution) are repeated across sections (Analyst Note, Strategy, Bulls/Bears) with limited incremental depth. Overall, while the structure is complete and the valuation linkage is present, gaps in sector KPIs, peer context, and sourcing reduce comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Segment revenue (Semiconductor vs Software)",
+            "AI revenue mix/time series",
+            "ARR/NRR (software)",
+            "Capex",
+            "R&D as % of revenue"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin stated as 58% in Analyst Note vs 35% in Financials Snapshot (definitions not reconciled)",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Segment revenue breakdown",
+            "ARR/NRR",
+            "Capex",
+            "R&D intensity",
+            "AI revenue mix trend"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG score 22.5 and peer scores",
+            "Ethernet switching market share over 70%",
+            "AI infrastructure investments projected to exceed $1 trillion annually",
+            "Forward P/E around 35x",
+            "Dividend $0.53 per share, 1.5% yield",
+            "Net debt-to-EBITDA at 2.5x post-VMware"
+        ]
+    }
+}

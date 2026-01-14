@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards across multiple dimensions. Critical sections are entirely missing, including Competitive Positioning, which is essential for equity research. The Financials Snapshot lacks fundamental sector-specific KPIs for financial services (Net Interest Margin, Return on Equity, Tier 1 Capital Ratio, Credit Loss Provisions, Book Value per Share), presenting only generic metrics. The Fair Value section provides a target price but completely fails to establish explicit linkages between operating drivers and valuation methodology - there's no DCF model detail, multiple justification, or sensitivity analysis. Peer benchmarking is absent throughout. Many claims lack proper citations, and the report demonstrates significant structural gaps that render it incomplete for investment decision-making purposes.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin",
+            "Return on Equity",
+            "Tier 1 Capital Ratio",
+            "Credit Loss Provisions",
+            "Book Value per Share",
+            "Net Charge-off Rate",
+            "Card Member Loans",
+            "Deposits"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue figures inconsistent - shows $17.86B Q2 2025 but full year 2025E at $71.3B implies unrealistic quarterly run-rate",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Claims 'excellent credit metrics' with 1.9% write-off rate but provides no peer comparison context",
+                "locations": [
+                    "Analyst Note",
+                    "Bulls Say"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin",
+            "Return on Equity",
+            "Tier 1 Capital Ratio",
+            "Credit Loss Provisions",
+            "Book Value per Share",
+            "Net Charge-off Rate",
+            "Card Member Loans",
+            "Deposits"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $315 per share with no supporting DCF calculation details",
+            "25% market share in global premium credit cards",
+            "Target Common Equity Tier 1 ratio of 10-11%",
+            "Share repurchase activity totaled approximately $2.8 billion in 2024"
+        ]
+    }
+}

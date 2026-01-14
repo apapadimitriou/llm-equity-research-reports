@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report clearly states the core DCF inputs near the valuation: 25% revenue CAGR FY2026\u2013FY2029, operating margin expansion from 25% to 30% by FY2029, terminal growth of 10%, a 10% WACC with component parts, and an EPS bridge to $5.00 by FY2029. Specificity: Assumptions include concrete magnitudes, units, and time horizons, and most figures reconcile to the forecast table. Justification: Support is partial. Revenue CAGR is linked to ARR trends and guidance; terminal growth is asserted as \u201caligned with market growth,\u201d but no rigorous cross-check versus long-run economics is provided. WACC components (7% risk-free, 6% ERP, beta 1.2) are stated without sources or capital structure rationale; the share count/dilution underpinning the EPS bridge is opaque. Consistency: There is at least one numeric inconsistency\u2014text targets 30% operating margin by FY2028, while the model reaches 30% in FY2029. WACC at 10% alongside \u201cminimal debt\u201d is not reconciled with the implied cost of equity. Sensitivity: No quantified sensitivity/scenario analysis is provided for major levers (growth, margins, WACC, terminal growth). Given the lack of sensitivities and the noted inconsistency, the assumptions quality is capped at Fair despite reasonable explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our discounted cash flow model assumes a 25% revenue CAGR from FY2026 to FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "tapering to 10% terminal growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 25% in FY2026 to 30% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 10% WACC, incorporating a 7% risk-free rate, 6% equity risk premium, and beta of 1.2.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "EPS bridge starts from FY2026 guidance of $3.50, adding $1.00 from margin gains and $0.50 from share dilution offset, reaching $5.00 by FY2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "In the medium term (3-5 years), CrowdStrike is poised for 25-30% revenue growth",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text says 30% operating margin by FY2028 vs model/table reaching 30% in FY2029",
+                "locations": [
+                    "Business Strategy & Outlook: \"margin expansion to 30% by FY2028\"",
+                    "Financials Snapshot/Fair Value and Profit Drivers: \"30% by FY2029\""
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count (dilution/buyback cadence)",
+            "stock-based compensation impact"
+        ],
+        "unjustified_parameters": [
+            "WACC 10% without capital structure rationale or sourcing",
+            "Risk-free rate 7% without source",
+            "Terminal growth 10% justified only qualitatively as 'aligned with market growth'",
+            "Beta 1.2 without source"
+        ]
+    }
+}

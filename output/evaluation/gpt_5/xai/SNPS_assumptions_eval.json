@@ -1,0 +1,107 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated and proximate to the forecasts (revenue CAGR, margin path, WACC, terminal growth, and EPS bridge). Specificity is solid: magnitudes, units, and horizons (FY2025\u2013FY2029) are provided, and the financials table reconciles to most stated assumptions. However, justification is partial at best: growth rates are attributed broadly to AI/5G and backlog/IP without rigorous historical back-testing, peer benchmarks, or cited sources for the numeric parameters (e.g., WACC inputs, terminal growth). Internal consistency is marred by a notable contradiction: a 35x forward P/E on 2026 EPS conflicts with the $650 FVE and the 2026 EPS in the table. Sensitivity analysis is limited; the report only mentions a \u00b120% valuation sensitivity to revenue and a qualitative 10\u201315% downturn impact, with no quantified scenarios for other material levers (margin, WACC, terminal growth). Given the single contradiction and lack of robust sensitivity/scenario analysis across drivers, the assumptions quality fits the Fair category per the decision rules.",
+    "assumptions_extracted": [
+        {
+            "quote": "Valuation incorporates a discounted cash flow model with a 10% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 28% in FY2024 to 32% by FY2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a WACC of 8.5%, reflecting a beta of 1.1 and equity risk premium of 5%.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 4%, leading to the $650 FVE.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: Starting from FY2024 EPS of $9.50 (estimated)\u2026 yielding FY2025 EPS of $11.20. By FY2029, EPS reaches $18.50.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue CAGR   10.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC           8.5%     | Beta 1.1, risk-free rate 4.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth| 4.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward P/E stated as 35x on 2026 EPS conflicts with $650 FVE and FY2026 EPS of $13.0 (650/13 \u2248 50x).",
+                "locations": [
+                    "Analyst Note: \"This implies a forward P/E of 35x our 2026 EPS forecast\"",
+                    "Financials Snapshot: \"EPS ($) ... FY2026 Forecast 13.0\""
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without capital structure/source detail",
+            "Terminal growth 4% without source/peer benchmark",
+            "Revenue CAGR 10% with selective qualitative rationale",
+            "Margin peak 32% without peer or historical cost analysis"
+        ]
+    }
+}

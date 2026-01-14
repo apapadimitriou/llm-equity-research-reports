@@ -1,0 +1,101 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Key drivers are partly explicit (WACC, terminal growth, revenue CAGR, normalized ROE, P/E multiple) and placed near the valuation/forecast sections, but justification is weak. Most parameters (WACC 8.5%, terminal growth 2.5%, 11.5x P/E) lack evidence-based support from history, peers, or cited sources. Specificity is mixed: some inputs have clear magnitudes and horizons (2025\u20132029 revenue CAGR 5%), while others are vague (EPS growth \u201cmid-to-high single-digit,\u201d \u201cmodest share count reduction\u201d with no numbers, no tax rate). Internal consistency has at least one numeric contradiction: $12 annual dividend vs a stated quarterly increase to $2.75, implying $11 annual. Critically, there is no quantified sensitivity/scenario analysis for material levers (rates/market activity, margins/ROE, revenue growth, valuation parameters). Under the decision rules and hard caps, the absence of sensitivities combined with the contradiction drives a Poor grade, despite the presence of some explicit assumptions and a forecast table.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029E): 5.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Normalized ROE: 13.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 8.5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Target P/E Multiple: 11.5x",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Earnings per share should grow at a mid-to-high single-digit pace supported by modest share count reduction",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Op Margin (%) | 20.1 | 18.2 | 26.7 | 24.5 | 25.2 | 25.8 | 26.1 | 26.4",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Annual dividend stated as $12.00 vs quarterly increase to $2.75 implying $11.00 annual",
+                "locations": [
+                    "Cover Block (Dividend: $12.00 annual dividend, 1.89% yield)",
+                    "Capital Allocation (\"increase from $2.50 to $2.75 per share\")"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count (quantitative path)",
+            "credit_cost",
+            "segment-level drivers/fees",
+            "buyback pace",
+            "sensitivity/scenario ranges on revenue/ROE/WACC/terminal growth"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source",
+            "Terminal Growth 2.5% without source",
+            "Target P/E 11.5x without source"
+        ]
+    }
+}

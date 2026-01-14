@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risk, Capital Allocation, Financials, ESG, Appendix, Sources) and includes multi-year historicals and forecasts with a DCF-based fair value. Valuation assumptions are explicit and reasonably linked to operating drivers (5% revenue CAGR, margin expansion, WACC, terminal growth, EPS bridge). Evidence is generally cited via in-text references, though some material claims (dividend payout target, buyback stance) lack sourcing. Key gaps reduce comprehensiveness: the Financials Snapshot omits sector-specific KPIs for fintech/software (ARR/NRR, bookings/backlog, retention/churn, payment volumes/take rate, organic vs inorganic growth), triggering the KPI hard cap. Peer benchmarking is absent beyond brief mentions, and no scenario or sensitivity analysis is provided. Capital allocation lacks balance-sheet detail (leverage ratios, maturities, liquidity). Minor contradictions appear (margin target timing 2027 vs 2029; uncertainty band definition vs stated swing). Some redundancy exists (repeated switching-costs and 5% growth themes without added depth). Overall, breadth is solid, but missing sector KPIs and analytical depth constrain the grade to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "Net Revenue Retention (NRR)",
+            "Bookings/Backlog",
+            "Customer Retention/Churn",
+            "Payment Volumes/Take Rate",
+            "Organic vs Inorganic Growth (and segment mix)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin target timeline inconsistent: 20% by 2027 (Strategy) vs 20% by 2029 (Valuation)",
+                "locations": [
+                    "Business Strategy & Outlook",
+                    "Fair Value and Profit Drivers"
+                ]
+            },
+            {
+                "description": "Uncertainty band definition (25\u201350%) conflicts with stated valuation swing (20\u201330%)",
+                "locations": [
+                    "Appendix/Glossary",
+                    "Risk & Uncertainty"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Bookings/Backlog",
+            "Retention/Churn",
+            "Payment Volumes/Take Rate",
+            "Organic vs Inorganic Growth"
+        ],
+        "uncited_claims": [
+            "Dividend policy targets 35% payout",
+            "Buybacks focus on undervalued shares"
+        ]
+    }
+}

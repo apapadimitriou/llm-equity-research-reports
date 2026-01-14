@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical dimensions. Assumptions are largely implicit and scattered throughout without clear connection to forecasts. Key drivers like the 5% revenue CAGR and 9% WACC lack proper justification - WACC calculation shows internal contradiction (beta 1.2 and risk-free 4% don't yield 9% without stating equity risk premium). The EPS bridge contains mathematical errors ($6.50 + $1.00 - $0.20 = $7.30, not the forecasted $7.3, though this appears coincidental). Most critically, there are no quantified sensitivities despite acknowledging material risks like 20-30% deal activity reduction in recession. Margin expansion assumptions (+3% over 3 years) lack peer benchmarking or historical justification. The assumptions table in appendix is minimal and doesn't cover credit costs, tax rates, or share count changes. Overall, the model feels black-box with poor traceability between stated assumptions and financial projections.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our fair value estimate of $135 assumes a 5% revenue CAGR through 2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins expanding to 28% by 2027",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is 9%, reflecting beta of 1.2 and cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 3.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "EPS bridge: 2024 base $6.50, plus $1.00 from revenue growth, minus $0.20 from higher expenses, yielding 2025 EPS of $7.30",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC calculation incomplete - states 9% with beta 1.2 and risk-free 4% but doesn't show how these yield 9%",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Appendix assumptions table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "5% revenue CAGR without peer comparison",
+            "28% operating margin target without historical context",
+            "9% WACC incomplete calculation"
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some key assumptions but with significant weaknesses across multiple pillars. Explicitness is partial - while some assumptions like 7% revenue CAGR and 7.5% WACC are stated, many are scattered or lack context. Justification is weak, with most assumptions unsupported by historical data or peer benchmarks. Specificity is limited - the report provides some units and timeframes but lacks detailed drivers. Internal consistency shows contradictions, particularly the EPS bridge math (base $27.75 + $1.50 - $0.75 = $28.50 but scaling to $37.0 by 2029 versus earlier claim of $40.0). Most critically, there are no quantified sensitivities or scenario analyses for material drivers like medical loss ratios, regulatory changes, or WACC variations, which caps the grade at Fair per the hard cap rule.",
+    "assumptions_extracted": [
+        {
+            "quote": "7% revenue CAGR from 2025-2029, driven by 4% membership growth and 3% pricing increases",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 8.4% in 2025 to 9.0% by 2029, reflecting Optum efficiencies offsetting insurance pressures",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We apply a 7.5% WACC, based on a 3% risk-free rate, 6% equity risk premium, and beta of 0.8",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth at 3% post-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "$7 billion in buybacks in 2024 reduced shares by 2%",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS projection inconsistency: Fair Value section claims $40.0 by 2029, but Financials table shows $37.0 for 2029",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "medical_loss_ratio"
+        ],
+        "unjustified_parameters": [
+            "7.5% WACC components lack source verification",
+            "Terminal growth 3% without GDP growth justification",
+            "Margin expansion path lacks historical support"
+        ]
+    }
+}

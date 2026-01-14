@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with reasonable depth: Analyst Note, Business Description, Strategy/Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources are all present. However, the Financials Snapshot is generic and omits core biopharma KPIs (no pipeline/trial phase table, product-level revenue/peak sales, cash runway/burn metrics), triggering the KPI hard cap. Valuation includes DCF assumptions and an EPS bridge, linking margin improvement to cost cuts and revenue to launches, but remains high-level without product-level drivers or sensitivity/scenario analysis. Evidence integration is inconsistent: several material figures are acknowledged as based on insufficient data yet presented as \u201cactuals\u201d (2022 revenue and 2024 actuals), and the ESG score is stated despite admitting data gaps. Peer context is minimal (mentions Pfizer/BioNTech, no benchmarking). Some redundancy exists (COVID demand decline and cost reductions repeated across Analyst Note, Strategy, Bears/Valuation). Overall, while the structure is comprehensive, missing sector KPIs in the snapshot and multiple uncited/insufficiently supported claims constrain the comprehensiveness rating to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis",
+            "Pipeline KPI Table",
+            "Product-level Revenue Breakdown"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Pipeline trial phases/timelines",
+            "Peak sales by product/program",
+            "Cash runway/burn rate",
+            "Revenue by product mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "States insufficient data for precise 2022 revenue in Moat section but provides a precise 2022 revenue figure in the Financials Snapshot.",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Provides a precise ESG Risk score while noting insufficient data for exact score.",
+                "locations": [
+                    "ESG Risk"
+                ]
+            },
+            {
+                "description": "Analyst Note cites Q2 2025 results dated Aug 4 despite report date of Jul 1.",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Pipeline trial phases/timelines",
+            "Peak sales by product/program",
+            "Cash runway/burn rate",
+            "Revenue by product mix"
+        ],
+        "uncited_claims": [
+            "2022 revenue 'over $18 billion' noted without reliable source support",
+            "2024 'actuals' in Financials Snapshot acknowledged as extrapolated, not sourced",
+            "Sustainalytics ESG Risk Rating (25.0) presented without a verifiable citation"
+        ]
+    }
+}

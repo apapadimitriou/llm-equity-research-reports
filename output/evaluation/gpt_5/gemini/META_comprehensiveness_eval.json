@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers many core sections with meaningful depth: an explicit executive summary/rating/target, detailed strategy and outlook centered on AI, segment analysis (FoA and Reality Labs), a bulls/bears debate, multi-year financial model (income statement, cash flow, balance sheet), valuation (DCF plus SOTP), risk assessment, ESG analysis, and peer benchmarking with valuation and capital intensity comparisons. Evidence integration is generally strong, with frequent in-text citations to the 10-K, earnings transcripts, and third-party sources. However, comprehensiveness is constrained by two gaps. First, the Financials Snapshot and projections lack core sector KPIs (e.g., DAUs/MAUs time series, ARPU, ad impressions and pricing, engagement), which is essential for an ad-driven social platform. While user figures are mentioned qualitatively, they are not structured in the KPI tables. Second, capital allocation coverage is narrow, focusing mostly on CapEx; dividends/buybacks, balance sheet strategy, and M&A are not discussed as a distinct section. Valuation is linked to operating drivers (revenue, margins, CapEx) but provides only qualitative sensitivity and no scenario analysis. Some repetition appears where regulatory risks are discussed both in the FoA section and the Risk section without substantial incremental depth. Given the KPI omissions in the snapshot and limited capital allocation treatment, the report earns a Fair grade despite strong sourcing and otherwise broad scope.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note / Executive Summary",
+            "Business Description (FoA & RL)",
+            "Business Strategy & Outlook (AI pillars)",
+            "Bulls vs Bears",
+            "Competitive/Regulatory Context",
+            "Financial Model & Forecasts",
+            "Valuation (DCF & SOTP)",
+            "Peer Benchmarking",
+            "Risk & Uncertainty",
+            "ESG/Controversies",
+            "Financials Snapshot",
+            "Sources/References"
+        ],
+        "sections_missing": [
+            "Cover block & contents",
+            "Capital Allocation (buybacks/dividend/BS policy)",
+            "Scenario/Sensitivity Analysis",
+            "Appendix/Glossary"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "GAAP Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "CapEx as % of Revenue (peer table)",
+            "Point mentions of user metrics (WhatsApp >3B, Threads ~400M MAUs)"
+        ],
+        "sector_kpis_missing": [
+            "DAUs/MAUs time series",
+            "ARPU",
+            "Ad impressions growth",
+            "Average price per ad",
+            "Engagement/time spent metrics"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "DAUs/MAUs time series",
+            "ARPU",
+            "Ad impressions growth",
+            "Average price per ad",
+            "Engagement/time spent"
+        ],
+        "uncited_claims": []
+    }
+}

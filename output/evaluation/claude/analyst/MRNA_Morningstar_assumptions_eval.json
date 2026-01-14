@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates partial explicitness with key assumptions stated but scattered throughout the narrative. Revenue assumptions are reasonably specific ($2 billion annual covid sales, $7 billion infectious disease vaccines by 2034, $3 billion from mRNA-4157 by 2034). The WACC of 9% is explicitly stated and justified as 'in line with early commercial-stage biotech peers.' However, justification relies heavily on probability assessments (60% for mRNA-4157, 70% for flu vaccines) without robust historical or peer benchmarks. Internal consistency appears clean with no major contradictions found. The critical limitation is the complete absence of quantified sensitivity analysis or scenario testing for material drivers, which caps the grade at Fair despite otherwise solid assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "We think mRNA-1273, the company's authorized covid vaccine, should generate roughly $2 billion in annual sales in 2025 and beyond",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume $7 billion in annual infectious-disease vaccine sales outside of covid by 2034",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We assume a 60% probability of approval for Merck and Moderna's personalized cancer vaccine, mRNA-4157, and we expect Moderna could record $3 billion in sales from the program by 2034",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect operating margins will surpass 30% by 2031 and model long-term margins above 40%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assign Moderna an average level of systemic risk, resulting in a cost of equity (and weighted average cost of capital) of 9%, in line with its early commercial-stage biotech peers",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 384",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "60% probability mRNA-4157 approval",
+            "70% probability flu vaccine success",
+            "$7 billion infectious disease sales by 2034"
+        ]
+    }
+}

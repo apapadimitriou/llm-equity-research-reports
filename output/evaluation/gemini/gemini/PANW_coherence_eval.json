@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report demonstrates strong narrative coherence and strategic synthesis, particularly in its explanation of the 'Identity Gap' and the rationale for the CyberArk acquisition. However, it suffers from catastrophic internal contradictions and mathematical errors that undermine its credibility. Most notably, Table 3 (SOTP) contains a massive calculation error, listing 'Total EV' as ~$10.8 Billion despite the individual segments summing to $115.6 Billion. Furthermore, the valuation logic is fundamentally broken: the SOTP calculates an Equity Value of ~$112.6 Billion, which is lower than the stated current market capitalization of ~$123.8 Billion. This implies the stock is overvalued, yet the report issues a 'BUY' rating with a $245 target. Additionally, the share count of 450 million used in the valuation does not reconcile with the market cap and current price of $190.52, which implies ~650 million shares. Temporally, the report contains a significant 'future-dating' error; it is dated August 4, 2025, yet Source 13 cites a blog post from October 2025. This violation of linear time suggests a failure in data integrity. While the competitive analysis is well-articulated, the disconnect between the narrative's bullishness and the flawed financial data creates an unbridgeable gap. Per the grading guardrails, the presence of multiple unaddressed contradictions between tables, narrative, and market data necessitates a 'poor' grade.",
+    "evidence": [
+        "Table 3 lists 'Total EV ~$10.8 Billion' while the component segments sum to $115.6 Billion, and the resulting Equity Value of $112.6 Billion contradicts the 'BUY' rating as it is lower than the $123.8 Billion market cap (Section 7.1).",
+        "Source 13 is cited as an 'October 2025' blog post, despite the report being written on August 4, 2025 (Sources section).",
+        "The share count of 450M in Table 3 implies a market cap of ~$85.7B at the $190.52 price, contradicting the ~$123.8B market cap stated in the Cover Block."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is well-structured with a clear arc (results \u2192 business/strategy \u2192 valuation \u2192 risks/capital allocation) and generally smooth prose. Sections cross-reference reasonably (e.g., high retention and multi-cloud positioning appear in Strategy, Bulls, and Analyst Note; buybacks in Bears and Capital Allocation). However, several internal inconsistencies undermine coherence. First, the growth narrative and the forecast table conflict: the Fair Value section states ~20\u201325% growth with a 22% CAGR for FY2025\u20132029, yet the Financials Snapshot implies a ~19% CAGR and includes a 13.4% YoY in 2027\u2014below the stated corridor\u2014without explanation. Second, margin guidance is inconsistent: Strategy targets \u201cmid-teens by late decade,\u201d while the Fair Value model assumes 20% by 2029. Third, valuation assumptions are contradictory: the Appendix lists both a 0% perpetual growth beyond 2029 and an exit multiple (4.5x revenue), but the text does not reconcile whether the DCF uses a perpetuity or exit approach. Additionally, the WACC setup (10% WACC with 30% cost of equity and near-zero cost of debt) is incongruent with the largely net-cash capital structure described, with no rationale for the weighting. A minor terminology mismatch appears where the glossary frames capital allocation ratings as Poor/Average/Good while the report uses \u201cFair.\u201d These tensions trigger the hard cap to fair despite otherwise solid flow and sourcing.",
+    "evidence": [
+        "Fair Value vs. Financials: \u201cCAGR ~22% from FY2025\u20132029\u201d while the table shows ~19% CAGR and 13.4% YoY in 2027 (Financials Snapshot).",
+        "Margins: Strategy says non-GAAP operating margin to \u201cmid-teens by late decade\u201d vs. Fair Value assumes ~20% by 2029.",
+        "Appendix: \u201cperpetual growth 0% after 2029\u201d alongside \u201cTerminal multiples: ~4.5\u00d7 revenue exit,\u201d with no reconciliation of methods."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and covers nearly all headline sections: cover/contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Evidence integration is generally consistent, with frequent in-text citations for operational data (orders, backlog, EPS, cash, segment revenue) and regulatory/M&A updates. Valuation assumptions are explicit and reasonably linked to operating drivers (growth in communications/semis, mix shift to software/services, margin trajectory). However, the Financials Snapshot is generic and omits multiple core sector KPIs that are important for test-and-measurement hardware: multi-year orders/bookings, backlog, gross margin, R&D % of sales, and mix of recurring/software revenue. Peer benchmarking is minimal (competitors named; ESG peer scores) without comparative financials or valuation multiples, and no scenario/sensitivity analysis is provided. Some repetition exists (backlog/recurring revenue highlighted in both Analyst Note/Strategy and Bulls without added depth). Given the KPI gaps in the snapshot and absence of scenarios and robust peer benchmarking, comprehensiveness is solid at a headline level but lacks depth in key quantitative areas, warranting a Fair grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note / Executive Summary",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Orders growth (Q1)",
+            "Backlog (Q1 ~$2.3B)",
+            "Recurring revenue % (~31%)",
+            "Software/services mix (~40%)",
+            "Segment revenue (CSG/EISG)",
+            "Operating margin",
+            "Free cash flow",
+            "ROIC",
+            "Gross margin (forecast 64\u201365%)",
+            "R&D % of sales (mentioned ~16%)"
+        ],
+        "sector_kpis_missing": [
+            "Orders/Bookings multi-year table",
+            "Backlog multi-year table",
+            "Gross margin (historical in snapshot)",
+            "R&D % of Sales (historical in snapshot)",
+            "Software/Recurring mix (historical in snapshot)",
+            "Book-to-bill ratio",
+            "Geographic revenue mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Orders/Bookings trend (multi-year)",
+            "Backlog trend (multi-year)",
+            "Gross margin (multi-year)",
+            "R&D % of sales (multi-year)",
+            "Book-to-bill"
+        ],
+        "uncited_claims": [
+            "R&D at 16% of sales in FY2024 (no direct citation inline)",
+            "Customer survey signals improvement (no source)",
+            "Spirent deal price of $1.46B (price not directly cited)"
+        ]
+    }
+}

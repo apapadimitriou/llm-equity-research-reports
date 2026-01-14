@@ -1,0 +1,66 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides several explicit key assumptions that are clearly stated and proximal to forecasts, including cost of equity (7.5%), revenue growth projections (3% average annual 2024-2029), and operating margin targets (63.2% by 2028). These assumptions are well-justified with multi-year historical context and peer comparisons. The specificity is solid with clear units, timeframes, and causal drivers. Internal consistency is maintained throughout with no contradictions between narrative and financial tables. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers like cost of equity, revenue growth rates, or margin assumptions. While qualitative risks are discussed (volatility impact, competitive threats), no quantified ranges or stress tests are provided for key valuation inputs. This absence of robust sensitivities caps the grade at Fair despite otherwise strong assumption quality.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a 7.5% cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We project that CME's revenue will grow at an average annual rate of around 3% from a cyclically strong 2024 to 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We anticipate operating margin to increase to about 63.2% by 2028 from 61.6% in 2023",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "translates to about 24.4 times our 2025 projected earnings",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 360",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

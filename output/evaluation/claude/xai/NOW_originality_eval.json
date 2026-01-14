@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report contains several generic restatements and boilerplate phrasing typical of standard equity research. While it presents some company-specific details like the 98% renewal rate and AI integration metrics, most insights lack originality. The analysis largely restates earnings results and standard competitive positioning without novel synthesis. The valuation section relies on conventional DCF assumptions (20% revenue CAGR, margin expansion to 30%) without unique drivers or mechanisms. Key red flags include generic phrases like 'secular shifts toward cloud-based automation,' standard moat analysis, and boilerplate ESG content. The report shows minimal synthesis beyond connecting AI adoption to growth, but lacks the depth and originality needed for higher grades.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "ServiceNow is well-positioned as a leader in enterprise software, benefiting from secular shifts toward cloud-based automation and AI integration",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI-driven growth but factors in potential volatility from economic uncertainty",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "High switching costs and a 98% renewal rate lock in customers, supporting predictable revenue streams",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Macroeconomic pressures are elongating sales cycles, potentially capping growth below 20% in FY2026",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "Operating margins projected to expand from 9.3% to 30% by 2029, reflecting scale efficiencies and pricing power",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "AI-related revenues projected to comprise 30% of total by 2027, fueling margin expansion",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            }
+        ],
+        "red_flags": [
+            "Generic 'secular shifts' and 'digital transformation' phrasing",
+            "Standard DCF with conventional assumptions",
+            "Boilerplate ESG and moat analysis",
+            "Generic competitive positioning language"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 3,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

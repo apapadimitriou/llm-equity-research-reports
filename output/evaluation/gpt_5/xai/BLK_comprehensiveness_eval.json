@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report broadly covers the expected sections: cover block and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation assumptions are reasonably explicit and link revenue growth (AUM and fee rate) and margin trends to a DCF-derived fair value, and an EPS bridge is provided. However, evidence integration is uneven: multiple claims are flagged as \u201cinsufficient data,\u201d several material points lack citations, and some sources appear mismatched (e.g., BlackRock TCP transcript) or dated relative to the report date. The Financials Snapshot includes multi-year revenue, EPS, margins, FCF, and ROIC, but omits core asset-management KPIs (AUM, net inflows/outflows, fee rate/revenue yield, performance fees), triggering the hard cap at Fair. Peer context is only qualitative (mentions Vanguard/State Street) with no benchmarking, and ESG is superficial. There is some repetition of talking points around Aladdin and scale across Strategy, Bulls/Bears, and Moat with limited incremental depth. Scenario/sensitivity analysis is absent. Overall, headline coverage is strong, but KPI gaps and sourcing issues constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "AUM (mentioned in text)",
+            "ETF Net Inflows (mentioned in text)"
+        ],
+        "sector_kpis_missing": [
+            "AUM (in Financials Snapshot)",
+            "Net Inflows/Outflows (in Financials Snapshot)",
+            "Fee Rate/Revenue Yield",
+            "Performance Fees"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "AUM (table)",
+            "Net Inflows/Outflows (table)",
+            "Fee Rate/Revenue Yield",
+            "Performance Fees"
+        ],
+        "uncited_claims": [
+            "Regional AUM mix (50% Americas / 30% Europe / 20% APAC)",
+            "Sustainalytics score: 15 (Low risk)",
+            "Reference to targeted deals like Preqin (no source)",
+            "iShares ETFs net inflows of $50B in Q1 2025"
+        ]
+    }
+}

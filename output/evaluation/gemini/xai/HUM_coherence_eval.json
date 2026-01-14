@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from a critical temporal incoherence that undermines its fundamental credibility. It is officially dated June 17, 2025, yet the Analyst Note and Bulls Say sections explicitly detail financial results and guidance raises from late July 2025. Furthermore, the bibliography includes Source [9] dated August 9, 2025. This 'future-knowledge' paradox creates a total contradiction between the report's stated issuance date and its narrative content. Additionally, there are mathematical inconsistencies regarding growth projections: the narrative specifies an 8% revenue CAGR for 2025-2029, but the Financials Snapshot table shows revenue growing from $110.5B in 2024 to $174.1B in 2029, which represents a 9.5% CAGR. While the 2025-2029 segment of the table aligns with 8%, the inclusion of the 2024 base year makes the stated CAGR in the text misleading. The report also contains several 'insufficient data' placeholders in the Business Strategy, Economic Moat, and Capital Allocation sections, indicating an unpolished or incomplete draft. The transition between the 'cautious optimism' of the pre-earnings period and the 'stronger-than-expected' post-earnings analysis is logically impossible within a single document dated in June, forcing the reader to reconcile two different points in time simultaneously.",
+    "evidence": [
+        "Report date: 2025-06-17 vs. discussion of 'actual Q2 results released in late July' and Source [9] dated 2025-08-09 (Analyst Note / Sources).",
+        "Stated '8% revenue CAGR for 2025-2029' in narrative vs. 9.5% CAGR calculated from 2024 ($110.5B) to 2029 ($174.1B) in Financials Snapshot.",
+        "Multiple 'insufficient data' placeholders for 2025 specifics in Business Strategy, Economic Moat, and Capital Allocation sections."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

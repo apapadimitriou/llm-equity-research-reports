@@ -1,0 +1,95 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails the quality of assumptions assessment due to multiple internal contradictions and a lack of quantified sensitivity analysis, triggering the 'Poor' hard cap. Most critically, there is a massive unresolved numeric discrepancy regarding share count: Table 1 reports 388 million shares outstanding, yet the SOTP valuation in Table 4 utilizes 890 million diluted shares without providing a bridge or justification for this 129% increase. Furthermore, Table 1 cites a FY2026 consensus revenue of $9.75B, while the report's own financial forecast in Table 5 projects only $5.5B for the same period, a nearly 50% variance that is never reconciled in the narrative. \n\nWhile the report is explicit in listing its SOTP inputs (WACC, PoS, Peak Sales), the justification for these drivers is weak, relying on 'internal analyst estimates' and 'industry averages' rather than specific peer benchmarking or historical context. Finally, despite the 'Very High' uncertainty rating and the text mentioning that sensitivity analysis was 'considered,' the report provides no quantified ranges, scenarios, or sensitivity tables for material levers like the 8.85% WACC or the Probability of Success (PoS) for the oncology pipeline. Per the instructions, the presence of two distinct contradictions combined with the absence of quantified sensitivities necessitates a 'Poor' grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Our DCF models utilize a Weighted Average Cost of Capital (WACC) of 8.85% as a baseline",
+            "location": {
+                "section": "Sum-of-the-Parts (SOTP) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "mRNA-4157 (Oncology) ... Probability of Success (PoS %) 50%",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Shares Outstanding (diluted) 890*",
+            "location": {
+                "section": "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "mRNA-1083 (Flu/COVID Combo) ... Est. Peak Sales (Un-risked) $6.0B",
+            "location": {
+                "section": "Table 3: Key Pipeline Assets",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "reducing its annual GAAP costs from a peak of $11.1 billion in 2023 to a range of $4.7 billion to $5.0 billion by 2027",
+            "location": {
+                "section": "Post-Pandemic Realities: Resizing and Managing Cash Burn",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "projected revenue range was narrowed and lowered to $1.5 billion to $2.2 billion",
+            "location": {
+                "section": "Balance Sheet and Updated FY2025 Guidance",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Table 1 lists 388M shares outstanding, while Table 4 uses 890M shares for valuation without a reconciliation of the 502M share difference.",
+                "locations": [
+                    "Table 1: Key Financial & Valuation Metrics",
+                    "Table 4: Sum-of-the-Parts (SOTP) Valuation Breakdown"
+                ]
+            },
+            {
+                "description": "Table 1 lists FY2026E Revenue Consensus at $9.75B, but Table 5 forecasts 2026E Revenue at $5.5B with no explanation for the massive divergence from consensus.",
+                "locations": [
+                    "Table 1: Key Financial & Valuation Metrics",
+                    "Table 5: Abridged Financial Forecasts"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "quantified sensitivity analysis",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "890M diluted share count",
+            "Peak sales estimates for pipeline assets",
+            "WACC of 8.85% (source cited but not derived)"
+        ]
+    }
+}

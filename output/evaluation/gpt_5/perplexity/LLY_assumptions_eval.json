@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation inputs are largely explicit and proximal (WACC 8.5%, terminal growth 3.5%, tax rate 14%, revenue CAGR 12\u201315% or 12% for 2025\u201329; margin range 28\u201332%). Specificity is decent with magnitudes, units, and horizons stated. Justification is partial: drivers (GLP\u20111 growth, scale benefits) are cited, and WACC has a brief rationale, but there is limited evidence tying assumptions to multi\u2011year history or peer benchmarks, and no citations for terminal growth or tax rate optimization. Internal consistency shows minor issues: revenue CAGR 2025\u201329 set at 12% while the table path implies ~11%, and the narrative mixes net margin ranges with operating margin targets without clean reconciliation. Stress\u2011testing is limited; ranges are provided for revenue CAGR and net margins, but there is no robust, quantified sensitivity/scenario analysis showing valuation impact across key levers (e.g., WACC, terminal growth, tax rate, GLP\u20111 adoption). Several material inputs (capex schedule, share count path) are vague. Overall, assumptions are present and somewhat quantified, but justification depth and sensitivity rigor are insufficient for a higher grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue compound annual growth rate assumptions of 12-15% through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Revenue CAGR 2025-29 | 12.0%",
+            "location": {
+                "section": "Appendix > Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project sustained net margins in the 28-32% range through our forecast period",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 8.5% | Cost of debt ~4.5%, equity risk premium 6%",
+            "location": {
+                "section": "Appendix > Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.5% | Long-term GDP growth",
+            "location": {
+                "section": "Appendix > Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Tax Rate | 14.0% | International optimization, R&D credits",
+            "location": {
+                "section": "Appendix > Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Earnings per share growth assumes moderate share count changes",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Assumed 'Revenue CAGR 2025-29 | 12.0%' vs the revenue path from 60.0 (2025E) to 90.5 (2029E) implies ~10.9% CAGR",
+                "locations": [
+                    "Appendix > Key Valuation Assumptions",
+                    "Financials Snapshot table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "share_count",
+            "product-level revenue mix/GLP-1 adoption curve"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% rationale lacks sourcing beyond brief components",
+            "Terminal growth 3.5% without external benchmark/citation"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe temporal inaccuracies and multiple unresolved contradictions that fundamentally undermine its coherence. The most glaring issue is the report's claim to be dated 2025-07-15 while discussing Q1 2025 results as historical and Q2 2025 as both future previews and completed results within the same section. The Analyst Note states 'Looking to Q2 2025, previews indicated potential strength' then immediately follows with 'Post-quarter reports confirmed a 32% year-over-year revenue increase' - creating impossible temporal logic. Additionally, the financial assumptions contradict the Bulls/Bears analysis without reconciliation: the valuation assumes 25% operating margins by 2029 and strong AI growth, while Bears cite inventory write-downs and competitive pressures that would logically impact these projections. The EPS bridge calculation appears inconsistent, starting with 2024 base EPS of $1.20 but showing 2024 actual EPS as 'insufficient data' in the financials table. Several sections read as disconnected bullet lists with minimal transitions, particularly the Strategy section which jumps between competitive positioning, market trends, and financial projections without clear connective tissue. These fundamental flaws require readers to construct the argument themselves.",
+    "evidence": [
+        "Analyst Note: 'Looking to Q2 2025, previews indicated potential strength' immediately followed by 'Post-quarter reports confirmed a 32% year-over-year revenue increase' - temporal contradiction within same paragraph",
+        "Fair Value section assumes 25% operating margins by 2029 while Bears Say cites '$800 million inventory write-downs' and competitive pressures with no reconciliation of these conflicting scenarios",
+        "EPS bridge uses '2024 base EPS $1.20' but Financials table shows '2024 Actual EPS: insufficient data' - direct data contradiction"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

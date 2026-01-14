@@ -1,0 +1,115 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "Explicitness: The report states key modeling inputs near the forecasts they inform, including DCF levers (cost of equity 7.5%, WACC 7.2%, long-run tax 19%, Stage II EBI growth 3.5%, projected shares) and business drivers (EPS growth near 4%, flat operating margins, Stelara decline, Caplyta ramp), and quantifies a 2025 tariff impact. Specificity: Assumptions are numeric with units and timeframes (multi-year revenue/EPS tables, $ impacts, 10-year horizon for Caplyta, Stage II/perpetuity year). Consistency: Narrative aligns broadly with the tables and valuation summary; model summaries reconcile across pages, with only minor phrasing tension (e.g., \u201cflat\u201d margins vs modestly rising modeled margins). Justification: Several drivers are justified qualitatively with pipeline data and industry context (tariffs, US pricing scenarios, tax-policy direction). However, some core valuation parameters (WACC, Stage II growth) lack source-based justification within the report. Sensitivity: There is partial quantified scenario context (tariff-induced margin headwind; potential US price convergence effect; tariff duration assumption), but no JNJ-specific valuation sensitivity tables or ranges for WACC/terminal growth. Overall, assumptions are explicit and specific with partial evidentiary support and limited scenario quantification.",
+    "assumptions_extracted": [
+        {
+            "quote": "We expect annual adjusted earnings per-share growth will average close to 4% during the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We expect fairly flat operating margins over the next several years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Cost of Equity % 7.5 ... Weighted Average Cost of Capital % 7.2",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Years Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 19.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Years Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.5",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 Years Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 2,407",
+            "location": {
+                "section": "Morningstar Valuation Model Summary \u2013 DCF",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "We assume an over $3 billion decline in global Stelara sales in 2025.",
+            "location": {
+                "section": "Analyst Note \u2013 Earnings 22 Jan 2025",
+                "page": "9"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "annual sales for Caplyta of nearly $5 billion by the end of our 10-year explicit forecast period.",
+            "location": {
+                "section": "Analyst Note \u2013 Intra-Cellular acquisition 14 Jan 2025",
+                "page": "10"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "model base-case annual legal costs at 3% of non-GAAP net income",
+            "location": {
+                "section": "Risk and Uncertainty",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "J&J expects a $400 million impact this year from confirmed tariffs, mostly on its medtech business",
+            "location": {
+                "section": "Analyst Note \u2013 Earnings 15 Apr 2025",
+                "page": "7"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "tax_rate",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth rate (explicit perpetuity growth not stated)",
+            "capex/working-capital drivers not discussed",
+            "valuation impact sensitivities (WACC, tax, margin)"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.2% without source",
+            "Stage II EBI growth 3.5% without support",
+            "Long-run tax rate 19% only loosely justified by policy context"
+        ]
+    }
+}

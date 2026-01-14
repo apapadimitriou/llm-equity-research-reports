@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected headline sections, including a clear cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, ESG, Appendix, and Sources. Depth is moderate across sections, with sector-relevant discussion of efficiency ratio, capital adequacy, charge-offs, and stress testing in the narrative. However, the Financials Snapshot is generic and omits core bank KPIs (NIM, NII, provisions/allowance, CET1, loan/deposit growth), triggering a hard cap. Valuation presents assumptions (growth, efficiency ratio, WACC) but does not explicitly bridge operating drivers to the stated fair value, further reinforcing the cap. Evidence is frequently cited, but some items rely on outdated sources (2022 price targets) and several material assumptions (e.g., WACC, efficiency target) lack citations. Peer benchmarking is absent and industry context is limited. Redundancy appears in repeated references to the $1.5B branch program and efficiency ratios across sections without added depth. Overall, the report is structurally comprehensive but lacks sector-appropriate KPI tables, explicit valuation linkage, peer analysis, and scenario/sensitivity work.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Efficiency Ratio (narrative)",
+            "Tier 1 Capital Ratio (narrative)",
+            "Net Charge-offs (narrative)",
+            "Dividend (narrative)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (NII)",
+            "Loan Loss Provisions/Allowance",
+            "CET1 Ratio",
+            "Loan & Deposit Growth",
+            "Nonperforming Loans (NPL)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Last close price appears dated later (Aug 2025) than the stated report date (Jun 2025), creating a timeline inconsistency",
+                "locations": [
+                    "Cover Block",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "NII",
+            "Loan Loss Provisions",
+            "CET1",
+            "Loan & Deposit Growth",
+            "NPL"
+        ],
+        "uncited_claims": [
+            "Weighted average cost of capital (~9\u201310%) in valuation section has no source",
+            "Efficiency ratio target (<60%) used in valuation assumptions lacks citation",
+            "ESG Risk Rating (Medium) and Equity Style Box not sourced"
+        ]
+    }
+}

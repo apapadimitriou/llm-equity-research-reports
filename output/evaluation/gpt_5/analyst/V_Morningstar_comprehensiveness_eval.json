@@ -1,0 +1,60 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured and covers nearly all expected equity research sections: a clear cover and contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risk & Uncertainty, Capital Allocation, and an extensive Financials model summary, plus ESG and a detailed methodology/disclosures appendix. Evidence integration is generally strong, with in-text citations to external sources (Wall Street Journal, Nilson Report) and company KPIs referenced in Analyst Notes (payment volume, transactions, cross-border growth, client incentives). Valuation assumptions are articulated and linked to operating drivers (growth rates, margins, cross-border dynamics, cost of equity) and supported by a DCF summary. Peer context is present via competitor tables and ESG peer analysis. Redundancy is minimal and topical overlaps add incremental detail. The main gap is the Financials Snapshot lacking core sector KPIs (e.g., TPV, transactions, cross-border mix, take rate) in tabular form; these are discussed narratively but not included in the snapshot, triggering the hard cap at Fair. Scenario/sensitivity analysis is also absent. Overall, coverage is broad and proportionate, but the KPI table omission and no scenarios constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix/Methodology",
+            "Competitors/Peer Benchmarking"
+        ],
+        "sections_missing": [
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Total Payment Volume (TPV)",
+            "Payment Volume Growth",
+            "Transactions Growth",
+            "Cross-border Volume Growth",
+            "Client Incentives"
+        ],
+        "sector_kpis_missing": [
+            "Take Rate/Net Revenue Yield",
+            "Cross-border Mix Percentage",
+            "Merchant/Issuer Fee Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Market cap shown as 676.16 USD Bil on cover vs 711.48 Bil in competitor table",
+                "locations": [
+                    "Cover block",
+                    "Competitors"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Take Rate/Net Revenue Yield",
+            "Cross-border Mix Percentage",
+            "Merchant/Issuer Fee Rate"
+        ],
+        "uncited_claims": []
+    }
+}

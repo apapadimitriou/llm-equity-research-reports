@@ -1,0 +1,97 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely compromised by fundamental data gaps and internal contradictions. While key assumptions are explicitly stated in the Appendix (4% revenue CAGR, 30.5% margins, 9% WACC, 3% terminal growth), they lack proper justification. The entire historical data foundation is missing ('insufficient data' across all actual financials 2022-2024), yet forecasts are claimed to be 'based on Q1/Q2 2025 trends.' Critical contradictions include: Q2 2025 profits of $3.72B implying ~$15B annual earnings versus forecasted 2025 EPS of $45 on 320M shares ($14.4B), and claiming 2026 EPS of $48 derives from 2024 EPS of $40 plus adjustments totaling $8 net. The 9% WACC assumption uses beta 1.2 and 4% risk-free rate without supporting evidence. No sensitivity analysis is provided for any material drivers despite significant market volatility risks acknowledged. The revenue growth assumption relies on fragmentary quarterly data extrapolated across five years without peer benchmarking or historical validation.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-2029) | 4.0% | Based on Q1/Q2 2025 trends",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Avg. Op. Margin | 30.5% | Margin expansion from fee growth",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 9.0% | Beta 1.2, risk-free rate 4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth | 3.0% | Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Shares Outstanding | 320M | Approximate from profit figures",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Operating margins are projected to average 30%, expanding from 28% in recent quarters",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q2 2025 profits of $3.72B implies annual earnings inconsistent with forecasted 2025 EPS of $45 on 320M shares",
+                "locations": [
+                    "Analyst Note Q2 profits",
+                    "Financials Snapshot 2025 EPS forecast"
+                ]
+            },
+            {
+                "description": "Claims 2026 EPS of $48 derives from 2024 EPS of $40 plus $8 net adjustments, but 2024 actual EPS listed as 'insufficient data'",
+                "locations": [
+                    "Fair Value and Profit Drivers EPS bridge",
+                    "Financials Snapshot 2024 Actual"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "4% revenue CAGR without peer comparison",
+            "9% WACC without supporting market data",
+            "30.5% operating margins without historical validation"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure and largely consistent narrative across Analyst Note, Strategy/Outlook, Moat, Valuation, Risks, and Capital Allocation. Transitions within sections are generally reasonable (e.g., Strategy balances positives versus headwinds, then ties execution risk to ROTCE goals), and the financial table broadly aligns with the stated revenue and EPS trajectory. However, there is a material internal contradiction in valuation assumptions that undermines coherence. In Fair Value, the cost of equity is described as ~10% based on an 8.5% risk-free rate and 4.5% equity risk premium, which would mathematically imply ~13% (with beta 1.0), and the Appendix contradictorily sets the risk-free at 3.5% and CoE at 8\u20139%. This mismatch triggers an auto cap to fair. Minor tensions persist between narrative and table (e.g., margins cited rising to ~23% by 2029 versus 22% in the table), though not severe. Additionally, Bulls\u2019 upside narrative (potential doubling) is not reconciled with the base-case\u2019s \u201climited upside\u201d characterization at $68 versus $85 FVE, which creates an unresolved expectation gap. Temporal claims generally align, and most citations support the stated points at face value. Overall, the analysis is understandable with effort, but the valuation assumption inconsistency and lack of explicit Bulls/Bears reconciliation make it internally noisy.",
+    "evidence": [
+        "Fair Value vs Appendix: Fair Value uses an 8.5% risk-free + 4.5% ERP to claim CoE ~10% and WACC ~9%, while Appendix states a 3.5% risk-free and CoE 8\u20139%; these are inconsistent.",
+        "Margins: Fair Value mentions operating margins improving from ~20% (2024) to ~23% (2029), but Financials Snapshot shows 19.2% in 2024 and 22.0% for 2027\u20132029.",
+        "Expectation gap: Bulls cite potential stock doubling, yet Analyst Note/Fair Value say at ~$68 vs $85 FVE there is \u201climited upside,\u201d without reconciling the views."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

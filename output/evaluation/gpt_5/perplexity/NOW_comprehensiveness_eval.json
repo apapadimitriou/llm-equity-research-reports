@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is structurally comprehensive, covering all headline sections: cover block, contents, analyst note, business description, strategy & outlook, bulls/bears, moat, valuation & drivers, risk, capital allocation, financials snapshot, ESG, appendix, and sources. Evidence integration is generally consistent, with in-text citations supporting most material claims and a sources list. Valuation includes explicit operating assumptions (revenue growth, margin expansion, FCF margins, WACC) and scenario cases in the appendix, linking drivers to a fair value range. However, the Financials Snapshot table is generic and omits multiple core SaaS KPIs (ARR, NRR/dollar-based net retention, billings, RPO/CRPO, subscription revenue mix), triggering the hard cap to Fair. Peer context exists (Microsoft, Salesforce), but formal peer benchmarking is missing. Redundancy is limited; recurring AI strategy themes add incremental depth across sections. Overall, breadth is strong, but the absence of sector-specific KPI tables and lack of peer benchmarking reduce comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Competitive Positioning/Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Controversies"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "Dollar-based Net Retention (NRR)",
+            "Billings",
+            "RPO/CRPO",
+            "Subscription revenue mix by product"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "NRR",
+            "Billings",
+            "RPO/CRPO",
+            "Subscription revenue mix by product"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report exhibits fundamental flaws across all assumption quality pillars. Explicitness is severely compromised with most key assumptions unstated or buried without context. Justification is weak, relying on single data points extrapolated without peer benchmarks or multi-year history. Specificity is poor - revenue CAGR of 9% lacks clear derivation, WACC of 8% appears without supporting calculation, and operating margins assume static 60% without basis. Internal consistency fails with multiple contradictions: Q1 revenue of $1.6B cannot annualize to $6.4B as claimed, and EPS calculations don't reconcile between sections. Most critically, there are zero sensitivity analyses on any material drivers, automatically capping the grade at Fair, but the numerous contradictions and opaque assumptions drive it to Poor. The valuation model appears black-box with assumptions scattered throughout rather than systematically presented.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 9% from 2025-2029, based on 10% growth observed in Q1 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project operating margins stable at 60%, reflecting operating leverage from volume growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8%, incorporating beta of 0.8 and cost of equity",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Starting from Q2 2025 EPS of $2.96, annualizing to $11.84 for 2025, growing at 8% CAGR to $16.50 by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal Growth Rate 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "PE Multiple 20.0x",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Q1 revenue of $1.6B cannot annualize to claimed $6.4B baseline - mathematical impossibility",
+                "locations": [
+                    "Analyst Note Q1 revenue",
+                    "Financials Snapshot footnote"
+                ]
+            },
+            {
+                "description": "Revenue CAGR stated as both 8-10% and 9% in different sections without reconciliation",
+                "locations": [
+                    "Analyst Note medium-term expectation",
+                    "Fair Value section model assumption"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 8% without detailed calculation",
+            "Terminal growth 3% without justification",
+            "PE multiple 20x without peer comparison",
+            "Operating margin 60% without historical validation"
+        ]
+    }
+}

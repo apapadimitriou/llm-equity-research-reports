@@ -1,0 +1,73 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report exhibits fundamental structural deficiencies that render it incomplete and unprofessional. Most critically, it lacks essential sections including Competitive Positioning, explicit Bulls/Bears analysis, and proper peer benchmarking. The Financials Snapshot contains fabricated forward-looking data presented as factual projections without proper sourcing or methodology disclosure. Multiple claims are unsupported by citations, including specific financial figures and growth projections. The valuation section fails to establish clear linkage between operating drivers and fair value methodology. Sector-specific KPIs for cybersecurity software (ARR growth rates, customer acquisition costs, net revenue retention) are inadequately covered. The report reads more like a general business overview than rigorous equity research, with significant gaps in analytical depth and evidence-based conclusions.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Competitive Positioning",
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "Net Revenue Retention",
+            "Customer Acquisition Cost",
+            "ARR Growth Rate",
+            "Customer Lifetime Value",
+            "Gross Revenue Retention"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Forward financial projections presented as factual data without methodology",
+                "locations": [
+                    "Financials Snapshot",
+                    "Fair Value section"
+                ]
+            },
+            {
+                "description": "Fair value estimate of $485 lacks supporting DCF or multiple-based calculation",
+                "locations": [
+                    "Cover Block",
+                    "Fair Value section"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Revenue Retention",
+            "Customer Acquisition Cost",
+            "ARR Growth Rate",
+            "Customer Lifetime Value",
+            "Gross Revenue Retention"
+        ],
+        "uncited_claims": [
+            "Fair value estimate of $485 with no supporting calculation",
+            "WACC assumption of 9% without justification",
+            "Forward EPS projections through 2029",
+            "Revenue growth assumptions and terminal value calculations"
+        ]
+    }
+}

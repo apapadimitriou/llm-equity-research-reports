@@ -1,0 +1,55 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is graded 'Fair' primarily due to the omission of core sector-specific KPIs within the Financials Snapshot and significant redundancy across multiple sections. While the report includes all required headline sections and maintains a high standard of evidence integration through dense, consistent in-text citations, it fails to meet the criteria for a 'Good' or 'Excellent' grade. Specifically, the Financials Snapshot table is generic, omitting critical SaaS metrics such as Annualized Recurring Revenue (ARR), Remaining Performance Obligations (RPO), and Net Retention Rates (NRR), although some are mentioned sporadically in the text. This triggers a hard cap at the 'Fair' level. Furthermore, the report exhibits substantial redundancy; the collapse of the Figma acquisition and specific cash flow figures are repeated across four different sections (Strategy, Bulls/Bears, Risk, and Capital Allocation) without providing additional depth or new analytical angles in each instance. Peer benchmarking is skeletal, limited to a brief mention of P/E multiples and ESG rankings rather than a robust comparative analysis of operating metrics. Finally, the absence of any scenario or sensitivity analysis (e.g., Bull/Bear cases or a WACC/Growth matrix) limits the report's comprehensiveness. While the valuation section successfully links operating drivers to the fair value estimate, these structural gaps and repetitive content prevent a higher rating.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking Table",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC",
+            "ARR (text only)",
+            "RPO (text only)"
+        ],
+        "sector_kpis_missing": [
+            "ARR (Financials Snapshot)",
+            "RPO (Financials Snapshot)",
+            "Net Retention Rate (NRR)",
+            "Gross Margin (Financials Snapshot)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR (missing from Snapshot table)",
+            "RPO (missing from Snapshot table)",
+            "Net Retention Rate (NRR)"
+        ],
+        "uncited_claims": []
+    }
+}

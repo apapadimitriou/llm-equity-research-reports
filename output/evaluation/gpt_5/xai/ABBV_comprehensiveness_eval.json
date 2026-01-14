@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (cover block, note, strategy, bulls/bears, moat, valuation, risks, capital allocation, financials, ESG, appendix, sources), with reasonable proportionality across narrative components. However, comprehensiveness is constrained by thin quant detail in areas critical for biopharma. The Financials Snapshot lacks multi-year historical actuals (marked as \u201cInsufficient data\u201d for 2022\u20132024) and omits core sector KPIs such as product-level sales (Humira, Skyrizi, Rinvoq), R&D as a percentage of sales, pipeline milestones/trial data, and LOE timing\u2014triggering the KPI hard cap. Valuation includes explicit assumptions (growth by segment, margin path, WACC) and a simple EPS bridge, linking drivers to value satisfactorily, but evidence integration is inconsistent: several material claims (peak sales targets, FCF, buyback and payout policies, leverage, H1 revenue estimate) are uncited or speculative, invoking the uncited-claims hard cap. Peer benchmarking is absent (only a generic statement about peer multiples), and there is no scenario/sensitivity analysis beyond a brief \u00b120% comment. Some repetition occurs (Skyrizi/Rinvoq offsetting Humira across multiple sections) with limited incremental depth. Overall, while structurally complete and directionally sound, the report\u2019s data gaps, missing sector KPIs in the snapshot, lack of peer context, and uncited claims constrain comprehensiveness to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis",
+            "Segment/Product Financials",
+            "Detailed Pipeline/Trial Data"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "ROIC",
+            "Pipeline size (program count mentioned)"
+        ],
+        "sector_kpis_missing": [
+            "Product-level sales by key drugs (Humira, Skyrizi, Rinvoq)",
+            "R&D as % of sales",
+            "Pipeline milestones/trial phase data and probabilities",
+            "Loss-of-exclusivity (LOE) timeline by asset"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "Product-level sales (Humira/Skyrizi/Rinvoq)",
+            "R&D as % of sales",
+            "Pipeline/trial data",
+            "LOE schedule"
+        ],
+        "uncited_claims": [
+            "Peak sales projections for Skyrizi ($10B) and Rinvoq ($7B)",
+            "Estimated H1 2025 revenue at $29B for extrapolation",
+            "Dividend payout target of 50% and 3.2% yield",
+            "Share buybacks totaling $5B annually",
+            "Free cash flow of $18B and debt/EBITDA ~3x"
+        ]
+    }
+}

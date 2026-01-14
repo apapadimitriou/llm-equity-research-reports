@@ -1,0 +1,58 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report offers a few company-specific syntheses but is largely built on standard sector narratives and boilerplate moat language. Notable syntheses include: (1) framing the China export reversal as only shaving a few basis points off the 2025 run-rate with no fundamental change, and (2) linking the China resumption to improved prospects for Chinese regulatory approval of the Ansys deal, then asserting the market hasn\u2019t fully priced approval (a modest, decision-relevant thesis). It also connects AI demand, IP mix, and scale to a quantified margin path (22% in 2024 to 31% by 2034), and provides peer-specific IP share shifts vs. Arm, implying ROIC tailwinds. However, many insights restate common knowledge (EDA oligopoly, switching costs, systems customers) and risks (China exposure, customer concentration). The valuation drivers (AI efficiencies, IP scale, pricing) are conventional with limited novel mechanisms or catalysts/timelines. Decision relevance is present in 3\u20134 items, but at least three insights are generic/restated, and the valuation section lacks a distinctive new driver\u2014triggering a cap at Fair under the hard rules. Overall originality is moderate, with one clear thesis and several routine syntheses.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "The one-month China interruption shaves a few basis points off this year's run-rate but does not alter our fundamental view.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Retraction of China export restrictions improves prospects for Chinese approval of the Ansys merger; the market hasn\u2019t fully priced a successful approval, leaving SNPS slightly undervalued vs. our FVE.",
+                "classification": "Original Thesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Synopsys\u2019 wide moat stems from high switching costs and intangible assets in an oligopolistic EDA market with near 100% retention and high recurring revenue.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "We expect operating margins to rise from 22% (2024) to 31% by 2034, driven by IP scale, AI-driven efficiencies, pricing on higher-value products, and software scale.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "Synopsys has increased IP share to 23% (from 13% in 2016) while Arm fell to 41% (from 49%); faster-growing non-processor IP should bolster margins and ROIC.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "We assign a 7.5% cost of equity given stable, low-cyclicality demand; uncertainty is High due to revenue growth dispersion.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Approximately 15% of revenue comes from China; customer concentration (Intel ~10%) and geopolitics pose headwinds.",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Boilerplate moat language (switching costs/intangibles) repeated at length"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": true,
+        "decision_relevant_insights_count": 4,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}

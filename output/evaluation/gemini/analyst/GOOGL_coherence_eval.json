@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report demonstrates strong structural coherence, with a clear narrative arc from recent earnings (Analyst Note) to long-term strategy and detailed moat analysis. Transitions between sections are generally smooth, and the valuation section effectively reconciles the \"Bulls Say\" and \"Bears Say\" points into quantified bull/bear scenarios ($266 and $175 respectively). However, a significant internal contradiction exists between the narrative and the data tables regarding shareholder distributions. The \"Capital Allocation\" section (dated 5 Feb 2025) explicitly states that Alphabet pays a quarterly dividend of $0.20. Conversely, the \"Morningstar Valuation Model Summary\" table (Page 19) and the \"Forecast Revisions\" table (Page 20) list \"Dividends Per Share\" as 0.00 for all historical and forecast periods (2022\u20132029). This is particularly jarring as the \"Forecast Revisions\" table shows a \"Prior\" 2025 dividend estimate of $0.80 being revised to $0.00, yet the text still claims the dividend exists. Additionally, a temporal inaccuracy appears in the Analyst Notes Archive; a note dated 4 Feb 2025 states the company reports results 'tomorrow, Feb. 3,' which is chronologically impossible. While the terminology is consistent (GCP, Search, AI Overviews) and the 'Analyst Note' provides a clear bridge between the latest quarterly results and the maintained fair value estimate, these internal errors necessitate a downgrade. Due to the unresolved contradiction between the dividend narrative and the financial tables, the grade is capped at 'fair' per the instructions.",
+    "evidence": [
+        "\"Alphabet also pays a quarterly dividend of $0.20\" (Capital Allocation, Page 12) vs. \"Dividends Per Share (USD) ... 0.00\" for all years (Financials Table, Page 19).",
+        "\"Alphabet reports fourth-quarter financial results tomorrow, Feb. 3\" (Analyst Note, Page 15) is dated 4 Feb 2025, creating a chronological impossibility.",
+        "\"Our fair value estimate for Alphabet in this hypothetical bear case is $175 per share\" (Fair Value and Profit Drivers, Page 11) effectively reconciles the regulatory risks mentioned in Bears Say."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

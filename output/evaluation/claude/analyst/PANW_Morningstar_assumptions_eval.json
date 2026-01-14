@@ -1,0 +1,84 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates solid explicitness with key assumptions clearly stated in the Fair Value section, including specific growth rates (17% CAGR), margin targets (low-80s gross margins, high-30s adjusted margins), and valuation multiples (15x EV/sales). Justification is partial, relying on general industry trends and historical performance patterns rather than detailed peer comparisons or external sources. Specificity is good with clear units, timeframes, and drivers provided for most assumptions. Internal consistency appears clean with no contradictions identified between narrative and financial tables. However, the report lacks quantified sensitivity analysis or scenario testing for material drivers, offering only a single bear case scenario with limited detail. While assumptions are well-articulated and reasonably supported, the absence of robust sensitivity analysis caps the grade at Fair per the methodology.",
+    "assumptions_extracted": [
+        {
+            "quote": "We forecast Palo Alto's revenue growing at a 17% compound annual growth rate over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we are modeling GAAP gross margins to expand to the low-80s range over our 10-year explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "we model Palo Alto to materially expand its GAAP operating margins over our 10-year explicit forecast",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Our fair value estimate for Palo Alto is $210 per share, implying a 2025 enterprise value/sales multiple of 15 times",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Cost of Equity % 9.0, Weighted Average Cost of Capital % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 12.0, Perpetuity Year 20",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "16"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 708",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "16"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "qualitative_only",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "WACC 9.0% without detailed source or market yield reference"
+        ]
+    }
+}

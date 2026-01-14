@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are fundamentally flawed with multiple contradictions and insufficient justification. Revenue CAGR is stated as both 3.5% (appendix) and implied as 3.6% from forecasted figures ($104B to $119.4B over 4 years). The report claims 2025 EPS of $3.50 but provides no clear derivation - the 'EPS bridge' mentions starting from '$3.20 (insufficient data for exact)' making calculations untraceable. WACC of 8.5% uses a risk-free rate of 4.0% without justification or current market context. Operating margin expansion from 28% to 32% lacks peer benchmarking or historical precedent. Most critically, no quantified sensitivity analysis exists for any material drivers despite significant rate and credit risk exposures. The assumptions appear in scattered locations without proximity to forecasts, making the model effectively a black box.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR of 3.5% from 2025-2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 28% in 2025 to 32% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC is estimated at 8.5%, based on a beta of 1.2 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate 2.5% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "2025 full-year EPS to reach $3.50",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as 3.5% but financial table implies 3.6% growth from $104B to $119.4B over 4 years",
+                "locations": [
+                    "Fair Value section",
+                    "Financials table"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "NII/NIM",
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% with 4.0% risk-free rate",
+            "Operating margin expansion to 32%",
+            "EPS bridge calculations"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails on multiple critical fronts. Key assumptions are largely unstated or opaque\u2014the WACC of 9.0% lacks justification beyond vague components, terminal growth of 2.5% is mentioned without rationale, and revenue growth projections of 7-8% are unsupported by detailed analysis. Multiple contradictions exist: Agentforce deals are cited as both ~1,000 and ~3,000 paid contracts, and Data Cloud ARR growth is stated as both 120% and tripled year-over-year. The financial projections table shows specific forecasts through 2029 but the underlying drivers and methodology are completely opaque. Most critically, there are no sensitivity analyses or scenarios testing material assumptions like revenue growth, margins, or discount rates. The report reads more like a business summary than a rigorous valuation model with auditable assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "WACC ~9.0% (RF ~4.0%, ERP ~5.0%, beta ~1.1)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "2.5% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "FY26\u201329 revenue growth of ~7\u20138% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "non-GAAP operating margins rising to ~34\u201335% by FY26\u201329 (up from 33.0% in FY25)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Shares outstanding ~1.0B",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Agentforce paid deals cited as both ~1,000 and ~3,000",
+                "locations": [
+                    "Bulls Say section (~1,000 paying contracts)",
+                    "Business Strategy section (over 3,000 customers have paid)"
+                ]
+            },
+            {
+                "description": "Data Cloud growth described as both 120% YoY and tripled YoY",
+                "locations": [
+                    "Analyst Note (120% Y/Y)",
+                    "Business Strategy (tripled year-over-year)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% components lack support",
+            "Terminal growth 2.5% without rationale",
+            "Revenue growth 7-8% without detailed justification",
+            "Margin expansion assumptions unsupported"
+        ]
+    }
+}

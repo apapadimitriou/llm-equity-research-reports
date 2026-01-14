@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides clear causal explanations linking results to drivers, such as revenue and margin performance \"driven by resilient advertising demand and efficiency gains\" and the note that elevated AI CapEx \"will temper near-term margin expansion.\" It also describes operational mechanisms like \"leveraging AI-driven content personalization to improve ad performance.\" Assumptions are explicit and quantified, including \"revenue to grow at a ~12% compound annual rate,\" \"uses an 8.5% weighted average cost of capital,\" and \"Terminal Growth Rate 4.0%.\" Forecasts for margins, EPS, and FCF are detailed. However, these assumptions are not benchmarked to peers, history, or macro anchors, and the report lacks quantified sensitivity or scenario analysis (e.g., no ranges for regulatory impacts or ad-cycle downturns). Counterpoints (regulatory, competition, macro) are raised qualitatively without estimating the earnings or valuation effects. Actionable implications are present via the price/FVE gap and the view that shares are \"modestly overvalued\" near $450. Given the Hard Caps, the absence of benchmarking or stress-testing of key assumptions caps analytical depth at Fair. Representative excerpts: \"driven by resilient advertising demand and efficiency gains\"; \"will temper near-term margin expansion\"; \"leveraging AI-driven content personalization to improve ad performance\"; \"revenue to grow at a ~12% compound annual rate\"; \"uses an 8.5% weighted average cost of capital\"; \"Terminal Growth Rate 4.0%.\"",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "12% CAGR not decomposed into impressions/pricing/ad load",
+            "AI CapEx impact on margins/FCF not mechanistically tied",
+            "Threads/WhatsApp monetization drivers not quantified"
+        ],
+        "unsupported_assumptions": [
+            "Terminal growth 4% without macro or peer benchmark",
+            "Mid-cycle operating margin 45% not justified vs history",
+            "WACC 8.5% not benchmarked to risk profile/peers"
+        ],
+        "lack_of_sensitivity": [
+            "No downside sensitivity to EU privacy restrictions",
+            "No ad recession scenario quantifying revenue/EPS impact",
+            "No CapEx \u00b110% FCF/EPS sensitivity or valuation range"
+        ]
+    }
+}

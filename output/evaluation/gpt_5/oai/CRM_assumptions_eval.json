@@ -1,0 +1,119 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report states several core valuation drivers explicitly and near the forecasts (revenue CAGR 7\u20138% FY26\u201329, non-GAAP operating margin 34\u201335%, WACC 9%, terminal growth 2.5%, tax rate 25%, FCF conversion 30\u201332%, share count modestly declining). Specificity is generally solid with units and time horizons. Justification is partial: revenue growth is tied to management guidance and product traction; margins to scale and efficiency; WACC components are listed but lack sourcing; terminal growth and tax rate are asserted without evidence or peer/context benchmarks. Internal consistency has material issues: FCF conversion in the Financials Snapshot implies ~34% in FY26\u201329 versus the text\u2019s 30\u201332% and the Appendix\u2019s \u201c~30%,\u201d and the implied EV/Sales at fair value is given as both ~7.5\u00d7 (Analyst Note) and ~7.8\u00d7 (Fair Value section). Sensitivity analysis is minimal and generic (\u201ca 1% error\u2026 alters value by mid-single digit percentage\u201d), with no scenario bands for key levers (revenue growth, margins, WACC, terminal growth). Due to multiple unresolved numeric contradictions and limited sensitivities, the quality of assumptions does not meet Good standards despite reasonable explicitness and specificity.",
+    "assumptions_extracted": [
+        {
+            "quote": "we assume FY26\u201329 revenue growth of ~7\u20138% annually",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We project non-GAAP operating margins rising to ~34\u201335% by FY26\u201329 (up from 33.0% in FY25)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a 9.0% WACC (implied beta ~1.1, ERP ~5%)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a 2.5% terminal growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "tax rate ~25%.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Free cash flow conversion remains high (we model ~30\u201332% of revenue)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "share count modestly declines.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        },
+        {
+            "quote": "Shares outstanding ~1.0B.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "FCF conversion modeled at ~30\u201332% (and Appendix ~30%) conflicts with implied conversion from table (~34% in FY26\u201329).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Implied EV/Sales at fair value shown as ~7.5\u00d7 vs ~7.8\u00d7 in different sections.",
+                "locations": [
+                    "Analyst Note",
+                    "Fair Value and Profit Drivers"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "capex",
+            "working_capital",
+            "quantified buyback/share count reduction rate",
+            "WACC/terminal growth source/peer context",
+            "scenario analysis for major drivers"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.0% without source",
+            "Terminal growth 2.5% without source/peer or macro tie-in",
+            "Tax rate ~25% without support",
+            "FCF conversion 30\u201332% without reconciliation to table or drivers (capex/working capital)"
+        ]
+    }
+}

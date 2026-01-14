@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a clear structure (Analyst Note \u2192 Business Description \u2192 Strategy \u2192 Bulls/Bears \u2192 Moat \u2192 Risks/Capital Allocation \u2192 Financials/Appendix) and uses consistent terminology (e.g., wide moat, standard capital allocation) with repeated connective emphasis on the $2 billion U.S. investment as a strategic anchor. Transitions are serviceable: the Analyst Note sets the context (sector headwinds, investment plan), which is then echoed in Strategy and Bulls/Bears, and the Risks section references execution and macro factors mentioned earlier. However, internal coherence is undermined by contradictions and temporal mismatches. The Risk & Uncertainty section\u2019s quantified \u201cvaluation swings from 10\u201320%\u201d conflicts with the Glossary definition of a Medium uncertainty rating as a \u201cfair value range of 25\u201350%,\u201d creating an unaddressed inconsistency between ratings and narrative. Additionally, sources are dated \u201crelative to 2025-08-10\u201d while the report is dated 2025-07-10, implying reliance on information from after the report date, which weakens temporal cohesion. The valuation section and key assumptions table are largely \u201cinsufficient data,\u201d leaving the base-case (Hold) thinly supported and limiting cross-references among assumptions, valuation, and risks. While language is clear and the arc is understandable, these issues require reader effort to reconcile and trigger hard caps under the guardrails.",
+    "evidence": [
+        "Risk & Uncertainty: \u201cpotential valuation swings from 10\u201320%,\u201d versus Appendix Glossary: Medium uncertainty = \u201cfair value range of 25\u201350%.\u201d",
+        "Sources: multiple items dated \u201crelative to 2025-08-10\u201d while the Cover Block report date is 2025-07-10, indicating post-date sourcing.",
+        "Analyst Note/Bears: \u201cInsufficient data on recent earnings limits visibility [5],\u201d yet [5] purports to provide latest earnings results, suggesting a source alignment issue."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

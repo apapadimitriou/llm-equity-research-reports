@@ -1,0 +1,65 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections with solid breadth: cover block, executive summary, business description, strategy, bulls/bears, moat, valuation, risks, capital allocation, ESG, financials, appendix, and sources are present. The narrative integrates sector context (AI features, SIEM expansion) and references competitors, though peer benchmarking is qualitative rather than quantified. Valuation assumptions are stated (ARR growth, margin expansion, WACC) and linked to drivers, and a basic scenario table appears in the appendix. However, the Financials Snapshot is generic\u2014revenue, EPS, margins, FCF, ROIC\u2014without core SaaS KPIs (ARR trend table, NRR/dollar-based retention, billings/deferred revenue, subscription vs services mix). Multiple citations are outdated or weak (e.g., market cap referencing a 2021 source, 2022 price-target data), and some claims lack specific sourcing. The outage theme is repeated across several sections with limited incremental depth. These gaps, especially the omission of \u22652 core SaaS KPIs in the Financials Snapshot and sourcing issues, cap comprehensiveness at Fair despite otherwise broad coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking (quantitative)",
+            "Detailed KPI Table"
+        ],
+        "sector_kpis_present": [
+            "ARR (mentioned in text)",
+            "Module/Platform ARR (Next-Gen SIEM)",
+            "Customer count (mentioned in text)"
+        ],
+        "sector_kpis_missing": [
+            "ARR time series in Financials Snapshot",
+            "Dollar-based net retention (NRR)",
+            "Billings/Deferred revenue",
+            "Churn",
+            "Subscription vs Services mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR time series",
+            "NRR",
+            "Billings",
+            "Deferred revenue",
+            "Subscription vs services mix"
+        ],
+        "uncited_claims": [
+            "Last Close $469.83 (no citation)",
+            "Fair-Value Estimate $485 (no external sourcing)",
+            "Ratings (Economic Moat: Wide; Capital Allocation: Exemplary) lack sourcing",
+            "Forward forecasts in Financials Snapshot lack detailed source provenance"
+        ],
+        "outdated_citations": [
+            "Market cap $105.8B cited to a 2021 source",
+            "Analyst price targets averaging $483.86 from 2022"
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections with appropriate structure and includes robust financial forecasts. However, it suffers from critical gaps that prevent a higher grade. The Financials Snapshot completely omits semiconductor-specific KPIs such as ASP (Average Selling Price), design wins, wafer starts, fab utilization rates, or R&D as % of revenue - fundamental metrics for semiconductor analysis. The valuation section lacks explicit linkage between operating drivers and fair value calculations, presenting assumptions without clear mathematical bridges. Peer benchmarking is entirely absent despite mentions of competitors like Nvidia and Google. Several material claims lack proper citations, including the $12 billion VMware revenue figure and specific market share percentages. While the report demonstrates good sector knowledge and comprehensive coverage of standard equity research sections, these structural deficiencies and missing sector-specific elements significantly limit its analytical value.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "FCF",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "ASP",
+            "Design Wins",
+            "Wafer Starts",
+            "Fab Utilization",
+            "R&D % of Revenue",
+            "Gross Margin by Segment"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ASP",
+            "Design Wins",
+            "Wafer Starts",
+            "Fab Utilization",
+            "R&D % of Revenue"
+        ],
+        "uncited_claims": [
+            "$12 billion VMware annualized revenue",
+            "70% market share in Ethernet switching",
+            "Over 15,000 patents",
+            "Net debt-to-EBITDA at 2.5x",
+            "Sustainalytics ESG score of 22.5"
+        ]
+    }
+}

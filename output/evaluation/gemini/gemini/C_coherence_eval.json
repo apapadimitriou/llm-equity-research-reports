@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from severe temporal and internal contradictions that undermine its fundamental coherence. Most notably, there is a logical impossibility regarding the reporting timeline: the document is framed as a 'Q2 2025 Earnings Preview' for an event on July 15, 2025, yet the 'Key Stock Data' and 'Financial Summary' tables already include 'reported' Q2 2025 figures for Tangible Book Value and RoTCE. Furthermore, the 'Works Cited' section lists access dates in September 2025, which post-dates the report's own 'Price (Jun 30, 2025)' date, indicating a total failure of temporal alignment. \n\nStructurally, the 'Financial Summary & Forecasts' table is corrupted, with broken syntax and merged strings (e.g., '17.5||**DilutedEPS()**') that render the 2026 projections nearly unreadable. There is also a massive, unexplained discrepancy in historical data; the revenue drops from $101.1 billion in 2022 to $78.5 billion in 2023 without any narrative explanation, despite the text claiming the transformation is 'yielding tangible results.' While the prose in the segment deep dives is clear, the failure to reconcile the 'Preview' status with 'Reported' data, the broken tables, and the impossible citation dates necessitate a poor grade.",
+    "evidence": [
+        "The report is titled a 'Q2 2025 Earnings Preview' (July 15), yet the Key Stock Data table cites 'Tangible Book Value Per Share (Q2 2025)' as a known figure of $94.16 (Key Stock Data).",
+        "The Financial Summary & Forecasts table is corrupted, containing strings like '17.5||**DilutedEPS()**' and 'RoTCE(|**CET1Ratio(|**TBVPS()**' which obscures key 2026 estimates (Financial Analysis & Forecasts).",
+        "A massive revenue decline from $101.1B (2022A) to $78.5B (2023A) is presented in tables but never addressed in the narrative, which focuses on 'improving fundamental performance' (Historical Performance Table)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

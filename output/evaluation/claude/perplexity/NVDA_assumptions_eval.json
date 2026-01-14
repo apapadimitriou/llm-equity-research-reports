@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report demonstrates poor assumption quality across all dimensions. Key financial assumptions driving the model are largely unstated or opaque, with no explicit justification provided. The financial snapshot table contains projections through FY 2029 but lacks any supporting assumptions for revenue growth rates, margin drivers, or valuation multiples. Critical inputs like WACC (12.5%), terminal growth (3.0%), and P/E multiples (35-40x) appear only in a brief appendix without justification or sourcing. The report contains multiple internal contradictions, including a fair value of $175 versus current price of $182.70 while maintaining bullish language throughout. No sensitivity analysis or scenario testing is provided for any material drivers despite the company's high uncertainty rating. The assumptions are scattered, vague, and lack the specificity needed for a credible equity research model.",
+    "assumptions_extracted": [
+        {
+            "quote": "Data Center revenue CAGR: 25-30% (FY26-29)",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target gross margin: 72-75%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC: 12.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Forward P/E multiple: 35-40x",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Earnings per share growth of approximately 30% annually through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Fair value of $175 vs current price $182.70 (104% of fair value) contradicts bullish tone and positive language throughout report",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "WACC 12.5% without source",
+            "Terminal growth 3.0% without justification",
+            "Target margins 72-75% without historical context",
+            "Revenue CAGR 25-30% without peer comparison"
+        ]
+    }
+}

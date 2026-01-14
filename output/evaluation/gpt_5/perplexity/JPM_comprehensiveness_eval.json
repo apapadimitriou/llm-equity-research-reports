@@ -1,0 +1,82 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers most expected sections, including cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, ESG, and Sources. The valuation section reasonably links operating drivers (loan growth, NIM stabilization, efficiency ratio, provisions) to earnings and a P/E multiple, and briefly notes sensitivity ranges. However, the Financials Snapshot is generic and lacks core bank KPIs (NIM/NII, provisions, CET1, charge-offs, deposits), triggering a hard cap at Fair. Evidence integration is uneven: while many in-text citations are provided, several are outdated or mismatched (e.g., a 2021 source used for 2025 earnings) and some material facts (price, market cap, dividend track record) are uncited. Peer benchmarking is absent, and scenario analysis is mentioned only superficially without a dedicated section or tables. There is minor redundancy where credit normalization and NII headwinds are reiterated across Analyst Note and Risk without additional depth. Overall, breadth is solid, but sector-appropriate KPI detail in the financial tables and tighter, consistent sourcing are necessary for a higher grade.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Detailed Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "ROE",
+            "ROTCE",
+            "CET1 Ratio",
+            "Efficiency Ratio",
+            "Deposits (qualitative)",
+            "AUM/AUS"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Interest Income (quantitative)",
+            "Loan Loss Provisions (detailed)",
+            "Net Charge-Offs",
+            "Non-Performing Loans Ratio",
+            "CET1 (in Financials table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date precedes Q2 2025 release, yet Q2 2025 results are discussed as realized.",
+                "locations": [
+                    "Cover Block",
+                    "Analyst Note"
+                ]
+            },
+            {
+                "description": "Source [9] dated 2021 is cited for Q2 2025 earnings figures.",
+                "locations": [
+                    "Analyst Note",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net Interest Income",
+            "Loan Loss Provisions",
+            "Net Charge-Offs",
+            "NPL Ratio",
+            "CET1 in Financials Snapshot"
+        ],
+        "uncited_claims": [
+            "Last Close $282.67",
+            "Market Cap $785.2B",
+            "15-year track record of consecutive dividend increases"
+        ]
+    }
+}

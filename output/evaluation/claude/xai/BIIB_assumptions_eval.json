@@ -1,0 +1,75 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report suffers from fundamental opacity in key assumptions and severe data limitations. While some assumptions are explicitly stated (4% revenue CAGR, 8.5% WACC, 35% operating margins by 2029), most lack meaningful justification due to 'insufficient data' for all historical periods 2022-2024. The revenue growth assumption relies solely on one quarter's performance (Q2 2025 7.3% growth) to project multi-year trends, which is inadequate. The WACC components are stated but not sourced or benchmarked. Operating margin expansion from 30% to 35% lacks historical context or peer comparison. Most critically, there are no quantified sensitivities or scenario analyses for any material drivers. The report acknowledges 'high uncertainty' and potential 20-30% valuation swings but provides no stress testing. Internal consistency cannot be verified due to missing historical data, creating a black-box effect where forecasts appear disconnected from verifiable performance trends.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 4% over 2025-2029",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand from 30% in 2025 to 35% by 2029, reflecting cost savings of $800 million annually from restructuring",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "The weighted average cost of capital (WACC) is 8.5%, incorporating a beta of 0.9 and equity risk premium of 5%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 2%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share buybacks, with $1 billion authorized in 2024",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "credit_cost"
+        ],
+        "unjustified_parameters": [
+            "4% revenue CAGR based on single quarter",
+            "8.5% WACC without benchmarking",
+            "35% operating margin without peer comparison",
+            "2% terminal growth without industry context"
+        ]
+    }
+}

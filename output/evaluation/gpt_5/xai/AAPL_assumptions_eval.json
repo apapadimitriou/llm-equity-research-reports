@@ -1,0 +1,99 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation drivers are explicitly stated and proximal to forecasts (revenue CAGR, margin path, WACC, terminal growth), with clear units and horizons. Specificity is solid: the DCF assumes \u201c6% revenue CAGR from 2025\u20132029,\u201d \u201cWACC 8.5%,\u201d and \u201cterminal growth 3%,\u201d and ties margin expansion to the services mix. However, justification is partial: references to sources exist but lack multi-year benchmarking or peer comparisons for WACC, terminal rate, and margin trajectory; tax rate and capex/working capital drivers are omitted. Internal consistency has a numeric conflict between the narrative margin target (32% by 2029) and tables (32.5%), which constrains the grade. Sensitivity analysis is absent on material drivers; there are no quantified ranges for revenue growth, margin, WACC, or terminal growth, nor a valuation impact table\u2014only a qualitative note that regulatory outcomes could swing value by 15\u201320%. Share repurchase magnitude is mentioned, but no explicit share count trajectory. Given explicitness and specificity but weak justification, a contradiction, and no quantified sensitivities, the assumptions quality is Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "assuming a 6% revenue CAGR from 2025-2029, driven by 10% services growth offsetting 3% hardware expansion [5].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are forecasted to expand to 32% by 2029 through cost efficiencies and services mix, up from 31% in Q2 2025 [2].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital (WACC) is set at 8.5%, reflecting low uncertainty and strong balance sheet [8].",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate of 3% yields the $245 fair value",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "annual EPS grows to $7.50 by FY2029 via revenue uplift (+$2.00), margin gains (+$1.00), and share repurchases (+$0.50), less taxes and investments (-$0.50)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Margin Target  | 32.5%    | Services mix expansion [2]",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "repurchasing $100 billion annually in recent years [6].",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative margin target of 32% by 2029 vs tables showing 32.5% by 2029",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix \u2013 Key Valuation Assumptions Table",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count (trajectory)"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without full build-up detail",
+            "Terminal growth 3% without market/peer support"
+        ]
+    }
+}

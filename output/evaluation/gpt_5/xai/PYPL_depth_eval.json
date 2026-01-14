@@ -1,0 +1,23 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth with clear causal mechanisms and explicit, quantified assumptions. It ties near-term results to drivers (\u201cdriven by higher transaction volumes and margin improvements\u201d) and frames competitive advantage via network effects. Forecasts are anchored in stated drivers and quantified inputs, including \u201cTPV growth of 8-10%,\u201d margin expansion targets, and capital return effects (\u201cassuming $15 billion program reduces shares by 10%\u201d). The valuation section provides explicit parameters (\u201cWe apply a WACC of 9.5%,\u201d \u201ca 3% terminal growth rate\u201d) and an EPS bridge, showing inference quality beyond description. Data use is substantial (multi-year financial table, specific EPS/FCF targets), with some benchmarking (multiples \u201cin line with historical averages\u201d and WACC built from fintech beta). However, uncertainty treatment is limited. The lone quantified uncertainty (\u201ccould swing valuation by 20-30%\u201d) lacks linkage to specific drivers, and there is no scenario or sensitivity analysis to test revenue growth, take-rate, margin, or WACC/terminal growth. Actionable implications are present but basic, e.g., conditional upside \u201cif growth targets are met\u201d and guidance monitoring. Overall, explicit mechanisms and quantified assumptions merit a Good, but the absence of quantified sensitivities/scenarios prevents an Excellent rating.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "TPV\u2192revenue via take-rate not articulated"
+        ],
+        "unsupported_assumptions": [
+            "valuation swing of 20-30% not attributed to drivers"
+        ],
+        "lack_of_sensitivity": [
+            "no EPS/FVE sensitivity to TPV, take-rate, or margin"
+        ]
+    }
+}

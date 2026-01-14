@@ -1,0 +1,26 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some analytical depth with causal mechanisms like \"driven by strong adoption of its Falcon platform\" and \"ARR growth deceleration from 23% in FY2025 to 21.6% signals potential headwinds.\" It provides explicit assumptions including \"25% revenue CAGR through FY2029\" and \"10% WACC\" with basic rationale. However, critical weaknesses emerge: the 10% terminal growth rate lacks industry benchmarking, margin expansion projections of \"25% to 30% by FY2029\" are unsupported by detailed cost analysis, and the valuation model provides no sensitivity analysis. The report mentions risks like \"swinging valuation by 15-20%\" but fails to quantify scenarios or stress-test key assumptions. While it identifies counterpoints such as competitive pressures, these remain largely descriptive without exploring quantified impacts on forecasts.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "margin expansion 25% to 30% without detailed cost structure analysis",
+            "WACC 10% calculation lacks risk premium justification"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 10% with no industry benchmark",
+            "operating margin expansion to 30% without efficiency specifics"
+        ],
+        "lack_of_sensitivity": [
+            "fair value $500 with no range or scenarios",
+            "no stress testing of 25% revenue CAGR assumption"
+        ]
+    }
+}

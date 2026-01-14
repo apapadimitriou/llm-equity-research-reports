@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a generally coherent narrative arc\u2014from recent results and thesis in Analyst Note, through strategy, moat, valuation, and risks\u2014with consistent terminology and largely aligned assumptions (e.g., 10% revenue CAGR, margin expansion to 32%, WACC 8.5%) reiterated in both Fair Value and the Appendix. Sections mostly transition logically, and bulls/bears are broadly aligned with the base-case valuation (bulls >10% vs. base 10%; bears note macro and competitive risks echoed in Risk & Uncertainty). However, there are notable internal and temporal inconsistencies that impair coherence. First, Economic Moat claims \u201cconsistent ROIC above 15% historically,\u201d yet the Financials Snapshot shows ROIC of 14.0% in FY2022, contradicting the \u201cconsistent\u201d assertion. Second, the report date is 2025-07-08, but multiple sources and statements cite August 2025 timing (\u201cas of 2025-08-10\u201d), creating time-inaccurate references within the document. Third, the Financials Snapshot lists FY2024 as \u201cinsufficient data,\u201d while the valuation relies on specific FY2024 baselines (28% operating margin; EPS $9.50), an unresolved tension between narrative and table. Despite good cross-referencing and clear language, these issues cap the grade at fair per the guardrails. The rest of the document reads smoothly with only one list-like section (Bulls/Bears), and no major misuse of terminology.",
+    "evidence": [
+        "Economic Moat vs Financials Snapshot: claims of \u201cconsistent ROIC above 15%\u201d conflict with FY2022 ROIC of 14.0% (Financials Snapshot table).",
+        "Temporal mismatch: Report date 2025-07-08, but sources [5]\u2013[8] and text cite items dated \u201cas of 2025-08-10,\u201d indicating post-dated references.",
+        "Narrative-table misalignment: Fair Value uses FY2024 baselines (28% margin; EPS $9.50 estimated) while the Financials Snapshot shows FY2024 \u201cinsufficient data.\u201d"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

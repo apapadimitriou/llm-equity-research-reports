@@ -1,0 +1,91 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely deficient across all quality dimensions. Key assumptions are largely unstated or marked as 'assumed' without justification - revenue CAGR of 5%, margin expansion to 25%, and WACC of 9% appear without supporting evidence. Multiple internal contradictions exist: operating margins show 25% in 2022 but target 25% by 2029 (no improvement), and EPS calculations don't reconcile with stated figures. The report admits 'insufficient data' repeatedly while making specific forecasts. No sensitivity analysis is provided for any material drivers. Most critically, assumptions are scattered throughout without proximity to forecasts, lack units/timeframes, and rely on vague references to numbered sources that don't support the specific figures used. The combination of opaque assumptions, multiple contradictions, and complete absence of stress-testing renders this analysis fundamentally unreliable.",
+    "assumptions_extracted": [
+        {
+            "quote": "revenue CAGR of 5% over the next five years, assuming stable economic conditions and margin expansion to 25%",
+            "location": {
+                "section": "Analyst Note",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC is estimated at 9%, reflecting equity beta of 1.2 and cost of debt at 4%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 22% in 2024 to 25% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Terminal Growth 3.0% Long-term GDP proxy",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "share buybacks total $2B annually when undervalued",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin shows 25.0% in 2022 but targets 25.0% by 2029, implying no improvement despite efficiency claims",
+                "locations": [
+                    "Financials Snapshot table",
+                    "Fair Value and Profit Drivers section"
+                ]
+            },
+            {
+                "description": "EPS bridge claims 2024 base EPS $12.00 but table shows $12.0, and calculation doesn't yield stated $18.0 result",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "NII/NIM",
+            "tax_rate",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "WACC 9% without source",
+            "revenue CAGR 5% marked as assumed",
+            "margin expansion to 25% without justification",
+            "terminal growth 3% without rationale"
+        ]
+    }
+}

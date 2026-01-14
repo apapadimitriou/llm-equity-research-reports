@@ -1,0 +1,57 @@
+{
+    "grade": "Excellent",
+    "summary_reasoning": "The report is highly comprehensive, with a clear cover block and contents, multiple recent Analyst Notes, and robust core sections: Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, and an Appendix describing methodology and disclosures. Depth is strong and proportionate for diversified banks: the Financials Snapshot provides multi-year actuals and forecasts with sector KPIs (NII, NIM, provisions, efficiency ratio, ROA/ROE/ROTCE), and qualitative discussion covers deposit mix, SCB/GSIB, and credit costs. Valuation assumptions are explicitly linked to operating drivers (NII trends, fee trajectory, expenses, ROTCE, Mexico spinoff) and supported by a DCF summary with key inputs. Peer context is present via competitor comparisons (BAC, WFC, JPM) and ESG peer analysis. Evidence integration is consistent, with in-text references (Coalition Greenwich, Dealogic, Bloomberg, Fed stress tests) and model tables, and redundancy is minimal despite repeated themes across Strategy and Moat. Scenario context appears in Analyst Notes (stress tests, tariffs) informing sector outcomes. Minor gaps include the CET1 ratio not being tabulated within the snapshot (though cited in Capital Allocation) and a small cost of equity inconsistency (10% in moat section vs 9% in model). Overall, coverage is exhaustive with strong linkages and peer benchmarking.",
+    "content_checks": {
+        "sections_present": [
+            "Cover & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix/Methodology",
+            "Peer Benchmarking"
+        ],
+        "sections_missing": [],
+        "sector_kpis_present": [
+            "Net Interest Income",
+            "Net Interest Margin",
+            "Provision for Loan Losses",
+            "Efficiency Ratio",
+            "ROA",
+            "ROE",
+            "ROTCE",
+            "Price/Tangible Book"
+        ],
+        "sector_kpis_missing": [
+            "CET1"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": true
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of equity cited as 10% in Economic Moat section but 9% in DCF Key Valuation Drivers",
+                "locations": [
+                    "Economic Moat",
+                    "Valuation Model Summary"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "CET1"
+        ],
+        "uncited_claims": []
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "Explicitness: Several core inputs are stated, particularly in \u201cFair Value and Profit Drivers\u201d and the Appendix (e.g., revenue growth bands, gross margin target, WACC, terminal growth, forward P/E). Specificity: Many assumptions include magnitudes and time horizons (e.g., \u201c25\u201330% through FY27,\u201d \u201c72\u201375%,\u201d \u201cWACC 12.5%,\u201d \u201cterminal growth 3%\u201d), though share count is qualitative only. Justification: Support is weak\u2014figures are largely asserted without reconciliation to multi-year history, peer benchmarks, or citations. WACC and terminal growth lack any source or derivation; margin and growth assumptions have minimal linkage to the model tables or segment history. Consistency: A numeric contradiction appears\u2014narrative states \u201cannual growth \u2026 approximately 25\u201330% through FY27,\u201d yet the table shows FY26E\u2192FY27E total revenue growth of 20%, below the stated band. Segment assumptions (Data Center 25\u201330% CAGR) are not reconciled to consolidated growth that decelerates to mid-teens, creating coherence concerns. Sensitivity/Stress-testing: No quantified sensitivity or scenario analysis is provided for material drivers (growth, margins, WACC, terminal growth, share count), nor is valuation impact of ranges quantified. Under the hard caps, the absence of sensitivities plus an internal numerical contradiction leads to a Poor grade, despite some enumerated inputs.",
+    "assumptions_extracted": [
+        {
+            "quote": "annual growth moderating from current 70%+ levels to approximately 25-30% through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Target margins of 72-75%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "EPS growth of approximately 30% annually through FY27",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "WACC: 12.5%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth rate: 3.0%",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Forward P/E multiple: 35-40x",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Data Center revenue CAGR: 25-30% (FY26-29)",
+            "location": {
+                "section": "Appendix \u2013 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "share count stability following recent buyback authorizations, with modest dilution from employee stock compensation programs",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative says consolidated revenue growth ~25\u201330% annually through FY27, but table shows FY26E\u2192FY27E growth of 20%.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "segment_mix_reconciliation",
+            "explicit_share_count/ASR pace",
+            "valuation_sensitivities"
+        ],
+        "unjustified_parameters": [
+            "WACC 12.5% without source or build-up",
+            "Terminal growth 3.0% without support",
+            "Forward P/E 35\u201340x without peer/precedent comps",
+            "Data Center CAGR 25\u201330% not reconciled to consolidated growth path"
+        ]
+    }
+}

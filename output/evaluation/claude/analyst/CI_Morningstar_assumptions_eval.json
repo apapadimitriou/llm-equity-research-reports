@@ -1,0 +1,77 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report provides some explicit assumptions in the Fair Value and Profit Drivers section, stating revenue growth of 5% CAGR through 2029 and EPS growth of 10% CAGR. Key valuation inputs like WACC (8.1%), cost of equity (9.0%), and terminal growth (3.0%) are clearly stated in the Key Valuation Drivers table. However, justification is weak - growth assumptions lack supporting evidence from historical trends or peer comparisons. The DCF model includes detailed financial forecasts through 2029 with specific margins and ratios, showing good specificity. Internal consistency appears clean with no obvious contradictions between narrative and tables. The critical limitation is the complete absence of sensitivity analysis or scenario testing for any material drivers, which caps the grade at Fair despite otherwise solid assumption disclosure.",
+    "assumptions_extracted": [
+        {
+            "quote": "During the next five years, we assume revenue grows 5% compounded annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect Cigna's earnings per share to grow about 10% compounded annually through 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Cost of Equity % 9.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 8.1",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 3.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "14"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 262",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "14"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "other"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "5% revenue CAGR without historical context",
+            "10% EPS growth without peer comparison"
+        ]
+    }
+}

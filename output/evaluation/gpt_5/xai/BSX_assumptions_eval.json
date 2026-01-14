@@ -1,0 +1,85 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Explicitness: The report states core drivers near the valuation, including a 10% revenue CAGR (2025\u20132029), margin expansion to 25% by 2029, segment CAGRs (cardiovascular 12%, endosurgery 8%), WACC of 8%, and a 3% terminal growth rate. Specificity: Assumptions include magnitudes, units, and horizons; the margin path (22% \u2192 25%) and the EPS bridge quantify impacts (e.g., -$0.10 from taxes). Consistency: Figures reconcile across narrative and tables (e.g., 2025\u20132029 revenue pathway and margin trajectory; EPS bridge matches the 2025 EPS forecast). Justification: Support is weak. The 10% multi-year revenue CAGR is justified by \u201cQ2 growth trends,\u201d not multi-year history or peer benchmarks. WACC inputs lack full capital structure detail; terminal growth is attributed to a sector average without citation; segment CAGRs are un-sourced. Sensitivity: There is no quantified sensitivity/scenario analysis on material drivers (revenue growth, margins, WACC, terminal growth). A general statement that risks could swing valuation 20\u201330% is not a driver-level sensitivity. Given explicit but lightly justified assumptions and absence of driver-based sensitivities, the appropriate grade is Fair under the stated hard caps.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029 | 10.0%",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand from 22% in 2025 to 25% by 2029",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "driven by segment growth in cardiovascular (12% CAGR) and endosurgery (8% CAGR).",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "WACC           | 8.0%   | Beta 0.9, risk-free rate 4.0%",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%   | Long-term healthcare sector average",
+            "location": {
+                "section": "Appendix - Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "minus $0.10 from higher taxes",
+            "location": {
+                "section": "Fair Value and Profit Drivers (EPS bridge)",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "capex",
+            "tax_rate (actual rate)",
+            "working_capital",
+            "capital_structure/target leverage"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% without full capital structure detail/source",
+            "Terminal Growth Rate 3.0% without citation",
+            "Revenue CAGR 10% based on a single-quarter trend",
+            "Segment CAGRs (12%/8%) without sourcing or peer benchmarks"
+        ]
+    }
+}

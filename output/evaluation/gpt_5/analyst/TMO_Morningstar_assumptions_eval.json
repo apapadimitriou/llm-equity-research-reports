@@ -1,0 +1,94 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are mostly explicit and proximate to the forecasts: organic revenue growth is stated (\u201capproximately 5%-6% per year organically\u201d), inorganic contribution (~100 bps), margin trajectory (\u201cadjusted operating margin will steadily improve over the next five years\u201d), and valuation inputs (WACC 7%, COE 7.5%, long-run tax rate 16%, Stage II EBI growth 7%, shares path). Specificity is solid with clear magnitudes, units, and multi-year tables that reconcile to the narrative; the revenue, margin, and share count forecasts align internally with the DCF summary and fair value. Justification is partial: the report offers qualitative drivers (mix, sourcing, low-cost manufacturing, efficiency) and contextual history/industry commentary, but provides limited quantitative benchmarking or citations supporting WACC, tax rate, inorganic 100 bps, or Stage II parameters. No quantified sensitivity/scenario analysis is provided for material levers (growth, margins, WACC, tax), which hard-caps the grade at Fair. Despite that, internal consistency appears clean with no clear numeric contradictions between text and tables. Overall, assumptions are explicit and specific with partial justification but lack stress-testing.",
+    "assumptions_extracted": [
+        {
+            "quote": "we forecast Thermo Fisher's sales will increase approximately 5%-6% per year organically",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "we expect approximately 100 basis points of top-line benefit coming inorganically.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We anticipate Thermo Fisher's adjusted operating margin will steadily improve over the next five years.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We use a 7% cost of capital in our assumptions.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "5"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 16.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 7.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "13"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Weighted Average Diluted Shares Outstanding (Mil) 394 388 383 379 378 376 375 373",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "12"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth (explicit perpetuity growth rate)",
+            "capex",
+            "working_capital",
+            "sensitivity/scenario analysis",
+            "segment-level growth assumptions"
+        ],
+        "unjustified_parameters": [
+            "WACC 7% without source",
+            "Long-Run Tax Rate 16% without source",
+            "Stage II EBI Growth Rate 7% without source",
+            "~100 bps inorganic top-line contribution without quantitative support"
+        ]
+    }
+}

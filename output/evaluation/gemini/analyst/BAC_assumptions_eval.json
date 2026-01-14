@@ -1,0 +1,100 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report is graded Poor due to multiple material internal contradictions between the narrative and the financial tables, combined with a total lack of quantified sensitivity analysis for key drivers. While the analyst is explicit in stating assumptions for net interest income (NII) growth, cost of equity (COE), and credit costs, these figures frequently fail to reconcile with the provided 'Morningstar Valuation Model Summary.' Specifically, the text assumes a 9.5% cost of equity, while the valuation table uses 9.0%. Furthermore, the narrative projects 2025 NII growth of 6.8%, but the table's raw figures ($60,521M vs. $56,060M) imply 7.95% growth, while the table's own 'Growth %' row erroneously labels this as -1.5%. Justification is partial, relying on management guidance and historical context regarding the 2008 crisis, but it lacks peer benchmarking for specific forward-looking magnitudes like the 2.5% expense CAGR. Specificity is solid regarding units and time horizons, but this is undermined by the lack of internal consistency. Finally, the report fails the hard cap for sensitivity analysis; although it mentions a qualitative 'bear-case' for the sector regarding tariffs, it provides no quantified ranges or valuation impacts for Bank of America's specific material levers such as interest rate shifts or credit loss scenarios. These unresolved numeric conflicts and the 'black-box' nature of the valuation impact result in a Poor rating.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project NII to grow by around 6.8% in 2025 followed by another few years of strong growth",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "project a longer-term compounded annual growth rate of around 2.5%.",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "2"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Eventually, we forecast net charge-offs averaging 0.62% of loans",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "We use a 9.5% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "project a 2.4% noninterest revenue compounded annual growth rate in the next 10 years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "11"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "estimate the midcycle return on tangible equity, or ROTE, of around 14%",
+            "location": {
+                "section": "Economic Moat",
+                "page": "4"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "credit_cost"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Cost of Equity is stated as 9.5% in the text but listed as 9.0% in the Key Valuation Drivers table.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 11",
+                    "Key Valuation Drivers table, Page 20"
+                ]
+            },
+            {
+                "description": "2025 NII growth is projected at 6.8% in text, but the table shows -1.5% growth despite raw numbers ($60,521M vs $56,060M) indicating a ~8% increase.",
+                "locations": [
+                    "Fair Value and Profit Drivers, Page 11",
+                    "Morningstar Valuation Model Summary, Page 19"
+                ]
+            },
+            {
+                "description": "Midcycle ROTE is estimated at 14% in text, but the forecast table shows a maximum of 13.3% by 2029.",
+                "locations": [
+                    "Economic Moat, Page 4",
+                    "Morningstar Valuation Model Summary, Page 19"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "share_count",
+            "terminal_growth"
+        ],
+        "unjustified_parameters": [
+            "2.5% expense CAGR is stated as a projection without historical or peer benchmarking."
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are largely opaque and scattered throughout without clear connection to forecasts. While some key metrics are mentioned (6-7% NII growth, $4B tech spending, 11.8% CET1 ratio), they lack proper justification with multi-year history or peer benchmarks. Critical valuation inputs like the 9.2% cost of equity and 11.5x P/E multiple appear without supporting evidence. The financial projections table shows specific EPS and revenue figures through 2029 but provides no methodology or underlying assumptions for these forecasts. Most importantly, there are no sensitivity analyses or scenario testing for any material drivers. The assumptions that do appear are often vague regarding time horizons and causal mechanisms. While the report mentions some historical context, it fails to explicitly link past performance to future projections in a systematic way.",
+    "assumptions_extracted": [
+        {
+            "quote": "Net interest income is projected to grow 6-7% for the full year, reaching $15.5-$15.7 billion by the fourth quarter",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Our weighted average cost of capital assumption of 9.2% incorporates current risk-free rates and banking sector equity risk premiums",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a 11.5x price-to-earnings multiple reflects BAC's premium franchise quality",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Our model incorporates $62 billion in annual net interest income by 2027, representing a 4% compound annual growth rate",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "The earnings bridge to our fair value estimate incorporates 2025 earnings per share of approximately $3.70, growing to $4.20 by 2027",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Terminal Growth Rate: 2.0%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "clean",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "margin/efficiency",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.2% without source",
+            "11.5x P/E multiple without justification",
+            "Terminal growth 2.0% without rationale",
+            "Normalized ROE 14-15% without benchmarking"
+        ]
+    }
+}

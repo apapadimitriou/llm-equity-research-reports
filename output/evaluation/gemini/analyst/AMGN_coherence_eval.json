@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report is graded fair due to several internal contradictions between the narrative sections and the supporting data tables. While the overall structure is logical and the language is clear, the technical details lack rigorous alignment. A primary contradiction exists regarding the long-term tax rate; the 'Fair Value and Profit Drivers' section explicitly assumes a 16% tax rate beyond 2024, yet the 'Key Valuation Drivers' table on page 14 lists a 'Long-Run Tax Rate' of 17.0%. Furthermore, there is a discrepancy in the projected peak sales for the key pipeline drug MariTide; the valuation narrative cites $8 billion in 2033, while the Analyst Note Archive from the same date (Feb 5, 2025) forecasts $9 billion. Terminology use is also inconsistent regarding profitability. The Analyst Note claims Amgen can maintain 'non-GAAP operating margins in the mid-40s,' but the 'Margins & Returns' table shows 'Operating Margin %' for 2025 and 2026 at 28.5% and 31.0%, respectively. Only the 'Adjusted EBITDA Margin' aligns with the 'mid-40s' claim, suggesting a misapplication of financial terms. Additionally, the timeline for MariTide is confusing; the Feb 2025 note anticipates a Phase 3 start in H1 2025, but the May 2025 note expects Phase 2 data in H2 2025. These unresolved tensions between text and tables require the reader to reconcile the data themselves, preventing a higher grade.",
+    "evidence": [
+        "We assume a 16% tax rate for Amgen beyond 2024 (Fair Value section) vs. Long-Run Tax Rate % 17.0 (Key Valuation Drivers table, p. 14)",
+        "probability-adjusted sales of $8 billion in 2033 (Fair Value section) vs. peak sales around $9 billion (Analyst Note Archive, Feb 5)",
+        "maintain non-GAAP operating margins in the mid-40s (Analyst Note) vs. Operating Margin % ... 28.5 [for 2025] (Margins & Returns table, p. 13)"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are largely explicit and proximal to the forecasts: revenue CAGR (~3% to 2029), margin trajectory, COE/WACC, tax rate, and share count are stated with magnitudes and horizons. Specificity is solid thanks to the valuation model summary with units, multi-year forecasts, and clearly labeled parameters (COE 7.5%, WACC 7.3%, tax 23%, shares 360). Justification is partial: the narrative ties assumptions to volatility, pricing power, and product mix, but provides limited quantitative evidence from multi-year history, peers, or cited sources for parameters like WACC, Stage II growth/investment, and the margin path. Internal consistency is mostly clean, but there is a numeric contradiction between the stated operating margin target (\u201cabout 63.2% by 2028\u201d) and the table (64.5% in 2028). Sensitivity/scenario analysis is absent; no quantified ranges are shown for material levers (volume/fees, rates/interest income, margins), which caps the grade. Overall, assumptions are explicit and specific, but the lack of quantified sensitivities and limited justification keep the quality at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "We use a 7.5% cost of equity.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital % 7.3",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Long-Run Tax Rate % 23.0",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "We project that CME's revenue will grow at an average annual rate of around 3% from a cyclically strong 2024 to 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "All in all, we expect CME's transactional revenue to increase at an average rate of just under 2.5% over the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We also project that CME will be able to increase its data revenue by midsingle digits per year for the next five years",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "We anticipate operating margin to increase to about 63.2% by 2028 from 61.6% in 2023.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "6"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "ProjectedDilutedShares 360",
+            "location": {
+                "section": "Morningstar Valuation Model Summary",
+                "page": "15"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin target stated as ~63.2% by 2028 vs table showing 64.5% for 2028",
+                "locations": [
+                    "Fair Value and Profit Drivers (p.6)",
+                    "Margins & Returns table (p.15)"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "pricing/mix trajectory (average rate per contract not quantified)",
+            "quantified sensitivities/ranges"
+        ],
+        "unjustified_parameters": [
+            "WACC 7.3% without source",
+            "COE 7.5% without source",
+            "Stage II EBI Growth Rate 6.0% without justification",
+            "Stage II Investment Rate 5.0% without justification",
+            "Operating margin to ~63.2% by 2028 without detailed evidence"
+        ]
+    }
+}

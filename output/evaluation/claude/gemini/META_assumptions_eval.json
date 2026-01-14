@@ -1,0 +1,81 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report fails to meet basic standards for assumption quality across all five pillars. While assumptions are explicitly stated in the Financial Model section, they lack adequate justification and contain internal contradictions. The revenue growth assumptions (17% for 2025, 13% for 2026-2027) are stated without supporting evidence from history, peers, or sources. The critical WACC of 9.5% is mentioned but not justified with market data or methodology. Most problematically, there are clear internal contradictions: the report states 2026 CapEx will show 'similarly significant dollar growth' but models $90B vs $70B (only 29% growth, not 'significant'). Operating margins are projected without clear drivers or reconciliation to the stated depreciation impacts. No sensitivity analysis is provided for any material drivers despite the report's emphasis on execution risk and volatile assumptions.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue: A 17% growth rate is modeled for 2025, driven by the continued positive impact of AI on ad performance and early contributions from new monetization initiatives like Threads and WhatsApp. This growth is projected to decelerate to a more sustainable 13% by 2027",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin: A consolidated GAAP operating margin contraction is forecast from 42% in 2024 to 38% in 2025 and 37% in 2026",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Capital Expenditures: We model $70 billion in 2025 (the midpoint of guidance) and $90 billion in 2026",
+            "location": {
+                "section": "Key Assumptions Driving Our Model",
+                "page": "unknown"
+            },
+            "driver_type": "capex"
+        },
+        {
+            "quote": "Utilizing a Weighted Average Cost of Capital (WACC) of 9.5%, which reflects the increased risk profile associated with the massive AI investment cycle, and a terminal growth rate of 3.5%",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "terminal growth rate of 3.5%",
+            "location": {
+                "section": "Discounted Cash Flow (DCF) Analysis",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "weak",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "capex",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "CapEx growth projection contradicts management guidance interpretation",
+                "locations": [
+                    "Key Assumptions section models $90B for 2026",
+                    "Text states management expects 'similarly significant capital expenditures dollar growth' but $90B vs $70B is only 29% growth"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC 9.5% without methodology",
+            "Revenue growth rates without historical context",
+            "Operating margin assumptions without depreciation quantification"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is graded 'poor' due to significant internal contradictions and severe temporal inaccuracies that undermine its credibility. The most glaring issue is the Financials Snapshot table, which lists FY2024 EPS at $11.9 and FY2025 EPS at $2.9. This occurs despite the same table showing revenue more than doubling from $60.9 billion to $130.5 billion and operating margins expanding from 54.1% to 62.4%. This mathematical impossibility is never addressed in the narrative, which instead describes 'industry-leading gross margins' and 'exceptional' profitability. Furthermore, the report suffers from a fundamental temporal paradox. While the document is dated July 15, 2025, the 'Sources' section and several narrative points rely on data and events from August and September 2025. For instance, Source 10 and Source 52 reference financial results from August 27, 2025, and Source 56 is dated September 11, 2025. A report cannot logically cite sources published months after its own issuance. Additionally, there is a lack of reconciliation between the 'Bulls Say' narrative of 'insatiable' demand and the 'Fair Value' section, which models a precipitous growth slowdown to just 5% in FY2029. While the report mentions a 'cyclical pause,' it fails to connect this specific 5% assumption back to the broader 'trillion-dollar investment cycle' argument. These unresolved tensions require the reader to bridge significant analytical gaps.",
+    "evidence": [
+        "Financials Snapshot table shows EPS dropping from $11.9 in FY2024 to $2.9 in FY2025 despite revenue doubling and margins expanding (Financials Snapshot).",
+        "Report dated 2025-07-15 cites multiple sources from August and September 2025, such as Source 10 (2025-08-27) and Source 56 (2025-09-11) (Sources Section).",
+        "Narrative describes 'insatiable' demand for AI compute, yet the DCF model assumes a sharp deceleration to 5% revenue growth by FY2029 without reconciling the two (Fair Value and Profit Drivers)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

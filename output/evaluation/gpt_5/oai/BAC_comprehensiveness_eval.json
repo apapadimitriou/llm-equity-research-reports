@@ -1,0 +1,63 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections (Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, Sources) with reasonable depth and frequent citations. The valuation section is explicit on assumptions (revenue CAGR, NIM, costs, tax, WACC, terminal growth) and links drivers like NII/NIM and efficiency to the fair value, which is a strength. However, the Financials Snapshot is generic and omits core bank KPIs (e.g., NIM/NII series, CET1, provisions, efficiency ratio, loan/deposit growth), relying instead on non-sector metrics like operating margin and ROIC. Sector KPIs do appear in the narrative (NII, NIM, reserves mention, CET1 ~11\u201312%) but are not consolidated in the snapshot table, triggering the KPI omission cap. Peer benchmarking is largely absent (aside from ESG comparisons), and there is no scenario or sensitivity analysis. Redundancy is present: stress-test success and capital return themes repeat across multiple sections without new depth. Sourcing is mostly consistent, but several material claims (e.g., Q1 buybacks amount and repurchase authorization) lack citations. Overall, structure and linkage are solid, but missing bank KPI tables, limited peer context, and absent scenarios constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "NII (text)",
+            "NIM (text)",
+            "Reserves/Provisions (text)",
+            "CET1 (approximate, text)"
+        ],
+        "sector_kpis_missing": [
+            "NII (in Financials Snapshot)",
+            "NIM (in Financials Snapshot)",
+            "Loan Loss Provisions (quantitative)",
+            "CET1 (quantitative trend)",
+            "Efficiency Ratio",
+            "Loan/Deposit Growth"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "NIM (table)",
+            "NII (table)",
+            "CET1 (quantitative)",
+            "Provisions (quantitative)",
+            "Efficiency ratio"
+        ],
+        "uncited_claims": [
+            "Repurchased roughly $9.5M in shares in Q1",
+            "Recent authorization of large repurchase authorization",
+            "Analysts expect Q3 2025 buybacks and a higher dividend soon",
+            "Consumer checking balance growth has run high for many quarters"
+        ]
+    }
+}

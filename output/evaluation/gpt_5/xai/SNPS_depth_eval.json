@@ -1,0 +1,29 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates solid analytical depth by linking outcomes to drivers and embedding explicit, quantified assumptions. It explains recent performance causally (\u201cdriven by strong demand in electronic design automation (EDA)\u201d; \u201ccontributions from AI-enabled design tools\u201d) and builds a forecast with a DCF that specifies growth and margin drivers (\u201coperating margins expanding to 32%\u201d; \u201cWACC of 8.5%, reflecting a beta of 1.1\u201d; \u201cTerminal growth is 4%\u201d). Data use is extensive: an EPS bridge, multi-year revenue/EBIT forecasts, and implied valuation multiples. Uncertainty and counterpoints are acknowledged and quantified (\u201cvaluation sensitivity of \u00b120% to revenue assumptions\u201d; \u201cpotentially reducing chip design spending by 10-15% in a recession\u201d), though the sensitivity analysis is shallow\u2014there\u2019s no translation of these shocks into EPS or fair value changes and no WACC/terminal growth sensitivity. Assumption benchmarking is asserted (peer-aligned multiples; \u2018long-term industry average\u2019 terminal growth) but not substantiated with comparative metrics. Actionable implications are present through a detailed fair value and drivers, plus conditional upside from AI demand. Overall, the report meets the bar for Good: clear mechanisms and quantified assumptions with some sensitivity, but it falls short of Excellent due to limited scenario analysis and weak benchmarking.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": true,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "Margin expansion drivers (pricing vs cost) not detailed",
+            "AI demand \u2192 revenue mix/license model not explained",
+            "Backlog conversion mechanics not quantified"
+        ],
+        "unsupported_assumptions": [
+            "FY2024 EPS $9.50 'estimated' without sourcing",
+            "Terminal growth 4% not evidenced beyond assertion",
+            "Peer alignment claim lacks comparative metrics"
+        ],
+        "lack_of_sensitivity": [
+            "No WACC/terminal growth sensitivity on FVE",
+            "10\u201315% downturn not tied to EPS/FVE impact",
+            "Margin expansion to 32% lacks scenario range"
+        ]
+    }
+}

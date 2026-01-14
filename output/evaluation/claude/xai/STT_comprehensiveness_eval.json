@@ -1,0 +1,67 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards with critical data gaps throughout. The Financials Snapshot shows 'insufficient data' for all metrics across all years, making it impossible to assess the company's financial trajectory. Essential banking sector KPIs (NIM, loan loss provisions, CET1 ratio, AuCA growth rates) are completely absent. The valuation section lacks explicit linkage between operating drivers and the $85 fair value estimate, with no detailed DCF model or sensitivity analysis provided. Multiple sections contain vague assertions without supporting data or proper citations. The EPS bridge calculation references unavailable baseline data, undermining credibility. Peer benchmarking is entirely missing, and redundancy appears across sections discussing fee pressures and market volatility. The report reads more like a preliminary template than a comprehensive equity research analysis.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say/Bears Say",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Assets Under Custody and Administration (AuCA)",
+            "Fee Income Breakdown",
+            "Return on Equity (ROE)",
+            "Tier 1 Capital Ratio",
+            "Book Value per Share",
+            "Tangible Book Value"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": false,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Report date is 2025-06-29 but cites future sources dated 2025-07-15",
+                "locations": [
+                    "Cover Block",
+                    "Sources"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Net Interest Margin (NIM)",
+            "Assets Under Custody and Administration (AuCA)",
+            "Fee Income Breakdown",
+            "Return on Equity (ROE)",
+            "Tier 1 Capital Ratio",
+            "Book Value per Share"
+        ],
+        "uncited_claims": [
+            "Revenue CAGR of 4% over 2025-2029",
+            "Operating margins projected at 25-28%",
+            "2025 EPS of approximately $7.50",
+            "WACC estimated at 9%",
+            "Beta of 1.1",
+            "Sustainalytics ESG score in 20-30 range"
+        ]
+    }
+}

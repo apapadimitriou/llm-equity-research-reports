@@ -1,0 +1,75 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report fails to meet basic comprehensiveness standards with critical gaps throughout. The Financials Snapshot contains zero historical data (all marked 'insufficient data'), eliminating the ability to assess Microsoft's track record. Sector-specific KPIs for software companies (ARR, cloud metrics, subscription ratios) are completely absent. The Economic Moat section is skeletal with 'insufficient data' despite being core to Microsoft's investment thesis. Capital Allocation lacks any concrete analysis of balance sheet strength, dividend policy, or M&A strategy. ESG coverage is non-existent. Multiple sections rely on questionable sources including X posts for financial data. The valuation methodology lacks peer benchmarking and scenario analysis. While the report attempts to cover required sections, the execution is superficial with insufficient evidence and data gaps that render the analysis unreliable for investment decisions.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls Say / Bears Say",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Financials Snapshot",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Comprehensive Economic Moat Analysis",
+            "Comprehensive Capital Allocation Analysis",
+            "Comprehensive ESG Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Annual Recurring Revenue (ARR)",
+            "Cloud Revenue Growth",
+            "Subscription Metrics",
+            "Monthly Active Users",
+            "Customer Acquisition Cost",
+            "Net Revenue Retention"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Uses X posts as primary sources for financial data",
+                "locations": [
+                    "Sources [1]",
+                    "Sources [4]"
+                ]
+            },
+            {
+                "description": "References future dates in sources (2025-07-27, 2025-08-08) from 2025-06-07 report date",
+                "locations": [
+                    "Sources [5]",
+                    "Sources [6]"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "ARR",
+            "Cloud Revenue Growth Rate",
+            "Office 365 Subscribers",
+            "Azure Market Share",
+            "Customer Lifetime Value",
+            "Churn Rate"
+        ],
+        "uncited_claims": [
+            "All historical financial data marked as 'insufficient data'",
+            "Fair value estimate methodology lacks peer comparison",
+            "Economic moat assessment completely absent"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report has a clear structure and many elements align (e.g., operating margin expansion in the narrative matches the Financials Snapshot), but two guardrail issues force a downgrade. First, there is a temporal inconsistency: the Analyst Note discusses Q2 2025 results and cites sources dated 2025-07-15, while the report\u2019s cover block is dated 2025-07-08. This makes the \u201creported strong results\u201d claim time-inaccurate relative to the provided dates. Second, there is an internal contradiction between the EPS bridge and the Financials Snapshot: the bridge calls 2024 EPS \u201cestimated,\u201d while the table treats 2024 figures as \u201cactuals\u201d based on the annual report. Beyond these, the Bulls/Bears section is not fully reconciled with the base-case valuation; Bears emphasize flat deposits/loans, yet the Strategy & Outlook and valuation assume 3\u20135% annual loan growth without explaining the transition from current flatness to sustained growth. While the language is generally clear and the narrative connects NII guidance to valuation, these unresolved tensions and the time-inaccuracy disrupt coherence. Minor rough edges include shifting P/E anchors (12x on 2026 EPS vs 12.4x on 2025 EPS) and reliance on vague \u201cPosts found on X\u201d for key datapoints, which weakens cross-section support. Overall, the report requires the reader to resolve discrepancies, resulting in a poor grade under the guardrails.",
+    "evidence": [
+        "Cover date 2025-07-08 vs Analyst Note citing Q2 2025 results with sources dated 2025-07-15 (Sources [1], [2])",
+        "EPS bridge: \u201c2024 EPS of $16.50 (estimated)\u201d vs Financials Snapshot: \u201c2024 Actual EPS 16.5\u2026 actuals based on annual reports [6]\u201d",
+        "Bears: \u201cFlat deposits and loans\u2026\u201d vs Strategy & Outlook: \u201cexpected loan growth of 3-5% annually through 2029\u201d without reconciliation"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 0,
+        "auto_downgrade_applied": true
+    }
+}

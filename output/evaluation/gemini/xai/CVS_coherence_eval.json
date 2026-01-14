@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report is downgraded to 'poor' due to a combination of temporal inaccuracies, internal mathematical contradictions, and structural failures. While the narrative flow is generally logical, the report cites a source (Source [4]) dated August 9, 2025, which post-dates the report\u2019s own publication date of May 12, 2025. This 'future-dated' citation triggers a hard cap of 'fair' under the grading rubric. Additionally, a material contradiction exists within the 'Fair Value and Profit Drivers' section: the EPS bridge calculation ($5.42 + $0.70 + $0.30 - $0.20) sums to $6.22, yet the text concludes it yields $6.10. This internal inconsistency between the narrative's logic and its own arithmetic further reinforces the 'fair' cap. The grade is further reduced because the Bulls Say / Bears Say scenarios are not reconciled with the base-case valuation; the Bear case's regulatory and competitive threats are never integrated into the DCF assumptions. Finally, the report relies on list-like structures in the Bulls/Bears and Appendix sections, lacking transitional prose. Although the financial tables and the Analyst Note share consistent high-level figures, such as the $7.0 billion cash flow target, the logical failure of the citation timeline, the arithmetic error in the EPS bridge, and the lack of synthetic risk analysis fundamentally undermine the report's coherence.",
+    "evidence": [
+        "Source [4] is dated 2025-08-09, nearly three months after the report date of 2025-05-12 (Sources).",
+        "The EPS bridge calculation ($5.42 + $0.70 + $0.30 - $0.20) mathematically equals $6.22, contradicting the stated result of $6.10 (Fair Value and Profit Drivers).",
+        "The Bulls Say / Bears Say section is a bulleted list that is not reconciled with the base-case valuation narrative (Bulls Say / Bears Say)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

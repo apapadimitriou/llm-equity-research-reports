@@ -1,0 +1,91 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key drivers are explicitly stated proximate to the valuation (revenue CAGR, margin path, NII growth, WACC, terminal growth) and reflected in a forecasts table. Specificity is moderate: units, magnitudes, and time horizons are provided (e.g., \u201c~18% to ~21% margins by 2029,\u201d WACC 9\u201310%, terminal growth 2%, NII growth 1\u20133%). However, justification is partial: some inputs are loosely anchored to management commentary or consensus, but most lack multi-year historical reconciliation or peer benchmarks (e.g., WACC, terminal growth, revenue CAGR). Internal consistency has a notable numeric conflict: the narrative\u2019s \u201c5\u20137% revenue CAGR (2024\u201329)\u201d vs the Financials Snapshot revenue path (~3\u20134% CAGR), triggering a cap at Fair. Stress-testing is absent: there are no quantified sensitivities or scenario analyses linking variations in rates/NII, provisions, or WACC to valuation outcomes. Important bank-specific assumptions are missing or opaque (tax rate, credit costs/provisioning path, share count trajectory under the $40B buyback). Overall, while the report lists material assumptions with some specificity, limited evidence, one contradiction, and lack of quantified sensitivity keep the assumption quality at Fair.",
+    "assumptions_extracted": [
+        {
+            "quote": "supporting about 5\u20137% revenue CAGR (2024\u201329)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "operating margins gradually improve (from ~18% in 2024 to ~21% by 2029)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "NII growth resuming 1\u20133% after 2025.",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Revenue CAGR ~5\u20136% (2024\u201329), expense growth ~2\u20133%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We use a WACC of ~9\u201310% (reflecting a 10% equity cost, 20% debt with 4% yield)",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "a 2% terminal growth.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Narrative states \u201c5\u20137% revenue CAGR (2024\u201329)\u201d while the Financials Snapshot table implies ~3\u20134% CAGR from $125.4B (2024) to $150.0B (2029).",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "WACC ~9\u201310% without source linkage to risk-free/market premia or bank capital mix",
+            "Terminal growth 2% without macro/industry support",
+            "Revenue CAGR 5\u20136% vs internal table without reconciliation",
+            "Expense growth ~2\u20133% without benchmarking to peers/history"
+        ]
+    }
+}

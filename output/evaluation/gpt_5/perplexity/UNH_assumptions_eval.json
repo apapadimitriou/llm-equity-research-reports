@@ -1,0 +1,98 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key assumptions are explicitly stated and proximal to forecasts, notably in the Financials Snapshot and the Appendix. Specificity is solid: magnitudes, units, and time horizons are provided (e.g., revenue CAGR, operating margin path, medical care ratio ranges, EPS trajectory, WACC, and valuation multiples). However, justification is partial: figures are loosely tied to historical patterns or peers without cited, auditable source data or reconciliation (e.g., WACC 8.5\u20139%, forward P/E 15\u201316x). Internal consistency is mostly clean, though minor discrepancies appear (revenue growth referenced as 7\u20139% in narrative vs. 8\u20139% in the Appendix). Sensitivity analysis is limited: while ranges/multiples and a conservative scenario are disclosed, there is no robust, quantified stress test showing how variations in material drivers (medical care ratio, margin, revenue growth, tax rate) impact valuation targets. Several material levers are missing or opaque (terminal growth, tax rate, explicit share count trajectory in the model). Given the absence of robust sensitivities and only partial justification, the assumptions quality merits a Fair grade.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029: 8-9%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margin recovery: 4.5% (2025E) to 8.5% (2029E)",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Normalized medical care ratio: 82-84%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital: 8.5-9.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Forward P/E multiple: 15-16x normalized earnings",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Using a normalized earnings estimate of $25-27 per share by 2027-2028",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "A more conservative scenario applying a 13-14x multiple to reflect execution risks and regulatory uncertainties yields fair value estimates of $325-378 per share",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Historical share count reductions of approximately 2-3% annually",
+            "location": {
+                "section": "Capital Allocation",
+                "page": "unknown"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "medical_care_ratio",
+            "WACC/COE",
+            "valuation_multiple",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "terminal_growth",
+            "capex"
+        ],
+        "unjustified_parameters": [
+            "Weighted Average Cost of Capital: 8.5-9.0%",
+            "Forward P/E multiple: 15-16x normalized earnings"
+        ]
+    }
+}

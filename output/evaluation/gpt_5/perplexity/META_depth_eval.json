@@ -1,0 +1,29 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates meaningful causal explanation and explicit modeling assumptions but lacks benchmarking and quantified sensitivity analysis. It explains performance drivers (\u201cDriven primarily by continued strength in the Family of Apps\u201d) and links investments to operational outcomes (\u201cFocused on data center expansion and GPU procurement\u201d; \u201cAI investments are already generating tangible returns\u201d). Inference quality is supported by a DCF with quantified inputs (\u201cadvertising revenue CAGR of 14% from 2025-2029\u201d; \u201cWACC: 9.2%\u201d; \u201cTerminal growth rate: 3.0%\u201d), and the report provides detailed revenue, margin, EPS, and capex figures. However, key assumptions are not benchmarked to peers or historical ranges (other than a generic P/E remark), and there is no stress-testing or scenario analysis. The sensitivity section is qualitative (\u201cKey sensitivities include advertising market growth rates\u201d) without ranges or impact estimates on EPS, margins, or fair value. Uncertainty is acknowledged (regulatory, competition, Reality Labs losses), but the report stops short of quantifying downside/upsides. Actionable implications exist at a high level via a fair value estimate and risk framing, yet conditional decision rules (e.g., what to do if ad growth slows or capex rises) are absent. Overall, the depth is limited by unbenchmarked assumptions and the absence of quantified scenarios or sensitivities.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": false,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI capex \u2192 revenue/margin uplift not modeled",
+            "Reality Labs losses \u2192 path to profitability not articulated",
+            "Regulatory constraints \u2192 specific impact on targeting not detailed"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth rate 3.0% without benchmarking",
+            "WACC 9.2% with no inputs shown",
+            "normalized capex/revenue 15% not justified by history"
+        ],
+        "lack_of_sensitivity": [
+            "No EPS/margin sensitivity to ad slowdown",
+            "No scenario for EU fines or compliance costs",
+            "Single-point operating margin target without range"
+        ]
+    }
+}

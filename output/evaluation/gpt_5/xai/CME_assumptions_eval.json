@@ -1,0 +1,111 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Assumptions are explicit and concentrated in the valuation sections, with clear numerical inputs for revenue growth (2025\u20132029 CAGR), margins, WACC, terminal growth, and valuation multiples. Specificity is solid: magnitudes, units, and the forecast horizon are stated, and an EPS bridge links quarterly EPS to annual forecasts. However, justification is partial: the 9% revenue CAGR is loosely extrapolated from a single quarter\u2019s 10% growth; the 60% margin, 8% WACC, and 3% terminal growth lack evidence from multi-year history, peers, or cited sources. Internal consistency is marred by an unresolved contradiction between the narrative EPS target for 2029 (\"$16.50\") and the forecast table (\"16.1\"), and there is no reconciliation. Critically, there is no quantified sensitivity or scenario analysis for material drivers (volumes/ADV, margins, WACC, or terminal growth), triggering the hard cap at Fair. Several important drivers (tax rate, capex, share count, working capital) are missing or opaque, and valuation multiples (PE 20x, EV/EBITDA 15x) are asserted without benchmarking. Overall, while the inputs are stated and proximate to the model, they are weakly justified and not stress-tested.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR 2025-2029 | 9.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin | 60.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 8.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0%",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "PE Multiple | 20.0x",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "EPS bridge: Starting from Q2 2025 EPS of $2.96 [8], annualizing to $11.84 for 2025, growing at 8% CAGR to $16.50 by 2029.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "In the medium term, we anticipate ADV to grow at 5-7% annually",
+            "location": {
+                "section": "Business Strategy & Outlook",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Discounting back yields fair value of $240, implying PE of 20x 2025 EPS and EV/EBITDA of 15x.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "valuation_multiple",
+            "EPS_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "EPS 2029 target in narrative (\"$16.50\") conflicts with forecast table (\"16.1\").",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "share_count",
+            "working_capital",
+            "depreciation/amortization"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.0% without source/benchmark",
+            "Terminal Growth Rate 3.0% without justification",
+            "PE Multiple 20.0x without peer comparison",
+            "EV/EBITDA of 15x without benchmarking",
+            "Operating Margin 60% sustained without multi-year evidence"
+        ]
+    }
+}

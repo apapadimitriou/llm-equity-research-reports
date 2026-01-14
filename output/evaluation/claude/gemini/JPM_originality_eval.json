@@ -1,0 +1,60 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "This report demonstrates some company-specific detail but is predominantly comprised of generic banking analysis and restated public information. While it contains 2-3 weak syntheses (linking rate normalization to margin compression, connecting capital strength to market share gains), most insights are standard banking sector observations applicable to any large bank. The valuation section relies on conventional DCF methodology without novel drivers beyond basic rate/margin assumptions. Key phrases like 'fortress balance sheet,' 'scale advantages,' and 'diversified business model' represent boilerplate industry language. The report extensively paraphrases earnings releases and management commentary without adding interpretive value. Most critically, it lacks specific, actionable theses with quantified mechanisms and catalysts that would distinguish JPM from peer analysis.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "relentless market share gains and best-in-class execution across its diversified franchises",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "fortress balance sheet provides substantial competitive advantage",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "NII normalization from cyclical peaks as rates decline, offset by loan growth",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "scale advantages are nearly impossible to replicate",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "diversified business model generates uncorrelated earnings streams",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "mid-cycle ROTCE of 18.5% assumption vs current 21%",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "capital strength enables market share gains during stress",
+                "classification": "Synthesis",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Boilerplate 'fortress balance sheet' phrasing",
+            "Generic 'scale & diversification' language",
+            "Standard DCF with conventional rate assumptions",
+            "Extensive paraphrasing of earnings releases"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 4
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

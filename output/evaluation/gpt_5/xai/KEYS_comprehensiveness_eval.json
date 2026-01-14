@@ -1,0 +1,71 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all headline sections with reasonable depth: Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Economic Moat, Valuation & Profit Drivers, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Valuation assumptions are explicit and link to operating drivers (segment growth rates, margin expansion, WACC inputs), which is a strength. Evidence is generally cited, though some material assertions in the moat section lack direct sourcing. The Financials Snapshot provides revenue, EPS, FCF, ROIC, and operating margin, but omits core sector KPIs for test & measurement (orders, book-to-bill, backlog, segment revenue mix, software/recurring revenue mix, gross margin), limiting comprehensiveness of the financial/KPI coverage. Peer context is mentioned briefly but lacks a dedicated benchmarking table. Scenario/sensitivity analysis is absent, and there is minor repetition of AI/6G tailwinds across multiple sections without added depth. Given the KPI omissions in the Financials Snapshot (\u22652 missing), the report is capped at Fair despite solid valuation linkage and broad sectional coverage.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block & Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis",
+            "Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "Operating Margin",
+            "EPS",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Orders",
+            "Book-to-Bill",
+            "Backlog",
+            "Segment Revenue Mix (CSG/EISG)",
+            "Software/Recurring Revenue Mix",
+            "Gross Margin"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Operating margin starting point stated as 24% in Valuation vs 24.5% in Financials Snapshot for 2025E",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Orders",
+            "Book-to-Bill",
+            "Backlog",
+            "Segment revenue split (CSG/EISG)",
+            "Software/recurring revenue mix",
+            "Gross margin"
+        ],
+        "uncited_claims": [
+            "Consistent gross margins above 60% cited as evidence of moat with no source",
+            "ROIC exceeding WACC by 10\u201315 percentage points historically with no source"
+        ]
+    }
+}

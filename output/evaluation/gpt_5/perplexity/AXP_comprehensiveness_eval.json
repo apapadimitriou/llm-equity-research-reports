@@ -1,0 +1,79 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections in the correct order, including a clear Analyst Note, business description, strategy, bulls/bears, moat, valuation and drivers, risks, capital allocation, ESG, and a Financials Snapshot, plus sources. The proportionality of coverage is generally reasonable, with the most depth in strategy, moat, valuation, and capital allocation. However, the Financials Snapshot omits core sector KPIs for a card issuer/network (e.g., billed business, cards-in-force, credit quality metrics, CET1), instead providing generic metrics (revenue, EPS, margins, FCF, ROIC). This triggers a hard cap at Fair. Evidence integration is uneven: while many statements are cited, several key claims (e.g., forward P/E, buybacks) lack citations, and the source list includes outdated items (2010\u20132019, 2018) that do not credibly support 2025 assertions. Peer benchmarking is absent, and there is no scenario/sensitivity analysis. A notable inconsistency appears between maintained 8\u201310% revenue growth guidance and the 2025E revenue decline vs. 2024A in the snapshot. The valuation section links drivers (billed business growth, margins, credit normalization) to a DCF outcome with explicit WACC/terminal assumptions, which is a strength, but it also mixes in a P/E cross-check without a bridge. Overall, solid structure but gaps in KPI coverage, sourcing rigor, peer context, and internal consistency constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Fair Value and Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS"
+        ],
+        "sector_kpis_missing": [
+            "Billed Business",
+            "Cards-in-Force",
+            "Net Write-off Rate/Provisions",
+            "CET1",
+            "Net Interest Income/NIM",
+            "Delinquency Rate",
+            "Merchant Discount Rate"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025E revenue in Financials Snapshot is below 2024A despite stated 8\u201310% revenue growth guidance being maintained.",
+                "locations": [
+                    "Analyst Note",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Valuation mixes DCF output with a 19x P/E cross-check without reconciliation to the DCF-derived fair value.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Billed Business",
+            "Cards-in-Force",
+            "Net Write-off Rate/Provisions",
+            "CET1",
+            "Net Interest Income/NIM",
+            "Delinquency Rate",
+            "Merchant Discount Rate"
+        ],
+        "uncited_claims": [
+            "Forward P/E approximately 15.5x in Analyst Note lacks a current source.",
+            "Share repurchase activity totaled ~$2.8B in 2024 has no citation.",
+            "ESG statements on TCFD alignment and Sustainalytics rating are not sourced.",
+            "Financials Snapshot figures (A/E) are presented without explicit sourcing."
+        ]
+    }
+}

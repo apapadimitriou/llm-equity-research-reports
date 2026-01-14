@@ -1,0 +1,74 @@
+{
+    "grade": "Good",
+    "summary_reasoning": "The report demonstrates good quality assumptions across most key areas. Assumptions are explicit and well-located near relevant forecasts, with clear units and timeframes. The cost of equity (9%) and terminal growth assumptions are properly justified through historical context and peer comparisons. Key drivers like organic AUM growth (4.4% average 2025-29), operating margins (43%-47%), and revenue growth (8.4% annually) are specific and supported by multi-year historical data. The report shows strong internal consistency between narrative and financial tables. However, the analysis is capped at Good rather than Excellent due to limited quantitative sensitivity analysis\u2014while bull/bear scenarios are provided ($1,630/$630 per share), there's insufficient granular stress-testing of individual material drivers with specific ranges and valuation impacts.",
+    "assumptions_extracted": [
+        {
+            "quote": "organic AUM growth expanding 4.4% on average annually during 2025-29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We use a 21% US statutory corporate tax rate and a 9% cost of equity in our valuation",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "7"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "we are projecting 8.4% top-line growth on average annually during 2025-29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "adjusted operating margins in a 43%-47% range during 2025-29",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "8"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Stage II EBI Growth Rate % 6.0",
+            "location": {
+                "section": "Key Valuation Drivers",
+                "page": "18"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "Projected Diluted Shares 153",
+            "location": {
+                "section": "Discounted Cash Flow Valuation",
+                "page": "18"
+            },
+            "driver_type": "share_count"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "solid",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "clean",
+        "sensitivities_present": true,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": []
+    }
+}

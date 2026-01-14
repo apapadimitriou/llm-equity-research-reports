@@ -1,0 +1,80 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers nearly all expected sections, including a clear cover block, contents, analyst note, business description, strategy/outlook, bulls/bears, moat, valuation, risks, capital allocation, ESG, and an appendix with sources. The depth is generally proportional: strategy and moat are well-articulated; risks include regulatory and macro factors; capital allocation details cash, FCF, and buybacks. Evidence integration is mixed: many claims carry bracketed citations, but key cover-block facts (e.g., last close) are uncited and some sourcing appears outdated or mismatched (e.g., market cap sourced to 2024, ESG rating inferred from an award article). Valuation links operating drivers (growth, mix shift, margins, Spirent) to DCF assumptions (WACC, terminal growth, capex), but lacks a formal scenario/sensitivity table. The Financials Snapshot offers revenue, margins, EPS, FCF, and ROIC, yet omits core sector KPIs (orders/book-to-bill, backlog, segment/geographic mix, ARR/NRR), triggering a hard cap. Peer benchmarking is absent. Some repetition (software/services mix, tariff headwinds) appears across sections without added depth. Overall, strong coverage and reasonable linkages, but KPI omissions in the snapshot and inconsistent sourcing constrain comprehensiveness.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG/Controversies",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario Analysis"
+        ],
+        "sector_kpis_present": [
+            "Segment revenue (CSG/EISG)",
+            "Software/Services mix (%)",
+            "ARR (%)",
+            "Gross margin",
+            "Operating margin",
+            "Free Cash Flow",
+            "ROIC"
+        ],
+        "sector_kpis_missing": [
+            "Orders",
+            "Book-to-Bill",
+            "Backlog",
+            "Segment mix (multi-year) in snapshot",
+            "ARR/NRR (multi-year) in snapshot",
+            "Geographic mix"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "R&D spending stated as $230M \"annually\" and 18% of revenue conflicts with the report\u2019s multi-year revenue levels (~$5B) in the Financials Snapshot.",
+                "locations": [
+                    "Economic Moat",
+                    "Financials Snapshot"
+                ]
+            },
+            {
+                "description": "Characterization of \"minimal debt\" conflicts with stated debt-to-equity ratio of 46%.",
+                "locations": [
+                    "Capital Allocation",
+                    "Capital Allocation"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Orders",
+            "Book-to-Bill",
+            "Backlog",
+            "ARR/NRR in Financials Snapshot",
+            "Segment revenue/mix in Financials Snapshot",
+            "Geographic mix"
+        ],
+        "uncited_claims": [
+            "Last close $163.00 (Cover Block) without citation",
+            "Equity Style Box and ESG Risk Rating presented without source alignment"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "grade": "fair",
+    "reasoning": "The report presents a coherent narrative arc from near-term performance (Analyst Note, June 2025) through strategic positioning (Business Strategy & Outlook, March 2025), moat rationale, valuation assumptions, risks, and capital allocation. Language is clear and sections reinforce each other: vendor consolidation and Falcon\u2019s stickiness recur across Analyst Note, Strategy, and Moat, and the maintained $330 fair value is consistently referenced and supported by the DCF summary. Transitions within sections generally explain why the next point follows (e.g., outage impact \u2192 bundling discounts \u2192 retention). Temporal claims align: calling the July 19 outage \u201calmost a year old\u201d in June 2025 is accurate, and the expectation of margin expansion in H2 fiscal 2026 is consistent with negative FY2026 operating income but improving thereafter in the model. However, there is a notable inconsistency in the Valuation tables: the Forecast Revisions section labels \u201cNet Income\u201d with figures that match adjusted metrics and contradict the main model\u2019s GAAP net income, creating an unaddressed tension between tables. Terminology is mostly consistent, though \u201cadjusted margins\u201d is used without explicit definition. Overall, the report is understandable and internally aligned in most places, but the table mismatch triggers the guardrail hard cap to fair despite otherwise strong coherence.",
+    "evidence": [
+        "Forecast Revisions labels \u201cNet Income (USD Mil) 1,027/1,423/1,815\u201d for 2026\u20132028, conflicting with the main model\u2019s GAAP Net Income of -72/293/655 (Valuation Model Summary, p. 15 vs p. 14\u201315).",
+        "Vendor consolidation and bundling discounts post-outage tie Analyst Note to Strategy, reinforcing the argument (Analyst Note 4 Jun 2025; Business Strategy & Outlook 4 Mar 2025).",
+        "\u201cReenter margin expansion territory in the second half of fiscal 2026\u201d aligns with negative FY2026 operating income and subsequent improvement (Analyst Note p. 2; Valuation Model Summary p. 14)."
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": false,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

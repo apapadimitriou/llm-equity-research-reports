@@ -1,0 +1,61 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers the headline sections (cover, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation & Profit Drivers, Risk, Capital Allocation, Financials Snapshot, ESG, Appendix, Sources). Valuation includes explicit driver linkages (revenue CAGR, margin, WACC, EPS bridge), which is positive. However, the Financials Snapshot is thin: 2022\u20132024 actuals are marked as \u201cinsufficient data,\u201d and core sector KPIs for a capital markets firm (CET1/ROTCE/AUM/inflows/trading mix/comp ratio) are missing. Sourcing is inconsistent, relying on social media and a non-like-for-like BDC transcript, with multiple material claims uncited or based on outdated references (e.g., ESG ratings, BVPS CAGR, buyback authorization). Peer benchmarking is largely absent (aside from uncited ESG comparisons) and there is no scenario/sensitivity analysis. Redundancy appears, with the 71% advisory fee growth repeated across multiple sections without added depth. Capital allocation lacks balance-sheet metrics or regulatory ratios, and risks are qualitative without quantification. These gaps constrain comprehensiveness despite the presence of major sections and a basic valuation bridge.",
+    "content_checks": {
+        "sections_present": [
+            "Cover Block",
+            "Contents",
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "FCF"
+        ],
+        "sector_kpis_missing": [
+            "CET1 Ratio",
+            "ROE/ROTCE",
+            "AUM/Net Inflows",
+            "Trading Revenue Mix",
+            "Compensation Ratio"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": false,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "CET1 Ratio",
+            "ROE/ROTCE",
+            "AUM/Net Inflows",
+            "Trading Revenue Mix",
+            "Compensation Ratio"
+        ],
+        "uncited_claims": [
+            "Sustainalytics ESG Risk Rating figures (GS 22.5; JPM 21.8; MS 23.1) marked as insufficient data and lack direct citation",
+            "Historical BVPS CAGR from IPO to Q2 2025 referenced without supporting data and with an outdated IR source",
+            "Buyback authorization \"up to $40 billion\" sourced to social media (X) without corroboration"
+        ]
+    }
+}

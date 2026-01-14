@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "The report suffers from a critical temporal failure: it is dated July 3, 2025, yet it provides a detailed analysis of Q2 2025 financial results that were not released until July 31, 2025, according to the cited sources. This fundamental anachronism undermines the credibility of the entire document. Furthermore, there are significant internal contradictions between the narrative and the data tables. The Analyst Note cites a 2026 EPS forecast of $15.90 to justify a $510 fair value estimate (32x P/E), but the Financials Snapshot table lists the 2026 EPS as $17.2. This discrepancy is material, as the table's figure would imply a much lower P/E of 29.6x, contradicting the valuation thesis. Additionally, the Fair Value section predicts operating margins will reach 58% by 2029, while the Financials Snapshot table forecasts 58.5% for the same period. While the narrative flow between sections is generally logical and the economic moat analysis is well-structured, these quantitative and temporal errors are disqualifying. The reader cannot rely on the provided figures to reconstruct the valuation, as the 'base case' narrative is not synchronized with the supporting data tables. These issues trigger multiple hard caps under the grading rubric, necessitating a 'poor' grade.",
+    "evidence": [
+        "Report date is 2025-07-03, but Analyst Note cites Q2 2025 results released July 31, 2025 (Source [1])",
+        "Analyst Note cites 2026 EPS of $15.90, while Financials Snapshot table lists $17.2",
+        "Fair Value section forecasts 58% operating margin by 2029, but Financials Snapshot table shows 58.5%"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": false,
+        "list_like_sections_count": 1,
+        "auto_downgrade_applied": true
+    }
+}

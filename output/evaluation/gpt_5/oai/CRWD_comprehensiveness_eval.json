@@ -1,0 +1,59 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report is well-structured with all headline sections present: cover block, contents, Analyst Note, Business Description, Strategy & Outlook, Bulls/Bears, Moat, Valuation, Risks, Capital Allocation, Financials Snapshot, ESG, Appendix, and Sources. Business description and strategy are proportionate, and the valuation section includes explicit assumptions (revenue CAGR, margin expansion, WACC, terminal growth) linking operating drivers to the fair value. Risks, capital allocation, and ESG are addressed with reasonable depth and in-text citations. However, the Financials Snapshot, while multi-year and including revenue/EPS/margins/FCF/ROIC, omits core SaaS sector KPIs (e.g., ARR, NRR, billings, RPO), triggering the hard cap. Evidence integration is generally strong, but several material claims lack citations (e.g., Blumira acquisition, Falcon Flex deployment rate, module ARR scale, capex ratio, peer ESG metric), further reinforcing the cap. Peer context exists but lacks a dedicated benchmarking analysis, and scenario/sensitivity work is absent. Some redundancy is present (repeating retention and gross margin talking points across sections). Overall, comprehensive in scope but with KPI and sourcing gaps that limit the grade.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls/Bears",
+            "Economic Moat",
+            "Valuation",
+            "Risk",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG",
+            "Appendix",
+            "Sources"
+        ],
+        "sections_missing": [
+            "Peer Benchmarking",
+            "Scenario/Sensitivity Analysis"
+        ],
+        "sector_kpis_present": [
+            "Revenue",
+            "EPS",
+            "Operating Margin",
+            "Free Cash Flow"
+        ],
+        "sector_kpis_missing": [
+            "ARR",
+            "Net Revenue Retention (NRR)",
+            "Billings",
+            "Remaining Performance Obligations (RPO)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_kpis": [
+            "ARR",
+            "Net Revenue Retention (NRR)",
+            "Billings",
+            "Remaining Performance Obligations (RPO)"
+        ],
+        "uncited_claims": [
+            "Claimed acquisition of Blumira alongside Adaptive Shield (~$300M) without citation",
+            "About 60% of signed Falcon Flex commitments already deployed (no source)",
+            "Cloud Security and Identity Protection together exceed ~$1.3B ARR (no source)",
+            "Capex is ~3\u20134% of revenue (no source)",
+            "Peer Palo Alto Networks ESG risk ~13.9 (no source)"
+        ]
+    }
+}

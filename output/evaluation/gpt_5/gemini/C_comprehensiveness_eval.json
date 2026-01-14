@@ -1,0 +1,72 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers many core elements: an executive summary with rating/target, strategic transformation narrative, segment-level business description, competitive advantages (notably the Services network), capital allocation (CET1/SCB, buybacks, dividend), risks, a peer valuation comparison, and a valuation framework linking RoTCE progression to a P/TBV re-rating. Sources are generally cited throughout with in-text footnotes and a works-cited list. However, the Financials Snapshot is the weak link: while it presents a multi-year table, it is partially malformed and omits multiple bank-specific KPIs (no NIM, no charge-off/NCL or NPL metrics, no loan/deposit growth, and CET1 is discussed in text but absent from the table). This triggers the hard cap on comprehensiveness. The valuation section does link operating drivers (RoTCE improvement, capital returns) to the target multiple, and peer context is present, though some peer figures are noted as illustrative. There is no scenario/sensitivity analysis, no explicit Bulls/Bears section, and no ESG/controversies discussion. Overall, breadth is good, but missing KPIs in the financial snapshot and absent scenarios limit the report to Fair.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note / Investment Summary",
+            "Business Description (by segment)",
+            "Business Strategy & Outlook",
+            "Competitive Positioning / Moat",
+            "Capital Allocation",
+            "Valuation & Price Target",
+            "Peer Benchmarking",
+            "Risks",
+            "Financials Snapshot",
+            "Earnings Preview & Key Drivers",
+            "Sources / Works Cited"
+        ],
+        "sections_missing": [
+            "Bulls/Bears (explicit upside/downside drivers)",
+            "Scenario/Sensitivity Analysis",
+            "ESG/Controversies",
+            "Appendix/Glossary",
+            "Contents page"
+        ],
+        "sector_kpis_present": [
+            "Net Interest Income (forward)",
+            "Provisions for Credit Losses",
+            "Return on Tangible Common Equity (RoTCE)",
+            "Tangible Book Value per Share (TBVPS)",
+            "Stress Capital Buffer (SCB) (text)",
+            "CET1 ratio (text)"
+        ],
+        "sector_kpis_missing": [
+            "Net Interest Margin (NIM)",
+            "Net Charge-Offs / NCL rate",
+            "Nonperforming Loans (NPL) ratio",
+            "Loan and Deposit growth/volumes",
+            "CET1 (in the snapshot table)"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": true,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": false,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Model cites 2025 revenue of ~$83.95B as aligning with guidance framed as the \u2018higher end\u2019 of $80\u201381B, then says \u2018potentially exceeding $84B,\u2019 which conflicts with the stated range.",
+                "locations": [
+                    "Forward-Looking Model (2025E\u20132026E)"
+                ]
+            },
+            {
+                "description": "Financials table contains malformed rows (e.g., Net Income/EPS/RoTCE/CET1 lines garbled), impairing clarity of KPIs.",
+                "locations": [
+                    "Financial Summary & Forecasts table"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "NIM",
+            "Net charge-offs/NCL",
+            "NPL ratio",
+            "Loan/deposit growth",
+            "CET1 not included in snapshot table"
+        ],
+        "uncited_claims": []
+    }
+}

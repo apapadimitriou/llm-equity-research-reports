@@ -1,0 +1,16 @@
+{
+    "grade": "poor",
+    "reasoning": "This report suffers from severe structural and consistency problems that render it largely incoherent. The most glaring issue is the complete absence of financial data throughout - the Financials Snapshot table shows 'insufficient data' for all metrics across all years, yet the Fair Value section confidently provides specific EPS projections ($7.50 for 2025) and revenue growth assumptions (4% CAGR) with no supporting foundation. This creates fundamental contradictions between the narrative claims and available data. The temporal accuracy is also compromised, with Source [2] dated July 15, 2025 being cited as historical reference when the report date is June 29, 2025 - an impossibility that undermines credibility. The Bulls/Bears section presents generic points that aren't reconciled with the base-case valuation narrative, particularly around fee pressures and margin assumptions. Multiple sections read as disconnected bullet points with minimal transitions, especially the Business Strategy and Risk sections. The report attempts to present detailed financial projections while simultaneously acknowledging insufficient data, creating an internally contradictory document that forces readers to question the reliability of all claims.",
+    "evidence": [
+        "Financials table shows 'insufficient data' for all metrics, yet Fair Value section states '2025 EPS of approximately $7.50' with specific calculations (Fair Value section vs Financials Snapshot)",
+        "Source [2] dated 2025-07-15 cited as reference when report date is 2025-06-29, creating temporal impossibility (Sources section)",
+        "Bears mention 'fee pressures may erode margins' while Fair Value assumes 'margins stabilize at 25-28%' with no reconciliation between conflicting scenarios"
+    ],
+    "flags": {
+        "contradictions_found": true,
+        "temporal_inaccuracy_found": true,
+        "bulls_bears_unreconciled": true,
+        "list_like_sections_count": 2,
+        "auto_downgrade_applied": true
+    }
+}

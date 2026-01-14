@@ -1,0 +1,55 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "This report demonstrates fundamental issues with originality, relying heavily on copied content and generic financial analysis. Multiple insights are directly copied or lightly paraphrased from sources, including specific revenue figures, financial metrics, and strategic descriptions lifted verbatim from earnings reports and press releases. The analysis lacks meaningful synthesis - for example, stating 'salanersen could achieve peak annual sales of $1.5-2 billion' without connecting this to competitive dynamics, market size analysis, or company-specific execution capabilities. The valuation section presents standard DCF assumptions without novel drivers or mechanisms. Most critically, the report offers no original thesis or unique perspective that goes beyond publicly available information. Generic statements about 'portfolio diversification' and 'strategic transformation' could apply to any biotech company facing patent cliffs. The few attempts at analysis, such as linking rare disease growth to MS decline, represent basic restatements rather than insightful synthesis of multiple data points into new conclusions.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "adjusted EPS of $5.47 significantly exceeding consensus estimates of $3.93",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "Revenue growth of 7.3% year-over-year to $2.65 billion",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "SKYCLARYS generating $102 million in Q4 2024",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "salanersen could achieve peak annual sales of $1.5-2 billion",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "strategic transformation centers on portfolio diversification beyond multiple sclerosis franchise",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "narrow economic moat derived from intellectual property protection and regulatory barriers",
+                "classification": "Restated",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Extensive copying of financial figures from earnings reports",
+            "Boilerplate 'portfolio diversification' phrasing",
+            "Standard biotech competitive analysis without company-specific insights"
+        ]
+    },
+    "checks": {
+        "synthesis_present": false,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 0,
+        "copied_or_generic_count": 6
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": false
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Key valuation and forecast drivers are reasonably explicit, with several material inputs stated near the sections they inform (e.g., NII exit rate for Q4-25, provisions, expense trajectory, DCF COE and growth, P/TBV multiple and TBVPS). Specificity is partial-to-solid: magnitudes and horizons are given for NII ($15.5\u2013$15.7bn Q4-25), provisions ($1.6bn Q2E), and valuation inputs (COE 7.05% with components; LT earnings growth 7%; P/TBV 1.85x on TBVPS $27.71). Justification is mixed: some items cite management guidance or consensus, but others (the chosen P/TBV premium, LT growth rate, and COE components) lack cited sources or peer/market benchmarks beyond brief assertions. Internal consistency is mostly clean, though revenue labeling varies (net of interest expense vs total) without reconciliation. Critically, there is no quantified sensitivity/scenario analysis for material drivers (rates/NII, credit costs, expense path, multiples), which caps the grade at Fair under the hard caps. The report would improve with auditable ties to multi-year history/peers for each assumption and quantified sensitivities showing impact on EPS/valuation across rate, credit, and multiple scenarios.",
+    "assumptions_extracted": [
+        {
+            "quote": "Management has guided for Net Interest Income (NII) to grow to an exit rate of $15.5 billion to $15.7 billion by the fourth quarter of 2025",
+            "location": {
+                "section": "Bull Case",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Consensus estimates project revenue of approximately $26.7 billion",
+            "location": {
+                "section": "Q2 2025 Forecast",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Provision for Credit Losses: ... $1.6",
+            "location": {
+                "section": "Financial Summary (Q2 2025E)",
+                "page": "unknown"
+            },
+            "driver_type": "credit_cost"
+        },
+        {
+            "quote": "Non-interest Expense: Expenses are expected to decline sequentially from Q1",
+            "location": {
+                "section": "Q2 2025 Forecast",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "A long-term earnings growth rate of 7.0% is assumed, consistent with consensus analyst estimates.",
+            "location": {
+                "section": "Valuation Analysis \u2013 Discounted Cash Flow (DCF)",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The cost of equity is calculated at 7.05%, based on a risk-free rate of 4.09%, an equity risk premium of 4.12%, and a stock beta of 0.72.",
+            "location": {
+                "section": "Valuation Analysis \u2013 Discounted Cash Flow (DCF)",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Applying a P/TBV multiple of 1.85x, which represents a slight premium to its current level to reflect its strong capital position, to BAC's tangible book value per share of $27.71 implies a valuation of approximately $51.00.",
+            "location": {
+                "section": "Valuation Analysis \u2013 Relative Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "relative_multiple"
+        },
+        {
+            "quote": "The model uses a trailing-twelve-month (TTM) EPS of $3.25 as of Q1 2025.",
+            "location": {
+                "section": "Valuation Analysis \u2013 Discounted Cash Flow (DCF)",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "credit_cost",
+            "relative_multiple"
+        ]
+    },
+    "flags": {
+        "contradictions": [],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "share_count",
+            "loan_growth",
+            "NII/rate sensitivity",
+            "credit_cost sensitivity",
+            "multi-year expense trajectory"
+        ],
+        "unjustified_parameters": [
+            "P/TBV multiple 1.85x without quantitative peer backtesting",
+            "Long-term earnings growth 7.0% with limited evidence beyond \u2018consensus\u2019",
+            "COE inputs (risk-free 4.09%, ERP 4.12%, beta 0.72) without cited sources"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+```json
+{
+  "grade": "Fair",
+  "summary_reasoning": "This report demonstrates some analytical depth but falls short of rigorous standards. Causal explanations are present but shallow, such as \"driven by loan portfolio expansion and fee income\" and \"revenue growth at a 3% CAGR from 2025 to 2029, driven by 2% loan growth and 4% fee income expansion.\" The DCF model includes explicit assumptions like \"WACC is set at 9.5%\" and \"Terminal growth of 2.5%\" but these lack benchmarking or industry context. Some quantification exists with \"net interest margins may compress by 10-15 basis points if rates fall\" and \"potential valuation swings of 10-20% in adverse scenarios,\" but these ranges appear arbitrary without supporting analysis. The report mentions counterpoints through Bulls/Bears sections but doesn't explore scenarios systematically. While implications like the $180 fair value are stated, the connection between assumptions and outcomes lacks rigor. The analysis reads more descriptive than analytical, with generic statements like \"regulatory pressures may limit capital flexibility\" without quantified impact assessment.",
+  "checks": {
+    "causal_explanation_present": true,
+    "assumptions_explicit": true,
+    "assumptions_benchmarked": false,
+    "quantification_used": true,
+    "sensitivity_or_scenarios": false,
+    "actionable_implications_present": true
+  },
+  "flags": {
+    "missing_mechanisms": ["loan growth → revenue impact not mechanistically explained", "deposit growth → NII relationship unclear"],
+    "unsupported_assumptions": ["Terminal growth of 2.5%" with no industry benchmark", "WACC at 9.5%" without peer comparison"],
+    "lack_of_sensitivity": ["10-15 basis points margin compression" without range analysis", "10-20% valuation swings" appear arbitrary"]
+  }
+}
+```

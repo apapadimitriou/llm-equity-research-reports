@@ -1,0 +1,109 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "Core valuation drivers are explicitly stated near the forecasts: revenue CAGR (2025\u201329), segment growth rates, operating margin trajectory, WACC with components, terminal growth, and an exit multiple, with figures reconciled to the forecast table in most cases. Specificity is solid: magnitudes, units, and time horizons are provided (e.g., $5.2B 2025 revenue base; margins rising to 27% by 2029; WACC breakdown). Justification is partial: the report cites general segment trends and peer alignment but provides limited evidence (history/peer comparisons or sourced market data) to support WACC inputs, terminal growth, and exit multiple. Internal consistency has a numeric contradiction between the text (24% 2025 margin) and the table (24.5%), though other items broadly align. Sensitivity analysis is absent; risks are discussed qualitatively without quantified ranges or scenario tables tied to material drivers, triggering a hard cap at Fair. Several important assumptions (tax rate, capex/working capital, share count/buyback cadence) are missing or opaque, reducing auditability of the model\u2019s drivers.",
+    "assumptions_extracted": [
+        {
+            "quote": "We project revenue CAGR of 5% from fiscal 2025 to 2029, starting from a 2025 base of $5.2 billion, driven by 7% growth in EISG ... and 4% in CSG ...",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins expand from 24% in 2025 to 27% by 2029, reflecting scale efficiencies and a higher software mix.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We assume a WACC of 8.5%, incorporating a 3% risk-free rate, 6% equity risk premium, and beta of 1.1.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal growth is 3%, leading to the $175 FVE.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "The EPS bridge starts at $6.00 in 2025 (up 5% year-over-year), reaching $8.50 by 2029 through revenue growth and margin gains, offset by modest share repurchases.",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "EPS/earnings"
+        },
+        {
+            "quote": "Exit Multiple (EV/EBITDA) | 18.0x | Peer comparable",
+            "location": {
+                "section": "Appendix \u2014 Key Valuation Assumptions Table",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Revenue ($B) ... 2025E | 5.2 ... 2029E | 6.4",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Op-Margin % ... 2025E | 24.5 ... 2029E | 27.0",
+            "location": {
+                "section": "Financials Snapshot",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "share_count"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Text states 2025 operating margin is 24% while table shows 24.5% for 2025E.",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "tax_rate",
+            "capex",
+            "working_capital",
+            "share_count (magnitude/cadence)",
+            "depreciation/EBITDA bridge"
+        ],
+        "unjustified_parameters": [
+            "WACC 8.5% without source beyond assumed inputs",
+            "Terminal growth 3% without cited industry evidence",
+            "Exit multiple 18x without peer set or range support",
+            "Segment growth rates (EISG 7%, CSG 4%) without benchmarks"
+        ]
+    }
+}

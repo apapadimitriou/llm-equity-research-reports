@@ -1,0 +1,99 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report's assumptions are severely deficient across all five pillars. While some key assumptions are stated in the appendix (15% revenue CAGR, 36% operating margin, 7% WACC), they lack proper justification with most claims unsupported by evidence - particularly problematic given the report acknowledges 'insufficient data' for historical financials. Specificity is weak with vague drivers like 'scale efficiencies' without quantification. Multiple internal contradictions exist: the report claims 25% endocrinology growth but shows only 15% total revenue CAGR, and states current operating margins are 32% while claiming Q2 gross margins exceeded 80%. Most critically, there are no sensitivity analyses or scenario testing for any material drivers, automatically capping the grade at Fair, but the combination of contradictions and poor justification results in Poor.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue CAGR (2025-29) | 15% | Driven by obesity portfolio growth [1]",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating Margin (2029) | 36% | Scale efficiencies [2]",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "WACC | 7.0% | Beta 0.8, risk-free rate 4%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Terminal Growth Rate | 3.0% | Long-term industry average",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "25% growth in endocrinology segment from Mounjaro/Zepbound expansion and 10% in oncology",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Operating margins are projected to expand to 35% by 2027 from current levels",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "weak",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Claims 25% endocrinology growth but only 15% total revenue CAGR despite endocrinology being the main driver",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix"
+                ]
+            },
+            {
+                "description": "States operating margins projected to expand to 35% by 2027 but appendix shows 36% by 2029, inconsistent with forecasts table showing 35% in 2027",
+                "locations": [
+                    "Fair Value and Profit Drivers",
+                    "Appendix",
+                    "Financials Snapshot"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "credit_cost",
+            "tax_rate",
+            "capex",
+            "share_count"
+        ],
+        "unjustified_parameters": [
+            "15% revenue CAGR without historical context",
+            "7% WACC without market data support",
+            "36% operating margin without peer benchmarks",
+            "Beta 0.8 without source"
+        ]
+    }
+}

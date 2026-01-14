@@ -1,0 +1,67 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report covers all mandatory sections, including a detailed business description, economic moat analysis, and capital allocation assessment. It provides sector-appropriate KPIs such as 100-gigabit port market share and specific revenue growth targets for AI and Campus networking verticals. The valuation section successfully links operating drivers (17% total CAGR) to the fair value estimate. However, the report is capped at 'Fair' due to significant internal contradictions and redundancy. A major discrepancy exists regarding management's 2025 AI revenue guidance: the May 2025 Analyst Note cites a 'reiterated' goal of $750 million, while the February 2025 archive note references a '$1.5 billion target.' Furthermore, the Fair Value history in the archive ($300) contradicts the current estimate ($82) without explaining the adjustment (likely a stock split), creating confusion. The report also suffers from superficial redundancy; the 'software-led approach' and 'EOS' value proposition are repeated across the Business Strategy, Economic Moat, and Valuation sections with nearly identical phrasing and no incremental depth. Finally, while peer benchmarking is included, the report lacks a dedicated scenario or sensitivity analysis table, which is expected for a 'Good' or 'Excellent' rating. These inconsistencies in material data points and repetitive content significantly impact the overall comprehensiveness and reliability of the document.",
+    "content_checks": {
+        "sections_present": [
+            "Analyst Note",
+            "Business Description",
+            "Business Strategy & Outlook",
+            "Bulls / Bears",
+            "Economic Moat",
+            "Valuation & Profit Drivers",
+            "Risk & Uncertainty",
+            "Capital Allocation",
+            "Financials Snapshot",
+            "ESG Risk",
+            "Peer Analysis",
+            "Appendix"
+        ],
+        "sections_missing": [
+            "Scenario Analysis Table",
+            "Sensitivity Matrix"
+        ],
+        "sector_kpis_present": [
+            "100-gigabit port market share",
+            "AI revenue targets",
+            "Campus revenue growth",
+            "Non-GAAP Operating Margin",
+            "Gross Margin targets"
+        ],
+        "sector_kpis_missing": [
+            "Specific customer concentration percentages in financial tables",
+            "Inventory turnover ratios"
+        ]
+    },
+    "checks": {
+        "evidence_citations_consistent": false,
+        "valuation_linked_to_drivers": true,
+        "peer_context_present": true,
+        "redundancy_detected": true,
+        "scenario_analysis_present": false
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "2025 AI revenue guidance cited as $750M in current note but $1.5B in archive.",
+                "locations": [
+                    "Analyst Note (Page 1)",
+                    "Analyst Notes Archive (Page 7)"
+                ]
+            },
+            {
+                "description": "Historical Fair Value of $300 contradicts current $82 without split-adjustment context.",
+                "locations": [
+                    "Cover Block (Page 1)",
+                    "Analyst Notes Archive (Page 8)"
+                ]
+            }
+        ],
+        "missing_kpis": [
+            "Granular revenue split by top customers (Microsoft/Meta) in the financial summary table."
+        ],
+        "uncited_claims": [
+            "Shares dipped 7% after-hours",
+            "Meta skipped an upgrade cycle in 2019/2020"
+        ]
+    }
+}

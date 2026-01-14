@@ -1,0 +1,92 @@
+{
+    "grade": "Poor",
+    "summary_reasoning": "The report demonstrates pervasive assumption quality deficiencies across all evaluation criteria. Key financial projections spanning 2025-2029 are presented in a comprehensive table without any explicit justification, historical context, or supporting evidence. Critical valuation drivers including revenue CAGR of 4.8%, efficiency ratio target of 65%, and discount rate of 10.5% appear only in an appendix without explanation or derivation. The fair value estimate of $85.00 lacks transparent methodology beyond vague references to DCF analysis and P/TBV approaches. No sensitivity analysis or scenario testing is provided for any material assumptions despite significant uncertainties around commercial real estate exposure, interest rate impacts, and execution risks following regulatory relief. While the report mentions some financial figures from recent quarters, these are not systematically connected to forward-looking assumptions or used to justify projection parameters.",
+    "assumptions_extracted": [
+        {
+            "quote": "Revenue compound annual growth rate of 4-6% over the medium term",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Net interest income recovery represents the primary profit driver, with management guidance of 1-3% growth in 2025",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "NII/NIM"
+        },
+        {
+            "quote": "Operating leverage assumptions target efficiency ratio improvement toward 65% from current levels near 69%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "Weighted average cost of capital estimation of 10-11%",
+            "location": {
+                "section": "Fair Value and Profit Drivers",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "Revenue CAGR 2025-2029: 4.8%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "Discount Rate: 10.5%",
+            "location": {
+                "section": "Appendix",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        }
+    ],
+    "checks": {
+        "explicitness": false,
+        "justification_with_evidence": "none",
+        "specificity_units_horizon": "partial",
+        "internal_consistency": "minor_issues",
+        "sensitivities_present": false,
+        "sensitivities_quality": "none",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "NII/NIM",
+            "margin/efficiency",
+            "WACC/COE"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "Revenue CAGR stated as both '4-6%' and '4.8%' without reconciliation",
+                "locations": [
+                    "Fair Value and Profit Drivers section",
+                    "Appendix section"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [
+            "terminal_growth",
+            "credit_cost",
+            "share_count",
+            "tax_rate"
+        ],
+        "unjustified_parameters": [
+            "Discount Rate: 10.5%",
+            "Terminal Growth Rate: 2.5%",
+            "Revenue CAGR 2025-2029: 4.8%",
+            "Efficiency Ratio Target: 65%",
+            "Net Interest Margin: 2.7% stabilizing to 2.9%"
+        ]
+    }
+}

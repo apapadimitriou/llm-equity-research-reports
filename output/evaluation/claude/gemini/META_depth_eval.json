@@ -1,0 +1,27 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report demonstrates some analytical depth with causal explanations like \"NII was $14.6B, driven by higher yielding assets\" and \"sharp acceleration in depreciation expense growth\" from AI investments. It provides explicit assumptions including \"WACC of 9.5%\" and \"terminal growth rate of 3.5%\" with some benchmarking against peers. However, the analysis lacks quantified sensitivity scenarios. The report states assumptions are \"highly sensitive to changes\" but fails to provide ranges or stress tests. While it mentions \"if the expected returns on these massive investments fail to materialize\" as a risk, no quantified downside scenarios are explored. The causal reasoning connecting AI capex to margin compression is solid, but counterpoint analysis remains largely qualitative. Actionable implications exist but are generic rather than conditional on specific scenarios.",
+    "checks": {
+        "causal_explanation_present": true,
+        "assumptions_explicit": true,
+        "assumptions_benchmarked": true,
+        "quantification_used": true,
+        "sensitivity_or_scenarios": false,
+        "actionable_implications_present": true
+    },
+    "flags": {
+        "missing_mechanisms": [
+            "AI investment ROI pathway not quantified",
+            "regulatory impact magnitude undefined"
+        ],
+        "unsupported_assumptions": [
+            "terminal growth 3.5% lacks industry context",
+            "2026 capex $90B based on vague guidance"
+        ],
+        "lack_of_sensitivity": [
+            "WACC 9.5% with no range testing",
+            "no bear/bull case quantification",
+            "valuation highly sensitive but no scenarios provided"
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report makes key assumptions explicit with specific magnitudes and timeframes, particularly for revenue growth (19.5% 5Y CAGR), operating margins (21% to 26%), and WACC (8.9%). Most assumptions are reasonably justified using consensus estimates, management guidance, and industry benchmarks. However, the report lacks quantified sensitivity analysis on material drivers. While it presents bull/bear DCF scenarios with different growth and margin assumptions, these are limited to valuation outputs rather than comprehensive operational sensitivities. The WACC calculation contains internal inconsistencies - the detailed methodology yields 9.87% but is arbitrarily adjusted to 8.9% without clear justification. Additionally, some critical assumptions like the terminal growth rate (3.5%) and specific margin expansion paths receive minimal justification beyond brief statements.",
+    "assumptions_extracted": [
+        {
+            "quote": "We model a five-year revenue compound annual growth rate (CAGR) of 19.5%. This forecast begins with the consensus growth estimate of approximately 21% for fiscal 2026 and fiscal 2027, reflecting the company's current momentum and market position. The growth rate is then modeled to gradually decelerate to 16.5% by fiscal 2031.",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "revenue_growth"
+        },
+        {
+            "quote": "We forecast non-GAAP operating margins to expand from the guided midpoint of approximately 21% in fiscal 2026 to 26% by fiscal 2029.",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "margin/efficiency"
+        },
+        {
+            "quote": "We model the company's free cash flow margin (calculated as unlevered FCF as a percentage of total revenue) to remain robust, averaging approximately 28% over the five-year forecast period.",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        },
+        {
+            "quote": "Weighted Average Cost of Capital (WACC): 8.9%",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "WACC/COE"
+        },
+        {
+            "quote": "We assume a perpetual growth rate of 3.5% for the company's free cash flows beyond the explicit forecast period.",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "terminal_growth"
+        },
+        {
+            "quote": "We utilize management's guided long-term non-GAAP tax rate of 22.5%",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "tax_rate"
+        },
+        {
+            "quote": "Based on a market capitalization of approximately $103 billion and total debt of approximately $745 million, the company's capital structure is overwhelmingly weighted toward equity, at approximately 99.3% equity and 0.7% debt.",
+            "location": {
+                "section": "Financial Model & Valuation",
+                "page": "unknown"
+            },
+            "driver_type": "other"
+        }
+    ],
+    "checks": {
+        "explicitness": true,
+        "justification_with_evidence": "partial",
+        "specificity_units_horizon": "solid",
+        "internal_consistency": "contradiction_found",
+        "sensitivities_present": false,
+        "sensitivities_quality": "partial_quant",
+        "material_drivers_covered": [
+            "revenue_growth",
+            "margin/efficiency",
+            "WACC/COE",
+            "terminal_growth",
+            "tax_rate"
+        ]
+    },
+    "flags": {
+        "contradictions": [
+            {
+                "description": "WACC calculation methodology yields 9.87% but final WACC used is 8.9% with insufficient justification for adjustment",
+                "locations": [
+                    "Financial Model & Valuation - WACC calculation",
+                    "Financial Model & Valuation - final WACC"
+                ]
+            }
+        ],
+        "missing_or_opaque_assumptions": [],
+        "unjustified_parameters": [
+            "Terminal growth rate 3.5% only briefly justified as 'slightly above long-term nominal GDP growth'",
+            "WACC adjustment from calculated 9.87% to 8.9% lacks clear methodology"
+        ]
+    }
+}

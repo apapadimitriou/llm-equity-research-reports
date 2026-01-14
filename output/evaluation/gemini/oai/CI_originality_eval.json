@@ -1,0 +1,50 @@
+{
+    "grade": "Fair",
+    "summary_reasoning": "The report primarily functions as a summary of public information, heavily citing Reuters news articles and earnings transcripts rather than providing original analysis. It relies on management's own 'breadth and depth' narrative and restates historical earnings beats as evidence of future potential. The only attempt at synthesis is the link between Cigna's exit from the Medicare Advantage market and the resulting predictability of its medical care ratios; however, this is a widely recognized market observation rather than a unique or non-obvious thesis. The valuation section is entirely boilerplate, utilizing standard DCF assumptions (9% WACC, 3% terminal growth) and consensus EPS figures without introducing any novel drivers or proprietary mechanisms. While the report is company-specific and includes relevant data points like the 'Select' segment growth, these are direct restatements of management disclosures. Because more than three insights are paraphrased from sources and the valuation lacks a novel driver, the report is capped at a 'Fair' grade. It lacks the interpretive depth and quantified causal links required for a 'Good' or 'Excellent' rating.",
+    "content_checks": {
+        "insights_classified": [
+            {
+                "text": "Cigna\u2019s minimal exposure to Medicare Advantage and focus on commercial clients has yielded relatively predictable medical care ratios.",
+                "classification": "Synthesis",
+                "decision_relevant": true
+            },
+            {
+                "text": "In Q1 2025, the company\u2019s adjusted EPS of $6.74 beat forecasts... leading Cigna to raise its full-year EPS guide.",
+                "classification": "Copied",
+                "decision_relevant": false
+            },
+            {
+                "text": "The PBM industry is under intense regulatory scrutiny: e.g. the FTC has sued the three largest PBMs.",
+                "classification": "Restated",
+                "decision_relevant": false
+            },
+            {
+                "text": "Cigna is focused on increasing its under-65 group share (9% growth in its small-group 'Select' segment).",
+                "classification": "Restated",
+                "decision_relevant": true
+            },
+            {
+                "text": "DCF yields a fair price near <FVE> assuming ~6\u20137% revenue CAGR and 9% WACC.",
+                "classification": "Generic Restatement",
+                "decision_relevant": false
+            }
+        ],
+        "red_flags": [
+            "Generic DCF with no novel drivers",
+            "Heavy reliance on Reuters headlines for core analysis",
+            "Boilerplate 'breadth and depth' phrasing from management",
+            "Recap of regulatory news without unique interpretive angle"
+        ]
+    },
+    "checks": {
+        "synthesis_present": true,
+        "original_thesis_present": false,
+        "decision_relevant_insights_count": 2,
+        "copied_or_generic_count": 3
+    },
+    "flags": {
+        "boilerplate_detected": true,
+        "valuation_novel_driver_present": false,
+        "peer_specificity_detected": true
+    }
+}
